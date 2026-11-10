@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!local-chatgpt with DeepSeek/
+!local-chatgpt with DeepSeek/enhance.py
+!local-chatgpt with DeepSeek/enhancement/
+!local-chatgpt with DeepSeek/enhancement/profile.json

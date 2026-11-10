@@ -43,6 +43,7 @@ The following table is extracted from this project's actual retained files. Note
 | [skills/hugging-face-model-trainer/scripts/train_sft_example.py](skills/hugging-face-model-trainer/scripts/train_sft_example.py) | top-level workflow | datasets, peft, trackio, trl |
 | [skills/hugging-face-paper-publisher/scripts/paper_manager.py](skills/hugging-face-paper-publisher/scripts/paper_manager.py) | PaperManager, main, index_paper, check_paper, link_paper_to_repo, create_research_article, get_arxiv_info, generate_citation | argparse, datetime, dotenv, huggingface_hub, json, os, pathlib, re |
 | [skills/hugging-face-tool-builder/references/baseline_hf_api.py](skills/hugging-face-tool-builder/references/baseline_hf_api.py) | show_help, main | __future__, os, sys, urllib |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [scripts/link-skills.sh](scripts/link-skills.sh) | backend/configuration source; inspect directly | .sh |
 | [skills/hugging-face-jobs/index.html](skills/hugging-face-jobs/index.html) | backend/configuration source; inspect directly | .html |
 | [skills/hugging-face-tool-builder/references/baseline_hf_api.sh](skills/hugging-face-tool-builder/references/baseline_hf_api.sh) | backend/configuration source; inspect directly | .sh |
@@ -166,7 +167,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `Qwen/Qwen2.5-0.5B`
 - `Qwen/Qwen2.5-0.5B-Instruct`
 
-Detected import roots: `__future__`, `argparse`, `ascii_graph`, `collections`, `dataclasses`, `datasets`, `datetime`, `dotenv`, `duckdb`, `evaluation_manager`, `gradio`, `huggingface_hub`, `inspect_evals`, `json`, `logging`, `markdown_it`, `numpy`, `os`, `pathlib`, `peft`, `polars`, `random`, `re`, `requests`, `sklearn`, `subprocess`, `sys`, `textwrap`, `time`, `torch`, `tqdm`, `trackio`, `transformers`, `trl`, `typing`, `urllib`, `vllm`, `yaml`
+Detected import roots: `__future__`, `argparse`, `ascii_graph`, `collections`, `dataclasses`, `datasets`, `datetime`, `dotenv`, `duckdb`, `evaluation_manager`, `gradio`, `huggingface_hub`, `importlib`, `inspect_evals`, `json`, `logging`, `markdown_it`, `numpy`, `os`, `pathlib`, `peft`, `polars`, `random`, `re`, `requests`, `sklearn`, `subprocess`, `sys`, `textwrap`, `time`, `torch`, `tqdm`, `trackio`, `transformers`, `trl`, `typing`, `urllib`, `vllm`, `yaml`
 
 Retained dependency manifests: [apps/evals-leaderboard/requirements.txt](apps/evals-leaderboard/requirements.txt), [apps/hackers-leaderboard/requirements.txt](apps/hackers-leaderboard/requirements.txt), [skills/hugging-face-evaluation/requirements.txt](skills/hugging-face-evaluation/requirements.txt)
 
@@ -194,6 +195,14 @@ Every project now has a source/version manifest, empty environment template, a d
 | [skills/hugging-face-evaluation/examples/.env.example](skills/hugging-face-evaluation/examples/.env.example) | Redacted 1 possible credential literals (values not retained). |
 | [skills/hugging-face-evaluation/examples/artificial_analysis_to_hub.py](skills/hugging-face-evaluation/examples/artificial_analysis_to_hub.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
 | [skills/hugging-face-tool-builder/references/baseline_hf_api.tsx](skills/hugging-face-tool-builder/references/baseline_hf_api.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/artifacts.json](enhancement/examples/artifacts.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/segment.txt](enhancement/examples/segment.txt) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

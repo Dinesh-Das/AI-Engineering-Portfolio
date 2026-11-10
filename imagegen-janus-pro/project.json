@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -161,6 +166,38 @@
         ],
         "ui": true,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -169,9 +206,12 @@
     "environment": [],
     "imports": [
       "PIL",
+      "importlib",
       "janus",
       "numpy",
+      "pathlib",
       "streamlit",
+      "sys",
       "torch",
       "transformers"
     ],
@@ -181,6 +221,11 @@
         "path": "app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [
@@ -199,7 +244,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 1
+    "plain_python_units_checked": 2
   },
   "category": "media",
   "purpose": "Study local Janus-Pro multimodal understanding and image generation.",
@@ -222,5 +267,68 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "729592b207a9e15667098fb24c1fe219203cbc23c2c446995d9ae0a957d721fa",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "34c412a26c6f7e83870cd78ba6d9ebae900d84194b72057b403c8e158af8cefa",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "9c4f5ac931c07e1f1392bebe960b4a34374ea97f38004fa9413c8d64ea06c391",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "4c8bdbfec56855afd447fff67a2d586594e33833ccccc6169402d47040e9be4b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "7bf4d69c301c5715b5379eb055d2731aa29eeb231dc43271e9c6e4c94f292841",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/artifacts.json",
+      "local_sha256": "af79992fd4f39589ed5d11dd3d803abb78e749a2a83da918878981251bf46eb2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/segment.txt",
+      "local_sha256": "030bedafcba4a590aab5f494d675c8499c628df609bd242a29f7f19bfa608758",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "artifacts"
   }
 }

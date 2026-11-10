@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "hotel-booking-crew",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Explore multi-agent hotel research with browser-backed search.",
+  "mechanism": "CrewAI coordinates Browserbase and Kayak hotel tools; extracted availability feeds the model response.",
+  "experiment": "Change occupancy, dates and currency independently and verify that a cached quote cannot cross those boundaries.",
+  "production": "Cache only fully keyed search results with expiry and keep booking actions separate from search suggestions.",
+  "fixture": {
+    "payload": {
+      "project": "hotel-booking-crew",
+      "task": "Explore multi-agent hotel research with browser-backed search.",
+      "synthetic": true
+    }
+  }
+}

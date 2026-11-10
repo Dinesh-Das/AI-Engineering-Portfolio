@@ -7,6 +7,11 @@
       "path": "maxsim.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -175,6 +180,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -197,6 +234,11 @@
         "path": "maxsim.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -208,7 +250,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 3
+    "plain_python_units_checked": 4
   },
   "category": "retrieval",
   "purpose": "Understand late interaction through ColBERT-style MaxSim scoring.",
@@ -226,6 +268,55 @@
       "changes": [
         "Added regression tests for negative-token padding, shape validation, stable ties and top-k."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "0905939c9a874b4a959222bbd7ee45f88433e7cc59e30abc76770033028b79f9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "78ddf128bad70b0e3c79f0b4913e7a44fc7dab9e3e72ab9226990b9ef3efe6be",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "eddbff75160d59e36a37185eb6078538a338727a8bdc9e2ecb5ea7528c9bab61",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "f9a7f9a1a1a37c76621c7496d95d9dfa50358278e4b8194b6dcd4b767da3d3c3",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "47f7e5cd1e7a1681fd0ea191a2de612d124d6b915ee9e6e839db3e9ed12c87d4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "18c81503e75b7ecea343bcf46e72a9b337b5845a16070cd6ec8c616c1ec4dfb2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "ui_entries": [],
@@ -242,5 +333,10 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

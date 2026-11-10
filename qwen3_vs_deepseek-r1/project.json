@@ -17,6 +17,11 @@
       "path": "workflow.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -560,6 +565,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -576,13 +613,16 @@
       "base64",
       "dotenv",
       "gc",
+      "importlib",
       "llama_index",
       "nest_asyncio",
       "opik",
       "os",
       "pandas",
+      "pathlib",
       "random",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "uuid"
@@ -609,6 +649,11 @@
         "path": "workflow.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -620,7 +665,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 16
+    "plain_python_units_checked": 17
   },
   "category": "evaluation",
   "purpose": "Compare Qwen3 and DeepSeek on a common RAG evaluation pipeline.",
@@ -643,5 +688,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "efd252526957ed38c9453ba5396bdd6fad021ec11cf89803e3140c6693ccebbc",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "1f00c6bcb3c9e3568d01e29e926a108cc4b4c76d4302190ae93a7e940e1d68c1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "5e01f32202f54517a0c157ac53f64f867b0761e938f3021fa527a0908ada0f1d",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "69515a74659b5a2bee345fb4e64cd0b7345083ecf56eab09b97ec8ea160cf683",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "61ca4b4d43924aa81f37e3129865981887c29ae80060cce726037f375571bdee",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/pairs.json",
+      "local_sha256": "cd2c2a96ecdc4d24372daf43f88d76bb5ec1e5d4054ecc309a23997a3fe3296a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "evaluation"
   }
 }

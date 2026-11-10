@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "kitops-mcp",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Manage machine-learning ModelKit artifacts through an MCP tool boundary.",
+  "mechanism": "Typed server tools create Kitfiles and inspect, pack, push, pull or remove model artifacts.",
+  "experiment": "Try path traversal and an invalid registry tag and ensure validation happens before a filesystem or registry mutation.",
+  "production": "Use a restricted registry identity, immutable artifact digests and separate read-only inspection from push/remove permissions.",
+  "fixture": {
+    "artifact_id": "kitops-mcp-segment-1",
+    "content": "Synthetic integrity fixture for kitops-mcp\n"
+  }
+}

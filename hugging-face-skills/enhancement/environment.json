@@ -1,0 +1,36 @@
+{
+  "project_id": "hugging-face-skills",
+  "manifests": [
+    "apps/evals-leaderboard/requirements.txt",
+    "apps/hackers-leaderboard/requirements.txt",
+    "skills/hugging-face-evaluation/requirements.txt"
+  ],
+  "requirements": [
+    "gradio",
+    "gradio>=5.50.0",
+    "huggingface-hub>=0.26.0",
+    "huggingface_hub",
+    "huggingface_hub>=1.1.4",
+    "inspect-ai>=0.3.0",
+    "inspect-evals",
+    "markdown-it-py>=3.0.0",
+    "openai",
+    "python-dotenv>=1.2.1",
+    "pyyaml",
+    "pyyaml>=6.0.3",
+    "requests",
+    "requests>=2.32.5"
+  ],
+  "python_requirements": [],
+  "environment_names": [
+    "AA_API_KEY",
+    "ADAPTER_MODEL",
+    "BASE_MODEL",
+    "HF_HUB_ENABLE_HF_TRANSFER",
+    "HF_TOKEN",
+    "HF_USERNAME",
+    "HF_XET_HIGH_PERFORMANCE",
+    "OUTPUT_REPO"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

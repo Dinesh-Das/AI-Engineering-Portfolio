@@ -1,0 +1,12 @@
+[
+  {
+    "id": "llama-4_vs_deepseek-r1-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "llama-4_vs_deepseek-r1-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

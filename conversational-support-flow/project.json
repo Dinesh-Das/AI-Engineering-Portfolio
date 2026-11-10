@@ -12,6 +12,11 @@
       "path": "support_flow.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -417,6 +422,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -448,6 +485,7 @@
       "datetime",
       "dotenv",
       "fastapi",
+      "importlib",
       "logging",
       "order_db",
       "os",
@@ -455,6 +493,7 @@
       "re",
       "sqlite3",
       "support_flow",
+      "sys",
       "uuid"
     ],
     "models": [
@@ -471,6 +510,11 @@
         "path": "support_flow.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -482,7 +526,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 3
+    "plain_python_units_checked": 4
   },
   "category": "agents",
   "purpose": "Route support turns among order lookup, policy retrieval and live research.",
@@ -506,5 +550,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "5af8aea5c3310de72ca17fd021158b969113c7681bffd77b7542658c4329f013",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "ef4495f0231110a74efea7a8a7940121b221a83eeac95097a77851455eff06c1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "4b608ad8db46e375ebd3390566f9e351a7220b8e8870dd7dab8cc9ea762b0b6c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "cf7e47bc1a4fcd9666bef9530f13eeb215e05e8366da96b09f9448486f0e88ad",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "8bfbe4aea82df29241af1f181a5c5bf8b1fb2e340f105909afecf21d11d94f21",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "543093857fc0fd2cb47d72e727d1dbab64bc41b1027b065c2a95ed54fecc6628",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

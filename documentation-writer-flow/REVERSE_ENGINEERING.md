@@ -29,6 +29,7 @@ The following table is extracted from this project's actual retained files. Note
 | [schemas/models.py](schemas/models.py) | DocItem, DocPlan | pydantic, typing |
 | [server.py](server.py) | write_documentation, list_docs, view_content | main, mcp, pathlib, typing |
 | [utils.py](utils.py) | load_yaml_config, load_llm, check_mermaid_syntax, remove_readonly | crewai, os, re, stat, yaml |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [config/documentation_agents.yaml](config/documentation_agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [config/documentation_tasks.yaml](config/documentation_tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 | [config/planner_agents.yaml](config/planner_agents.yaml) | backend/configuration source; inspect directly | .yaml |
@@ -68,6 +69,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [utils.py](utils.py) | 14 | load_llm | FunctionDef |
 | [utils.py](utils.py) | 22 | check_mermaid_syntax | FunctionDef |
 | [utils.py](utils.py) | 38 | remove_readonly | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -77,7 +79,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `ollama/deepseek-r1:7b`
 - `ollama/llama3.2`
 
-Detected import roots: `IPython`, `crew`, `crewai`, `crewai_tools`, `documentation_flow`, `main`, `mcp`, `nest_asyncio`, `os`, `pathlib`, `pydantic`, `re`, `schemas`, `shutil`, `stat`, `subprocess`, `typing`, `utils`, `yaml`
+Detected import roots: `IPython`, `crew`, `crewai`, `crewai_tools`, `documentation_flow`, `importlib`, `main`, `mcp`, `nest_asyncio`, `os`, `pathlib`, `pydantic`, `re`, `schemas`, `shutil`, `stat`, `subprocess`, `sys`, `typing`, `utils`, `yaml`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -95,6 +97,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [Building_Code_Documentation_Agents_Local.ipynb](Building_Code_Documentation_Agents_Local.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

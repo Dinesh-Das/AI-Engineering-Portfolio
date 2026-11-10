@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "ai-podcast-generation",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Turn source material into a two-speaker podcast with cloud or local generation.",
+  "mechanism": "Separate scraping, script generation and Kokoro speech modules make the pipeline reusable without the Streamlit shell.",
+  "experiment": "Hold the article constant and compare factual coverage, repeated claims and pronunciation between local and hosted generation.",
+  "production": "Queue script and speech jobs independently; checkpoint each audio segment in object storage so a failed segment can be retried.",
+  "fixture": {
+    "artifact_id": "ai-podcast-generation-segment-1",
+    "content": "Synthetic integrity fixture for ai-podcast-generation\n"
+  }
+}

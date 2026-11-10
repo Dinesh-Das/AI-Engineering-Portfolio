@@ -32,6 +32,11 @@
       "path": "src/agentic_rag/tools/custom_tool.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -1223,6 +1228,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -1252,10 +1289,12 @@
       "crewai",
       "crewai_tools",
       "gc",
+      "importlib",
       "langchain_community",
       "langchain_openai",
       "markitdown",
       "os",
+      "pathlib",
       "pydantic",
       "qdrant_client",
       "src",
@@ -1304,6 +1343,11 @@
         "path": "src/agentic_rag/tools/custom_tool.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -1315,7 +1359,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 46
+    "plain_python_units_checked": 47
   },
   "category": "rag",
   "purpose": "Route questions to document retrieval and use web fallback when needed.",
@@ -1338,5 +1382,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "16a52d2bf63f8af81102b63d2ef457150a23fe575fce91958e3b981ef978acce",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "ab0e7a9d59faa05cee5f113958154226dd2134d69977b620599efef944ec217e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "312ce2561b482429733d96986963055303f2885f6758e765b5f88545f0986666",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "1536e7d6079e82c181323b044757e583c6845d959c83085c276028de95899d89",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "343edf178888e0260f35fe214d1ab2ed126e914adce4e005af2b7f97d2dc4e3b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "7c9b8bd16c0b31b3691bd7d02755aed0393744d2c37b378366dc65c8d0fb7067",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

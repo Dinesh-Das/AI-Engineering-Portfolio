@@ -405,6 +405,38 @@
       "findings": [],
       "ui": true,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [
@@ -423,6 +455,7 @@
     "asyncio",
     "base64",
     "dotenv",
+    "importlib",
     "inspect",
     "json",
     "langchain_openai",
@@ -430,10 +463,12 @@
     "mcp_use",
     "nest_asyncio",
     "os",
+    "pathlib",
     "stagehand",
     "stagehand_tool",
     "streamlit",
     "styles",
+    "sys",
     "time",
     "typing",
     "warnings"
@@ -456,6 +491,11 @@
     },
     {
       "path": "stagehand_mcp.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
       "kind": "python",
       "ui": false
     }

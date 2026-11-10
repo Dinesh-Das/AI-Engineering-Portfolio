@@ -7,6 +7,11 @@
       "path": "learning_app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -376,6 +381,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -396,12 +433,14 @@
       "base64",
       "binascii",
       "http",
+      "importlib",
       "json",
       "learning_ui",
       "math",
       "pathlib",
       "protocol",
       "re",
+      "sys",
       "threading",
       "time",
       "urllib"
@@ -412,6 +451,11 @@
         "path": "learning_app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -423,7 +467,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 4
+    "plain_python_units_checked": 5
   },
   "local_additions": [
     {
@@ -481,6 +525,55 @@
       "changes": [
         "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "9ae50a401b21cb7546af2c0b484d32af6d909724cfa1a8446ee44798ad3dd085",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "b59e366a405ef69e7c705d16dc02b76bedce519b284ea29528e10c83b873f9ae",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "7507dc349c4f22854050041bc0e97d10699a0a8346ad5a4c6a131222b3b3efa5",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "d14a248f95317683675b374aa6719d5b6730b4f6fde320cfad605fdb5dd7cc92",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "24a8eb71f92d160e8dc8ca36e5a544dab1b0170e5d702f8cd37d16d261afff27",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/events.json",
+      "local_sha256": "fcfb08222021b711e11e3b104af4a59f04cd85b1442a2fd3eb25cea1702e4e50",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "learning_ui": {
@@ -516,5 +609,10 @@
     ]
   },
   "category": "interfaces",
-  "purpose": "Understand event-driven chat state and recovery through an observable local implementation."
+  "purpose": "Understand event-driven chat state and recovery through an observable local implementation.",
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "streaming"
+  }
 }

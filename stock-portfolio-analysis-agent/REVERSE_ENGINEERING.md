@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [agent/main.py](agent/main.py) | AgentState, crewai_agent, main, event_generator, emit_event | ag_ui, asyncio, copilotkit, fastapi, os, stock_analysis, typing, uuid |
 | [agent/stock_analysis.py](agent/stock_analysis.py) | StockAnalysisFlow, convert_tool_call, start, chat, simulation, allocation, insights, end | ag_ui, asyncio, crewai, datetime, dotenv, json, litellm, numpy |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [frontend/next-env.d.ts](frontend/next-env.d.ts) | backend/configuration source; inspect directly | .ts |
 | [frontend/next.config.ts](frontend/next.config.ts) | backend/configuration source; inspect directly | .ts |
 | [frontend/pnpm-lock.yaml](frontend/pnpm-lock.yaml) | backend/configuration source; inspect directly | .yaml |
@@ -60,6 +61,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [agent/stock_analysis.py](agent/stock_analysis.py) | 456 | allocation | Step 4: Calculate portfolio allocation and performance simulation |
 | [agent/stock_analysis.py](agent/stock_analysis.py) | 919 | insights | Step 5: Generate bull/bear insights about the selected stocks |
 | [agent/stock_analysis.py](agent/stock_analysis.py) | 1022 | end | Step 6: Final step - return the complete state |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -67,7 +69,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-4o-mini`
 
-Detected import roots: `ag_ui`, `asyncio`, `copilotkit`, `crewai`, `datetime`, `dotenv`, `fastapi`, `json`, `litellm`, `numpy`, `openai`, `os`, `pandas`, `prompts`, `pydantic`, `stock_analysis`, `typing`, `uuid`, `uvicorn`, `yfinance`
+Detected import roots: `ag_ui`, `asyncio`, `copilotkit`, `crewai`, `datetime`, `dotenv`, `fastapi`, `importlib`, `json`, `litellm`, `numpy`, `openai`, `os`, `pandas`, `pathlib`, `prompts`, `pydantic`, `stock_analysis`, `sys`, `typing`, `uuid`, `uvicorn`, `yfinance`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml), [frontend/package.json](frontend/package.json)
 
@@ -110,6 +112,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [frontend/src/app/page.tsx](frontend/src/app/page.tsx) | Restored frontend source/asset after UI scope was authorized. |
 | [frontend/src/utils/prompts.ts](frontend/src/utils/prompts.ts) | Restored frontend source/asset after UI scope was authorized. |
 | [frontend/tsconfig.json](frontend/tsconfig.json) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

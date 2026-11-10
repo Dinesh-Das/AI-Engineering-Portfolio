@@ -7,6 +7,11 @@
       "path": "train_yolo26_object_detection.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -456,6 +461,38 @@
         "ui": false,
         "syntax_error": null,
         "notebook_magics": false
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -473,11 +510,14 @@
       "PIL",
       "comet_ml",
       "dotenv",
+      "importlib",
       "matplotlib",
       "os",
+      "pathlib",
       "random",
       "roboflow",
       "supervision",
+      "sys",
       "ultralytics"
     ],
     "models": [],
@@ -485,6 +525,11 @@
       {
         "path": "train_yolo26_object_detection.ipynb",
         "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
         "ui": false
       }
     ],
@@ -497,7 +542,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 22
+    "plain_python_units_checked": 23
   },
   "category": "training",
   "purpose": "Fine-tune an object detector on a custom Roboflow dataset and track experiments.",
@@ -515,5 +560,82 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "239e7b43687c31d47f0b4e1de722692487e03b5ef3f3f28a58f843b465b26bd7",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "6602d142b5724664bc58b4391d3ad5cb5ff17db28cd7a7350c4d524581233613",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "389e98c8f29b23849d99f1014193e7003cbc994212e8b10562726a0be5b39e82",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "1762423eca006ad5604e100bc2e9de8d9f9f01504ad73a61e79181b4c33cf5ab",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "8a1b561838b1991ab572d6db62426c5bc32bcaacfbf35636352c6f3f336fb250",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/schema.json",
+      "local_sha256": "19e2402dc3cdc9ffd8f57d8867e020c193f68439d80e2257e128eaa0988e3670",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/reward.json",
+      "local_sha256": "75fdf05b8c1c0e2e1f31cf51945ecfae22774965e462d8a9ff9596c584231087",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/splits.json",
+      "local_sha256": "3b1133d083dc7225b5e8eea9247e30ddd9dfb702a576c5908cafe9e5068338b1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/distill.json",
+      "local_sha256": "996acc143d72d3b84c2d3db324e1085a85885658f4850a0250107e7061db3cb4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "training"
   }
 }

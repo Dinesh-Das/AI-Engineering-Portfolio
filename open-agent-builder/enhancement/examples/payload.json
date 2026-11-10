@@ -1,0 +1,5 @@
+{
+  "project": "open-agent-builder",
+  "task": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps.",
+  "synthetic": true
+}

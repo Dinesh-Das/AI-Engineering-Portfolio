@@ -17,6 +17,11 @@
       "path": "workflow.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -576,6 +581,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -594,13 +631,16 @@
       "base64",
       "dotenv",
       "gc",
+      "importlib",
       "llama_index",
       "nest_asyncio",
       "opik",
       "os",
       "pandas",
+      "pathlib",
       "random",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "uuid"
@@ -627,6 +667,11 @@
         "path": "workflow.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -638,7 +683,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 16
+    "plain_python_units_checked": 17
   },
   "category": "evaluation",
   "purpose": "Compare Llama 4 and DeepSeek on a document-grounded task.",
@@ -661,5 +706,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "c7bf21e191f99d46ff556d54bc9becc5d951117724e93f252e54b72eb65ad992",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "945eb12520927dc73c02a067c7fc7651becfadc21e1970a4b20679ebe599c313",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "a4344a418cb4e3e6d3f142ef807883120cc6b1026efb841f710f6d32f84b3c3e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "3b29b8b49a42393fa35f03d56b9aca24f24378b90163eb28e01ea3c8eec6cd13",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "5970fdcbe135cc42a3fea3a68f9d74b574ef16be339b2aa313c2887d9efc6afa",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/pairs.json",
+      "local_sha256": "380cf6ad27a1038416e7935575651ca7a2688c1ca30d1c632dd90003a3c9c650",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "evaluation"
   }
 }

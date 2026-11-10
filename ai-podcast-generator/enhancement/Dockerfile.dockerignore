@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!ai-podcast-generator/
+!ai-podcast-generator/enhance.py
+!ai-podcast-generator/enhancement/
+!ai-podcast-generator/enhancement/profile.json

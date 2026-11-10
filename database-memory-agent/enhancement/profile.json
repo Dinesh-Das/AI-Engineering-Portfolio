@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "database-memory-agent",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Combine conversation history, semantic document search and tool selection in MongoDB.",
+  "mechanism": "Voyage embeddings support Atlas vector search; OpenAI chooses tools and generates responses using stored session history.",
+  "experiment": "Use the same question in two sessions with different private documents and test for memory and vector-search leakage.",
+  "production": "Filter on authenticated tenant/session IDs in every database query and manage vector-index dimension/version changes explicitly.",
+  "fixture": {
+    "key": "database-memory-agent:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

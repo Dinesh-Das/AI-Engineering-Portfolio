@@ -28,6 +28,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/agentic_rag/crew.py](src/agentic_rag/crew.py) | AgenticRag, retriever_agent, response_synthesizer_agent, retrieval_task, response_task, crew | agentic_rag, crewai, crewai_tools |
 | [src/agentic_rag/main.py](src/agentic_rag/main.py) | run, train, replay, test | agentic_rag, sys, warnings |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | DocumentSearchToolInput, DocumentSearchTool, test_document_searcher | chonkie, crewai, markitdown, os, pydantic, qdrant_client, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [src/agentic_rag/config/agents.yaml](src/agentic_rag/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [src/agentic_rag/config/tasks.yaml](src/agentic_rag/config/tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 
@@ -62,6 +63,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | 9 | DocumentSearchToolInput | Input schema for DocumentSearchTool. |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | 13 | DocumentSearchTool | ClassDef |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | 69 | test_document_searcher | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -72,7 +74,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `ollama/deepseek-r1:7b`
 - `ollama/llama3.2`
 
-Detected import roots: `agentic_rag`, `base64`, `chonkie`, `crewai`, `crewai_tools`, `gc`, `langchain_community`, `langchain_openai`, `markitdown`, `os`, `pydantic`, `qdrant_client`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `tools`, `typing`, `warnings`, `yaml`
+Detected import roots: `agentic_rag`, `base64`, `chonkie`, `crewai`, `crewai_tools`, `gc`, `importlib`, `langchain_community`, `langchain_openai`, `markitdown`, `os`, `pathlib`, `pydantic`, `qdrant_client`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `tools`, `typing`, `warnings`, `yaml`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -99,6 +101,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [src/agentic_rag/agentic_rag.ipynb](src/agentic_rag/agentic_rag.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

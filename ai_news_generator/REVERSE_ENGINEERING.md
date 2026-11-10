@@ -19,6 +19,7 @@ The following table is extracted from this project's actual retained files. Note
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [app.py](app.py) | generate_content | UI surface |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -27,6 +28,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
 | [app.py](app.py) | 48 | generate_content | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -34,7 +36,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `command-r`
 
-Detected import roots: `crewai`, `crewai_tools`, `dotenv`, `os`, `streamlit`
+Detected import roots: `crewai`, `crewai_tools`, `dotenv`, `importlib`, `os`, `pathlib`, `streamlit`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -53,6 +55,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

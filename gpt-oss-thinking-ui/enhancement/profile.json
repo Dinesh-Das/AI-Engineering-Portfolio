@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "gpt-oss-thinking-ui",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Render native thinking and answer channels incrementally for local GPT-OSS.",
+  "mechanism": "The original app collects both channels before displaying the result; the learning UI updates each stream channel and preserves an explicit terminal state.",
+  "experiment": "Compare supported thinking levels, interrupt one run and verify that partial output never enters the next model request.",
+  "production": "Separate a memory-heavy inference service from the UI, budget cold starts and do not mistake model trace length for answer quality.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for gpt-oss-thinking-ui"
+  }
+}

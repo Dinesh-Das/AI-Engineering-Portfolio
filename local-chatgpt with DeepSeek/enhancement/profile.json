@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "local-chatgpt with DeepSeek",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Understand local dialogue state and incremental DeepSeek responses.",
+  "mechanism": "An original Chainlit session stores messages; the reconstructed interface separates completed history from visible partial or failed turns.",
+  "experiment": "Introduce a fact in one tab and ask a follow-up in another; verify isolation and compare failed-turn history behavior.",
+  "production": "Use authenticated session ownership and bounded asynchronous inference; keep durable conversation storage separate from model workers.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for local-chatgpt with DeepSeek"
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "code-model-comparison-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "code-model-comparison-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

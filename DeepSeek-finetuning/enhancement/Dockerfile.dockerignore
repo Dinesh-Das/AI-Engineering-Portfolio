@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!DeepSeek-finetuning/
+!DeepSeek-finetuning/enhance.py
+!DeepSeek-finetuning/enhancement/
+!DeepSeek-finetuning/enhancement/profile.json

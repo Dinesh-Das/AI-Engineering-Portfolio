@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!deepseek-multimodal-RAG/
+!deepseek-multimodal-RAG/enhance.py
+!deepseek-multimodal-RAG/enhancement/
+!deepseek-multimodal-RAG/enhancement/profile.json

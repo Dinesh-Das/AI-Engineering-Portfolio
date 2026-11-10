@@ -1,0 +1,5 @@
+{
+  "project": "openai-swarm-ollama",
+  "task": "Explore local-model handoffs between lightweight agents.",
+  "synthetic": true
+}

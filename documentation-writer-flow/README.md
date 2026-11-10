@@ -10,6 +10,7 @@ AI implementation with Python source and/or notebooks; retained UI source is ava
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
 - [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
+- [Executable enhancements](ENHANCEMENTS.md): project-specific CPU contracts, negative/recovery checks, real-data commands and deployment tradeoffs; run `python enhance.py check`.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup
@@ -59,6 +60,7 @@ After configuring an isolated environment and reviewing the entry, append `--exe
 | [Building_Code_Documentation_Agents_Local.ipynb](Building_Code_Documentation_Agents_Local.ipynb) | notebook | headless candidate |
 | [main.py](main.py) | python | headless candidate |
 | [server.py](server.py) | python | headless candidate |
+| [enhance.py](enhance.py) | python | headless candidate |
 
 ## Verification status
 

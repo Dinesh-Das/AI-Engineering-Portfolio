@@ -2,7 +2,13 @@
   "id": "run-jev-inside-agent-harness",
   "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
   "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/run-jev-inside-agent-harness",
-  "entries": [],
+  "entries": [
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
   "files": [
     {
       "upstream_path": "README.md",
@@ -219,14 +225,57 @@
     }
   ],
   "analysis": {
-    "units": [],
+    "units": [
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
     "manifests": [],
     "notebooks": [],
     "other_code": [],
     "environment": [],
-    "imports": [],
+    "imports": [
+      "importlib",
+      "pathlib",
+      "sys"
+    ],
     "models": [],
-    "entries": [],
+    "entries": [
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
     "findings": [],
     "syntax_errors": []
   },
@@ -236,7 +285,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 0
+    "plain_python_units_checked": 1
   },
   "category": "recipe",
   "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide.",
@@ -254,5 +303,68 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "f457535379acdbb0ca1f37fe77a2e1739445bc512ec0028a34fef5e4a0ac7b35",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "32406ef5b26fc5d02c8c4141cc400856cd828c46fc634729ec2d6916b4df7469",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "f237b8085095a76de186e17b3a3a29d2255da3547f1f9acf81e646f1d14db0e5",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "a8387b14143b5fecc4092454fea01c10064628253382a4b4a0f68714abb74de9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "9c392f5cd863bb87245d9f472ad42e6ca3ac21586954dd4106ff46b697e4c833",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/artifacts.json",
+      "local_sha256": "e04347ad35eecb202a89afcf152a4fa1df765dc324484458ddf47605b963b815",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/segment.txt",
+      "local_sha256": "49a8f435699bc08887016278e37ace9246ed10a066ca0cc8945e178eb58e2edd",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "artifacts"
   }
 }

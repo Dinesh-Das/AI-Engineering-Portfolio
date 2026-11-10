@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!colbert-rag/
+!colbert-rag/enhance.py
+!colbert-rag/enhancement/
+!colbert-rag/enhancement/profile.json

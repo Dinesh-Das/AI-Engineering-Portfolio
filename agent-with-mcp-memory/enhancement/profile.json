@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "agent-with-mcp-memory",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Give a local agent web tools, persistent graph memory and traceable behavior.",
+  "mechanism": "CrewAI uses MCP tools, Linkup search and Opik instrumentation; tool transport and memory semantics are separate concerns.",
+  "experiment": "Ask a follow-up after restarting the client, then delete the remembered fact and verify that retrieval stops returning it.",
+  "production": "Separate graph storage from stateless agent workers and enforce user-scoped memory reads, writes and deletion.",
+  "fixture": {
+    "key": "agent-with-mcp-memory:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

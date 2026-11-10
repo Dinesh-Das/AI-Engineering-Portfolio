@@ -1,0 +1,21 @@
+{
+  "project_id": "motia-content-creation",
+  "manifests": [
+    "package.json",
+    "requirements.txt"
+  ],
+  "requirements": [
+    "firecrawl>=2.15.0",
+    "ollama>=0.5.0",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.3"
+  ],
+  "python_requirements": [],
+  "environment_names": [
+    "FIRECRAWL_API_KEY",
+    "OPENAI_API_KEY",
+    "TYPEFULLY_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

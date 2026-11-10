@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!flight-booking-crew/
+!flight-booking-crew/enhance.py
+!flight-booking-crew/enhancement/
+!flight-booking-crew/enhancement/profile.json

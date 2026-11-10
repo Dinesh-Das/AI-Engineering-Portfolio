@@ -12,6 +12,11 @@
       "path": "server.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -285,6 +290,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -297,10 +334,13 @@
     "environment": [],
     "imports": [
       "argparse",
+      "importlib",
       "llama_index",
       "mcp",
       "nest_asyncio",
-      "sqlite3"
+      "pathlib",
+      "sqlite3",
+      "sys"
     ],
     "models": [
       "gpt-4",
@@ -316,6 +356,11 @@
         "path": "server.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -327,7 +372,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 11
+    "plain_python_units_checked": 12
   },
   "category": "mcp",
   "purpose": "Connect a local LlamaIndex agent to SQLite-backed MCP tools.",
@@ -345,5 +390,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "f8cac39d0452e2503dc74d44381bfcac0f5b5f788f9a1a0d5c2b9c6249200aa1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "4cfbc2a432c835fdf7d06d842050d5846160e91cc13dc9b89cfc3c21d756c093",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "9b61ce98dbe12c5d0fc275067df23074ccc6ed813e922cc2720870b36b394742",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "dbf5a70471750a302b4e9196471e38d6e992f0a5b57cd9d6ea27a278f0b0fb5f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "f230992edd87baedfa058dfeb55bc566612b3126b06f8e48da948cb8a3e60e6d",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/parameters.json",
+      "local_sha256": "c6adbfff0aeb7c75a56fc75ba542d916d7f117dc76c103eaafeb8e306a14534b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "sql"
   }
 }

@@ -12,6 +12,11 @@
       "path": "learning_app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -450,6 +455,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -465,6 +502,7 @@
       "base64",
       "binascii",
       "http",
+      "importlib",
       "json",
       "learning_ui",
       "math",
@@ -473,6 +511,7 @@
       "protocol",
       "re",
       "streamlit",
+      "sys",
       "threading",
       "time",
       "urllib"
@@ -490,6 +529,11 @@
         "path": "learning_app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -501,7 +545,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 5
+    "plain_python_units_checked": 6
   },
   "local_additions": [
     {
@@ -559,6 +603,55 @@
       "changes": [
         "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "c5b85adf1f772745f3e7b03b1c6e878d33769f36b126f31dff6e502781c4ea0b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "77a16b7ac7e726888bf5b68c5e8b2da3c0bf8bee440fc6a4031a8a9e338f8e7a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "78e885c2d2a037071277940c56a2634523edb3ff8d645d83fd73fd98b7e38e8b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "353dbf177e74b7a6f514913bd6086b3a41b7cc2b6340cae4c8587d76b8ea60a2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "8e2a505ca1f8faacc4dc70a114a3a70374f966fb8f38b31b2150dcc379a608ba",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/events.json",
+      "local_sha256": "7259748dc88e68c93ec16fc764e657be9b7c77ceaa985b67912bfd2baa6bfc2e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "learning_ui": {
@@ -593,5 +686,10 @@
     ]
   },
   "category": "interfaces",
-  "purpose": "Compare thinking controls, final-answer quality and latency for Qwen3."
+  "purpose": "Compare thinking controls, final-answer quality and latency for Qwen3.",
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "streaming"
+  }
 }

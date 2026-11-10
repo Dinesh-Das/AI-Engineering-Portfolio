@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "paralegal-agent-crew",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Retrieve legal-document evidence, rerank it and use research fallback.",
+  "mechanism": "PDF embedding, Milvus storage, reranking and agent workflow modules separate retrieval from synthesis.",
+  "experiment": "Ask questions with similar legal terms but different jurisdictions and verify citations, dates and explicit insufficiency.",
+  "production": "Partition documents by matter/client, preserve page-level evidence and require qualified review before consequential use.",
+  "fixture": {
+    "query": "paralegal-agent-crew retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "paralegal-agent-crew/synthetic-policy-v1",
+        "text": "paralegal-agent-crew retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "paralegal-agent-crew/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

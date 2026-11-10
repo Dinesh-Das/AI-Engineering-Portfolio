@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!local-chatgpt with Gemma 3/
+!local-chatgpt with Gemma 3/enhance.py
+!local-chatgpt with Gemma 3/enhancement/
+!local-chatgpt with Gemma 3/enhancement/profile.json

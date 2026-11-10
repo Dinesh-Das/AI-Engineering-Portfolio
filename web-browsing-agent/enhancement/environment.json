@@ -1,0 +1,18 @@
+{
+  "project_id": "web-browsing-agent",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai>=0.141.0",
+    "nest-asyncio>=1.6.0",
+    "stagehand>=0.4.0"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [
+    "MODEL_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

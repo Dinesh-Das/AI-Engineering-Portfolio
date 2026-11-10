@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "siamese-network",
+  "family": "training",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Learn digit similarity through paired examples and contrastive loss.",
+  "mechanism": "Twin branches share an encoder; ContrastiveLoss moves matching pairs closer and nonmatching pairs beyond a margin.",
+  "experiment": "Use a fixed pair split and sweep distance thresholds; report ROC/PR behavior instead of a single accuracy value.",
+  "production": "Export the shared encoder and version the decision threshold with preprocessing; prevent train/test image leakage through pair construction.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "siamese-network",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

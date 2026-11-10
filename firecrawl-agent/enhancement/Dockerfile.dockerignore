@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!firecrawl-agent/
+!firecrawl-agent/enhance.py
+!firecrawl-agent/enhancement/
+!firecrawl-agent/enhancement/profile.json

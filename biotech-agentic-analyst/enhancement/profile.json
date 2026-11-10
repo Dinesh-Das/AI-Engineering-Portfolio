@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "biotech-agentic-analyst",
+  "family": "extraction",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Extract scientific figures and produce structured research intelligence.",
+  "mechanism": "Mistral document extraction feeds a quality-routed CrewAI ScienceFlow and typed FigureIntelligence records.",
+  "experiment": "Hide figure captions and compare biological claims with and without context; label unsupported quantitative conclusions.",
+  "production": "Separate document parsing from analysis, retain page/figure provenance and require specialist review for consequential scientific use.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "biotech-agentic-analyst",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

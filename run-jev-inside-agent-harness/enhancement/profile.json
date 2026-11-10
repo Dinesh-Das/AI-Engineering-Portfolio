@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "run-jev-inside-agent-harness",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide.",
+  "mechanism": "The folder contains explanatory material and diagrams rather than a runnable harness implementation.",
+  "experiment": "Map every claimed capability to an external dependency and build a small mocked tool-contract test before a live integration.",
+  "production": "Keep enterprise credentials in connector boundaries, cap delegated work and persist auditable execution IDs with revocable access.",
+  "fixture": {
+    "artifact_id": "run-jev-inside-agent-harness-segment-1",
+    "content": "Synthetic integrity fixture for run-jev-inside-agent-harness\n"
+  }
+}

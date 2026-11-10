@@ -1,0 +1,15 @@
+[
+  {
+    "type": "start",
+    "fixture": true
+  },
+  {
+    "type": "delta",
+    "channel": "answer",
+    "text": "Synthetic lifecycle test for gpt-oss-thinking-ui"
+  },
+  {
+    "type": "done",
+    "fixture": true
+  }
+]

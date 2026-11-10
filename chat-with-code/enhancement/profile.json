@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "chat-with-code",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Retrieve repository context for code questions and validate responses.",
+  "mechanism": "The notebook ingests repository files, builds a LlamaIndex index and uses Qwen3-Coder with validation helpers.",
+  "experiment": "Change one function in a pinned repository snapshot and measure whether stale index content leaks into answers.",
+  "production": "Index allowlisted file types from pinned commits, strip secrets and attach file/line references to every supporting snippet.",
+  "fixture": {
+    "query": "chat-with-code retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "chat-with-code/synthetic-policy-v1",
+        "text": "chat-with-code retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "chat-with-code/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

@@ -1,5 +1,23 @@
 # Work checklist
 
+## Enhancement pass: all 113 projects
+
+- [x] Record native OCR baselines and existing user changes.
+  - Acceptance: tests run in each existing environment; personal learning files and unrelated changes are recorded.
+  - Verify: native pytest outputs and preservation hashes.
+- [x] Build tested enhancement primitives and per-project executable scenarios.
+  - Acceptance: all 113 projects have meaningful CPU operations and project-specific checks.
+  - Verify: primitive unit tests and isolated scenario runs.
+- [x] Add preflight diagnostics, packaging and targeted original-source fixes.
+  - Acceptance: setup gaps are actionable; fixes have regression tests and recorded provenance.
+  - Verify: CLI checks, source-integrity verification and focused tests.
+- [x] Add OCR quality evaluation and preserve learning across all projects.
+  - Acceptance: CER/WER/region checks work; journals and original learning material are retained.
+  - Verify: quality regression tests, native OCR tests and required lint checks.
+- [x] Verify complete enhancement coverage and commit scoped changes on main.
+  - Acceptance: per-project evidence is recorded, no fabricated model benchmarks and no unrelated files committed.
+  - Verify: full checks, enhancement matrix and Git review.
+
 - [x] Pin upstream revision and reconcile every project path.
   - Acceptance: tree and README entries have inclusion/exclusion/missing reasons.
   - Verify: inventory coverage test.

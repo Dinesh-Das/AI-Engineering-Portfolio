@@ -1,0 +1,15 @@
+{
+  "project_id": "gpt-oss-thinking-ui",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "ollama>=0.5.1",
+    "streamlit>=1.47.1"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

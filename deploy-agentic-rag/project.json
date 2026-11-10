@@ -12,6 +12,11 @@
       "path": "server.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -141,6 +146,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -154,9 +191,12 @@
       "argparse",
       "crewai",
       "crewai_tools",
+      "importlib",
       "json",
       "litserve",
+      "pathlib",
       "requests",
+      "sys",
       "time"
     ],
     "models": [],
@@ -170,6 +210,11 @@
         "path": "server.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -181,7 +226,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 2
+    "plain_python_units_checked": 3
   },
   "category": "operations",
   "purpose": "Serve an agentic RAG workflow through an API using LitServe.",
@@ -199,5 +244,68 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "067ef62ed34e40ffb21d5c44eea4e6c8d89d1a12face45e99c0bd952a9f40654",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "aa6efb62909f04c6bb7e5b18d09233edde07b835ed681e641aacd8978295e7af",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "3fbb5f554d6a2575d48b9c5276475c741eaba689f66a6e9992bf6eeb30ed0023",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "0ad65bf066b8662b9860db50e9dd4cbd05ea2cead7c1e1beb6e68278e6b143cb",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "659b7b0d9027e17eb929325e0e462e5609db71e7a274663d9163a0c369b2d67e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/artifacts.json",
+      "local_sha256": "e810c2eab34bbfd2b224901ccb5b476478eca93b208975077a119f198e0e075e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/segment.txt",
+      "local_sha256": "a673b06ca8a874a75eefb0315bcb9c0432ff38d479a3768248f8f2a7e0e14da2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "artifacts"
   }
 }

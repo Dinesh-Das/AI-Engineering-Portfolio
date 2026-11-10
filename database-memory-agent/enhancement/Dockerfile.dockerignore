@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!database-memory-agent/
+!database-memory-agent/enhance.py
+!database-memory-agent/enhancement/
+!database-memory-agent/enhancement/profile.json

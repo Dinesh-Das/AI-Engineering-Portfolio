@@ -4,12 +4,13 @@ Understand event-driven chat state and recovery through an observable local impl
 
 ## What is in this folder
 
-AI implementation with Python source and/or notebooks; retained UI source is available for study and explicit launch. Original source is reused under its upstream license; this is a source-backed learning port with recorded improvements, not a claim of an independently rewritten or production-certified implementation.
+TypeScript AI application and its retained interface/configuration source; the added Python extension is a separate CPU learning lab. Original source is reused under its upstream license; this is a source-backed learning port with recorded improvements, not a claim of an independently rewritten or production-certified implementation.
 
 - [Reverse engineering](REVERSE_ENGINEERING.md): source map, architecture, model/dependency choices, code-level findings and changes.
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
 - [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
+- [Executable enhancements](ENHANCEMENTS.md): project-specific CPU contracts, negative/recovery checks, real-data commands and deployment tradeoffs; run `python enhance.py check`.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup
@@ -58,11 +59,18 @@ To run the learning UI, append `--execute --timeout 3600 --entry-args --fixture 
 
 ## Headless execution
 
-No standalone headless command was identified. Use the UI entry table if present, or inspect the reusable source. For a guide-only project, deploy and test the external service described by the guide; this folder does not pretend to contain that service.
+From the collection root, preview the command without executing source:
+
+```powershell
+.\run.ps1 run --project "streaming-ai-chatbot" --entry "enhance.py"
+```
+
+After configuring an isolated environment and reviewing the entry, append `--execute --timeout 120`. The runner uses the active virtual environment when called through run.ps1. Notebook execution also needs Jupyter/nbconvert and an appropriate kernel. Training commonly needs a longer job deadline and a GPU or remote training account. These are discovered candidates, not proof the selected dependency/provider combination has been tested.
 
 | Candidate | Kind | UI dependency |
 | --- | --- | --- |
 | [learning_app.py](learning_app.py) | python | launch with ui action |
+| [enhance.py](enhance.py) | python | headless candidate |
 
 ## Verification status
 

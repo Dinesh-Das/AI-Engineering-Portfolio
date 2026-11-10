@@ -24,6 +24,7 @@ The following table is extracted from this project's actual retained files. Note
 | [stagehand_mcp.py](stagehand_mcp.py) | browser_automation_tool, add_numbers | mcp, stagehand_tool |
 | [stagehand_tool.py](stagehand_tool.py) | browser_automation | asyncio, nest_asyncio, os, stagehand |
 | [styles.py](styles.py) | inject_css | UI surface |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -50,6 +51,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [stagehand_mcp.py](stagehand_mcp.py) | 31 | add_numbers | Add two numbers together. |
 | [stagehand_tool.py](stagehand_tool.py) | 11 | browser_automation | Performs automated browser tasks using AI agent capabilities. |
 | [styles.py](styles.py) | 5 | inject_css | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -59,7 +61,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `gpt-4o`
 - `gpt-4o-mini`
 
-Detected import roots: `agent_wrapper`, `asyncio`, `base64`, `dotenv`, `inspect`, `json`, `langchain_openai`, `mcp`, `mcp_use`, `nest_asyncio`, `os`, `stagehand`, `stagehand_tool`, `streamlit`, `styles`, `time`, `typing`, `warnings`
+Detected import roots: `agent_wrapper`, `asyncio`, `base64`, `dotenv`, `importlib`, `inspect`, `json`, `langchain_openai`, `mcp`, `mcp_use`, `nest_asyncio`, `os`, `pathlib`, `stagehand`, `stagehand_tool`, `streamlit`, `styles`, `sys`, `time`, `typing`, `warnings`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -81,6 +83,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/mcp-use.png](assets/mcp-use.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/stagehand.png](assets/stagehand.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

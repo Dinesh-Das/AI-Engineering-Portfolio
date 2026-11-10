@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!groundX-doc-pipeline/
+!groundX-doc-pipeline/enhance.py
+!groundX-doc-pipeline/enhancement/
+!groundX-doc-pipeline/enhancement/profile.json

@@ -1,0 +1,5 @@
+{
+  "project": "stock-portfolio-analysis-agent",
+  "task": "Stream a portfolio-analysis workflow from a CrewAI backend.",
+  "synthetic": true
+}

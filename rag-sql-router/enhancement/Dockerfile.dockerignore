@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!rag-sql-router/
+!rag-sql-router/enhance.py
+!rag-sql-router/enhancement/
+!rag-sql-router/enhancement/profile.json

@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [Own_reasoning_model_with_GRPO.ipynb#cell-4](Own_reasoning_model_with_GRPO.ipynb#cell-4) | top-level workflow | torch, unsloth |
 | [Own_reasoning_model_with_GRPO.ipynb#cell-5](Own_reasoning_model_with_GRPO.ipynb#cell-5) | extract_hash_answer, create_dataset | datasets, re |
 | [Own_reasoning_model_with_GRPO.ipynb#cell-6](Own_reasoning_model_with_GRPO.ipynb#cell-6) | extract_xml_answer, correctness_reward_func, int_reward_func, strict_format_reward_func, soft_format_reward_func, count_xml, xmlcount_reward_func |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -37,6 +38,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [Own_reasoning_model_with_GRPO.ipynb#cell-6](Own_reasoning_model_with_GRPO.ipynb#cell-6) | 25 | soft_format_reward_func | Reward function that checks if the completion has a specific format. |
 | [Own_reasoning_model_with_GRPO.ipynb#cell-6](Own_reasoning_model_with_GRPO.ipynb#cell-6) | 32 | count_xml | FunctionDef |
 | [Own_reasoning_model_with_GRPO.ipynb#cell-6](Own_reasoning_model_with_GRPO.ipynb#cell-6) | 46 | xmlcount_reward_func | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -44,7 +46,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `meta-llama/meta-Llama-3.1-8B-Instruct`
 
-Detected import roots: `datasets`, `re`, `torch`, `trl`, `unsloth`, `vllm`
+Detected import roots: `datasets`, `importlib`, `pathlib`, `re`, `sys`, `torch`, `trl`, `unsloth`, `vllm`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -62,6 +64,16 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [Own_reasoning_model_with_GRPO.ipynb](Own_reasoning_model_with_GRPO.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/reward.json](enhancement/examples/reward.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/splits.json](enhancement/examples/splits.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/distill.json](enhancement/examples/distill.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

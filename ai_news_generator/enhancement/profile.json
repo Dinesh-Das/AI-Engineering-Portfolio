@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "ai_news_generator",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Generate sourced AI news using CrewAI and Cohere.",
+  "mechanism": "A small agent workflow gathers search results and synthesizes a news response; the original app mixes this logic with presentation.",
+  "experiment": "Compare generated claims to retrieved URLs and score fabricated stories, duplicate coverage and publication-date errors.",
+  "production": "Run collection as a scheduled job and require editorial acceptance before content reaches a publishing integration.",
+  "fixture": {
+    "payload": {
+      "project": "ai_news_generator",
+      "task": "Generate sourced AI news using CrewAI and Cohere.",
+      "synthetic": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "Build-reasoning-model",
+  "family": "training",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Train a reasoning-oriented model with GRPO and explicit answer-format rewards.",
+  "mechanism": "Unsloth and TRL generate grouped completions and combine correctness, integer-answer and XML-format reward functions.",
+  "experiment": "Compare correctness-only rewards with combined formatting rewards and test whether syntactic compliance improves actual answer accuracy.",
+  "production": "Use a dedicated GPU batch job, version reward code and datasets, and promote adapters only after independent evaluation.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "Build-reasoning-model",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

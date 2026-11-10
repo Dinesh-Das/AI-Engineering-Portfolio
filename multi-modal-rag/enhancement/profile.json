@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "multi-modal-rag",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study CLIP image retrieval and multimodal prompting through notebooks.",
+  "mechanism": "One notebook embeds image/text pairs for semantic search; another explores vision-model conversation and tool use.",
+  "experiment": "Retrieve images with attribute-heavy captions and compare semantic relevance against simple keyword matching.",
+  "production": "Store image rights/provenance, pin preprocessing parameters and keep embedding generation separate from the search endpoint.",
+  "fixture": {
+    "query": "multi-modal-rag retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "multi-modal-rag/synthetic-policy-v1",
+        "text": "multi-modal-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "multi-modal-rag/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

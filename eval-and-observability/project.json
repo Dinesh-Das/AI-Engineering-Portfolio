@@ -12,6 +12,11 @@
       "path": "demo.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -605,6 +610,38 @@
         "ui": false,
         "syntax_error": null,
         "notebook_magics": false
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -616,6 +653,7 @@
     "environment": [],
     "imports": [
       "dotenv",
+      "importlib",
       "langchain",
       "langchain_community",
       "langchain_openai",
@@ -624,8 +662,10 @@
       "opik",
       "os",
       "pandas",
+      "pathlib",
       "ragas",
-      "requests"
+      "requests",
+      "sys"
     ],
     "models": [
       "gpt-3.5-turbo",
@@ -643,6 +683,11 @@
         "path": "demo.ipynb",
         "kind": "notebook",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -654,7 +699,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 32
+    "plain_python_units_checked": 33
   },
   "category": "evaluation",
   "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline.",
@@ -672,5 +717,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "d45e33fcb5b1e16deefd1c789de3fd9603228dbc7dcfc2746fc24b2fe4e5a9e0",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "cdb0c2513a108204cc8018144547e87f768804e3ebf92da2196dc33e8cf0e96f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "fb189fe4dd3e4304510f72ceb528ab7dafc2328c2afdfc4fc4b4c142f8b173a4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "683b14437ba6baef87d2f3786143d7f6e6326e0938a1807a684db5a2e1e83629",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "32ee7acb5f72ed5fc5797b6c8fbdb7c9bc854c31926ff4ab055da8b9588e5bf8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/pairs.json",
+      "local_sha256": "c2da5499302c30282f54d36da8ed69bd334017276cb5357a56757aa7bc1648a9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "evaluation"
   }
 }

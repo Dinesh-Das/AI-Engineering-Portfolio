@@ -12,6 +12,11 @@
       "path": "mcp_server.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -607,6 +612,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -626,14 +663,17 @@
       "dotenv",
       "fastmcp",
       "gc",
+      "importlib",
       "json",
       "mcp",
       "numpy",
       "openai",
       "os",
+      "pathlib",
       "random",
       "sqlite3",
       "subprocess",
+      "sys",
       "time",
       "torch",
       "traceback",
@@ -657,6 +697,11 @@
         "path": "mcp_server.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -668,7 +713,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 23
+    "plain_python_units_checked": 24
   },
   "category": "training",
   "purpose": "Train an LLM to use MCP database tools with reinforcement learning.",
@@ -686,6 +731,55 @@
       "changes": [
         "Included license text referenced by the notebook source notice."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "a9d3a79f1f1bd53938445e47fa876af848dba9617a75fe4c15a8d8ef210de462",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "dc31bdafbb3e8732b286955e199a4d3ffd61a94fcb84a9b550365402e0e385bb",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "262767cb93e97b1a38054a1d9458249cba5da68ad26bc35e193ffcc6a544af4f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "95c1c55a3d2da46378891f1f5e086938976f70f6de09cadb31f29452fc58b0ff",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "87109a9a8096117373555f941d72f9bc5aae070973eba03996c4bd15fcd65920",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/parameters.json",
+      "local_sha256": "deb5ecbb995c4b658267245b91f748d4004386069015143a974738f59d9fc28d",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "ui_entries": [],
@@ -702,5 +796,10 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "sql"
   }
 }

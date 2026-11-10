@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "stagehand x mcp-use",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Connect a local agent to browser-automation tools through MCP.",
+  "mechanism": "Stagehand tools are exposed through a server and consumed by an mcp-use agent wrapper; presentation tracking displays those tool lifecycle events.",
+  "experiment": "Try a page with hostile instructions and verify that tool calls remain inside the approved task and destination set.",
+  "production": "Run browsers in disposable isolated contexts, restrict network destinations and require authorization for external state changes.",
+  "fixture": {
+    "payload": {
+      "project": "stagehand x mcp-use",
+      "task": "Connect a local agent to browser-automation tools through MCP.",
+      "synthetic": true
+    }
+  }
+}

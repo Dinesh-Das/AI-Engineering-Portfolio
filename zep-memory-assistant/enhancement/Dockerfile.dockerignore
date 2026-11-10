@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!zep-memory-assistant/
+!zep-memory-assistant/enhance.py
+!zep-memory-assistant/enhancement/
+!zep-memory-assistant/enhancement/profile.json

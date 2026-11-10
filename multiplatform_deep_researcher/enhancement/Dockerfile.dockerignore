@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!multiplatform_deep_researcher/
+!multiplatform_deep_researcher/enhance.py
+!multiplatform_deep_researcher/enhancement/
+!multiplatform_deep_researcher/enhancement/profile.json

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "agent2agent-demo",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Understand agent-to-agent communication through sine, cosine and tangent services.",
+  "mechanism": "Three python_a2a agents expose mathematical tools; the useful lesson is discovery, message routing and task responses.",
+  "experiment": "Exercise missing fields, nonnumeric arguments and tangent near a cosine zero; compare protocol errors with arithmetic errors.",
+  "production": "Use typed capability contracts and bounded calls; production discovery must authenticate the advertised agent endpoint.",
+  "fixture": {
+    "payload": {
+      "project": "agent2agent-demo",
+      "task": "Understand agent-to-agent communication through sine, cosine and tangent services.",
+      "synthetic": true
+    }
+  }
+}

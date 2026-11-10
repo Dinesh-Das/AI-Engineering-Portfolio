@@ -21,12 +21,15 @@ The following table is extracted from this project's actual retained files. Note
 | [Fine_tune_DeepSeek.ipynb#cell-3](Fine_tune_DeepSeek.ipynb#cell-3) | top-level workflow | torch, unsloth |
 | [Fine_tune_DeepSeek.ipynb#cell-24](Fine_tune_DeepSeek.ipynb#cell-24) | top-level workflow | ollama |
 | [Fine_tune_DeepSeek.ipynb#cell-25](Fine_tune_DeepSeek.ipynb#cell-25) | top-level workflow | IPython, ollama |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -35,7 +38,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `deepseek_finetuned_model`
 - `unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit`
 
-Detected import roots: `IPython`, `datasets`, `ollama`, `subprocess`, `time`, `torch`, `transformers`, `trl`, `unsloth`
+Detected import roots: `IPython`, `datasets`, `importlib`, `ollama`, `pathlib`, `subprocess`, `sys`, `time`, `torch`, `transformers`, `trl`, `unsloth`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -53,6 +56,16 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [Fine_tune_DeepSeek.ipynb](Fine_tune_DeepSeek.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/reward.json](enhancement/examples/reward.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/splits.json](enhancement/examples/splits.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/distill.json](enhancement/examples/distill.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

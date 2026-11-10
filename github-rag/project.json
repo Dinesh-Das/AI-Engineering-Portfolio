@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -252,6 +257,38 @@
         ],
         "ui": true,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -266,11 +303,14 @@
       "dotenv",
       "gc",
       "gitingest",
+      "importlib",
       "llama_index",
       "logging",
       "os",
       "pandas",
+      "pathlib",
       "streamlit",
+      "sys",
       "tempfile",
       "typing",
       "uuid"
@@ -284,6 +324,11 @@
         "path": "app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [
@@ -302,7 +347,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 2
+    "plain_python_units_checked": 3
   },
   "category": "rag",
   "purpose": "Answer repository questions after GitIngest converts source to retrieval context.",
@@ -325,5 +370,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "00a8d8d348fe2fe38e51006e74e6e961805ac3eb272b3091ca6c20287b5e1a2f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "48d070c3dea9a7813c870a5a4cc03ae4369ccc65ec6037b1accbce77457c5b5d",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "b1cdf3d47a29a444b3be78c46b96e25c46592e484b3edcd83eae833d88f8c06f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "28cd2bf1c5921c7878c9e212f9a5df2649b1141918a816f3c2ae0798a2b78ba4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "c68b5b0438f7d25e2eabdd7e483bc631f11d5c266a43b32c58e1b34d7fcbf9de",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "6e6032e3ceabda4a19175ace82187b830a49e27414ba2c145954f5e131ca7c27",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

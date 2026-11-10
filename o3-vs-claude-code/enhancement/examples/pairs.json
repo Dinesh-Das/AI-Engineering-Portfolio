@@ -1,0 +1,12 @@
+[
+  {
+    "id": "o3-vs-claude-code-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "o3-vs-claude-code-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

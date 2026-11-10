@@ -1,0 +1,18 @@
+{
+  "project_id": "kitops-mcp",
+  "manifests": [
+    "ml-project/requirements.txt",
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "kitops>=1.2.1",
+    "mcp[cli]>=1.9.4",
+    "pandas",
+    "scikit-learn"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

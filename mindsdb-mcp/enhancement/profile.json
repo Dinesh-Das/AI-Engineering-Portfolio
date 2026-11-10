@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "mindsdb-mcp",
+  "family": "sql",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Understand federated data access through a MindsDB MCP integration.",
+  "mechanism": "The pinned source is setup/configuration material rather than the MindsDB implementation itself.",
+  "experiment": "Use two read-only fixture datasources and check whether joins leak rows beyond the authenticated user's scope.",
+  "production": "Deploy MindsDB as a separately managed service with read-only datasource identities, query limits and audited connector access.",
+  "fixture": {
+    "row_name": "mindsdb-mcp-synthetic-account"
+  }
+}

@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [agent1.py](agent1.py) | SineAgent, get_sine, handle_task | math, python_a2a, re |
 | [agent2.py](agent2.py) | CosineAgent, get_cosine, handle_task | math, python_a2a, re |
 | [agent3.py](agent3.py) | TangentAgent, get_tangent, handle_task | math, python_a2a, re |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -37,6 +38,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [agent3.py](agent3.py) | 10 | TangentAgent | ClassDef |
 | [agent3.py](agent3.py) | 17 | get_tangent | Get the tangent of a number. |
 | [agent3.py](agent3.py) | 22 | handle_task | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -44,7 +46,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `math`, `python_a2a`, `re`
+Detected import roots: `importlib`, `math`, `pathlib`, `python_a2a`, `re`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -61,6 +63,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

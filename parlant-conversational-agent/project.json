@@ -7,6 +7,11 @@
       "path": "loan_approval.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -154,6 +159,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -167,12 +204,20 @@
     "imports": [
       "asyncio",
       "dotenv",
-      "parlant"
+      "importlib",
+      "parlant",
+      "pathlib",
+      "sys"
     ],
     "models": [],
     "entries": [
       {
         "path": "loan_approval.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
         "kind": "python",
         "ui": false
       }
@@ -186,7 +231,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 1
+    "plain_python_units_checked": 2
   },
   "category": "agents",
   "purpose": "Build a tool-backed loan conversation with explicit journeys and guidelines.",
@@ -204,5 +249,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "2dc485d82c16d72106428aa3221cb01c4c7150a3181c542f2397d82f21ea1618",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "94908e151042f8463d09a8255e1d3ae3fdff617ff60a67a166ea68c8b36777db",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "8da418097b8d164d65ced9c308f03d18ef25fef47fc696cd03058b60c5c2844a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "2933a9e84a9698e232d0e40a4d3440bf72505e8a9be18ae30bb2aaab3cee0022",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "f0cfc0630d074fa67f51f108788b077bc4a6492dccecd59dddb68fdaec99c3ac",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "40721634dd06eb48a9c2d2d47d4b7694f60f8de2300bc11a39c73e13740dc777",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

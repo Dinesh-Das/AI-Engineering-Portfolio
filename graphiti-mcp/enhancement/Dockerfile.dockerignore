@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!graphiti-mcp/
+!graphiti-mcp/enhance.py
+!graphiti-mcp/enhancement/
+!graphiti-mcp/enhancement/profile.json

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!Build-reasoning-model/
+!Build-reasoning-model/enhance.py
+!Build-reasoning-model/enhancement/
+!Build-reasoning-model/enhancement/profile.json

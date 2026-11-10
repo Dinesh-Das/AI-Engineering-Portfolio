@@ -25,6 +25,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/services/transcriber.py](src/services/transcriber.py) | AudioTranscriber, transcribe_audio, get_transcript_duration | assemblyai, os, src, time, typing |
 | [src/ui/ui_components.py](src/ui/ui_components.py) | display_meeting_header, display_meeting_summary, display_speaker_analysis, display_action_items, display_meeting_transcript | UI surface |
 | [cli.py](cli.py) | main | argparse, dataclasses, dotenv, json, os, pathlib, src |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -56,6 +57,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/ui/ui_components.py](src/ui/ui_components.py) | 118 | display_action_items | Display action items organized by assignee with clean, elegant styling. |
 | [src/ui/ui_components.py](src/ui/ui_components.py) | 185 | display_meeting_transcript | Display the meeting transcript with enhanced formatting. |
 | [cli.py](cli.py) | 10 | main | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -63,7 +65,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `argparse`, `assemblyai`, `dataclasses`, `datetime`, `dotenv`, `gc`, `json`, `openai`, `os`, `pathlib`, `re`, `src`, `streamlit`, `tempfile`, `time`, `typing`
+Detected import roots: `argparse`, `assemblyai`, `dataclasses`, `datetime`, `dotenv`, `gc`, `importlib`, `json`, `openai`, `os`, `pathlib`, `re`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -83,6 +85,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [src/ui/ui_components.py](src/ui/ui_components.py) | Restored frontend source/asset after UI scope was authorized. |
 | [cli.py](cli.py) | Added a size-bounded headless meeting-processing CLI with structured JSON output. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/quality.json](enhancement/examples/quality.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

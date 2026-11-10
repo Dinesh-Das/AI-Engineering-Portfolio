@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "zep-memory-assistant",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Add persistent Zep memory to an AutoGen conversational agent.",
+  "mechanism": "ZepConversableAgent retrieves memory and stores session interactions through utility functions.",
+  "experiment": "Introduce a corrected preference in a later session and test whether stale memory still dominates the reply.",
+  "production": "Bind memory to authenticated users, redact sensitive turns and implement deletion across sessions and graph-derived context.",
+  "fixture": {
+    "key": "zep-memory-assistant:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

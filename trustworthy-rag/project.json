@@ -12,6 +12,11 @@
       "path": "main.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -466,6 +471,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -482,11 +519,14 @@
       "base64",
       "dotenv",
       "gc",
+      "importlib",
       "llama_index",
       "llama_parse",
       "os",
+      "pathlib",
       "random",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "typing",
@@ -507,6 +547,11 @@
         "path": "main.ipynb",
         "kind": "notebook",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [
@@ -525,7 +570,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 16
+    "plain_python_units_checked": 17
   },
   "category": "rag",
   "purpose": "Attach trustworthiness signals to document-grounded model output.",
@@ -548,5 +593,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "b9bf3bf6dcaa0dbb2fd64806f924855a626d8f0dbcf75d8c03681955556be976",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "333c611fb289e76e9542d0743274481064748af5828a52e71d1ca7e32bbd4463",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "0e7fad56ac4481d52298a32f96430c397ee320766790907c4feaf8f168bc8213",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "1f5d40aacf732071beb6ff2d152c26ea012d9ea08b18d59ed6b27bad4960d39b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "6807d696fc1fe960ca85558db85c5d40149f9365da181b86ff24a49b31e2e0a3",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "413cc1a5b1e52b95504248ac3210bb665dc6bab079d96c296b6ed0ab0419e803",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

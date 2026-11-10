@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "mcp-agentic-rag-firecrawl",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Build an MCP retrieval service with Firecrawl ingestion.",
+  "mechanism": "The notebook and rag_code.py coordinate crawling, embedding, Qdrant storage and retrieval tool calls.",
+  "experiment": "Test a URL outside the approved crawl domain and an oversized page before any embedding work begins.",
+  "production": "Use a crawl allowlist, asynchronous ingest jobs and stable document IDs rather than creating a fresh shared collection per call.",
+  "fixture": {
+    "tool_name": "mcp_agentic_rag_firecrawl_calculate"
+  }
+}

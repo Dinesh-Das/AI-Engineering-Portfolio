@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "cursor_linkup_mcp",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose deep web search and document retrieval to an MCP client.",
+  "mechanism": "server.py wraps Linkup search and a LlamaIndex RAGWorkflow as typed tools.",
+  "experiment": "Call retrieval before ingestion and simulate a search timeout; tool responses should distinguish missing state from empty evidence.",
+  "production": "Authenticate the MCP transport, isolate indexes by caller and make tool failures structured and retry-aware.",
+  "fixture": {
+    "tool_name": "cursor_linkup_mcp_calculate"
+  }
+}

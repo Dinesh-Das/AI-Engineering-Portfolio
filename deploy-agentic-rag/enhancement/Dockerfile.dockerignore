@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!deploy-agentic-rag/
+!deploy-agentic-rag/enhance.py
+!deploy-agentic-rag/enhancement/
+!deploy-agentic-rag/enhancement/profile.json

@@ -1,6 +1,7 @@
 from config import openai_client, OPENAI_MODEL
 from tools import vector_search_tool, calculator_tool
 from memory import store_chat_message, retrieve_session_history
+from safe_tools import parse_tool_selection
 
 def tool_selector(user_input, session_history=None):
     messages = [
@@ -38,9 +39,8 @@ def tool_selector(user_input, session_history=None):
       messages=messages
     ).choices[0].message.content
     try:
-        tool_call = eval(response)
-        return tool_call.get("tool"), tool_call.get("input")
-    except:
+        return parse_tool_selection(response)
+    except ValueError:
         return "none", user_input
 
 def generate_response(session_id: str, user_input: str) -> str:

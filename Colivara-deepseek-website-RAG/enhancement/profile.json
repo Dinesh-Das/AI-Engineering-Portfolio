@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "Colivara-deepseek-website-RAG",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Retrieve visually represented web pages and answer with a multimodal model.",
+  "mechanism": "Website screenshots become page-like documents; ColiVara search selects visual context for Janus-Pro synthesis.",
+  "experiment": "Ask questions about a chart whose labels disappear in text extraction and compare visual and text retrieval.",
+  "production": "Store screenshot provenance and crawl timestamps; isolate screenshot rendering workers from model-serving workers.",
+  "fixture": {
+    "query": "Colivara-deepseek-website-RAG retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "Colivara-deepseek-website-RAG/synthetic-policy-v1",
+        "text": "Colivara-deepseek-website-RAG retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "Colivara-deepseek-website-RAG/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

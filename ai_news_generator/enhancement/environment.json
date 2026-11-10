@@ -1,0 +1,8 @@
+{
+  "project_id": "ai_news_generator",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

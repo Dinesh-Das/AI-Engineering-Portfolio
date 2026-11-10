@@ -12,6 +12,11 @@
       "path": "parlant_agent_server.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -403,6 +408,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -417,12 +454,15 @@
     "imports": [
       "asyncio",
       "dotenv",
+      "importlib",
       "openai",
       "os",
       "parlant",
       "parlant_client_utils",
+      "pathlib",
       "rich",
       "rich_table_formatter",
+      "sys",
       "traditional_llm_prompt",
       "typing"
     ],
@@ -439,6 +479,11 @@
         "path": "parlant_agent_server.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -450,7 +495,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 5
+    "plain_python_units_checked": 6
   },
   "category": "agents",
   "purpose": "Compare structured conversational guidelines with a traditional instruction prompt.",
@@ -468,5 +513,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "4a4ff4abefe4302fa05de5234ffdc32318358ed5cfdc27ebb5bfff6bb12417d9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "be9c82d01127eeac3335f255f2422fdbefb898d29e036ee45195330f6d242c8f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "9669c815e7ee9788f2f10c1fc3f882ccc24fa74ed550913dbb351989d5e064ab",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "e88f7ec54fb8d3e6561c093f621a212fdec68e0d528ca2a1bf441e5de4bd00e8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "f78468c16c3ffe834d53be568fb1718f2b351f164642c74615b39d7522142da4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "dfcc62f353573ecc3f9ff2f3be0bf7f5a3ddf38156ec3913e6d3f12adddd913e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

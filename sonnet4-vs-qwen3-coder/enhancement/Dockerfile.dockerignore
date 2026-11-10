@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!sonnet4-vs-qwen3-coder/
+!sonnet4-vs-qwen3-coder/enhance.py
+!sonnet4-vs-qwen3-coder/enhancement/
+!sonnet4-vs-qwen3-coder/enhancement/profile.json

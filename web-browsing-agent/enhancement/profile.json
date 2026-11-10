@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "web-browsing-agent",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Plan and execute browser research with CrewAI and Stagehand.",
+  "mechanism": "BrowserAutomationFlow creates an AutomationPlan, calls a browser tool and synthesizes results.",
+  "experiment": "Change the page structure and inject misleading instructions; measure task completion and unauthorized-action prevention.",
+  "production": "Isolate browser workers, enforce destination/action policies in code and store compact evidence for every completed action.",
+  "fixture": {
+    "payload": {
+      "project": "web-browsing-agent",
+      "task": "Plan and execute browser research with CrewAI and Stagehand.",
+      "synthetic": true
+    }
+  }
+}

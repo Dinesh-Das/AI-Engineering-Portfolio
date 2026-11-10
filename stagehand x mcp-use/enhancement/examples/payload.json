@@ -1,0 +1,5 @@
+{
+  "project": "stagehand x mcp-use",
+  "task": "Connect a local agent to browser-automation tools through MCP.",
+  "synthetic": true
+}

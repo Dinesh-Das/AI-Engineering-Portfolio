@@ -1,0 +1,22 @@
+{
+  "project_id": "Multi-Agent-deep-researcher-mcp-windows-linux",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai>=0.114.0",
+    "linkup-sdk>=0.2.4",
+    "mcp>=1.6.0",
+    "openai>=1.75.0",
+    "python-dotenv>=1.1.0",
+    "streamlit-crewai-process-output>=0.1.1",
+    "streamlit>=1.44.1"
+  ],
+  "python_requirements": [
+    ">=3.11"
+  ],
+  "environment_names": [
+    "LINKUP_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

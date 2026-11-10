@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "ultimate-ai-assitant-using-mcp",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Explore one agent connecting to several MCP servers.",
+  "mechanism": "mcp-use client configuration and agent creation connect local/hosted models to a union of tools.",
+  "experiment": "Give two servers similarly named tools and test selection, least privilege and what happens when one disconnects.",
+  "production": "Use a tool registry with explicit scopes, authenticate each server and avoid passing the full process environment to child servers.",
+  "fixture": {
+    "tool_name": "ultimate_ai_assitant_using_mcp_calculate"
+  }
+}

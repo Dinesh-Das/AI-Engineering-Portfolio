@@ -1,0 +1,18 @@
+{
+  "project_id": "book-writer-flow",
+  "manifests": [
+    "book_flow/book_writing_flow/pyproject.toml"
+  ],
+  "requirements": [
+    "crewai[tools]>=0.102.0,<1.0.0"
+  ],
+  "python_requirements": [
+    ">=3.10,<3.13"
+  ],
+  "environment_names": [
+    "BRIGHDATA_PASSWORD",
+    "BRIGHDATA_USERNAME",
+    "OPENAI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "sonnet4-vs-o4-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "sonnet4-vs-o4-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

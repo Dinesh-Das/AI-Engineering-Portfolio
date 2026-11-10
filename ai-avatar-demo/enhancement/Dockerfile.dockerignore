@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!ai-avatar-demo/
+!ai-avatar-demo/enhance.py
+!ai-avatar-demo/enhancement/
+!ai-avatar-demo/enhancement/profile.json

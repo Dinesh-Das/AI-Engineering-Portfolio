@@ -24,6 +24,7 @@ The following table is extracted from this project's actual retained files. Note
 | [notebook.ipynb#cell-13](notebook.ipynb#cell-13) | setup_query_engine |  |
 | [notebook.ipynb#cell-19](notebook.ipynb#cell-19) | codex_validated_query |  |
 | [validation.py](validation.py) | codex_validated_query |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -47,6 +48,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [notebook.ipynb#cell-13](notebook.ipynb#cell-13) | 1 | setup_query_engine | FunctionDef |
 | [notebook.ipynb#cell-19](notebook.ipynb#cell-19) | 4 | codex_validated_query | FunctionDef |
 | [validation.py](validation.py) | 6 | codex_validated_query | Validates a user query against a RAG pipeline response using Cleanlab Codex. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -55,7 +57,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-base-en-v1.5`
 - `qwen/qwen3-coder:free`
 
-Detected import roots: `IPython`, `cleanlab_codex`, `dotenv`, `gc`, `glob`, `llama_index`, `nest_asyncio`, `os`, `re`, `streamlit`, `subprocess`, `time`, `uuid`, `validation`
+Detected import roots: `IPython`, `cleanlab_codex`, `dotenv`, `gc`, `glob`, `importlib`, `llama_index`, `nest_asyncio`, `os`, `pathlib`, `re`, `streamlit`, `subprocess`, `sys`, `time`, `uuid`, `validation`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -73,6 +75,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

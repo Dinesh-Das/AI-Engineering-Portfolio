@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [flow.py](flow.py) | stagehand_browser_tool, BrowserAutomationFlowState, AutomationPlan, BrowserAutomationFlow, main, start_flow, plan_task, handle_browser_automation, synthesize_result | asyncio, crewai, dotenv, pydantic, stagehand_tool, typing |
 | [stagehand_tool.py](stagehand_tool.py) | browser_automation | asyncio, nest_asyncio, os, stagehand |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -37,6 +38,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [flow.py](flow.py) | 94 | handle_browser_automation | FunctionDef |
 | [flow.py](flow.py) | 122 | synthesize_result | FunctionDef |
 | [stagehand_tool.py](stagehand_tool.py) | 11 | browser_automation | Performs automated browser tasks using AI agent capabilities. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -47,7 +49,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `ollama/gpt-oss`
 - `openai/gpt-4`
 
-Detected import roots: `asyncio`, `crewai`, `dotenv`, `nest_asyncio`, `os`, `pydantic`, `stagehand`, `stagehand_tool`, `typing`
+Detected import roots: `asyncio`, `crewai`, `dotenv`, `importlib`, `nest_asyncio`, `os`, `pathlib`, `pydantic`, `stagehand`, `stagehand_tool`, `sys`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -66,6 +68,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

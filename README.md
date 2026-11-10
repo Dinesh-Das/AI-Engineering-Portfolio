@@ -4,6 +4,8 @@
 
 Start with the **[project index](PROJECT_INDEX.md)**. Every project has its own README, reverse-engineering walkthrough, learning/production guide, evaluation protocol, environment template, analysis report and source manifest.
 
+**All 113 projects now have executable engineering extensions**, including the four OCR repositories. Each folder's `ENHANCEMENTS.md` connects its source mechanism to usable CPU operations, synthetic negative/recovery checks, preserved learning exercises and production tradeoffs. Run `.\run.ps1 enhance` from this root, or `python enhance.py check` / `doctor` inside a project. Read the [executed coverage](docs/ENHANCEMENT_REPORT.md), [extension architecture](workbench_core/README.md) and [native OCR verification](docs/OCR_ENHANCEMENT_VALIDATION.md). These checks are separate from original model/provider/GPU qualification.
+
 This collection preserves the upstream implementations and adds source-backed explanations, targeted fixes and local tooling. The seven UI-category projects also include independently runnable learning interfaces with bundled standard-library code. Their original Chainlit/Streamlit/Motia source remains available for comparison. Original framework dependencies, live inference and GPU training are separate integration checks.
 
 **Learning is required throughout.** Every catalog project retains a mechanism walkthrough, rebuild sequence, controlled experiment, metrics, scenario exercises and production deployment tradeoffs. The checks enforce this [learning contract](docs/LEARNING_CONTRACT.md); UI convenience does not replace it.

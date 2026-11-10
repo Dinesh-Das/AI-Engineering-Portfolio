@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!trustworthy-rag/
+!trustworthy-rag/enhance.py
+!trustworthy-rag/enhancement/
+!trustworthy-rag/enhancement/profile.json

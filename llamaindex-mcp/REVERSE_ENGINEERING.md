@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [ollama_client.ipynb#cell-11](ollama_client.ipynb#cell-11) | get_agent | llama_index |
 | [ollama_client.ipynb#cell-13](ollama_client.ipynb#cell-13) | handle_user_message | llama_index |
 | [server.py](server.py) | init_db, add_data, read_data | argparse, mcp, sqlite3 |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -34,6 +35,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [server.py](server.py) | 7 | init_db | FunctionDef |
 | [server.py](server.py) | 22 | add_data | Add new data to the people table using a SQL INSERT query. |
 | [server.py](server.py) | 59 | read_data | Read data from the people table using a SQL SELECT query. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -42,7 +44,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `gpt-4`
 - `llama3.2`
 
-Detected import roots: `argparse`, `llama_index`, `mcp`, `nest_asyncio`, `sqlite3`
+Detected import roots: `argparse`, `importlib`, `llama_index`, `mcp`, `nest_asyncio`, `pathlib`, `sqlite3`, `sys`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -60,6 +62,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [ollama_client.ipynb](ollama_client.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/parameters.json](enhancement/examples/parameters.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

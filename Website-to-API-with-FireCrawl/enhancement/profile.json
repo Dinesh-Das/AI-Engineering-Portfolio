@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "Website-to-API-with-FireCrawl",
+  "family": "extraction",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Convert web content into schema-constrained extraction results.",
+  "mechanism": "The notebook builds dynamic Pydantic extraction schemas and calls Firecrawl to produce structured data.",
+  "experiment": "Remove required fields and alter page layout and test schema validity independently from semantic extraction accuracy.",
+  "production": "Expose only approved extraction schemas and destinations, cap crawl size and validate results before returning them to downstream consumers.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "Website-to-API-with-FireCrawl",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

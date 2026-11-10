@@ -1,5 +1,17 @@
 # Implementation plan
 
+## Enhancement pass: all 113 projects
+
+The user explicitly selected all 113, including the completed OCR projects. Build useful, executable enhancements by problem family: evidence retrieval and provenance, durable agent jobs and tool validation, scoped/expiring memory, objective evaluation, training-data/reward checks, transcript/OCR quality, structured extraction validation and artifact integrity. Project-specific profiles and scenarios bind the reusable implementation to each project's learning objective.
+
+1. Establish native OCR test baselines and preserve journals plus unrelated dirty files. Audit original source for directly verifiable defects.
+2. Implement standard-library enhancement primitives in small tested modules. Add per-project commands, fixed scenario suites, preflight checks and CPU-lab packaging. Do not claim these replace the original AI integrations.
+3. Apply targeted source fixes with regression tests (unsafe model-output parsing/calculation, bounded HTTP calls and observed runtime defects). Record changed source hashes and before/after explanations.
+4. Exercise every project's scenario suite in a separate process. Add OCR character/word/region evaluation to the completed projects and run their native tests and applicable lint checks.
+5. Validate all source, learning contracts, package/profile coverage and preserved journals. Write a coverage/result matrix and commit scoped changes on main in the parent and affected OCR repositories.
+
+Success means a verified executable enhancement for every project, not 113 independently audited production systems. Live API/GPU benchmarks and actual infrastructure deployment remain separate evidence.
+
 The initial AI collection is complete as a source-learning port. The user's follow-up authorizes UI category projects and requires the learning aspect throughout. Work stays on main. Four completed OCR folders now exist locally and must be preserved.
 
 ## Follow-up: include UI and preserve learning
@@ -19,3 +31,7 @@ The initial AI collection is complete as a source-learning port. The user's foll
 Each project is an independent slice; catalog status distinguishes source analysis from live model evaluation. Verification runs without importing untrusted upstream code. API/GPU runs and real deployment are separate evidence categories.
 
 Risks: upstream source may be incomplete, dependency constraints old or conflicting, examples may contain credentials or personal outputs, UI code may be mixed with AI logic, and tutorials may depend on paid services. Mitigate through explicit source evidence, output clearing, isolated manifests, headless entry-point classification and honest validation status.
+
+## All-113 enhancement results
+
+Implemented per-project launchers, source-specific profiles and examples, shared CPU operations, preflight diagnostics, learning/production guides and CPU-only container packaging. All 113 launchers passed 630 scenarios; collection suites passed 75 tests with one Windows symlink-permission skip; four native OCR suites passed 130 tests. Source/document/learning verification passed. All 109 existing journals and two unrelated user files are byte-identical. Native OCR additions were committed independently on main; parent changes are staged only from known task paths. Docker daemon, live provider, GPU training and production deployment remain unverified. See docs/ENHANCEMENT_REVIEW.md and docs/ENHANCEMENT_REPORT.md.

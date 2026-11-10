@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "deepseek-thinking-ui",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Parse streamed model traces and final answers without dropping boundary text.",
+  "mechanism": "The source's two-pass think-tag parser can lose text after a closing tag; the new incremental parser retains delimiter prefixes and final-answer suffixes.",
+  "experiment": "Split both think delimiters at every character boundary and require the same assembled answer; evaluate task correctness separately.",
+  "production": "Keep provider parsing in a tested adapter, bound generation and expose cancellation/error/completion as distinct states.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for deepseek-thinking-ui"
+  }
+}

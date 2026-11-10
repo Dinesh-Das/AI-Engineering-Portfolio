@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "sdv-mcp",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose local synthetic-data training, generation and statistical evaluation through MCP.",
+  "mechanism": "Server tools wrap SDV generation, quality evaluation and visualization of tabular data.",
+  "experiment": "Hold back real rows, compare statistical fidelity and test whether rare rows are memorized in generated output.",
+  "production": "Treat source data as sensitive, isolate training jobs and evaluate privacy risk separately from distribution similarity.",
+  "fixture": {
+    "tool_name": "sdv_mcp_calculate"
+  }
+}

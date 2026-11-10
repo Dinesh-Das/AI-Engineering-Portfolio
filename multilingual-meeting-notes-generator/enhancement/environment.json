@@ -1,0 +1,21 @@
+{
+  "project_id": "multilingual-meeting-notes-generator",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "assemblyai>=0.21.0",
+    "openai>=1.99.9",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "streamlit>=1.49.1"
+  ],
+  "python_requirements": [
+    ">=3.9"
+  ],
+  "environment_names": [
+    "ASSEMBLYAI_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

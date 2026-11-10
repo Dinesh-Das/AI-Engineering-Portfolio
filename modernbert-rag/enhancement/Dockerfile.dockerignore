@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!modernbert-rag/
+!modernbert-rag/enhance.py
+!modernbert-rag/enhancement/
+!modernbert-rag/enhancement/profile.json

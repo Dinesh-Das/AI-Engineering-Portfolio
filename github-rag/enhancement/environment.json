@@ -1,0 +1,21 @@
+{
+  "project_id": "github-rag",
+  "manifests": [
+    "requirements.txt"
+  ],
+  "requirements": [
+    "gitingest",
+    "huggingface-hub",
+    "llama-index",
+    "llama-index-agent-openai",
+    "llama-index-embeddings-huggingface",
+    "llama-index-llms-ollama",
+    "llama-index-llms-openai",
+    "pandas",
+    "python-dotenv",
+    "streamlit"
+  ],
+  "python_requirements": [],
+  "environment_names": [],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [order_db.py](order_db.py) | TrackingEvent, Order, OrderManagementAPI, latest_event, get_order | dataclasses, datetime, pathlib, sqlite3 |
 | [support_flow.py](support_flow.py) | extract_order_id, SupportState, SupportFlow, handle_order_lookup, handle_return_policy, handle_research | crewai, crewai_tools, dotenv, logging, order_db, os, re, uuid |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [frontend/app/api/copilotkit/route.ts](frontend/app/api/copilotkit/route.ts) | backend/configuration source; inspect directly | .ts |
 | [frontend/app/chat.tsx](frontend/app/chat.tsx) | backend/configuration source; inspect directly | .tsx |
 | [frontend/app/globals.css](frontend/app/globals.css) | backend/configuration source; inspect directly | .css |
@@ -47,6 +48,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [support_flow.py](support_flow.py) | 113 | handle_order_lookup | Status, tracking, or delivery date for an order. |
 | [support_flow.py](support_flow.py) | 159 | handle_return_policy | Returns, refunds, exchanges, and damaged item claims. |
 | [support_flow.py](support_flow.py) | 209 | handle_research | Live carrier delays, weather disruptions, current external conditions. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -55,7 +57,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `openrouter/openai/gpt-4o`
 - `openrouter/openai/gpt-4o-mini`
 
-Detected import roots: `ag_ui_crewai`, `crewai`, `crewai_tools`, `dataclasses`, `datetime`, `dotenv`, `fastapi`, `logging`, `order_db`, `os`, `pathlib`, `re`, `sqlite3`, `support_flow`, `uuid`
+Detected import roots: `ag_ui_crewai`, `crewai`, `crewai_tools`, `dataclasses`, `datetime`, `dotenv`, `fastapi`, `importlib`, `logging`, `order_db`, `os`, `pathlib`, `re`, `sqlite3`, `support_flow`, `sys`, `uuid`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml), [frontend/package.json](frontend/package.json)
 
@@ -94,6 +96,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [frontend/postcss.config.mjs](frontend/postcss.config.mjs) | Restored frontend source/asset after UI scope was authorized. |
 | [frontend/README.md](frontend/README.md) | Restored frontend source/asset after UI scope was authorized. |
 | [frontend/tsconfig.json](frontend/tsconfig.json) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

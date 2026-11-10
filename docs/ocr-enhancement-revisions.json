@@ -1,0 +1,29 @@
+[
+  {
+    "project": "Latex-OCR-Lama",
+    "before": "7daccf4d26200e9d0ac7dfd12c2940dae1092ea1",
+    "enhancement_commit": "026cf1630c1ae17c53e6a58f26cbbcffb4e5a687",
+    "remaining_changes": [
+      " M docs/verification.md",
+      " M scripts/verify_browser.py"
+    ]
+  },
+  {
+    "project": "gemma3-ocr",
+    "before": "7c67c4aea7abeaf0134ff1c0fa7c20ebed4c6ea7",
+    "enhancement_commit": "f88a7f7b76591de15ff11808a010689b9239c283",
+    "remaining_changes": []
+  },
+  {
+    "project": "llama-ocr",
+    "before": "f2c601a8c4241b7253f0eaabb85e7d2ffb0a0317",
+    "enhancement_commit": "32ad02f38a833504f21c5d683ac4e4c8cbbe11ed",
+    "remaining_changes": []
+  },
+  {
+    "project": "qwen-2.5VL-ocr",
+    "before": "142ecfad2499eabacf42a53576d3ecac3337e974",
+    "enhancement_commit": "5ef10e3cf907c7d04d1e568eea6e6e98e20dfae3",
+    "remaining_changes": []
+  }
+]

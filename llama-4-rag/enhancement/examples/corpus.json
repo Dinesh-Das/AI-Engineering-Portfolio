@@ -1,0 +1,20 @@
+[
+  {
+    "id": "support",
+    "tenant": "learner",
+    "source": "llama-4-rag/synthetic-policy-v1",
+    "text": "llama-4-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+  },
+  {
+    "id": "distractor",
+    "tenant": "learner",
+    "source": "llama-4-rag/synthetic-other",
+    "text": "A synthetic unrelated recipe uses water and flour."
+  },
+  {
+    "id": "private",
+    "tenant": "other",
+    "source": "private-policy",
+    "text": "confidential retention is ninety days."
+  }
+]

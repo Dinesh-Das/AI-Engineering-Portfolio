@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [train_yolo26_object_detection.ipynb#cell-16](train_yolo26_object_detection.ipynb#cell-16) | annotate | PIL, supervision |
 | [train_yolo26_object_detection.ipynb#cell-34](train_yolo26_object_detection.ipynb#cell-34) | annotate | PIL, supervision |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -29,6 +30,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | --- | --- | --- | --- |
 | [train_yolo26_object_detection.ipynb#cell-16](train_yolo26_object_detection.ipynb#cell-16) | 4 | annotate | Annotate an image with detections. |
 | [train_yolo26_object_detection.ipynb#cell-34](train_yolo26_object_detection.ipynb#cell-34) | 4 | annotate | Annotate an image with detections. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -36,7 +38,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `IPython`, `PIL`, `comet_ml`, `dotenv`, `matplotlib`, `os`, `random`, `roboflow`, `supervision`, `ultralytics`
+Detected import roots: `IPython`, `PIL`, `comet_ml`, `dotenv`, `importlib`, `matplotlib`, `os`, `pathlib`, `random`, `roboflow`, `supervision`, `sys`, `ultralytics`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -55,6 +57,16 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [train_yolo26_object_detection.ipynb](train_yolo26_object_detection.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/reward.json](enhancement/examples/reward.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/splits.json](enhancement/examples/splits.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/distill.json](enhancement/examples/distill.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

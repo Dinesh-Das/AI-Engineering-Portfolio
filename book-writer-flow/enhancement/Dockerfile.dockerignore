@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!book-writer-flow/
+!book-writer-flow/enhance.py
+!book-writer-flow/enhancement/
+!book-writer-flow/enhancement/profile.json

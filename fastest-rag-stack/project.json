@@ -17,6 +17,11 @@
       "path": "sambanova.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -768,6 +773,38 @@
         "ui": false,
         "syntax_error": null,
         "notebook_magics": false
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -784,14 +821,17 @@
       "base64",
       "dotenv",
       "gc",
+      "importlib",
       "llama_index",
       "nest_asyncio",
       "openai",
       "os",
+      "pathlib",
       "qdrant_client",
       "rag_code",
       "random",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "uuid"
@@ -815,6 +855,11 @@
       {
         "path": "sambanova.ipynb",
         "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
         "ui": false
       }
     ],
@@ -840,7 +885,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 30
+    "plain_python_units_checked": 31
   },
   "category": "retrieval",
   "purpose": "Combine quantized Qdrant retrieval with SambaNova-hosted generation.",
@@ -863,5 +908,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "2cb2c5f8b9e5de4abd0ad8c350e46ab9051157965c2b57f59fbc517fb2831720",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "b79f7bd46f7f454ff55ff8d4c7433b1e763e9d24ec0a5ce9468fd779bdc9d4a3",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "18f9a265de93164787adaf90d9f0edbc385271a61061dc704a4472bd541754c9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "484d6e8a151982290a42d6ca69ee415ba2721cf48026b6878bbddb7bc979c2a5",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "bb0e0a580850a359e9edcfd49b95ab12c1a57417c11f40c765a28a92d3cde0a1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "b9899e461415a6d449365e2e87bd49b801e7b42ee262cf038df199340989bef8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

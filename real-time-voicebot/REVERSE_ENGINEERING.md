@@ -19,6 +19,7 @@ The following table is extracted from this project's actual retained files. Note
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [app.py](app.py) | AI_Assistant, stop_transcription, on_open, on_error, on_close, on_data, start_transcription, generate_ai_response, generate_audio | assemblyai, elevenlabs, openai |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -35,6 +36,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [app.py](app.py) | 45 | start_transcription | FunctionDef |
 | [app.py](app.py) | 59 | generate_ai_response | FunctionDef |
 | [app.py](app.py) | 79 | generate_audio | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -42,7 +44,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-3.5-turbo`
 
-Detected import roots: `assemblyai`, `elevenlabs`, `openai`
+Detected import roots: `assemblyai`, `elevenlabs`, `importlib`, `openai`, `pathlib`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -59,6 +61,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/quality.json](enhancement/examples/quality.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

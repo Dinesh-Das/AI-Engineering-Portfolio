@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [app.py](app.py) | process_thinking_stream, display_message, display_assistant_message, display_chat_history, get_chat_model, handle_user_input, main | UI surface |
 | [learning_ui/protocol.py](learning_ui/protocol.py) | NoRedirect, local_opener, ReasoningSplitter, validate_request, loopback_base, stream_ollama, redirect_request, feed, finish | base64, binascii, json, math, re, time, urllib |
 | [learning_ui/server.py](learning_ui/server.py) | fixture_chunks, make_server, main, Handler, log_message, headers_for, json_response, local_origin, do_GET, event, do_POST | argparse, http, json, pathlib, protocol, threading, time, urllib |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [learning_ui/static/app.js](learning_ui/static/app.js) | backend/configuration source; inspect directly | .js |
 | [learning_ui/static/index.html](learning_ui/static/index.html) | backend/configuration source; inspect directly | .html |
 | [learning_ui/static/style.css](learning_ui/static/style.css) | backend/configuration source; inspect directly | .css |
@@ -58,6 +59,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [learning_ui/server.py](learning_ui/server.py) | 63 | do_GET | FunctionDef |
 | [learning_ui/server.py](learning_ui/server.py) | 87 | event | FunctionDef |
 | [learning_ui/server.py](learning_ui/server.py) | 91 | do_POST | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -65,7 +67,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-oss:20b`
 
-Detected import roots: `argparse`, `base64`, `binascii`, `http`, `json`, `learning_ui`, `math`, `ollama`, `pathlib`, `protocol`, `re`, `streamlit`, `threading`, `time`, `urllib`
+Detected import roots: `argparse`, `base64`, `binascii`, `http`, `importlib`, `json`, `learning_ui`, `math`, `ollama`, `pathlib`, `protocol`, `re`, `streamlit`, `sys`, `threading`, `time`, `urllib`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -90,6 +92,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [learning_ui/static/style.css](learning_ui/static/style.css) | Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments. |
 | [lab.json](lab.json) | Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments. |
 | [learning_app.py](learning_app.py) | Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/events.json](enhancement/examples/events.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

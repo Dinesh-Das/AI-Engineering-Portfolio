@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -415,6 +420,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -432,13 +469,16 @@
       "code_ingestion",
       "dotenv",
       "gitingest",
+      "importlib",
       "litellm",
       "model_service",
       "opik",
       "os",
       "pandas",
+      "pathlib",
       "plotly",
       "streamlit",
+      "sys",
       "typing"
     ],
     "models": [],
@@ -447,6 +487,11 @@
         "path": "app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -458,7 +503,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 4
+    "plain_python_units_checked": 5
   },
   "category": "evaluation",
   "purpose": "Benchmark several code-generation providers against common repository context.",
@@ -481,5 +526,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "82815674690cb63dcb9f402535eb93a26b878a97d4d1d097f0539dc27b980387",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "f993bde6bb375a9507e9cfbfe6c3e4cd6b2b47b48fe3d15231727f25586315b7",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "4a5c0cfb214eaa434600f0b8c0e4a449c4eda38395112bddd3a77d0dff364895",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "5b0beacc56950a9fbaa0d1b2cd6d75cf4c55ab2b94ad9df803c106f55071f493",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "1d9cae1f5fefae722872a837bb2b5cfc0316943ef2b410458d81ee0cf89aa0fc",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/pairs.json",
+      "local_sha256": "85cbc41191a90f9810b9bd954af19cc2d70a920b3f01f9391250b3a1607ea6ad",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "evaluation"
   }
 }

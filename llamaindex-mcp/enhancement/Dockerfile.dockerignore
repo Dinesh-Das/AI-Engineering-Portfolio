@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!llamaindex-mcp/
+!llamaindex-mcp/enhance.py
+!llamaindex-mcp/enhancement/
+!llamaindex-mcp/enhancement/profile.json

@@ -23,6 +23,7 @@ The following table is extracted from this project's actual retained files. Note
 | [Opik for LLM evaluation.ipynb#cell-8](Opik%20for%20LLM%20evaluation.ipynb#cell-8) | top-level workflow |  |
 | [Opik for LLM evaluation.ipynb#cell-12](Opik%20for%20LLM%20evaluation.ipynb#cell-12) | my_llm_application, evaluation_task | opik |
 | [Opik for LLM evaluation.ipynb#cell-13](Opik%20for%20LLM%20evaluation.ipynb#cell-13) | LLMJudgeMetric, score | json, openai, opik, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -45,6 +46,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [Opik for LLM evaluation.ipynb#cell-12](Opik%20for%20LLM%20evaluation.ipynb#cell-12) | 8 | evaluation_task | FunctionDef |
 | [Opik for LLM evaluation.ipynb#cell-13](Opik%20for%20LLM%20evaluation.ipynb#cell-13) | 6 | LLMJudgeMetric | ClassDef |
 | [Opik for LLM evaluation.ipynb#cell-13](Opik%20for%20LLM%20evaluation.ipynb#cell-13) | 34 | score | Score the output of an LLM. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -56,7 +58,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `claude-3-7-sonnet-20250219`
 - `o3-mini`
 
-Detected import roots: `IPython`, `dotenv`, `gc`, `glob`, `json`, `llama_index`, `nest_asyncio`, `openai`, `opik`, `os`, `qdrant_client`, `re`, `streamlit`, `subprocess`, `textwrap`, `typing`, `uuid`
+Detected import roots: `IPython`, `dotenv`, `gc`, `glob`, `importlib`, `json`, `llama_index`, `nest_asyncio`, `openai`, `opik`, `os`, `pathlib`, `qdrant_client`, `re`, `streamlit`, `subprocess`, `sys`, `textwrap`, `typing`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -77,6 +79,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [data_prep.ipynb.invalid.txt](data_prep.ipynb.invalid.txt) | Empty/invalid upstream notebook quarantined; no executable lesson was present. |
 | [Opik for LLM evaluation.ipynb](Opik%20for%20LLM%20evaluation.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/pairs.json](enhancement/examples/pairs.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

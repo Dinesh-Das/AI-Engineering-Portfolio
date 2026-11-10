@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!mindsdb-mcp/
+!mindsdb-mcp/enhance.py
+!mindsdb-mcp/enhancement/
+!mindsdb-mcp/enhancement/profile.json

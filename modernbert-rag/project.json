@@ -2,7 +2,13 @@
   "id": "modernbert-rag",
   "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
   "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/modernbert-rag",
-  "entries": [],
+  "entries": [
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
   "files": [
     {
       "upstream_path": "rag-modernbert.py",
@@ -119,6 +125,38 @@
         ],
         "ui": true,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -129,10 +167,13 @@
       "IPython",
       "base64",
       "gc",
+      "importlib",
       "llama_index",
       "os",
+      "pathlib",
       "random",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "uuid"
@@ -141,7 +182,13 @@
       "llama3.2",
       "nomic-ai/modernbert-embed-base"
     ],
-    "entries": [],
+    "entries": [
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
     "findings": [
       {
         "rule": "trust_remote_code",
@@ -158,7 +205,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 1
+    "plain_python_units_checked": 2
   },
   "category": "rag",
   "purpose": "Explore ModernBERT embeddings in a local RAG application.",
@@ -176,5 +223,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "1b536b2f8e99715fadc1b9a40f2ba51baf79a39303e59dae242048dc8c0c17ca",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "ab32c97e831227b97405deb86952d47a94174b387cdbb8f820039fd6e0b7e805",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "a1f56ab9bd0706c23820fdb442cc63a3720626058ab5bdcc4b5f6f0daba28fb7",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "dafe0750b9fa9498062cb69873b33474a94c30269b9e28df1a6c7f0f12652e56",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "4af3ce7ab0226fc3619c5d5e2068f0f8b572b62a6c02b7a0c3d0197d0d7f07f8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "21561b5373732eb5c2d6db318517e200bad83678fd65596faba519ffe66ada80",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

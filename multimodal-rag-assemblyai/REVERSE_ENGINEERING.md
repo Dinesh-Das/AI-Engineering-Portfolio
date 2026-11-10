@@ -19,6 +19,7 @@ The following table is extracted from this project's actual retained files. Note
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [main.py](main.py) | DataIngestionState, QueryState, get_milvus_connection, get_collection, transcribe_audio_file, search_vector_database, format_search_results, SearchKnowledgeBaseTool, DataIngestionFlow, MultimodalRAGFlow, record_audio, process_query | PyPDF2, assemblyai, config, crewai, dataclasses, glob, logging, openai |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [docker-compose.yml](docker-compose.yml) | backend/configuration source; inspect directly | .yml |
 
 ## Function and class walkthrough
@@ -49,6 +50,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [main.py](main.py) | 327 | transcribe_audio_if_needed | Transcribe audio if query is audio-based |
 | [main.py](main.py) | 340 | search_knowledge_base | Search the vector database for relevant information |
 | [main.py](main.py) | 356 | generate_response | Generate final response using CrewAI agents |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -56,7 +58,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `PyPDF2`, `assemblyai`, `config`, `crewai`, `dataclasses`, `dotenv`, `glob`, `logging`, `openai`, `os`, `pathlib`, `pymilvus`, `sounddevice`, `soundfile`, `tempfile`, `traceback`, `typing`
+Detected import roots: `PyPDF2`, `assemblyai`, `config`, `crewai`, `dataclasses`, `dotenv`, `glob`, `importlib`, `logging`, `openai`, `os`, `pathlib`, `pymilvus`, `sounddevice`, `soundfile`, `sys`, `tempfile`, `traceback`, `typing`
 
 Retained dependency manifests: [requirements.txt](requirements.txt)
 
@@ -81,6 +83,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

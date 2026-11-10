@@ -187,9 +187,10 @@ def project_docs(project, note, category):
     project['validation']['plain_python_units_checked'] = len(report['units'])
     headless = [e for e in report['entries'] if not e['ui']]
     recipe = note['category'] == 'recipe'
+    upstream_python = any(Path(record['path']).suffix in {'.py', '.ipynb'} for record in project['files'])
     source_kind = ('Integration/deployment guide; no vendored application runtime.' if recipe else
                    'Graph schema and event fixtures; no standalone application runtime.' if project['id'] == 'omnigraph-multi-agent' else
-                   'TypeScript AI application and its retained interface/configuration source.' if not report['units'] else
+                   'TypeScript AI application and its retained interface/configuration source; the added Python extension is a separate CPU learning lab.' if not upstream_python else
                    'AI implementation with Python source and/or notebooks; retained UI source is available for study and explicit launch.')
     env = '# Empty values only. Fill the subset used by your selected implementation.\n# See README.md and original manifests; this is not a list of mandatory secrets.\n'
     env += '\n'.join(name + '=' for name in report['environment']) + '\n'
@@ -228,6 +229,7 @@ def project_docs(project, note, category):
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
 - [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
+- [Executable enhancements](ENHANCEMENTS.md): project-specific CPU contracts, negative/recovery checks, real-data commands and deployment tradeoffs; run `python enhance.py check`.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup

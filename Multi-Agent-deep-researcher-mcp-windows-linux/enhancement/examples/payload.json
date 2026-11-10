@@ -1,0 +1,5 @@
+{
+  "project": "Multi-Agent-deep-researcher-mcp-windows-linux",
+  "task": "Expose a local multi-agent research crew through MCP.",
+  "synthetic": true
+}

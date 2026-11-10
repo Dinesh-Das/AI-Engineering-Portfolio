@@ -1,0 +1,26 @@
+{
+  "project_id": "groundX-doc-pipeline",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "PyMuPDF>=1.23.0",
+    "beam-client>=0.1.0",
+    "groundx>=0.1.0",
+    "openai>=1.99.9",
+    "opik>=1.8.20",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "streamlit>=1.28.0"
+  ],
+  "python_requirements": [
+    ">=3.8.1"
+  ],
+  "environment_names": [
+    "COMET_API_KEY",
+    "GROUNDX_API_KEY",
+    "OPENAI_API_KEY",
+    "SAMPLE_FILE_NAME"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

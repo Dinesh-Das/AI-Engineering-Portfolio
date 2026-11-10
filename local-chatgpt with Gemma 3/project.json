@@ -17,6 +17,11 @@
       "path": "learning_app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -453,6 +458,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -471,6 +508,7 @@
       "binascii",
       "chainlit",
       "http",
+      "importlib",
       "json",
       "learning_ui",
       "math",
@@ -478,6 +516,7 @@
       "pathlib",
       "protocol",
       "re",
+      "sys",
       "threading",
       "time",
       "urllib"
@@ -501,6 +540,11 @@
         "path": "learning_app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -512,7 +556,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 8
+    "plain_python_units_checked": 9
   },
   "local_additions": [
     {
@@ -570,6 +614,55 @@
       "changes": [
         "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "5cafbfc56a051e8a8828df87fe4b9b2cf1fd4d3c2033cc24b76c65990a22cdc9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "b9c18895293e72adf5ac7eee6942d776f58a7d8e31e73d0092b7b2fc8f11e02d",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "c75ba4f2c84835898f7af1e501f6894490660b8f4972bf199490f56c1d3b9e4c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "645d9094b0bcf25929c9654c535084f1cc762908b8950c39a95b8754cec37761",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "b7cbd06823dca7e3777e530b1ed199ac2c9f4ee9051a37ef3f92667c2f7f4c89",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/events.json",
+      "local_sha256": "999710a887df7ba1141e05604aa9bd5559aa6cf82c6ef1cde4cfb48ccb6ca93e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "learning_ui": {
@@ -604,5 +697,10 @@
     ]
   },
   "category": "interfaces",
-  "purpose": "Study multimodal follow-ups with a compact local Gemma model."
+  "purpose": "Study multimodal follow-ups with a compact local Gemma model.",
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "streaming"
+  }
 }

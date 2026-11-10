@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "local-chatgpt",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Build and inspect a local image-aware conversation with Llama vision.",
+  "mechanism": "The original Chainlit session calls Ollama synchronously and replays characters; the learning version uses bounded base64 image requests and actual incremental REST output.",
+  "experiment": "Ask the same question with and without an image in fresh conversations; measure grounded visual details and real first-token latency.",
+  "production": "Separate browser sessions, image validation and a queued model worker; preserve image/context provenance and enforce memory budgets.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for local-chatgpt"
+  }
+}

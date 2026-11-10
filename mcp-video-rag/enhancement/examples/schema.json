@@ -1,0 +1,17 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "expression": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "expression"
+    ],
+    "additionalProperties": false
+  },
+  "value": {
+    "expression": "37*3+19*2"
+  }
+}

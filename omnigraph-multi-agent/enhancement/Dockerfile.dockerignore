@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!omnigraph-multi-agent/
+!omnigraph-multi-agent/enhance.py
+!omnigraph-multi-agent/enhancement/
+!omnigraph-multi-agent/enhancement/profile.json

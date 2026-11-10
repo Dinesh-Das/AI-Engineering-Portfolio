@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!simple-rag-workflow/
+!simple-rag-workflow/enhance.py
+!simple-rag-workflow/enhancement/
+!simple-rag-workflow/enhancement/profile.json

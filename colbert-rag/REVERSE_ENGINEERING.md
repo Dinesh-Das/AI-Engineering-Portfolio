@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [colbert.py](colbert.py) | compute_relevance_scores, test_compute_relevance_scores | torch |
 | [maxsim.py](maxsim.py) | score_document, rank_documents | collections, math |
 | [tests/test_maxsim.py](tests/test_maxsim.py) | MaxSimTests, test_token_maxima_are_summed, test_padding_cannot_outscore_negative_real_tokens, test_top_k_is_respected_with_stable_ties, test_bad_shapes_empty_masks_and_nonfinite_values_fail | importlib, maxsim, pathlib, sys, unittest |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -37,6 +38,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [tests/test_maxsim.py](tests/test_maxsim.py) | 14 | test_padding_cannot_outscore_negative_real_tokens | FunctionDef |
 | [tests/test_maxsim.py](tests/test_maxsim.py) | 17 | test_top_k_is_respected_with_stable_ties | FunctionDef |
 | [tests/test_maxsim.py](tests/test_maxsim.py) | 20 | test_bad_shapes_empty_masks_and_nonfinite_values_fail | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -62,6 +64,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [maxsim.py](maxsim.py) | Added tested CPU MaxSim scoring with padding masks, finite shape validation and top-k ranking. |
 | [tests/test_maxsim.py](tests/test_maxsim.py) | Added regression tests for negative-token padding, shape validation, stable ties and top-k. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

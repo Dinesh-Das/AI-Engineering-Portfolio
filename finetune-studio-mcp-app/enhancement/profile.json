@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "finetune-studio-mcp-app",
+  "family": "training",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs.",
+  "mechanism": "The TypeScript server validates training configuration and orchestrates remote jobs; the restored studio widget consumes those typed tools.",
+  "experiment": "Submit invalid dataset/model pairs and excessive resource requests; verify validation occurs before billable work.",
+  "production": "Keep training credentials server-side, enforce per-user GPU quotas and persist job IDs so status checks survive restarts.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "finetune-studio-mcp-app",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

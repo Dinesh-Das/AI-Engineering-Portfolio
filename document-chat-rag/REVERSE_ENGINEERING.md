@@ -23,6 +23,7 @@ The following table is extracted from this project's actual retained files. Note
 | [main_self_hosted_vectorDB.ipynb#cell-7](main_self_hosted_vectorDB.ipynb#cell-7) | top-level workflow |  |
 | [rag_demo.ipynb#cell-5](rag_demo.ipynb#cell-5) | create_index |  |
 | [rag_demo.ipynb#cell-6](rag_demo.ipynb#cell-6) | top-level workflow |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -35,6 +36,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [app.py](app.py) | 41 | display_pdf | FunctionDef |
 | [main_self_hosted_vectorDB.ipynb#cell-5](main_self_hosted_vectorDB.ipynb#cell-5) | 8 | create_index | FunctionDef |
 | [rag_demo.ipynb#cell-5](rag_demo.ipynb#cell-5) | 8 | create_index | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -45,7 +47,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `llama3.2:1b`
 - `llama3.3`
 
-Detected import roots: `IPython`, `base64`, `dotenv`, `gc`, `llama_index`, `nest_asyncio`, `os`, `qdrant_client`, `random`, `streamlit`, `tempfile`, `time`, `uuid`
+Detected import roots: `IPython`, `base64`, `dotenv`, `gc`, `importlib`, `llama_index`, `nest_asyncio`, `os`, `pathlib`, `qdrant_client`, `random`, `streamlit`, `sys`, `tempfile`, `time`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -64,6 +66,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [main_self_hosted_vectorDB.ipynb](main_self_hosted_vectorDB.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [rag_demo.ipynb](rag_demo.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

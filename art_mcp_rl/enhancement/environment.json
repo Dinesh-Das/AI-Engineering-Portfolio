@@ -1,0 +1,12 @@
+{
+  "project_id": "art_mcp_rl",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "OPENROUTER_API_KEY",
+    "UNSLOTH_FORCE_FLOAT16",
+    "WANDB_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

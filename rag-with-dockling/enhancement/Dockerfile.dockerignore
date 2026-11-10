@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!rag-with-dockling/
+!rag-with-dockling/enhance.py
+!rag-with-dockling/enhancement/
+!rag-with-dockling/enhancement/profile.json

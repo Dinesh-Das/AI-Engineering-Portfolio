@@ -231,6 +231,7 @@
       "imports": [
         "config",
         "memory",
+        "safe_tools",
         "tools"
       ],
       "environment": [],
@@ -238,7 +239,7 @@
       "symbols": [
         {
           "name": "tool_selector",
-          "line": 5,
+          "line": 6,
           "kind": "FunctionDef",
           "doc": ""
         },
@@ -258,7 +259,6 @@
       "calls": [
         "any",
         "calculator_tool",
-        "eval",
         "get_llm_response",
         "llm_input.append",
         "llm_input.extend",
@@ -266,21 +266,14 @@
         "messages.extend",
         "msg.get",
         "openai_client.chat.completions.create",
+        "parse_tool_selection",
         "print",
         "retrieve_session_history",
         "store_chat_message",
-        "tool_call.get",
         "tool_selector",
         "vector_search_tool"
       ],
-      "findings": [
-        {
-          "rule": "code-execution",
-          "path": "planning.py",
-          "line": 41,
-          "message": "Review inputs to eval; untrusted data can execute code."
-        }
-      ],
+      "findings": [],
       "ui": false,
       "syntax_error": null
     },
@@ -288,39 +281,115 @@
       "path": "tools.py",
       "imports": [
         "config",
-        "ingest_data"
+        "ingest_data",
+        "safe_tools"
       ],
       "environment": [],
       "models": [],
       "symbols": [
         {
           "name": "vector_search_tool",
-          "line": 4,
+          "line": 5,
           "kind": "FunctionDef",
           "doc": ""
         },
         {
           "name": "calculator_tool",
-          "line": 32,
+          "line": 33,
           "kind": "FunctionDef",
           "doc": ""
         }
       ],
       "calls": [
+        "arithmetic",
         "array_of_results.append",
-        "eval",
         "get_embedding",
         "str",
         "vector_collection.aggregate"
       ],
-      "findings": [
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "safe_tools.py",
+      "imports": [
+        "ast",
+        "json",
+        "math",
+        "operator"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
         {
-          "rule": "code-execution",
-          "path": "tools.py",
-          "line": 34,
-          "message": "Review inputs to eval; untrusted data can execute code."
+          "name": "arithmetic",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "parse_tool_selection",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "visit",
+          "line": 28,
+          "kind": "FunctionDef",
+          "doc": ""
         }
       ],
+      "calls": [
+        "",
+        ".strip",
+        "ValueError",
+        "abs",
+        "ast.parse",
+        "ast.walk",
+        "isinstance",
+        "json.loads",
+        "len",
+        "math.isfinite",
+        "set",
+        "sum",
+        "type",
+        "visit"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
       "ui": false,
       "syntax_error": null
     }
@@ -336,19 +405,26 @@
     "VOYAGE_API_KEY"
   ],
   "imports": [
+    "ast",
     "base64",
     "config",
     "datetime",
     "dotenv",
+    "importlib",
     "ingest_data",
     "io",
+    "json",
     "langchain_community",
     "langchain_text_splitters",
+    "math",
     "memory",
     "openai",
+    "operator",
     "os",
+    "pathlib",
     "planning",
     "pymongo",
+    "safe_tools",
     "streamlit",
     "sys",
     "time",
@@ -371,21 +447,13 @@
       "path": "main.py",
       "kind": "python",
       "ui": false
-    }
-  ],
-  "findings": [
-    {
-      "rule": "code-execution",
-      "path": "planning.py",
-      "line": 41,
-      "message": "Review inputs to eval; untrusted data can execute code."
     },
     {
-      "rule": "code-execution",
-      "path": "tools.py",
-      "line": 34,
-      "message": "Review inputs to eval; untrusted data can execute code."
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
+  "findings": [],
   "syntax_errors": []
 }

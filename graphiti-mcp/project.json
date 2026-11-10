@@ -2,7 +2,13 @@
   "id": "graphiti-mcp",
   "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
   "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/graphiti-mcp",
-  "entries": [],
+  "entries": [
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
   "files": [
     {
       "upstream_path": "README.md",
@@ -16,14 +22,57 @@
   ],
   "omitted": [],
   "analysis": {
-    "units": [],
+    "units": [
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
     "manifests": [],
     "notebooks": [],
     "other_code": [],
     "environment": [],
-    "imports": [],
+    "imports": [
+      "importlib",
+      "pathlib",
+      "sys"
+    ],
     "models": [],
-    "entries": [],
+    "entries": [
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
     "findings": [],
     "syntax_errors": []
   },
@@ -33,7 +82,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 0
+    "plain_python_units_checked": 1
   },
   "category": "recipe",
   "purpose": "Study a documented integration for persistent graph memory through MCP.",
@@ -51,5 +100,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "ebaf4a6b50995aae1a3c29b166f31422cbac8cb6188ff2dbf82e1dc544e3ab25",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "ef7f028a1f58f64ba5b8fe09b1facfc94c72bae06af9d3497cc6008f24b6c227",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "d88aeee14fd2c8fde0bb69fe18e466ee24e0c73c9e2fa8737f4e18e593cc968c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "b4d71dd528363c2a72bbd79a00bb9ab5474e2421737e2949da605653f37bc0fa",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "1224e6cd3735b6ea1f1128136795b9ee3085dad331cff4a340c3c766ff257961",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/value.json",
+      "local_sha256": "ea5fb4c0af18749cc224e961b6d2196b9aaf3b4354d45ff1b87925ce77b58108",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "memory"
   }
 }

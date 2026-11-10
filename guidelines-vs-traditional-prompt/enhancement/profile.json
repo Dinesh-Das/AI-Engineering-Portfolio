@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "guidelines-vs-traditional-prompt",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare structured conversational guidelines with a traditional instruction prompt.",
+  "mechanism": "Parlant tool-backed policy guidance is compared with an ordinary OpenAI prompt over the same domain questions.",
+  "experiment": "Add conflicting user instructions and score policy adherence, unsupported advice and unnecessary tool calls.",
+  "production": "Version guidelines as reviewed business policy and audit the tool evidence behind consequential recommendations.",
+  "fixture": {
+    "payload": {
+      "project": "guidelines-vs-traditional-prompt",
+      "task": "Compare structured conversational guidelines with a traditional instruction prompt.",
+      "synthetic": true
+    }
+  }
+}

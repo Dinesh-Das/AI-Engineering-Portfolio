@@ -12,6 +12,11 @@
       "path": "src/document_processing/doc_parser.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -1379,6 +1384,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -1401,6 +1438,7 @@
       "crewai",
       "dotenv",
       "firecrawl",
+      "importlib",
       "json",
       "openai",
       "os",
@@ -1410,6 +1448,7 @@
       "requests",
       "src",
       "streamlit",
+      "sys",
       "tasks",
       "tempfile",
       "tensorlake",
@@ -1432,6 +1471,11 @@
         "path": "src/document_processing/doc_parser.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -1443,7 +1487,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 15
+    "plain_python_units_checked": 16
   },
   "category": "memory",
   "purpose": "Coordinate multi-source research with parsing, retrieval and long-term context.",
@@ -1466,5 +1510,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "d0d6e324ef023fbf509f605b9d871e202d978f2cbec87037121cc3d809f4680c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "6939de3b9cef1809eb9988f4213a788c802d6666e555e70404ac5bffd4c4125f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "c954af2c7e1c02c3b3033077205d56f7223ec5ea8d80f31422187a4b3016a291",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "1a88adad55ab2dc0d4045159e0dd1ec73f7649bbad666db58a6579f239f9017c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "fef4063fac541bc413a03f4a0f9b4df1f4386c313f77cb9086fdc50ee7c5948e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/value.json",
+      "local_sha256": "ea5fb4c0af18749cc224e961b6d2196b9aaf3b4354d45ff1b87925ce77b58108",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "memory"
   }
 }

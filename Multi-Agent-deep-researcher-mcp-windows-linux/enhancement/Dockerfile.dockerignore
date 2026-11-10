@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!Multi-Agent-deep-researcher-mcp-windows-linux/
+!Multi-Agent-deep-researcher-mcp-windows-linux/enhance.py
+!Multi-Agent-deep-researcher-mcp-windows-linux/enhancement/
+!Multi-Agent-deep-researcher-mcp-windows-linux/enhancement/profile.json

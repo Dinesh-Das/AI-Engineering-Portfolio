@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!multi-modal-rag/
+!multi-modal-rag/enhance.py
+!multi-modal-rag/enhancement/
+!multi-modal-rag/enhancement/profile.json

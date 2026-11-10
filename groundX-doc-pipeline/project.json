@@ -17,6 +17,11 @@
       "path": "server.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -63,8 +68,10 @@
       "upstream_path": "groundx_utils.py",
       "path": "groundx_utils.py",
       "upstream_sha256": "51f0c25a1b8c1d76e1661f321e6837c0c236a4df7ad564fedc258bc384142df0",
-      "local_sha256": "51f0c25a1b8c1d76e1661f321e6837c0c236a4df7ad564fedc258bc384142df0",
-      "changes": []
+      "local_sha256": "ad6e3b55b51b5e38732f7f2ad29ddc334945728a58f82af2b8c947e1ea813bf9",
+      "changes": [
+        "Bounded 2 remaining HTTP calls with explicit connect/read timeouts."
+      ]
     },
     {
       "upstream_path": "pyproject.toml",
@@ -508,20 +515,7 @@
           "time.sleep",
           "time.time"
         ],
-        "findings": [
-          {
-            "rule": "network-timeout",
-            "path": "groundx_utils.py",
-            "line": 109,
-            "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
-          },
-          {
-            "rule": "network-timeout",
-            "path": "groundx_utils.py",
-            "line": 130,
-            "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
-          }
-        ],
+        "findings": [],
         "ui": true,
         "syntax_error": null
       },
@@ -629,6 +623,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -651,6 +677,7 @@
       "fitz",
       "groundx",
       "groundx_utils",
+      "importlib",
       "mimetypes",
       "openai",
       "opik",
@@ -658,6 +685,7 @@
       "pathlib",
       "requests",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "typing"
@@ -680,22 +708,14 @@
         "path": "server.py",
         "kind": "python",
         "ui": false
-      }
-    ],
-    "findings": [
-      {
-        "rule": "network-timeout",
-        "path": "groundx_utils.py",
-        "line": 109,
-        "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
       },
       {
-        "rule": "network-timeout",
-        "path": "groundx_utils.py",
-        "line": 130,
-        "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
+    "findings": [],
     "syntax_errors": []
   },
   "validation": {
@@ -704,7 +724,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 5
+    "plain_python_units_checked": 6
   },
   "category": "structured",
   "purpose": "Process complex documents and evaluate structured extraction quality.",
@@ -727,5 +747,82 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "2c21bcd34fcbaed3c073e6650fa4a516ef7da4d6f73610679e3408ff9ec22ee6",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "a73817a80918733e8d1b4b19aa6b007f7335fd8048b60e4c7b4b2e4e956c0bfc",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "0b24a4cfd774f6f54c8a0da3a6f9cfcf20e7bb2e491f69813774984deb63a9f7",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "4cd3dd8291d78031d1780a41ed5680184f5463bdb7ecb33d6254bdbde5e2eeb9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "48177655a86686baf0dc7ad6078ad734463a5122ec8f94b70e4c4a72d3e3f95a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/schema.json",
+      "local_sha256": "41a9cb5e5328f7d00641fa0a9c9db6a21f71e618ad4f02f00f8bcc660a040929",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/reward.json",
+      "local_sha256": "a1cb7878087e216be07245db086fa25e267370258cc56656ec333d8354274d6c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/splits.json",
+      "local_sha256": "3b1133d083dc7225b5e8eea9247e30ddd9dfb702a576c5908cafe9e5068338b1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/distill.json",
+      "local_sha256": "996acc143d72d3b84c2d3db324e1085a85885658f4850a0250107e7061db3cb4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "extraction"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "book-writer-flow",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Generate a researched outline and chapters with a persistent workflow state.",
+  "mechanism": "BookFlow produces an Outline, dispatches chapter-writing work and saves the assembled manuscript.",
+  "experiment": "Interrupt after half the chapters, resume and check chapter identity, duplicated sections and citation consistency.",
+  "production": "Persist chapter jobs independently, cap parallel model calls and keep publishing behind an explicit editorial step.",
+  "fixture": {
+    "payload": {
+      "project": "book-writer-flow",
+      "task": "Generate a researched outline and chapters with a persistent workflow state.",
+      "synthetic": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "project": "documentation-writer-flow",
+  "task": "Produce repository documentation through planning and writing agents.",
+  "synthetic": true
+}

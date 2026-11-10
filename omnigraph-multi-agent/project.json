@@ -2,7 +2,13 @@
   "id": "omnigraph-multi-agent",
   "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
   "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/omnigraph-multi-agent",
-  "entries": [],
+  "entries": [
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
   "files": [
     {
       "upstream_path": ".gitignore",
@@ -56,14 +62,57 @@
   ],
   "omitted": [],
   "analysis": {
-    "units": [],
+    "units": [
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
     "manifests": [],
     "notebooks": [],
     "other_code": [],
     "environment": [],
-    "imports": [],
+    "imports": [
+      "importlib",
+      "pathlib",
+      "sys"
+    ],
     "models": [],
-    "entries": [],
+    "entries": [
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
     "findings": [],
     "syntax_errors": []
   },
@@ -73,7 +122,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 0
+    "plain_python_units_checked": 1
   },
   "category": "memory",
   "purpose": "Inspect multi-agent graph consistency through provided schemas and event data.",
@@ -91,5 +140,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "5200a47510b1bed3aba442babe4740e866b55b15a3ade12da0e411fc075da2e0",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "a434ee1088bf1c88a69055ac4f1367dbd3dfc437eaf9cb40a66f75334509a06a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "108b7e49963c0ad74bdcfd3b89708b4804349743a5501078dcd6174ef833575b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "c76066f7f34117af042c74413e210d47e03ef20dd133d1318d8e667f0ba21b11",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "99df9f157940803a8e880c625d7da735292c5c82b7ddb31042b7fdf4736e9eda",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/value.json",
+      "local_sha256": "ea5fb4c0af18749cc224e961b6d2196b9aaf3b4354d45ff1b87925ce77b58108",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "memory"
   }
 }

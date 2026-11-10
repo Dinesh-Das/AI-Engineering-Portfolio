@@ -25,6 +25,7 @@ The following table is extracted from this project's actual retained files. Note
 | [mcp_rl.ipynb#cell-13](mcp_rl.ipynb#cell-13) | get_content_text |  |
 | [mcp_rl.ipynb#cell-22](mcp_rl.ipynb#cell-22) | McpScenario, rollout |  |
 | [mcp_server.py](mcp_server.py) | list_tables, describe_table, run_query | fastmcp, json, sqlite3 |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -43,6 +44,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [mcp_server.py](mcp_server.py) | 81 | list_tables | List all tables in the database. |
 | [mcp_server.py](mcp_server.py) | 92 | describe_table | Get the column names, types, and constraints for a specific table. |
 | [mcp_server.py](mcp_server.py) | 121 | run_query | Execute a read-only SQL query and return the results. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -53,7 +55,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `openrouter/openai/gpt-4o-mini`
 - `sql-agent-3b`
 
-Detected import roots: `art`, `contextlib`, `dataclasses`, `dotenv`, `fastmcp`, `gc`, `json`, `mcp`, `numpy`, `openai`, `os`, `random`, `sqlite3`, `subprocess`, `time`, `torch`, `traceback`, `typing`, `unsloth`, `weave`
+Detected import roots: `art`, `contextlib`, `dataclasses`, `dotenv`, `fastmcp`, `gc`, `importlib`, `json`, `mcp`, `numpy`, `openai`, `os`, `pathlib`, `random`, `sqlite3`, `subprocess`, `sys`, `time`, `torch`, `traceback`, `typing`, `unsloth`, `weave`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -75,6 +77,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [licenses/LGPL-3.0.txt](licenses/LGPL-3.0.txt) | Included license text referenced by the notebook source notice. |
 | [licenses/GPL-3.0.txt](licenses/GPL-3.0.txt) | Included license text referenced by the notebook source notice. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/parameters.json](enhancement/examples/parameters.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

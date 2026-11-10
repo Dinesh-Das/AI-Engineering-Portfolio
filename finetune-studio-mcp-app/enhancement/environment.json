@@ -1,0 +1,16 @@
+{
+  "project_id": "finetune-studio-mcp-app",
+  "manifests": [
+    "package.json"
+  ],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "AUTOTRAIN_SPACE_NAME",
+    "HF_API",
+    "HF_TOKEN",
+    "INPUT",
+    "PORT"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

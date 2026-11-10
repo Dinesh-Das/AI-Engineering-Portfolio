@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!paralegal-agent-crew/
+!paralegal-agent-crew/enhance.py
+!paralegal-agent-crew/enhancement/
+!paralegal-agent-crew/enhancement/profile.json

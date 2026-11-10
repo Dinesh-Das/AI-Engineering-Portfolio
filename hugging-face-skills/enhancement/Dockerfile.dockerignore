@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!hugging-face-skills/
+!hugging-face-skills/enhance.py
+!hugging-face-skills/enhancement/
+!hugging-face-skills/enhancement/profile.json

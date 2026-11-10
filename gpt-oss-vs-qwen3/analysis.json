@@ -241,6 +241,38 @@
       "findings": [],
       "ui": true,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [
@@ -256,13 +288,16 @@
     "asyncio",
     "code_evaluation_opik",
     "dotenv",
+    "importlib",
     "litellm",
     "model_service",
     "opik",
     "os",
     "pandas",
+    "pathlib",
     "plotly",
     "streamlit",
+    "sys",
     "traceback"
   ],
   "models": [],
@@ -271,6 +306,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "findings": [],

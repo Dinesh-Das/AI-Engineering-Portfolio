@@ -22,6 +22,11 @@
       "path": "notebook.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -285,6 +290,38 @@
         "ui": false,
         "syntax_error": null,
         "notebook_magics": false
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -294,9 +331,12 @@
     "other_code": [],
     "environment": [],
     "imports": [
+      "importlib",
       "math",
+      "pathlib",
       "python_a2a",
-      "re"
+      "re",
+      "sys"
     ],
     "models": [],
     "entries": [
@@ -319,6 +359,11 @@
         "path": "notebook.ipynb",
         "kind": "notebook",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -330,7 +375,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 9
+    "plain_python_units_checked": 10
   },
   "category": "agents",
   "purpose": "Understand agent-to-agent communication through sine, cosine and tangent services.",
@@ -348,5 +393,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "fc7a1db094f6e4fba98bae7a8d11a41c6fceec25229b1404b830abf45d1d8946",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "f8cd0c21ceb944470e1d5a3137a212cb7db3bf82a81bed47cd6ca43c26ee931c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "792df1ce05bb88be53f6a7a49e6f5df629269a88606de443fc47f4b6243406a1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "5674f1c90dc16114ed94f35b5ce6457511df86521fc84fadccde899a5aa41bf1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "1d94f51432f23fac18d06c778e427ea8f5ca51ae7e0f2a163d757ca68ea5ae1a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "7ffe321ad23a62693274d08a6f18c09ad9d209c612c38332590fda1e5aa877fe",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

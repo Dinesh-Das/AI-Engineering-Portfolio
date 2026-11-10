@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -133,6 +138,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -142,7 +179,10 @@
     "imports": [
       "assemblyai",
       "elevenlabs",
-      "openai"
+      "importlib",
+      "openai",
+      "pathlib",
+      "sys"
     ],
     "models": [
       "gpt-3.5-turbo"
@@ -150,6 +190,11 @@
     "entries": [
       {
         "path": "app.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
         "kind": "python",
         "ui": false
       }
@@ -163,7 +208,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 1
+    "plain_python_units_checked": 2
   },
   "category": "voice",
   "purpose": "Implement a streaming travel conversation with ASR, an LLM and TTS.",
@@ -181,5 +226,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "65716affb3911752f3b9ab9ab4bea384a738e9acf79ddd45cec3b5fb9d510a2e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "083eb24385bf0e772583ecf2dc257a1654d6389c567d5dc279d65b5b17c90f45",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "dc9691502bbfb64dbdf6d44a1aa84e2f23a51bb574b95aa010b28094d64f43db",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "02ff0ed15ece9d8be2af5b637b738abee92ed73bfc042d9993c7a1cebef071f2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "e25ec1551d97403e310c8b53f5d44dfc69b887bcdb90306431c241008083a10b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/quality.json",
+      "local_sha256": "006473f2dad64b74d365bb5e2bce0658e50af214c7af5e9c6369802f0bcac649",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "transcript"
   }
 }

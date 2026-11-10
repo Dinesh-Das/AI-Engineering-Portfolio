@@ -106,7 +106,7 @@ def fetch_xray_json(gx: GroundX, bucket_id: str) -> Dict[str, Any]:
     
     document = documents[0]
     if hasattr(document, 'xray_url') and document.xray_url:
-        response = requests.get(document.xray_url)
+        response = requests.get(document.xray_url, timeout=(10, 60))
         response.raise_for_status()
         return response.json()
     else:
@@ -127,7 +127,7 @@ def get_xray_for_existing_document(gx: GroundX, document_id: str, bucket_id: str
     for doc in documents:
         if doc.document_id == document_id:
             if hasattr(doc, 'xray_url') and doc.xray_url:
-                response = requests.get(doc.xray_url)
+                response = requests.get(doc.xray_url, timeout=(10, 60))
                 response.raise_for_status()
                 return response.json()
             else:

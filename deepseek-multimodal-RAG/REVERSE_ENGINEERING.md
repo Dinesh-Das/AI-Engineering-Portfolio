@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [app.py](app.py) | reset_chat, display_pdf | UI surface |
 | [rag_code.py](rag_code.py) | batch_iterate, image_to_base64, EmbedData, QdrantVDB_QB, Retriever, RAG, get_query_embedding, generate_embedding, embed, define_client, create_collection, ingest_data | Janus, base64, colpali_engine, io, qdrant_client, torch, tqdm, transformers |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -44,6 +45,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [rag_code.py](rag_code.py) | 121 | search | FunctionDef |
 | [rag_code.py](rag_code.py) | 158 | generate_context | FunctionDef |
 | [rag_code.py](rag_code.py) | 163 | query | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -51,7 +53,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `IPython`, `Janus`, `base64`, `colpali_engine`, `gc`, `io`, `numpy`, `os`, `pdf2image`, `qdrant_client`, `rag_code`, `random`, `streamlit`, `tempfile`, `time`, `torch`, `tqdm`, `transformers`, `uuid`
+Detected import roots: `IPython`, `Janus`, `base64`, `colpali_engine`, `gc`, `importlib`, `io`, `numpy`, `os`, `pathlib`, `pdf2image`, `qdrant_client`, `rag_code`, `random`, `streamlit`, `sys`, `tempfile`, `time`, `torch`, `tqdm`, `transformers`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -69,6 +71,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "openai-swarm-ollama",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Explore local-model handoffs between lightweight agents.",
+  "mechanism": "Swarm agents can delegate to each other and use web search while Ollama provides an OpenAI-shaped model endpoint.",
+  "experiment": "Create a handoff loop and measure whether an iteration/token cap terminates it with a useful failure result.",
+  "production": "Use an explicit state machine and tool allowlist; a model-directed handoff should never imply broader permissions.",
+  "fixture": {
+    "payload": {
+      "project": "openai-swarm-ollama",
+      "task": "Explore local-model handoffs between lightweight agents.",
+      "synthetic": true
+    }
+  }
+}

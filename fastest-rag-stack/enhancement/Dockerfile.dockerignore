@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!fastest-rag-stack/
+!fastest-rag-stack/enhance.py
+!fastest-rag-stack/enhancement/
+!fastest-rag-stack/enhancement/profile.json

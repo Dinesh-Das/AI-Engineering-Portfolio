@@ -12,6 +12,11 @@
       "path": "voice_agent_openai.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -184,6 +189,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -200,10 +237,13 @@
     ],
     "imports": [
       "dotenv",
+      "importlib",
       "livekit",
       "llama_index",
       "logging",
-      "os"
+      "os",
+      "pathlib",
+      "sys"
     ],
     "models": [
       "BAAI/bge-small-en-v1.5",
@@ -220,6 +260,11 @@
         "path": "voice_agent_openai.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -231,7 +276,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 2
+    "plain_python_units_checked": 3
   },
   "category": "voice",
   "purpose": "Connect spoken interaction to document retrieval and speech synthesis.",
@@ -249,5 +294,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "66486509d5f7b4f4164e4d2fee96c90eecc26f3fa06cd501178b76de3028b095",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "ddd59ee6284e99108f412d2e4278ad7fa5a9fecc7a6563a42e0aefaf53d9061b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "a98b3635d09acd0240d8f19be7883cd6616aaa9d56563e8f83608050a418ac16",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "2e1f00373d5c314dad689350e7212fe5b5bdc43c1f23961b732ac0a1e07dc34c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "0dbfabd62d64bbf84136d7a94b5455dd41857bdee2ab37ada5fb91d1a3b923e0",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/quality.json",
+      "local_sha256": "006473f2dad64b74d365bb5e2bce0658e50af214c7af5e9c6369802f0bcac649",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "transcript"
   }
 }

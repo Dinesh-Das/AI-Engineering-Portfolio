@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "amazon-product-analysis-server",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose product research and comparison through an MCP server.",
+  "mechanism": "TypeScript MCP resources call Bright Data tools and structure product results; restored interactive components render the structured tool results.",
+  "experiment": "Feed products with missing prices, multiple currencies and sponsored listings and check normalized provenance.",
+  "production": "Cache source snapshots with capture times, cap scraping concurrency and isolate product retrieval credentials from MCP clients.",
+  "fixture": {
+    "tool_name": "amazon_product_analysis_server_calculate"
+  }
+}

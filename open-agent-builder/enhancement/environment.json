@@ -1,0 +1,23 @@
+{
+  "project_id": "open-agent-builder",
+  "manifests": [
+    "package.json"
+  ],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "ABSOLUTE_MAX",
+    "ANTHROPIC_API_KEY",
+    "ARCADE_API_KEY",
+    "BASE_SRC",
+    "E2B_API_KEY",
+    "ENV_VAR",
+    "FIRECRAWL_API_KEY",
+    "GROQ_API_KEY",
+    "MAX_SCRIPT_LENGTH",
+    "MOCK_AGENT_RESPONSE",
+    "NEXT_PUBLIC_CONVEX_URL",
+    "OPENAI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

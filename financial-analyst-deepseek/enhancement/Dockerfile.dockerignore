@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!financial-analyst-deepseek/
+!financial-analyst-deepseek/enhance.py
+!financial-analyst-deepseek/enhancement/
+!financial-analyst-deepseek/enhancement/profile.json

@@ -22,8 +22,10 @@ The following table is extracted from this project's actual retained files. Note
 | [config.py](config.py) | top-level workflow | dotenv, openai, os, pymongo, voyageai |
 | [ingest_data.py](ingest_data.py) | get_embedding, ingest_data | config, langchain_community, langchain_text_splitters, pymongo, time |
 | [memory.py](memory.py) | store_chat_message, retrieve_session_history | config, datetime, typing |
-| [planning.py](planning.py) | tool_selector, generate_response, get_llm_response | config, memory, tools |
-| [tools.py](tools.py) | vector_search_tool, calculator_tool | config, ingest_data |
+| [planning.py](planning.py) | tool_selector, generate_response, get_llm_response | config, memory, safe_tools, tools |
+| [tools.py](tools.py) | vector_search_tool, calculator_tool | config, ingest_data, safe_tools |
+| [safe_tools.py](safe_tools.py) | arithmetic, parse_tool_selection, visit | ast, json, math, operator |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -40,11 +42,15 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [ingest_data.py](ingest_data.py) | 13 | ingest_data | FunctionDef |
 | [memory.py](memory.py) | 5 | store_chat_message | FunctionDef |
 | [memory.py](memory.py) | 14 | retrieve_session_history | FunctionDef |
-| [planning.py](planning.py) | 5 | tool_selector | FunctionDef |
+| [planning.py](planning.py) | 6 | tool_selector | FunctionDef |
 | [planning.py](planning.py) | 46 | generate_response | FunctionDef |
 | [planning.py](planning.py) | 85 | get_llm_response | FunctionDef |
-| [tools.py](tools.py) | 4 | vector_search_tool | FunctionDef |
-| [tools.py](tools.py) | 32 | calculator_tool | FunctionDef |
+| [tools.py](tools.py) | 5 | vector_search_tool | FunctionDef |
+| [tools.py](tools.py) | 33 | calculator_tool | FunctionDef |
+| [safe_tools.py](safe_tools.py) | 9 | arithmetic | FunctionDef |
+| [safe_tools.py](safe_tools.py) | 52 | parse_tool_selection | FunctionDef |
+| [safe_tools.py](safe_tools.py) | 28 | visit | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -53,7 +59,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `gpt-4o`
 - `voyage-3-large`
 
-Detected import roots: `base64`, `config`, `datetime`, `dotenv`, `ingest_data`, `io`, `langchain_community`, `langchain_text_splitters`, `memory`, `openai`, `os`, `planning`, `pymongo`, `streamlit`, `sys`, `time`, `tools`, `typing`, `uuid`, `voyageai`
+Detected import roots: `ast`, `base64`, `config`, `datetime`, `dotenv`, `importlib`, `ingest_data`, `io`, `json`, `langchain_community`, `langchain_text_splitters`, `math`, `memory`, `openai`, `operator`, `os`, `pathlib`, `planning`, `pymongo`, `safe_tools`, `streamlit`, `sys`, `time`, `tools`, `typing`, `uuid`, `voyageai`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -73,16 +79,23 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Redacted 2 possible credential literals (values not retained). |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
+| [planning.py](planning.py) | Replaced Python eval with tested, bounded arithmetic or strict allowlisted JSON tool-choice validation. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [tools.py](tools.py) | Replaced Python eval with tested, bounded arithmetic or strict allowlisted JSON tool-choice validation. |
+| [safe_tools.py](safe_tools.py) | Added bounded arithmetic and strict allowlisted JSON tool selection; replaces Python evaluation of untrusted model/user input. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/value.json](enhancement/examples/value.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 
 These AST rules detect a small set of risky patterns and are not a complete security audit. Enforce authorization and resource limits in deterministic code; prompts and tool descriptions are not access controls.
 
-| Source | Line | Rule | Review implication |
-| --- | --- | --- | --- |
-| [planning.py](planning.py) | 41 | code-execution | Review inputs to eval; untrusted data can execute code. |
-| [tools.py](tools.py) | 34 | code-execution | Review inputs to eval; untrusted data can execute code. |
+The limited static rules found no matching patterns. This does not establish application security, dependency safety or provider compatibility.
 
 ## Known source limitations
 

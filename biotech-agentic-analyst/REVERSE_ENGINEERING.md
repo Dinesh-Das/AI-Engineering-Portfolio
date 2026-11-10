@@ -25,6 +25,7 @@ The following table is extracted from this project's actual retained files. Note
 | [mistral_ocr_pipeline/pipeline.py](mistral_ocr_pipeline/pipeline.py) | run_science_pipeline, parse_pipeline_results | __future__, json, models, pathlib, re, sys |
 | [models.py](models.py) | ExtractedFigure, FigureIntelligence, FigureIntelligenceList | __future__, pydantic, typing |
 | [utils.py](utils.py) | decode_thumbnail | PIL, __future__, base64, io, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [flow/crews/figure_analyst/config/agents.yaml](flow/crews/figure_analyst/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [flow/crews/figure_analyst/config/tasks.yaml](flow/crews/figure_analyst/config/tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 
@@ -51,6 +52,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [models.py](models.py) | 22 | FigureIntelligence | Figure intelligence. |
 | [models.py](models.py) | 55 | FigureIntelligenceList | List of figure intelligences. |
 | [utils.py](utils.py) | 10 | decode_thumbnail | Decode a base64 string (raw or a data: URI) to an image. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -58,7 +60,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `mistral-ocr-4-0`
 
-Detected import roots: `PIL`, `__future__`, `base64`, `crewai`, `dotenv`, `fitz`, `flow`, `hashlib`, `html`, `io`, `json`, `mistral_ocr_pipeline`, `mistralai`, `models`, `os`, `pathlib`, `pydantic`, `re`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `utils`
+Detected import roots: `PIL`, `__future__`, `base64`, `crewai`, `dotenv`, `fitz`, `flow`, `hashlib`, `html`, `importlib`, `io`, `json`, `mistral_ocr_pipeline`, `mistralai`, `models`, `os`, `pathlib`, `pydantic`, `re`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `utils`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -78,6 +80,16 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/Journal-of-Biology-and-Nature.pdf](assets/Journal-of-Biology-and-Nature.pdf) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/reward.json](enhancement/examples/reward.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/splits.json](enhancement/examples/splits.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/distill.json](enhancement/examples/distill.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

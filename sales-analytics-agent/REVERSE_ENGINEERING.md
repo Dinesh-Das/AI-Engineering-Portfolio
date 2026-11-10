@@ -18,15 +18,15 @@ The following table is extracted from this project's actual retained files. Note
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [main.py](main.py) | guide, schema or fixture |  |
-| [QUERY.md](QUERY.md) | guide, schema or fixture |  |
-| [UPSTREAM_README.md](UPSTREAM_README.md) | guide, schema or fixture |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -34,7 +34,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `mindsdb_sdk`
+Detected import roots: `importlib`, `mindsdb_sdk`, `pathlib`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -52,6 +52,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [QUERY.md](QUERY.md) | Redacted 1 additional dictionary credential literals; values are not retained. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/parameters.json](enhancement/examples/parameters.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

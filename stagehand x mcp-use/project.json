@@ -17,6 +17,11 @@
       "path": "stagehand_mcp.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -533,6 +538,38 @@
         "findings": [],
         "ui": true,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -551,6 +588,7 @@
       "asyncio",
       "base64",
       "dotenv",
+      "importlib",
       "inspect",
       "json",
       "langchain_openai",
@@ -558,10 +596,12 @@
       "mcp_use",
       "nest_asyncio",
       "os",
+      "pathlib",
       "stagehand",
       "stagehand_tool",
       "streamlit",
       "styles",
+      "sys",
       "time",
       "typing",
       "warnings"
@@ -586,6 +626,11 @@
         "path": "stagehand_mcp.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -597,7 +642,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 6
+    "plain_python_units_checked": 7
   },
   "category": "agents",
   "purpose": "Connect a local agent to browser-automation tools through MCP.",
@@ -620,5 +665,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "57799f6cc4f36fb896bf22f11987f17a36d7282394d17f3bae1c1fce6477f7fe",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "83b1a093012d34795fab2b31055986a2f706c6b38825fd7d0bb519febad54346",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "5b12d0c6df41490ee6a51b5f3feeda43e74e8bc67ccbeb34b3621121391df865",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "5002324c4be586e3297e7cfc80ed2be18c9c69d47cd99194898ea1f1a74e12e1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "9ee33e2fa6f89b7519d93c17c535ac7c8a0c6a5ca3fa6bfdfa7fa983cf27dd85",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "7ebbd3fe3a002356595d0f4a7ec7240bbeceb41e3d78a1811507a7c5eba0f9d8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

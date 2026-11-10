@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!biotech-agentic-analyst/
+!biotech-agentic-analyst/enhance.py
+!biotech-agentic-analyst/enhancement/
+!biotech-agentic-analyst/enhancement/profile.json

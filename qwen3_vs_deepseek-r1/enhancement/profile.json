@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "qwen3_vs_deepseek-r1",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare Qwen3 and DeepSeek on a common RAG evaluation pipeline.",
+  "mechanism": "Shared LlamaIndex workflow and Opik experiments compare answer behavior on the same document tasks.",
+  "experiment": "Hold retrieved evidence fixed and score supported answers, abstention, latency and run-to-run variance.",
+  "production": "Use a reproducible benchmark corpus and record generation settings, provider versions and judge prompts alongside results.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "qwen3_vs_deepseek-r1-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "qwen3_vs_deepseek-r1-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "project_id": "notebook-lm-clone",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "assemblyai>=0.44.3",
+    "crewai-tools>=0.73.1",
+    "crewai>=0.193.2",
+    "fastembed>=0.7.3",
+    "firecrawl-py>=4.3.6",
+    "ipykernel>=6.30.1",
+    "kokoro>=0.9.4",
+    "pymilvus[milvus-lite]>=2.6.2",
+    "pymupdf>=1.26.4",
+    "python-dotenv>=1.1.1",
+    "soundfile>=0.12.1",
+    "streamlit>=1.28.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.30.0",
+    "yt-dlp>=2024.12.13",
+    "zep-cloud>=3.4.3",
+    "zep-crewai>=1.1.1"
+  ],
+  "python_requirements": [
+    ">=3.11,<3.13"
+  ],
+  "environment_names": [
+    "ASSEMBLYAI_API_KEY",
+    "FIRECRAWL_API_KEY",
+    "OPENAI_API_KEY",
+    "ZEP_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

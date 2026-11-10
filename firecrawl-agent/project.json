@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -433,6 +438,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -452,11 +489,13 @@
       "contextlib",
       "dotenv",
       "gc",
+      "importlib",
       "io",
       "llama_index",
       "logging",
       "nest_asyncio",
       "os",
+      "pathlib",
       "qdrant_client",
       "re",
       "relevance_policy",
@@ -479,6 +518,11 @@
         "path": "app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -490,7 +534,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 4
+    "plain_python_units_checked": 5
   },
   "category": "rag",
   "purpose": "Combine corrective document retrieval with Firecrawl web fallback.",
@@ -500,6 +544,55 @@
       "local_sha256": "0a8c90a0993ef43b84c0a9a607e456134b7bdc6b931066b671ab400599c66087",
       "changes": [
         "Added a strict relevance gate; reject misleading yes substrings and recover from empty retrieval."
+      ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "41ad567eb8cf142f7b3b603fdfa12ec14d4234177ac213aa8def648d454200b3",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "913ea1f487254e0043c580a4c7cc5c1aa97746e32e31f47b7104711955b4fd92",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "97d49c5e61544bf2d5182c116b4a5bd8d8efcaa3923c8f4923fe73b54a9fdba5",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "f829de918a0077d5a1a03be28dc2cf44ead7d3723e1c8748e43b36877d14b0b4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "3eab1b9d87a98a6714418b119a6e529060dff1518b48789f46ea62ca72f533e4",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "109de06ae21a70dc84a7588ff64879ed6533b2b7802e0cd9af534025a6c5a283",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
       ]
     }
   ],
@@ -522,5 +615,10 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

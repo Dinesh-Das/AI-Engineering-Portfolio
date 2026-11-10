@@ -12,6 +12,11 @@
       "path": "learning_app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -451,6 +456,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -468,6 +505,7 @@
       "base64",
       "binascii",
       "http",
+      "importlib",
       "json",
       "learning_ui",
       "math",
@@ -476,6 +514,7 @@
       "protocol",
       "re",
       "streamlit",
+      "sys",
       "threading",
       "time",
       "urllib"
@@ -493,6 +532,11 @@
         "path": "learning_app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -504,7 +548,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 5
+    "plain_python_units_checked": 6
   },
   "local_additions": [
     {
@@ -562,6 +606,55 @@
       "changes": [
         "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "85996470075415635ee16a3df4f71598261a285f8079b601bec99ddaef0c0503",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "2814197b406af7add4dc2c119a7bf9a452aeb5914830dc9944b3b93688b7655f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "cda3bc6dcdac7ff903da4fa75e7fcf25c3a62009ae990d6b50c3cd92d136e529",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "8bac102459a820a6c21ee3ee1445ae714c2f2b53bc614c97b2c2376ac200ee39",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "9b7a672c255be67f57cc67cdbe1838cb0e434bd5978ee3c7122b98d5f00d64cf",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/events.json",
+      "local_sha256": "7b4209177c887d344c90375790d1c31c4e9f238c6f5b0192bf4a077c0e2ed96c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "learning_ui": {
@@ -596,5 +689,10 @@
     ]
   },
   "category": "interfaces",
-  "purpose": "Render native thinking and answer channels incrementally for local GPT-OSS."
+  "purpose": "Render native thinking and answer channels incrementally for local GPT-OSS.",
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "streaming"
+  }
 }

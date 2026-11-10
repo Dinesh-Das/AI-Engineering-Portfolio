@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!multimodal-rag-assemblyai/
+!multimodal-rag-assemblyai/enhance.py
+!multimodal-rag-assemblyai/enhancement/
+!multimodal-rag-assemblyai/enhancement/profile.json

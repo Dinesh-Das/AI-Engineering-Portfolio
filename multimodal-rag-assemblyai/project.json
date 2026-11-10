@@ -7,6 +7,11 @@
       "path": "main.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -373,6 +378,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -400,6 +437,7 @@
       "dataclasses",
       "dotenv",
       "glob",
+      "importlib",
       "logging",
       "openai",
       "os",
@@ -407,6 +445,7 @@
       "pymilvus",
       "sounddevice",
       "soundfile",
+      "sys",
       "tempfile",
       "traceback",
       "typing"
@@ -415,6 +454,11 @@
     "entries": [
       {
         "path": "main.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
         "kind": "python",
         "ui": false
       }
@@ -428,7 +472,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 2
+    "plain_python_units_checked": 3
   },
   "category": "rag",
   "purpose": "Unify audio and document ingestion with vector retrieval and CrewAI flows.",
@@ -446,5 +490,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "46e5b67753e2cfe6d3b1396295b7a104d92ad139acb9d6b22a40a5463d0495d0",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "68690bce9c4b331478b1e85f72b900ca1c8b40915d54f12d0deaf1f302e7c5a6",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "9d1a4d36ec4783fac035e3a0b41ee5bfe74cd39e713958076c8ecbba7d7cc4ca",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "fde0d80d557ed1a3bc6ac84e2d4bece0c5f884c1b419994190102e78bee7e4a1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "d98937070b6fd6b66d974a934c0652268f8d7dccb9a58619b38b3ee7a517f223",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "f57bc196ebfe94b81fc1ebe4145f5e950ce278a692d3ea8624c3fbefda37accc",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

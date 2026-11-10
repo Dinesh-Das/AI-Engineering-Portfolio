@@ -1,0 +1,18 @@
+{
+  "project_id": "eyelevel-mcp-rag",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "groundx>=2.3.0",
+    "ipykernel>=6.29.5",
+    "mcp[cli]>=1.6.0"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [
+    "GROUNDX_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

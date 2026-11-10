@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "rag-sql-router",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Route questions between document retrieval and structured SQL tools.",
+  "mechanism": "A custom tool-gathering workflow chooses a document query engine or database query path.",
+  "experiment": "Use questions needing both sources and adversarial prompts requesting writes; measure routing and read-only enforcement.",
+  "production": "Use a read-only database identity, statement and row limits, validated tool arguments and provenance identifying the selected route.",
+  "fixture": {
+    "query": "rag-sql-router retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "rag-sql-router/synthetic-policy-v1",
+        "text": "rag-sql-router retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "rag-sql-router/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

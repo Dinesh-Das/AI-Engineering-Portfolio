@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!sonnet4-vs-o4/
+!sonnet4-vs-o4/enhance.py
+!sonnet4-vs-o4/enhancement/
+!sonnet4-vs-o4/enhancement/profile.json

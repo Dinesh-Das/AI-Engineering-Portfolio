@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "grpo-finetuning-qwen3",
+  "family": "training",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Improve Qwen3 structured invoice extraction through remote GRPO training.",
+  "mechanism": "A JSON-schema reward, Fireworks training loop and baseline/post-training evaluation form the learning path.",
+  "experiment": "Create schema-valid but factually incorrect invoices to test reward hacking; score exact field matches as well as validity.",
+  "production": "Validate reward behavior locally before GPU spend; isolate training/evaluation data and promote only immutable evaluated model versions.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "grpo-finetuning-qwen3",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

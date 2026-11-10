@@ -7,6 +7,11 @@
       "path": "agent.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -192,6 +197,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -215,12 +252,15 @@
       "copy",
       "dotenv",
       "firecrawl",
+      "importlib",
       "inspect",
       "json",
       "livekit",
       "logging",
       "os",
+      "pathlib",
       "pydantic_ai",
+      "sys",
       "typing"
     ],
     "models": [
@@ -229,6 +269,11 @@
     "entries": [
       {
         "path": "agent.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
         "kind": "python",
         "ui": false
       }
@@ -242,7 +287,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 1
+    "plain_python_units_checked": 2
   },
   "category": "voice",
   "purpose": "Give a LiveKit voice agent MCP-backed web and database tools.",
@@ -260,5 +305,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "142f4901a89624e7c6e553e0089b034c1d8125d5ad67bcbda77df6f2b1fda9be",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "12b44918f3a4546f1b18b212ed36b0e8a04ec5d82838ae664ff076cf2e7c204b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "8169258da353fb54195530903e4a6871bd4b0677a303cc388aced3a4a7af50d7",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "4a095fe9ac1fca515546c8a35a11c70e097456404a380712a513be822a711fb5",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "db50ed60fff270ee17f0ca3f419778dff2da3e5143c62a848f1d1267b2b9ccc7",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/quality.json",
+      "local_sha256": "006473f2dad64b74d365bb5e2bce0658e50af214c7af5e9c6369802f0bcac649",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "transcript"
   }
 }

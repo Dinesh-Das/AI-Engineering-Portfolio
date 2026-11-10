@@ -10,3 +10,5 @@ These folders were moved into this workspace by the user after the initial colle
 | qwen-2.5VL-ocr | [README](../qwen-2.5VL-ocr/README.md) | [SPEC](../qwen-2.5VL-ocr/SPEC.md) |
 
 Continue using the original project instructions and learning notes in each folder. The collection-wide learning contract is a guide for future additions, not evidence that these completed projects were reviewed or modified in the UI expansion.
+
+The subsequent all-113 enhancement pass includes these four projects. Each now has `enhance.py`, an `ENHANCEMENTS.md` guide and a preserved personal journal. Objective CER/WER and one-to-one region metrics accept actual labeled output without loading a model. Their native suites passed after the additions; see [verification and scope](OCR_ENHANCEMENT_VALIDATION.md). Each remains an independent Git repository; its enhancement additions are committed there rather than added as an embedded repository to the parent collection.

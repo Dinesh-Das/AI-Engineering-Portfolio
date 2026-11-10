@@ -1,0 +1,12 @@
+[
+  {
+    "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

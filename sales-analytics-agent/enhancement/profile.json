@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "sales-analytics-agent",
+  "family": "sql",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Join MongoDB and HubSpot data through MindsDB for natural-language analytics.",
+  "mechanism": "A Python script configures datasources, runs cross-source SQL and creates an analytics agent.",
+  "experiment": "Compare natural-language totals with fixed SQL results and test duplicates and mismatched customer identifiers.",
+  "production": "Use read-only datasource credentials, explicit join keys, query budgets and an approved semantic layer for business metrics.",
+  "fixture": {
+    "row_name": "sales-analytics-agent-synthetic-account"
+  }
+}

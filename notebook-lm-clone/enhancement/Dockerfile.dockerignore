@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!notebook-lm-clone/
+!notebook-lm-clone/enhance.py
+!notebook-lm-clone/enhancement/
+!notebook-lm-clone/enhancement/profile.json

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!openai-swarm-ollama/
+!openai-swarm-ollama/enhance.py
+!openai-swarm-ollama/enhancement/
+!openai-swarm-ollama/enhancement/profile.json

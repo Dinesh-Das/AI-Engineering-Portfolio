@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "omnigraph-multi-agent",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Inspect multi-agent graph consistency through provided schemas and event data.",
+  "mechanism": "The project provides schema.pg, queries.gq and agent JSONL streams rather than a Python application.",
+  "experiment": "Compare agent_b.jsonl with agent_b_fixed.jsonl and identify which graph constraint or ownership assumption changes.",
+  "production": "Validate event schemas before ingestion, assign agent ownership and version graph queries with the schema they require.",
+  "fixture": {
+    "key": "omnigraph-multi-agent:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

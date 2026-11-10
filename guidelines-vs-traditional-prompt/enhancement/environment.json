@@ -1,0 +1,21 @@
+{
+  "project_id": "guidelines-vs-traditional-prompt",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "openai>=1.0.0",
+    "parlant-client>=3.0.1",
+    "parlant>=3.0.2",
+    "python-dotenv>=1.0.1",
+    "rich>=13.9.4"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [
+    "OPENAI_API_KEY",
+    "PARLANT_BASE_URL"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

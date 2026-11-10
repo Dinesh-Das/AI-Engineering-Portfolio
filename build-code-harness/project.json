@@ -7,6 +7,11 @@
       "path": "code_harness.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -223,6 +228,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -241,8 +278,11 @@
       "crewai",
       "crewai_tools",
       "dotenv",
+      "importlib",
       "os",
-      "pytest"
+      "pathlib",
+      "pytest",
+      "sys"
     ],
     "models": [
       "openrouter/openai/gpt-4o-mini"
@@ -250,6 +290,11 @@
     "entries": [
       {
         "path": "code_harness.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
         "kind": "python",
         "ui": false
       }
@@ -263,7 +308,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 3
+    "plain_python_units_checked": 4
   },
   "category": "agents",
   "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
@@ -281,5 +326,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "98c91fcae197af7cafd826f0da362605b259941fb3f12800b503b95cc68ab730",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "823287cc12f6e5a8154663644c6705b99b8047e2120814b3924b7eac0b96f652",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "dc7f78b49b742f9bf4089b5821894af8722bd013e2b4403685be13a40292d847",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "30c8ebe56e79ea865095a2a43fa6f95249e51944709adec0cb7ea9baecc550e8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "a23414e3fe8203fe0594f9ef20eb976b65edc9acf42f6fab75db5340f9e57792",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "f231a205f6552d099adbc3f9ececcf09f1eeea8b87815bb72bd171ee0485f7d1",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

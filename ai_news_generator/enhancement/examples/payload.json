@@ -1,0 +1,5 @@
+{
+  "project": "ai_news_generator",
+  "task": "Generate sourced AI news using CrewAI and Cohere.",
+  "synthetic": true
+}

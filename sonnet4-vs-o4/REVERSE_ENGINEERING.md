@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [code_evaluation.py](code_evaluation.py) | evaluate_code | deepeval, typing |
 | [code_ingestion.py](code_ingestion.py) | ingest_github_repo | gitingest, typing |
 | [model_service.py](model_service.py) | get_model_response_async, get_parallel_responses, get_model_responses | asyncio, litellm, os, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -37,6 +38,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [model_service.py](model_service.py) | 6 | get_model_response_async | AsyncFunctionDef |
 | [model_service.py](model_service.py) | 51 | get_parallel_responses | AsyncFunctionDef |
 | [model_service.py](model_service.py) | 57 | get_model_responses | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -44,7 +46,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `asyncio`, `code_evaluation`, `code_ingestion`, `deepeval`, `dotenv`, `gitingest`, `litellm`, `model_service`, `os`, `pandas`, `plotly`, `streamlit`, `typing`
+Detected import roots: `asyncio`, `code_evaluation`, `code_ingestion`, `deepeval`, `dotenv`, `gitingest`, `importlib`, `litellm`, `model_service`, `os`, `pandas`, `pathlib`, `plotly`, `streamlit`, `sys`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -63,6 +65,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/pairs.json](enhancement/examples/pairs.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

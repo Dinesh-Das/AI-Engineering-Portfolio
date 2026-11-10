@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!guidelines-vs-traditional-prompt/
+!guidelines-vs-traditional-prompt/enhance.py
+!guidelines-vs-traditional-prompt/enhancement/
+!guidelines-vs-traditional-prompt/enhancement/profile.json

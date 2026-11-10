@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "trustworthy-rag",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Attach trustworthiness signals to document-grounded model output.",
+  "mechanism": "LlamaParse and retrieval build context while Cleanlab trustworthiness callbacks expose scores and reasoning.",
+  "experiment": "Calibrate score thresholds on labeled supported and unsupported answers; plot coverage against error rate.",
+  "production": "Use an abstention/review policy calibrated to the actual domain; a vendor confidence score is not a correctness guarantee.",
+  "fixture": {
+    "query": "trustworthy-rag retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "trustworthy-rag/synthetic-policy-v1",
+        "text": "trustworthy-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "trustworthy-rag/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

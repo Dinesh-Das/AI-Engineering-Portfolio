@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -14,8 +19,10 @@
       "upstream_path": "app.py",
       "path": "app.py",
       "upstream_sha256": "e0924e197a435afc5ed4b498cf932bcff68f19d7f1ace731e2c7e60daea7ed3b",
-      "local_sha256": "e0924e197a435afc5ed4b498cf932bcff68f19d7f1ace731e2c7e60daea7ed3b",
-      "changes": []
+      "local_sha256": "6f0287cd684b9aea7c71a0fdbd4ce9d852c5bfb06fcf98577dc9c8b73dc948ab",
+      "changes": [
+        "Bounded 1 remaining HTTP calls with explicit connect/read timeouts."
+      ]
     },
     {
       "upstream_path": "rag_code.py",
@@ -164,14 +171,7 @@
           "time.sleep",
           "uuid.uuid4"
         ],
-        "findings": [
-          {
-            "rule": "network-timeout",
-            "path": "app.py",
-            "line": 75,
-            "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
-          }
-        ],
+        "findings": [],
         "ui": true,
         "syntax_error": null
       },
@@ -278,6 +278,38 @@
         ],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -297,16 +329,19 @@
       "firecrawl",
       "fpdf",
       "gc",
+      "importlib",
       "io",
       "math",
       "numpy",
       "os",
+      "pathlib",
       "pdf2image",
       "rag_code",
       "random",
       "requests",
       "streamlit",
       "streamlit_pdf_viewer",
+      "sys",
       "tempfile",
       "time",
       "torch",
@@ -320,15 +355,14 @@
         "path": "app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [
-      {
-        "rule": "network-timeout",
-        "path": "app.py",
-        "line": 75,
-        "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
-      },
       {
         "rule": "trust_remote_code",
         "path": "rag_code.py",
@@ -344,7 +378,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 2
+    "plain_python_units_checked": 3
   },
   "category": "rag",
   "purpose": "Retrieve visually represented web pages and answer with a multimodal model.",
@@ -367,5 +401,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "0a0cef76991cb8007fb2c09ba4fca09ebc07b84d0b025e71e2d3235456bb931a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "043b2b21cc0916a9ac771e9e5f79430ace49e1424d4ca0a08be6c35fc89748a2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "62f401bb22ad828f03b5f7acf6580a466c0b70aa65140ef32e27a479269ac435",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "4e07df1966bb373b42dda51a9588e4430be22fa40130708a40c1c8e254c5d1d2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "a57e1d07ba05e67f8400902e1f517328302108f298a81781341a4dab6abb7e14",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "3a9e3b23fbfb675def03a3fcd9db8556a5282ab96371c8bfa456ed2632af007b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

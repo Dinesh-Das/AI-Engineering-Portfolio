@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!train-yolo26-object-detection/
+!train-yolo26-object-detection/enhance.py
+!train-yolo26-object-detection/enhancement/
+!train-yolo26-object-detection/enhancement/profile.json

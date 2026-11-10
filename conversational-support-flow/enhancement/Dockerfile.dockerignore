@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!conversational-support-flow/
+!conversational-support-flow/enhance.py
+!conversational-support-flow/enhancement/
+!conversational-support-flow/enhancement/profile.json

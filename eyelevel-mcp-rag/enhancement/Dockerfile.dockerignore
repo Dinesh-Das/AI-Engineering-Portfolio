@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!eyelevel-mcp-rag/
+!eyelevel-mcp-rag/enhance.py
+!eyelevel-mcp-rag/enhancement/
+!eyelevel-mcp-rag/enhancement/profile.json

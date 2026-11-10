@@ -34,6 +34,7 @@ The following table is extracted from this project's actual retained files. Note
 | [video-index/server.py](video-index/server.py) | create_starlette_app, handle_sse | argparse, mcp, starlette, tools, uvicorn |
 | [video-index/test.py](video-index/test.py) | top-level workflow | datetime, pixeltable |
 | [video-index/tools.py](video-index/tools.py) | setup_video_index, insert_video, query_video, list_video_tables | datetime, mcp, os, pixeltable |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [docker-compose.yaml](docker-compose.yaml) | backend/configuration source; inspect directly | .yaml |
 
 ## Function and class walkthrough
@@ -88,6 +89,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [video-index/tools.py](video-index/tools.py) | 116 | insert_video | Insert a video file into the specified video index. |
 | [video-index/tools.py](video-index/tools.py) | 137 | query_video | Query the specified video index with a text question. |
 | [video-index/tools.py](video-index/tools.py) | 176 | list_video_tables | List all video indexes currently available. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -101,7 +103,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `openai/o3-mini`
 - `whisper-1`
 
-Detected import roots: `IPython`, `argparse`, `crewai`, `crewai_tools`, `datetime`, `dotenv`, `logging`, `mcp`, `os`, `pixeltable`, `pydantic`, `starlette`, `tools`, `typing`, `uvicorn`
+Detected import roots: `IPython`, `argparse`, `crewai`, `crewai_tools`, `datetime`, `dotenv`, `importlib`, `logging`, `mcp`, `os`, `pathlib`, `pixeltable`, `pydantic`, `starlette`, `sys`, `tools`, `typing`, `uvicorn`
 
 Retained dependency manifests: [audio-index/requirements.txt](audio-index/requirements.txt), [base-sdk/requirements.txt](base-sdk/requirements.txt), [doc-index/requirements.txt](doc-index/requirements.txt), [image-index/requirements.txt](image-index/requirements.txt), [pyproject.toml](pyproject.toml), [video-index/requirements.txt](video-index/requirements.txt)
 
@@ -120,6 +122,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [crewai_mcp.ipynb](crewai_mcp.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

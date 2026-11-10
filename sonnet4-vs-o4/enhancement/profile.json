@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "sonnet4-vs-o4",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare code generation with shared context and DeepEval grading.",
+  "mechanism": "A common model service and repository ingestion path feed candidate responses into evaluation metrics.",
+  "experiment": "Run identical hidden unit tests against both candidates and check whether judge scores predict pass rates.",
+  "production": "Use isolated execution workers, blinded evaluation and the same context budget and sampling settings for each provider.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "sonnet4-vs-o4-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "sonnet4-vs-o4-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

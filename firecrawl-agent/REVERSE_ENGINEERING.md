@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [start_server.py](start_server.py) | load_model | beam, subprocess, time |
 | [workflow.py](workflow.py) | RetrieveEvent, WebSearchEvent, QueryEvent, CorrectiveRAGWorkflow, retrieve, eval_relevance, web_search, query_result | dotenv, llama_index, os, re, relevance_policy, requests, typing |
 | [relevance_policy.py](relevance_policy.py) | is_relevant_grade, needs_web_search |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -45,6 +46,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [workflow.py](workflow.py) | 266 | query_result | Get result with relevant text. |
 | [relevance_policy.py](relevance_policy.py) | 4 | is_relevant_grade | FunctionDef |
 | [relevance_policy.py](relevance_policy.py) | 8 | needs_web_search | No evidence or an invalid grader response must trigger evidence recovery. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -53,7 +55,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-large-en-v1.5`
 - `gpt-4o`
 
-Detected import roots: `asyncio`, `base64`, `beam`, `contextlib`, `dotenv`, `gc`, `io`, `llama_index`, `logging`, `nest_asyncio`, `os`, `qdrant_client`, `re`, `relevance_policy`, `requests`, `streamlit`, `subprocess`, `sys`, `tempfile`, `time`, `typing`, `uuid`, `workflow`
+Detected import roots: `asyncio`, `base64`, `beam`, `contextlib`, `dotenv`, `gc`, `importlib`, `io`, `llama_index`, `logging`, `nest_asyncio`, `os`, `pathlib`, `qdrant_client`, `re`, `relevance_policy`, `requests`, `streamlit`, `subprocess`, `sys`, `tempfile`, `time`, `typing`, `uuid`, `workflow`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml), [requirements.txt](requirements.txt)
 
@@ -76,6 +78,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [assets/firecrawl_logo.png](assets/firecrawl_logo.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/images.jpeg](assets/images.jpeg) | Restored frontend source/asset after UI scope was authorized. |
 | [relevance_policy.py](relevance_policy.py) | Added a strict relevance gate; reject misleading yes substrings and recover from empty retrieval. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

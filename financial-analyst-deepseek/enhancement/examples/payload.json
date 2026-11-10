@@ -1,0 +1,5 @@
+{
+  "project": "financial-analyst-deepseek",
+  "task": "Expose stock analysis and generated plots through a local-model MCP workflow.",
+  "synthetic": true
+}

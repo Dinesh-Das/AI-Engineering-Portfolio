@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "project_id": "audio-analysis-toolkit",
+  "family": "transcript",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Transcribe audio and expose summaries, speakers and analysis via MCP.",
+  "mechanism": "AssemblyAI processing is wrapped by server tools that return analysis artifacts; UI formatting is outside the AI workflow.",
+  "experiment": "Compare overlapping speech, music and long pauses; score transcription errors and speaker assignment independently.",
+  "production": "Use asynchronous transcription jobs, authenticated object URLs and explicit audio/transcript retention policies.",
+  "fixture": {
+    "reference": "Meeting 1042 approved a budget of 375 rupees for café research.",
+    "prediction": "Meeting 1042 approved a budget of 875 rupees for café research.",
+    "region_text": "375.00"
+  }
+}

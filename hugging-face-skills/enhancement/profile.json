@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "hugging-face-skills",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Inspect reusable dataset, evaluation, training and publishing scripts for AI agents.",
+  "mechanism": "The collection packages operational scripts and reference instructions; no imported skill is automatically installed or activated.",
+  "experiment": "Trace one dataset-to-evaluation workflow end to end and verify token scopes, dataset revision and saved artifacts.",
+  "production": "Run each job with minimal Hub permissions, persist artifacts to explicit repositories and prevent automated public publishing by default.",
+  "fixture": {
+    "artifact_id": "hugging-face-skills-segment-1",
+    "content": "Synthetic integrity fixture for hugging-face-skills\n"
+  }
+}

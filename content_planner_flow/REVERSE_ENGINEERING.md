@@ -23,6 +23,7 @@ The following table is extracted from this project's actual retained files. Note
 | [notebook.ipynb#cell-16](notebook.ipynb#cell-16) | LinkedInPost |  |
 | [notebook.ipynb#cell-20](notebook.ipynb#cell-20) | ContentPlanningState, CreateContentPlanningFlow, scrape_blog_post, select_platform, twitter_draft, linkedin_draft, save_plan, publish | crewai |
 | [scheduler.py](scheduler.py) | json_to_typefully_content, json_to_linkedin_content, schedule_thread, schedule | datetime, json, os, pydantic, requests, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [config/planner_agents.yaml](config/planner_agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [config/planner_tasks.yaml](config/planner_tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 
@@ -47,6 +48,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [scheduler.py](scheduler.py) | 27 | json_to_linkedin_content | Convert JSON thread format to Typefully's format. |
 | [scheduler.py](scheduler.py) | 34 | schedule_thread | Schedule a thread on Typefully. |
 | [scheduler.py](scheduler.py) | 62 | schedule | Schedule a thread from a Pydantic model. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -54,7 +56,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `ollama/llama3.2`
 
-Detected import roots: `IPython`, `crewai`, `crewai_tools`, `datetime`, `dotenv`, `firecrawl`, `getpass`, `json`, `nest_asyncio`, `os`, `pathlib`, `pydantic`, `requests`, `scheduler`, `subprocess`, `typing`, `uuid`, `yaml`
+Detected import roots: `IPython`, `crewai`, `crewai_tools`, `datetime`, `dotenv`, `firecrawl`, `getpass`, `importlib`, `json`, `nest_asyncio`, `os`, `pathlib`, `pydantic`, `requests`, `scheduler`, `subprocess`, `sys`, `typing`, `uuid`, `yaml`
 
 Retained dependency manifests: [requirements.txt](requirements.txt)
 
@@ -76,6 +78,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [scheduler.py](scheduler.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

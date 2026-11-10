@@ -1,0 +1,20 @@
+{
+  "project_id": "mcp-video-rag",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "ipykernel>=6.29.5",
+    "mcp>=1.9.4",
+    "moviepy>=2.2.1",
+    "python-dotenv>=1.1.0",
+    "ragie>=1.9.0"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [
+    "RAGIE_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

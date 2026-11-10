@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!audio-analysis-toolkit/
+!audio-analysis-toolkit/enhance.py
+!audio-analysis-toolkit/enhancement/
+!audio-analysis-toolkit/enhancement/profile.json

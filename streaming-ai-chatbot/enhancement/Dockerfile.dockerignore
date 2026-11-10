@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!streaming-ai-chatbot/
+!streaming-ai-chatbot/enhance.py
+!streaming-ai-chatbot/enhancement/
+!streaming-ai-chatbot/enhancement/profile.json

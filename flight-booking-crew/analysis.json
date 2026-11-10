@@ -130,6 +130,38 @@
       "findings": [],
       "ui": false,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [],
@@ -147,8 +179,10 @@
     "datetime",
     "dotenv",
     "html2text",
+    "importlib",
     "kayak",
     "os",
+    "pathlib",
     "playwright",
     "streamlit",
     "sys",
@@ -164,6 +198,11 @@
     },
     {
       "path": "main.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
       "kind": "python",
       "ui": false
     }

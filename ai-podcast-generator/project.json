@@ -12,6 +12,11 @@
       "path": "cli.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -407,6 +412,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -423,12 +460,14 @@
       "argparse",
       "dotenv",
       "firecrawl",
+      "importlib",
       "json",
       "os",
       "pathlib",
       "requests",
       "scraper",
       "script_generator",
+      "sys",
       "time",
       "tts_converter",
       "urllib"
@@ -444,6 +483,11 @@
         "path": "cli.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -455,7 +499,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 4
+    "plain_python_units_checked": 5
   },
   "category": "media",
   "purpose": "Create article-to-podcast audio using MiniMax generation and speech.",
@@ -465,6 +509,62 @@
       "local_sha256": "b6283357d0738337e58acee4cdbb3c8f2c7630f432f29a7e3f0c6acac4e35473",
       "changes": [
         "Added an input-bounded headless script/speech CLI with persisted stage status."
+      ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "3c4f72999850ae1382c8041f9279581939e5af87ca7151d028010142c6d4c28e",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "3e8b98750615e0eee798d06095122ddc6532a18bbac9b47020b5bc5b3d80d657",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "0d720a216f84023a07cc0935e79434f859af7a9fadfba278a99fb3d260005cad",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "b5086bfc593ce225fc36d73bc6e2ac3e2546bd431480814484546e434f5989c2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "e225d4258aeb706deb5e12b4d5957cce729957e8be6508ec151738a7b7d065ee",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/artifacts.json",
+      "local_sha256": "6411318243a71bc7333b4eb5e54014e1726361752a16da3df7e4122bb03ec00f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/segment.txt",
+      "local_sha256": "fc22a7941133f8a7136b595057ee871c54a0d4a26d640fa57122c7d9cd52ae30",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
       ]
     }
   ],
@@ -482,5 +582,10 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "artifacts"
   }
 }

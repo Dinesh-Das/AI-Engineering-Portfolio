@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "eyelevel-mcp-rag",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose complex-document ingestion and retrieval through GroundX-backed MCP tools.",
+  "mechanism": "The server provides document ingestion and search functions rather than a complete standalone chat application.",
+  "experiment": "Search immediately after ingestion and verify that pending processing is distinct from a relevant-document miss.",
+  "production": "Track ingestion jobs and tenant bucket IDs server-side; bound polling and prevent arbitrary access to shared buckets.",
+  "fixture": {
+    "tool_name": "eyelevel_mcp_rag_calculate"
+  }
+}

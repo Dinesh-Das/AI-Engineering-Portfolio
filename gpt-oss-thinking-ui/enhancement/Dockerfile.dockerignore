@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!gpt-oss-thinking-ui/
+!gpt-oss-thinking-ui/enhance.py
+!gpt-oss-thinking-ui/enhancement/
+!gpt-oss-thinking-ui/enhancement/profile.json

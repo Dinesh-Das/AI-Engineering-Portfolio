@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!qwen3-thinking-ui/
+!qwen3-thinking-ui/enhance.py
+!qwen3-thinking-ui/enhancement/
+!qwen3-thinking-ui/enhancement/profile.json

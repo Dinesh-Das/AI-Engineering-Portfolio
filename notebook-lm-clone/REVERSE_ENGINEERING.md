@@ -33,6 +33,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/vector_database/milvus_vector_db.py](src/vector_database/milvus_vector_db.py) | MilvusVectorDB, create_index, insert_embeddings, search, delete_collection, get_chunk_by_id, close | json, logging, pathlib, pymilvus, src, typing |
 | [src/web_scraping/web_scraper.py](src/web_scraping/web_scraper.py) | WebPageData, WebScraper, scrape_url, batch_scrape_urls, get_url_preview | dataclasses, datetime, firecrawl, logging, os, pathlib, src, time |
 | [tests/notebook_pipeline.py](tests/notebook_pipeline.py) | NotebookLMPipeline, test_pipeline, process_documents, process_audio, process_url, ask_question, cleanup | logging, os, pathlib, src |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -124,6 +125,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [tests/notebook_pipeline.py](tests/notebook_pipeline.py) | 101 | process_url | FunctionDef |
 | [tests/notebook_pipeline.py](tests/notebook_pipeline.py) | 121 | ask_question | FunctionDef |
 | [tests/notebook_pipeline.py](tests/notebook_pipeline.py) | 135 | cleanup | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -132,7 +134,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-small-en-v1.5`
 - `gpt-4o-mini`
 
-Detected import roots: `assemblyai`, `crewai`, `dataclasses`, `datetime`, `dotenv`, `fastembed`, `firecrawl`, `hashlib`, `json`, `kokoro`, `logging`, `numpy`, `os`, `pathlib`, `pymilvus`, `pymupdf`, `re`, `soundfile`, `src`, `streamlit`, `tempfile`, `time`, `typing`, `urllib`, `uuid`, `yt_dlp`, `zep_cloud`, `zep_crewai`
+Detected import roots: `assemblyai`, `crewai`, `dataclasses`, `datetime`, `dotenv`, `fastembed`, `firecrawl`, `hashlib`, `importlib`, `json`, `kokoro`, `logging`, `numpy`, `os`, `pathlib`, `pymilvus`, `pymupdf`, `re`, `soundfile`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `urllib`, `uuid`, `yt_dlp`, `zep_cloud`, `zep_crewai`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -156,6 +158,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/app-UI.png](assets/app-UI.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/flow-diagram.jpg](assets/flow-diagram.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

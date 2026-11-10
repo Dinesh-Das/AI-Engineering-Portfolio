@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!open-agent-builder/
+!open-agent-builder/enhance.py
+!open-agent-builder/enhancement/
+!open-agent-builder/enhancement/profile.json

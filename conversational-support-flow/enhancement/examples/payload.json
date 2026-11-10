@@ -1,0 +1,5 @@
+{
+  "project": "conversational-support-flow",
+  "task": "Route support turns among order lookup, policy retrieval and live research.",
+  "synthetic": true
+}

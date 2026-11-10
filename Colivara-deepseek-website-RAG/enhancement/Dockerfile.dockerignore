@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!Colivara-deepseek-website-RAG/
+!Colivara-deepseek-website-RAG/enhance.py
+!Colivara-deepseek-website-RAG/enhancement/
+!Colivara-deepseek-website-RAG/enhancement/profile.json

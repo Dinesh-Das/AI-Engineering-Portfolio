@@ -1,0 +1,20 @@
+{
+  "project_id": "multiplatform_deep_researcher",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai-tools[mcp]>=0.69.0",
+    "mcp>=1.13.1",
+    "ollama>=0.5.3",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.49.1"
+  ],
+  "python_requirements": [
+    ">=3.11"
+  ],
+  "environment_names": [
+    "BRIGHT_DATA_API_TOKEN"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

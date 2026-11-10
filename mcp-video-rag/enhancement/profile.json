@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "mcp-video-rag",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose video ingestion, retrieval and clip selection through Ragie-backed MCP tools.",
+  "mechanism": "Video chunking feeds managed ingestion and retrieval; result timestamps link evidence back to source clips.",
+  "experiment": "Ask about an event spanning a chunk boundary and score timestamp overlap and evidence coverage.",
+  "production": "Store source-video IDs and chunk offsets, authorize clip access and queue long ingestion tasks instead of blocking tool requests.",
+  "fixture": {
+    "tool_name": "mcp_video_rag_calculate"
+  }
+}

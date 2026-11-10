@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!o3-vs-claude-code/
+!o3-vs-claude-code/enhance.py
+!o3-vs-claude-code/enhancement/
+!o3-vs-claude-code/enhancement/profile.json

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!rag-voice-agent/
+!rag-voice-agent/enhance.py
+!rag-voice-agent/enhancement/
+!rag-voice-agent/enhancement/profile.json

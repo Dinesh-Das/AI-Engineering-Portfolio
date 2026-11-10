@@ -1,0 +1,63 @@
+# Enhancements: content_planner_flow
+
+## Source and purpose
+
+Plan social content from web material and schedule a draft.
+
+Original mechanism: CrewAI Flow moves through scraping, platform-specific draft creation, plan saving and Typefully scheduling.
+
+Read the [existing walkthrough](REVERSE_ENGINEERING.md) alongside this extension. Original model/provider code remains the application implementation; `enhance.py` is an additional executable engineering lab. Shared code lives in [workbench_core](../workbench_core/README.md), so keep this project in the collection checkout. It uses Python 3.12+ and no third-party packages. This avoids 113 drifting copies and leaves each project's model environment isolated.
+
+## What changed and why
+
+**Durable workflow state.** SQLite transactions persist a run ID, owner, payload hash, state and version. Duplicate creation is idempotent, conflicting payloads are rejected, restarts retain state, and completed runs cannot transition back to running.
+
+Before this addition, the project's learning guide did not expose this contract through a common local command. It now has a source-specific profile, synthetic inputs, negative/recovery checks, read-only environment diagnostics and commands that accept your own data. The checks execute the shared algorithms; their inputs are explicitly synthetic and contain no inferred model output.
+
+This protects local state transitions. Exactly-once external side effects require provider idempotency or an outbox, worker leases and reconciliation; this is not a distributed job scheduler.
+
+## Run and inspect
+
+From this project folder, using a real Python 3.12+ interpreter:
+
+```powershell
+python enhance.py check
+python enhance.py doctor
+python enhance.py job --state runs.sqlite --owner learner --id run-1 --operation create --input enhancement/examples/payload.json
+python enhance.py --help
+```
+
+`check` returns 0 only if every scenario passes, 1 for failed scenarios and 2 for invalid input. It uses temporary local files and makes no network calls. `doctor` reports declared package presence and environment **names/set flags**, never secret values; it does not certify compatible versions, optional credentials, installed models or hardware. Run it inside the original project's virtual environment to inspect that environment.
+
+Examples: [payload.json](enhancement/examples/payload.json). Replace synthetic labels with independently checked held-out data. The SQL example intentionally names an existing database you supply; `check` creates and removes its own database.
+
+## Learn from every scenario
+
+| Scenario | Prediction to make | Evidence and explanation |
+| --- | --- | --- |
+| Normal | Which output follows from the fixed reference? | Inspect the returned scores, IDs, versions or state; keep actual counts. |
+| Invalid/adversarial | Which boundary should reject the input? | Mutate a required field, limit or path. Record the rejection and confirm no side effect occurred. |
+| Missing evidence/output | Can the system distinguish absence from success? | Test unmatched retrieval, empty text, missing artifacts or missing paired labels as relevant. |
+| Interrupted/restarted | What survives and what may be retried? | Inspect durable state or partial output; distinguish local recovery from remote side-effect recovery. |
+| Concurrent/another user | Which information and updates must be isolated? | Use separate owner/tenant inputs; local owner strings are not proof of authentication. |
+| Regression | What changes on the same held-out cases? | Keep baseline and candidate labels together; separate synthetic checks from model quality. |
+
+Focused extension exercise: Kill a worker between tool completion and state update. Explain which external effect could repeat and design its idempotency key before retrying.
+
+Original project experiment to preserve: Replay the same publish event twice and verify that one accepted draft produces at most one external post.
+
+Record your prediction, input/version, observed evidence, failure explanation and next experiment in [LEARNING_JOURNAL.md](LEARNING_JOURNAL.md). If a scenario is inapplicable to this algorithm, explain why and exercise it at the original application's boundary instead. A passing CPU check does not demonstrate remote outage, concurrency or model quality in the original integration.
+
+## Better production deployment
+
+Separate generation from publishing; persist a draft ID, explicit approval and an idempotency key for the scheduler.
+
+Connect this contract at the original boundary rather than placing the entire demo behind a public endpoint. Use verified identity to derive scope; separate ingestion/training/long jobs from request workers; cap input, output, queue and provider cost; pin and evaluate the selected dependency/model revision; keep secrets outside source. Track request/source/model IDs, terminal state, quality and latency without logging uploaded documents or credentials. Release against held-out normal, missing, invalid, failed and cross-user cases. Canary the candidate, retain the prior compatible artifact/index/schema, and rehearse rollback plus restore/deletion propagation.
+
+For local learning, stdlib algorithms and SQLite keep behavior inspectable and inexpensive. At shared-service scale, use a durable queue/database and independently scaled inference workers when measured contention or GPU demand requires them. That adds operational cost, migrations and failure modes; model choice and capacity still require load and quality measurements. The original [learning guide](LEARNINGS.md) contains project-specific deployment tradeoffs.
+
+## Packaging and evidence limits
+
+`enhancement/Dockerfile` packages only the CPU extension. Build from the **collection root** with `docker build -f "content_planner_flow/enhancement/Dockerfile" -t ai-learning-check .`. It copies this profile and the shared runtime, uses a nonroot user and runs `check`; it does not install the original SDKs, serve the app or provision a model. The image has not been built here. Resolve and pin a verified base-image digest in your own registry before a release.
+
+The collection [coverage report](../docs/ENHANCEMENT_REPORT.md) records executed CPU checks and native OCR verification separately. No live provider, GPU training or production deployment is implied. Generated extension guides/configs are maintained by `tools.enhance_collection`; personal journals are never regenerated over existing content.

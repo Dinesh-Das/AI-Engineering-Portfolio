@@ -1,0 +1,26 @@
+{
+  "project_id": "database-memory-agent",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "langchain",
+    "langchain-community",
+    "langchain-mongodb",
+    "openai",
+    "pymongo",
+    "pypdf",
+    "python-dotenv",
+    "streamlit",
+    "voyageai"
+  ],
+  "python_requirements": [
+    ">=3.10"
+  ],
+  "environment_names": [
+    "MONGODB_URI",
+    "OPENAI_API_KEY",
+    "VOYAGE_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

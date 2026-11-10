@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "zep-observations",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study how graph conversation data becomes behavioral observations.",
+  "mechanism": "A seed script writes example conversations and a check script inspects generated observations.",
+  "experiment": "Change one conversation and compare which observations persist; verify that inferred patterns are labeled as inferences.",
+  "production": "Use consented synthetic fixtures for experiments and control retention, user namespaces and the presentation of inferred traits.",
+  "fixture": {
+    "key": "zep-observations:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

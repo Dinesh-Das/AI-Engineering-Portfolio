@@ -1,0 +1,5 @@
+{
+  "project": "Youtube-trend-analysis",
+  "task": "Analyze channel or niche trends from collected video transcripts.",
+  "synthetic": true
+}

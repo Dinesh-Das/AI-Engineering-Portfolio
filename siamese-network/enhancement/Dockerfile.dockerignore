@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!siamese-network/
+!siamese-network/enhance.py
+!siamese-network/enhancement/
+!siamese-network/enhancement/profile.json

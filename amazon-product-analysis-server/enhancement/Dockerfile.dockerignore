@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!amazon-product-analysis-server/
+!amazon-product-analysis-server/enhance.py
+!amazon-product-analysis-server/enhancement/
+!amazon-product-analysis-server/enhancement/profile.json

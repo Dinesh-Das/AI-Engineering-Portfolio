@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [app.py](app.py) | reset_chat, display_pdf, create_pdf_from_screenshot | UI surface |
 | [rag_code.py](rag_code.py) | batch_iterate, Retriever, RAG, search, generate_context, query | Janus, PIL, base64, colivara_py, io, torch, tqdm, transformers |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -36,6 +37,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [rag_code.py](rag_code.py) | 24 | search | FunctionDef |
 | [rag_code.py](rag_code.py) | 59 | generate_context | FunctionDef |
 | [rag_code.py](rag_code.py) | 62 | query | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -43,7 +45,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `IPython`, `Janus`, `PIL`, `base64`, `colivara_py`, `dotenv`, `firecrawl`, `fpdf`, `gc`, `io`, `math`, `numpy`, `os`, `pdf2image`, `rag_code`, `random`, `requests`, `streamlit`, `streamlit_pdf_viewer`, `tempfile`, `time`, `torch`, `tqdm`, `transformers`, `uuid`
+Detected import roots: `IPython`, `Janus`, `PIL`, `base64`, `colivara_py`, `dotenv`, `firecrawl`, `fpdf`, `gc`, `importlib`, `io`, `math`, `numpy`, `os`, `pathlib`, `pdf2image`, `rag_code`, `random`, `requests`, `streamlit`, `streamlit_pdf_viewer`, `sys`, `tempfile`, `time`, `torch`, `tqdm`, `transformers`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -60,9 +62,17 @@ Every project now has a source/version manifest, empty environment template, a d
 
 | File | Recorded change |
 | --- | --- |
+| [app.py](app.py) | Bounded 1 remaining HTTP calls with explicit connect/read timeouts. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Redacted 2 possible credential literals (values not retained). |
 | [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 
@@ -70,7 +80,6 @@ These AST rules detect a small set of risky patterns and are not a complete secu
 
 | Source | Line | Rule | Review implication |
 | --- | --- | --- | --- |
-| [app.py](app.py) | 75 | network-timeout | HTTP call has no explicit timeout; a stalled peer can occupy a worker. |
 | [rag_code.py](rag_code.py) | 55 | trust_remote_code | trust_remote_code=True crosses a code-execution trust boundary. |
 
 ## Known source limitations

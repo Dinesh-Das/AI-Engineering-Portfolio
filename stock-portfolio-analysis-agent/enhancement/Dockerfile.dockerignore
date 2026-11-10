@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!stock-portfolio-analysis-agent/
+!stock-portfolio-analysis-agent/enhance.py
+!stock-portfolio-analysis-agent/enhancement/
+!stock-portfolio-analysis-agent/enhancement/profile.json

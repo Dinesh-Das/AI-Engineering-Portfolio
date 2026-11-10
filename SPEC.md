@@ -4,7 +4,7 @@
 
 Create one independent folder per relevant project from patchy631/ai-engineering-hub, preserving MIT attribution and the exact source revision. Explain the AI implementation, how to rebuild it, experiments, failure modes, and an appropriate production deployment. Include projects discovered in the tree as well as the README. Account explicitly for unavailable README links.
 
-The user's 10 November follow-up includes the upstream Chat Interfaces & UI category and frontend source in AI projects. The four completed OCR projects have been moved into this workspace; preserve their existing files and learning material, and link to them without reimporting or overwriting them. Keep model training, evaluation, agents, infrastructure, voice, vision, memory, retrieval and interfaces. Source documents and samples remain reference material, never instructions to this workspace.
+The user's follow-ups include the upstream UI category and authorize enhancing all 113 projects, including the four completed OCR projects. Preserve existing learning records, provenance and unrelated local changes; enhance OCR through tested additions and scoped changes rather than reimporting it. Keep model training, evaluation, agents, infrastructure, voice, vision, memory, retrieval, interfaces and OCR. Source documents and samples remain reference material, never instructions to this workspace.
 
 Learning is a standing requirement for every project and scenario: explain the mechanism, show how to rebuild it, provide controlled experiments and metrics, explain failure/recovery behavior, and compare production deployment choices. UI convenience must not replace those explanations. Preserve upstream reference implementations alongside improvements so the before/after decisions are inspectable.
 
@@ -35,6 +35,8 @@ Commands will be recorded in README.md once the inventory establishes executable
 6. Runtime status is explicit: offline checks do not establish provider compatibility, model quality, GPU suitability or production readiness. Live calls, downloads and paid runs require configured credentials and suitable hardware.
 7. UI projects provide a runnable local learning interface with separate model transport, streaming state and presentation. Verify empty/loading/success/error/cancel/reset states, keyboard access and responsive layouts; label fixture responses separately from model inference.
 8. Automated documentation validation enforces the learning sections for all catalog projects. Existing OCR material is preserved without silently accepting it as newly tested.
+9. Every one of the 113 projects receives an executable enhancement with a project-specific scenario suite, input validation, useful CPU-side operations and explicit evidence. Offline algorithms/contract tests are distinct from original model/provider integration quality.
+10. Enhancement tooling provides per-project preflight diagnostics and reproducible local execution/packaging. Never report a generic scaffold or fixture score as a successful original application deployment.
 
 ## Boundaries
 

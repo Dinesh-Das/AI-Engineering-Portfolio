@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "agentic_rag_deepseek",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Combine a local reasoning model with managed document parsing and search.",
+  "mechanism": "A custom CrewAI DocumentSearchTool delegates parsing and retrieval to GroundX before DeepSeek synthesizes the response.",
+  "experiment": "Compare table-heavy pages against plain-text pages and verify the answer cites the exact supporting page.",
+  "production": "Treat GroundX as an external data processor; track bucket ownership, ingestion state and document deletion across tenants.",
+  "fixture": {
+    "query": "agentic_rag_deepseek retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "agentic_rag_deepseek/synthetic-policy-v1",
+        "text": "agentic_rag_deepseek retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "agentic_rag_deepseek/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

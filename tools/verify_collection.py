@@ -12,6 +12,7 @@ from urllib.parse import unquote
 from .analysis import analyze_project, code_cells, python_cell
 from .hub import ROOT, check_project
 from .learning_contract import validate_learning
+from .verify_enhancements import verify as verify_enhancements
 
 
 def verify(root=ROOT):
@@ -35,7 +36,10 @@ def verify(root=ROOT):
     documents = [root / p for p in ('README.md', 'PROJECT_INDEX.md', 'docs/INVENTORY.md',
                                    'docs/CHANGES.md', 'docs/LEARNING_PATH.md', 'docs/DEPLOYMENT_PLAYBOOK.md',
                                    'docs/EVALUATION_FORMAT.md', 'docs/SOURCES.md', 'docs/THIRD_PARTY_NOTICES.md',
-                                   'docs/LEARNING_CONTRACT.md', 'docs/UI_DESIGN.md', 'docs/UI_VALIDATION.md')]
+                                   'docs/LEARNING_CONTRACT.md', 'docs/UI_DESIGN.md', 'docs/UI_VALIDATION.md',
+                                   'docs/ENHANCEMENT_REPORT.md', 'docs/OCR_ENHANCEMENT_VALIDATION.md',
+                                   'workbench_core/README.md', 'docs/decisions/001-executable-learning-extensions.md',
+                                   'docs/ENHANCEMENT_REVIEW.md')]
     python_files = notebook_cells = magic_cells = 0
     ui_bundles = 0
     for project in catalog['projects']:
@@ -72,13 +76,15 @@ def verify(root=ROOT):
         for line in (project_root / '.env.example').read_text(encoding='utf-8').splitlines():
             if line and not line.startswith('#') and (not re.fullmatch(r'[A-Z][A-Z0-9_]*=', line)):
                 errors.append(project['id'] + ': environment template contains a nonempty/invalid value')
-        documents.extend(project_root / name for name in ('README.md', 'REVERSE_ENGINEERING.md', 'LEARNINGS.md', 'EVALUATION.md', 'LEARNING_JOURNAL.md'))
+        documents.extend(project_root / name for name in ('README.md', 'REVERSE_ENGINEERING.md', 'LEARNINGS.md', 'EVALUATION.md', 'LEARNING_JOURNAL.md', 'ENHANCEMENTS.md'))
         if project.get('learning_ui'):
             ui_bundles += 1
             documents.append(project_root / 'UI_GUIDE.md')
             for relative in ('__init__.py', 'protocol.py', 'server.py', 'static/app.js', 'static/index.html', 'static/style.css'):
                 if (project_root / 'learning_ui' / relative).read_bytes() != (root / 'tools/chat_lab' / relative).read_bytes():
                     errors.append(project['id'] + ': bundled UI differs from the tested canonical runtime')
+    for identifier in ('Latex-OCR-Lama', 'gemma3-ocr', 'llama-ocr', 'qwen-2.5VL-ocr'):
+        documents.extend(root / identifier / name for name in ('ENHANCEMENTS.md', 'LEARNING_JOURNAL.md'))
     for document in documents:
         if not document.is_file():
             errors.append('Missing document: ' + str(document.relative_to(root)))
@@ -111,12 +117,16 @@ def verify(root=ROOT):
                 errors.append('UI browser fixtures did not pass for every learning bundle')
     elif ui_bundles:
         errors.append('Missing UI browser evidence')
+    enhancement = verify_enhancements(root, catalog)
+    errors.extend(enhancement['failures'])
     return {'projects': len(ids), 'inventory_entries': len(catalog['inventory']),
             'dispositions': dict(Counter(r['status'] for r in catalog['inventory'])),
             'python_files_compiled': python_files, 'notebook_cells_compiled': notebook_cells,
             'cells_with_ipython_syntax': magic_cells, 'documents_checked': len(documents),
             'learning_contracts_checked': len(ids), 'independent_ui_bundles_checked': ui_bundles,
             'browser_fixture_projects_verified': browser_verified,
+            'enhanced_projects_checked': enhancement['projects'],
+            'enhancement_scenarios_verified': enhancement['scenario_checks'],
             'failures': errors, 'live_model_tests': False, 'gpu_training': False, 'deployed': False}
 
 

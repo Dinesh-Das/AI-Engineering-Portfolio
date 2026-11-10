@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "sonnet4-vs-qwen3-coder",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Evaluate Claude and Qwen3-Coder against repository-grounded tasks.",
+  "mechanism": "Parallel response generation and DeepEval scoring are supplemented by a batch-comparison notebook.",
+  "experiment": "Repeat each task with fixed and varied seeds and report correctness variance and cost per passing solution.",
+  "production": "Separate candidate generation from grading jobs and version both model mappings and evaluator configuration.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "sonnet4-vs-qwen3-coder-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "sonnet4-vs-qwen3-coder-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

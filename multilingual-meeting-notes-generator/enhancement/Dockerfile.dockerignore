@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!multilingual-meeting-notes-generator/
+!multilingual-meeting-notes-generator/enhance.py
+!multilingual-meeting-notes-generator/enhancement/
+!multilingual-meeting-notes-generator/enhancement/profile.json

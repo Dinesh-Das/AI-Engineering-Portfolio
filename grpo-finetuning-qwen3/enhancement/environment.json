@@ -1,0 +1,12 @@
+{
+  "project_id": "grpo-finetuning-qwen3",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "FIREWORKS_ACCOUNT_ID",
+    "FIREWORKS_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

@@ -1,0 +1,11 @@
+{
+  "project_id": "autogen-stock-analyst",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "IMAGINE_API_KEY",
+    "IMAGINE_AUTOGEN_CONFIG"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

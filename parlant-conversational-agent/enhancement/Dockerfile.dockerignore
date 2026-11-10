@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!parlant-conversational-agent/
+!parlant-conversational-agent/enhance.py
+!parlant-conversational-agent/enhancement/
+!parlant-conversational-agent/enhancement/profile.json

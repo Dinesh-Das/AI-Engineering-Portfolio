@@ -1,0 +1,12 @@
+[
+  {
+    "id": "sonnet4-vs-qwen3-coder-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "sonnet4-vs-qwen3-coder-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

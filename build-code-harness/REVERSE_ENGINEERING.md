@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [code_harness.py](code_harness.py) | require_approval, run_tests | crewai, crewai_tools, dotenv, os |
 | [workspace/account.py](workspace/account.py) | InsufficientFunds, BankAccount, deposit, withdraw, transfer |  |
 | [workspace/tests/test_account.py](workspace/tests/test_account.py) | test_deposit_increases_balance, test_withdraw_decreases_balance, test_overdraft_is_blocked, test_transfer_moves_money_between_accounts, test_transfer_respects_overdraft | account, pytest |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -40,6 +41,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [workspace/tests/test_account.py](workspace/tests/test_account.py) | 17 | test_overdraft_is_blocked | FunctionDef |
 | [workspace/tests/test_account.py](workspace/tests/test_account.py) | 24 | test_transfer_moves_money_between_accounts | FunctionDef |
 | [workspace/tests/test_account.py](workspace/tests/test_account.py) | 32 | test_transfer_respects_overdraft | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -47,7 +49,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `openrouter/openai/gpt-4o-mini`
 
-Detected import roots: `account`, `crewai`, `crewai_tools`, `dotenv`, `os`, `pytest`
+Detected import roots: `account`, `crewai`, `crewai_tools`, `dotenv`, `importlib`, `os`, `pathlib`, `pytest`, `sys`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -68,6 +70,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

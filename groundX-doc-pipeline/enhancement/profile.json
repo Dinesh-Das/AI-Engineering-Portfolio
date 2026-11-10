@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "groundX-doc-pipeline",
+  "family": "extraction",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Process complex documents and evaluate structured extraction quality.",
+  "mechanism": "GroundX utilities ingest and poll documents; CLI evaluation compares parsed invoice output against a reference.",
+  "experiment": "Use a held-out invoice set with rotated pages and missing fields; score field accuracy and schema validity separately.",
+  "production": "Queue document jobs, validate upload types and sizes, and store page-level provenance with extraction-version metadata.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "groundX-doc-pipeline",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

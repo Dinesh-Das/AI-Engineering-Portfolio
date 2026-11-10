@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!ai_news_generator/
+!ai_news_generator/enhance.py
+!ai_news_generator/enhancement/
+!ai_news_generator/enhancement/profile.json

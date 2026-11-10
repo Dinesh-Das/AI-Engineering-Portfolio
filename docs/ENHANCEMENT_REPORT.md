@@ -1,0 +1,121 @@
+# Executed enhancement coverage
+
+113 project launchers executed; 630 deterministic CPU scenarios. Failures: 0. Each launcher also ran read-only environment diagnostics in the collection interpreter. Missing original SDKs are reported as missing; presence does not establish compatible versions.
+
+The [machine-readable evidence](enhancement-validation.json) includes every case and a source fingerprint. These scenarios exercise actual shared algorithms on labeled synthetic inputs. They do not call original model integrations, train a model, build containers or deploy services. See [native OCR verification](OCR_ENHANCEMENT_VALIDATION.md) for the separate application suites, and [UI validation](UI_VALIDATION.md) for the existing browser checks.
+
+| Project | Extension | Passed checks |
+| --- | --- | --- |
+| [acp-code](../acp-code/ENHANCEMENTS.md) | workflow | 6/6 |
+| [agent-with-mcp-memory](../agent-with-mcp-memory/ENHANCEMENTS.md) | memory | 5/5 |
+| [agent2agent-demo](../agent2agent-demo/ENHANCEMENTS.md) | workflow | 6/6 |
+| [agentic_rag](../agentic_rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [agentic_rag_deepseek](../agentic_rag_deepseek/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [ai-avatar-demo](../ai-avatar-demo/ENHANCEMENTS.md) | memory | 5/5 |
+| [ai-podcast-generation](../ai-podcast-generation/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [ai-podcast-generator](../ai-podcast-generator/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [ai_news_generator](../ai_news_generator/ENHANCEMENTS.md) | workflow | 6/6 |
+| [amazon-product-analysis-server](../amazon-product-analysis-server/ENHANCEMENTS.md) | tools | 5/5 |
+| [art_mcp_rl](../art_mcp_rl/ENHANCEMENTS.md) | sql | 5/5 |
+| [audio-analysis-toolkit](../audio-analysis-toolkit/ENHANCEMENTS.md) | transcript | 6/6 |
+| [autogen-stock-analyst](../autogen-stock-analyst/ENHANCEMENTS.md) | workflow | 6/6 |
+| [biotech-agentic-analyst](../biotech-agentic-analyst/ENHANCEMENTS.md) | extraction | 5/5 |
+| [book-writer-flow](../book-writer-flow/ENHANCEMENTS.md) | workflow | 6/6 |
+| [brand-monitoring](../brand-monitoring/ENHANCEMENTS.md) | workflow | 6/6 |
+| [build-code-harness](../build-code-harness/ENHANCEMENTS.md) | workflow | 6/6 |
+| [Build-reasoning-model](../Build-reasoning-model/ENHANCEMENTS.md) | training | 5/5 |
+| [chat-with-audios](../chat-with-audios/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [chat-with-code](../chat-with-code/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [code-model-comparison](../code-model-comparison/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [colbert-rag](../colbert-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [Colivara-deepseek-website-RAG](../Colivara-deepseek-website-RAG/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [content_planner_flow](../content_planner_flow/ENHANCEMENTS.md) | workflow | 6/6 |
+| [context-engineering-pipeline](../context-engineering-pipeline/ENHANCEMENTS.md) | memory | 5/5 |
+| [context-engineering-workflow](../context-engineering-workflow/ENHANCEMENTS.md) | memory | 5/5 |
+| [conversational-support-flow](../conversational-support-flow/ENHANCEMENTS.md) | workflow | 6/6 |
+| [corrective-rag](../corrective-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [cursor_linkup_mcp](../cursor_linkup_mcp/ENHANCEMENTS.md) | tools | 5/5 |
+| [database-memory-agent](../database-memory-agent/ENHANCEMENTS.md) | memory | 5/5 |
+| [DeepSeek-finetuning](../DeepSeek-finetuning/ENHANCEMENTS.md) | training | 5/5 |
+| [deepseek-multimodal-RAG](../deepseek-multimodal-RAG/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [deepseek-thinking-ui](../deepseek-thinking-ui/ENHANCEMENTS.md) | streaming | 6/6 |
+| [deploy-agentic-rag](../deploy-agentic-rag/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [document-chat-rag](../document-chat-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [documentation-writer-flow](../documentation-writer-flow/ENHANCEMENTS.md) | workflow | 6/6 |
+| [eval-and-observability](../eval-and-observability/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [eyelevel-mcp-rag](../eyelevel-mcp-rag/ENHANCEMENTS.md) | tools | 5/5 |
+| [fastest-rag-milvus-groq](../fastest-rag-milvus-groq/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [fastest-rag-stack](../fastest-rag-stack/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [financial-analyst-deepseek](../financial-analyst-deepseek/ENHANCEMENTS.md) | workflow | 6/6 |
+| [finetune-studio-mcp-app](../finetune-studio-mcp-app/ENHANCEMENTS.md) | training | 5/5 |
+| [firecrawl-agent](../firecrawl-agent/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [flight-booking-crew](../flight-booking-crew/ENHANCEMENTS.md) | workflow | 6/6 |
+| [github-rag](../github-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [gpt-oss-thinking-ui](../gpt-oss-thinking-ui/ENHANCEMENTS.md) | streaming | 6/6 |
+| [gpt-oss-vs-qwen3](../gpt-oss-vs-qwen3/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [graphiti-mcp](../graphiti-mcp/ENHANCEMENTS.md) | memory | 5/5 |
+| [groundX-doc-pipeline](../groundX-doc-pipeline/ENHANCEMENTS.md) | extraction | 5/5 |
+| [grpo-finetuning-qwen3](../grpo-finetuning-qwen3/ENHANCEMENTS.md) | training | 5/5 |
+| [guidelines-vs-traditional-prompt](../guidelines-vs-traditional-prompt/ENHANCEMENTS.md) | workflow | 6/6 |
+| [hotel-booking-crew](../hotel-booking-crew/ENHANCEMENTS.md) | workflow | 6/6 |
+| [hugging-face-skills](../hugging-face-skills/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [imagegen-janus-pro](../imagegen-janus-pro/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [kitops-mcp](../kitops-mcp/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [knowledge distillation](../knowledge%20distillation/ENHANCEMENTS.md) | training | 6/6 |
+| [llama-4-rag](../llama-4-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [llama-4_vs_deepseek-r1](../llama-4_vs_deepseek-r1/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [llamaindex-mcp](../llamaindex-mcp/ENHANCEMENTS.md) | sql | 5/5 |
+| [local-chatgpt](../local-chatgpt/ENHANCEMENTS.md) | streaming | 6/6 |
+| [local-chatgpt with DeepSeek](../local-chatgpt%20with%20DeepSeek/ENHANCEMENTS.md) | streaming | 6/6 |
+| [local-chatgpt with Gemma 3](../local-chatgpt%20with%20Gemma%203/ENHANCEMENTS.md) | streaming | 6/6 |
+| [mcp-agentic-rag](../mcp-agentic-rag/ENHANCEMENTS.md) | tools | 5/5 |
+| [mcp-agentic-rag-firecrawl](../mcp-agentic-rag-firecrawl/ENHANCEMENTS.md) | tools | 5/5 |
+| [mcp-video-rag](../mcp-video-rag/ENHANCEMENTS.md) | tools | 5/5 |
+| [mcp-voice-agent](../mcp-voice-agent/ENHANCEMENTS.md) | transcript | 6/6 |
+| [mindsdb-mcp](../mindsdb-mcp/ENHANCEMENTS.md) | sql | 5/5 |
+| [minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3](../minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [modernbert-rag](../modernbert-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [motia-content-creation](../motia-content-creation/ENHANCEMENTS.md) | workflow | 6/6 |
+| [Multi-Agent-deep-researcher-mcp-windows-linux](../Multi-Agent-deep-researcher-mcp-windows-linux/ENHANCEMENTS.md) | workflow | 6/6 |
+| [multi-modal-rag](../multi-modal-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [multilingual-meeting-notes-generator](../multilingual-meeting-notes-generator/ENHANCEMENTS.md) | transcript | 6/6 |
+| [multimodal-rag-assemblyai](../multimodal-rag-assemblyai/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [multiplatform_deep_researcher](../multiplatform_deep_researcher/ENHANCEMENTS.md) | workflow | 6/6 |
+| [notebook-lm-clone](../notebook-lm-clone/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [o3-vs-claude-code](../o3-vs-claude-code/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [omnigraph-multi-agent](../omnigraph-multi-agent/ENHANCEMENTS.md) | memory | 5/5 |
+| [open-agent-builder](../open-agent-builder/ENHANCEMENTS.md) | workflow | 6/6 |
+| [openai-swarm-ollama](../openai-swarm-ollama/ENHANCEMENTS.md) | workflow | 6/6 |
+| [openclaw-secure-deployment](../openclaw-secure-deployment/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [paralegal-agent-crew](../paralegal-agent-crew/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [parlant-conversational-agent](../parlant-conversational-agent/ENHANCEMENTS.md) | workflow | 6/6 |
+| [pixeltable-mcp](../pixeltable-mcp/ENHANCEMENTS.md) | tools | 5/5 |
+| [qwen3-thinking-ui](../qwen3-thinking-ui/ENHANCEMENTS.md) | streaming | 6/6 |
+| [qwen3_vs_deepseek-r1](../qwen3_vs_deepseek-r1/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [rag-sql-router](../rag-sql-router/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [rag-voice-agent](../rag-voice-agent/ENHANCEMENTS.md) | transcript | 6/6 |
+| [rag-with-dockling](../rag-with-dockling/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [real-time-voicebot](../real-time-voicebot/ENHANCEMENTS.md) | transcript | 6/6 |
+| [run-jev-inside-agent-harness](../run-jev-inside-agent-harness/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [sales-analytics-agent](../sales-analytics-agent/ENHANCEMENTS.md) | sql | 5/5 |
+| [sdv-mcp](../sdv-mcp/ENHANCEMENTS.md) | tools | 5/5 |
+| [siamese-network](../siamese-network/ENHANCEMENTS.md) | training | 5/5 |
+| [simple-rag-workflow](../simple-rag-workflow/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [sonnet4-vs-o4](../sonnet4-vs-o4/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [sonnet4-vs-qwen3-coder](../sonnet4-vs-qwen3-coder/ENHANCEMENTS.md) | evaluation | 5/5 |
+| [stagehand x mcp-use](../stagehand%20x%20mcp-use/ENHANCEMENTS.md) | workflow | 6/6 |
+| [stock-portfolio-analysis-agent](../stock-portfolio-analysis-agent/ENHANCEMENTS.md) | workflow | 6/6 |
+| [streaming-ai-chatbot](../streaming-ai-chatbot/ENHANCEMENTS.md) | streaming | 6/6 |
+| [train-yolo26-object-detection](../train-yolo26-object-detection/ENHANCEMENTS.md) | training | 6/6 |
+| [trustworthy-rag](../trustworthy-rag/ENHANCEMENTS.md) | retrieval | 6/6 |
+| [ultimate-ai-assitant-using-mcp](../ultimate-ai-assitant-using-mcp/ENHANCEMENTS.md) | tools | 5/5 |
+| [video-rag-gemini](../video-rag-gemini/ENHANCEMENTS.md) | artifacts | 5/5 |
+| [web-browsing-agent](../web-browsing-agent/ENHANCEMENTS.md) | workflow | 6/6 |
+| [Website-to-API-with-FireCrawl](../Website-to-API-with-FireCrawl/ENHANCEMENTS.md) | extraction | 5/5 |
+| [Youtube-trend-analysis](../Youtube-trend-analysis/ENHANCEMENTS.md) | workflow | 6/6 |
+| [zep-memory-assistant](../zep-memory-assistant/ENHANCEMENTS.md) | memory | 5/5 |
+| [zep-observations](../zep-observations/ENHANCEMENTS.md) | memory | 5/5 |
+| [Latex-OCR-Lama](../Latex-OCR-Lama/ENHANCEMENTS.md) | ocr | 6/6 |
+| [gemma3-ocr](../gemma3-ocr/ENHANCEMENTS.md) | ocr | 6/6 |
+| [llama-ocr](../llama-ocr/ENHANCEMENTS.md) | ocr | 6/6 |
+| [qwen-2.5VL-ocr](../qwen-2.5VL-ocr/ENHANCEMENTS.md) | ocr | 6/6 |

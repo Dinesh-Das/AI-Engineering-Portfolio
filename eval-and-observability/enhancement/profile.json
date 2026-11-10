@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "eval-and-observability",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline.",
+  "mechanism": "Dataset-generation and application notebooks connect RAG calls to Opik and judge metrics.",
+  "experiment": "Keep generated evaluation questions separate from a human-authored holdout and measure judge disagreement.",
+  "production": "Run evaluation as a release job and sample redacted production traces with a retention limit and stable trace IDs.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "eval-and-observability-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "eval-and-observability-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

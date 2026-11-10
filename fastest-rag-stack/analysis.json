@@ -688,6 +688,38 @@
       "ui": false,
       "syntax_error": null,
       "notebook_magics": false
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [],
@@ -704,14 +736,17 @@
     "base64",
     "dotenv",
     "gc",
+    "importlib",
     "llama_index",
     "nest_asyncio",
     "openai",
     "os",
+    "pathlib",
     "qdrant_client",
     "rag_code",
     "random",
     "streamlit",
+    "sys",
     "tempfile",
     "time",
     "uuid"
@@ -735,6 +770,11 @@
     {
       "path": "sambanova.ipynb",
       "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
       "ui": false
     }
   ],

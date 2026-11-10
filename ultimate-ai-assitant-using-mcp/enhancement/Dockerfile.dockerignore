@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!ultimate-ai-assitant-using-mcp/
+!ultimate-ai-assitant-using-mcp/enhance.py
+!ultimate-ai-assitant-using-mcp/enhancement/
+!ultimate-ai-assitant-using-mcp/enhancement/profile.json

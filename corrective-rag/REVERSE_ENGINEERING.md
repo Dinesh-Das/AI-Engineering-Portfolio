@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [app.py](app.py) | load_llm, reset_chat, display_pdf, initialize_workflow, run_workflow | UI surface |
 | [workflow.py](workflow.py) | RetrieveEvent, WebSearchEvent, QueryEvent, CorrectiveRAGWorkflow, retrieve, eval_relevance, web_search, query_result | dotenv, llama_index, os, relevance_policy, typing |
 | [relevance_policy.py](relevance_policy.py) | is_relevant_grade, needs_web_search |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -43,6 +44,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [workflow.py](workflow.py) | 160 | query_result | Get result with relevant text. |
 | [relevance_policy.py](relevance_policy.py) | 4 | is_relevant_grade | FunctionDef |
 | [relevance_policy.py](relevance_policy.py) | 8 | needs_web_search | No evidence or an invalid grader response must trigger evidence recovery. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -51,7 +53,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-large-en-v1.5`
 - `deepseek-r1:7b`
 
-Detected import roots: `IPython`, `asyncio`, `base64`, `contextlib`, `dotenv`, `gc`, `io`, `llama_index`, `logging`, `nest_asyncio`, `os`, `qdrant_client`, `relevance_policy`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `uuid`, `workflow`
+Detected import roots: `IPython`, `asyncio`, `base64`, `contextlib`, `dotenv`, `gc`, `importlib`, `io`, `llama_index`, `logging`, `nest_asyncio`, `os`, `pathlib`, `qdrant_client`, `relevance_policy`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `uuid`, `workflow`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -69,6 +71,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [workflow.py](workflow.py) | Fixed evidence fallback routing and aligned context filtering with strict affirmative grading; unit-tested routing on extracted workflow methods without SDK imports. |
 | [relevance_policy.py](relevance_policy.py) | Added a strict relevance gate; recover when retrieval is empty or no grade is affirmative. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

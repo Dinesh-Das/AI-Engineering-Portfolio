@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "graphiti-mcp",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study a documented integration for persistent graph memory through MCP.",
+  "mechanism": "The pinned project contains an integration guide rather than a vendored Graphiti server implementation.",
+  "experiment": "Build a minimal two-session fact-retention fixture and verify update, temporal contradiction and deletion semantics.",
+  "production": "Deploy the actual Graphiti service separately, pin its version and enforce graph/user namespaces at the transport boundary.",
+  "fixture": {
+    "key": "graphiti-mcp:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

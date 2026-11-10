@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "code-model-comparison",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare code-generation models on a common repository context.",
+  "mechanism": "model_service performs parallel model calls, code_ingestion supplies context and Opik-based evaluation scores outputs.",
+  "experiment": "Reverse candidate order, anonymize names and run executable correctness checks alongside judge scores.",
+  "production": "Use a versioned benchmark runner with identical context budgets and record provider latency, token usage and model revision.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "code-model-comparison-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "code-model-comparison-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "github-rag",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Answer repository questions after GitIngest converts source to retrieval context.",
+  "mechanism": "GitHub URL validation and ingestion feed a local LlamaIndex query engine; the original entry points are UI-bound.",
+  "experiment": "Use a monorepo with generated files and embedded secrets to evaluate ingestion exclusions and citation precision.",
+  "production": "Use pinned commits, repository size limits and source-file allowlists before indexing third-party code.",
+  "fixture": {
+    "query": "github-rag retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "github-rag/synthetic-policy-v1",
+        "text": "github-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "github-rag/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

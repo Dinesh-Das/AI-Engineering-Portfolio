@@ -1,0 +1,13 @@
+{
+  "teacher": [
+    1000,
+    999
+  ],
+  "student": [
+    999,
+    1000
+  ],
+  "target": 0,
+  "temperature": 2,
+  "alpha": 0.5
+}

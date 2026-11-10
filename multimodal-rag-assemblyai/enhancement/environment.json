@@ -1,0 +1,36 @@
+{
+  "project_id": "multimodal-rag-assemblyai",
+  "manifests": [
+    "requirements.txt"
+  ],
+  "requirements": [
+    "anthropic>=0.18.0",
+    "assemblyai>=0.25.0",
+    "crewai>=0.50.0",
+    "google-generativeai>=0.3.0",
+    "langchain-community>=0.0.20",
+    "langchain>=0.1.0",
+    "numpy>=1.24.0",
+    "ollama>=0.1.0",
+    "openai>=1.12.0",
+    "pydantic>=2.0.0",
+    "pymilvus>=2.3.0",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "sounddevice>=0.4.6",
+    "soundfile>=0.12.1"
+  ],
+  "python_requirements": [],
+  "environment_names": [
+    "ASSEMBLYAI_API_KEY",
+    "EMBEDDING_DIMENSION",
+    "EMBEDDING_MODEL",
+    "LLM_MODEL",
+    "MILVUS_COLLECTION_NAME",
+    "MILVUS_HOST",
+    "MILVUS_PORT",
+    "OPENAI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

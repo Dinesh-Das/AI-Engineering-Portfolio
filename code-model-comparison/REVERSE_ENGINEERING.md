@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [code_evaluation_opik.py](code_evaluation_opik.py) | evaluate_code | opik |
 | [code_ingestion.py](code_ingestion.py) | ingest_github_repo | gitingest |
 | [model_service.py](model_service.py) | get_model_response_async, get_parallel_responses, get_model_responses, get_all_model_names, validate_model_name, get_model_mapping | asyncio, litellm, os, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -41,6 +42,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [model_service.py](model_service.py) | 106 | get_all_model_names | Get all available model names for dropdown selection. |
 | [model_service.py](model_service.py) | 115 | validate_model_name | Validate if a model name exists in available models. |
 | [model_service.py](model_service.py) | 120 | get_model_mapping | Get the model mapping for a given model name. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -48,7 +50,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `asyncio`, `code_evaluation_opik`, `code_ingestion`, `dotenv`, `gitingest`, `litellm`, `model_service`, `opik`, `os`, `pandas`, `plotly`, `streamlit`, `typing`
+Detected import roots: `asyncio`, `code_evaluation_opik`, `code_ingestion`, `dotenv`, `gitingest`, `importlib`, `litellm`, `model_service`, `opik`, `os`, `pandas`, `pathlib`, `plotly`, `streamlit`, `sys`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -67,6 +69,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/pairs.json](enhancement/examples/pairs.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

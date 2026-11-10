@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [app.py](app.py) | reset_chat | UI surface |
 | [rag_code.py](rag_code.py) | batch_iterate, EmbedData, QdrantVDB_QB, Retriever, RAG, Transcribe, generate_embedding, embed, define_client, create_collection, ingest_data, search | assemblyai, llama_index, qdrant_client, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -43,6 +44,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [rag_code.py](rag_code.py) | 149 | generate_context | FunctionDef |
 | [rag_code.py](rag_code.py) | 162 | query | FunctionDef |
 | [rag_code.py](rag_code.py) | 185 | transcribe_audio | Transcribe an audio file and return speaker-labeled transcripts. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -50,7 +52,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `assemblyai`, `base64`, `dotenv`, `gc`, `llama_index`, `os`, `qdrant_client`, `rag_code`, `streamlit`, `tempfile`, `typing`, `uuid`
+Detected import roots: `assemblyai`, `base64`, `dotenv`, `gc`, `importlib`, `llama_index`, `os`, `pathlib`, `qdrant_client`, `rag_code`, `streamlit`, `sys`, `tempfile`, `typing`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -69,6 +71,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/AssemblyAI.png](assets/AssemblyAI.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

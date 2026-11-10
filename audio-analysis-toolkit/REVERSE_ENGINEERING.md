@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [app.py](app.py) | get_logo_base64, reset_chat, timestamp_string, display_transcription, display_summary, display_speakers, display_sentiment, display_topics, display_chat, main | UI surface |
 | [server.py](server.py) | transcribe_audio, get_audio_data | assemblyai, dotenv, mcp, os, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -39,6 +40,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [app.py](app.py) | 662 | main | FunctionDef |
 | [server.py](server.py) | 21 | transcribe_audio | This MCP tool accepts either a URL or an absolute local path to an audio file, transcribes it |
 | [server.py](server.py) | 45 | get_audio_data | This MCP tool accepts a set of flags and returns a dictionary of features from the last transcript. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -46,7 +48,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `assemblyai`, `base64`, `dotenv`, `gc`, `mcp`, `os`, `pathlib`, `streamlit`, `typing`, `uuid`
+Detected import roots: `assemblyai`, `base64`, `dotenv`, `gc`, `importlib`, `mcp`, `os`, `pathlib`, `streamlit`, `sys`, `typing`, `uuid`
 
 Retained dependency manifests: [requirements.txt](requirements.txt)
 
@@ -64,6 +66,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/logo.png](assets/logo.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/quality.json](enhancement/examples/quality.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "build-code-harness",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
+  "mechanism": "The harness gives a model repository tools and a test runner; the bundled bank-account task is deliberately buggy learning material.",
+  "experiment": "Run the account tests before and after an agent patch and inspect whether the agent weakens tests to claim success.",
+  "production": "Run the harness in an ephemeral container without host credentials, limit write paths and retain patch/test evidence for review.",
+  "fixture": {
+    "payload": {
+      "project": "build-code-harness",
+      "task": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
+      "synthetic": true
+    }
+  }
+}

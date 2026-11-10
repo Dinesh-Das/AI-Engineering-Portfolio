@@ -1,0 +1,17 @@
+{
+  "project_id": "agentic_rag",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai[tools]>=0.86.0,<1.0.0"
+  ],
+  "python_requirements": [
+    ">=3.10,<=3.13"
+  ],
+  "environment_names": [
+    "GROQ_API_KEY",
+    "TAVILY_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

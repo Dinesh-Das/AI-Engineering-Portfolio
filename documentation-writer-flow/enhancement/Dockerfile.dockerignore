@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!documentation-writer-flow/
+!documentation-writer-flow/enhance.py
+!documentation-writer-flow/enhancement/
+!documentation-writer-flow/enhancement/profile.json

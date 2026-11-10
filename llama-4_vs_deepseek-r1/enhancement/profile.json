@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "llama-4_vs_deepseek-r1",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare Llama 4 and DeepSeek on a document-grounded task.",
+  "mechanism": "Shared RAG workflow and Opik evaluation reduce setup variation between the model candidates.",
+  "experiment": "Freeze the corpus and retrieved contexts, randomize answer order and compare factual support, latency and cost.",
+  "production": "Run comparisons in a reproducible evaluation job with identical context truncation and independently reviewed ground truth.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "llama-4_vs_deepseek-r1-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "llama-4_vs_deepseek-r1-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

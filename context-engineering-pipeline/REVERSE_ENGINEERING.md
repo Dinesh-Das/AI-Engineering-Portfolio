@@ -25,6 +25,7 @@ The following table is extracted from this project's actual retained files. Note
 | [context_engineering_notebook.ipynb#cell-41](context_engineering_notebook.ipynb#cell-41) | count_tokens, within_budget | tiktoken |
 | [context_engineering_notebook.ipynb#cell-42](context_engineering_notebook.ipynb#cell-42) | maybe_summarize_block |  |
 | [context_engineering_notebook.ipynb#cell-43](context_engineering_notebook.ipynb#cell-43) | build_context_prompt_with_summarization |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -38,6 +39,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [context_engineering_notebook.ipynb#cell-41](context_engineering_notebook.ipynb#cell-41) | 11 | within_budget | FunctionDef |
 | [context_engineering_notebook.ipynb#cell-42](context_engineering_notebook.ipynb#cell-42) | 1 | maybe_summarize_block | If `text` > max_tokens, compress to ~target_tokens (or ~max_tokens//2 if not given). |
 | [context_engineering_notebook.ipynb#cell-43](context_engineering_notebook.ipynb#cell-43) | 1 | build_context_prompt_with_summarization | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -45,7 +47,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `intfloat/e5-large-v2`
 
-Detected import roots: `getpass`, `lancedb`, `numpy`, `os`, `pandas`, `pathlib`, `pixelagent`, `pixeltable`, `sentence_transformers`, `tiktoken`
+Detected import roots: `getpass`, `importlib`, `lancedb`, `numpy`, `os`, `pandas`, `pathlib`, `pixelagent`, `pixeltable`, `sentence_transformers`, `sys`, `tiktoken`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -64,6 +66,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [context_engineering_notebook.ipynb](context_engineering_notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/context_engineering_pipeline.jpg](assets/context_engineering_pipeline.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/value.json](enhancement/examples/value.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

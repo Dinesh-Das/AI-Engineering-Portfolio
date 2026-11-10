@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "DeepSeek-finetuning",
+  "family": "training",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Adapt a distilled DeepSeek model and export it for local inference.",
+  "mechanism": "An Unsloth notebook loads a quantized base model, prepares training examples, fine-tunes and exports for Ollama.",
+  "experiment": "Compare a fixed baseline prompt suite before tuning, after tuning and after quantized export to expose regressions.",
+  "production": "Train on ephemeral GPU workers; register the adapter, tokenizer and base revision together and validate the exported artifact.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "DeepSeek-finetuning",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

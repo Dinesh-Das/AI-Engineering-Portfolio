@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Benchmark several code-generation providers against common repository context.",
+  "mechanism": "Model-service mappings and Opik evaluation allow pairwise candidate generation and scoring.",
+  "experiment": "Measure pass rates on the same executable tasks and compare those results with judge rankings and token cost.",
+  "production": "Use one provider adapter per tested API version and keep a model manifest so renamed endpoints cannot silently change the benchmark.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

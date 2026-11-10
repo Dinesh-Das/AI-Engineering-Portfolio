@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!motia-content-creation/
+!motia-content-creation/enhance.py
+!motia-content-creation/enhancement/
+!motia-content-creation/enhancement/profile.json

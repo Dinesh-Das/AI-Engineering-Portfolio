@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "openclaw-secure-deployment",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Learn host and network boundaries for an AI-agent deployment.",
+  "mechanism": "The pinned folder contains a deployment guide covering a VM, Tailscale, SSH and firewall configuration.",
+  "experiment": "Draw the reachable ports before and after the proposed controls and test access from trusted and untrusted networks.",
+  "production": "Use immutable host configuration, private administrative access and encrypted backups; keep rollback instructions independent of the running VM.",
+  "fixture": {
+    "artifact_id": "openclaw-secure-deployment-segment-1",
+    "content": "Synthetic integrity fixture for openclaw-secure-deployment\n"
+  }
+}

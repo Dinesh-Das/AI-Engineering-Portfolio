@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!agent-with-mcp-memory/
+!agent-with-mcp-memory/enhance.py
+!agent-with-mcp-memory/enhancement/
+!agent-with-mcp-memory/enhancement/profile.json

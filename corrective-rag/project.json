@@ -7,6 +7,11 @@
       "path": "app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -286,6 +291,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -301,11 +338,13 @@
       "contextlib",
       "dotenv",
       "gc",
+      "importlib",
       "io",
       "llama_index",
       "logging",
       "nest_asyncio",
       "os",
+      "pathlib",
       "qdrant_client",
       "relevance_policy",
       "streamlit",
@@ -325,6 +364,11 @@
         "path": "app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -336,7 +380,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 3
+    "plain_python_units_checked": 4
   },
   "category": "rag",
   "purpose": "Detect weak document evidence and recover through web search.",
@@ -346,6 +390,55 @@
       "local_sha256": "0a8c90a0993ef43b84c0a9a607e456134b7bdc6b931066b671ab400599c66087",
       "changes": [
         "Added a strict relevance gate; recover when retrieval is empty or no grade is affirmative."
+      ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "834008dbead91db100b2a13a538e0531171d537d6aa005cfe44c682c4c745048",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "074d3ed41efd4ef4d915627f5c2ba1c837cc0540c12d241764911b673d1f33df",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "94727c46f3bfb29dd6eaf24071dbc23ec0b8430256808fa35ee70e5eabe0e794",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "5af03a4b51f8cb218a5c4f0ee6ca4888eff83f065a4f37f9b9f9394c2e37dabc",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "5c1bf016e0fb992e663413ea3edc548687b10dd178679e031e185789b1c86a99",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/corpus.json",
+      "local_sha256": "8a76da2e4a271e25be716ec0f712b15c5d987a0df07ef4dcc047a2daeadced2c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
       ]
     }
   ],
@@ -368,5 +461,10 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "retrieval"
   }
 }

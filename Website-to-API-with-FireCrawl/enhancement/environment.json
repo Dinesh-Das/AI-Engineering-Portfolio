@@ -1,0 +1,10 @@
+{
+  "project_id": "Website-to-API-with-FireCrawl",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "FIRECRAWL_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

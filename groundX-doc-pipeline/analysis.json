@@ -392,20 +392,7 @@
         "time.sleep",
         "time.time"
       ],
-      "findings": [
-        {
-          "rule": "network-timeout",
-          "path": "groundx_utils.py",
-          "line": 109,
-          "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
-        },
-        {
-          "rule": "network-timeout",
-          "path": "groundx_utils.py",
-          "line": 130,
-          "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
-        }
-      ],
+      "findings": [],
       "ui": true,
       "syntax_error": null
     },
@@ -513,6 +500,38 @@
       "findings": [],
       "ui": false,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [
@@ -535,6 +554,7 @@
     "fitz",
     "groundx",
     "groundx_utils",
+    "importlib",
     "mimetypes",
     "openai",
     "opik",
@@ -542,6 +562,7 @@
     "pathlib",
     "requests",
     "streamlit",
+    "sys",
     "tempfile",
     "time",
     "typing"
@@ -564,21 +585,13 @@
       "path": "server.py",
       "kind": "python",
       "ui": false
-    }
-  ],
-  "findings": [
-    {
-      "rule": "network-timeout",
-      "path": "groundx_utils.py",
-      "line": 109,
-      "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
     },
     {
-      "rule": "network-timeout",
-      "path": "groundx_utils.py",
-      "line": 130,
-      "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
+  "findings": [],
   "syntax_errors": []
 }

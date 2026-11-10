@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [app_openai.py](app_openai.py) | top-level workflow | UI surface |
 | [browserbase.py](browserbase.py) | browserbase | crewai, html2text, os, playwright, time |
 | [kayak.py](kayak.py) | kayak_hotel_search | crewai, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -32,6 +33,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [app.py](app.py) | 18 | load_llm | Initialize and return Groq LLM with caching |
 | [browserbase.py](browserbase.py) | 9 | browserbase | Loads a URL using a headless webbrowser |
 | [kayak.py](kayak.py) | 6 | kayak_hotel_search | Generates a Kayak URL for hotel searches based on location, dates, and number of adults. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -39,7 +41,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `groq/meta-llama/llama-4-scout-17b-16e-instruct`
 
-Detected import roots: `browserbase`, `crewai`, `datetime`, `dotenv`, `html2text`, `kayak`, `os`, `playwright`, `streamlit`, `sys`, `time`, `typing`
+Detected import roots: `browserbase`, `crewai`, `datetime`, `dotenv`, `html2text`, `importlib`, `kayak`, `os`, `pathlib`, `playwright`, `streamlit`, `sys`, `time`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -60,6 +62,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

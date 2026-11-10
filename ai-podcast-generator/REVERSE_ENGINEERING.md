@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [script_generator.py](script_generator.py) | ScriptGenerator, generate | dotenv, os, requests |
 | [tts_converter.py](tts_converter.py) | TTSConverter, convert | dotenv, os, requests, time |
 | [cli.py](cli.py) | main | argparse, dotenv, json, os, pathlib, scraper, script_generator, tts_converter |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -36,6 +37,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [tts_converter.py](tts_converter.py) | 9 | TTSConverter | ClassDef |
 | [tts_converter.py](tts_converter.py) | 22 | convert | Convert script to speech using Minimax TTS. |
 | [cli.py](cli.py) | 9 | main | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -43,7 +45,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `argparse`, `dotenv`, `firecrawl`, `json`, `os`, `pathlib`, `requests`, `scraper`, `script_generator`, `time`, `tts_converter`, `urllib`
+Detected import roots: `argparse`, `dotenv`, `firecrawl`, `importlib`, `json`, `os`, `pathlib`, `requests`, `scraper`, `script_generator`, `sys`, `time`, `tts_converter`, `urllib`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -67,6 +69,14 @@ Every project now has a source/version manifest, empty environment template, a d
 | [script_generator.py](script_generator.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
 | [tts_converter.py](tts_converter.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
 | [cli.py](cli.py) | Added an input-bounded headless script/speech CLI with persisted stage status. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/artifacts.json](enhancement/examples/artifacts.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/segment.txt](enhancement/examples/segment.txt) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

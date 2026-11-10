@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "qwen3-thinking-ui",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare thinking controls, final-answer quality and latency for Qwen3.",
+  "mechanism": "The original Streamlit demo parses think tags; the learning runtime handles native thinking fields plus legacy tags and keeps traces separate from answer history.",
+  "experiment": "Run a fixed exact-answer task set with supported thinking modes and record correctness, token usage and first-token/completion latency.",
+  "production": "Validate model-specific thinking capabilities and use a shared inference queue with per-session quotas and versioned model settings.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for qwen3-thinking-ui"
+  }
+}

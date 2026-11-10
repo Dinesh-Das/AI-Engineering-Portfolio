@@ -1,0 +1,19 @@
+{
+  "project_id": "documentation-writer-flow",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai-tools>=0.44.0",
+    "crewai>=0.119.0",
+    "ipykernel>=6.29.5",
+    "mcp>=1.8.1",
+    "ollama>=0.4.8",
+    "pydantic>=2.11.4"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

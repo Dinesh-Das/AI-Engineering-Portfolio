@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!content_planner_flow/
+!content_planner_flow/enhance.py
+!content_planner_flow/enhancement/
+!content_planner_flow/enhancement/profile.json

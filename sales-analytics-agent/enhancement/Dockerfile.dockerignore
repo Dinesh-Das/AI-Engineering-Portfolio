@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!sales-analytics-agent/
+!sales-analytics-agent/enhance.py
+!sales-analytics-agent/enhancement/
+!sales-analytics-agent/enhancement/profile.json

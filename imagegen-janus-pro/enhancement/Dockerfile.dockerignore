@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!imagegen-janus-pro/
+!imagegen-janus-pro/enhance.py
+!imagegen-janus-pro/enhancement/
+!imagegen-janus-pro/enhancement/profile.json

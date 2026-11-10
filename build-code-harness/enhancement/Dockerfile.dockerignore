@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!build-code-harness/
+!build-code-harness/enhance.py
+!build-code-harness/enhancement/
+!build-code-harness/enhancement/profile.json

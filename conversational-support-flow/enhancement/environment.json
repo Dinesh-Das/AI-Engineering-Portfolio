@@ -1,0 +1,23 @@
+{
+  "project_id": "conversational-support-flow",
+  "manifests": [
+    "frontend/package.json",
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "ag-ui-crewai>=0.3.0",
+    "crewai-tools>=1.15.17",
+    "crewai>=1.15.16",
+    "exa-py>=2.18.1",
+    "fastapi",
+    "uvicorn[standard]"
+  ],
+  "python_requirements": [
+    ">=3.12,<3.13"
+  ],
+  "environment_names": [
+    "CREWAI_BACKEND_URL",
+    "OPENROUTER_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

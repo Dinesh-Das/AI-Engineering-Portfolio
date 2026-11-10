@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "Multi-Agent-deep-researcher-mcp-windows-linux",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose a local multi-agent research crew through MCP.",
+  "mechanism": "Linkup-backed search tools feed a CrewAI research crew and a server entry point.",
+  "experiment": "Use unanswerable and contradictory-source queries and measure whether the final report communicates uncertainty.",
+  "production": "Run research as durable jobs with per-run crawl/token limits and preserve source snapshots for report reproducibility.",
+  "fixture": {
+    "payload": {
+      "project": "Multi-Agent-deep-researcher-mcp-windows-linux",
+      "task": "Expose a local multi-agent research crew through MCP.",
+      "synthetic": true
+    }
+  }
+}

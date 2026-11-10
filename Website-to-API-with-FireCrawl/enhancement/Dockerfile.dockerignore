@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!Website-to-API-with-FireCrawl/
+!Website-to-API-with-FireCrawl/enhance.py
+!Website-to-API-with-FireCrawl/enhancement/
+!Website-to-API-with-FireCrawl/enhancement/profile.json

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "gpt-oss-vs-qwen3",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare reasoning responses using parallel inference and judge metrics.",
+  "mechanism": "The model service returns both candidates while Opik G-Eval scores multiple reasoning dimensions.",
+  "experiment": "Add arithmetic questions with exact answers and compare executable truth with judge preference.",
+  "production": "Maintain blinded candidate identifiers and a stable reasoning dataset; record model temperature and repeated-run variance.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "gpt-oss-vs-qwen3-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "gpt-oss-vs-qwen3-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

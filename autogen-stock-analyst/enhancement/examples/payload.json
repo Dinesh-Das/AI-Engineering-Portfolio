@@ -1,0 +1,5 @@
+{
+  "project": "autogen-stock-analyst",
+  "task": "Use AutoGen with a custom model client for financial analysis and code generation.",
+  "synthetic": true
+}

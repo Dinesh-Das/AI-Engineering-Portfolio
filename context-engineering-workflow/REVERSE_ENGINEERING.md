@@ -33,6 +33,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/workflows/agents.py](src/workflows/agents.py) | Agents, create_rag_agent, create_memory_agent, create_web_search_agent, create_arxiv_agent, create_evaluator_agent, create_synthesizer_agent | crewai, os, src, typing |
 | [src/workflows/flow.py](src/workflows/flow.py) | ResearchAssistantState, ContextEvaluationResult, ResearchAssistantFlow, create_research_assistant_flow, Config, process_query, gather_context_from_all_sources, evaluate_context_relevance, synthesize_final_response, process_documents | agents, crewai, json, os, pydantic, src, tasks, typing |
 | [src/workflows/tasks.py](src/workflows/tasks.py) | Tasks, create_rag_search_task, create_memory_retrieval_task, create_web_search_task, create_arxiv_search_task, create_context_evaluation_task, create_synthesis_task | crewai, json, src, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [config/agents/research_agents.yaml](config/agents/research_agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [config/tasks/research_tasks.yaml](config/tasks/research_tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 
@@ -118,6 +119,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/workflows/tasks.py](src/workflows/tasks.py) | 36 | create_arxiv_search_task | FunctionDef |
 | [src/workflows/tasks.py](src/workflows/tasks.py) | 44 | create_context_evaluation_task | FunctionDef |
 | [src/workflows/tasks.py](src/workflows/tasks.py) | 65 | create_synthesis_task | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -125,7 +127,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `agents`, `crewai`, `dotenv`, `firecrawl`, `json`, `openai`, `os`, `pathlib`, `pydantic`, `pymilvus`, `requests`, `src`, `streamlit`, `tasks`, `tempfile`, `tensorlake`, `time`, `typing`, `voyageai`, `xml`, `yaml`, `zep_cloud`, `zep_crewai`
+Detected import roots: `agents`, `crewai`, `dotenv`, `firecrawl`, `importlib`, `json`, `openai`, `os`, `pathlib`, `pydantic`, `pymilvus`, `requests`, `src`, `streamlit`, `sys`, `tasks`, `tempfile`, `tensorlake`, `time`, `typing`, `voyageai`, `xml`, `yaml`, `zep_cloud`, `zep_crewai`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -147,6 +149,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/value.json](enhancement/examples/value.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!hotel-booking-crew/
+!hotel-booking-crew/enhance.py
+!hotel-booking-crew/enhancement/
+!hotel-booking-crew/enhancement/profile.json

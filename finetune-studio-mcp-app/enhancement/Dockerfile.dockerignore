@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!finetune-studio-mcp-app/
+!finetune-studio-mcp-app/enhance.py
+!finetune-studio-mcp-app/enhancement/
+!finetune-studio-mcp-app/enhancement/profile.json

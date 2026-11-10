@@ -24,6 +24,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/podcast/script_generator_oss.py](src/podcast/script_generator_oss.py) | PodcastScript, PodcastScriptGeneratorOSS, get_speaker_lines, to_json, generate_script_from_text, check_ollama_connection | dataclasses, json, logging, requests, typing |
 | [src/podcast/text_to_speech.py](src/podcast/text_to_speech.py) | AudioSegment, PodcastTTSGenerator, generate_podcast_audio | dataclasses, huggingface_hub, kokoro, logging, numpy, os, pathlib, soundfile |
 | [src/web_scraping/web_scraper.py](src/web_scraping/web_scraper.py) | WebScraper, scrape_url | datetime, firecrawl, logging, typing, urllib |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -69,6 +70,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/podcast/text_to_speech.py](src/podcast/text_to_speech.py) | 61 | generate_podcast_audio | FunctionDef |
 | [src/web_scraping/web_scraper.py](src/web_scraping/web_scraper.py) | 12 | WebScraper | ClassDef |
 | [src/web_scraping/web_scraper.py](src/web_scraping/web_scraper.py) | 18 | scrape_url | Scrape a URL and return the content as text. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -77,7 +79,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `en_core_web_sm`
 - `gpt-oss:20b`
 
-Detected import roots: `crewai`, `dataclasses`, `datetime`, `dotenv`, `firecrawl`, `huggingface_hub`, `json`, `kokoro`, `logging`, `numpy`, `os`, `pathlib`, `requests`, `soundfile`, `spacy`, `src`, `streamlit`, `tempfile`, `time`, `typing`, `urllib`
+Detected import roots: `crewai`, `dataclasses`, `datetime`, `dotenv`, `firecrawl`, `huggingface_hub`, `importlib`, `json`, `kokoro`, `logging`, `numpy`, `os`, `pathlib`, `requests`, `soundfile`, `spacy`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `urllib`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -99,6 +101,14 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/artifacts.json](enhancement/examples/artifacts.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/segment.txt](enhancement/examples/segment.txt) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -12,6 +12,11 @@
       "path": "learning_app.py",
       "kind": "python",
       "ui": true
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -450,6 +455,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -465,6 +502,7 @@
       "base64",
       "binascii",
       "http",
+      "importlib",
       "json",
       "learning_ui",
       "math",
@@ -473,6 +511,7 @@
       "protocol",
       "re",
       "streamlit",
+      "sys",
       "threading",
       "time",
       "urllib"
@@ -490,6 +529,11 @@
         "path": "learning_app.py",
         "kind": "python",
         "ui": true
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -501,7 +545,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 5
+    "plain_python_units_checked": 6
   },
   "local_additions": [
     {
@@ -559,6 +603,55 @@
       "changes": [
         "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
       ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "a7aa439d53bc0e5cdb491e57ded47ee9f80957b9243be7fcaa5d54013d3bb174",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "44b4b9f7501f71c303bd0a49d2431bc1247cd94474ab483f3aca19efd85d2690",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "944d6bac9e886a4e926ca623494281745e4933997a6d0336a4ae5cb40644fc14",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "1ddea04c3b3027f876faa7b95ac639170d5a587084eac90f2268fb430fd654cd",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "f0d7a39fea50b16a8e3a745fa8d7422fd672daa598c03e74b0b96420c3876691",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/events.json",
+      "local_sha256": "b3ea2fc1dd9956d25b97992f5e7ef68550352448242d125b53c8dbd673aaf02a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
     }
   ],
   "learning_ui": {
@@ -593,5 +686,10 @@
     ]
   },
   "category": "interfaces",
-  "purpose": "Parse streamed model traces and final answers without dropping boundary text."
+  "purpose": "Parse streamed model traces and final answers without dropping boundary text.",
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "streaming"
+  }
 }

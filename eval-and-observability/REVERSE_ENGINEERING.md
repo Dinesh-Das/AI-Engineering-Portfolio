@@ -24,6 +24,7 @@ The following table is extracted from this project's actual retained files. Note
 | [demo.ipynb#cell-36](demo.ipynb#cell-36) | my_llm_application | opik |
 | [demo.ipynb#cell-38](demo.ipynb#cell-38) | top-level workflow | openai, opik |
 | [demo.ipynb#cell-40](demo.ipynb#cell-40) | evaluation_task |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -34,6 +35,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [demo.ipynb#cell-11](demo.ipynb#cell-11) | 4 | my_function | FunctionDef |
 | [demo.ipynb#cell-36](demo.ipynb#cell-36) | 4 | my_llm_application | FunctionDef |
 | [demo.ipynb#cell-40](demo.ipynb#cell-40) | 1 | evaluation_task | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -44,7 +46,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `nomic-embed-text`
 - `phi3`
 
-Detected import roots: `dotenv`, `langchain`, `langchain_community`, `langchain_openai`, `llama_index`, `openai`, `opik`, `os`, `pandas`, `ragas`, `requests`
+Detected import roots: `dotenv`, `importlib`, `langchain`, `langchain_community`, `langchain_openai`, `llama_index`, `openai`, `opik`, `os`, `pandas`, `pathlib`, `ragas`, `requests`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -64,6 +66,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [demo.ipynb](demo.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [demo.ipynb](demo.ipynb) | Added explicit connection/read timeouts to 1 requests calls in notebook cells. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/pairs.json](enhancement/examples/pairs.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

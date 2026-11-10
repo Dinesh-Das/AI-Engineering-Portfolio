@@ -26,6 +26,7 @@ The following table is extracted from this project's actual retained files. Note
 | [services/llm_service.py](services/llm_service.py) | LLMService, stream_chat_completion | config, json, openai, typing |
 | [services/zep_service.py](services/zep_service.py) | ZepService, create_user, create_thread, add_message, get_user_context, search_graph, add_to_graph | config, typing, zep_cloud |
 | [zep_demo.ipynb#cell-15](zep_demo.ipynb#cell-15) | ask_with_knowledge |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -56,6 +57,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [services/zep_service.py](services/zep_service.py) | 112 | search_graph | Search the knowledge graph for a docs user (or provided user_id). |
 | [services/zep_service.py](services/zep_service.py) | 145 | add_to_graph | Add data to a user's graph (docs user by default). |
 | [zep_demo.ipynb#cell-15](zep_demo.ipynb#cell-15) | 1 | ask_with_knowledge | Simple function to query the knowledge graph and use Minimax M2 to generate a coherent response. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -63,7 +65,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `minimax/minimax-m2`
 
-Detected import roots: `anam_service`, `asyncio`, `config`, `dotenv`, `fastapi`, `httpx`, `json`, `llm_service`, `openai`, `os`, `pathlib`, `pydantic`, `pydantic_settings`, `services`, `settings`, `streamlit`, `sys`, `time`, `typing`, `zep_cloud`, `zep_service`
+Detected import roots: `anam_service`, `asyncio`, `config`, `dotenv`, `fastapi`, `httpx`, `importlib`, `json`, `llm_service`, `openai`, `os`, `pathlib`, `pydantic`, `pydantic_settings`, `services`, `settings`, `streamlit`, `sys`, `time`, `typing`, `zep_cloud`, `zep_service`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -88,6 +90,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [zep_demo.ipynb](zep_demo.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/value.json](enhancement/examples/value.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

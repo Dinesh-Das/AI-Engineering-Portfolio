@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!local-chatgpt/
+!local-chatgpt/enhance.py
+!local-chatgpt/enhancement/
+!local-chatgpt/enhancement/profile.json

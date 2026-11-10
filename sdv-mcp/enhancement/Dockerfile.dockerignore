@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!sdv-mcp/
+!sdv-mcp/enhance.py
+!sdv-mcp/enhancement/
+!sdv-mcp/enhancement/profile.json

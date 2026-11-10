@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!agent2agent-demo/
+!agent2agent-demo/enhance.py
+!agent2agent-demo/enhancement/
+!agent2agent-demo/enhancement/profile.json

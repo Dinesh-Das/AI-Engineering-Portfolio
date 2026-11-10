@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!document-chat-rag/
+!document-chat-rag/enhance.py
+!document-chat-rag/enhancement/
+!document-chat-rag/enhancement/profile.json

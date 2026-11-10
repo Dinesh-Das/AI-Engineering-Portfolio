@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [building-financial-analyst.ipynb#cell-4](building-financial-analyst.ipynb#cell-4) | top-level workflow |  |
 | [finance_crew.py](finance_crew.py) | QueryAnalysisOutput, run_financial_analysis | crewai, crewai_tools, dotenv, json, os, pydantic, re, yfinance |
 | [server.py](server.py) | analyze_stock, save_code, run_code_and_show_plot | finance_crew, mcp |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -35,6 +36,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [server.py](server.py) | 8 | analyze_stock | Analyzes stock market data based on the query and generates executable Python code for analysis and visualization. |
 | [server.py](server.py) | 35 | save_code | Expects a nicely formatted, working and executable python code as input in form of a string.  |
 | [server.py](server.py) | 54 | run_code_and_show_plot | Run the code in stock_analysis.py and generate the plot |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -42,7 +44,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `ollama/deepseek-r1:7b`
 
-Detected import roots: `crewai`, `crewai_tools`, `dotenv`, `finance_crew`, `json`, `mcp`, `os`, `pydantic`, `re`, `yfinance`
+Detected import roots: `crewai`, `crewai_tools`, `dotenv`, `finance_crew`, `importlib`, `json`, `mcp`, `os`, `pathlib`, `pydantic`, `re`, `sys`, `yfinance`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -60,6 +62,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [building-financial-analyst.ipynb](building-financial-analyst.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

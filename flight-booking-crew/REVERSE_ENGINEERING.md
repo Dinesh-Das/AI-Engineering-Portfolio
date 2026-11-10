@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [app.py](app.py) | top-level workflow | UI surface |
 | [browserbase.py](browserbase.py) | browserbase | crewai, html2text, os, playwright, time |
 | [kayak.py](kayak.py) | kayak_search | crewai, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -30,6 +31,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | --- | --- | --- | --- |
 | [browserbase.py](browserbase.py) | 9 | browserbase | Loads a URL using a headless webbrowser |
 | [kayak.py](kayak.py) | 5 | kayak_search | Generates a Kayak URL for flights between departure and destination on the specified date. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -37,7 +39,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `browserbase`, `crewai`, `datetime`, `dotenv`, `html2text`, `kayak`, `os`, `playwright`, `streamlit`, `sys`, `time`, `typing`
+Detected import roots: `browserbase`, `crewai`, `datetime`, `dotenv`, `html2text`, `importlib`, `kayak`, `os`, `pathlib`, `playwright`, `streamlit`, `sys`, `time`, `typing`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -57,6 +59,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

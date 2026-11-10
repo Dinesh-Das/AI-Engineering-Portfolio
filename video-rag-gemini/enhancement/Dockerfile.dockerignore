@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!video-rag-gemini/
+!video-rag-gemini/enhance.py
+!video-rag-gemini/enhancement/
+!video-rag-gemini/enhancement/profile.json

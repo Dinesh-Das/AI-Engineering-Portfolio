@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!real-time-voicebot/
+!real-time-voicebot/enhance.py
+!real-time-voicebot/enhancement/
+!real-time-voicebot/enhancement/profile.json

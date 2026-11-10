@@ -1,0 +1,16 @@
+{
+  "project_id": "audio-analysis-toolkit",
+  "manifests": [
+    "requirements.txt"
+  ],
+  "requirements": [
+    "assemblyai>=0.20.0",
+    "python-dotenv>=1.0.0",
+    "streamlit>=1.28.0"
+  ],
+  "python_requirements": [],
+  "environment_names": [
+    "ASSEMBLYAI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [coding_and_financial_analyst.ipynb#cell-2](coding_and_financial_analyst.ipynb#cell-2) | config_list |  |
 | [custom_autogen_model.py](custom_autogen_model.py) | CustomModelClient, create, message_retrieval, cost, get_usage | imagine, types |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -33,6 +34,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [custom_autogen_model.py](custom_autogen_model.py) | 80 | message_retrieval | Retrieve the messages from the response. |
 | [custom_autogen_model.py](custom_autogen_model.py) | 92 | cost | Calculate the cost of the response. |
 | [custom_autogen_model.py](custom_autogen_model.py) | 98 | get_usage | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -40,7 +42,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `Llama-3.1-70B`
 
-Detected import roots: `autogen`, `custom_autogen_model`, `datetime`, `dotenv`, `imagine`, `json`, `os`, `types`
+Detected import roots: `autogen`, `custom_autogen_model`, `datetime`, `dotenv`, `imagine`, `importlib`, `json`, `os`, `pathlib`, `sys`, `types`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -60,6 +62,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [coding_and_financial_analyst.ipynb](coding_and_financial_analyst.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "gpt-oss-vs-qwen3-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "gpt-oss-vs-qwen3-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

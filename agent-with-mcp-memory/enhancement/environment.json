@@ -1,0 +1,20 @@
+{
+  "project_id": "agent-with-mcp-memory",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai>=0.134.0",
+    "ipykernel>=6.29.5",
+    "linkup-sdk>=0.2.7",
+    "mcp[cli]>=1.10.1",
+    "opik>=1.7.42"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [
+    "LINKUP_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

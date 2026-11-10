@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "flight-booking-crew",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Investigate browser-assisted flight search with CrewAI tools.",
+  "mechanism": "A headless main script delegates to Browserbase and Kayak helpers; live website state is an unstable dependency.",
+  "experiment": "Run against saved search fixtures and compare extraction under missing prices, changed dates and unavailable flights.",
+  "production": "Keep the workflow read-only by default and require a separate authorization step for reservations or purchases.",
+  "fixture": {
+    "payload": {
+      "project": "flight-booking-crew",
+      "task": "Investigate browser-assisted flight search with CrewAI tools.",
+      "synthetic": true
+    }
+  }
+}

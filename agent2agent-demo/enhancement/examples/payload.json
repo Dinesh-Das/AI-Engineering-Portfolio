@@ -1,0 +1,5 @@
+{
+  "project": "agent2agent-demo",
+  "task": "Understand agent-to-agent communication through sine, cosine and tangent services.",
+  "synthetic": true
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "streaming-ai-chatbot",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Understand event-driven chat state and recovery through an observable local implementation.",
+  "mechanism": "The pinned Motia metadata references three absent step files; a documented local Ollama reconstruction demonstrates accepted, streaming, completed, failed and interrupted states.",
+  "experiment": "Exercise success, failure and slow-stream fixtures, inspect exported state and prove that only completed turns become model history.",
+  "production": "Implement stable turn IDs, idempotency, durable message state and cancellation propagation before sharing an event-driven chat service across users.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for streaming-ai-chatbot"
+  }
+}

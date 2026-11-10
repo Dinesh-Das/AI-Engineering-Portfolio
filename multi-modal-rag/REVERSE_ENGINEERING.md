@@ -30,6 +30,7 @@ The following table is extracted from this project's actual retained files. Note
 | [mm_prompting.ipynb#cell-20](mm_prompting.ipynb#cell-20) | top-level workflow |  |
 | [mm_prompting.ipynb#cell-23](mm_prompting.ipynb#cell-23) | get_stock_price | ollama, yfinance |
 | [mm_prompting.ipynb#cell-24](mm_prompting.ipynb#cell-24) | get_stock_price | ollama, yfinance |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -44,6 +45,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [mm_prompting.ipynb#cell-9](mm_prompting.ipynb#cell-9) | 6 | generate | FunctionDef |
 | [mm_prompting.ipynb#cell-23](mm_prompting.ipynb#cell-23) | 7 | get_stock_price | FunctionDef |
 | [mm_prompting.ipynb#cell-24](mm_prompting.ipynb#cell-24) | 7 | get_stock_price | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -52,7 +54,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `llama3.2-vision`
 - `openai/clip-vit-base-patch32`
 
-Detected import roots: `IPython`, `PIL`, `datasets`, `matplotlib`, `ollama`, `requests`, `torch`, `transformers`, `yfinance`
+Detected import roots: `IPython`, `PIL`, `datasets`, `importlib`, `matplotlib`, `ollama`, `pathlib`, `requests`, `sys`, `torch`, `transformers`, `yfinance`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -71,6 +73,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [clip.ipynb](clip.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [clip.ipynb](clip.ipynb) | Added explicit connection/read timeouts to 1 requests calls in notebook cells. |
 | [mm_prompting.ipynb](mm_prompting.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

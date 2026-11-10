@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "ai-podcast-generator",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Create article-to-podcast audio using MiniMax generation and speech.",
+  "mechanism": "WebScraper, ScriptGenerator and TTSConverter isolate the source, dialogue and audio stages; the upstream presentation script is malformed.",
+  "experiment": "Force a TTS segment failure and verify that the final manifest identifies missing segments instead of silently publishing partial audio.",
+  "production": "Persist a script version and per-segment checksum; use an idempotent merge worker and bounded vendor polling.",
+  "fixture": {
+    "artifact_id": "ai-podcast-generator-segment-1",
+    "content": "Synthetic integrity fixture for ai-podcast-generator\n"
+  }
+}

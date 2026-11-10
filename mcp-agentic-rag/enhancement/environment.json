@@ -1,0 +1,11 @@
+{
+  "project_id": "mcp-agentic-rag",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "BRIGHT_DATA_PASSWORD",
+    "BRIGHT_DATA_USERNAME"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

@@ -1,0 +1,5 @@
+{
+  "project": "brand-monitoring",
+  "task": "Collect brand signals across multiple platforms and synthesize reports.",
+  "synthetic": true
+}

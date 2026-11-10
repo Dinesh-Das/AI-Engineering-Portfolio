@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "parlant-conversational-agent",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Build a tool-backed loan conversation with explicit journeys and guidelines.",
+  "mechanism": "Parlant registers eligibility, document, rate and loan-type tools and connects them to a guided journey.",
+  "experiment": "Try to bypass a required document step and compare the conversation with deterministic eligibility rules.",
+  "production": "Keep financial rules in reviewed code/services and treat the model as a conversational layer with audited tool evidence.",
+  "fixture": {
+    "payload": {
+      "project": "parlant-conversational-agent",
+      "task": "Build a tool-backed loan conversation with explicit journeys and guidelines.",
+      "synthetic": true
+    }
+  }
+}

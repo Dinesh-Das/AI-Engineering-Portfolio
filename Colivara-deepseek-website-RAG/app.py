@@ -72,7 +72,7 @@ def display_pdf(file):
 
 
 def create_pdf_from_screenshot(screenshot_url):
-    response = requests.get(screenshot_url)
+    response = requests.get(screenshot_url, timeout=(10, 60))
     response.raise_for_status()
 
     # Save screenshot

@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [app.py](app.py) | load_llm, reset_chat, display_pdf | UI surface |
 | [workflow.py](workflow.py) | RetrieverEvent, RAGWorkflow, main, ingest, retrieve, synthesize, query, ingest_documents | asyncio, llama_index, nest_asyncio, os |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -38,6 +39,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [workflow.py](workflow.py) | 61 | synthesize | Generate a response using retrieved nodes. |
 | [workflow.py](workflow.py) | 68 | query | Helper method to perform a complete RAG query. |
 | [workflow.py](workflow.py) | 76 | ingest_documents | Helper method to ingest documents. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -47,7 +49,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8`
 - `meta-llama/llama-4-scout-17b-16e-instruct`
 
-Detected import roots: `IPython`, `asyncio`, `base64`, `dotenv`, `gc`, `llama_index`, `nest_asyncio`, `os`, `random`, `streamlit`, `tempfile`, `time`, `uuid`
+Detected import roots: `IPython`, `asyncio`, `base64`, `dotenv`, `gc`, `importlib`, `llama_index`, `nest_asyncio`, `os`, `pathlib`, `random`, `streamlit`, `sys`, `tempfile`, `time`, `uuid`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -67,6 +69,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [assets/cerebras.png](assets/cerebras.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/download.png](assets/download.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/llamaindex.png](assets/llamaindex.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

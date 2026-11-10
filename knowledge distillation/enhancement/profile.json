@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "knowledge distillation",
+  "family": "training",
+  "variant": "distillation",
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Transfer classifier behavior from a teacher network to a smaller student.",
+  "mechanism": "The notebook combines supervised loss with temperature-scaled teacher distributions and compares student performance.",
+  "experiment": "Sweep temperature and teacher-loss weight with a fixed data split; report accuracy, parameter count and CPU inference time.",
+  "production": "Register teacher and student checkpoints with preprocessing metadata and test export parity before deploying the student.",
+  "fixture": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "expected": {
+      "project": "knowledge distillation",
+      "amount": 375
+    },
+    "target_field": "amount",
+    "wrong_value": 875
+  }
+}

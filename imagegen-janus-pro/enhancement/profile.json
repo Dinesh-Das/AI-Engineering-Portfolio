@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "imagegen-janus-pro",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study local Janus-Pro multimodal understanding and image generation.",
+  "mechanism": "Model/processor loading, token generation, decoding and image unpacking are separate functions inside the original UI script.",
+  "experiment": "Fix a seed and vary classifier-free guidance and temperature; compare consistency, diversity and peak GPU memory.",
+  "production": "Extract a model worker with a queue, pin remote model code and batch compatible requests under a GPU memory limit.",
+  "fixture": {
+    "artifact_id": "imagegen-janus-pro-segment-1",
+    "content": "Synthetic integrity fixture for imagegen-janus-pro\n"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "train": [
+    {
+      "input": "example-a",
+      "group": "source-a"
+    }
+  ],
+  "test": [
+    {
+      "input": "example-b",
+      "group": "source-b"
+    }
+  ]
+}

@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/agentic_rag/crew.py](src/agentic_rag/crew.py) | AgenticRag, retriever_agent, response_synthesizer_agent, retrieval_task, response_task, crew | agentic_rag, crewai, crewai_tools |
 | [src/agentic_rag/main.py](src/agentic_rag/main.py) | run, train, replay, test | agentic_rag, sys, warnings |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | DocumentSearchToolInput, DocumentSearchTool, test_document_searcher | crewai, dotenv, groundx, os, pydantic, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [src/agentic_rag/config/agents.yaml](src/agentic_rag/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [src/agentic_rag/config/tasks.yaml](src/agentic_rag/config/tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 
@@ -48,6 +49,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | 11 | DocumentSearchToolInput | Input schema for DocumentSearchTool. |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | 15 | DocumentSearchTool | ClassDef |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | 80 | test_document_searcher | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -55,7 +57,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `ollama/deepseek-r1:7b`
 
-Detected import roots: `agentic_rag`, `base64`, `crewai`, `crewai_tools`, `dotenv`, `gc`, `groundx`, `os`, `pydantic`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `tools`, `typing`, `warnings`, `yaml`
+Detected import roots: `agentic_rag`, `base64`, `crewai`, `crewai_tools`, `dotenv`, `gc`, `groundx`, `importlib`, `os`, `pathlib`, `pydantic`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `tools`, `typing`, `warnings`, `yaml`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -78,6 +80,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [src/agentic_rag/tools/test.ipynb.invalid.txt](src/agentic_rag/tools/test.ipynb.invalid.txt) | Empty/invalid upstream notebook quarantined; no executable lesson was present. |
 | [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/thumbnail.png](assets/thumbnail.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "brand-monitoring",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Collect brand signals across multiple platforms and synthesize reports.",
+  "mechanism": "CrewAI flow dispatches platform-specific crews and combines their structured analyses.",
+  "experiment": "Use duplicated posts across platforms and conflicting sentiment; score deduplication and source attribution.",
+  "production": "Schedule source-specific ingestion with per-platform rate limits, then aggregate from immutable snapshots with freshness labels.",
+  "fixture": {
+    "payload": {
+      "project": "brand-monitoring",
+      "task": "Collect brand signals across multiple platforms and synthesize reports.",
+      "synthetic": true
+    }
+  }
+}

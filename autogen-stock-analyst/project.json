@@ -7,6 +7,11 @@
       "path": "coding_and_financial_analyst.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -288,6 +293,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [],
@@ -305,8 +342,11 @@
       "datetime",
       "dotenv",
       "imagine",
+      "importlib",
       "json",
       "os",
+      "pathlib",
+      "sys",
       "types"
     ],
     "models": [
@@ -316,6 +356,11 @@
       {
         "path": "coding_and_financial_analyst.ipynb",
         "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
         "ui": false
       }
     ],
@@ -328,7 +373,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 12
+    "plain_python_units_checked": 13
   },
   "category": "agents",
   "purpose": "Use AutoGen with a custom model client for financial analysis and code generation.",
@@ -346,5 +391,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "b75fa15280ea68707000cb89f4866b5260eff2f64b345eeefec2193cd6b4a65a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "c52d062e85e633f8405992da927cd56b1d5d474d98781fe3a12f5d7fda86cc3c",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "adec0cbff1f1d7728c071914c76ab7afc16e4fb9a79c3c6575625e8c070c8b9b",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "9cb86942c6564554f846980a6f02dd1b47fc517e9195774678cc2620e4f606c2",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "b5d81d9861702dc8ef80bc0bf13edcc73a96573d0dd49eaf8dd4950177fafff3",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/payload.json",
+      "local_sha256": "010a0940c9e2b9e5bfec6eefab2e58a6e707ea09dda29e241fb934df4ee0b088",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "workflow"
   }
 }

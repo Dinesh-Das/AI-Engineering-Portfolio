@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "acp-code",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Coordinate a research drafter and verifier implemented with different agent frameworks.",
+  "mechanism": "An ACP client sends work to separate CrewAI and Smolagents servers; their message contract matters more than framework choice.",
+  "experiment": "Drop the verifier response and test deadline propagation, retry identity and whether an unverified draft can escape.",
+  "production": "Run each agent as a separately authorized service; persist task IDs and message versions so retries cannot duplicate work.",
+  "fixture": {
+    "payload": {
+      "project": "acp-code",
+      "task": "Coordinate a research drafter and verifier implemented with different agent frameworks.",
+      "synthetic": true
+    }
+  }
+}

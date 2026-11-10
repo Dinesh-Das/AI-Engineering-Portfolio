@@ -1,0 +1,24 @@
+{
+  "project_id": "chat-with-code",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "cleanlab-codex>=1.0.25",
+    "llama-index-embeddings-huggingface>=0.5.5",
+    "llama-index-llms-openrouter>=0.3.2",
+    "llama-index-vector-stores-milvus>=0.8.6",
+    "llama-index>=0.12.52",
+    "nest-asyncio>=1.6.0",
+    "pymilvus>=2.5.14",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.47.0"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [
+    "CODEX_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

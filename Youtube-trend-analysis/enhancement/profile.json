@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "Youtube-trend-analysis",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Analyze channel or niche trends from collected video transcripts.",
+  "mechanism": "Bright Data collection feeds CrewAI agents configured by YAML to summarize and analyze video evidence.",
+  "experiment": "Use channels with unequal posting rates and repeated videos and check whether conclusions reflect normalized evidence.",
+  "production": "Keep collection and analysis separate, version transcript snapshots and track rate limits, duplicates and freshness explicitly.",
+  "fixture": {
+    "payload": {
+      "project": "Youtube-trend-analysis",
+      "task": "Analyze channel or niche trends from collected video transcripts.",
+      "synthetic": true
+    }
+  }
+}

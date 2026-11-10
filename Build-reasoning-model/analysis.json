@@ -258,6 +258,38 @@
       "ui": false,
       "syntax_error": null,
       "notebook_magics": false
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [],
@@ -268,7 +300,10 @@
   "environment": [],
   "imports": [
     "datasets",
+    "importlib",
+    "pathlib",
     "re",
+    "sys",
     "torch",
     "trl",
     "unsloth",
@@ -281,6 +316,11 @@
     {
       "path": "Own_reasoning_model_with_GRPO.ipynb",
       "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
       "ui": false
     }
   ],

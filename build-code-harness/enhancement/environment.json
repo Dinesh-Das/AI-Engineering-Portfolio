@@ -1,0 +1,20 @@
+{
+  "project_id": "build-code-harness",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "crewai-tools[e2b]",
+    "crewai[tools,litellm]",
+    "pytest",
+    "python-dotenv"
+  ],
+  "python_requirements": [
+    ">=3.11"
+  ],
+  "environment_names": [
+    "E2B_API_KEY",
+    "MODEL"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

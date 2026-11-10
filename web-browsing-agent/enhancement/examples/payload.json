@@ -1,0 +1,5 @@
+{
+  "project": "web-browsing-agent",
+  "task": "Plan and execute browser research with CrewAI and Stagehand.",
+  "synthetic": true
+}

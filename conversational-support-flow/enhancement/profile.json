@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "conversational-support-flow",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Route support turns among order lookup, policy retrieval and live research.",
+  "mechanism": "CrewAI conversational routing persists session context; order lookup is deterministic while policy and research use agents.",
+  "experiment": "Try another customer's known order ID and verify ownership before presenting tracking details; test pronoun follow-ups.",
+  "production": "Add customer-scoped order access in the service boundary and persist session state in a shared store for multiple replicas.",
+  "fixture": {
+    "payload": {
+      "project": "conversational-support-flow",
+      "task": "Route support turns among order lookup, policy retrieval and live research.",
+      "synthetic": true
+    }
+  }
+}

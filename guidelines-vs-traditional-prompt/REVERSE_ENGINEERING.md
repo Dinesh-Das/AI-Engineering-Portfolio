@@ -23,6 +23,7 @@ The following table is extracted from this project's actual retained files. Note
 | [parlant_client_utils.py](parlant_client_utils.py) | create_client, create_session, send_user_message, await_ai_reply, get_session_reasoning | asyncio, os, parlant, typing |
 | [rich_table_formatter.py](rich_table_formatter.py) | print_comparison_rich, format_query_text, format_traditional_text, format_parlant_text, format_reasoning_text | rich |
 | [traditional_llm_prompt.py](traditional_llm_prompt.py) | call_traditional_llm | dotenv, openai, os |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -50,6 +51,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [rich_table_formatter.py](rich_table_formatter.py) | 96 | format_parlant_text | Format Parlant response - handle structured content. |
 | [rich_table_formatter.py](rich_table_formatter.py) | 129 | format_reasoning_text | Format reasoning text - handle structured guidelines and tools. |
 | [traditional_llm_prompt.py](traditional_llm_prompt.py) | 227 | call_traditional_llm | Call traditional LLM with the given query and prompt. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -57,7 +59,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-4`
 
-Detected import roots: `asyncio`, `dotenv`, `openai`, `os`, `parlant`, `parlant_client_utils`, `rich`, `rich_table_formatter`, `traditional_llm_prompt`, `typing`
+Detected import roots: `asyncio`, `dotenv`, `importlib`, `openai`, `os`, `parlant`, `parlant_client_utils`, `pathlib`, `rich`, `rich_table_formatter`, `sys`, `traditional_llm_prompt`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -76,6 +78,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!chat-with-audios/
+!chat-with-audios/enhance.py
+!chat-with-audios/enhancement/
+!chat-with-audios/enhancement/profile.json

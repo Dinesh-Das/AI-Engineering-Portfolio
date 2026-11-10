@@ -1,0 +1,11 @@
+{
+  "project_id": "Youtube-trend-analysis",
+  "manifests": [],
+  "requirements": [],
+  "python_requirements": [],
+  "environment_names": [
+    "BRIGHT_DATA_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

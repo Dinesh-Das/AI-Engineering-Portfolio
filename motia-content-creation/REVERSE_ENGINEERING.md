@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [steps/generate-linkedin.step.py](steps/generate-linkedin.step.py) | GenerateInput, handler | datetime, dotenv, json, openai, os, pydantic |
 | [steps/generate-twitter.step.py](steps/generate-twitter.step.py) | GenerateInput, handler | datetime, dotenv, json, openai, os, pydantic |
 | [steps/scrape.step.py](steps/scrape.step.py) | ScrapeInput, handler | datetime, dotenv, firecrawl, os, pydantic |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [config/index.js](config/index.js) | backend/configuration source; inspect directly | .js |
 | [steps/schedule-linkedin.step.ts](steps/schedule-linkedin.step.ts) | backend/configuration source; inspect directly | .ts |
 | [steps/schedule-twitter.step.ts](steps/schedule-twitter.step.ts) | backend/configuration source; inspect directly | .ts |
@@ -42,6 +43,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [steps/generate-twitter.step.py](steps/generate-twitter.step.py) | 31 | handler | AsyncFunctionDef |
 | [steps/scrape.step.py](steps/scrape.step.py) | 11 | ScrapeInput | ClassDef |
 | [steps/scrape.step.py](steps/scrape.step.py) | 26 | handler | AsyncFunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -49,7 +51,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-4o`
 
-Detected import roots: `datetime`, `dotenv`, `firecrawl`, `json`, `openai`, `os`, `pydantic`, `time`
+Detected import roots: `datetime`, `dotenv`, `firecrawl`, `importlib`, `json`, `openai`, `os`, `pathlib`, `pydantic`, `sys`, `time`
 
 Retained dependency manifests: [package.json](package.json), [requirements.txt](requirements.txt)
 
@@ -71,6 +73,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -12,6 +12,11 @@
       "path": "main.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -64,8 +69,10 @@
       "upstream_path": "planning.py",
       "path": "planning.py",
       "upstream_sha256": "e1830da904155134b16622ed5f2cc08565a65079b6eee22e689d5833f13b978c",
-      "local_sha256": "e1830da904155134b16622ed5f2cc08565a65079b6eee22e689d5833f13b978c",
-      "changes": []
+      "local_sha256": "7f07856a4a56a1e5e19ec67ff62f5b881fb5854641ae3d70b5b5804773f0cfb7",
+      "changes": [
+        "Replaced Python eval with tested, bounded arithmetic or strict allowlisted JSON tool-choice validation."
+      ]
     },
     {
       "upstream_path": "pyproject.toml",
@@ -87,8 +94,10 @@
       "upstream_path": "tools.py",
       "path": "tools.py",
       "upstream_sha256": "f59947cfb84c7a0d5db74cae99e944e7c071bbc32f880b77e5fc442e78b84d82",
-      "local_sha256": "f59947cfb84c7a0d5db74cae99e944e7c071bbc32f880b77e5fc442e78b84d82",
-      "changes": []
+      "local_sha256": "447c01a5c5e42d13b2bf21f2dd65720d27d2c155b43d3cba9fe38316fedaa781",
+      "changes": [
+        "Replaced Python eval with tested, bounded arithmetic or strict allowlisted JSON tool-choice validation."
+      ]
     },
     {
       "upstream_path": "uv.lock",
@@ -332,6 +341,7 @@
         "imports": [
           "config",
           "memory",
+          "safe_tools",
           "tools"
         ],
         "environment": [],
@@ -339,7 +349,7 @@
         "symbols": [
           {
             "name": "tool_selector",
-            "line": 5,
+            "line": 6,
             "kind": "FunctionDef",
             "doc": ""
           },
@@ -359,7 +369,6 @@
         "calls": [
           "any",
           "calculator_tool",
-          "eval",
           "get_llm_response",
           "llm_input.append",
           "llm_input.extend",
@@ -367,21 +376,14 @@
           "messages.extend",
           "msg.get",
           "openai_client.chat.completions.create",
+          "parse_tool_selection",
           "print",
           "retrieve_session_history",
           "store_chat_message",
-          "tool_call.get",
           "tool_selector",
           "vector_search_tool"
         ],
-        "findings": [
-          {
-            "rule": "code-execution",
-            "path": "planning.py",
-            "line": 41,
-            "message": "Review inputs to eval; untrusted data can execute code."
-          }
-        ],
+        "findings": [],
         "ui": false,
         "syntax_error": null
       },
@@ -389,39 +391,115 @@
         "path": "tools.py",
         "imports": [
           "config",
-          "ingest_data"
+          "ingest_data",
+          "safe_tools"
         ],
         "environment": [],
         "models": [],
         "symbols": [
           {
             "name": "vector_search_tool",
-            "line": 4,
+            "line": 5,
             "kind": "FunctionDef",
             "doc": ""
           },
           {
             "name": "calculator_tool",
-            "line": 32,
+            "line": 33,
             "kind": "FunctionDef",
             "doc": ""
           }
         ],
         "calls": [
+          "arithmetic",
           "array_of_results.append",
-          "eval",
           "get_embedding",
           "str",
           "vector_collection.aggregate"
         ],
-        "findings": [
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "safe_tools.py",
+        "imports": [
+          "ast",
+          "json",
+          "math",
+          "operator"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
           {
-            "rule": "code-execution",
-            "path": "tools.py",
-            "line": 34,
-            "message": "Review inputs to eval; untrusted data can execute code."
+            "name": "arithmetic",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "parse_tool_selection",
+            "line": 52,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "visit",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
           }
         ],
+        "calls": [
+          "",
+          ".strip",
+          "ValueError",
+          "abs",
+          "ast.parse",
+          "ast.walk",
+          "isinstance",
+          "json.loads",
+          "len",
+          "math.isfinite",
+          "set",
+          "sum",
+          "type",
+          "visit"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
         "ui": false,
         "syntax_error": null
       }
@@ -437,19 +515,26 @@
       "VOYAGE_API_KEY"
     ],
     "imports": [
+      "ast",
       "base64",
       "config",
       "datetime",
       "dotenv",
+      "importlib",
       "ingest_data",
       "io",
+      "json",
       "langchain_community",
       "langchain_text_splitters",
+      "math",
       "memory",
       "openai",
+      "operator",
       "os",
+      "pathlib",
       "planning",
       "pymongo",
+      "safe_tools",
       "streamlit",
       "sys",
       "time",
@@ -472,22 +557,14 @@
         "path": "main.py",
         "kind": "python",
         "ui": false
-      }
-    ],
-    "findings": [
-      {
-        "rule": "code-execution",
-        "path": "planning.py",
-        "line": 41,
-        "message": "Review inputs to eval; untrusted data can execute code."
       },
       {
-        "rule": "code-execution",
-        "path": "tools.py",
-        "line": 34,
-        "message": "Review inputs to eval; untrusted data can execute code."
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
+    "findings": [],
     "syntax_errors": []
   },
   "validation": {
@@ -496,7 +573,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 7
+    "plain_python_units_checked": 9
   },
   "category": "memory",
   "purpose": "Combine conversation history, semantic document search and tool selection in MongoDB.",
@@ -519,5 +596,68 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "safe_tools.py",
+      "local_sha256": "0b9e1ccc65021b0d3608835f2a3333233b1f7f781e023d0a5df268ddbc4896ab",
+      "changes": [
+        "Added bounded arithmetic and strict allowlisted JSON tool selection; replaces Python evaluation of untrusted model/user input."
+      ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "87cd8757a069fe78292b6b78bfe7b4c68029486a6cf78a46ed31270226ff58cd",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "8678e926234fce96bc5e527095b1c4fde381d5121b38046182e24a8d27ff745f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "64f8ed1b4c408481d343bd7d7df425c1b74ba7fc72631d1c8aff9c73e80bc78d",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "99882959442a99af0988e339fde1a5d2952c331142b87c504188eaf999221ae8",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "01596739496c31b15dc0a37318210db7c80ae26e89e6fdb44b093ab8f29fa701",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/value.json",
+      "local_sha256": "ea5fb4c0af18749cc224e961b6d2196b9aaf3b4354d45ff1b87925ce77b58108",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "memory"
   }
 }

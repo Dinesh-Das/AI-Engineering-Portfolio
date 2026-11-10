@@ -1,0 +1,5 @@
+{
+  "project": "book-writer-flow",
+  "task": "Generate a researched outline and chapters with a persistent workflow state.",
+  "synthetic": true
+}

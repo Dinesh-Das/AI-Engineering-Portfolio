@@ -1,0 +1,17 @@
+{
+  "project_id": "zep-memory-assistant",
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "requirements": [
+    "ag2[ollama]>=0.9",
+    "ollama>=0.4.8",
+    "streamlit>=1.44.1",
+    "zep-cloud>=2.11.0"
+  ],
+  "python_requirements": [
+    ">=3.12"
+  ],
+  "environment_names": [],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

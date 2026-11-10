@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!gpt-oss-vs-qwen3/
+!gpt-oss-vs-qwen3/enhance.py
+!gpt-oss-vs-qwen3/enhancement/
+!gpt-oss-vs-qwen3/enhancement/profile.json

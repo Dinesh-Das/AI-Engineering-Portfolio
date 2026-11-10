@@ -26,6 +26,7 @@ The following table is extracted from this project's actual retained files. Note
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/youtube_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/youtube_crew.py) | YoutubeWriterReport, YoutubeReport, YoutubeCrew, analysis_agent, analysis_task, writer_agent, write_report_task, crew | crewai, pydantic |
 | [brand_monitoring_flow/src/brand_monitoring_flow/main.py](brand_monitoring_flow/src/brand_monitoring_flow/main.py) | BrandMonitoringState, BrandMonitoringFlow, kickoff, plot, scrape_data, scrape_data_and_analyse, linkedin_analysis, instagram_analysis, youtube_analysis, x_analysis, web_analysis | asyncio, brand_monitoring_flow, crewai, pydantic, requests, time |
 | [brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py](brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py) | BrightDataWebSearchToolInput, BrightDataWebSearchTool, scrape_urls | crewai, dotenv, os, pydantic, requests, ssl, time, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/agents.yaml](brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/tasks.yaml](brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/agents.yaml](brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
@@ -99,6 +100,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py](brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py) | 14 | BrightDataWebSearchToolInput | Input schema for BrightDataWebSearchTool. |
 | [brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py](brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py) | 18 | BrightDataWebSearchTool | ClassDef |
 | [brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py](brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py) | 46 | scrape_urls | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -106,7 +108,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `ollama/deepseek-r1`
 
-Detected import roots: `asyncio`, `base64`, `brand_monitoring_flow`, `crewai`, `dotenv`, `gc`, `os`, `pydantic`, `requests`, `ssl`, `streamlit`, `time`, `typing`
+Detected import roots: `asyncio`, `base64`, `brand_monitoring_flow`, `crewai`, `dotenv`, `gc`, `importlib`, `os`, `pathlib`, `pydantic`, `requests`, `ssl`, `streamlit`, `sys`, `time`, `typing`
 
 Retained dependency manifests: [brand_monitoring_flow/pyproject.toml](brand_monitoring_flow/pyproject.toml)
 
@@ -126,6 +128,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py](brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py) | Added explicit connection/read timeouts to 5 direct requests calls. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

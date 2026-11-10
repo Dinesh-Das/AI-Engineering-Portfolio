@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!web-browsing-agent/
+!web-browsing-agent/enhance.py
+!web-browsing-agent/enhancement/
+!web-browsing-agent/enhancement/profile.json

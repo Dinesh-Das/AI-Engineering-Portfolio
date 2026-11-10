@@ -28,6 +28,7 @@ The following table is extracted from this project's actual retained files. Note
 | [src/tools/firecrawl_search_tool.py](src/tools/firecrawl_search_tool.py) | FirecrawlSearchInput, FirecrawlSearchTool | config, crewai, firecrawl, os, pydantic, typing |
 | [src/workflows/agent_workflow.py](src/workflows/agent_workflow.py) | ParalegalAgentState, ParalegalAgentWorkflow, retrieve, generate_rag_response, evaluate_response, perform_web_search, synthesize_response, run_workflow | config, crewai, events, loguru, pydantic, src, typing |
 | [src/workflows/events.py](src/workflows/events.py) | RetrieveEvent, EvaluateEvent, WebSearchEvent, SynthesizeEvent | pydantic, src, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -93,6 +94,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/workflows/events.py](src/workflows/events.py) | 10 | EvaluateEvent | Event for evaluating RAG response quality. |
 | [src/workflows/events.py](src/workflows/events.py) | 16 | WebSearchEvent | Event for web search when RAG response is insufficient. |
 | [src/workflows/events.py](src/workflows/events.py) | 22 | SynthesizeEvent | Event for final response synthesis. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -100,7 +102,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `ansi2html`, `asyncio`, `base64`, `config`, `contextlib`, `crewai`, `dotenv`, `events`, `firecrawl`, `gc`, `io`, `loguru`, `nest_asyncio`, `numpy`, `os`, `pathlib`, `pydantic`, `pydantic_settings`, `pymilvus`, `pypdf`, `re`, `sentence_transformers`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `uuid`, `warnings`
+Detected import roots: `ansi2html`, `asyncio`, `base64`, `config`, `contextlib`, `crewai`, `dotenv`, `events`, `firecrawl`, `gc`, `importlib`, `io`, `loguru`, `nest_asyncio`, `numpy`, `os`, `pathlib`, `pydantic`, `pydantic_settings`, `pymilvus`, `pypdf`, `re`, `sentence_transformers`, `src`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `uuid`, `warnings`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -119,6 +121,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

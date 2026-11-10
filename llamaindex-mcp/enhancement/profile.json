@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "llamaindex-mcp",
+  "family": "sql",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Connect a local LlamaIndex agent to SQLite-backed MCP tools.",
+  "mechanism": "The server initializes a database and exposes data operations; the notebook builds the client and handles user messages.",
+  "experiment": "Attempt malformed SQL-like content, missing rows and concurrent writes and inspect tool-level validation.",
+  "production": "Give the server least-privilege database access and replace shared local files with a managed store when scaling beyond one worker.",
+  "fixture": {
+    "row_name": "llamaindex-mcp-synthetic-account"
+  }
+}

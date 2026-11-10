@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "autogen-stock-analyst",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Use AutoGen with a custom model client for financial analysis and code generation.",
+  "mechanism": "CustomModelClient adapts a Qualcomm-hosted model to AutoGen's response, usage and cost interface.",
+  "experiment": "Return a malformed provider response and compare behavior with a valid completion; test generated analysis against fixed market data.",
+  "production": "Treat generated code as untrusted, execute it in a disposable sandbox and version the market-data snapshot used in the report.",
+  "fixture": {
+    "payload": {
+      "project": "autogen-stock-analyst",
+      "task": "Use AutoGen with a custom model client for financial analysis and code generation.",
+      "synthetic": true
+    }
+  }
+}

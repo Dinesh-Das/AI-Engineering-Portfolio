@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3/
+!minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3/enhance.py
+!minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3/enhancement/
+!minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3/enhancement/profile.json

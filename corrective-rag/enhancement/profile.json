@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "corrective-rag",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Detect weak document evidence and recover through web search.",
+  "mechanism": "A LlamaIndex workflow retrieves, grades relevance, optionally searches the web and synthesizes a response.",
+  "experiment": "Use misleading near-match chunks to measure when the relevance grader incorrectly accepts unsupported context.",
+  "production": "Give each correction cycle a maximum count and token budget; record the reason for fallback and the resulting sources.",
+  "fixture": {
+    "query": "corrective-rag retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "corrective-rag/synthetic-policy-v1",
+        "text": "corrective-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "corrective-rag/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

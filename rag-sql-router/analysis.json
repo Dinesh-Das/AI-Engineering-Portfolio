@@ -785,6 +785,38 @@
       "findings": [],
       "ui": false,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [
@@ -804,15 +836,18 @@
     "ast",
     "asyncio",
     "cleanlab_codex",
+    "importlib",
     "llama_index",
     "nest_asyncio",
     "os",
     "pandas",
+    "pathlib",
     "plotly",
     "random",
     "shutil",
     "sqlalchemy",
     "streamlit",
+    "sys",
     "tempfile",
     "time",
     "tools",
@@ -834,6 +869,11 @@
     {
       "path": "notebook.ipynb",
       "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
       "ui": false
     }
   ],

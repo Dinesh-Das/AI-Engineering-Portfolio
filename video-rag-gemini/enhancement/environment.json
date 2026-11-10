@@ -1,0 +1,17 @@
+{
+  "project_id": "video-rag-gemini",
+  "manifests": [
+    "requirements.txt"
+  ],
+  "requirements": [
+    "google-generativeai>=0.8.0",
+    "pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+    "streamlit>=1.28.0"
+  ],
+  "python_requirements": [],
+  "environment_names": [
+    "GEMINI_API_KEY"
+  ],
+  "scope": "declared Python dependency presence only; optional/dev/alternate paths may be included; Node manifests are listed, not resolved"
+}

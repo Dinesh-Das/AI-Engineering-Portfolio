@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [Siamese-Network.ipynb#cell-8](Siamese-Network.ipynb#cell-8) | SiameseNetwork, forward_once, forward |  |
 | [Siamese-Network.ipynb#cell-10](Siamese-Network.ipynb#cell-10) | ContrastiveLoss, forward |  |
 | [Siamese-Network.ipynb#cell-15](Siamese-Network.ipynb#cell-15) | show_image_pair, visualize_siamese_pairs |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -37,6 +38,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [Siamese-Network.ipynb#cell-10](Siamese-Network.ipynb#cell-10) | 7 | forward | FunctionDef |
 | [Siamese-Network.ipynb#cell-15](Siamese-Network.ipynb#cell-15) | 3 | show_image_pair | FunctionDef |
 | [Siamese-Network.ipynb#cell-15](Siamese-Network.ipynb#cell-15) | 14 | visualize_siamese_pairs | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -44,7 +46,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `matplotlib`, `numpy`, `random`, `torch`, `torchvision`
+Detected import roots: `importlib`, `matplotlib`, `numpy`, `pathlib`, `random`, `sys`, `torch`, `torchvision`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -62,6 +64,16 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [Siamese-Network.ipynb](Siamese-Network.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/reward.json](enhancement/examples/reward.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/splits.json](enhancement/examples/splits.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/distill.json](enhancement/examples/distill.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

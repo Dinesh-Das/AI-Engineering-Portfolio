@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "content_planner_flow",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Plan social content from web material and schedule a draft.",
+  "mechanism": "CrewAI Flow moves through scraping, platform-specific draft creation, plan saving and Typefully scheduling.",
+  "experiment": "Replay the same publish event twice and verify that one accepted draft produces at most one external post.",
+  "production": "Separate generation from publishing; persist a draft ID, explicit approval and an idempotency key for the scheduler.",
+  "fixture": {
+    "payload": {
+      "project": "content_planner_flow",
+      "task": "Plan social content from web material and schedule a draft.",
+      "synthetic": true
+    }
+  }
+}

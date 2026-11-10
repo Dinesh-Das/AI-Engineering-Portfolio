@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "pixeltable-mcp",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Coordinate multimodal storage and computed transformations through MCP.",
+  "mechanism": "Separate audio, image, video and document servers wrap Pixeltable tables, embeddings and transformation functions.",
+  "experiment": "Change one source record and verify incremental recomputation and retrieval freshness without rebuilding every table.",
+  "production": "Separate storage from API workers, version computed-column definitions and cap expensive transformations with job queues.",
+  "fixture": {
+    "tool_name": "pixeltable_mcp_calculate"
+  }
+}

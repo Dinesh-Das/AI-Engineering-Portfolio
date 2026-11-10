@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!mcp-video-rag/
+!mcp-video-rag/enhance.py
+!mcp-video-rag/enhancement/
+!mcp-video-rag/enhancement/profile.json

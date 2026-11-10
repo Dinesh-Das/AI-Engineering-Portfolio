@@ -26,6 +26,7 @@ The following table is extracted from this project's actual retained files. Note
 | [notebook.ipynb#cell-20](notebook.ipynb#cell-20) | InputEvent, GatherToolsEvent, ToolCallEvent, ToolCallEventResult, RouterOutputAgentWorkflow, reset, prepare_chat, chat, dispatch_calls, call_tool, gather | llama_index, typing |
 | [tools.py](tools.py) | create_codex_project, get_or_create_codex_project, get_codex_project_info, setup_sql_tool, setup_document_tool, document_query_tool | cleanlab_codex, llama_index, os, sqlalchemy, uuid |
 | [workflow.py](workflow.py) | InputEvent, GatherToolsEvent, ToolCallEvent, ToolCallEventResult, RouterOutputAgentWorkflow, reset, prepare_chat, chat, dispatch_calls, call_tool, gather | asyncio, llama_index, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [workflow_all_flows.html](workflow_all_flows.html) | backend/configuration source; inspect directly | .html |
 
 ## Function and class walkthrough
@@ -78,6 +79,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [workflow.py](workflow.py) | 120 | dispatch_calls | Dispatches calls. |
 | [workflow.py](workflow.py) | 132 | call_tool | Calls tool. |
 | [workflow.py](workflow.py) | 204 | gather | Gathers tool calls. |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -86,7 +88,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-small-en-v1.5`
 - `qwen/qwen-turbo`
 
-Detected import roots: `IPython`, `ast`, `asyncio`, `cleanlab_codex`, `llama_index`, `nest_asyncio`, `os`, `pandas`, `plotly`, `random`, `shutil`, `sqlalchemy`, `streamlit`, `tempfile`, `time`, `tools`, `torch`, `typing`, `uuid`, `workflow`
+Detected import roots: `IPython`, `ast`, `asyncio`, `cleanlab_codex`, `importlib`, `llama_index`, `nest_asyncio`, `os`, `pandas`, `pathlib`, `plotly`, `random`, `shutil`, `sqlalchemy`, `streamlit`, `sys`, `tempfile`, `time`, `tools`, `torch`, `typing`, `uuid`, `workflow`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -105,6 +107,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [.streamlit/config.toml](.streamlit/config.toml) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

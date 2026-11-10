@@ -88,6 +88,38 @@
       "findings": [],
       "ui": false,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [],
@@ -101,9 +133,12 @@
     "argparse",
     "crewai",
     "crewai_tools",
+    "importlib",
     "json",
     "litserve",
+    "pathlib",
     "requests",
+    "sys",
     "time"
   ],
   "models": [],
@@ -115,6 +150,11 @@
     },
     {
       "path": "server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
       "kind": "python",
       "ui": false
     }

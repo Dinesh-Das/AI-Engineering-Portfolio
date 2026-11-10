@@ -1,0 +1,5 @@
+{
+  "project": "build-code-harness",
+  "task": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
+  "synthetic": true
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "llama-4-rag",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Use a hosted Llama 4 model in a local document-retrieval workflow.",
+  "mechanism": "RAGWorkflow embeds documents, retrieves evidence and synthesizes with provider-specific model configuration.",
+  "experiment": "Keep retrieved chunks constant while swapping the generator to distinguish retrieval failure from generation failure.",
+  "production": "Put provider selection behind a tested adapter and enforce request budgets so a model substitution cannot change tenant data routing.",
+  "fixture": {
+    "query": "llama-4-rag retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "llama-4-rag/synthetic-policy-v1",
+        "text": "llama-4-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "llama-4-rag/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

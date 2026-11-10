@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "simple-rag-workflow",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Learn the ingestion, retrieval and synthesis stages of a minimal RAG system.",
+  "mechanism": "A LlamaIndex workflow emits retrieval events and synthesizes from selected nodes; separate notebooks cover evaluation.",
+  "experiment": "Vary chunk size and overlap while fixing the model and measure recall at k before judging final answer quality.",
+  "production": "Keep a simple API worker plus persistent index until measured load justifies more infrastructure; version ingestion parameters.",
+  "fixture": {
+    "query": "simple-rag-workflow retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "simple-rag-workflow/synthetic-policy-v1",
+        "text": "simple-rag-workflow retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "simple-rag-workflow/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

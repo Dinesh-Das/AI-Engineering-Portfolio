@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "documentation-writer-flow",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Produce repository documentation through planning and writing agents.",
+  "mechanism": "A workflow clones code, produces a documentation plan and dispatches writing tasks; MCP exposes the process as a tool.",
+  "experiment": "Ask it to document a function whose behavior differs from its name and verify that the generated explanation follows code.",
+  "production": "Clone pinned revisions into disposable workspaces, write artifacts outside source and require review before publishing changes.",
+  "fixture": {
+    "payload": {
+      "project": "documentation-writer-flow",
+      "task": "Produce repository documentation through planning and writing agents.",
+      "synthetic": true
+    }
+  }
+}

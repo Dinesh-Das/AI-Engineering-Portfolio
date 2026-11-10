@@ -12,6 +12,11 @@
       "path": "cli.py",
       "kind": "python",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -640,6 +645,38 @@
         "findings": [],
         "ui": false,
         "syntax_error": null
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -658,6 +695,7 @@
       "datetime",
       "dotenv",
       "gc",
+      "importlib",
       "json",
       "openai",
       "os",
@@ -665,6 +703,7 @@
       "re",
       "src",
       "streamlit",
+      "sys",
       "tempfile",
       "time",
       "typing"
@@ -680,6 +719,11 @@
         "path": "cli.py",
         "kind": "python",
         "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
+        "ui": false
       }
     ],
     "findings": [],
@@ -691,7 +735,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 7
+    "plain_python_units_checked": 8
   },
   "category": "voice",
   "purpose": "Convert multilingual meeting audio into English notes and assigned action items.",
@@ -701,6 +745,55 @@
       "local_sha256": "085bed52b69030bf635f3942287090496500021c9d87e90a5e77b0be62fa2209",
       "changes": [
         "Added a size-bounded headless meeting-processing CLI with structured JSON output."
+      ]
+    },
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "fef200ac8362a2ea185aa79e6400d30516a5d67022f37be60b41566dc0ecc318",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "6491da3e1bbcd0b8db619689dfd01f973939a697f325cc3f3902da17539374db",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "733f0f573dd0b6060d4475a07a33cb2f341be3984779a2eea73520208800449f",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "f112da89123056b7276c1a309c645bd6bb48511c9704e6abecbc33374b6dfa6a",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "77be899d9c3252f94b688f6f95521576e48b894b12fe7d3e8c8888526d0c9b71",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/quality.json",
+      "local_sha256": "006473f2dad64b74d365bb5e2bce0658e50af214c7af5e9c6369802f0bcac649",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
       ]
     }
   ],
@@ -723,5 +816,10 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "transcript"
   }
 }

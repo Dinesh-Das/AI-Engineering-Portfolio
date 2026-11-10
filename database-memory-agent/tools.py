@@ -1,5 +1,6 @@
 from config import vector_collection
 from ingest_data import get_embedding
+from safe_tools import arithmetic
 
 def vector_search_tool(user_input: str) -> str:
     query_embedding = get_embedding(user_input)
@@ -31,7 +32,7 @@ def vector_search_tool(user_input: str) -> str:
 
 def calculator_tool(user_input: str) -> str:
     try:
-        result = eval(user_input)
+        result = arithmetic(user_input)
         return str(result)
     except Exception as e:
         return f"Error: {str(e)}"

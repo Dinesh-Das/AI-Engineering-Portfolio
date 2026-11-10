@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!context-engineering-workflow/
+!context-engineering-workflow/enhance.py
+!context-engineering-workflow/enhancement/
+!context-engineering-workflow/enhancement/profile.json

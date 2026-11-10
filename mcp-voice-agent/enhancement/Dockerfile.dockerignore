@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!mcp-voice-agent/
+!mcp-voice-agent/enhance.py
+!mcp-voice-agent/enhancement/
+!mcp-voice-agent/enhancement/profile.json

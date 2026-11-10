@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!run-jev-inside-agent-harness/
+!run-jev-inside-agent-harness/enhance.py
+!run-jev-inside-agent-harness/enhancement/
+!run-jev-inside-agent-harness/enhancement/profile.json

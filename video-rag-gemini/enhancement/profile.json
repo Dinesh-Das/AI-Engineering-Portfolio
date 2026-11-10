@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "video-rag-gemini",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Upload video to Gemini and ask grounded questions about its contents.",
+  "mechanism": "VideoProcessor and the headless demo upload a file, wait for processing and send multimodal requests.",
+  "experiment": "Ask about a brief event near the end of a long video and score temporal accuracy and unsupported details.",
+  "production": "Use resumable upload jobs, bounded processing polling and explicit remote-file deletion after the configured retention period.",
+  "fixture": {
+    "artifact_id": "video-rag-gemini-segment-1",
+    "content": "Synthetic integrity fixture for video-rag-gemini\n"
+  }
+}

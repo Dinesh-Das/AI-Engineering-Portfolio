@@ -10,6 +10,7 @@ AI implementation with Python source and/or notebooks; retained UI source is ava
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
 - [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
+- [Executable enhancements](ENHANCEMENTS.md): project-specific CPU contracts, negative/recovery checks, real-data commands and deployment tradeoffs; run `python enhance.py check`.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup
@@ -56,7 +57,7 @@ Append `--execute` only after reviewing the entry and configuring its isolated d
 From the collection root, preview the command without executing source:
 
 ```powershell
-.\run.ps1 run --project "trustworthy-rag" --entry "main.ipynb"
+.\run.ps1 run --project "trustworthy-rag" --entry "enhance.py"
 ```
 
 After configuring an isolated environment and reviewing the entry, append `--execute --timeout 120`. The runner uses the active virtual environment when called through run.ps1. Notebook execution also needs Jupyter/nbconvert and an appropriate kernel. Training commonly needs a longer job deadline and a GPU or remote training account. These are discovered candidates, not proof the selected dependency/provider combination has been tested.
@@ -65,6 +66,7 @@ After configuring an isolated environment and reviewing the entry, append `--exe
 | --- | --- | --- |
 | [app.py](app.py) | python | launch with ui action |
 | [main.ipynb](main.ipynb) | notebook | headless candidate |
+| [enhance.py](enhance.py) | python | headless candidate |
 
 ## Verification status
 

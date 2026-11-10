@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/writer_crew.py](book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/writer_crew.py) | Chapter, ChapterWriterCrew, topic_researcher, research_topic, writer, write_chapter, crew | book_writing_flow, crewai, crewai_tools, pydantic |
 | [book_flow/book_writing_flow/src/book_writing_flow/main.py](book_flow/book_writing_flow/src/book_writing_flow/main.py) | Chapter, BookState, BookFlow, kickoff, plot, generate_outline, generate_chapters, save_book, write_single_chapter | asyncio, book_writing_flow, crewai, dotenv, os, pydantic |
 | [book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py](book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py) | BrightDataWebSearchToolInput, BrightDataWebSearchTool | crewai, dotenv, os, pydantic, requests, ssl, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/agents.yaml](book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
 | [book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/tasks.yaml](book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/tasks.yaml) | backend/configuration source; inspect directly | .yaml |
 | [book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/agents.yaml](book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/agents.yaml) | backend/configuration source; inspect directly | .yaml |
@@ -58,6 +59,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [book_flow/book_writing_flow/src/book_writing_flow/main.py](book_flow/book_writing_flow/src/book_writing_flow/main.py) | 40 | write_single_chapter | AsyncFunctionDef |
 | [book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py](book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py) | 13 | BrightDataWebSearchToolInput | Input schema for BrightDataWebSearchTool. |
 | [book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py](book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py) | 17 | BrightDataWebSearchTool | ClassDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -65,7 +67,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `ollama/gemma3:4b`
 
-Detected import roots: `asyncio`, `book_writing_flow`, `crewai`, `crewai_tools`, `dotenv`, `os`, `pydantic`, `requests`, `ssl`, `typing`
+Detected import roots: `asyncio`, `book_writing_flow`, `crewai`, `crewai_tools`, `dotenv`, `importlib`, `os`, `pathlib`, `pydantic`, `requests`, `ssl`, `sys`, `typing`
 
 Retained dependency manifests: [book_flow/book_writing_flow/pyproject.toml](book_flow/book_writing_flow/pyproject.toml)
 
@@ -86,6 +88,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py](book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

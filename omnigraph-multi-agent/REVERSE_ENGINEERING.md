@@ -18,19 +18,15 @@ The following table is extracted from this project's actual retained files. Note
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [.gitignore](.gitignore) | guide, schema or fixture |  |
-| [agent_a.jsonl](agent_a.jsonl) | guide, schema or fixture |  |
-| [agent_b.jsonl](agent_b.jsonl) | guide, schema or fixture |  |
-| [agent_b_fixed.jsonl](agent_b_fixed.jsonl) | guide, schema or fixture |  |
-| [queries.gq](queries.gq) | guide, schema or fixture |  |
-| [schema.pg](schema.pg) | guide, schema or fixture |  |
-| [seed.jsonl](seed.jsonl) | guide, schema or fixture |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -38,7 +34,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: No Python import roots; inspect the backend/service configuration.
+Detected import roots: `importlib`, `pathlib`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -52,7 +48,15 @@ Some names are optional endpoints, tracing settings or path selectors. Read each
 
 Every project now has a source/version manifest, empty environment template, a documented headless execution boundary, evaluation protocol and production learning guide. Source-level transformations are recorded below; SHA-256 hashes distinguish the original bytes from the local port. No untested dependency upgrade or provider migration is represented as completed.
 
-No behavior-changing transformation was necessary during the initial source port.
+| File | Recorded change |
+| --- | --- |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/value.json](enhancement/examples/value.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!cursor_linkup_mcp/
+!cursor_linkup_mcp/enhance.py
+!cursor_linkup_mcp/enhancement/
+!cursor_linkup_mcp/enhancement/profile.json

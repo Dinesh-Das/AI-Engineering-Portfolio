@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!mcp-agentic-rag-firecrawl/
+!mcp-agentic-rag-firecrawl/enhance.py
+!mcp-agentic-rag-firecrawl/enhancement/
+!mcp-agentic-rag-firecrawl/enhancement/profile.json

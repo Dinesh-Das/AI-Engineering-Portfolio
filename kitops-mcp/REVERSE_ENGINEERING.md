@@ -21,6 +21,7 @@ The following table is extracted from this project's actual retained files. Note
 | [server.py](server.py) | create_kitfile, inspect_modelkit, push_and_pack_modelkit, pull_and_unpack_modelkit, remove_modelkit | mcp, tools, typing |
 | [tools.py](tools.py) | create, inspect, push_and_pack, pull_and_unpack, remove | json, kitops, os, typing, util |
 | [util.py](util.py) | validate_modelkit_tag |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -39,6 +40,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [tools.py](tools.py) | 105 | pull_and_unpack | Pull and unpack a ModelKit to the working directory. |
 | [tools.py](tools.py) | 138 | remove | Remove a ModelKit from the remote registry only. |
 | [util.py](util.py) | 1 | validate_modelkit_tag | Validate that ModelKit tag has correct format |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -46,7 +48,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: `joblib`, `json`, `kitops`, `mcp`, `os`, `pandas`, `sklearn`, `tools`, `typing`, `util`
+Detected import roots: `importlib`, `joblib`, `json`, `kitops`, `mcp`, `os`, `pandas`, `pathlib`, `sklearn`, `sys`, `tools`, `typing`, `util`
 
 Retained dependency manifests: [ml-project/requirements.txt](ml-project/requirements.txt), [pyproject.toml](pyproject.toml)
 
@@ -63,6 +65,14 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/artifacts.json](enhancement/examples/artifacts.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/segment.txt](enhancement/examples/segment.txt) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -310,6 +310,38 @@
       "findings": [],
       "ui": false,
       "syntax_error": null
+    },
+    {
+      "path": "enhance.py",
+      "imports": [
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".is_file",
+        ".main",
+        ".resolve",
+        "Path",
+        "SystemExit",
+        "importlib.import_module",
+        "main",
+        "str",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
     }
   ],
   "manifests": [
@@ -324,12 +356,15 @@
   "imports": [
     "asyncio",
     "dotenv",
+    "importlib",
     "openai",
     "os",
     "parlant",
     "parlant_client_utils",
+    "pathlib",
     "rich",
     "rich_table_formatter",
+    "sys",
     "traditional_llm_prompt",
     "typing"
   ],
@@ -344,6 +379,11 @@
     },
     {
       "path": "parlant_agent_server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "enhance.py",
       "kind": "python",
       "ui": false
     }

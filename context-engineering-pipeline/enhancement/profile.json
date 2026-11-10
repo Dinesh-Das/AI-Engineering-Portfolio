@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "context-engineering-pipeline",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Assemble useful context from documents, memory and structured stores under a token budget.",
+  "mechanism": "The notebook combines retrieval and memory search, estimates token use and summarizes blocks to fit the prompt.",
+  "experiment": "Lower the context budget gradually and measure evidence retention, answer correctness and summary distortion.",
+  "production": "Version context-selection policies and log selected source IDs plus token counts without logging private document contents.",
+  "fixture": {
+    "key": "context-engineering-pipeline:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

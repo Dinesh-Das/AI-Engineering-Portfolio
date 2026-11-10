@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project_id": "o3-vs-claude-code",
+  "family": "evaluation",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Compare repository-aware code responses and judge scoring across models.",
+  "mechanism": "Notebooks prepare repository context and evaluate generated code; the pinned data-preparation notebook is empty.",
+  "experiment": "Freeze repository context and run generated solutions against hidden tests to compare judge preference with actual correctness.",
+  "production": "Store benchmark commits, prompts, raw responses and test results; execute candidate code in isolated short-lived workers.",
+  "fixture": {
+    "pairs": [
+      {
+        "id": "o3-vs-claude-code-normal",
+        "baseline": 0.25,
+        "candidate": 0.75
+      },
+      {
+        "id": "o3-vs-claude-code-hard",
+        "baseline": 0,
+        "candidate": 0.5
+      }
+    ]
+  }
+}

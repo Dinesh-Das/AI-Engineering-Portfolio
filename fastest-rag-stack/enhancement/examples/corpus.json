@@ -1,0 +1,20 @@
+[
+  {
+    "id": "support",
+    "tenant": "learner",
+    "source": "fastest-rag-stack/synthetic-policy-v1",
+    "text": "fastest-rag-stack retention policy: learner documents are retained for seven days. This is synthetic evidence."
+  },
+  {
+    "id": "distractor",
+    "tenant": "learner",
+    "source": "fastest-rag-stack/synthetic-other",
+    "text": "A synthetic unrelated recipe uses water and flour."
+  },
+  {
+    "id": "private",
+    "tenant": "other",
+    "source": "private-policy",
+    "text": "confidential retention is ninety days."
+  }
+]

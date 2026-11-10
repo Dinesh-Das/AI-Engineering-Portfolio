@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!stagehand x mcp-use/
+!stagehand x mcp-use/enhance.py
+!stagehand x mcp-use/enhancement/
+!stagehand x mcp-use/enhancement/profile.json

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!fastest-rag-milvus-groq/
+!fastest-rag-milvus-groq/enhance.py
+!fastest-rag-milvus-groq/enhancement/
+!fastest-rag-milvus-groq/enhancement/profile.json

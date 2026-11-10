@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!Youtube-trend-analysis/
+!Youtube-trend-analysis/enhance.py
+!Youtube-trend-analysis/enhancement/
+!Youtube-trend-analysis/enhancement/profile.json

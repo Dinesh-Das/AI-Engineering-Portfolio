@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!openclaw-secure-deployment/
+!openclaw-secure-deployment/enhance.py
+!openclaw-secure-deployment/enhancement/
+!openclaw-secure-deployment/enhancement/profile.json

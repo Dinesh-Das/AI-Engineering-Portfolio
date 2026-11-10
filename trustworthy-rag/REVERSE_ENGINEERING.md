@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [main.ipynb#cell-7](main.ipynb#cell-7) | top-level workflow |  |
 | [main.ipynb#cell-8](main.ipynb#cell-8) | GetTrustworthinessScoreAndReasoning, display_response, class_name, handle | llama_index, typing |
 | [utils.py](utils.py) | GetTrustworthinessScoreAndReasoning, setup_trustworthiness_handler, display_response, outputs_with_trustworthiness, class_name, handle | llama_index, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -42,6 +43,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [utils.py](utils.py) | 46 | outputs_with_trustworthiness | Display the response along with trustworthiness information. |
 | [utils.py](utils.py) | 14 | class_name | Class name. |
 | [utils.py](utils.py) | 18 | handle | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -50,7 +52,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-large-en-v1.5`
 - `BAAI/bge-small-en-v1.5`
 
-Detected import roots: `IPython`, `base64`, `dotenv`, `gc`, `llama_index`, `llama_parse`, `os`, `random`, `streamlit`, `tempfile`, `time`, `typing`, `utils`, `uuid`
+Detected import roots: `IPython`, `base64`, `dotenv`, `gc`, `importlib`, `llama_index`, `llama_parse`, `os`, `pathlib`, `random`, `streamlit`, `sys`, `tempfile`, `time`, `typing`, `utils`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -70,6 +72,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [main.ipynb](main.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

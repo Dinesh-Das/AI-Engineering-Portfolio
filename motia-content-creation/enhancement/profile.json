@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "motia-content-creation",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Implement event-driven article-to-social-content generation.",
+  "mechanism": "Motia steps accept a request, scrape content, generate platform-specific text and schedule delivery.",
+  "experiment": "Replay and reorder events and verify that generation and scheduling remain idempotent.",
+  "production": "Persist job/event IDs, use a dead-letter queue and require approved drafts before outbound scheduling steps.",
+  "fixture": {
+    "payload": {
+      "project": "motia-content-creation",
+      "task": "Implement event-driven article-to-social-content generation.",
+      "synthetic": true
+    }
+  }
+}

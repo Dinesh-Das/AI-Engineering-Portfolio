@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "fastest-rag-milvus-groq",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Explore binary-vector retrieval with Milvus and hosted generation with Groq.",
+  "mechanism": "EmbedData, MilvusVDB_BQ, Retriever and RAG separate embedding, storage, search and generation.",
+  "experiment": "Compare binary and float retrieval on the same labeled queries; include network overhead and reranking in latency reports.",
+  "production": "Benchmark recall against the unquantized baseline before accepting latency claims; provision query and embedding capacity separately.",
+  "fixture": {
+    "query": "fastest-rag-milvus-groq retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "fastest-rag-milvus-groq/synthetic-policy-v1",
+        "text": "fastest-rag-milvus-groq retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "fastest-rag-milvus-groq/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "eval-and-observability-normal",
+    "baseline": 0.25,
+    "candidate": 0.75
+  },
+  {
+    "id": "eval-and-observability-hard",
+    "baseline": 0,
+    "candidate": 0.5
+  }
+]

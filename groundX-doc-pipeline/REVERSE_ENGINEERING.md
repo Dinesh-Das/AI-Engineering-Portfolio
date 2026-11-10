@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [evaluation_geval.py](evaluation_geval.py) | evaluate_invoice_parsing, EvaluatorGEval, create_evaluator_geval, process_invoice, run, gx_task, gpt_task | base64, dotenv, fitz, groundx, openai, opik, os, requests |
 | [groundx_utils.py](groundx_utils.py) | create_client, ensure_bucket, ingest_document, poll_until_complete, fetch_xray_json, check_file_exists, get_xray_for_existing_document, process_document | UI surface |
 | [run_evaluation_cli.py](run_evaluation_cli.py) | discover_invoice_files, infer_mime_type, main | argparse, dotenv, evaluation_geval, mimetypes, pathlib, typing |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -52,6 +53,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [run_evaluation_cli.py](run_evaluation_cli.py) | 12 | discover_invoice_files | Discover invoice files in the specified folder. |
 | [run_evaluation_cli.py](run_evaluation_cli.py) | 22 | infer_mime_type | Infer MIME type for the given file path. |
 | [run_evaluation_cli.py](run_evaluation_cli.py) | 28 | main | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -59,7 +61,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-4o`
 
-Detected import roots: `argparse`, `base64`, `beam`, `dotenv`, `evaluation_geval`, `fitz`, `groundx`, `groundx_utils`, `mimetypes`, `openai`, `opik`, `os`, `pathlib`, `requests`, `streamlit`, `tempfile`, `time`, `typing`
+Detected import roots: `argparse`, `base64`, `beam`, `dotenv`, `evaluation_geval`, `fitz`, `groundx`, `groundx_utils`, `importlib`, `mimetypes`, `openai`, `opik`, `os`, `pathlib`, `requests`, `streamlit`, `sys`, `tempfile`, `time`, `typing`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml)
 
@@ -80,17 +82,25 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [evaluation_geval.py](evaluation_geval.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
+| [groundx_utils.py](groundx_utils.py) | Bounded 2 remaining HTTP calls with explicit connect/read timeouts. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [assets/groundx.png](assets/groundx.png) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/reward.json](enhancement/examples/reward.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/splits.json](enhancement/examples/splits.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/distill.json](enhancement/examples/distill.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 
 These AST rules detect a small set of risky patterns and are not a complete security audit. Enforce authorization and resource limits in deterministic code; prompts and tool descriptions are not access controls.
 
-| Source | Line | Rule | Review implication |
-| --- | --- | --- | --- |
-| [groundx_utils.py](groundx_utils.py) | 109 | network-timeout | HTTP call has no explicit timeout; a stalled peer can occupy a worker. |
-| [groundx_utils.py](groundx_utils.py) | 130 | network-timeout | HTTP call has no explicit timeout; a stalled peer can occupy a worker. |
+The limited static rules found no matching patterns. This does not establish application security, dependency safety or provider compatibility.
 
 ## Known source limitations
 

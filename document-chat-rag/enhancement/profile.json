@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project_id": "document-chat-rag",
+  "family": "retrieval",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Build document-grounded question answering with local models and optional vector storage.",
+  "mechanism": "Notebook variants demonstrate index construction, local generation and retrieval/reranking choices.",
+  "experiment": "Make a question with no supporting document and score abstention separately from plausible hallucination.",
+  "production": "Use content-hashed ingestion, document-level ACLs and an explicit citation contract before adding API concurrency.",
+  "fixture": {
+    "query": "document-chat-rag retention",
+    "documents": [
+      {
+        "id": "support",
+        "tenant": "learner",
+        "source": "document-chat-rag/synthetic-policy-v1",
+        "text": "document-chat-rag retention policy: learner documents are retained for seven days. This is synthetic evidence."
+      },
+      {
+        "id": "distractor",
+        "tenant": "learner",
+        "source": "document-chat-rag/synthetic-other",
+        "text": "A synthetic unrelated recipe uses water and flour."
+      },
+      {
+        "id": "private",
+        "tenant": "other",
+        "source": "private-policy",
+        "text": "confidential retention is ninety days."
+      }
+    ]
+  }
+}

@@ -24,6 +24,7 @@ The following table is extracted from this project's actual retained files. Note
 | [notebook.ipynb#cell-13](notebook.ipynb#cell-13) | top-level workflow |  |
 | [rag_code.py](rag_code.py) | batch_iterate, EmbedData, QdrantVDB_QB, Retriever, RAG, generate_embedding, embed, define_client, create_collection, ingest_data, search, generate_context | llama_index, qdrant_client |
 | [sambanova.ipynb#cell-1](sambanova.ipynb#cell-1) | top-level workflow | dotenv, llama_index |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -47,6 +48,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [rag_code.py](rag_code.py) | 87 | search | FunctionDef |
 | [rag_code.py](rag_code.py) | 140 | generate_context | FunctionDef |
 | [rag_code.py](rag_code.py) | 153 | query | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -56,7 +58,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `Meta-Llama-3.1-405B-Instruct`
 - `Meta-Llama-3.3-70B-Instruct`
 
-Detected import roots: `IPython`, `base64`, `dotenv`, `gc`, `llama_index`, `nest_asyncio`, `openai`, `os`, `qdrant_client`, `rag_code`, `random`, `streamlit`, `tempfile`, `time`, `uuid`
+Detected import roots: `IPython`, `base64`, `dotenv`, `gc`, `importlib`, `llama_index`, `nest_asyncio`, `openai`, `os`, `pathlib`, `qdrant_client`, `rag_code`, `random`, `streamlit`, `sys`, `tempfile`, `time`, `uuid`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -76,6 +78,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [notebook.ipynb](notebook.ipynb) | Fixed unmatched closing parenthesis in notebook cell 23. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [sambanova.ipynb](sambanova.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

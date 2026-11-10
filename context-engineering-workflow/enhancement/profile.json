@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "project_id": "context-engineering-workflow",
+  "family": "memory",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Coordinate multi-source research with parsing, retrieval and long-term context.",
+  "mechanism": "TensorLake document parsing, Voyage embeddings, Milvus retrieval and Zep memory feed CrewAI research tasks.",
+  "experiment": "Remove one context source at a time and measure the effect on citations, stale facts and follow-up resolution.",
+  "production": "Use separate ingestion and serving workers, request-scoped context assembly and independently scoped memory/vector stores.",
+  "fixture": {
+    "key": "context-engineering-workflow:preference",
+    "old_value": {
+      "retention_days": 30
+    },
+    "new_value": {
+      "retention_days": 7
+    }
+  }
+}

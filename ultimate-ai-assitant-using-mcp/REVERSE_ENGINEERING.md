@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [mcp_streamlit_app.py](mcp_streamlit_app.py) | reset_chat, create_mcp_client, create_agent, run_agent_query | UI surface |
 | [server.py](server.py) | main | asyncio, dotenv, langchain_ollama, langchain_openai, mcp_use, os, warnings |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -32,6 +33,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [mcp_streamlit_app.py](mcp_streamlit_app.py) | 52 | create_agent | Create MCPAgent with the client. |
 | [mcp_streamlit_app.py](mcp_streamlit_app.py) | 65 | run_agent_query | Run a query through the MCP agent. |
 | [server.py](server.py) | 13 | main | AsyncFunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -39,7 +41,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 - `gpt-4o`
 
-Detected import roots: `asyncio`, `base64`, `dotenv`, `json`, `langchain_ollama`, `langchain_openai`, `mcp_use`, `os`, `streamlit`, `warnings`
+Detected import roots: `asyncio`, `base64`, `dotenv`, `importlib`, `json`, `langchain_ollama`, `langchain_openai`, `mcp_use`, `os`, `pathlib`, `streamlit`, `sys`, `warnings`
 
 Retained dependency manifests: [pyproject.toml](pyproject.toml), [requirements.txt](requirements.txt)
 
@@ -58,6 +60,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/schema.json](enhancement/examples/schema.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

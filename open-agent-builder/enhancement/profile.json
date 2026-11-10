@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "open-agent-builder",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps.",
+  "mechanism": "API routes and Convex data/functions implement the orchestration backend; restored visual-builder components and UI routes consume that orchestration state.",
+  "experiment": "Resume a workflow after an approval event is delivered twice and verify step identity and authorization.",
+  "production": "Extract workers from request handlers, persist workflow state and bind every secret, approval and execution to an authenticated owner.",
+  "fixture": {
+    "payload": {
+      "project": "open-agent-builder",
+      "task": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps.",
+      "synthetic": true
+    }
+  }
+}

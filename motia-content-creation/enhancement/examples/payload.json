@@ -1,0 +1,5 @@
+{
+  "project": "motia-content-creation",
+  "task": "Implement event-driven article-to-social-content generation.",
+  "synthetic": true
+}

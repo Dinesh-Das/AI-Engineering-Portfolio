@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "stock-portfolio-analysis-agent",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend.",
+  "mechanism": "StockAnalysisFlow coordinates data gathering, simulation, allocation and insights and emits AG-UI-compatible events.",
+  "experiment": "Freeze prices and random seeds, then compare risk metrics and allocations against deterministic reference calculations.",
+  "production": "Keep portfolio computations in reviewed deterministic code, timestamp data and isolate each authenticated user's financial inputs.",
+  "fixture": {
+    "payload": {
+      "project": "stock-portfolio-analysis-agent",
+      "task": "Stream a portfolio-analysis workflow from a CrewAI backend.",
+      "synthetic": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!autogen-stock-analyst/
+!autogen-stock-analyst/enhance.py
+!autogen-stock-analyst/enhancement/
+!autogen-stock-analyst/enhancement/profile.json

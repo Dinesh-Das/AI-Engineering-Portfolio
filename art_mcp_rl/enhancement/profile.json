@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "art_mcp_rl",
+  "family": "sql",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Train an LLM to use MCP database tools with reinforcement learning.",
+  "mechanism": "ART rollouts call an MCP SQLite server and assign rewards to tool-assisted answers; training quality depends on the reward contract.",
+  "experiment": "Construct a shortcut that earns reward without solving the query, then revise the grader and compare held-out task success.",
+  "production": "Run rollouts against disposable read-only database snapshots; keep the training coordinator separate from inference and tool servers.",
+  "fixture": {
+    "row_name": "art_mcp_rl-synthetic-account"
+  }
+}

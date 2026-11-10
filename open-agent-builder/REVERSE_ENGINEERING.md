@@ -18,6 +18,7 @@ The following table is extracted from this project's actual retained files. Note
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 | [app/api/approval/[approvalId]/resume/route.ts](app/api/approval/%5BapprovalId%5D/resume/route.ts) | backend/configuration source; inspect directly | .ts |
 | [app/api/approval/[approvalId]/route.ts](app/api/approval/%5BapprovalId%5D/route.ts) | backend/configuration source; inspect directly | .ts |
 | [app/api/approval/route.ts](app/api/approval/route.ts) | backend/configuration source; inspect directly | .ts |
@@ -390,7 +391,9 @@ The following table is extracted from this project's actual retained files. Note
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -398,7 +401,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: No Python import roots; inspect the backend/service configuration.
+Detected import roots: `importlib`, `pathlib`, `sys`
 
 Retained dependency manifests: [package.json](package.json)
 
@@ -720,6 +723,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | [styles/fire.css](styles/fire.css) | Restored frontend source/asset after UI scope was authorized. |
 | [styles/main.css](styles/main.css) | Restored frontend source/asset after UI scope was authorized. |
 | [styles/workflow-execution.css](styles/workflow-execution.css) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/payload.json](enhancement/examples/payload.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

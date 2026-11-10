@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!deepseek-thinking-ui/
+!deepseek-thinking-ui/enhance.py
+!deepseek-thinking-ui/enhancement/
+!deepseek-thinking-ui/enhancement/profile.json

@@ -18,32 +18,15 @@ The following table is extracted from this project's actual retained files. Note
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [UPSTREAM_README.md](UPSTREAM_README.md) | guide, schema or fixture |  |
-| [assets/agent-with-jev.jpg](assets/agent-with-jev.jpg) | guide, schema or fixture |  |
-| [assets/agent-without-jev.jpg](assets/agent-without-jev.jpg) | guide, schema or fixture |  |
-| [assets/closed-vs-open-harness.jpg](assets/closed-vs-open-harness.jpg) | guide, schema or fixture |  |
-| [assets/code-mode.jpg](assets/code-mode.jpg) | guide, schema or fixture |  |
-| [assets/confidence-threshold.jpg](assets/confidence-threshold.jpg) | guide, schema or fixture |  |
-| [assets/connector-jev-mcp.jpg](assets/connector-jev-mcp.jpg) | guide, schema or fixture |  |
-| [assets/context-volume-levers.jpg](assets/context-volume-levers.jpg) | guide, schema or fixture |  |
-| [assets/credential-isolation.jpg](assets/credential-isolation.jpg) | guide, schema or fixture |  |
-| [assets/decision-cost-comparison.jpg](assets/decision-cost-comparison.jpg) | guide, schema or fixture |  |
-| [assets/deferred-tool-loading.jpg](assets/deferred-tool-loading.jpg) | guide, schema or fixture |  |
-| [assets/enterprise-bench-results.jpg](assets/enterprise-bench-results.jpg) | guide, schema or fixture |  |
-| [assets/jev-choice-question.jpg](assets/jev-choice-question.jpg) | guide, schema or fixture |  |
-| [assets/jev-workflow.jpg](assets/jev-workflow.jpg) | guide, schema or fixture |  |
-| [assets/llm-vs-jev.jpg](assets/llm-vs-jev.jpg) | guide, schema or fixture |  |
-| [assets/offloading.jpg](assets/offloading.jpg) | guide, schema or fixture |  |
-| [assets/requests-vs-issues.jpg](assets/requests-vs-issues.jpg) | guide, schema or fixture |  |
-| [assets/results-with-vs-without-jev.jpg](assets/results-with-vs-without-jev.jpg) | guide, schema or fixture |  |
-| [assets/settings-models.jpg](assets/settings-models.jpg) | guide, schema or fixture |  |
-| [assets/subagents.jpg](assets/subagents.jpg) | guide, schema or fixture |  |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -51,7 +34,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 No literal model identifiers were detected. Inspect configuration, provider defaults and the original setup guide; absence from this list is not absence of a model dependency.
 
-Detected import roots: No Python import roots; inspect the backend/service configuration.
+Detected import roots: `importlib`, `pathlib`, `sys`
 
 Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
 
@@ -90,6 +73,14 @@ Every project now has a source/version manifest, empty environment template, a d
 | [assets/trueforge-architecture.jpg](assets/trueforge-architecture.jpg) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/trueforge-banner.jpg](assets/trueforge-banner.jpg) | Restored frontend source/asset after UI scope was authorized. |
 | [assets/weekly-schedule.jpg](assets/weekly-schedule.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/artifacts.json](enhancement/examples/artifacts.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/segment.txt](enhancement/examples/segment.txt) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!llama-4-rag/
+!llama-4-rag/enhance.py
+!llama-4-rag/enhancement/
+!llama-4-rag/enhancement/profile.json

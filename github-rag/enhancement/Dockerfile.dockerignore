@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!github-rag/
+!github-rag/enhance.py
+!github-rag/enhancement/
+!github-rag/enhancement/profile.json

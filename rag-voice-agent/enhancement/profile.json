@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "project_id": "rag-voice-agent",
+  "family": "transcript",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Connect spoken interaction to document retrieval and speech synthesis.",
+  "mechanism": "LiveKit prewarming loads the RAG stack while session entrypoints connect ASR, model/tool use and Cartesia or OpenAI speech.",
+  "experiment": "Ask a follow-up during speech playback and score interruption handling plus whether retrieval context survives the turn.",
+  "production": "Prewarm models per worker, isolate session state and measure first-audio latency separately from total answer completion.",
+  "fixture": {
+    "reference": "Meeting 1042 approved a budget of 375 rupees for café research.",
+    "prediction": "Meeting 1042 approved a budget of 875 rupees for café research.",
+    "region_text": "375.00"
+  }
+}

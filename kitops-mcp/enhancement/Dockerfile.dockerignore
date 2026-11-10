@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!kitops-mcp/
+!kitops-mcp/enhance.py
+!kitops-mcp/enhancement/
+!kitops-mcp/enhancement/profile.json

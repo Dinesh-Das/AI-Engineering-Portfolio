@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "deploy-agentic-rag",
+  "family": "artifacts",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Serve an agentic RAG workflow through an API using LitServe.",
+  "mechanism": "AgenticRAGAPI separates setup, request decoding, prediction and response encoding; a client exercises the service.",
+  "experiment": "Send malformed requests and concurrent queries while indexing is unavailable; distinguish readiness from process liveness.",
+  "production": "Deploy stateless API replicas behind authentication and rate limits; keep model and vector services independently scalable.",
+  "fixture": {
+    "artifact_id": "deploy-agentic-rag-segment-1",
+    "content": "Synthetic integrity fixture for deploy-agentic-rag\n"
+  }
+}

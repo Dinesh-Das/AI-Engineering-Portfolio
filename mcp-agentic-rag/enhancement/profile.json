@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "mcp-agentic-rag",
+  "family": "tools",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Expose web-ingested retrieval through MCP using Bright Data and Qdrant.",
+  "mechanism": "Scraped content is embedded into a local collection and made searchable through server tools.",
+  "experiment": "Ingest the same URL twice, change the page and verify deduplication plus source-version behavior.",
+  "production": "Separate crawl and retrieval permissions, persist ingestion metadata and apply caller-specific filters to every vector search.",
+  "fixture": {
+    "tool_name": "mcp_agentic_rag_calculate"
+  }
+}

@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!pixeltable-mcp/
+!pixeltable-mcp/enhance.py
+!pixeltable-mcp/enhancement/
+!pixeltable-mcp/enhancement/profile.json

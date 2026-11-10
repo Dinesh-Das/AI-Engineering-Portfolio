@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!brand-monitoring/
+!brand-monitoring/enhance.py
+!brand-monitoring/enhancement/
+!brand-monitoring/enhancement/profile.json

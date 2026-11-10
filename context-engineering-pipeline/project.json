@@ -7,6 +7,11 @@
       "path": "context_engineering_notebook.ipynb",
       "kind": "notebook",
       "ui": false
+    },
+    {
+      "path": "enhance.py",
+      "kind": "python",
+      "ui": false
     }
   ],
   "files": [
@@ -590,6 +595,38 @@
         "ui": false,
         "syntax_error": null,
         "notebook_magics": false
+      },
+      {
+        "path": "enhance.py",
+        "imports": [
+          "importlib",
+          "pathlib",
+          "sys"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".is_file",
+          ".main",
+          ".resolve",
+          "Path",
+          "SystemExit",
+          "importlib.import_module",
+          "main",
+          "str",
+          "sys.path.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
       }
     ],
     "manifests": [
@@ -604,6 +641,7 @@
     ],
     "imports": [
       "getpass",
+      "importlib",
       "lancedb",
       "numpy",
       "os",
@@ -612,6 +650,7 @@
       "pixelagent",
       "pixeltable",
       "sentence_transformers",
+      "sys",
       "tiktoken"
     ],
     "models": [
@@ -621,6 +660,11 @@
       {
         "path": "context_engineering_notebook.ipynb",
         "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "enhance.py",
+        "kind": "python",
         "ui": false
       }
     ],
@@ -633,7 +677,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 29
+    "plain_python_units_checked": 30
   },
   "category": "memory",
   "purpose": "Assemble useful context from documents, memory and structured stores under a token budget.",
@@ -651,5 +695,61 @@
       "Deployment tradeoffs",
       "Release and rollback evidence"
     ]
+  },
+  "local_additions": [
+    {
+      "path": "enhance.py",
+      "local_sha256": "5b088fc2714f45c12f177b98097fadb9822012783f9b1b31332e539beb161809",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/profile.json",
+      "local_sha256": "a556d924e8efee903be0da9a49c15771a13931dca3f8941b405ec5300b21c8fc",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/environment.json",
+      "local_sha256": "d25a702282721990d82cb1eecefa1bc96b8b3e401d2a81a72d971998c8e3b5e9",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile",
+      "local_sha256": "e3c68e2c13659a07d44d96c3dff76f1701091d66f2f32ec64398106d7be41f78",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/Dockerfile.dockerignore",
+      "local_sha256": "a429f3bab6b7fc10cb09241c70a8780e0e46857c7449f4da20a396dda5eced57",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "ENHANCEMENTS.md",
+      "local_sha256": "7acbc3913afb786e3bcf891bf4156a99e2e709194d1abeedc1c1c2f0cffef2eb",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    },
+    {
+      "path": "enhancement/examples/value.json",
+      "local_sha256": "ea5fb4c0af18749cc224e961b6d2196b9aaf3b4354d45ff1b87925ce77b58108",
+      "changes": [
+        "Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs."
+      ]
+    }
+  ],
+  "enhancement": {
+    "entry": "enhance.py",
+    "profile": "enhancement/profile.json",
+    "family": "memory"
   }
 }

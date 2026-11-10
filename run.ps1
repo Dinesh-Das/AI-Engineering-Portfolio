@@ -28,6 +28,7 @@ try {
     switch ($taskAction) {
         'verify' { & $taskPython -m tools.verify_collection @taskRest; $taskExit = $LASTEXITCODE }
         'evaluate' { & $taskPython -m tools.evaluate @taskRest; $taskExit = $LASTEXITCODE }
+        'enhance' { & $taskPython -m tools.run_enhancements @taskRest; $taskExit = $LASTEXITCODE }
         'test' {
             & $taskPython -m unittest discover -s tests -v
             $taskExit = $LASTEXITCODE

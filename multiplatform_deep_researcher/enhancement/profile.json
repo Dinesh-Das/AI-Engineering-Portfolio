@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "project_id": "multiplatform_deep_researcher",
+  "family": "workflow",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Research a question through platform-specific source specialists.",
+  "mechanism": "DeepResearchFlow collects URLs, dispatches specialists by source type and synthesizes their structured output.",
+  "experiment": "Give every specialist the same duplicated story and measure whether synthesis mistakes repetition for independent confirmation.",
+  "production": "Set per-specialist deadlines and token budgets, preserve source identities and require enough distinct evidence before claiming consensus.",
+  "fixture": {
+    "payload": {
+      "project": "multiplatform_deep_researcher",
+      "task": "Research a question through platform-specific source specialists.",
+      "synthetic": true
+    }
+  }
+}

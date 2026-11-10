@@ -1,0 +1,7 @@
+**
+!workbench_core/
+!workbench_core/*.py
+!qwen3_vs_deepseek-r1/
+!qwen3_vs_deepseek-r1/enhance.py
+!qwen3_vs_deepseek-r1/enhancement/
+!qwen3_vs_deepseek-r1/enhancement/profile.json

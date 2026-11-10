@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "project_id": "local-chatgpt with Gemma 3",
+  "family": "streaming",
+  "variant": null,
+  "fixture_kind": "synthetic CPU reference inputs; not recorded model responses",
+  "purpose": "Study multimodal follow-ups with a compact local Gemma model.",
+  "mechanism": "The original Chainlit app passes image paths and blocks inside async handlers; the learning UI sends validated image data through a separate local transport.",
+  "experiment": "Use a chart with explicit units and compare a grounded follow-up with a fresh tab that never received the chart.",
+  "production": "Store image artifacts by owned IDs, batch compatible requests and measure cold-load and context-memory cost before sizing a GPU.",
+  "fixture": {
+    "answer": "Synthetic lifecycle test for local-chatgpt with Gemma 3"
+  }
+}

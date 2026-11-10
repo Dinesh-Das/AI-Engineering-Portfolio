@@ -20,6 +20,7 @@ The following table is extracted from this project's actual retained files. Note
 | --- | --- | --- |
 | [app.py](app.py) | GitHubRAGError, validate_github_url, get_repo_name, reset_chat, process_with_gitingets, create_query_engine | UI surface |
 | [app_local.py](app_local.py) | load_llm, reset_chat, process_with_gitingets | UI surface |
+| [enhance.py](enhance.py) | main | importlib, pathlib, sys |
 
 ## Function and class walkthrough
 
@@ -36,6 +37,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [app_local.py](app_local.py) | 27 | load_llm | FunctionDef |
 | [app_local.py](app_local.py) | 31 | reset_chat | FunctionDef |
 | [app_local.py](app_local.py) | 36 | process_with_gitingets | FunctionDef |
+| [enhance.py](enhance.py) | 8 | main | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -44,7 +46,7 @@ Detected model literals (not a guarantee that a provider still serves them):
 - `BAAI/bge-large-en-v1.5`
 - `llama3.2`
 
-Detected import roots: `dotenv`, `gc`, `gitingest`, `llama_index`, `logging`, `os`, `pandas`, `streamlit`, `tempfile`, `typing`, `uuid`
+Detected import roots: `dotenv`, `gc`, `gitingest`, `importlib`, `llama_index`, `logging`, `os`, `pandas`, `pathlib`, `streamlit`, `sys`, `tempfile`, `typing`, `uuid`
 
 Retained dependency manifests: [requirements.txt](requirements.txt)
 
@@ -62,6 +64,13 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [enhance.py](enhance.py) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/profile.json](enhancement/profile.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/environment.json](enhancement/environment.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile](enhancement/Dockerfile) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/Dockerfile.dockerignore](enhancement/Dockerfile.dockerignore) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [ENHANCEMENTS.md](ENHANCEMENTS.md) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
+| [enhancement/examples/corpus.json](enhancement/examples/corpus.json) | Add executable CPU learning contract, synthetic scenarios and deployment tradeoffs. |
 
 ## Code-level review leads
 
