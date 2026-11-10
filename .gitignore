@@ -1,0 +1,15 @@
+.source/
+.venv/
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.env
+**/.env.local
+**/.env.production
+**/*.pem
+**/outputs/
+**/.ipynb_checkpoints/
+**/dist/
+**/.next/
+*.log

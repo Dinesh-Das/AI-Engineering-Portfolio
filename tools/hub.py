@@ -1,0 +1,105 @@
+"""Credential-free catalog checks and explicit, bounded headless execution.
+
+Run from the collection root: python -m tools.hub --help
+"""
+
+import argparse
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+from .analysis import digest, source_path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def get_project(catalog: dict, project_id: str) -> dict:
+    for project in catalog['projects']:
+        if project['id'] == project_id:
+            return project
+    raise ValueError(f'Unknown project: {project_id}')
+
+
+def build_command(root: Path, project: dict, entry: str) -> list[str]:
+    registered = next((e for e in project['entries'] if e['path'] == entry), None)
+    if not registered or registered['ui']:
+        raise ValueError('Select a registered headless entry from the project metadata')
+    path = source_path(root, entry)
+    if not path.is_file():
+        raise ValueError('Entry does not exist')
+    if registered['kind'] == 'python' and path.suffix == '.py':
+        return [sys.executable, str(path)]
+    if registered['kind'] == 'notebook' and path.suffix == '.ipynb':
+        return [sys.executable, '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute',
+                '--ExecutePreprocessor.allow_errors=False', '--ExecutePreprocessor.timeout=120',
+                '--output-dir', str(root / 'outputs'), str(path)]
+    raise ValueError('Unsupported entry type')
+
+
+def check_project(root: Path, project: dict) -> list[str]:
+    errors = []
+    for name in ('README.md', 'REVERSE_ENGINEERING.md', 'LEARNINGS.md', 'project.json', 'UPSTREAM_LICENSE'):
+        if not (root / name).is_file():
+            errors.append(f'Missing {name}')
+    for record in project['files']:
+        path = source_path(root, record['path'])
+        if not path.is_file():
+            errors.append(f'Missing source: {record["path"]}')
+        elif digest(path.read_bytes()) != record['local_sha256']:
+            errors.append(f'Source changed since import: {record["path"]}')
+        if path.suffix == '.ipynb' and path.is_file():
+            notebook = json.loads(path.read_text(encoding='utf-8-sig'))
+            for cell in notebook.get('cells', []):
+                if cell.get('cell_type') == 'code' and (cell.get('outputs') or cell.get('execution_count') is not None):
+                    errors.append(f'Saved notebook execution data: {record["path"]}')
+    return errors
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('action', choices=('list', 'show', 'check', 'run'))
+    parser.add_argument('--project')
+    parser.add_argument('--entry', help='Exact inventoried relative entry path')
+    parser.add_argument('--execute', action='store_true', help='Actually execute source; may make paid API calls')
+    parser.add_argument('--timeout', type=int, default=120, help='Whole-process deadline in seconds (1–3600)')
+    args = parser.parse_args(argv)
+    try:
+        catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
+        projects = [get_project(catalog, args.project)] if args.project else catalog['projects']
+        if args.action in {'show', 'run'} and not args.project:
+            raise ValueError('--project is required')
+        if args.action == 'list':
+            for project in projects:
+                print(f'{project["id"]:52} {project["category"]}')
+        elif args.action == 'show':
+            print(json.dumps(projects[0], indent=2, ensure_ascii=True))
+        elif args.action == 'check':
+            failures = 0
+            for project in projects:
+                errors = check_project(source_path(ROOT, project['id']), project)
+                failures += len(errors)
+                for error in errors:
+                    print(f'{project["id"]}: {error}')
+            print(f'Checked {len(projects)} projects; {failures} integrity/documentation failures.')
+            return int(bool(failures))
+        else:
+            if not args.entry:
+                raise ValueError('--entry is required; inspect project.json for headless candidates')
+            if not 1 <= args.timeout <= 3600:
+                raise ValueError('--timeout must be between 1 and 3600 seconds')
+            root = source_path(ROOT, projects[0]['id'])
+            command = build_command(root, projects[0], args.entry)
+            print(json.dumps({'cwd': str(root), 'command': command, 'execute': args.execute}, indent=2))
+            if args.execute:
+                # No shell expansion; subprocess.run kills and waits for the direct child on timeout.
+                # Descendant jobs/GPU processes require a worker/container boundary in production.
+                return subprocess.run(command, cwd=root, timeout=args.timeout, check=False).returncode
+        return 0
+    except (ValueError, OSError, json.JSONDecodeError, subprocess.TimeoutExpired) as error:
+        print(f'Error: {error}', file=sys.stderr)
+        return 2
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())
