@@ -24,11 +24,13 @@ if (-not $taskPython) {
 Push-Location -LiteralPath $taskRoot
 try {
     $taskAction = if ($HubArguments.Count) { $HubArguments[0] } else { '' }
-    $taskRest = if ($HubArguments.Count -gt 1) { $HubArguments[1..($HubArguments.Count - 1)] } else { @() }
+    $taskRest = @()
+    if ($HubArguments.Count -gt 1) { $taskRest = @($HubArguments[1..($HubArguments.Count - 1)]) }
     switch ($taskAction) {
         'verify' { & $taskPython -m tools.verify_collection @taskRest; $taskExit = $LASTEXITCODE }
         'evaluate' { & $taskPython -m tools.evaluate @taskRest; $taskExit = $LASTEXITCODE }
         'enhance' { & $taskPython -m tools.run_enhancements @taskRest; $taskExit = $LASTEXITCODE }
+        'handbook' { & $taskPython -m tools.build_interview @taskRest; $taskExit = $LASTEXITCODE }
         'test' {
             & $taskPython -m unittest discover -s tests -v
             $taskExit = $LASTEXITCODE

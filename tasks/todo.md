@@ -50,3 +50,11 @@ Live provider/GPU execution must be reported separately from the source-analysis
 - [x] Verify interfaces in an isolated real browser and commit on main.
   - Acceptance: responsive layouts, keyboard use, error/cancel/reset and accessible controls pass; fixture versus live evidence is recorded.
   - Verify: browser report, full collection checks, tests and scoped Git review.
+
+## Interactive interview handbook
+
+- [x] Reconcile all projects and curate beginner-to-advanced technical chapters with primary references.
+- [x] Build safe content/command generation and the offline reader.
+- [x] Add mock questions, calculators and persistent revision tools.
+- [x] Verify coverage, offline behavior, accessibility and responsive browser output.
+- [x] Record evidence, preserve user work and commit on main.

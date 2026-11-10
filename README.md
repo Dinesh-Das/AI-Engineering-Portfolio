@@ -1,5 +1,7 @@
 # AI Projects: reverse-engineering and learning collection
 
+Open **[the interactive interview field manual](index.html)** for the complete offline study desk: all 113 projects, embedded deep guides, run commands, 46 technical chapters, 477 answered questions, learning paths, metric/capacity examples and local revision notes. Double-click `index.html`; no server or install is needed to read it. Rebuild after documentation changes with `.\run.ps1 handbook`; verify freshness with `.\run.ps1 handbook --check`.
+
 **109 source-backed AI project folders, including the UI category**, based on [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) revision `042aeb5067384981eeba6a07fa882f436bb1660d`, captured on 10 November 2026. The user's four completed OCR folders are also preserved locally and linked separately.
 
 Start with the **[project index](PROJECT_INDEX.md)**. Every project has its own README, reverse-engineering walkthrough, learning/production guide, evaluation protocol, environment template, analysis report and source manifest.

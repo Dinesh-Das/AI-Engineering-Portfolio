@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-11",
+  "source_sha256": "3deb138956978787a223b1c2dbe1b4d27595edd1ffe80accb77205978d688e4e",
+  "checks": [
+    {
+      "name": "direct-file opening and complete embedded inventory",
+      "passed": true
+    },
+    {
+      "name": "initial desktop screenshot and accessibility",
+      "passed": true
+    },
+    {
+      "name": "all project readers and run command panels",
+      "passed": true
+    },
+    {
+      "name": "chapter reading and question levels",
+      "passed": true
+    },
+    {
+      "name": "search, empty results and category filtering",
+      "passed": true
+    },
+    {
+      "name": "embedded deep guides, command copy and project state",
+      "passed": true
+    },
+    {
+      "name": "mock interview, reveal, self-assessment and timer",
+      "passed": true
+    },
+    {
+      "name": "metric, ranking, capacity and cost arithmetic",
+      "passed": true
+    },
+    {
+      "name": "JSON export/import, hostile note text and invalid backup recovery",
+      "passed": true
+    },
+    {
+      "name": "responsive layouts, mobile menu and keyboard navigation",
+      "passed": true
+    },
+    {
+      "name": "blocked storage remains usable and exportable",
+      "passed": true
+    },
+    {
+      "name": "zero console errors and no external requests",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "docs\\interview-screenshots\\home-desktop.png",
+    "docs\\interview-screenshots\\labs-mobile.png"
+  ],
+  "coverage": {
+    "projects": 113,
+    "topics": 46,
+    "questions": 477
+  },
+  "startup": {
+    "dom_content_loaded_ms": 237.10000000149012,
+    "duration_ms": 238.70000000298023
+  },
+  "search_response_ms": 142,
+  "console_errors": [],
+  "external_requests": [],
+  "passed": true
+}

@@ -1,0 +1,15 @@
+# Maintaining the offline interview handbook
+
+`index.html` at the collection root is the deliverable. It contains the content, styles, scripts and data needed to read/search/practice offline. Optional original source-file and primary-reference links are supplementary. The project applications themselves still need their separate environments and model/services.
+
+Build with `.\run.ps1 handbook`; check freshness with `.\run.ps1 handbook --check`. The stdlib builder is `tools/build_interview.py`. It reconciles project manifests and the four local OCR folders, embeds the curated substantive guides, derives annotated commands from the actual entries/manifests and escapes the data into a single HTML file. Personal journals and environment values are excluded. Native guides without a dedicated reverse-engineering file use their existing implementation contract.
+
+Author technical chapters in `handbook.md`. Each stable `# Title {#id}` has Group/Sources metadata, explanation/example/failure/tradeoff sections and answered Foundation/Applied/Advanced questions. References live in `sources.json`. The chapter parser separates question and answer boundaries explicitly. Keep mathematics and examples independently checkable, and distinguish source facts, design proposals and verified outcomes.
+
+`template.html` and `site.css` define the shell/design. The builder bundles `state.js`, `views.js` and `app.js` inside one closure and hashes that exact script for the CSP. No CDN, network fetch, remote asset or runtime Markdown engine is needed. Markdown rendering is escape-first and supports only a documented small subset; raw HTML is text. Imported revision backups have identity/type/size limits, and note strings are escaped before rendering.
+
+Browser storage contains only explicitly entered notes, bookmarks, reviewed marks and question confidence. It is scoped by the browser, with file-origin differences disclosed. Storage failure keeps the open-session data usable and exportable; invalid imports leave current state intact. This is a personal study tool, not shared authentication, a model judge or a credential store.
+
+Test with `python -m unittest discover -s tests -p test_interview_handbook.py -v` and `node tools/browser-tests/interview.mjs`. Browser checks use the existing pinned Playwright/axe packages and isolated Chrome; they exercise direct file opening, loopback HTTP, all 113 project readers/command panels, representative guides/chapters, search/filter/history, notes/backup safety, mock practice/timer, arithmetic, storage failure and responsive/accessibility behavior. They execute no displayed AI project commands. The report is fingerprinted to the generated HTML; `.\run.ps1 verify` rejects stale content or stale browser evidence.
+
+The existing personal OCR repositories, journals and unrelated user report/verification edits remain independent and unchanged. Do not regenerate the whole project's learning documents just to build this handbook. Rebuild the HTML after intentional source-guide changes, then rerun the relevant checks and browser evidence before committing on main.

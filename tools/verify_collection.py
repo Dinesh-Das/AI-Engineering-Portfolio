@@ -13,6 +13,7 @@ from .analysis import analyze_project, code_cells, python_cell
 from .hub import ROOT, check_project
 from .learning_contract import validate_learning
 from .verify_enhancements import verify as verify_enhancements
+from .verify_interview import verify as verify_interview
 
 
 def verify(root=ROOT):
@@ -39,7 +40,8 @@ def verify(root=ROOT):
                                    'docs/LEARNING_CONTRACT.md', 'docs/UI_DESIGN.md', 'docs/UI_VALIDATION.md',
                                    'docs/ENHANCEMENT_REPORT.md', 'docs/OCR_ENHANCEMENT_VALIDATION.md',
                                    'workbench_core/README.md', 'docs/decisions/001-executable-learning-extensions.md',
-                                   'docs/ENHANCEMENT_REVIEW.md')]
+                                   'docs/ENHANCEMENT_REVIEW.md', 'docs/INTERVIEW_HANDBOOK_SPEC.md',
+                                   'docs/INTERVIEW_HANDBOOK_VALIDATION.md', 'tools/interview/README.md')]
     python_files = notebook_cells = magic_cells = 0
     ui_bundles = 0
     for project in catalog['projects']:
@@ -119,6 +121,8 @@ def verify(root=ROOT):
         errors.append('Missing UI browser evidence')
     enhancement = verify_enhancements(root, catalog)
     errors.extend(enhancement['failures'])
+    handbook = verify_interview(root)
+    errors.extend(handbook['failures'])
     return {'projects': len(ids), 'inventory_entries': len(catalog['inventory']),
             'dispositions': dict(Counter(r['status'] for r in catalog['inventory'])),
             'python_files_compiled': python_files, 'notebook_cells_compiled': notebook_cells,
@@ -127,6 +131,7 @@ def verify(root=ROOT):
             'browser_fixture_projects_verified': browser_verified,
             'enhanced_projects_checked': enhancement['projects'],
             'enhancement_scenarios_verified': enhancement['scenario_checks'],
+            'interview_handbook': handbook,
             'failures': errors, 'live_model_tests': False, 'gpu_training': False, 'deployed': False}
 
 

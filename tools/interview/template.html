@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An offline AI engineering field manual: every local project, run commands, technical interview chapters, worked examples and personal revision tools.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-@@SCRIPT_HASH@@'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231b4034'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='32' font-family='Georgia' fill='%23f5e6c9'%3EAE%3C/text%3E%3C/svg%3E">
+  <title>AI Engineer — The Field Manual</title>
+  <style>@@CSS@@</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to reading content</a>
+  <aside id="sidebar" class="sidebar" aria-label="Field manual navigation">
+    <a class="brand" href="#view=home"><span class="brand-mark" aria-hidden="true">AE</span><span>AI Engineer<small>THE FIELD MANUAL</small></span></a>
+    <div class="side-edition">A working collection<br><span>Learn it. Build it. Explain it.</span></div>
+    <nav aria-label="Main sections">
+      <a href="#view=home" data-nav="home"><span class="nav-number">01</span> Start here</a>
+      <a href="#view=projects" data-nav="projects"><span class="nav-number">02</span> Project atlas <span id="project-count" class="nav-count"></span></a>
+      <a href="#view=topics" data-nav="topics"><span class="nav-number">03</span> Interview handbook</a>
+      <a href="#view=practice" data-nav="practice"><span class="nav-number">04</span> Practice room</a>
+      <a href="#view=labs" data-nav="labs"><span class="nav-number">05</span> Work the numbers</a>
+      <a href="#view=revision" data-nav="revision"><span class="nav-number">06</span> My revision</a>
+    </nav>
+    <div class="side-progress"><div class="side-label">YOUR PROJECT REVISION</div><strong id="side-progress-label">0 reviewed</strong><progress id="side-progress" value="0" max="113" aria-label="Projects marked reviewed"></progress><p>Self-assessed progress.<br>Your notes stay in this browser.</p></div>
+    <a class="side-about" href="#view=about">About this edition <span aria-hidden="true">↗</span></a>
+    <div class="side-foot">NO ACCOUNT · NO NETWORK<br>November 2026 edition</div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
+      <span class="top-context">THE STUDY DESK <span aria-hidden="true">/</span> <span id="current-section">START HERE</span></span>
+      <div class="search-wrap"><label class="sr-only" for="global-search">Search all projects, concepts and questions</label><input id="global-search" type="search" autocomplete="off" placeholder="Search projects, concepts, questions…"><kbd aria-hidden="true">/</kbd></div>
+      <button class="print-button" type="button" data-action="print">Print view <span aria-hidden="true">↗</span></button>
+    </header>
+    <main id="main" class="content" tabindex="-1"><noscript><h1>AI engineering field manual</h1><p>Enable JavaScript to navigate this offline handbook. All content and scripts are embedded in this file; no network connection is required.</p><p>The original project guides remain in the folders beside this file.</p></noscript></main>
+    <footer class="page-footer"><span>Built around the work. Grounded in the source.</span><span>Study → experiment → evidence → explanation</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" class="sr-only" type="file" accept="application/json,.json" tabindex="-1" aria-label="Import revision JSON backup">
+  <script id="guide-data" type="application/json">@@PAYLOAD@@</script>
+  <script>@@SCRIPT@@</script>
+</body>
+</html>
