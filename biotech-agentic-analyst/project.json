@@ -1,0 +1,704 @@
+{
+  "id": "biotech-agentic-analyst",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/biotech-agentic-analyst",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "9fde06b55199228c5a023b412baf7fc2ce4090572595c765ddb3c6ee6c7936cb",
+      "local_sha256": "9fde06b55199228c5a023b412baf7fc2ce4090572595c765ddb3c6ee6c7936cb",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "e3a39a546125814df9bad63d0a9ed86fbd27e79d2e83fc1e3f8446f8454a0176",
+      "local_sha256": "e3a39a546125814df9bad63d0a9ed86fbd27e79d2e83fc1e3f8446f8454a0176",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/__init__.py",
+      "path": "flow/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/crews/__init__.py",
+      "path": "flow/crews/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/crews/figure_analyst/__init__.py",
+      "path": "flow/crews/figure_analyst/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/crews/figure_analyst/config/agents.yaml",
+      "path": "flow/crews/figure_analyst/config/agents.yaml",
+      "upstream_sha256": "9943074d2e3f52ee31876b2d5022a70eecfe0463bfc88019df57009ff88251ae",
+      "local_sha256": "9943074d2e3f52ee31876b2d5022a70eecfe0463bfc88019df57009ff88251ae",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/crews/figure_analyst/config/tasks.yaml",
+      "path": "flow/crews/figure_analyst/config/tasks.yaml",
+      "upstream_sha256": "0346e7bd08cab58287f049b28a2e6912c827f98cd939b493f9c39135ff8dd4cd",
+      "local_sha256": "0346e7bd08cab58287f049b28a2e6912c827f98cd939b493f9c39135ff8dd4cd",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/crews/figure_analyst/crew.py",
+      "path": "flow/crews/figure_analyst/crew.py",
+      "upstream_sha256": "243b4a64872012ce83b3a0802bafc294ecd7e3a50012ee7c167001f4acbd1e62",
+      "local_sha256": "243b4a64872012ce83b3a0802bafc294ecd7e3a50012ee7c167001f4acbd1e62",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/science_flow.py",
+      "path": "flow/science_flow.py",
+      "upstream_sha256": "9b41c2edab39c0bb78eada6b5424c4bca8b62428f5066f199314c9554e1b2925",
+      "local_sha256": "9b41c2edab39c0bb78eada6b5424c4bca8b62428f5066f199314c9554e1b2925",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow/state.py",
+      "path": "flow/state.py",
+      "upstream_sha256": "cc88ab44d1f986bb848cab2ccfb222e3fb15e4b817be89683b85570d9a0fd1a3",
+      "local_sha256": "cc88ab44d1f986bb848cab2ccfb222e3fb15e4b817be89683b85570d9a0fd1a3",
+      "changes": []
+    },
+    {
+      "upstream_path": "mistral_ocr_pipeline/__init__.py",
+      "path": "mistral_ocr_pipeline/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "mistral_ocr_pipeline/pipeline.py",
+      "path": "mistral_ocr_pipeline/pipeline.py",
+      "upstream_sha256": "959b4d2c9f6f85f2cc654bfbeac51fab6be8a4d327c27b68742c6aaafe244343",
+      "local_sha256": "959b4d2c9f6f85f2cc654bfbeac51fab6be8a4d327c27b68742c6aaafe244343",
+      "changes": []
+    },
+    {
+      "upstream_path": "models.py",
+      "path": "models.py",
+      "upstream_sha256": "19ce9cdcf691a5230594f24104840d4ffc8a637beb0150e24351938efaab6254",
+      "local_sha256": "19ce9cdcf691a5230594f24104840d4ffc8a637beb0150e24351938efaab6254",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "18f5965571ba34bada1b4535530ef2252fbc1e4aa94e38521912c42808056bbb",
+      "local_sha256": "18f5965571ba34bada1b4535530ef2252fbc1e4aa94e38521912c42808056bbb",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "9a830d538fbbf3723c0537b345b83c9e982ffe1b2f5344e47a3155ca4e995118",
+      "local_sha256": "9a830d538fbbf3723c0537b345b83c9e982ffe1b2f5344e47a3155ca4e995118",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "utils.py",
+      "path": "utils.py",
+      "upstream_sha256": "933e6c5f5551c0c4bb540b4d002cb2ba30da6715c41f00bdb21365d6930e0aa2",
+      "local_sha256": "933e6c5f5551c0c4bb540b4d002cb2ba30da6715c41f00bdb21365d6930e0aa2",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "8a24bc4d9e7de3cb7ccdd0e4ef984081235b55ab6c497038cdfeb9001a2883e5",
+      "local_sha256": "8a24bc4d9e7de3cb7ccdd0e4ef984081235b55ab6c497038cdfeb9001a2883e5",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/Journal-of-Biology-and-Nature.pdf",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "__future__",
+          "dotenv",
+          "fitz",
+          "flow",
+          "html",
+          "mistral_ocr_pipeline",
+          "mistralai",
+          "models",
+          "os",
+          "pathlib",
+          "streamlit",
+          "sys",
+          "tempfile",
+          "utils"
+        ],
+        "environment": [
+          "MISTRAL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "_reset_analysis_metrics",
+            "line": 37,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "init_mistral_client",
+            "line": 63,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_render_pdf_pages",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_render_pdf_preview",
+            "line": 92,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_pill",
+            "line": 117,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_axis_pill",
+            "line": 125,
+            "kind": "FunctionDef",
+            "doc": "Labeled axis pill with a distinct prefix badge (x / y / n)."
+          },
+          {
+            "name": "_section_label",
+            "line": 136,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_render_thumbnail_strip",
+            "line": 143,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_render_figure_intelligence_tab",
+            "line": 154,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".get_pixmap",
+          ".join",
+          ".tobytes",
+          "Mistral",
+          "Path",
+          "ScienceFlow",
+          "_axis_pill",
+          "_pill",
+          "_render_figure_intelligence_tab",
+          "_render_pdf_pages",
+          "_render_pdf_preview",
+          "_reset_analysis_metrics",
+          "_section_label",
+          "axis_html_parts.append",
+          "bytes",
+          "ct.strip",
+          "decode_thumbnail",
+          "doc.close",
+          "enumerate",
+          "extracted_lookup.get",
+          "fi.chart_type.split",
+          "fitz.Matrix",
+          "fitz.open",
+          "flow.kickoff",
+          "getattr",
+          "html.escape",
+          "init_mistral_client",
+          "len",
+          "load_dotenv",
+          "os.getenv",
+          "os.path.exists",
+          "os.unlink",
+          "parse_pipeline_results",
+          "pipeline_results.get",
+          "range",
+          "round",
+          "run_science_pipeline",
+          "seen.add",
+          "set",
+          "st.button",
+          "st.cache_data",
+          "st.caption",
+          "st.code",
+          "st.columns",
+          "st.container",
+          "st.error",
+          "st.expander",
+          "st.file_uploader",
+          "st.header",
+          "st.image",
+          "st.info",
+          "st.markdown",
+          "st.rerun",
+          "st.session_state.pipeline_steps.append",
+          "st.set_page_config",
+          "st.status",
+          "st.stop",
+          "st.success",
+          "st.title",
+          "st.warning",
+          "st.write",
+          "status_analyst.update",
+          "status_pipeline.update",
+          "str",
+          "sys.path.insert",
+          "tempfile.NamedTemporaryFile",
+          "tmp_file.write",
+          "uploaded_file.getbuffer"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "flow/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "flow/crews/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "flow/crews/figure_analyst/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "flow/crews/figure_analyst/crew.py",
+        "imports": [
+          "__future__",
+          "crewai",
+          "models",
+          "os",
+          "typing"
+        ],
+        "environment": [
+          "FIGURE_ANALYST_MODEL"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "FigureAnalystCrew",
+            "line": 19,
+            "kind": "ClassDef",
+            "doc": "Crew for extracting structured intelligence from scientific figures."
+          },
+          {
+            "name": "figure_analyst",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "figure_analysis",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "LLM",
+          "Task",
+          "os.getenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "flow/science_flow.py",
+        "imports": [
+          "__future__",
+          "crewai",
+          "flow",
+          "hashlib",
+          "time",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "_require_pydantic",
+            "line": 17,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ScienceFlow",
+            "line": 25,
+            "kind": "ClassDef",
+            "doc": "Orchestrates figure analysis."
+          },
+          {
+            "name": "validate_extraction",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "route_on_quality",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "analyze_figures",
+            "line": 44,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_poor_quality",
+            "line": 120,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".crew",
+          ".hexdigest",
+          ".join",
+          ".kickoff",
+          "FigureAnalystCrew",
+          "ValueError",
+          "_require_pydantic",
+          "all_intelligences.extend",
+          "b64.startswith",
+          "f.model_dump",
+          "f.thumbnail_b64.encode",
+          "failed_ids.extend",
+          "fig_dicts.append",
+          "figures.append",
+          "hashlib.sha256",
+          "len",
+          "listen",
+          "print",
+          "range",
+          "router",
+          "start",
+          "time.sleep",
+          "type"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "flow/state.py",
+        "imports": [
+          "__future__",
+          "models",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ScienceFlowState",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": "State for the science flow."
+          }
+        ],
+        "calls": [
+          "Field"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "mistral_ocr_pipeline/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "mistral_ocr_pipeline/pipeline.py",
+        "imports": [
+          "__future__",
+          "json",
+          "models",
+          "pathlib",
+          "re",
+          "sys"
+        ],
+        "environment": [],
+        "models": [
+          "mistral-ocr-4-0"
+        ],
+        "symbols": [
+          {
+            "name": "run_science_pipeline",
+            "line": 83,
+            "kind": "FunctionDef",
+            "doc": "Upload a PDF and run Mistral OCR 4 with Document AI figure extraction."
+          },
+          {
+            "name": "_page_images_sorted",
+            "line": 111,
+            "kind": "FunctionDef",
+            "doc": "Embedded images on a page, base64, ordered top-to-bottom by position."
+          },
+          {
+            "name": "_resolve_page_index",
+            "line": 123,
+            "kind": "FunctionDef",
+            "doc": "Find OCR page that contains figure by word-overlap between caption and markdown."
+          },
+          {
+            "name": "parse_pipeline_results",
+            "line": 144,
+            "kind": "FunctionDef",
+            "doc": "Parse OCR response into figures, page count, and average page confidence."
+          },
+          {
+            "name": "_take_image",
+            "line": 184,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ExtractedFigure",
+          "Path",
+          "RuntimeError",
+          "_WORD_RE.findall",
+          "_page_images_sorted",
+          "_resolve_page_index",
+          "_take_image",
+          "client.files.delete",
+          "client.files.upload",
+          "client.ocr.process",
+          "f.read",
+          "fig.get",
+          "figures.append",
+          "images.sort",
+          "isinstance",
+          "json.loads",
+          "len",
+          "max",
+          "next",
+          "open",
+          "page_cursor.get",
+          "page_images.get",
+          "pages_data.get",
+          "re.compile",
+          "str",
+          "sum",
+          "sys.path.insert",
+          "t.lower"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "models.py",
+        "imports": [
+          "__future__",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ExtractedFigure",
+            "line": 7,
+            "kind": "ClassDef",
+            "doc": "Extracted figure from the document."
+          },
+          {
+            "name": "FigureIntelligence",
+            "line": 22,
+            "kind": "ClassDef",
+            "doc": "Figure intelligence."
+          },
+          {
+            "name": "FigureIntelligenceList",
+            "line": 55,
+            "kind": "ClassDef",
+            "doc": "List of figure intelligences."
+          }
+        ],
+        "calls": [
+          "Field"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "utils.py",
+        "imports": [
+          "PIL",
+          "__future__",
+          "base64",
+          "io",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "decode_thumbnail",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Decode a base64 string (raw or a data: URI) to an image."
+          }
+        ],
+        "calls": [
+          "Image.open",
+          "b64_str.split",
+          "b64_str.startswith",
+          "base64.b64decode",
+          "img.load",
+          "io.BytesIO"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "flow/crews/figure_analyst/config/agents.yaml",
+      "flow/crews/figure_analyst/config/tasks.yaml"
+    ],
+    "environment": [
+      "FIGURE_ANALYST_MODEL",
+      "MISTRAL_API_KEY"
+    ],
+    "imports": [
+      "PIL",
+      "__future__",
+      "base64",
+      "crewai",
+      "dotenv",
+      "fitz",
+      "flow",
+      "hashlib",
+      "html",
+      "io",
+      "json",
+      "mistral_ocr_pipeline",
+      "mistralai",
+      "models",
+      "os",
+      "pathlib",
+      "pydantic",
+      "re",
+      "streamlit",
+      "sys",
+      "tempfile",
+      "time",
+      "typing",
+      "utils"
+    ],
+    "models": [
+      "mistral-ocr-4-0"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 11
+  },
+  "category": "structured",
+  "purpose": "Extract scientific figures and produce structured research intelligence."
+}

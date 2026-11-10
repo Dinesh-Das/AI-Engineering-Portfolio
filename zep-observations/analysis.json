@@ -1,0 +1,112 @@
+{
+  "units": [
+    {
+      "path": "check.py",
+      "imports": [
+        "os",
+        "sys",
+        "zep_cloud"
+      ],
+      "environment": [
+        "ZEP_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Zep",
+        "client.graph.edge.get_by_user_id",
+        "client.graph.node.get_by_user_id",
+        "client.graph.observation.get_by_user_id",
+        "main",
+        "os.environ.get",
+        "print",
+        "sys.exit"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "seed.py",
+      "imports": [
+        "os",
+        "sys",
+        "time",
+        "zep_cloud"
+      ],
+      "environment": [
+        "ZEP_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "add_conversation",
+          "line": 40,
+          "kind": "FunctionDef",
+          "doc": "Create a thread and add messages to it."
+        },
+        {
+          "name": "main",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".lower",
+        "Message",
+        "Zep",
+        "add_conversation",
+        "client.thread.add_messages",
+        "client.thread.create",
+        "client.user.add",
+        "len",
+        "main",
+        "os.environ.get",
+        "print",
+        "str",
+        "sys.exit",
+        "time.sleep"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "ZEP_API_KEY"
+  ],
+  "imports": [
+    "os",
+    "sys",
+    "time",
+    "zep_cloud"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "check.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "seed.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

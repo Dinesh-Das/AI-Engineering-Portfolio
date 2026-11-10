@@ -1,0 +1,204 @@
+{
+  "id": "acp-code",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/acp-code",
+  "entries": [
+    {
+      "path": "acp_client.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "crew_acp_server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "smolagents_acp_server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "acp_client.py",
+      "path": "acp_client.py",
+      "upstream_sha256": "f0e65fb24de18a802362c3ce5de06fb9292cca922317397bfa8b4b5b6d95cd42",
+      "local_sha256": "f0e65fb24de18a802362c3ce5de06fb9292cca922317397bfa8b4b5b6d95cd42",
+      "changes": []
+    },
+    {
+      "upstream_path": "crew_acp_server.py",
+      "path": "crew_acp_server.py",
+      "upstream_sha256": "503ce0262f87f2231481b50c09e25917ed3ada1aef64e3a38bcbba41c2741852",
+      "local_sha256": "503ce0262f87f2231481b50c09e25917ed3ada1aef64e3a38bcbba41c2741852",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "2295b3d1f6fe51d9a34c2fc885413d2f74e8bce048cc3d4bdffba152e77ae27d",
+      "local_sha256": "2295b3d1f6fe51d9a34c2fc885413d2f74e8bce048cc3d4bdffba152e77ae27d",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "smolagents_acp_server.py",
+      "path": "smolagents_acp_server.py",
+      "upstream_sha256": "ee6ece8c631a0e0cdbd58d568c0d0ea160d1daa7c4b2d5357b90f9561095e8ca",
+      "local_sha256": "ee6ece8c631a0e0cdbd58d568c0d0ea160d1daa7c4b2d5357b90f9561095e8ca",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "acp_client.py",
+        "imports": [
+          "acp_sdk",
+          "asyncio"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "run_workflow",
+            "line": 4,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Client",
+          "asyncio.run",
+          "drafter.run_sync",
+          "print",
+          "run_workflow",
+          "verifier.run_sync"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "crew_acp_server.py",
+        "imports": [
+          "acp_sdk",
+          "collections",
+          "crewai"
+        ],
+        "environment": [],
+        "models": [
+          "ollama_chat/qwen2.5:14b"
+        ],
+        "symbols": [
+          {
+            "name": "research_drafter",
+            "line": 15,
+            "kind": "AsyncFunctionDef",
+            "doc": "Agent that creates a general research summary on a given topic."
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "LLM",
+          "Message",
+          "MessagePart",
+          "Server",
+          "Task",
+          "crew.kickoff_async",
+          "server.agent",
+          "server.run",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "smolagents_acp_server.py",
+        "imports": [
+          "acp_sdk",
+          "collections",
+          "smolagents",
+          "warnings"
+        ],
+        "environment": [],
+        "models": [
+          "ollama_chat/qwen2.5:14b"
+        ],
+        "symbols": [
+          {
+            "name": "research_verifier",
+            "line": 19,
+            "kind": "AsyncFunctionDef",
+            "doc": "Agent that fact-checks and enhances a research summary using web search."
+          }
+        ],
+        "calls": [
+          "CodeAgent",
+          "DuckDuckGoSearchTool",
+          "LiteLLMModel",
+          "Message",
+          "MessagePart",
+          "Server",
+          "agent.run",
+          "server.agent",
+          "server.run",
+          "str",
+          "warnings.filterwarnings"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "acp_sdk",
+      "asyncio",
+      "collections",
+      "crewai",
+      "smolagents",
+      "warnings"
+    ],
+    "models": [
+      "ollama_chat/qwen2.5:14b"
+    ],
+    "entries": [
+      {
+        "path": "acp_client.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "crew_acp_server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "smolagents_acp_server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 3
+  },
+  "category": "agents",
+  "purpose": "Coordinate a research drafter and verifier implemented with different agent frameworks."
+}

@@ -1,0 +1,183 @@
+{
+  "units": [
+    {
+      "path": "colbert.py",
+      "imports": [
+        "torch"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "compute_relevance_scores",
+          "line": 3,
+          "kind": "FunctionDef",
+          "doc": "Compute relevance scores for top-k documents given a query."
+        },
+        {
+          "name": "test_compute_relevance_scores",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "all",
+        "compute_relevance_scores",
+        "document_embeddings.transpose",
+        "len",
+        "max_scores_per_query_term.sum",
+        "print",
+        "query_embeddings.unsqueeze",
+        "scores.max",
+        "sorted_indices.tolist",
+        "test_compute_relevance_scores",
+        "torch.Size",
+        "torch.matmul",
+        "torch.randn",
+        "torch.tensor",
+        "torch.unique",
+        "total_scores.argsort"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "maxsim.py",
+      "imports": [
+        "collections",
+        "math"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "_vectors",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "score_document",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": "Sum each query token's best real document-token dot product."
+        },
+        {
+          "name": "rank_documents",
+          "line": 47,
+          "kind": "FunctionDef",
+          "doc": "Return (original_index, score) pairs for top k, with stable index tie breaks."
+        }
+      ],
+      "calls": [
+        "ValueError",
+        "_vectors",
+        "any",
+        "enumerate",
+        "float",
+        "isinstance",
+        "len",
+        "math.isfinite",
+        "max",
+        "print",
+        "rank_documents",
+        "result.append",
+        "score_document",
+        "sorted",
+        "sum",
+        "tuple",
+        "type",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "tests/test_maxsim.py",
+      "imports": [
+        "importlib",
+        "maxsim",
+        "pathlib",
+        "sys",
+        "unittest"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "MaxSimTests",
+          "line": 10,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "test_token_maxima_are_summed",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_padding_cannot_outscore_negative_real_tokens",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_top_k_is_respected_with_stable_ties",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_bad_shapes_empty_masks_and_nonfinite_values_fail",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".resolve",
+        "Path",
+        "float",
+        "rank_documents",
+        "score_document",
+        "self.assertEqual",
+        "self.assertRaises",
+        "self.subTest",
+        "str",
+        "sys.path.insert",
+        "unittest.main"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "collections",
+    "importlib",
+    "math",
+    "maxsim",
+    "pathlib",
+    "sys",
+    "torch",
+    "unittest"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "maxsim.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

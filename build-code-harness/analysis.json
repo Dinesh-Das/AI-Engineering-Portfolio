@@ -1,0 +1,192 @@
+{
+  "units": [
+    {
+      "path": "code_harness.py",
+      "imports": [
+        "crewai",
+        "crewai_tools",
+        "dotenv",
+        "os"
+      ],
+      "environment": [
+        "E2B_API_KEY",
+        "MODEL"
+      ],
+      "models": [
+        "openrouter/openai/gpt-4o-mini"
+      ],
+      "symbols": [
+        {
+          "name": "require_approval",
+          "line": 163,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run_tests",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": "Run the pytest suite at the given path inside the sandbox and return the result."
+        }
+      ],
+      "calls": [
+        ".lower",
+        "Agent",
+        "Crew",
+        "DirectoryReadTool",
+        "E2BExecTool",
+        "E2BPythonTool",
+        "FileReadTool",
+        "FileWriterTool",
+        "LLM",
+        "Task",
+        "crew.kickoff",
+        "exec_tool.run",
+        "input",
+        "load_dotenv",
+        "os.getenv",
+        "print",
+        "response.strip",
+        "tool"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "workspace/account.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "InsufficientFunds",
+          "line": 4,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "BankAccount",
+          "line": 8,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "deposit",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "withdraw",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "transfer",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "ValueError",
+        "self.deposit",
+        "self.history.append",
+        "self.withdraw"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "workspace/tests/test_account.py",
+      "imports": [
+        "account",
+        "pytest"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "test_deposit_increases_balance",
+          "line": 5,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_withdraw_decreases_balance",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_overdraft_is_blocked",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_transfer_moves_money_between_accounts",
+          "line": 24,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_transfer_respects_overdraft",
+          "line": 32,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "BankAccount",
+        "acct.deposit",
+        "acct.withdraw",
+        "alice.transfer",
+        "pytest.raises"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "E2B_API_KEY",
+    "MODEL",
+    "OPENAI_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "imports": [
+    "account",
+    "crewai",
+    "crewai_tools",
+    "dotenv",
+    "os",
+    "pytest"
+  ],
+  "models": [
+    "openrouter/openai/gpt-4o-mini"
+  ],
+  "entries": [
+    {
+      "path": "code_harness.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

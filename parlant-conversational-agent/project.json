@@ -1,0 +1,193 @@
+{
+  "id": "parlant-conversational-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/parlant-conversational-agent",
+  "entries": [
+    {
+      "path": "loan_approval.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "9bf1d9db0a010a3c80515f49bac11de09a2db5e0da83a66375960261a45abe12",
+      "local_sha256": "9bf1d9db0a010a3c80515f49bac11de09a2db5e0da83a66375960261a45abe12",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "d0a5d49f4a5368d1a13afb816550d3e8d8bfb100055864d4476eb6033357e8ad",
+      "local_sha256": "d0a5d49f4a5368d1a13afb816550d3e8d8bfb100055864d4476eb6033357e8ad",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "loan_approval.py",
+      "path": "loan_approval.py",
+      "upstream_sha256": "4060814176e0302bcbee039f6a73162a241af8cd7fa552dadcd07730fbfbd9a5",
+      "local_sha256": "4060814176e0302bcbee039f6a73162a241af8cd7fa552dadcd07730fbfbd9a5",
+      "changes": []
+    },
+    {
+      "upstream_path": "parlant-chat.png",
+      "path": "parlant-chat.png",
+      "upstream_sha256": "b855e4b7c074497b7aa9f97d1342b4dcef7e3a2d0886efdae350da4fb43bfbe1",
+      "local_sha256": "b855e4b7c074497b7aa9f97d1342b4dcef7e3a2d0886efdae350da4fb43bfbe1",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "b19ce1eef8fd85cc4a1085038eeee3b90b9189283113408d5b7a3d5ec42b6f44",
+      "local_sha256": "b19ce1eef8fd85cc4a1085038eeee3b90b9189283113408d5b7a3d5ec42b6f44",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "bc5af5d4a1bc7fac79083753f223649b7306918dc8ba760ca6d05c98a6c9c466",
+      "local_sha256": "bc5af5d4a1bc7fac79083753f223649b7306918dc8ba760ca6d05c98a6c9c466",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "cb953e0f6e9c9d0b1beed83221a95cac459ebc2931f1c68de5c74ff972739732",
+      "local_sha256": "cb953e0f6e9c9d0b1beed83221a95cac459ebc2931f1c68de5c74ff972739732",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "loan_approval.py",
+        "imports": [
+          "asyncio",
+          "dotenv",
+          "parlant"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "check_eligibility",
+            "line": 9,
+            "kind": "AsyncFunctionDef",
+            "doc": "Checks if the customer meets the basic qualification criteria for a loan."
+          },
+          {
+            "name": "process_documents",
+            "line": 22,
+            "kind": "AsyncFunctionDef",
+            "doc": "Simulates a service that processes and validates uploaded documents."
+          },
+          {
+            "name": "get_current_rates",
+            "line": 39,
+            "kind": "AsyncFunctionDef",
+            "doc": "Fetches the current loan interest rates based on the customer's location."
+          },
+          {
+            "name": "get_loan_types",
+            "line": 47,
+            "kind": "AsyncFunctionDef",
+            "doc": "Provides a list of available loan types."
+          },
+          {
+            "name": "add_domain_glossary",
+            "line": 54,
+            "kind": "AsyncFunctionDef",
+            "doc": "Adds domain-specific terminology to align the agent's understanding with"
+          },
+          {
+            "name": "create_loan_journey",
+            "line": 81,
+            "kind": "AsyncFunctionDef",
+            "doc": "Defines the structured, multi-step journey for loan approval."
+          },
+          {
+            "name": "main",
+            "line": 147,
+            "kind": "AsyncFunctionDef",
+            "doc": "The main function to initialize and configure the Parlant agent."
+          }
+        ],
+        "calls": [
+          "add_domain_glossary",
+          "agent.create_canned_response",
+          "agent.create_guideline",
+          "agent.create_journey",
+          "agent.create_term",
+          "asyncio.run",
+          "create_loan_journey",
+          "journey.create_guideline",
+          "journey.initial_state.transition_to",
+          "load_dotenv",
+          "main",
+          "p.Server",
+          "p.ToolResult",
+          "server.create_agent",
+          "t0.target.transition_to",
+          "t1.target.transition_to",
+          "t2.target.transition_to",
+          "t3_credit_ineligible.target.transition_to",
+          "t3_request_docs.target.transition_to",
+          "t4_process_docs.target.transition_to",
+          "t5_docs_ineligible.target.transition_to",
+          "t5_final_eligible.target.transition_to"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "dotenv",
+      "parlant"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "loan_approval.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 1
+  },
+  "category": "agents",
+  "purpose": "Build a tool-backed loan conversation with explicit journeys and guidelines."
+}

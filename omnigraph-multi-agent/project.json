@@ -1,0 +1,80 @@
+{
+  "id": "omnigraph-multi-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/omnigraph-multi-agent",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "c0889c7189121d2a6d59594fc9e5e79bf1b60795e64930dfb5056dadfdb48939",
+      "local_sha256": "c0889c7189121d2a6d59594fc9e5e79bf1b60795e64930dfb5056dadfdb48939",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent_a.jsonl",
+      "path": "agent_a.jsonl",
+      "upstream_sha256": "28445486d13cf2a71a98b5285b725fcdecc333dc66db50110b42d9aa4f21d54a",
+      "local_sha256": "28445486d13cf2a71a98b5285b725fcdecc333dc66db50110b42d9aa4f21d54a",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent_b.jsonl",
+      "path": "agent_b.jsonl",
+      "upstream_sha256": "afb864046026aeecf364d4c2e296aadbc93e2aec1d0c26fef9470e649ded7a1f",
+      "local_sha256": "afb864046026aeecf364d4c2e296aadbc93e2aec1d0c26fef9470e649ded7a1f",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent_b_fixed.jsonl",
+      "path": "agent_b_fixed.jsonl",
+      "upstream_sha256": "c85ef6d2d0300fcbca743284f64f1377cf8ac7613e762bdb8222a675299f2997",
+      "local_sha256": "c85ef6d2d0300fcbca743284f64f1377cf8ac7613e762bdb8222a675299f2997",
+      "changes": []
+    },
+    {
+      "upstream_path": "queries.gq",
+      "path": "queries.gq",
+      "upstream_sha256": "84ca8c27166d3985b2457827d75619b030074516a8224811eb89cb86dd721a53",
+      "local_sha256": "84ca8c27166d3985b2457827d75619b030074516a8224811eb89cb86dd721a53",
+      "changes": []
+    },
+    {
+      "upstream_path": "schema.pg",
+      "path": "schema.pg",
+      "upstream_sha256": "58fbdaa36c1eaff56a3aa55defd100b7a2bb0665d488ab8861717cf63e43e72a",
+      "local_sha256": "58fbdaa36c1eaff56a3aa55defd100b7a2bb0665d488ab8861717cf63e43e72a",
+      "changes": []
+    },
+    {
+      "upstream_path": "seed.jsonl",
+      "path": "seed.jsonl",
+      "upstream_sha256": "60e44ed154e92a2c3920db27da1fcb4054c2b0f7b37318639d43e0a03a585946",
+      "local_sha256": "60e44ed154e92a2c3920db27da1fcb4054c2b0f7b37318639d43e0a03a585946",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "memory",
+  "purpose": "Inspect multi-agent graph consistency through provided schemas and event data."
+}

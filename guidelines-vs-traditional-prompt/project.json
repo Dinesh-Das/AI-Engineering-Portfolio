@@ -1,0 +1,457 @@
+{
+  "id": "guidelines-vs-traditional-prompt",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/guidelines-vs-traditional-prompt",
+  "entries": [
+    {
+      "path": "demo_comparison.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "parlant_agent_server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "83c38c373df6f171eeae858ea66d7de51b898007f5d027a2271d61d4347e41ce",
+      "local_sha256": "83c38c373df6f171eeae858ea66d7de51b898007f5d027a2271d61d4347e41ce",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "demo_comparison.py",
+      "path": "demo_comparison.py",
+      "upstream_sha256": "2f3057b7eef0bf79dccdcdf33d6a5b7bb30ad20079a0943fa4c0a43a55014be0",
+      "local_sha256": "2f3057b7eef0bf79dccdcdf33d6a5b7bb30ad20079a0943fa4c0a43a55014be0",
+      "changes": []
+    },
+    {
+      "upstream_path": "parlant_agent_server.py",
+      "path": "parlant_agent_server.py",
+      "upstream_sha256": "f4025362d7320ace016eea10017cf0ccc863f2acf88430e7f60fdb3a53642339",
+      "local_sha256": "f4025362d7320ace016eea10017cf0ccc863f2acf88430e7f60fdb3a53642339",
+      "changes": []
+    },
+    {
+      "upstream_path": "parlant_client_utils.py",
+      "path": "parlant_client_utils.py",
+      "upstream_sha256": "ffa1edec1baa3bcef9d05592a5653bdb7beda55e190c4029c82caffe8b05b159",
+      "local_sha256": "ffa1edec1baa3bcef9d05592a5653bdb7beda55e190c4029c82caffe8b05b159",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "0e8ce29678e0322e25bf0c990205e6ffff1b70f96a9865845fd80b3aecf2de42",
+      "local_sha256": "0e8ce29678e0322e25bf0c990205e6ffff1b70f96a9865845fd80b3aecf2de42",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "0b2594c9da0dfe70a4337f9ecfc485899cea96367bfdc365b36fb53541845c21",
+      "local_sha256": "0b2594c9da0dfe70a4337f9ecfc485899cea96367bfdc365b36fb53541845c21",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "rich_table_formatter.py",
+      "path": "rich_table_formatter.py",
+      "upstream_sha256": "064f781d3f1fe6748a51b1d04110a28e51b3a0730ba8d98c5faccac38b415cb3",
+      "local_sha256": "064f781d3f1fe6748a51b1d04110a28e51b3a0730ba8d98c5faccac38b415cb3",
+      "changes": []
+    },
+    {
+      "upstream_path": "traditional_llm_prompt.py",
+      "path": "traditional_llm_prompt.py",
+      "upstream_sha256": "4b578af41d8485439fc779261de67ba549bc8aaff41d3a2ea435bf6efc2ca460",
+      "local_sha256": "4b578af41d8485439fc779261de67ba549bc8aaff41d3a2ea435bf6efc2ca460",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "7fc6f5e4b640108ad32f0f7c4201a8f67febbc5bd774c3fb7919c88994158e94",
+      "local_sha256": "7fc6f5e4b640108ad32f0f7c4201a8f67febbc5bd774c3fb7919c88994158e94",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "demo_comparison.py",
+        "imports": [
+          "asyncio",
+          "os",
+          "parlant_client_utils",
+          "rich_table_formatter",
+          "traditional_llm_prompt"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": "Compare Traditional LLM vs Parlant agent responses."
+          }
+        ],
+        "calls": [
+          ".strip",
+          "RuntimeError",
+          "asyncio.run",
+          "await_parlant_ai_reply",
+          "create_parlant_client",
+          "create_parlant_session",
+          "enumerate",
+          "f.read",
+          "get_parlant_reasoning",
+          "len",
+          "main",
+          "open",
+          "os.path.exists",
+          "os.path.join",
+          "print",
+          "print_comparison_rich",
+          "rows.append",
+          "send_parlant_user_message",
+          "traditional_call"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "parlant_agent_server.py",
+        "imports": [
+          "asyncio",
+          "dotenv",
+          "os",
+          "parlant"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_policy_types",
+            "line": 11,
+            "kind": "AsyncFunctionDef",
+            "doc": "Retrieves comprehensive information about available life insurance policy types."
+          },
+          {
+            "name": "calculate_coverage_recommendation",
+            "line": 31,
+            "kind": "AsyncFunctionDef",
+            "doc": "Calculates personalized life insurance coverage recommendation."
+          },
+          {
+            "name": "check_health_impact",
+            "line": 59,
+            "kind": "AsyncFunctionDef",
+            "doc": "Analyzes how specific health conditions affect life insurance rates and underwriting."
+          },
+          {
+            "name": "get_premium_factors",
+            "line": 92,
+            "kind": "AsyncFunctionDef",
+            "doc": "Returns factors that affect life insurance premium pricing."
+          },
+          {
+            "name": "explain_policy_riders",
+            "line": 107,
+            "kind": "AsyncFunctionDef",
+            "doc": "Explains available policy riders and add-ons."
+          },
+          {
+            "name": "get_application_steps",
+            "line": 121,
+            "kind": "AsyncFunctionDef",
+            "doc": "Provides the step-by-step application process."
+          },
+          {
+            "name": "get_agent_contact",
+            "line": 137,
+            "kind": "AsyncFunctionDef",
+            "doc": "Provides comprehensive contact information for licensed insurance agents."
+          },
+          {
+            "name": "main",
+            "line": 152,
+            "kind": "AsyncFunctionDef",
+            "doc": "Initialize the Parlant life insurance agent with tools and guidelines."
+          }
+        ],
+        "calls": [
+          "agent.create_canned_response",
+          "agent.create_guideline",
+          "asyncio.run",
+          "condition.lower",
+          "conditions_impact.get",
+          "f.write",
+          "getattr",
+          "load_dotenv",
+          "main",
+          "max",
+          "open",
+          "os.makedirs",
+          "os.path.join",
+          "p.Server",
+          "p.ToolResult",
+          "rider_name.lower",
+          "riders.get",
+          "server.create_agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "parlant_client_utils.py",
+        "imports": [
+          "asyncio",
+          "os",
+          "parlant",
+          "typing"
+        ],
+        "environment": [
+          "PARLANT_BASE_URL"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_client",
+            "line": 9,
+            "kind": "AsyncFunctionDef",
+            "doc": "Create a Parlant client connection."
+          },
+          {
+            "name": "create_session",
+            "line": 15,
+            "kind": "AsyncFunctionDef",
+            "doc": "Create a new Parlant session with retry logic."
+          },
+          {
+            "name": "send_user_message",
+            "line": 30,
+            "kind": "AsyncFunctionDef",
+            "doc": "Send a user message to the Parlant session."
+          },
+          {
+            "name": "await_ai_reply",
+            "line": 41,
+            "kind": "AsyncFunctionDef",
+            "doc": "Wait for and collect all AI agent messages from a Parlant session."
+          },
+          {
+            "name": "get_session_reasoning",
+            "line": 78,
+            "kind": "AsyncFunctionDef",
+            "doc": "Summarize which guidelines and tools the agent used for this session."
+          }
+        ],
+        "calls": [
+          ".get",
+          ".join",
+          ".lower",
+          "AsyncParlantClient",
+          "RuntimeError",
+          "all_messages.extend",
+          "any",
+          "asyncio.sleep",
+          "client.sessions.create",
+          "client.sessions.create_event",
+          "client.sessions.list_events",
+          "client.sessions.retrieve",
+          "data.get",
+          "ev.data.get",
+          "event.data.get",
+          "g.get",
+          "getattr",
+          "guideline_details.append",
+          "guidelines.append",
+          "hasattr",
+          "isinstance",
+          "match.get",
+          "max",
+          "meta.get",
+          "min",
+          "new_messages.append",
+          "os.getenv",
+          "parts.append",
+          "range",
+          "str",
+          "tool_call.get",
+          "tools_used.append"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "rich_table_formatter.py",
+        "imports": [
+          "rich"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "print_comparison_rich",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": "Render a beautiful comparison table using Rich library."
+          },
+          {
+            "name": "format_query_text",
+            "line": 44,
+            "kind": "FunctionDef",
+            "doc": "Format query text - keep it concise and readable."
+          },
+          {
+            "name": "format_traditional_text",
+            "line": 63,
+            "kind": "FunctionDef",
+            "doc": "Format traditional LLM response - handle verbose content."
+          },
+          {
+            "name": "format_parlant_text",
+            "line": 96,
+            "kind": "FunctionDef",
+            "doc": "Format Parlant response - handle structured content."
+          },
+          {
+            "name": "format_reasoning_text",
+            "line": 129,
+            "kind": "FunctionDef",
+            "doc": "Format reasoning text - handle structured guidelines and tools."
+          }
+        ],
+        "calls": [
+          ".join",
+          ".replace",
+          ".strip",
+          "Console",
+          "Table",
+          "console.print",
+          "format_parlant_text",
+          "format_query_text",
+          "format_reasoning_text",
+          "format_traditional_text",
+          "formatted.append",
+          "formatted_lines.append",
+          "len",
+          "line.split",
+          "line.strip",
+          "lines.append",
+          "part.replace",
+          "part.startswith",
+          "reasoning.split",
+          "table.add_column",
+          "table.add_row",
+          "text.replace",
+          "text.split",
+          "text.strip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "traditional_llm_prompt.py",
+        "imports": [
+          "dotenv",
+          "openai",
+          "os"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4"
+        ],
+        "symbols": [
+          {
+            "name": "call_traditional_llm",
+            "line": 227,
+            "kind": "AsyncFunctionDef",
+            "doc": "Call traditional LLM with the given query and prompt."
+          }
+        ],
+        "calls": [
+          "OpenAI",
+          "load_dotenv",
+          "openai_client.chat.completions.create",
+          "os.getenv",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "OPENAI_API_KEY",
+      "PARLANT_BASE_URL"
+    ],
+    "imports": [
+      "asyncio",
+      "dotenv",
+      "openai",
+      "os",
+      "parlant",
+      "parlant_client_utils",
+      "rich",
+      "rich_table_formatter",
+      "traditional_llm_prompt",
+      "typing"
+    ],
+    "models": [
+      "gpt-4"
+    ],
+    "entries": [
+      {
+        "path": "demo_comparison.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "parlant_agent_server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 5
+  },
+  "category": "agents",
+  "purpose": "Compare structured conversational guidelines with a traditional instruction prompt."
+}

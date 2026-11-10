@@ -1,0 +1,232 @@
+{
+  "units": [
+    {
+      "path": "order_db.py",
+      "imports": [
+        "dataclasses",
+        "datetime",
+        "pathlib",
+        "sqlite3"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "TrackingEvent",
+          "line": 26,
+          "kind": "ClassDef",
+          "doc": "A tracking event for an order."
+        },
+        {
+          "name": "Order",
+          "line": 35,
+          "kind": "ClassDef",
+          "doc": "An order."
+        },
+        {
+          "name": "_init_db",
+          "line": 51,
+          "kind": "FunctionDef",
+          "doc": "Initialize the database."
+        },
+        {
+          "name": "OrderManagementAPI",
+          "line": 94,
+          "kind": "ClassDef",
+          "doc": "Stand-in for a call to the internal order-management API."
+        },
+        {
+          "name": "latest_event",
+          "line": 46,
+          "kind": "FunctionDef",
+          "doc": "The latest tracking event for the order, or None if there are none yet."
+        },
+        {
+          "name": "__init__",
+          "line": 97,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_order",
+          "line": 100,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".fetchall",
+        ".fetchone",
+        "Order",
+        "Path",
+        "TrackingEvent",
+        "_init_db",
+        "conn.close",
+        "conn.commit",
+        "conn.execute",
+        "conn.executemany",
+        "date.fromisoformat",
+        "field",
+        "sqlite3.connect"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "ag_ui_crewai",
+        "fastapi",
+        "support_flow"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "FastAPI",
+        "SupportFlow",
+        "add_crewai_flow_fastapi_endpoint"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "support_flow.py",
+      "imports": [
+        "crewai",
+        "crewai_tools",
+        "dotenv",
+        "logging",
+        "order_db",
+        "os",
+        "re",
+        "uuid"
+      ],
+      "environment": [
+        "OPENROUTER_API_KEY"
+      ],
+      "models": [
+        "openrouter/openai/gpt-4o",
+        "openrouter/openai/gpt-4o-mini"
+      ],
+      "symbols": [
+        {
+          "name": "extract_order_id",
+          "line": 50,
+          "kind": "FunctionDef",
+          "doc": "Pull a known order id out of free text, e.g. \"Where is order 4471?\" -> \"4471\"."
+        },
+        {
+          "name": "SupportState",
+          "line": 63,
+          "kind": "ClassDef",
+          "doc": "Adds the two fields later turns resolve pronouns against."
+        },
+        {
+          "name": "SupportFlow",
+          "line": 106,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "handle_order_lookup",
+          "line": 113,
+          "kind": "FunctionDef",
+          "doc": "Status, tracking, or delivery date for an order."
+        },
+        {
+          "name": "handle_return_policy",
+          "line": 159,
+          "kind": "FunctionDef",
+          "doc": "Returns, refunds, exchanges, and damaged item claims."
+        },
+        {
+          "name": "handle_research",
+          "line": 209,
+          "kind": "FunctionDef",
+          "doc": "Live carrier delays, weather disruptions, current external conditions."
+        }
+      ],
+      "calls": [
+        ".kickoff",
+        "Agent",
+        "ConversationConfig",
+        "Crew",
+        "ExaSearchTool",
+        "LLM",
+        "ORDER_SERVICE.get_order",
+        "OrderManagementAPI",
+        "RouterConfig",
+        "SupportFlow",
+        "Task",
+        "TextFileKnowledgeSource",
+        "any",
+        "extract_order_id",
+        "flow.finalize_session_traces",
+        "flow.handle_turn",
+        "len",
+        "listen",
+        "load_dotenv",
+        "logger.exception",
+        "logging.getLogger",
+        "message.lower",
+        "persist",
+        "print",
+        "re.findall",
+        "self.append_agent_result",
+        "self.append_assistant_message",
+        "str",
+        "uuid4"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "EXA_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "imports": [
+    "ag_ui_crewai",
+    "crewai",
+    "crewai_tools",
+    "dataclasses",
+    "datetime",
+    "dotenv",
+    "fastapi",
+    "logging",
+    "order_db",
+    "os",
+    "pathlib",
+    "re",
+    "sqlite3",
+    "support_flow",
+    "uuid"
+  ],
+  "models": [
+    "openrouter/openai/gpt-4o",
+    "openrouter/openai/gpt-4o-mini"
+  ],
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "support_flow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

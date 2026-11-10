@@ -1,0 +1,212 @@
+{
+  "units": [
+    {
+      "path": "ml-project/train.py",
+      "imports": [
+        "joblib",
+        "os",
+        "pandas",
+        "sklearn"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "LogisticRegression",
+        "exit",
+        "joblib.dump",
+        "model.fit",
+        "os.makedirs",
+        "os.path.dirname",
+        "os.path.exists",
+        "pd.read_csv",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "mcp",
+        "tools",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_kitfile",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": "Create a new Kitfile at the specified directory with the given ModelKit name."
+        },
+        {
+          "name": "inspect_modelkit",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": "Inspect a ModelKit and return its detailed information from the remote registry."
+        },
+        {
+          "name": "push_and_pack_modelkit",
+          "line": 56,
+          "kind": "FunctionDef",
+          "doc": "Pack the project situated at the working directory and push it as a ModelKit to the remote registry."
+        },
+        {
+          "name": "pull_and_unpack_modelkit",
+          "line": 78,
+          "kind": "FunctionDef",
+          "doc": "Pull a ModelKit from the remote registry and unpack it to the specified directory."
+        },
+        {
+          "name": "remove_modelkit",
+          "line": 104,
+          "kind": "FunctionDef",
+          "doc": "Remove a ModelKit from the remote registry."
+        }
+      ],
+      "calls": [
+        "FastMCP",
+        "mcp.run",
+        "mcp.tool",
+        "tools.create",
+        "tools.inspect",
+        "tools.pull_and_unpack",
+        "tools.push_and_pack",
+        "tools.remove"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "tools.py",
+      "imports": [
+        "json",
+        "kitops",
+        "os",
+        "typing",
+        "util"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": "Create a new Kitfile at the specified path with referred modelkit name."
+        },
+        {
+          "name": "inspect",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": "Inspect a ModelKit and return its detailed information."
+        },
+        {
+          "name": "push_and_pack",
+          "line": 73,
+          "kind": "FunctionDef",
+          "doc": "Pack and push a ModelKit to the repository."
+        },
+        {
+          "name": "pull_and_unpack",
+          "line": 105,
+          "kind": "FunctionDef",
+          "doc": "Pull and unpack a ModelKit to the working directory."
+        },
+        {
+          "name": "remove",
+          "line": 138,
+          "kind": "FunctionDef",
+          "doc": "Remove a ModelKit from the remote registry only."
+        }
+      ],
+      "calls": [
+        ".join",
+        "FileNotFoundError",
+        "Kitfile",
+        "ModelKitManager",
+        "RuntimeError",
+        "ValueError",
+        "_process_command_flags",
+        "_run",
+        "command.extend",
+        "init",
+        "json.loads",
+        "kitfile.save",
+        "manager.pack_and_push_modelkit",
+        "manager.pull_and_unpack_modelkit",
+        "manager.remove_modelkit",
+        "os.makedirs",
+        "os.path.abspath",
+        "os.path.exists",
+        "os.path.isdir",
+        "os.path.join",
+        "os.remove",
+        "os.rename",
+        "result.stdout.strip",
+        "str",
+        "validate_modelkit_tag"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "util.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "validate_modelkit_tag",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": "Validate that ModelKit tag has correct format"
+        }
+      ],
+      "calls": [
+        "ValueError",
+        "isinstance",
+        "modelkit_tag.count",
+        "modelkit_tag.rsplit",
+        "path.split"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "ml-project/requirements.txt",
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "joblib",
+    "json",
+    "kitops",
+    "mcp",
+    "os",
+    "pandas",
+    "sklearn",
+    "tools",
+    "typing",
+    "util"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

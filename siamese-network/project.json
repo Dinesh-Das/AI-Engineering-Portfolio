@@ -1,0 +1,325 @@
+{
+  "id": "siamese-network",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/siamese-network",
+  "entries": [
+    {
+      "path": "Siamese-Network.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "8c297a96297e4a7eddd56b12abb37652f10e903d833a0d8a00c3bd8be522a163",
+      "local_sha256": "8c297a96297e4a7eddd56b12abb37652f10e903d833a0d8a00c3bd8be522a163",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "Siamese-Network.ipynb",
+      "path": "Siamese-Network.ipynb",
+      "upstream_sha256": "6d28ce768be6d92cefa2ee909caa0fd6fe3a2df56dfc5de22bf4e83ca25b556c",
+      "local_sha256": "ee070d0f1af9820e760be614bd4af0edab209e265e6a8cbb0db079cc96b9207a",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "Siamese-Network.ipynb#cell-3",
+        "imports": [
+          "matplotlib",
+          "numpy",
+          "random",
+          "torch",
+          "torchvision"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "SiameseDataset",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 2,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__getitem__",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__len__",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "len",
+          "random.choice",
+          "random.randint",
+          "self.transform",
+          "torch.tensor"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "MNIST",
+          "SiameseDataset",
+          "transforms.Compose",
+          "transforms.ToTensor"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "SiameseNetwork",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 2,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "forward_once",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "forward",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".__init__",
+          "nn.Conv2d",
+          "nn.Linear",
+          "nn.MaxPool2d",
+          "nn.ReLU",
+          "nn.Sequential",
+          "output.size",
+          "output.view",
+          "self.cnn",
+          "self.fc",
+          "self.forward_once",
+          "super"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ContrastiveLoss",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 3,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "forward",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".__init__",
+          "F.pairwise_distance",
+          "super",
+          "torch.clamp",
+          "torch.mean"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".cuda",
+          "ContrastiveLoss",
+          "DataLoader",
+          "SiameseNetwork",
+          "net.parameters",
+          "optim.Adam"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "criterion",
+          "imgA.cuda",
+          "imgB.cuda",
+          "label.cuda",
+          "loss_contrastive.backward",
+          "loss_contrastive.item",
+          "net",
+          "optimizer.step",
+          "optimizer.zero_grad",
+          "print",
+          "range"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Siamese-Network.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "show_image_pair",
+            "line": 3,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "visualize_siamese_pairs",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".imshow",
+          ".item",
+          ".numpy",
+          ".set_title",
+          "DataLoader",
+          "F.pairwise_distance",
+          "enumerate",
+          "imgA.cuda",
+          "imgA.squeeze",
+          "imgB.cuda",
+          "imgB.squeeze",
+          "net",
+          "plt.savefig",
+          "plt.show",
+          "plt.subplots",
+          "print",
+          "round",
+          "show_image_pair",
+          "similarity_score.item",
+          "torch.exp",
+          "visualize_siamese_pairs"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "Siamese-Network.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "matplotlib",
+      "numpy",
+      "random",
+      "torch",
+      "torchvision"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "Siamese-Network.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 8
+  },
+  "category": "training",
+  "purpose": "Learn digit similarity through paired examples and contrastive loss."
+}

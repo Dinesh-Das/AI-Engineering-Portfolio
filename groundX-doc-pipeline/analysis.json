@@ -1,0 +1,584 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "base64",
+        "groundx_utils",
+        "os",
+        "requests",
+        "streamlit",
+        "tempfile",
+        "typing"
+      ],
+      "environment": [
+        "SAMPLE_FILE_NAME"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "reset_analysis",
+          "line": 54,
+          "kind": "FunctionDef",
+          "doc": "Reset all analysis-related session state variables"
+        },
+        {
+          "name": "prepare_chat_context",
+          "line": 63,
+          "kind": "FunctionDef",
+          "doc": "Prepare context from X-Ray data for the LLM"
+        },
+        {
+          "name": "generate_chat_response",
+          "line": 94,
+          "kind": "FunctionDef",
+          "doc": "Generate AI response using Ollama with structured prompt engineering"
+        },
+        {
+          "name": "MockUploadedFile",
+          "line": 242,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 243,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "getbuffer",
+          "line": 247,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".join",
+        ".split",
+        "MockUploadedFile",
+        "base64.b64encode",
+        "check_file_exists",
+        "context_parts.append",
+        "create_client",
+        "ensure_bucket",
+        "enumerate",
+        "extracted_texts.append",
+        "f.read",
+        "generate_chat_response",
+        "get_xray_for_existing_document",
+        "hasattr",
+        "img_file.read",
+        "len",
+        "narratives.extend",
+        "open",
+        "os.getenv",
+        "prepare_chat_context",
+        "process_document",
+        "requests.post",
+        "response.json",
+        "result.get",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.divider",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.info",
+        "st.json",
+        "st.markdown",
+        "st.rerun",
+        "st.session_state.chat_history.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.status",
+        "st.stop",
+        "st.subheader",
+        "st.success",
+        "st.tabs",
+        "st.text_area",
+        "st.write",
+        "str",
+        "suggested_texts.append",
+        "tempfile.NamedTemporaryFile",
+        "tmp_file.close",
+        "tmp_file.write",
+        "uploaded.getbuffer",
+        "xray.get",
+        "xray_data.get"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "evaluation_geval.py",
+      "imports": [
+        "base64",
+        "dotenv",
+        "fitz",
+        "groundx",
+        "openai",
+        "opik",
+        "os",
+        "requests",
+        "time",
+        "typing"
+      ],
+      "environment": [
+        "COMET_API_KEY",
+        "GROUNDX_API_KEY",
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "evaluate_invoice_parsing",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": "Evaluate invoice parsing results using Comet Opik's GEval metrics."
+        },
+        {
+          "name": "EvaluatorGEval",
+          "line": 100,
+          "kind": "ClassDef",
+          "doc": "Evaluator that scores answers using GEval (LLM judge with rubric)."
+        },
+        {
+          "name": "create_evaluator_geval",
+          "line": 288,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 103,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_ensure_bucket",
+          "line": 110,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_invoice",
+          "line": 117,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_poll_until_complete",
+          "line": 129,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_fetch_xray",
+          "line": 141,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_context",
+          "line": 152,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_gpt_ctx",
+          "line": 162,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_gpt_direct",
+          "line": 175,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run",
+          "line": 229,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "gx_task",
+          "line": 247,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "gpt_task",
+          "line": 252,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".get",
+        ".join",
+        ".load_page",
+        ".tobytes",
+        "Document",
+        "EvaluatorGEval",
+        "GEval",
+        "GroundX",
+        "OpenAI",
+        "RuntimeError",
+        "TimeoutError",
+        "ValueError",
+        "accuracy_metric.score",
+        "base64.b64encode",
+        "ch.get",
+        "dataset.clear",
+        "dataset.insert",
+        "doc.close",
+        "enumerate",
+        "evaluate_invoice_parsing",
+        "fitz.open",
+        "getattr",
+        "gpt_results.append",
+        "gpt_task",
+        "gx_results.append",
+        "gx_task",
+        "int",
+        "inv.get",
+        "load_dotenv",
+        "mime.startswith",
+        "mime_type.split",
+        "next",
+        "opik.Opik",
+        "os.environ.get",
+        "page.get",
+        "page.get_pixmap",
+        "page.get_text",
+        "parts.append",
+        "print",
+        "r.json",
+        "r.raise_for_status",
+        "requests.get",
+        "samples.append",
+        "self._context",
+        "self._ensure_bucket",
+        "self._fetch_xray",
+        "self._gpt_ctx",
+        "self._gpt_direct",
+        "self._poll_until_complete",
+        "self.gx.buckets.create",
+        "self.gx.buckets.list",
+        "self.gx.documents.get_processing_status_by_id",
+        "self.gx.documents.lookup",
+        "self.gx.ingest",
+        "self.oa.chat.completions.create",
+        "self.opik.get_or_create_dataset",
+        "str",
+        "time.sleep",
+        "time.time",
+        "user_content.append",
+        "xray.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "groundx_utils.py",
+      "imports": [
+        "dotenv",
+        "groundx",
+        "os",
+        "pathlib",
+        "requests",
+        "streamlit",
+        "tempfile",
+        "time",
+        "typing"
+      ],
+      "environment": [
+        "GROUNDX_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_client",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": "Initialize and return a Ground X API client instance"
+        },
+        {
+          "name": "ensure_bucket",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": "Ensure storage bucket exists and return its identifier"
+        },
+        {
+          "name": "ingest_document",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": "Upload and process document in Ground X, return processing identifier"
+        },
+        {
+          "name": "poll_until_complete",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": "Monitor document processing status until completion"
+        },
+        {
+          "name": "fetch_xray_json",
+          "line": 101,
+          "kind": "FunctionDef",
+          "doc": "Retrieve X-Ray analysis data for documents in storage bucket"
+        },
+        {
+          "name": "check_file_exists",
+          "line": 115,
+          "kind": "FunctionDef",
+          "doc": "Verify document existence in bucket and return document identifier"
+        },
+        {
+          "name": "get_xray_for_existing_document",
+          "line": 123,
+          "kind": "FunctionDef",
+          "doc": "Retrieve X-Ray analysis data for existing document"
+        },
+        {
+          "name": "process_document",
+          "line": 138,
+          "kind": "FunctionDef",
+          "doc": "Process document through Ground X pipeline and return analysis data"
+        }
+      ],
+      "calls": [
+        "Document",
+        "GroundX",
+        "Path",
+        "RuntimeError",
+        "TimeoutError",
+        "ValueError",
+        "_gx.buckets.create",
+        "_gx.buckets.list",
+        "check_file_exists",
+        "fetch_xray_json",
+        "get_xray_for_existing_document",
+        "gx.documents.get_processing_status_by_id",
+        "gx.documents.lookup",
+        "gx.ingest",
+        "hasattr",
+        "ingest_document",
+        "int",
+        "isinstance",
+        "load_dotenv",
+        "mime.split",
+        "os.getenv",
+        "poll_until_complete",
+        "progress_bar.progress",
+        "requests.get",
+        "response.json",
+        "response.raise_for_status",
+        "st.cache_resource",
+        "st.empty",
+        "st.progress",
+        "status.status.capitalize",
+        "status_text.write",
+        "str",
+        "time.sleep",
+        "time.time"
+      ],
+      "findings": [
+        {
+          "rule": "network-timeout",
+          "path": "groundx_utils.py",
+          "line": 109,
+          "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+        },
+        {
+          "rule": "network-timeout",
+          "path": "groundx_utils.py",
+          "line": 130,
+          "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+        }
+      ],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "run_evaluation_cli.py",
+      "imports": [
+        "argparse",
+        "dotenv",
+        "evaluation_geval",
+        "mimetypes",
+        "pathlib",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "discover_invoice_files",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": "Discover invoice files in the specified folder."
+        },
+        {
+          "name": "infer_mime_type",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": "Infer MIME type for the given file path."
+        },
+        {
+          "name": "main",
+          "line": 28,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_smart_partial_match",
+          "line": 196,
+          "kind": "FunctionDef",
+          "doc": "Smart partial matching that identifies key words in questions."
+        }
+      ],
+      "calls": [
+        ".expanduser",
+        ".items",
+        ".resolve",
+        ".stem.lower",
+        ".strip",
+        "FileNotFoundError",
+        "Path",
+        "ValueError",
+        "_smart_partial_match",
+        "all",
+        "argparse.ArgumentParser",
+        "create_evaluator_geval",
+        "discover_invoice_files",
+        "enumerate",
+        "evaluator.process_invoice",
+        "evaluator.run",
+        "expected_q.lower",
+        "folder.exists",
+        "folder.iterdir",
+        "getattr",
+        "gpt_result.get",
+        "gx_result.get",
+        "infer_mime_type",
+        "input",
+        "invoice_data.append",
+        "key_words.items",
+        "len",
+        "load_dotenv",
+        "main",
+        "mimetypes.guess_type",
+        "p.is_file",
+        "p.suffix.lower",
+        "parser.add_argument",
+        "parser.parse_args",
+        "path.read_bytes",
+        "print",
+        "q.lower",
+        "questions.append",
+        "results.get",
+        "str",
+        "sum",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "beam"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".add_python_packages",
+        "Image",
+        "Pod",
+        "print",
+        "streamlit_server.create"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "COMET_API_KEY",
+    "GROUNDX_API_KEY",
+    "OPENAI_API_KEY",
+    "SAMPLE_FILE_NAME"
+  ],
+  "imports": [
+    "argparse",
+    "base64",
+    "beam",
+    "dotenv",
+    "evaluation_geval",
+    "fitz",
+    "groundx",
+    "groundx_utils",
+    "mimetypes",
+    "openai",
+    "opik",
+    "os",
+    "pathlib",
+    "requests",
+    "streamlit",
+    "tempfile",
+    "time",
+    "typing"
+  ],
+  "models": [
+    "gpt-4o"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "run_evaluation_cli.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [
+    {
+      "rule": "network-timeout",
+      "path": "groundx_utils.py",
+      "line": 109,
+      "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+    },
+    {
+      "rule": "network-timeout",
+      "path": "groundx_utils.py",
+      "line": 130,
+      "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+    }
+  ],
+  "syntax_errors": []
+}

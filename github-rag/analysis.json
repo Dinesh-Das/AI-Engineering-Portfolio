@@ -1,0 +1,245 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "dotenv",
+        "gc",
+        "gitingest",
+        "llama_index",
+        "logging",
+        "os",
+        "pandas",
+        "streamlit",
+        "tempfile",
+        "typing",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "GitHubRAGError",
+          "line": 25,
+          "kind": "ClassDef",
+          "doc": "Custom exception for GitHub RAG application errors"
+        },
+        {
+          "name": "validate_github_url",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": "Validate GitHub repository URL"
+        },
+        {
+          "name": "get_repo_name",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": "Extract repository name from URL"
+        },
+        {
+          "name": "reset_chat",
+          "line": 40,
+          "kind": "FunctionDef",
+          "doc": "Reset chat session and clean up resources"
+        },
+        {
+          "name": "process_with_gitingets",
+          "line": 51,
+          "kind": "FunctionDef",
+          "doc": "Process GitHub repository using gitingest"
+        },
+        {
+          "name": "create_query_engine",
+          "line": 62,
+          "kind": "FunctionDef",
+          "doc": "Create and configure query engine"
+        }
+      ],
+      "calls": [
+        ".replace",
+        "GitHubRAGError",
+        "MarkdownNodeParser",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "all",
+        "create_query_engine",
+        "f.write",
+        "gc.collect",
+        "get_repo_name",
+        "hasattr",
+        "index.as_query_engine",
+        "ingest",
+        "isinstance",
+        "load_dotenv",
+        "loader.load_data",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.join",
+        "process_with_gitingets",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.session_state.file_cache.get",
+        "st.session_state.messages.append",
+        "st.spinner",
+        "st.stop",
+        "st.success",
+        "st.text_input",
+        "str",
+        "tempfile.TemporaryDirectory",
+        "url.split",
+        "url.startswith",
+        "uuid.uuid4",
+        "validate_github_url"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "app_local.py",
+      "imports": [
+        "gc",
+        "gitingest",
+        "llama_index",
+        "os",
+        "pandas",
+        "streamlit",
+        "tempfile",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-large-en-v1.5",
+        "llama3.2"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 27,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_with_gitingets",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "HuggingFaceEmbedding",
+        "MarkdownNodeParser",
+        "Ollama",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "f.write",
+        "gc.collect",
+        "github_url.split",
+        "hasattr",
+        "index.as_query_engine",
+        "ingest",
+        "isinstance",
+        "load_llm",
+        "loader.load_data",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.exists",
+        "os.path.join",
+        "process_with_gitingets",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.session_state.file_cache.get",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.text_input",
+        "st.write",
+        "str",
+        "tempfile.TemporaryDirectory",
+        "uuid.uuid4"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "app_local.py",
+          "line": 79,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": true,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "dotenv",
+    "gc",
+    "gitingest",
+    "llama_index",
+    "logging",
+    "os",
+    "pandas",
+    "streamlit",
+    "tempfile",
+    "typing",
+    "uuid"
+  ],
+  "models": [
+    "BAAI/bge-large-en-v1.5",
+    "llama3.2"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "app_local.py",
+      "line": 79,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

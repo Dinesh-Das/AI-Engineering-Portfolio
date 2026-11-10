@@ -1,0 +1,243 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "asyncio",
+        "os",
+        "research",
+        "streamlit"
+      ],
+      "environment": [
+        "BRIGHT_DATA_API_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "asyncio.run",
+        "run_deep_research",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.markdown",
+        "st.session_state.messages.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.success",
+        "st.text_input",
+        "st.write",
+        "str"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "flow.py",
+      "imports": [
+        "asyncio",
+        "crewai",
+        "crewai_tools",
+        "dotenv",
+        "json",
+        "logging",
+        "mcp",
+        "os",
+        "pydantic",
+        "typing"
+      ],
+      "environment": [
+        "BRIGHT_DATA_API_TOKEN"
+      ],
+      "models": [
+        "ollama/gpt-oss",
+        "openai/gpt-4o",
+        "openai/o3-mini"
+      ],
+      "symbols": [
+        {
+          "name": "URLBuckets",
+          "line": 20,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "SpecialistOutput",
+          "line": 28,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "DeepResearchFlowState",
+          "line": 36,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "server_params",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "DeepResearchFlow",
+          "line": 54,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 280,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "start_flow",
+          "line": 60,
+          "kind": "FunctionDef",
+          "doc": "Start the flow by setting the query in the state."
+        },
+        {
+          "name": "collect_urls",
+          "line": 66,
+          "kind": "FunctionDef",
+          "doc": "Search web for user query and return URLBuckets object."
+        },
+        {
+          "name": "dispatch_to_specialists",
+          "line": 126,
+          "kind": "FunctionDef",
+          "doc": "Fan-out to platform specialists. Each platform is processed independently."
+        },
+        {
+          "name": "synthesize_response",
+          "line": 225,
+          "kind": "FunctionDef",
+          "doc": "Final deep research response synthesis."
+        },
+        {
+          "name": "_process_platform",
+          "line": 131,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".model_dump",
+        "Agent",
+        "Crew",
+        "DeepResearchFlow",
+        "Field",
+        "LLM",
+        "MCPServerAdapter",
+        "RuntimeError",
+        "SpecialistOutput",
+        "StdioServerParameters",
+        "Task",
+        "URLBuckets",
+        "_process_platform",
+        "asyncio.run",
+        "crew.kickoff",
+        "flattened_results.append",
+        "flattened_results.extend",
+        "flow.kickoff_async",
+        "isinstance",
+        "json.loads",
+        "listen",
+        "load_dotenv",
+        "logging.exception",
+        "main",
+        "os.getenv",
+        "out.model_dump",
+        "platform.capitalize",
+        "print",
+        "results.append",
+        "server_params",
+        "start",
+        "str",
+        "type",
+        "url_buckets_dict.items"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "research.py",
+      "imports": [
+        "flow",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "run_deep_research",
+          "line": 5,
+          "kind": "AsyncFunctionDef",
+          "doc": "Run the deep research flow and return the result."
+        }
+      ],
+      "calls": [
+        "DeepResearchFlow",
+        "flow.kickoff_async",
+        "payload.get",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "BRIGHT_DATA_API_TOKEN",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "crewai",
+    "crewai_tools",
+    "dotenv",
+    "flow",
+    "json",
+    "logging",
+    "mcp",
+    "os",
+    "pydantic",
+    "research",
+    "streamlit",
+    "typing"
+  ],
+  "models": [
+    "ollama/gpt-oss",
+    "openai/gpt-4o",
+    "openai/o3-mini"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "flow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

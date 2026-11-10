@@ -1,0 +1,334 @@
+{
+  "id": "llamaindex-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/llamaindex-mcp",
+  "entries": [
+    {
+      "path": "ollama_client.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "ollama_client.ipynb",
+      "path": "ollama_client.ipynb",
+      "upstream_sha256": "b571a5304c0cece35dd6b3b06a8ccf0f94ae4df4314f5f72f69c5fc3deb5f7a1",
+      "local_sha256": "879a50d6a36f10a273fac774f8c3b6bc93a6094b1a7812673a15d28324b7699a",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "0ed91f684e337d10672bc748ba00b1be0222c8e760ef159f881b16991fc8639c",
+      "local_sha256": "0ed91f684e337d10672bc748ba00b1be0222c8e760ef159f881b16991fc8639c",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "a27a6daad1658bfc9a68f0d43e713b77ba486cf54d67fbb73180b4a9e8fc1b2e",
+      "local_sha256": "a27a6daad1658bfc9a68f0d43e713b77ba486cf54d67fbb73180b4a9e8fc1b2e",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "ccc86c9848d07014a24440dbc4c1ae6922d06b5087a756dfd5f3a8510e498ba9",
+      "local_sha256": "ccc86c9848d07014a24440dbc4c1ae6922d06b5087a756dfd5f3a8510e498ba9",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "3c3f41b400b98c6863eed1c22111c3100bd0961b58731a9919fbb51032fd8f65",
+      "local_sha256": "3c3f41b400b98c6863eed1c22111c3100bd0961b58731a9919fbb51032fd8f65",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "ollama_client.ipynb#cell-2",
+        "imports": [
+          "nest_asyncio"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-4",
+        "imports": [
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [
+          "llama3.2"
+        ],
+        "symbols": [],
+        "calls": [
+          "Ollama"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-6",
+        "imports": [
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "BasicMCPClient",
+          "McpToolSpec"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "mcp_tools.to_tool_list_async",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-11",
+        "imports": [
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [
+          "gpt-4"
+        ],
+        "symbols": [
+          {
+            "name": "get_agent",
+            "line": 4,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "FunctionAgent",
+          "OpenAI",
+          "tools.to_tool_list_async"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-13",
+        "imports": [
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "handle_user_message",
+            "line": 8,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "agent.run",
+          "handler.stream_events",
+          "print",
+          "str",
+          "type"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-15",
+        "imports": [
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "BasicMCPClient",
+          "Context",
+          "McpToolSpec",
+          "get_agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "handle_user_message",
+          "input",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "ollama_client.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "argparse",
+          "mcp",
+          "sqlite3"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "init_db",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "add_data",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": "Add new data to the people table using a SQL INSERT query."
+          },
+          {
+            "name": "read_data",
+            "line": 59,
+            "kind": "FunctionDef",
+            "doc": "Read data from the people table using a SQL SELECT query."
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "argparse.ArgumentParser",
+          "conn.close",
+          "conn.commit",
+          "conn.cursor",
+          "cursor.execute",
+          "cursor.fetchall",
+          "init_db",
+          "mcp.run",
+          "mcp.tool",
+          "parser.add_argument",
+          "parser.parse_args",
+          "print",
+          "sqlite3.connect"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "ollama_client.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "argparse",
+      "llama_index",
+      "mcp",
+      "nest_asyncio",
+      "sqlite3"
+    ],
+    "models": [
+      "gpt-4",
+      "llama3.2"
+    ],
+    "entries": [
+      {
+        "path": "ollama_client.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 11
+  },
+  "category": "mcp",
+  "purpose": "Connect a local LlamaIndex agent to SQLite-backed MCP tools."
+}

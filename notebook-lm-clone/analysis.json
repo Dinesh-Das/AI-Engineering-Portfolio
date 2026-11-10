@@ -1,0 +1,2014 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "dataclasses",
+        "dotenv",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "src",
+        "streamlit",
+        "tempfile",
+        "time",
+        "typing",
+        "uuid"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY",
+        "FIRECRAWL_API_KEY",
+        "OPENAI_API_KEY",
+        "ZEP_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_interactive_citations",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "init_session_state",
+          "line": 278,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 292,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "initialize_pipeline",
+          "line": 322,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_uploaded_files",
+          "line": 391,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_urls",
+          "line": 447,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_youtube_video",
+          "line": 488,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_text",
+          "line": 531,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_sources_sidebar",
+          "line": 572,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_source_upload_dialog",
+          "line": 600,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_chat_interface",
+          "line": 658,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_podcast",
+          "line": 749,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_studio_tab",
+          "line": 899,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 939,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "replace_citation",
+          "line": 30,
+          "kind": "FunctionDef",
+          "doc": "Replace citation number with interactive element"
+        },
+        {
+          "name": "ChunkLike",
+          "line": 795,
+          "kind": "ClassDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".create_index",
+        ".generate_embeddings",
+        ".generate_query_embedding",
+        ".generate_response",
+        ".get_chunk_by_id",
+        ".insert_embeddings",
+        ".join",
+        ".process_document",
+        ".replace",
+        ".save_conversation_turn",
+        ".scrape_url",
+        ".search",
+        ".transcribe_audio",
+        "AudioTranscriber",
+        "ChunkLike",
+        "DocumentProcessor",
+        "EmbeddingGenerator",
+        "MilvusVectorDB",
+        "NotebookMemoryLayer",
+        "Path",
+        "PodcastScriptGenerator",
+        "PodcastTTSGenerator",
+        "RAGGenerator",
+        "WebScraper",
+        "YouTubeTranscriber",
+        "chunk_content.replace",
+        "chunk_data.get",
+        "citations.append",
+        "create_interactive_citations",
+        "enumerate",
+        "f.read",
+        "generate_podcast",
+        "init_session_state",
+        "initialize_pipeline",
+        "int",
+        "iter",
+        "len",
+        "line_dict.items",
+        "load_dotenv",
+        "locals",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "main",
+        "match.group",
+        "memory.clear_session",
+        "message.get",
+        "next",
+        "open",
+        "os.getenv",
+        "os.unlink",
+        "pipeline.get",
+        "podcast_script.to_json",
+        "podcast_style.lower",
+        "process_text",
+        "process_uploaded_files",
+        "process_urls",
+        "process_youtube_video",
+        "query.strip",
+        "re.search",
+        "re.sub",
+        "render_chat_interface",
+        "render_source_upload_dialog",
+        "render_sources_sidebar",
+        "render_studio_tab",
+        "reset_chat",
+        "script_generator.generate_script_from_text",
+        "script_generator.generate_script_from_website",
+        "search_results.sort",
+        "source.get",
+        "source_info.replace",
+        "st.audio",
+        "st.button",
+        "st.columns",
+        "st.container",
+        "st.download_button",
+        "st.error",
+        "st.expander",
+        "st.file_uploader",
+        "st.markdown",
+        "st.metric",
+        "st.rerun",
+        "st.selectbox",
+        "st.session_state.chat_history.append",
+        "st.session_state.sources.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.stop",
+        "st.success",
+        "st.tabs",
+        "st.text_area",
+        "st.text_input",
+        "st.warning",
+        "str",
+        "tempfile.NamedTemporaryFile",
+        "tempfile.mkdtemp",
+        "text_content.strip",
+        "time.strftime",
+        "time.time",
+        "tmp_file.write",
+        "transcriber.extract_video_id",
+        "transcriber.transcribe_youtube_video",
+        "tts_generator.generate_podcast_audio",
+        "uploaded_file.getbuffer",
+        "uploaded_file.name.split",
+        "uploaded_file.type.startswith",
+        "url.strip",
+        "urls_text.split",
+        "urls_text.strip",
+        "uuid.uuid4",
+        "x.get",
+        "youtube_url.strip"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-3",
+      "imports": [
+        "datetime",
+        "dotenv",
+        "os",
+        "pathlib",
+        "tempfile"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "load_dotenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-6",
+      "imports": [
+        "src"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".get_citation_info",
+        "DocumentProcessor",
+        "chunk.get_citation_info",
+        "doc_processor.process_document",
+        "len",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-10",
+      "imports": [
+        "src"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "AudioTranscriber",
+        "audio_transcriber.transcribe_audio",
+        "chunk.metadata.get",
+        "os.getenv",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-12",
+      "imports": [
+        "src"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "YouTubeTranscriber",
+        "chunk.metadata.get",
+        "len",
+        "os.getenv",
+        "print",
+        "youtube_transcriber.transcribe_youtube_video"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-15",
+      "imports": [
+        "src"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "WebScraper",
+        "chunk.metadata.get",
+        "len",
+        "os.getenv",
+        "print",
+        "web_scraper.scrape_url"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-18",
+      "imports": [
+        "src"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-small-en-v1.5"
+      ],
+      "symbols": [],
+      "calls": [
+        "EmbeddingGenerator",
+        "embedding_generator.generate_embeddings",
+        "embedding_generator.generate_query_embedding",
+        "enumerate",
+        "len",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-21",
+      "imports": [
+        "src"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "MilvusVectorDB",
+        "embedding_generator.generate_query_embedding",
+        "len",
+        "print",
+        "vector_db.create_index",
+        "vector_db.get_chunk_by_id",
+        "vector_db.insert_embeddings",
+        "vector_db.search"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-24",
+      "imports": [
+        "src"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "NotebookMemoryLayer",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-27",
+      "imports": [
+        "src"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "symbols": [],
+      "calls": [
+        "RAGGenerator",
+        "enumerate",
+        "len",
+        "os.getenv",
+        "print",
+        "rag_generator.generate_response",
+        "rag_result.get_citation_summary",
+        "source.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-30",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "memory.get_conversation_context",
+        "memory.save_conversation_turn",
+        "memory.wait_for_indexing",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-32",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "memory.clear_session",
+        "print",
+        "rag_generator.generate_response"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-34",
+      "imports": [
+        "src"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "symbols": [],
+      "calls": [
+        "PodcastScriptGenerator",
+        "enumerate",
+        "f.write",
+        "iter",
+        "line_dict.items",
+        "next",
+        "open",
+        "os.getenv",
+        "os.makedirs",
+        "os.path.exists",
+        "podcast_script.to_json",
+        "print",
+        "script_generator.generate_script_from_website",
+        "web_scraper.scrape_url"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-36",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-38",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-39",
+      "imports": [
+        "src"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Path",
+        "PodcastTTSGenerator",
+        "len",
+        "next",
+        "print",
+        "tts_generator.generate_podcast_audio"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-41",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-43",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb#cell-45",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "src/audio_processing/audio_transcriber.py",
+      "imports": [
+        "assemblyai",
+        "dataclasses",
+        "json",
+        "logging",
+        "os",
+        "pathlib",
+        "src",
+        "time",
+        "typing"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "SpeakerSegment",
+          "line": 17,
+          "kind": "ClassDef",
+          "doc": "Represents a speaker segment with timing and content"
+        },
+        {
+          "name": "AudioTranscriber",
+          "line": 34,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_timestamp_str",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "transcribe_audio",
+          "line": 46,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_process_transcript_to_chunks",
+          "line": 91,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_create_chunks_with_speakers",
+          "line": 127,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_format_milliseconds",
+          "line": 258,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_transcript_summary",
+          "line": 264,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "batch_transcribe",
+          "line": 294,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "format_time",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "AudioTranscriber",
+        "DocumentChunk",
+        "Exception",
+        "FileNotFoundError",
+        "Path",
+        "ValueError",
+        "aai.Transcriber",
+        "aai.TranscriptionConfig",
+        "all_chunks.append",
+        "audio_path.exists",
+        "audio_path.suffix.lower",
+        "base_metadata.copy",
+        "chunk.metadata.get",
+        "chunk_metadata.update",
+        "chunks.append",
+        "current_speakers.append",
+        "current_text.strip",
+        "current_timestamps.extend",
+        "enumerate",
+        "exit",
+        "format_time",
+        "getattr",
+        "hasattr",
+        "int",
+        "len",
+        "list",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "os.getenv",
+        "print",
+        "self._create_chunks_with_speakers",
+        "self._create_chunks_without_speakers",
+        "self._format_milliseconds",
+        "self._process_transcript_to_chunks",
+        "self.transcribe_audio",
+        "set",
+        "str",
+        "transcriber.get_transcript_summary",
+        "transcriber.transcribe",
+        "transcriber.transcribe_audio",
+        "transcript.text.split"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/audio_processing/youtube_transcriber.py",
+      "imports": [
+        "assemblyai",
+        "logging",
+        "os",
+        "pathlib",
+        "src",
+        "tempfile",
+        "typing",
+        "yt_dlp"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "YouTubeTranscriber",
+          "line": 15,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "extract_video_id",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "download_audio",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "transcribe_youtube_video",
+          "line": 69,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "cleanup_temp_files",
+          "line": 124,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".split",
+        "DocumentChunk",
+        "Exception",
+        "FileNotFoundError",
+        "Path",
+        "ValueError",
+        "YouTubeTranscriber",
+        "aai.Transcriber",
+        "aai.TranscriptionConfig",
+        "chunks.append",
+        "enumerate",
+        "exit",
+        "expected_path.exists",
+        "file.unlink",
+        "getattr",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "os.getenv",
+        "os.path.exists",
+        "os.unlink",
+        "print",
+        "self.download_audio",
+        "self.extract_video_id",
+        "self.temp_dir.exists",
+        "self.temp_dir.glob",
+        "self.temp_dir.mkdir",
+        "str",
+        "tempfile.gettempdir",
+        "transcriber.transcribe",
+        "transcriber.transcribe_youtube_video",
+        "url.split",
+        "ydl.download",
+        "yt_dlp.YoutubeDL"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/document_processing/doc_processor.py",
+      "imports": [
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "logging",
+        "os",
+        "pathlib",
+        "pymupdf",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "DocumentChunk",
+          "line": 16,
+          "kind": "ClassDef",
+          "doc": "Represents a processed document chunk with metadata for citations"
+        },
+        {
+          "name": "DocumentProcessor",
+          "line": 55,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__post_init__",
+          "line": 28,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_generate_chunk_id",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_citation_info",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 56,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_document",
+          "line": 61,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_process_pdf",
+          "line": 81,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_process_text_file",
+          "line": 120,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_create_chunks_from_text",
+          "line": 146,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "batch_process",
+          "line": 195,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".hexdigest",
+        ".isoformat",
+        ".strip",
+        "DocumentChunk",
+        "DocumentProcessor",
+        "FileNotFoundError",
+        "Path",
+        "ValueError",
+        "additional_metadata.copy",
+        "all_chunks.extend",
+        "chunks.append",
+        "chunks.extend",
+        "citation.update",
+        "datetime.now",
+        "doc.close",
+        "doc.load_page",
+        "file.read",
+        "file_path.exists",
+        "file_path.stat",
+        "file_path.suffix.lower",
+        "hashlib.md5",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "max",
+        "min",
+        "open",
+        "page.get_text",
+        "print",
+        "processor.process_document",
+        "pymupdf.open",
+        "range",
+        "sample_chunk.get_citation_info",
+        "self._create_chunks_from_text",
+        "self._generate_chunk_id",
+        "self._process_pdf",
+        "self._process_text_file",
+        "self.content.encode",
+        "self.process_document",
+        "str",
+        "text.rfind",
+        "text.strip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/embeddings/embedding_generator.py",
+      "imports": [
+        "dataclasses",
+        "fastembed",
+        "logging",
+        "numpy",
+        "src",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "EmbeddedChunk",
+          "line": 14,
+          "kind": "ClassDef",
+          "doc": "Document chunk with its embedding vector"
+        },
+        {
+          "name": "EmbeddingGenerator",
+          "line": 36,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "to_vector_db_format",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_initialize_model",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_embeddings",
+          "line": 57,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_query_embedding",
+          "line": 83,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_embedding_dimension",
+          "line": 92,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "batch_generate_embeddings",
+          "line": 95,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "DocumentProcessor",
+        "EmbeddedChunk",
+        "EmbeddingGenerator",
+        "TextEmbedding",
+        "all_embedded_batches.append",
+        "doc_processor.process_document",
+        "embedded_batch.extend",
+        "embedded_chunks.append",
+        "embedding_generator.generate_embeddings",
+        "embedding_generator.generate_query_embedding",
+        "enumerate",
+        "len",
+        "list",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "np.array",
+        "print",
+        "range",
+        "sample.chunk.get_citation_info",
+        "self._initialize_model",
+        "self.embedding.tolist",
+        "self.generate_embeddings",
+        "self.model.embed",
+        "str",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/generation/rag.py",
+      "imports": [
+        "crewai",
+        "dataclasses",
+        "logging",
+        "os",
+        "src",
+        "typing"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "symbols": [
+        {
+          "name": "RAGResult",
+          "line": 14,
+          "kind": "ClassDef",
+          "doc": "Represents the result of RAG generation with citations"
+        },
+        {
+          "name": "RAGGenerator",
+          "line": 36,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_citation_summary",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_response",
+          "line": 59,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_format_context_with_citations",
+          "line": 124,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_create_rag_prompt",
+          "line": 164,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_summary",
+          "line": 183,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        "EmbeddingGenerator",
+        "LLM",
+        "MilvusVectorDB",
+        "RAGGenerator",
+        "RAGResult",
+        "citation_info.get",
+        "context_parts.append",
+        "enumerate",
+        "exit",
+        "len",
+        "length_instructions.get",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "os.getenv",
+        "print",
+        "query.strip",
+        "query_vector.tolist",
+        "rag_generator.generate_response",
+        "rag_generator.generate_summary",
+        "result.get_citation_summary",
+        "self._create_rag_prompt",
+        "self._format_context_with_citations",
+        "self.embedding_generator.generate_query_embedding",
+        "self.llm.call",
+        "self.vector_db.search",
+        "source.get",
+        "source_summary.append",
+        "sources_info.append",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/memory/memory_layer.py",
+      "imports": [
+        "crewai",
+        "dataclasses",
+        "datetime",
+        "logging",
+        "os",
+        "src",
+        "time",
+        "typing",
+        "zep_cloud",
+        "zep_crewai"
+      ],
+      "environment": [
+        "ZEP_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ConversationTurn",
+          "line": 18,
+          "kind": "ClassDef",
+          "doc": "Represents a single conversation turn with context"
+        },
+        {
+          "name": "NotebookMemoryLayer",
+          "line": 27,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 28,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_setup_user_and_session",
+          "line": 54,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "save_conversation_turn",
+          "line": 86,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_create_sources_summary",
+          "line": 132,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_save_source_context",
+          "line": 145,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "save_user_preferences",
+          "line": 176,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "save_document_metadata",
+          "line": 192,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_conversation_context",
+          "line": 208,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_relevant_memory",
+          "line": 217,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "wait_for_indexing",
+          "line": 245,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_session_summary",
+          "line": 249,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "clear_session",
+          "line": 275,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".add",
+        ".append",
+        ".isoformat",
+        ".join",
+        "ExternalMemory",
+        "NotebookMemoryLayer",
+        "RAGResult",
+        "Zep",
+        "ZepUserStorage",
+        "bool",
+        "datetime.now",
+        "document_info.get",
+        "getattr",
+        "hasattr",
+        "len",
+        "list",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "memory.get_conversation_context",
+        "memory.get_relevant_memory",
+        "memory.get_session_summary",
+        "memory.save_conversation_turn",
+        "memory.save_user_preferences",
+        "memory.wait_for_indexing",
+        "os.getenv",
+        "print",
+        "relevant_memories.append",
+        "self._create_sources_summary",
+        "self._save_source_context",
+        "self._setup_user_and_session",
+        "self.external_memory.save",
+        "self.get_conversation_context",
+        "self.zep_client.graph.search",
+        "self.zep_client.thread.create",
+        "self.zep_client.thread.delete",
+        "self.zep_client.thread.get",
+        "self.zep_client.thread.get_user_context",
+        "self.zep_client.user.add",
+        "self.zep_client.user.get",
+        "set",
+        "source.get",
+        "str",
+        "time.sleep"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/podcast/script_generator.py",
+      "imports": [
+        "crewai",
+        "dataclasses",
+        "json",
+        "logging",
+        "os",
+        "src",
+        "typing"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "PodcastScript",
+          "line": 14,
+          "kind": "ClassDef",
+          "doc": "Represents a podcast script with metadata"
+        },
+        {
+          "name": "PodcastScriptGenerator",
+          "line": 35,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_speaker_lines",
+          "line": 21,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "to_json",
+          "line": 24,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_script_from_document",
+          "line": 45,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_script_from_text",
+          "line": 76,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_script_from_website",
+          "line": 102,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_generate_conversation_script",
+          "line": 132,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_validate_and_clean_script",
+          "line": 220,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        "DocumentProcessor",
+        "LLM",
+        "PodcastScript",
+        "PodcastScriptGenerator",
+        "ValueError",
+        "cleaned_script.append",
+        "dialogue.endswith",
+        "dialogue.strip",
+        "duration_guidelines.get",
+        "enumerate",
+        "exit",
+        "f.write",
+        "generator.generate_script_from_text",
+        "isinstance",
+        "item.items",
+        "iter",
+        "json.dumps",
+        "json.loads",
+        "len",
+        "line_dict.items",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "next",
+        "open",
+        "os.getenv",
+        "print",
+        "response.strip",
+        "response_clean.startswith",
+        "script.to_json",
+        "self._generate_conversation_script",
+        "self._validate_and_clean_script",
+        "self.doc_processor.process_document",
+        "self.llm.call",
+        "speaker.lower",
+        "speaker.strip",
+        "str",
+        "style_prompts.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/podcast/text_to_speech.py",
+      "imports": [
+        "dataclasses",
+        "json",
+        "kokoro",
+        "logging",
+        "numpy",
+        "os",
+        "pathlib",
+        "soundfile",
+        "src",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "AudioSegment",
+          "line": 21,
+          "kind": "ClassDef",
+          "doc": "Represents a single audio segment with metadata"
+        },
+        {
+          "name": "PodcastTTSGenerator",
+          "line": 30,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_podcast_audio",
+          "line": 45,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_generate_single_segment",
+          "line": 96,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_clean_text_for_tts",
+          "line": 112,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_combine_audio_segments",
+          "line": 124,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".lower",
+        ".mkdir",
+        "AudioSegment",
+        "ImportError",
+        "KPipeline",
+        "Path",
+        "PodcastScript",
+        "PodcastTTSGenerator",
+        "audio_segments.append",
+        "clean_text.endswith",
+        "clean_text.replace",
+        "combined_audio.append",
+        "enumerate",
+        "int",
+        "iter",
+        "len",
+        "line_dict.items",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "next",
+        "np.concatenate",
+        "np.zeros",
+        "os.path.join",
+        "output_files.append",
+        "print",
+        "self._clean_text_for_tts",
+        "self._combine_audio_segments",
+        "self._generate_single_segment",
+        "self.pipeline",
+        "self.speaker_voices.get",
+        "sf.write",
+        "speaker.replace",
+        "str",
+        "text.strip",
+        "tts_generator.generate_podcast_audio"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/vector_database/milvus_vector_db.py",
+      "imports": [
+        "json",
+        "logging",
+        "pathlib",
+        "pymilvus",
+        "src",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "MilvusVectorDB",
+          "line": 13,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_initialize_client",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_setup_collection",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_index",
+          "line": 128,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "insert_embeddings",
+          "line": 177,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "search",
+          "line": 207,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "delete_collection",
+          "line": 274,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_chunk_by_id",
+          "line": 287,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "close",
+          "line": 332,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "DocumentProcessor",
+        "EmbeddingGenerator",
+        "Exception",
+        "MilvusClient",
+        "MilvusVectorDB",
+        "chunk_data.get",
+        "data.append",
+        "doc_processor.process_document",
+        "embedded_chunk.to_vector_db_format",
+        "embedding_generator.generate_embeddings",
+        "embedding_generator.generate_query_embedding",
+        "enumerate",
+        "formatted_results.append",
+        "index_params.add_index",
+        "isinstance",
+        "json.loads",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "print",
+        "query_vector.tolist",
+        "schema.add_field",
+        "self._initialize_client",
+        "self._setup_collection",
+        "self.client.close",
+        "self.client.create_collection",
+        "self.client.create_index",
+        "self.client.create_schema",
+        "self.client.drop_collection",
+        "self.client.has_collection",
+        "self.client.insert",
+        "self.client.prepare_index_params",
+        "self.client.query",
+        "self.client.search",
+        "str",
+        "type",
+        "vector_db.close",
+        "vector_db.create_index",
+        "vector_db.insert_embeddings",
+        "vector_db.search"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/web_scraping/web_scraper.py",
+      "imports": [
+        "dataclasses",
+        "datetime",
+        "firecrawl",
+        "logging",
+        "os",
+        "pathlib",
+        "src",
+        "time",
+        "typing",
+        "urllib"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "WebPageData",
+          "line": 18,
+          "kind": "ClassDef",
+          "doc": "Represents scraped web page data with additional metadata"
+        },
+        {
+          "name": "WebScraper",
+          "line": 28,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "scrape_url",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_process_firecrawl_result",
+          "line": 70,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_create_chunks_from_web_content",
+          "line": 105,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "batch_scrape_urls",
+          "line": 160,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_url_preview",
+          "line": 187,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_is_valid_url",
+          "line": 213,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".isoformat",
+        ".strip",
+        "DocumentChunk",
+        "Firecrawl",
+        "ValueError",
+        "WebPageData",
+        "WebScraper",
+        "all",
+        "all_chunks.append",
+        "chunk.metadata.get",
+        "chunk_metadata.update",
+        "chunks.append",
+        "content.rfind",
+        "content.split",
+        "datetime.now",
+        "enumerate",
+        "exit",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "max",
+        "metadata_dict.get",
+        "min",
+        "os.getenv",
+        "page_data.content.strip",
+        "page_data.metadata.copy",
+        "print",
+        "scraper.batch_scrape_urls",
+        "scraper.get_url_preview",
+        "scraper.scrape_url",
+        "self._create_chunks_from_web_content",
+        "self._is_valid_url",
+        "self._process_firecrawl_result",
+        "self.app.scrape",
+        "self.scrape_url",
+        "str",
+        "sum",
+        "time.sleep",
+        "urlparse"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "tests/notebook_pipeline.py",
+      "imports": [
+        "logging",
+        "os",
+        "pathlib",
+        "src"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY",
+        "FIRECRAWL_API_KEY",
+        "OPENAI_API_KEY",
+        "ZEP_API_KEY"
+      ],
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "symbols": [
+        {
+          "name": "NotebookLMPipeline",
+          "line": 17,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "test_pipeline",
+          "line": 143,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_documents",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_audio",
+          "line": 81,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_url",
+          "line": 101,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ask_question",
+          "line": 121,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "cleanup",
+          "line": 135,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "AudioTranscriber",
+        "DocumentProcessor",
+        "EmbeddingGenerator",
+        "MilvusVectorDB",
+        "NotebookLMPipeline",
+        "NotebookMemoryLayer",
+        "Path",
+        "RAGGenerator",
+        "ValueError",
+        "WebScraper",
+        "all_chunks.extend",
+        "bool",
+        "enumerate",
+        "exit",
+        "len",
+        "locals",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "os.getenv",
+        "pipeline.ask_question",
+        "pipeline.cleanup",
+        "pipeline.memory.get_conversation_context",
+        "pipeline.process_documents",
+        "self.audio_transcriber.transcribe_audio",
+        "self.doc_processor.process_document",
+        "self.embedding_generator.generate_embeddings",
+        "self.memory.save_conversation_turn",
+        "self.rag_generator.generate_response",
+        "self.vector_db.close",
+        "self.vector_db.create_index",
+        "self.vector_db.insert_embeddings",
+        "self.web_scraper.scrape_url",
+        "source.get",
+        "str",
+        "test_file.unlink",
+        "test_file.write_text",
+        "test_pipeline"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "notebooks/notebook-lm-walkthrough.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "ASSEMBLYAI_API_KEY",
+    "FIRECRAWL_API_KEY",
+    "OPENAI_API_KEY",
+    "ZEP_API_KEY"
+  ],
+  "imports": [
+    "assemblyai",
+    "crewai",
+    "dataclasses",
+    "datetime",
+    "dotenv",
+    "fastembed",
+    "firecrawl",
+    "hashlib",
+    "json",
+    "kokoro",
+    "logging",
+    "numpy",
+    "os",
+    "pathlib",
+    "pymilvus",
+    "pymupdf",
+    "re",
+    "soundfile",
+    "src",
+    "streamlit",
+    "tempfile",
+    "time",
+    "typing",
+    "urllib",
+    "uuid",
+    "yt_dlp",
+    "zep_cloud",
+    "zep_crewai"
+  ],
+  "models": [
+    "BAAI/bge-small-en-v1.5",
+    "gpt-4o-mini"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "notebooks/notebook-lm-walkthrough.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "src/audio_processing/audio_transcriber.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/audio_processing/youtube_transcriber.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/document_processing/doc_processor.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/embeddings/embedding_generator.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/generation/rag.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/memory/memory_layer.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/podcast/script_generator.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/podcast/text_to_speech.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/vector_database/milvus_vector_db.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/web_scraping/web_scraper.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "tests/notebook_pipeline.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

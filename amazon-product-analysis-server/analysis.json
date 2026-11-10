@@ -1,0 +1,24 @@
+{
+  "units": [],
+  "manifests": [
+    "package.json"
+  ],
+  "notebooks": [],
+  "other_code": [
+    "index.ts",
+    "resources/amazon-product-analysis/brightdata-tools.ts",
+    "resources/amazon-product-analysis/server.ts",
+    "resources/amazon-product-analysis/types.ts",
+    "resources/amazon-product-analysis/utils.ts"
+  ],
+  "environment": [
+    "BRIGHTDATA_API_KEY",
+    "MCP_URL",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [],
+  "models": [],
+  "entries": [],
+  "findings": [],
+  "syntax_errors": []
+}

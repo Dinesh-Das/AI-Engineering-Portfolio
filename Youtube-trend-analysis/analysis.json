@@ -1,0 +1,207 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "base64",
+        "brightdata_scrapper",
+        "crewai",
+        "crewai_tools",
+        "dotenv",
+        "gc",
+        "os",
+        "streamlit",
+        "tempfile",
+        "time",
+        "tqdm",
+        "yaml"
+      ],
+      "environment": [
+        "BRIGHT_DATA_API_KEY",
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_agents_and_tasks",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": "Creates a Crew for analysis of the channel scrapped output"
+        },
+        {
+          "name": "reset_chat",
+          "line": 96,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "start_analysis",
+          "line": 100,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "add_channel_field",
+          "line": 201,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".format",
+        ".join",
+        ".read",
+        "Agent",
+        "Crew",
+        "FileReadTool",
+        "LLM",
+        "Task",
+        "base64.b64encode",
+        "create_agents_and_tasks",
+        "end_date.strftime",
+        "enumerate",
+        "f.close",
+        "f.write",
+        "gc.collect",
+        "get_output",
+        "get_progress",
+        "len",
+        "load_dotenv",
+        "load_llm",
+        "open",
+        "os.getenv",
+        "range",
+        "st.button",
+        "st.columns",
+        "st.container",
+        "st.date_input",
+        "st.divider",
+        "st.download_button",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.rerun",
+        "st.session_state.all_files.append",
+        "st.session_state.crew.kickoff",
+        "st.session_state.youtube_channels.append",
+        "st.session_state.youtube_channels.pop",
+        "st.spinner",
+        "st.subheader",
+        "st.text_input",
+        "st.video",
+        "start_date.strftime",
+        "status_container.error",
+        "status_container.info",
+        "status_container.success",
+        "str",
+        "time.sleep",
+        "tqdm",
+        "trigger_scraping_channels",
+        "yaml.safe_load"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "brightdata_scrapper.py",
+      "imports": [
+        "dotenv",
+        "json",
+        "os",
+        "subprocess",
+        "time"
+      ],
+      "environment": [
+        "BRIGHT_DATA_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "trigger_scraping_niche",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "trigger_scraping_channels",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_progress",
+          "line": 84,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_output",
+          "line": 99,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".split",
+        "json.dumps",
+        "json.loads",
+        "load_dotenv",
+        "os.getenv",
+        "print",
+        "result.stdout.strip",
+        "subprocess.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [
+    "config.yaml"
+  ],
+  "environment": [
+    "BRIGHT_DATA_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "base64",
+    "brightdata_scrapper",
+    "crewai",
+    "crewai_tools",
+    "dotenv",
+    "gc",
+    "json",
+    "os",
+    "streamlit",
+    "subprocess",
+    "tempfile",
+    "time",
+    "tqdm",
+    "yaml"
+  ],
+  "models": [
+    "gpt-4o"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

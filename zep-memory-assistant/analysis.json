@@ -1,0 +1,235 @@
+{
+  "units": [
+    {
+      "path": "agent.py",
+      "imports": [
+        "autogen",
+        "typing",
+        "zep_cloud"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ZepConversableAgent",
+          "line": 7,
+          "kind": "ClassDef",
+          "doc": "A custom ConversableAgent that integrates with Zep for long-term memory."
+        },
+        {
+          "name": "__init__",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_zep_persist_assistant_messages",
+          "line": 40,
+          "kind": "FunctionDef",
+          "doc": "Agent sends a message to the user. Add the message to Zep."
+        },
+        {
+          "name": "_zep_fetch_and_update_system_message",
+          "line": 63,
+          "kind": "FunctionDef",
+          "doc": "Fetch facts and update system message."
+        },
+        {
+          "name": "_zep_persist_user_message",
+          "line": 76,
+          "kind": "FunctionDef",
+          "doc": "User sends a message to the agent. Add the message to Zep."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        "Message",
+        "isinstance",
+        "message.get",
+        "self.register_hook",
+        "self.update_system_message",
+        "self.zep_client.memory.add",
+        "self.zep_client.memory.get",
+        "str",
+        "super"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "app.py",
+      "imports": [
+        "agent",
+        "autogen",
+        "llm_config",
+        "prompt",
+        "re",
+        "streamlit",
+        "util",
+        "uuid",
+        "zep_cloud"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "initialize_zep_client",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": "Initialize the Zep client with the provided API key."
+        },
+        {
+          "name": "initialize_session",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": "Initialize the session state and Zep connection."
+        },
+        {
+          "name": "create_agents",
+          "line": 105,
+          "kind": "FunctionDef",
+          "doc": "Create and configure the conversational agents."
+        },
+        {
+          "name": "handle_conversations",
+          "line": 133,
+          "kind": "FunctionDef",
+          "doc": "Process user input and generate assistant response."
+        },
+        {
+          "name": "main",
+          "line": 190,
+          "kind": "FunctionDef",
+          "doc": "Main application entry point."
+        }
+      ],
+      "calls": [
+        ".get",
+        ".strip",
+        "FactRatingExamples",
+        "FactRatingInstruction",
+        "RuntimeError",
+        "UserProxyAgent",
+        "Zep",
+        "ZepConversableAgent",
+        "agent._zep_fetch_and_update_system_message",
+        "agent._zep_persist_user_message",
+        "create_agents",
+        "display_name.upper",
+        "generate_user_id",
+        "handle_conversations",
+        "initialize_session",
+        "initialize_zep_client",
+        "main",
+        "message_placeholder.markdown",
+        "re.sub",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.divider",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.rerun",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.set_page_config",
+        "st.sidebar.info",
+        "st.sidebar.success",
+        "st.stop",
+        "st.subheader",
+        "st.success",
+        "st.text_input",
+        "st.title",
+        "st.warning",
+        "str",
+        "user.initiate_chat",
+        "user.last_message",
+        "uuid.uuid4",
+        "zep.memory.add_session",
+        "zep.user.add",
+        "zep.user.get"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "llm_config.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "prompt.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "util.py",
+      "imports": [
+        "re"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "generate_user_id",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": "Generates a consistent user ID from first and last name."
+        }
+      ],
+      "calls": [
+        ".lower",
+        "re.sub"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "agent",
+    "autogen",
+    "llm_config",
+    "prompt",
+    "re",
+    "streamlit",
+    "typing",
+    "util",
+    "uuid",
+    "zep_cloud"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

@@ -1,0 +1,492 @@
+{
+  "id": "agent-with-mcp-memory",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/agent-with-mcp-memory",
+  "entries": [
+    {
+      "path": "demo.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "03391f96c89263188eaab26de3f9c4beb2354d22d96271146c15a0855a3d138f",
+      "local_sha256": "03391f96c89263188eaab26de3f9c4beb2354d22d96271146c15a0855a3d138f",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "demo.ipynb",
+      "path": "demo.ipynb",
+      "upstream_sha256": "56eb508b0f8e6ad85823f92d8a4b2cc5138a9dac7961a6c7cf38f4151f5e6a27",
+      "local_sha256": "a2d17bd2e3266e8eef1e69abebc24247fc6ef5213fe3acdab86660b215382cb8",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "4470a11d7ab5faa55972e4fb080e0271edee7b19d39bd570e25b6f56dec84c36",
+      "local_sha256": "4470a11d7ab5faa55972e4fb080e0271edee7b19d39bd570e25b6f56dec84c36",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "d45d6b57f07037ec723d57345ef0b14c7f51934257bd04c3c47e798749b90184",
+      "local_sha256": "d45d6b57f07037ec723d57345ef0b14c7f51934257bd04c3c47e798749b90184",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "f54f72e84c8bf1191bdb89b71ecb771ca40f1009bc7b22a57053673413a01aba",
+      "local_sha256": "f54f72e84c8bf1191bdb89b71ecb771ca40f1009bc7b22a57053673413a01aba",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "26a5389fa8a59e5df8b289115afff70c9cc8871ecb1697775aeea15c6a22e5c4",
+      "local_sha256": "26a5389fa8a59e5df8b289115afff70c9cc8871ecb1697775aeea15c6a22e5c4",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/agent-crashcourse1.gif",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "assets/agent-crashcourse2.gif",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "assets/thumbnail.jpeg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/zep-memory.gif",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "demo.ipynb#cell-3",
+        "imports": [
+          "crewai",
+          "dotenv"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dotenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-5",
+        "imports": [
+          "crewai"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/llama3.2"
+        ],
+        "symbols": [],
+        "calls": [
+          "LLM"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Task",
+          "crew.kickoff",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-9",
+        "imports": [
+          "opik"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "opik.configure",
+          "track_crewai"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-11",
+        "imports": [
+          "os"
+        ],
+        "environment": [
+          "LINKUP_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "os.getenv",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-12",
+        "imports": [
+          "crewai",
+          "linkup",
+          "os",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [
+          "LINKUP_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "LinkUpSearchInput",
+            "line": 7,
+            "kind": "ClassDef",
+            "doc": "Input schema for LinkUp Search Tool."
+          },
+          {
+            "name": "LinkUpSearchTool",
+            "line": 16,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 24,
+            "kind": "FunctionDef",
+            "doc": "Execute LinkUp search and return results."
+          }
+        ],
+        "calls": [
+          ".__init__",
+          "Field",
+          "LinkupClient",
+          "linkup_client.search",
+          "os.getenv",
+          "str",
+          "super"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-14",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "LinkUpSearchTool",
+          "Task",
+          "crew.kickoff",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-16",
+        "imports": [
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "MCPServerAdapter",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "MCPServerAdapter",
+          "Task",
+          "crew.kickoff",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-22",
+        "imports": [
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "MCPServerAdapter",
+          "Task",
+          "crew.kickoff",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-23",
+        "imports": [
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "MCPServerAdapter",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-24",
+        "imports": [
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "MCPServerAdapter",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-25",
+        "imports": [
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "MCPServerAdapter",
+          "Task",
+          "crew.kickoff",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-26",
+        "imports": [
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "MCPServerAdapter",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-27",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo.ipynb#cell-28",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "dotenv",
+          "linkup",
+          "mcp"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "web_search",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": "Search the web for the given query."
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "LinkupClient",
+          "client.search",
+          "load_dotenv",
+          "mcp.run",
+          "mcp.tool",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "demo.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "LINKUP_API_KEY",
+      "MODEL_NAME",
+      "NEO4J_PASSWORD",
+      "NEO4J_URI",
+      "NEO4J_USER",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "crewai",
+      "crewai_tools",
+      "dotenv",
+      "linkup",
+      "mcp",
+      "opik",
+      "os",
+      "pydantic",
+      "typing"
+    ],
+    "models": [
+      "ollama/llama3.2"
+    ],
+    "entries": [
+      {
+        "path": "demo.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 17
+  },
+  "category": "memory",
+  "purpose": "Give a local agent web tools, persistent graph memory and traceable behavior."
+}

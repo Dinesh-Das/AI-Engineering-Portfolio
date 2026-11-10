@@ -1,0 +1,332 @@
+{
+  "id": "Build-reasoning-model",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/Build-reasoning-model",
+  "entries": [
+    {
+      "path": "Own_reasoning_model_with_GRPO.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "Own_reasoning_model_with_GRPO.ipynb",
+      "path": "Own_reasoning_model_with_GRPO.ipynb",
+      "upstream_sha256": "ca39d90f30274a46ac3b0d4ca33c1ac1656a2ef3ae69459626cf20e2e77fbf88",
+      "local_sha256": "d8b53371bc0192b5a83ea529a5ab4763d11a176785638aff093f256dee24e10d",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "58259fcfcc184d086728db0db2e8e8916439705e3236007d80332de2270d3252",
+      "local_sha256": "58259fcfcc184d086728db0db2e8e8916439705e3236007d80332de2270d3252",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-1",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-2",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-3",
+        "imports": [
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "PatchFastRL"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-4",
+        "imports": [
+          "torch",
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [
+          "meta-llama/meta-Llama-3.1-8B-Instruct"
+        ],
+        "symbols": [],
+        "calls": [
+          "FastLanguageModel.from_pretrained",
+          "FastLanguageModel.get_peft_model"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-5",
+        "imports": [
+          "datasets",
+          "re"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "extract_hash_answer",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_dataset",
+            "line": 20,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".strip",
+          "create_dataset",
+          "data.map",
+          "extract_hash_answer",
+          "load_dataset",
+          "text.split"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "extract_xml_answer",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "correctness_reward_func",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "int_reward_func",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "strict_format_reward_func",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": "Reward function that checks if the completion has a specific format."
+          },
+          {
+            "name": "soft_format_reward_func",
+            "line": 25,
+            "kind": "FunctionDef",
+            "doc": "Reward function that checks if the completion has a specific format."
+          },
+          {
+            "name": "count_xml",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "xmlcount_reward_func",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "answer.split",
+          "answer.strip",
+          "count_xml",
+          "extract_xml_answer",
+          "len",
+          "print",
+          "r.isdigit",
+          "re.match",
+          "text.count",
+          "text.split",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-7",
+        "imports": [
+          "trl"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "GRPOConfig",
+          "is_bfloat16_supported"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-8",
+        "imports": [
+          "trl"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "GRPOTrainer",
+          "trainer.train"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-9",
+        "imports": [
+          "vllm"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "SamplingParams",
+          "model.fast_generate",
+          "print",
+          "tokenizer.apply_chat_template"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "model.save_lora"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "SamplingParams",
+          "model.fast_generate",
+          "model.load_lora",
+          "print",
+          "tokenizer.apply_chat_template"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "Own_reasoning_model_with_GRPO.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "datasets",
+      "re",
+      "torch",
+      "trl",
+      "unsloth",
+      "vllm"
+    ],
+    "models": [
+      "meta-llama/meta-Llama-3.1-8B-Instruct"
+    ],
+    "entries": [
+      {
+        "path": "Own_reasoning_model_with_GRPO.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 12
+  },
+  "category": "training",
+  "purpose": "Train a reasoning-oriented model with GRPO and explicit answer-format rewards."
+}

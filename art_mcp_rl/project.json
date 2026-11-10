@@ -1,0 +1,691 @@
+{
+  "id": "art_mcp_rl",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/art_mcp_rl",
+  "entries": [
+    {
+      "path": "mcp_rl.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "mcp_server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "mcp_rl.ipynb",
+      "path": "mcp_rl.ipynb",
+      "upstream_sha256": "722c19a2fc3d1e1ce453855aa5f6d3caadf9cb1817a374ade21dfce991d47bd6",
+      "local_sha256": "1f87abecfb66e9a70465dd5480cd4e93ef813904965f07c833c67217234f5a2a",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "mcp_server.py",
+      "path": "mcp_server.py",
+      "upstream_sha256": "ad53a52e039e9aac7c875d66a7fe732564906b1321a15c75438b143db7694348",
+      "local_sha256": "ad53a52e039e9aac7c875d66a7fe732564906b1321a15c75438b143db7694348",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "120f33ee48755014f63d25941a45bd5e52be66492ab8677dd991ea0531a4a60a",
+      "local_sha256": "120f33ee48755014f63d25941a45bd5e52be66492ab8677dd991ea0531a4a60a",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "mcp_rl.ipynb#cell-1",
+        "imports": [
+          "os",
+          "unsloth"
+        ],
+        "environment": [
+          "UNSLOTH_FORCE_FLOAT16"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-3",
+        "imports": [
+          "numpy",
+          "os",
+          "subprocess"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".join",
+          "os.environ.keys",
+          "str",
+          "subprocess.check_output"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-6",
+        "imports": [
+          "subprocess"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "subprocess.Popen"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "Qwen/Qwen2.5-3B-Instruct"
+        ],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "openai/gpt-5-nano",
+          "openrouter/openai/gpt-4o-mini",
+          "sql-agent-3b"
+        ],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-10",
+        "imports": [
+          "json",
+          "time",
+          "traceback",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "_ts",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "log",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "log_json",
+            "line": 26,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "_ts",
+          "json.dumps",
+          "kv.items",
+          "len",
+          "parts.append",
+          "print",
+          "repr",
+          "str",
+          "time.strftime"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-11",
+        "imports": [
+          "contextlib",
+          "mcp"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "mcp_session",
+            "line": 11,
+            "kind": "AsyncFunctionDef",
+            "doc": "Connects to the remote Smithery MCP server using the full URL that includes"
+          },
+          {
+            "name": "list_tools_and_resources",
+            "line": 22,
+            "kind": "AsyncFunctionDef",
+            "doc": "Return (tools_result, resources_result) from the remote Smithery server."
+          },
+          {
+            "name": "call_mcp_tool",
+            "line": 37,
+            "kind": "AsyncFunctionDef",
+            "doc": "Invoke a tool on the remote Smithery server and return the CallToolResult."
+          },
+          {
+            "name": "_Empty",
+            "line": 30,
+            "kind": "ClassDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ClientSession",
+          "_Empty",
+          "getattr",
+          "list_tools_and_resources",
+          "mcp_session",
+          "print",
+          "session.call_tool",
+          "session.initialize",
+          "session.list_resources",
+          "session.list_tools",
+          "streamable_http_client"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_content_text",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "hasattr",
+          "isinstance",
+          "json.dumps",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-14",
+        "imports": [
+          "art",
+          "dotenv",
+          "os",
+          "random"
+        ],
+        "environment": [
+          "OPENROUTER_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "ValueError",
+          "call_mcp_tool",
+          "enriched_tools_list.append",
+          "err",
+          "generate_scenarios",
+          "get_content_text",
+          "getattr",
+          "info",
+          "len",
+          "list_tools_and_resources",
+          "load_dotenv",
+          "min",
+          "ok",
+          "os.getenv",
+          "preview_scenarios",
+          "random.shuffle",
+          "range",
+          "resources_list.append",
+          "step",
+          "str",
+          "time.perf_counter",
+          "time.sleep",
+          "tool.copy",
+          "tools_list.append",
+          "warn"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-18",
+        "imports": [
+          "art",
+          "dataclasses",
+          "dotenv",
+          "gc",
+          "openai",
+          "os",
+          "random",
+          "torch",
+          "weave"
+        ],
+        "environment": [
+          "WANDB_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "LocalBackend",
+          "art.TrainableModel",
+          "art.dev.EngineArgs",
+          "art.dev.InitArgs",
+          "art.dev.InternalModelConfig",
+          "gc.collect",
+          "load_dotenv",
+          "model.register",
+          "print",
+          "random.seed",
+          "torch.cuda.empty_cache",
+          "weave.init"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-20",
+        "imports": [
+          "art"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "art.Trajectory",
+          "art.TrajectoryGroup",
+          "ruler_score_group"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-22",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "McpScenario",
+            "line": 2,
+            "kind": "ClassDef",
+            "doc": "A scenario for MCP agent evaluation against a remote Smithery server."
+          },
+          {
+            "name": "rollout",
+            "line": 10,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run an MCP agent rollout against the remote Smithery MCP server."
+          }
+        ],
+        "calls": [
+          "AsyncOpenAI",
+          "Exception",
+          "art.Trajectory",
+          "bool",
+          "call_mcp_tool",
+          "get_content_text",
+          "getattr",
+          "isinstance",
+          "json.loads",
+          "len",
+          "list_tools_and_resources",
+          "log",
+          "log_json",
+          "next",
+          "openai_client.chat.completions.create",
+          "reversed",
+          "str",
+          "tool_args.get",
+          "tool_schemas.append",
+          "traceback.print_exc",
+          "traj.finish",
+          "traj.logs.append",
+          "traj.messages",
+          "traj.messages_and_choices.append",
+          "traj.track_duration",
+          "weave.op"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-24",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "McpScenario",
+          "art.TrainConfig",
+          "art.TrajectoryGroup",
+          "art.gather_trajectory_groups",
+          "iterate_dataset",
+          "model.get_step",
+          "model.register",
+          "model.train",
+          "print",
+          "range",
+          "rollout",
+          "ruler_score_group",
+          "scored_groups.append"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-26",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "McpScenario",
+          "enumerate",
+          "len",
+          "print",
+          "result_trajectory.messages",
+          "rollout"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-27",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-28",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "McpScenario",
+          "print",
+          "result_trajectory.messages",
+          "rollout"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-29",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_rl.ipynb#cell-30",
+        "imports": [
+          "torch",
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "FastLanguageModel.from_pretrained",
+          "model.get_step",
+          "peft_model.push_to_hub_merged"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mcp_server.py",
+        "imports": [
+          "fastmcp",
+          "json",
+          "sqlite3"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "list_tables",
+            "line": 81,
+            "kind": "FunctionDef",
+            "doc": "List all tables in the database."
+          },
+          {
+            "name": "describe_table",
+            "line": 92,
+            "kind": "FunctionDef",
+            "doc": "Get the column names, types, and constraints for a specific table."
+          },
+          {
+            "name": "run_query",
+            "line": 121,
+            "kind": "FunctionDef",
+            "doc": "Execute a read-only SQL query and return the results."
+          }
+        ],
+        "calls": [
+          ".fetchall",
+          ".upper",
+          "DB.execute",
+          "DB.executescript",
+          "FastMCP",
+          "bool",
+          "cursor.fetchall",
+          "cursor.fetchone",
+          "dict",
+          "json.dumps",
+          "len",
+          "mcp.run",
+          "mcp.tool",
+          "sql.strip",
+          "sqlite3.connect",
+          "str",
+          "stripped.startswith"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "mcp_rl.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "OPENROUTER_API_KEY",
+      "UNSLOTH_FORCE_FLOAT16",
+      "WANDB_API_KEY"
+    ],
+    "imports": [
+      "art",
+      "contextlib",
+      "dataclasses",
+      "dotenv",
+      "fastmcp",
+      "gc",
+      "json",
+      "mcp",
+      "numpy",
+      "openai",
+      "os",
+      "random",
+      "sqlite3",
+      "subprocess",
+      "time",
+      "torch",
+      "traceback",
+      "typing",
+      "unsloth",
+      "weave"
+    ],
+    "models": [
+      "Qwen/Qwen2.5-3B-Instruct",
+      "openai/gpt-5-nano",
+      "openrouter/openai/gpt-4o-mini",
+      "sql-agent-3b"
+    ],
+    "entries": [
+      {
+        "path": "mcp_rl.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "mcp_server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 23
+  },
+  "category": "training",
+  "purpose": "Train an LLM to use MCP database tools with reinforcement learning.",
+  "local_additions": [
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "local_sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "changes": [
+        "Included license text referenced by the notebook source notice."
+      ]
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "local_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "changes": [
+        "Included license text referenced by the notebook source notice."
+      ]
+    }
+  ]
+}

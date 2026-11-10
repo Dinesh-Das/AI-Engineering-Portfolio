@@ -1,0 +1,491 @@
+{
+  "id": "firecrawl-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/firecrawl-agent",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".beamignore",
+      "path": ".beamignore",
+      "upstream_sha256": "ddaf0ff956010b4e40d963a945f859cdcc1f3d958d2f706f1fda16bd9a162e61",
+      "local_sha256": "ddaf0ff956010b4e40d963a945f859cdcc1f3d958d2f706f1fda16bd9a162e61",
+      "changes": []
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "0b580385a4e84a5ea918c24bd31d0e63bf1fe2ec3384d367ee16b40e0580a831",
+      "local_sha256": "0b580385a4e84a5ea918c24bd31d0e63bf1fe2ec3384d367ee16b40e0580a831",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "ceba8fa5c10f40fbed8feb7eb5238b63dda568908acfd874ee413747b29936c8",
+      "local_sha256": "ceba8fa5c10f40fbed8feb7eb5238b63dda568908acfd874ee413747b29936c8",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "08a038eef2a55a288047ff66db1acec63717fba3968551dda044aebd6964ec40",
+      "local_sha256": "08a038eef2a55a288047ff66db1acec63717fba3968551dda044aebd6964ec40",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "ea7b16637ae92300d10f7f951e772c544151b4d17a7c89e81b6ce66269abd497",
+      "local_sha256": "ea7b16637ae92300d10f7f951e772c544151b4d17a7c89e81b6ce66269abd497",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "ea95a4b77c23685a2e8c7236eb16bb6dbb68083cba810af6dde3a55b15ef2a70",
+      "local_sha256": "ea95a4b77c23685a2e8c7236eb16bb6dbb68083cba810af6dde3a55b15ef2a70",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "d9cb0a601dea57959f9a590629546900bae229f15643fee47735e1cb9daeee71",
+      "local_sha256": "d9cb0a601dea57959f9a590629546900bae229f15643fee47735e1cb9daeee71",
+      "changes": []
+    },
+    {
+      "upstream_path": "start_server.py",
+      "path": "start_server.py",
+      "upstream_sha256": "4f4c015777f7e40cec2a23ba1cc74b01ea84a42bec978d5107abe78c1e2e3abb",
+      "local_sha256": "4f4c015777f7e40cec2a23ba1cc74b01ea84a42bec978d5107abe78c1e2e3abb",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "3fafa5a33955511ef9033904803e776a1d520494e77ffc441ac4dd2ca840585a",
+      "local_sha256": "3fafa5a33955511ef9033904803e776a1d520494e77ffc441ac4dd2ca840585a",
+      "changes": []
+    },
+    {
+      "upstream_path": "workflow.py",
+      "path": "workflow.py",
+      "upstream_sha256": "317e59b435df1c8b2a9173c61040c087a7049e37857b78db6721093246568d2c",
+      "local_sha256": "3396f65b25249c60ee52b9fc29cbd0c5d45d20d272fbbcaf69210d2e980e5eb6",
+      "changes": [
+        "Fixed evidence fallback routing and aligned context filtering with strict affirmative grading; unit-tested routing on extracted workflow methods without SDK imports."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/animation.gif",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "assets/firecrawl-logo-with-fire.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/firecrawl_logo.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/images.jpeg",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "asyncio",
+          "base64",
+          "contextlib",
+          "dotenv",
+          "gc",
+          "io",
+          "llama_index",
+          "logging",
+          "nest_asyncio",
+          "os",
+          "qdrant_client",
+          "streamlit",
+          "sys",
+          "tempfile",
+          "time",
+          "uuid",
+          "workflow"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "BAAI/bge-large-en-v1.5",
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 49,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "reset_chat",
+            "line": 55,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 60,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "initialize_workflow",
+            "line": 76,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "run_workflow",
+            "line": 129,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".load_data",
+          "CorrectiveRAGWorkflow",
+          "Exception",
+          "FastEmbedEmbedding",
+          "MilvusVectorStore",
+          "OpenAI",
+          "SimpleDirectoryReader",
+          "StorageContext.from_defaults",
+          "ValueError",
+          "VectorStoreIndex.from_documents",
+          "asyncio.run",
+          "asyncio.wait_for",
+          "base64.b64encode",
+          "display_pdf",
+          "enumerate",
+          "f.getvalue",
+          "f.write",
+          "file.read",
+          "gc.collect",
+          "hasattr",
+          "initialize_workflow",
+          "io.StringIO",
+          "len",
+          "load_dotenv",
+          "load_llm",
+          "message_placeholder.markdown",
+          "nest_asyncio.apply",
+          "open",
+          "os.getenv",
+          "os.path.join",
+          "print",
+          "redirect_stdout",
+          "result.split",
+          "result_text.split",
+          "run_workflow",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.code",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.expander",
+          "st.file_uploader",
+          "st.header",
+          "st.image",
+          "st.markdown",
+          "st.session_state.get",
+          "st.session_state.messages.append",
+          "st.session_state.workflow.run",
+          "st.session_state.workflow_logs.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.stop",
+          "st.success",
+          "st.write",
+          "str",
+          "tempfile.TemporaryDirectory",
+          "time.sleep",
+          "uploaded_file.getvalue",
+          "uuid.uuid4"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "start_server.py",
+        "imports": [
+          "beam",
+          "subprocess",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "load_model",
+            "line": 3,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".add_python_packages",
+          "Image",
+          "Pod",
+          "print",
+          "streamlit_server.create",
+          "subprocess.Popen",
+          "subprocess.run",
+          "time.sleep"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "workflow.py",
+        "imports": [
+          "dotenv",
+          "llama_index",
+          "os",
+          "re",
+          "relevance_policy",
+          "requests",
+          "typing"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "RetrieveEvent",
+            "line": 32,
+            "kind": "ClassDef",
+            "doc": "Retrieve event (gets retrieved nodes)."
+          },
+          {
+            "name": "WebSearchEvent",
+            "line": 38,
+            "kind": "ClassDef",
+            "doc": "Web search event."
+          },
+          {
+            "name": "QueryEvent",
+            "line": 44,
+            "kind": "ClassDef",
+            "doc": "Query event. Queries given relevant text and search text."
+          },
+          {
+            "name": "CorrectiveRAGWorkflow",
+            "line": 85,
+            "kind": "ClassDef",
+            "doc": "Corrective RAG Workflow."
+          },
+          {
+            "name": "__init__",
+            "line": 88,
+            "kind": "FunctionDef",
+            "doc": "Init params."
+          },
+          {
+            "name": "retrieve",
+            "line": 118,
+            "kind": "AsyncFunctionDef",
+            "doc": "Retrieve the relevant nodes for the query."
+          },
+          {
+            "name": "eval_relevance",
+            "line": 144,
+            "kind": "AsyncFunctionDef",
+            "doc": "Evaluate relevancy of retrieved documents with the query."
+          },
+          {
+            "name": "_firecrawl_search",
+            "line": 191,
+            "kind": "FunctionDef",
+            "doc": "Perform web search using FireCrawl API directly."
+          },
+          {
+            "name": "web_search",
+            "line": 237,
+            "kind": "AsyncFunctionDef",
+            "doc": "Search the transformed query"
+          },
+          {
+            "name": "query_result",
+            "line": 266,
+            "kind": "AsyncFunctionDef",
+            "doc": "Get result with relevant text."
+          }
+        ],
+        "calls": [
+          ".__init__",
+          ".join",
+          ".strip",
+          "DEFAULT_RELEVANCY_PROMPT_TEMPLATE.format",
+          "DEFAULT_TRANSFORM_QUERY_TEMPLATE.format",
+          "OpenAI",
+          "PromptTemplate",
+          "QueryEvent",
+          "RetrieveEvent",
+          "StopEvent",
+          "WebSearchEvent",
+          "ctx.get",
+          "ctx.set",
+          "data.get",
+          "enumerate",
+          "ev.get",
+          "is_relevant_grade",
+          "len",
+          "load_dotenv",
+          "needs_web_search",
+          "os.getenv",
+          "print",
+          "re.sub",
+          "relevancy.text.lower",
+          "relevancy_results.append",
+          "relevant_text.strip",
+          "requests.post",
+          "response.json",
+          "response.raise_for_status",
+          "result.get",
+          "retriever.retrieve",
+          "search_results.append",
+          "search_text.strip",
+          "self._firecrawl_search",
+          "self.index.as_retriever",
+          "self.llm.acomplete",
+          "self.llm.complete",
+          "super",
+          "type"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "relevance_policy.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "is_relevant_grade",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "needs_web_search",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": "No evidence or an invalid grader response must trigger evidence recovery."
+          }
+        ],
+        "calls": [
+          ".lower",
+          "any",
+          "grade.strip",
+          "is_relevant_grade",
+          "isinstance"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "base64",
+      "beam",
+      "contextlib",
+      "dotenv",
+      "gc",
+      "io",
+      "llama_index",
+      "logging",
+      "nest_asyncio",
+      "os",
+      "qdrant_client",
+      "re",
+      "relevance_policy",
+      "requests",
+      "streamlit",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "time",
+      "typing",
+      "uuid",
+      "workflow"
+    ],
+    "models": [
+      "BAAI/bge-large-en-v1.5",
+      "gpt-4o"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "rag",
+  "purpose": "Combine corrective document retrieval with Firecrawl web fallback.",
+  "local_additions": [
+    {
+      "path": "relevance_policy.py",
+      "local_sha256": "0a8c90a0993ef43b84c0a9a607e456134b7bdc6b931066b671ab400599c66087",
+      "changes": [
+        "Added a strict relevance gate; reject misleading yes substrings and recover from empty retrieval."
+      ]
+    }
+  ]
+}

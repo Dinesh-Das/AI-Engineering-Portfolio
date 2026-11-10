@@ -1,0 +1,694 @@
+{
+  "id": "multi-modal-rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/multi-modal-rag",
+  "entries": [
+    {
+      "path": "clip.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "mm_prompting.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "clip.ipynb",
+      "path": "clip.ipynb",
+      "upstream_sha256": "2af50f0fb51aac08789d8f8f633850c9edcf7e47ffcfe2d0bbe6bf199e8f5521",
+      "local_sha256": "db9f771c51e777520f501b71bb21d2a2258c023a25b56e27c3b8fe3fbb245c9b",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets.",
+        "Added explicit connection/read timeouts to 1 requests calls in notebook cells."
+      ]
+    },
+    {
+      "upstream_path": "mm_prompting.ipynb",
+      "path": "mm_prompting.ipynb",
+      "upstream_sha256": "d3f585e49b042ce7e862646feb9a6d5710ca6b6668cccbf3d8db25825d4c4ea0",
+      "local_sha256": "672b351a5a6bf363fe2c0f79d193f04408bb9ea5e8f418acbfbc5cc310399f8e",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "clip.ipynb#cell-1",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-2",
+        "imports": [
+          "datasets"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dataset"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-5",
+        "imports": [
+          "torch",
+          "transformers"
+        ],
+        "environment": [],
+        "models": [
+          "openai/clip-vit-base-patch32"
+        ],
+        "symbols": [],
+        "calls": [
+          "CLIPModel.from_pretrained",
+          "CLIPProcessor.from_pretrained",
+          "model.to",
+          "torch.cuda.is_available"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".to",
+          "inputs.keys",
+          "processor"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "model",
+          "outputs.keys"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".detach",
+          ".item",
+          ".numpy",
+          "image_emb.max",
+          "image_emb.min",
+          "print",
+          "text_emb.max",
+          "text_emb.min",
+          "torch.mm",
+          "torch.norm"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-11",
+        "imports": [
+          "matplotlib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "plt.imshow",
+          "plt.show"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "search_images",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".axis",
+          ".imshow",
+          ".set_title",
+          ".to",
+          ".topk",
+          "enumerate",
+          "len",
+          "min",
+          "model.get_text_features",
+          "plt.show",
+          "plt.subplots",
+          "plt.tight_layout",
+          "print",
+          "processor",
+          "search_images",
+          "text_features.norm",
+          "torch.mm",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "search_similar_images",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".axis",
+          ".imshow",
+          ".set_title",
+          ".set_visible",
+          ".to",
+          ".topk",
+          "enumerate",
+          "image_features.norm",
+          "len",
+          "min",
+          "model.get_image_features",
+          "plt.show",
+          "plt.subplots",
+          "plt.tight_layout",
+          "print",
+          "processor",
+          "range",
+          "search_similar_images",
+          "torch.mm",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-17",
+        "imports": [
+          "PIL",
+          "requests",
+          "transformers"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "CLIPModel.from_pretrained",
+          "CLIPProcessor.from_pretrained",
+          "Image.open",
+          "requests.get"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-18",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-19",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "logits_per_image.softmax",
+          "model",
+          "processor"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "clip.ipynb#cell-20",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "semantic_search",
+            "line": 15,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".item",
+          ".to",
+          ".topk",
+          "enumerate",
+          "image_embeddings.append",
+          "image_features.norm",
+          "len",
+          "min",
+          "model.get_image_features",
+          "model.get_text_features",
+          "print",
+          "processor",
+          "semantic_search",
+          "text_features.norm",
+          "torch.cat",
+          "torch.mm",
+          "tqdm"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-3",
+        "imports": [
+          "IPython",
+          "PIL",
+          "ollama",
+          "yfinance"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "llama3.2-vision"
+        ],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "ollama.chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "llama3.2-vision"
+        ],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "ollama.chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "llama3.2-vision"
+        ],
+        "symbols": [
+          {
+            "name": "Conversation",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 2,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ollama.chat",
+          "self.messages.append"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Conversation",
+          "Markdown",
+          "conv.generate",
+          "display"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Image.open"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-14",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "llama3.2-vision"
+        ],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "ollama.chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "llama3.2-vision"
+        ],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "ollama.chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-19",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Image.open"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-20",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "llama3.2-vision"
+        ],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "ollama.chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-22",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-23",
+        "imports": [
+          "ollama",
+          "yfinance"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_stock_price",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "available_functions.get",
+          "function_to_call",
+          "ollama.chat",
+          "print",
+          "stock.history",
+          "yf.Ticker"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "mm_prompting.ipynb#cell-24",
+        "imports": [
+          "ollama",
+          "yfinance"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_stock_price",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "available_functions.get",
+          "function_to_call",
+          "ollama.chat",
+          "print",
+          "stock.history",
+          "yf.Ticker"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "clip.ipynb",
+      "mm_prompting.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "IPython",
+      "PIL",
+      "datasets",
+      "matplotlib",
+      "ollama",
+      "requests",
+      "torch",
+      "transformers",
+      "yfinance"
+    ],
+    "models": [
+      "llama3.2-vision",
+      "openai/clip-vit-base-patch32"
+    ],
+    "entries": [
+      {
+        "path": "clip.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "mm_prompting.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 31
+  },
+  "category": "rag",
+  "purpose": "Study CLIP image retrieval and multimodal prompting through notebooks."
+}

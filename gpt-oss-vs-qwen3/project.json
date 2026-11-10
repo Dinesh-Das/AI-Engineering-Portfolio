@@ -1,0 +1,363 @@
+{
+  "id": "gpt-oss-vs-qwen3",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/gpt-oss-vs-qwen3",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "77e6cdfc20bd36570126a57f3dd2f0528ce34739a14591ed4d62e40086c7a296",
+      "local_sha256": "77e6cdfc20bd36570126a57f3dd2f0528ce34739a14591ed4d62e40086c7a296",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "50f9b64db0b9d974fbf8693b29692b418dff007ce3ef1c294f47f9466d818d1f",
+      "local_sha256": "50f9b64db0b9d974fbf8693b29692b418dff007ce3ef1c294f47f9466d818d1f",
+      "changes": []
+    },
+    {
+      "upstream_path": "code_evaluation_opik.py",
+      "path": "code_evaluation_opik.py",
+      "upstream_sha256": "a3f92933ddfafed864fd7312b5f774ded7d5aa3e40ee76e07193b8b4c76a9fdf",
+      "local_sha256": "a3f92933ddfafed864fd7312b5f774ded7d5aa3e40ee76e07193b8b4c76a9fdf",
+      "changes": []
+    },
+    {
+      "upstream_path": "model_service.py",
+      "path": "model_service.py",
+      "upstream_sha256": "3806d2dd1d3fe3d0601262299153cef0b12001bd97569451f8aef06f40122873",
+      "local_sha256": "3806d2dd1d3fe3d0601262299153cef0b12001bd97569451f8aef06f40122873",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "93446dcff670e1d2b8e9cd5cdd17bc10d03299fcfb40aa4368169d5f62c71e11",
+      "local_sha256": "93446dcff670e1d2b8e9cd5cdd17bc10d03299fcfb40aa4368169d5f62c71e11",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "92160da5fc57693a390a8f91cbe18cb27cac1f96f043c0955adb03b119a72cd6",
+      "local_sha256": "92160da5fc57693a390a8f91cbe18cb27cac1f96f043c0955adb03b119a72cd6",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "test_system.py",
+      "path": "test_system.py",
+      "upstream_sha256": "9fffafb05883c07498da72db077a4d934e59b3aaaf7a089387b4f33b37d7a56c",
+      "local_sha256": "9fffafb05883c07498da72db077a4d934e59b3aaaf7a089387b4f33b37d7a56c",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "2bd9cce6c633ea59e9113a6195cb59c6848c79b587989beda42fa28c3f42f63d",
+      "local_sha256": "2bd9cce6c633ea59e9113a6195cb59c6848c79b587989beda42fa28c3f42f63d",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "asyncio",
+          "code_evaluation_opik",
+          "dotenv",
+          "model_service",
+          "pandas",
+          "plotly",
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "handle_chat_input",
+            "line": 171,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_response1",
+            "line": 192,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_response2",
+            "line": 218,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "validate_evaluation_result",
+            "line": 325,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".title",
+          "all_models.index",
+          "asyncio.gather",
+          "asyncio.run",
+          "bool",
+          "container.container",
+          "container.empty",
+          "dict",
+          "evaluate_reasoning",
+          "fig.update_layout",
+          "fig.update_xaxes",
+          "fig.update_yaxes",
+          "get_all_model_names",
+          "get_parallel_responses",
+          "handle_chat_input",
+          "isinstance",
+          "load_dotenv",
+          "message.get",
+          "metric.replace",
+          "model1_data.append",
+          "model1_thinking.strip",
+          "model2_data.append",
+          "model2_thinking.strip",
+          "pd.DataFrame",
+          "plot_data.melt",
+          "print",
+          "process_response1",
+          "process_response2",
+          "px.bar",
+          "reasoning.strip",
+          "repr",
+          "result.get",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.column_config.TextColumn",
+          "st.columns",
+          "st.dataframe",
+          "st.empty",
+          "st.error",
+          "st.expander",
+          "st.header",
+          "st.markdown",
+          "st.plotly_chart",
+          "st.selectbox",
+          "st.session_state.chat_history.append",
+          "st.session_state.last_thinking_content.get",
+          "st.set_page_config",
+          "st.spinner",
+          "st.stop",
+          "st.success",
+          "st.text_area",
+          "st.title",
+          "st.write",
+          "str",
+          "validate_evaluation_result"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "code_evaluation_opik.py",
+        "imports": [
+          "opik"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "evaluate_reasoning",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": "Evaluate reasoning capabilities of generated responses using Comet Opik's GEval metrics."
+          },
+          {
+            "name": "evaluate_code",
+            "line": 216,
+            "kind": "FunctionDef",
+            "doc": "Backward compatibility wrapper for evaluate_reasoning."
+          }
+        ],
+        "calls": [
+          "GEval",
+          "ValueError",
+          "coherence_metric.score",
+          "depth_of_analysis_metric.score",
+          "evaluate_reasoning",
+          "factual_accuracy_metric.score",
+          "generated_response.strip",
+          "logical_reasoning_metric.score",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "model_service.py",
+        "imports": [
+          "asyncio",
+          "litellm",
+          "os"
+        ],
+        "environment": [
+          "OPENROUTER_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_model_response_async",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": "Get response from reasoning models with reasoning tokens."
+          },
+          {
+            "name": "get_parallel_responses",
+            "line": 63,
+            "kind": "AsyncFunctionDef",
+            "doc": "Get two parallel responses from selected models for comparison."
+          },
+          {
+            "name": "get_all_model_names",
+            "line": 75,
+            "kind": "FunctionDef",
+            "doc": "Get all available model names."
+          }
+        ],
+        "calls": [
+          ".lower",
+          "AVAILABLE_MODELS.get",
+          "AVAILABLE_MODELS.keys",
+          "acompletion",
+          "get_model_response_async",
+          "hasattr",
+          "list",
+          "os.getenv",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "test_system.py",
+        "imports": [
+          "asyncio",
+          "code_evaluation_opik",
+          "model_service",
+          "os",
+          "pandas",
+          "plotly",
+          "streamlit",
+          "traceback"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "test_model_service",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": "Test the model service functionality."
+          },
+          {
+            "name": "test_evaluation_system",
+            "line": 33,
+            "kind": "FunctionDef",
+            "doc": "Test the evaluation system."
+          },
+          {
+            "name": "test_system_integration",
+            "line": 76,
+            "kind": "FunctionDef",
+            "doc": "Test basic system integration."
+          },
+          {
+            "name": "main",
+            "line": 106,
+            "kind": "FunctionDef",
+            "doc": "Run all tests."
+          }
+        ],
+        "calls": [
+          ".title",
+          "evaluate_reasoning",
+          "get_all_model_names",
+          "get_model_mapping",
+          "len",
+          "main",
+          "metric.replace",
+          "print",
+          "test_evaluation_system",
+          "test_model_service",
+          "test_system_integration",
+          "traceback.print_exc",
+          "validate_model_name"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "OPENAI_API_KEY",
+      "OPENROUTER_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "code_evaluation_opik",
+      "dotenv",
+      "litellm",
+      "model_service",
+      "opik",
+      "os",
+      "pandas",
+      "plotly",
+      "streamlit",
+      "traceback"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "evaluation",
+  "purpose": "Compare reasoning responses using parallel inference and judge metrics."
+}

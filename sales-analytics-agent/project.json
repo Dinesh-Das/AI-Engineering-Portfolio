@@ -1,0 +1,89 @@
+{
+  "id": "sales-analytics-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/sales-analytics-agent",
+  "entries": [
+    {
+      "path": "main.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "main.py",
+      "path": "main.py",
+      "upstream_sha256": "64155aad64c0ce8449ccd589e91d38d9b0e576681090bc8cbab03847bd8acf28",
+      "local_sha256": "64155aad64c0ce8449ccd589e91d38d9b0e576681090bc8cbab03847bd8acf28",
+      "changes": []
+    },
+    {
+      "upstream_path": "QUERY.md",
+      "path": "QUERY.md",
+      "upstream_sha256": "7317efc7f10666d527041c67d008fa0d3e9da6d18620ee67be838abc4d22cb35",
+      "local_sha256": "464d60f6966aaa6df15534a23520ed02d2d1a9a5889c0267dbdc2af33b3c21c2",
+      "changes": [
+        "Redacted 1 additional dictionary credential literals; values are not retained."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "4d42f558c4262b61c66f9982ed557060aab77b5336c93fd82fefa9add1c5d0a1",
+      "local_sha256": "4d42f558c4262b61c66f9982ed557060aab77b5336c93fd82fefa9add1c5d0a1",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "main.py",
+        "imports": [
+          "mindsdb_sdk"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "agent.completion_stream",
+          "mindsdb_sdk.connect",
+          "print",
+          "server.agents.get"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "mindsdb_sdk"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "main.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 1
+  },
+  "category": "agents",
+  "purpose": "Join MongoDB and HubSpot data through MindsDB for natural-language analytics."
+}

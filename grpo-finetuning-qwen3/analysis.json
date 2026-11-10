@@ -1,0 +1,570 @@
+{
+  "units": [
+    {
+      "path": "agent-skill/grpo-finetune/agent_demo.py",
+      "imports": [
+        "argparse",
+        "dotenv",
+        "json",
+        "openai",
+        "os",
+        "re",
+        "sys",
+        "time"
+      ],
+      "environment": [
+        "FIREWORKS_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "vlen",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "box_line",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "print_banner",
+          "line": 47,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "extract",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "validate",
+          "line": 83,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run_agent",
+          "line": 87,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".strip",
+        "OpenAI",
+        "all",
+        "ap.add_argument",
+        "ap.parse_args",
+        "argparse.ArgumentParser",
+        "box_line",
+        "client.chat.completions.create",
+        "content.split",
+        "content.strip",
+        "enumerate",
+        "extract",
+        "json.loads",
+        "len",
+        "line.strip",
+        "load_dotenv",
+        "open",
+        "print",
+        "print_banner",
+        "re.sub",
+        "result.get",
+        "round",
+        "run_agent",
+        "time.sleep",
+        "time.time",
+        "validate",
+        "vlen"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "agent-skill/grpo-finetune/generate_reward.py",
+      "imports": [
+        "argparse",
+        "importlib",
+        "pathlib",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "load_reward",
+          "line": 13,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "validate_reward",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Path",
+        "abs",
+        "ap.add_argument",
+        "ap.parse_args",
+        "argparse.ArgumentParser",
+        "callable",
+        "enumerate",
+        "float",
+        "getattr",
+        "hasattr",
+        "importlib.util.module_from_spec",
+        "importlib.util.spec_from_file_location",
+        "isinstance",
+        "len",
+        "load_reward",
+        "mod.score",
+        "path.exists",
+        "print",
+        "spec.loader.exec_module",
+        "str",
+        "sys.exit",
+        "validate_reward"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "agent-skill/grpo-finetune/run_pipeline.py",
+      "imports": [
+        "argparse",
+        "asyncio",
+        "dotenv",
+        "fireworks",
+        "generate_reward",
+        "json",
+        "nest_asyncio",
+        "openai",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time",
+        "training"
+      ],
+      "environment": [
+        "FIREWORKS_ACCOUNT_ID",
+        "FIREWORKS_API_KEY"
+      ],
+      "models": [
+        "Qwen/Qwen3-8B",
+        "accounts/fireworks/models/qwen3-8b"
+      ],
+      "symbols": [
+        {
+          "name": "banner",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "checkpoint",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "make_client",
+          "line": 41,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run_eval",
+          "line": 47,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 73,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".run_until_complete",
+        ".strip",
+        "Config",
+        "DeployConfig",
+        "Fireworks",
+        "InfraConfig",
+        "OpenAI",
+        "Path",
+        "WeightSyncConfig",
+        "ap.add_argument",
+        "ap.parse_args",
+        "argparse.ArgumentParser",
+        "asyncio.get_event_loop",
+        "banner",
+        "checkpoint",
+        "client.chat.completions.create",
+        "content.split",
+        "entry.get",
+        "enumerate",
+        "fw.datasets.create",
+        "fw.datasets.get",
+        "fw.datasets.upload",
+        "invoices_path.exists",
+        "json.loads",
+        "len",
+        "load_dotenv",
+        "load_reward",
+        "main",
+        "make_client",
+        "nest_asyncio.apply",
+        "open",
+        "print",
+        "rl_main",
+        "run_eval",
+        "score_fn",
+        "scores.append",
+        "str",
+        "subprocess.run",
+        "sum",
+        "sys.exit",
+        "sys.path.insert",
+        "time.sleep",
+        "time.time",
+        "validate_reward"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-3",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-4",
+      "imports": [
+        "dotenv",
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "environment": [
+        "FIREWORKS_ACCOUNT_ID",
+        "FIREWORKS_API_KEY",
+        "OPENROUTER_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "load_dotenv",
+        "os.getenv",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-6",
+      "imports": [
+        "jsonschema"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "score",
+          "line": 15,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "completion.strip",
+        "json.loads",
+        "print",
+        "score",
+        "validate"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-8",
+      "imports": [
+        "fireworks"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Fireworks",
+        "Path",
+        "TRAIN_FILE.exists",
+        "fw_client.datasets.create",
+        "fw_client.datasets.get",
+        "fw_client.datasets.upload",
+        "open",
+        "print",
+        "str",
+        "sum",
+        "time.sleep"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-10",
+      "imports": [
+        "openai"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "run_eval",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".strip",
+        "OpenAI",
+        "client.chat.completions.create",
+        "content.split",
+        "enumerate",
+        "json.loads",
+        "len",
+        "open",
+        "print",
+        "run_eval",
+        "score",
+        "scores.append",
+        "sum"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-12",
+      "imports": [
+        "asyncio",
+        "nest_asyncio",
+        "sys",
+        "training"
+      ],
+      "environment": [],
+      "models": [
+        "accounts/fireworks/models/qwen3-8b",
+        "invoice-extractor-v1"
+      ],
+      "symbols": [
+        {
+          "name": "_patched_run",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "invoice_reward",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Config",
+        "DeployConfig",
+        "InfraConfig",
+        "WeightSyncConfig",
+        "asyncio.get_event_loop",
+        "loop.run_until_complete",
+        "main",
+        "nest_asyncio.apply",
+        "print",
+        "score",
+        "sys.path.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-14",
+      "imports": [
+        "openai"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "OpenAI",
+        "print",
+        "run_eval"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-16",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "run_eval"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-18",
+      "imports": [
+        "matplotlib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".set_visible",
+        "ax.bar",
+        "ax.set_axisbelow",
+        "ax.set_facecolor",
+        "ax.set_title",
+        "ax.set_ylabel",
+        "ax.set_ylim",
+        "ax.set_yticks",
+        "ax.text",
+        "ax.tick_params",
+        "ax.yaxis.grid",
+        "bar.get_height",
+        "bar.get_width",
+        "bar.get_x",
+        "fig.patch.set_facecolor",
+        "plt.savefig",
+        "plt.show",
+        "plt.subplots",
+        "plt.tight_layout",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb#cell-20",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".strip",
+        "fw_inf_client.chat.completions.create",
+        "json.dumps",
+        "json.loads",
+        "output.split",
+        "print",
+        "score"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "grpo_json_extraction.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "FIREWORKS_ACCOUNT_ID",
+    "FIREWORKS_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "imports": [
+    "argparse",
+    "asyncio",
+    "dotenv",
+    "fireworks",
+    "generate_reward",
+    "importlib",
+    "json",
+    "jsonschema",
+    "matplotlib",
+    "nest_asyncio",
+    "openai",
+    "os",
+    "pathlib",
+    "re",
+    "subprocess",
+    "sys",
+    "time",
+    "training"
+  ],
+  "models": [
+    "Qwen/Qwen3-8B",
+    "accounts/fireworks/models/qwen3-8b",
+    "invoice-extractor-v1"
+  ],
+  "entries": [
+    {
+      "path": "agent-skill/grpo-finetune/agent_demo.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "agent-skill/grpo-finetune/generate_reward.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "agent-skill/grpo-finetune/run_pipeline.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "grpo_json_extraction.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

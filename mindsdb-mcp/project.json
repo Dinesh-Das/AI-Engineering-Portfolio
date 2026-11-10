@@ -1,0 +1,53 @@
+{
+  "id": "mindsdb-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/mindsdb-mcp",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "afba091396d3ee8be4de75ad9a6642a011fea708b81dfefd4328b35bb332f301",
+      "local_sha256": "afba091396d3ee8be4de75ad9a6642a011fea708b81dfefd4328b35bb332f301",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/cursor-chat-agent.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/cursor-mcp-settings.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/mindsdb-mcp-listed.png",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "recipe",
+  "purpose": "Understand federated data access through a MindsDB MCP integration."
+}

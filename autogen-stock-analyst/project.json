@@ -1,0 +1,335 @@
+{
+  "id": "autogen-stock-analyst",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/autogen-stock-analyst",
+  "entries": [
+    {
+      "path": "coding_and_financial_analyst.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "coding_and_financial_analyst.ipynb",
+      "path": "coding_and_financial_analyst.ipynb",
+      "upstream_sha256": "97d14af623be5e50d3b0b0519eaa933e1c2cb5e899085adc7d3a6f6cfaac436c",
+      "local_sha256": "1ce8baaed9bb272b0cfe3b837175e895c1ae2d577834ac9314e613200714b277",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "custom_autogen_model.py",
+      "path": "custom_autogen_model.py",
+      "upstream_sha256": "05ad56441c2195de38a8167b30a7ec36b3cd8dd1c484ae70c4fea51010a8a4a7",
+      "local_sha256": "05ad56441c2195de38a8167b30a7ec36b3cd8dd1c484ae70c4fea51010a8a4a7",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "5272411c016ab0cfc6d20e06ef5f264dc3532540d4548f4b75dd9685a6f6e777",
+      "local_sha256": "5272411c016ab0cfc6d20e06ef5f264dc3532540d4548f4b75dd9685a6f6e777",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-1",
+        "imports": [
+          "autogen",
+          "custom_autogen_model",
+          "datetime",
+          "dotenv",
+          "json",
+          "os"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dotenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-2",
+        "imports": [],
+        "environment": [
+          "IMAGINE_AUTOGEN_CONFIG"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "config_list",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "autogen.config_list_from_json",
+          "json.dumps"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-4",
+        "imports": [],
+        "environment": [
+          "IMAGINE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "config_list"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "LocalCommandLineCodeExecutor"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "ConversableAgent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "UserProxyAgent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "code_writer_agent.register_model_client"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".date",
+          "datetime.datetime.now"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "code_executor_agent.initiate_chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "coding_and_financial_analyst.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "custom_autogen_model.py",
+        "imports": [
+          "imagine",
+          "types"
+        ],
+        "environment": [],
+        "models": [
+          "Llama-3.1-70B"
+        ],
+        "symbols": [
+          {
+            "name": "CustomModelClient",
+            "line": 12,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "message_retrieval",
+            "line": 80,
+            "kind": "FunctionDef",
+            "doc": "Retrieve the messages from the response."
+          },
+          {
+            "name": "cost",
+            "line": 92,
+            "kind": "FunctionDef",
+            "doc": "Calculate the cost of the response."
+          },
+          {
+            "name": "get_usage",
+            "line": 98,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "ImagineChat",
+          "ImagineLLM",
+          "NotImplementedError",
+          "SimpleNamespace",
+          "ValueError",
+          "config.get",
+          "gen_config_params.get",
+          "hasattr",
+          "messages.append",
+          "params.get",
+          "print",
+          "range",
+          "response.choices.append",
+          "self.model.invoke"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "coding_and_financial_analyst.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "IMAGINE_API_KEY",
+      "IMAGINE_AUTOGEN_CONFIG"
+    ],
+    "imports": [
+      "autogen",
+      "custom_autogen_model",
+      "datetime",
+      "dotenv",
+      "imagine",
+      "json",
+      "os",
+      "types"
+    ],
+    "models": [
+      "Llama-3.1-70B"
+    ],
+    "entries": [
+      {
+        "path": "coding_and_financial_analyst.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 12
+  },
+  "category": "agents",
+  "purpose": "Use AutoGen with a custom model client for financial analysis and code generation."
+}

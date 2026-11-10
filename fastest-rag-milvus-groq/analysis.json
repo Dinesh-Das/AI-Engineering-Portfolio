@@ -1,0 +1,368 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "base64",
+        "dotenv",
+        "gc",
+        "llama_index",
+        "os",
+        "rag",
+        "streamlit",
+        "tempfile",
+        "time",
+        "uuid"
+      ],
+      "environment": [
+        "GROQ_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 27,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_pdf",
+          "line": 32,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        "EmbedData",
+        "MilvusVDB_BQ",
+        "RAG",
+        "Retriever",
+        "SimpleDirectoryReader",
+        "base64.b64encode",
+        "candidate.startswith",
+        "display_pdf",
+        "embeddata.embed",
+        "embeddata.embed_model.get_text_embedding",
+        "f.write",
+        "file.read",
+        "gc.collect",
+        "hasattr",
+        "int",
+        "len",
+        "load_dotenv",
+        "loader.load_data",
+        "message_placeholder.markdown",
+        "milvus_vdb.create_collection",
+        "milvus_vdb.define_client",
+        "milvus_vdb.ingest_data",
+        "open",
+        "os.getenv",
+        "os.path.exists",
+        "os.path.join",
+        "os.remove",
+        "progress_bar.progress",
+        "query_engine.generate_context",
+        "query_engine.llm.stream_complete",
+        "query_engine.prompt_template.format",
+        "reset_chat",
+        "st.button",
+        "st.caption",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.progress",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.text",
+        "st.text_input",
+        "st.warning",
+        "st.write",
+        "str",
+        "tempfile.TemporaryDirectory",
+        "tempfile.gettempdir",
+        "time.perf_counter",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "rag.py",
+      "imports": [
+        "llama_index",
+        "logging",
+        "numpy",
+        "os",
+        "pymilvus"
+      ],
+      "environment": [
+        "GROQ_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "batch_iterate",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": "Yield successive n-sized chunks from list."
+        },
+        {
+          "name": "EmbedData",
+          "line": 17,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "MilvusVDB_BQ",
+          "line": 60,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "Retriever",
+          "line": 144,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "RAG",
+          "line": 187,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_load_embed_model",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_embedding",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_binary_quantize",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": "Convert float32 embeddings to binary vectors"
+        },
+        {
+          "name": "embed",
+          "line": 44,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 61,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "define_client",
+          "line": 74,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_collection",
+          "line": 82,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ingest_data",
+          "line": 117,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 145,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_binary_quantize_query",
+          "line": 150,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "search",
+          "line": 157,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 188,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_setup_llm",
+          "line": 207,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_context",
+          "line": 218,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "query",
+          "line": 228,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "chat_query",
+          "line": 243,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".astype",
+        ".join",
+        ".tobytes",
+        "ChatMessage",
+        "Groq",
+        "HuggingFaceEmbedding",
+        "MilvusClient",
+        "ValueError",
+        "batch_iterate",
+        "combined_context.append",
+        "data_batch.append",
+        "formatted_results.append",
+        "index_params.add_index",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "np.array",
+        "np.packbits",
+        "np.where",
+        "os.getenv",
+        "range",
+        "schema.add_field",
+        "self._binary_quantize",
+        "self._binary_quantize_query",
+        "self._load_embed_model",
+        "self._setup_llm",
+        "self.binary_embeddings.extend",
+        "self.client.create_collection",
+        "self.client.create_schema",
+        "self.client.drop_collection",
+        "self.client.has_collection",
+        "self.client.insert",
+        "self.client.prepare_index_params",
+        "self.embed_model.get_text_embedding_batch",
+        "self.embeddata.embed_model.get_query_embedding",
+        "self.embeddings.extend",
+        "self.generate_context",
+        "self.generate_embedding",
+        "self.llm.chat",
+        "self.llm.complete",
+        "self.llm.stream_chat",
+        "self.llm.stream_complete",
+        "self.prompt_template.format",
+        "self.retriever.search",
+        "self.vector_db.client.search",
+        "vec.tobytes",
+        "zip"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "rag.py",
+          "line": 26,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "start_server.py",
+      "imports": [
+        "beam"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".add_python_packages",
+        "Image",
+        "Pod",
+        "print",
+        "streamlit_server.create"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "GROQ_API_KEY"
+  ],
+  "imports": [
+    "base64",
+    "beam",
+    "dotenv",
+    "gc",
+    "llama_index",
+    "logging",
+    "numpy",
+    "os",
+    "pymilvus",
+    "rag",
+    "streamlit",
+    "tempfile",
+    "time",
+    "uuid"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "rag.py",
+      "line": 26,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

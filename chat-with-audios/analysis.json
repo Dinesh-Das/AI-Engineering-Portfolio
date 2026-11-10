@@ -1,0 +1,308 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "base64",
+        "dotenv",
+        "gc",
+        "os",
+        "rag_code",
+        "streamlit",
+        "tempfile",
+        "uuid"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".format",
+        ".read",
+        "EmbedData",
+        "QdrantVDB_QB",
+        "RAG",
+        "Retriever",
+        "Transcribe",
+        "base64.b64encode",
+        "embeddata.embed",
+        "f.write",
+        "gc.collect",
+        "load_dotenv",
+        "message_placeholder.markdown",
+        "open",
+        "os.getenv",
+        "os.path.join",
+        "qdrant_vdb.create_collection",
+        "qdrant_vdb.define_client",
+        "qdrant_vdb.ingest_data",
+        "query_engine.query",
+        "reset_chat",
+        "st.audio",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.expander",
+        "st.file_uploader",
+        "st.header",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.subheader",
+        "st.success",
+        "st.text",
+        "st.write",
+        "tempfile.TemporaryDirectory",
+        "transcriber.transcribe_audio",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "rag_code.py",
+      "imports": [
+        "assemblyai",
+        "llama_index",
+        "qdrant_client",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "batch_iterate",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": "Yield successive n-sized chunks from lst."
+        },
+        {
+          "name": "EmbedData",
+          "line": 19,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "QdrantVDB_QB",
+          "line": 42,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "Retriever",
+          "line": 83,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "RAG",
+          "line": 112,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "Transcribe",
+          "line": 179,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 21,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_load_embed_model",
+          "line": 27,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_embedding",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "embed",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 44,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "define_client",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_collection",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ingest_data",
+          "line": 70,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 85,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "search",
+          "line": 90,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 114,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_setup_llm",
+          "line": 136,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_context",
+          "line": 149,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "query",
+          "line": 162,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 180,
+          "kind": "FunctionDef",
+          "doc": "Initialize the Transcribe class with AssemblyAI API key."
+        },
+        {
+          "name": "transcribe_audio",
+          "line": 185,
+          "kind": "FunctionDef",
+          "doc": "Transcribe an audio file and return speaker-labeled transcripts."
+        }
+      ],
+      "calls": [
+        ".join",
+        "ChatMessage",
+        "HuggingFaceEmbedding",
+        "QdrantClient",
+        "SambaNovaCloud",
+        "aai.Transcriber",
+        "aai.TranscriptionConfig",
+        "batch_iterate",
+        "combined_prompt.append",
+        "dict",
+        "len",
+        "models.BinaryQuantization",
+        "models.BinaryQuantizationConfig",
+        "models.OptimizersConfigDiff",
+        "models.QuantizationSearchParams",
+        "models.SearchParams",
+        "models.VectorParams",
+        "range",
+        "self._load_embed_model",
+        "self._setup_llm",
+        "self.client.collection_exists",
+        "self.client.create_collection",
+        "self.client.update_collection",
+        "self.client.upload_collection",
+        "self.embed_model.get_text_embedding_batch",
+        "self.embeddata.embed_model.get_query_embedding",
+        "self.embeddings.extend",
+        "self.generate_context",
+        "self.generate_embedding",
+        "self.llm.stream_complete",
+        "self.qa_prompt_tmpl_str.format",
+        "self.retriever.search",
+        "self.transcriber.transcribe",
+        "self.vector_db.client.search",
+        "speaker_transcripts.append",
+        "zip"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "rag_code.py",
+          "line": 28,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "ASSEMBLYAI_API_KEY"
+  ],
+  "imports": [
+    "assemblyai",
+    "base64",
+    "dotenv",
+    "gc",
+    "llama_index",
+    "os",
+    "qdrant_client",
+    "rag_code",
+    "streamlit",
+    "tempfile",
+    "typing",
+    "uuid"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "rag_code.py",
+      "line": 28,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

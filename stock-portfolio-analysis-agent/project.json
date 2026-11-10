@@ -1,0 +1,487 @@
+{
+  "id": "stock-portfolio-analysis-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/stock-portfolio-analysis-agent",
+  "entries": [
+    {
+      "path": "agent/main.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent/.env.example",
+      "path": "agent/.env.example",
+      "upstream_sha256": "035b9862ef22e2a991af25bd34083a6a2b99e7ef956b5d75b055bfff1826f6b6",
+      "local_sha256": "035b9862ef22e2a991af25bd34083a6a2b99e7ef956b5d75b055bfff1826f6b6",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent/__init__.py",
+      "path": "agent/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent/main.py",
+      "path": "agent/main.py",
+      "upstream_sha256": "161db3ba5a6d92f9222e6023dd242f76b551ccb72cc9cb5267fbc33cbfdef51d",
+      "local_sha256": "161db3ba5a6d92f9222e6023dd242f76b551ccb72cc9cb5267fbc33cbfdef51d",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent/prompts.py",
+      "path": "agent/prompts.py",
+      "upstream_sha256": "aa44e344e7356578c32ffcd685870a7ee0c0e8a4633b82bbbdacbfcdcbaaf7ae",
+      "local_sha256": "aa44e344e7356578c32ffcd685870a7ee0c0e8a4633b82bbbdacbfcdcbaaf7ae",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent/stock_analysis.py",
+      "path": "agent/stock_analysis.py",
+      "upstream_sha256": "423d660ddd440cd0c89388224fd567f33adf2d15553c7776e697003efa1f37f9",
+      "local_sha256": "423d660ddd440cd0c89388224fd567f33adf2d15553c7776e697003efa1f37f9",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "10053b94e0f5c1cec1573578dafab9280d92cb331d8cd059158f45382418c48f",
+      "local_sha256": "20ef6947df0048b538f16a555160a2695f08a1fc451d22d8e910e1a61d49853e",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "63aa5df466e12d979ada2b4623506ff82e8fd964040127605488219e1885e01e",
+      "local_sha256": "63aa5df466e12d979ada2b4623506ff82e8fd964040127605488219e1885e01e",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "280f164191cf86d30821972be52400c609425d4dcbb5a81d220de9745d874445",
+      "local_sha256": "280f164191cf86d30821972be52400c609425d4dcbb5a81d220de9745d874445",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "frontend/.env.example",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/next-env.d.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/package.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/pnpm-lock.yaml",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/postcss.config.mjs",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/api/copilotkit/route.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/cash-panel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/chart-components/allocation-table.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/chart-components/bar-chart.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/chart-components/insight-card.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/chart-components/line-chart.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/chart-components/section-title.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/component-tree.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/generative-canvas.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/prompt-panel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/theme-provider.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/components/tool-logs.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/favicon.ico",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/app/page.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/src/utils/prompts.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "agent/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "agent/main.py",
+        "imports": [
+          "ag_ui",
+          "asyncio",
+          "copilotkit",
+          "fastapi",
+          "os",
+          "stock_analysis",
+          "typing",
+          "uuid",
+          "uvicorn"
+        ],
+        "environment": [
+          "PORT"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "AgentState",
+            "line": 51,
+            "kind": "ClassDef",
+            "doc": "Agent state class that manages the data throughout the stock analysis workflow."
+          },
+          {
+            "name": "crewai_agent",
+            "line": 78,
+            "kind": "AsyncFunctionDef",
+            "doc": "Main API endpoint for processing stock analysis requests."
+          },
+          {
+            "name": "main",
+            "line": 346,
+            "kind": "FunctionDef",
+            "doc": "Main function to start the uvicorn server."
+          },
+          {
+            "name": "event_generator",
+            "line": 96,
+            "kind": "AsyncFunctionDef",
+            "doc": "Asynchronous generator that streams events to the client in real-time."
+          },
+          {
+            "name": "emit_event",
+            "line": 115,
+            "kind": "FunctionDef",
+            "doc": "Callback function for the workflow to emit events"
+          }
+        ],
+        "calls": [
+          ".get",
+          ".join",
+          ".kickoff_async",
+          ".lower",
+          "AgentState",
+          "EventEncoder",
+          "FastAPI",
+          "RunFinishedEvent",
+          "RunStartedEvent",
+          "StateDeltaEvent",
+          "StateSnapshotEvent",
+          "StockAnalysisFlow",
+          "StreamingResponse",
+          "TextMessageContentEvent",
+          "TextMessageEndEvent",
+          "TextMessageStartEvent",
+          "ToolCallArgsEvent",
+          "ToolCallEndEvent",
+          "ToolCallStartEvent",
+          "agent_task.done",
+          "app.post",
+          "asyncio.Queue",
+          "asyncio.create_task",
+          "asyncio.sleep",
+          "asyncio.wait_for",
+          "encoder.encode",
+          "event_generator",
+          "event_queue.get",
+          "event_queue.put_nowait",
+          "hasattr",
+          "int",
+          "isinstance",
+          "len",
+          "main",
+          "max",
+          "os.getenv",
+          "print",
+          "range",
+          "str",
+          "uuid.uuid4",
+          "uvicorn.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "agent/prompts.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "agent/stock_analysis.py",
+        "imports": [
+          "ag_ui",
+          "asyncio",
+          "crewai",
+          "datetime",
+          "dotenv",
+          "json",
+          "litellm",
+          "numpy",
+          "openai",
+          "os",
+          "pandas",
+          "prompts",
+          "pydantic",
+          "typing",
+          "uuid",
+          "yfinance"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "symbols": [
+          {
+            "name": "StockAnalysisFlow",
+            "line": 163,
+            "kind": "ClassDef",
+            "doc": "Main workflow class that orchestrates the stock analysis process."
+          },
+          {
+            "name": "convert_tool_call",
+            "line": 1036,
+            "kind": "FunctionDef",
+            "doc": "Utility function to convert OpenAI tool call format to our internal format"
+          },
+          {
+            "name": "start",
+            "line": 176,
+            "kind": "FunctionDef",
+            "doc": "Step 1: Initialize the workflow"
+          },
+          {
+            "name": "chat",
+            "line": 189,
+            "kind": "AsyncFunctionDef",
+            "doc": "Step 2: Parse user input and extract investment parameters"
+          },
+          {
+            "name": "simulation",
+            "line": 296,
+            "kind": "AsyncFunctionDef",
+            "doc": "Step 3: Gather historical stock data for analysis"
+          },
+          {
+            "name": "allocation",
+            "line": 456,
+            "kind": "AsyncFunctionDef",
+            "doc": "Step 4: Calculate portfolio allocation and performance simulation"
+          },
+          {
+            "name": "insights",
+            "line": 919,
+            "kind": "AsyncFunctionDef",
+            "doc": "Step 5: Generate bull/bear insights about the selected stocks"
+          },
+          {
+            "name": "end",
+            "line": 1022,
+            "kind": "FunctionDef",
+            "doc": "Step 6: Final step - return the complete state"
+          }
+        ],
+        "calls": [
+          "",
+          ".append",
+          ".split",
+          ".strftime",
+          "AssistantMessage",
+          "OpenAI",
+          "StateDeltaEvent",
+          "ToolMessage",
+          "add_funds_dates.append",
+          "args.get",
+          "arguments.keys",
+          "asyncio.sleep",
+          "convert_tool_call",
+          "date.date",
+          "datetime.now",
+          "datetime.today",
+          "enumerate",
+          "final_prices.to_dict",
+          "first_date.date",
+          "float",
+          "hasattr",
+          "holdings.copy",
+          "int",
+          "investment_log.append",
+          "isinstance",
+          "json.dumps",
+          "json.loads",
+          "len",
+          "list",
+          "listen",
+          "load_dotenv",
+          "log.split",
+          "model.chat.completions.create",
+          "np.isnan",
+          "or_",
+          "os.getenv",
+          "pd.Series",
+          "pd.isna",
+          "performanceData.append",
+          "print",
+          "reversed",
+          "self.state.get",
+          "set",
+          "spy_investment_log.append",
+          "spy_prices.reindex",
+          "start",
+          "stock_data.iterrows",
+          "stock_data.sort_index",
+          "str",
+          "sum",
+          "system_prompt.replace",
+          "uuid.uuid4",
+          "yf.download"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "OPENAI_API_KEY",
+      "PORT"
+    ],
+    "imports": [
+      "ag_ui",
+      "asyncio",
+      "copilotkit",
+      "crewai",
+      "datetime",
+      "dotenv",
+      "fastapi",
+      "json",
+      "litellm",
+      "numpy",
+      "openai",
+      "os",
+      "pandas",
+      "prompts",
+      "pydantic",
+      "stock_analysis",
+      "typing",
+      "uuid",
+      "uvicorn",
+      "yfinance"
+    ],
+    "models": [
+      "gpt-4o-mini"
+    ],
+    "entries": [
+      {
+        "path": "agent/main.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "agents",
+  "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend."
+}

@@ -1,0 +1,98 @@
+{
+  "rag": {
+    "lesson": "RAG has two independently testable problems: finding evidence and generating an answer from that evidence. Better prompts cannot recover a document that retrieval never selected. Preserve source IDs and chunk boundaries before tuning the generator.",
+    "pipeline": "source -> parse/chunk -> embed -> persistent index -> retrieve -> optional rerank -> grounded synthesis -> cited answer",
+    "metrics": "Recall@k and MRR on labeled evidence; citation precision; supported-answer accuracy; no-answer abstention; ingestion cost; query p50/p95 latency.",
+    "failure": "Stale indexes, embedding dimension mismatches, chunk boundaries that split evidence, unauthorized cross-tenant retrieval, and confident answers without supporting context.",
+    "deployment": "Start with a stateless query service, persistent vector storage and a separate asynchronous ingestion worker. Use managed model inference initially unless measured privacy, latency or utilization requirements justify a dedicated GPU service. At high volume, batch embeddings and scale query workers independently of parsers.",
+    "tradeoff": "A managed vector service reduces storage operations but adds network, cost and data-location constraints. A local persisted index is simpler for a single user, but its process-local state and file locks limit horizontal scaling. Choose using measured corpus size and concurrency."
+  },
+  "retrieval": {
+    "lesson": "Retrieval speed is useful only at an acceptable evidence-recall level. Quantization changes similarity behavior, while late-interaction reranking adds token-level information at higher compute and memory cost. Separate candidate generation from reranking.",
+    "pipeline": "versioned embedding model -> candidate index -> top-N candidates -> optional precise reranking -> top-k evidence -> generator",
+    "metrics": "Recall@k against a float/full-precision baseline; MRR/NDCG; index memory; build time; cold/warm p50/p95 search latency; final answer support.",
+    "failure": "Measuring only warm search time, including zero padding in MaxSim, inconsistent normalization, using a changed embedder against an old index, or trading away recall without noticing.",
+    "deployment": "Separate offline index construction from a read-optimized search service. Version embedding weights, normalization and quantization settings with the index. Keep a float reference set for regression checks. Add a reranker only after measuring its effect on both retrieval quality and end-to-end latency.",
+    "tradeoff": "Binary quantization saves memory and bandwidth, but can require larger candidate pools or reranking. Multi-vector indexes improve matching detail while increasing storage and scoring cost. Benchmark the actual corpus rather than adopting tutorial speed claims."
+  },
+  "agents": {
+    "lesson": "An agent is a model-driven controller over tools and state. Its output is only as reliable as the tool contracts, termination rules and persisted state. Keep deterministic business calculations outside free-form generation and validate each state transition.",
+    "pipeline": "request -> validated state -> plan/route -> scoped tool calls -> checked tool results -> synthesis -> persisted outcome",
+    "metrics": "Task success on labeled scenarios; unauthorized-action rate; tool-call validity; recovery after a failed step; duplicate-side-effect rate; tokens and cost per successful task.",
+    "failure": "Unbounded delegation, repeated tool calls after retries, lost state on restart, prompt-injected tool instructions, and judging success by fluent prose instead of observable task completion.",
+    "deployment": "Use a small stateless API to submit jobs and durable workers to execute long workflows. Persist step IDs, tool inputs and outcomes in a transactional store; use idempotency keys for external effects. Bound steps, concurrency, tokens and wall time. Separate read-only research tools from tools that publish or mutate data.",
+    "tradeoff": "A direct workflow is easier to debug than a large unconstrained agent crew. Add agents only when specialization improves measured task success. Durable orchestration adds operational cost but is justified when restart recovery and external side effects matter."
+  },
+  "memory": {
+    "lesson": "Conversation history, semantic memory and graph facts solve different retrieval problems. Persistent memory is application data: it needs ownership, timestamps, correction, expiry and deletion. An inferred observation should not become an unquestionable fact.",
+    "pipeline": "authenticated turn -> retrieve scoped history/facts -> select context under budget -> model/tool response -> validated memory write",
+    "metrics": "Cross-session fact recall; correction handling; contradiction resolution; cross-user leakage rate; deletion propagation; context token use and retrieval latency.",
+    "failure": "Stale facts overriding corrections, accidentally shared user IDs, storing secrets in memory, summaries erasing qualifiers, and undeleted facts remaining in derived graph or vector records.",
+    "deployment": "Keep agent workers stateless and memory in a managed database or graph service. Enforce caller identity in storage queries, not only in prompts. Version the memory extraction policy and store fact provenance. Add explicit APIs for correction, export and deletion, including derived embeddings and caches.",
+    "tradeoff": "Graph memory can improve relational and temporal queries but brings schema, consistency and operations work. Start with scoped session history and add graph extraction only when its value is demonstrated by follow-up evaluation."
+  },
+  "mcp": {
+    "lesson": "MCP standardizes how tools are described and called; it does not establish whether a caller should be allowed to use them. Treat each server as an integration boundary with typed arguments, explicit authorization and structured errors.",
+    "pipeline": "authenticated client -> tool discovery -> argument validation -> authorized operation -> bounded backend call -> structured result",
+    "metrics": "Tool-schema validity; success/error classification; invalid-input rejection; unauthorized-resource rejection; timeouts; reconnect behavior and duplicate side effects.",
+    "failure": "Forwarding every environment variable to child servers, trusting a discovered tool's description as policy, unrestricted filesystem/database access, and using a transport reconnect as proof an operation did not execute.",
+    "deployment": "Use local stdio for one trusted local client; use an authenticated network transport for shared service access. Keep service credentials behind the server. Scope storage and tool permissions per caller, cap result sizes and distinguish transient failures from validation failures. Move long operations into durable jobs.",
+    "tradeoff": "One server is simple to operate but can aggregate excessive permissions. Separate servers by trust boundary when permissions or scaling differ, while maintaining a stable, versioned tool contract."
+  },
+  "training": {
+    "lesson": "Training optimizes the objective you encode, including unintended shortcuts. Separate training, model selection and final evaluation data; compare with a frozen base-model baseline. Track data, reward/loss code, preprocessing and exported weights together.",
+    "pipeline": "validated versioned dataset -> baseline evaluation -> isolated training job -> checkpoint/adapter -> independent evaluation -> export parity -> registered artifact",
+    "metrics": "Held-out task accuracy; schema/format validity separately from semantic correctness; per-class metrics where relevant; training cost; peak memory; exported-model latency and regression rates.",
+    "failure": "Data leakage, reward hacking, selecting checkpoints on the final test set, preprocessing mismatch at inference, losing tokenizer/base-model revisions, and reporting training reward as application accuracy.",
+    "deployment": "Run training as an ephemeral GPU batch job with durable checkpoints and an explicit cost budget. Store artifacts and lineage in object storage/model registry. Deploy inference separately with immutable weights and a canary evaluation. Scale inference by measured utilization rather than leaving training GPUs permanently attached.",
+    "tradeoff": "Fine-tuning may reduce prompt cost or improve task behavior, but retrieval or deterministic validation may solve the problem more cheaply. Local GPUs offer control; managed GPU jobs reduce provisioning work but need quota and cost controls."
+  },
+  "evaluation": {
+    "lesson": "A model comparison needs controlled inputs and a trustworthy success criterion. LLM judges can detect qualitative issues but also have position, style and model-family biases. For code and arithmetic, executable checks provide stronger evidence than prose preference.",
+    "pipeline": "versioned task set -> identical context/settings -> candidate generation -> blinded grading -> independent executable checks -> paired comparison",
+    "metrics": "Task pass rate; supported-answer accuracy; judge/human agreement; run-to-run variance; cost per passing task; latency distributions and paired confidence intervals.",
+    "failure": "Different context budgets across candidates, grading the judge's own training examples, treating one response as a stable result, stale model aliases, and measuring only aggregate scores that hide failed task categories.",
+    "deployment": "Use a queue-based evaluation runner and isolated execution workers for generated code. Store raw responses, task IDs, model revisions and grading configuration. Gate releases on agreed task-specific criteria; sample production traces separately to detect distribution drift.",
+    "tradeoff": "Hosted judges are easy to use but add cost and systematic bias. Human review is slower but useful for calibrating a small anchor set. Prefer exact checks for objectively verifiable tasks and judges for qualities that cannot be reduced to a deterministic test."
+  },
+  "voice": {
+    "lesson": "Voice is a streaming systems problem as well as an AI problem. Recognition, endpointing, retrieval/tool work, generation and speech synthesis contribute separate delays. Preserve turn identity and cancellation state so interruptions do not create overlapping or duplicated responses.",
+    "pipeline": "audio stream/upload -> ASR with timestamps -> turn/segment state -> retrieval or analysis -> model output -> TTS or structured notes",
+    "metrics": "Word error rate by language/noise condition; speaker attribution; action-item precision; first-audio latency; interruption recovery; complete-turn latency and cost.",
+    "failure": "Dropped sessions, unbounded audio buffering, a previous turn speaking after cancellation, transcripts losing timing provenance, and English-only evaluation hiding multilingual failures.",
+    "deployment": "Use asynchronous jobs for uploaded recordings and long-lived session workers for real-time speech. Prewarm model connections where useful, bound buffers and drain active sessions during deploys. Keep raw audio and derived transcripts under explicit, separate retention rules.",
+    "tradeoff": "A single vendor simplifies streaming integration but increases dependency on its availability, pricing and language coverage. Multiple services give flexibility while making turn cancellation and cross-service observability more important."
+  },
+  "media": {
+    "lesson": "Multimodal pipelines must preserve the relationship between source material and generated media. Generation can be expensive and partially fail; stage boundaries, seeded experiments and durable segment manifests make outputs reproducible and recoverable.",
+    "pipeline": "validated source -> extraction/script or prompt -> model generation -> validated segments -> assembly -> artifact manifest",
+    "metrics": "Source factual coverage; segment completeness; temporal/visual grounding; reproducibility under a fixed seed; peak GPU memory; artifact duration, latency and cost.",
+    "failure": "Silently dropping failed segments, losing source attribution, unbounded vendor processing loops, incompatible media encodings, and evaluating appearance without checking factual correctness.",
+    "deployment": "Queue long generation tasks, store inputs and outputs in object storage and checkpoint stage completion. Use dedicated GPU workers for local image generation and separately scalable CPU workers for parsing and media assembly. Serve completed artifacts through authenticated URLs rather than holding an HTTP request open.",
+    "tradeoff": "Hosted models minimize GPU operations but introduce upload latency and vendor data-handling constraints. Local inference can offer control when utilization is high enough to justify memory and maintenance costs."
+  },
+  "structured": {
+    "lesson": "Schema validity and extraction correctness are different. A perfectly valid JSON object can contain invented values. Carry page/field provenance through parsing and validate domain constraints after model extraction.",
+    "pipeline": "validated document/URL -> parse/render -> extraction schema -> model/parser output -> schema and domain validation -> provenance-linked record",
+    "metrics": "Schema-valid rate; field-level exact match; numeric/unit accuracy; missing-field handling; page/figure attribution; human-review rate and processing cost.",
+    "failure": "Invented required values, unit or currency errors, missing provenance, document instructions treated as workflow policy, and partial extraction presented as complete success.",
+    "deployment": "Use asynchronous document jobs, file/URL allowlists, input-size caps and a schema-versioned result store. Retain the original source and extraction version for reprocessing. Route uncertain or incomplete records to review before downstream automation.",
+    "tradeoff": "Managed parsers reduce document-processing complexity but require data-sharing decisions. Local parsing offers control, while difficult scans and tables may still need a more capable parser and separate quality checks."
+  },
+  "operations": {
+    "lesson": "An AI system's operational boundaries determine whether experiments can become a dependable service. Model artifacts, APIs, tool permissions and data stores have different lifecycle and scaling requirements; keeping those boundaries explicit makes failures recoverable.",
+    "pipeline": "validated request/job -> isolated runtime -> versioned model/data artifact -> bounded operation -> persisted result and observable status",
+    "metrics": "Startup/readiness behavior; recovery after restart; artifact integrity; unauthorized mutation rejection; queue depth, error rate and cost per completed operation.",
+    "failure": "Mutable artifact tags, process-local state behind multiple replicas, publishing credentials in tool environments, missing backups, and relying on a process health check that does not test its dependencies.",
+    "deployment": "Begin with an isolated container or VM appropriate to the workload and persist important state outside it. Run as an unprivileged user, inject secrets at runtime, restrict egress and distinguish liveness/readiness. Use immutable artifacts and a tested rollback path.",
+    "tradeoff": "A managed container service reduces routine operations for stateless APIs. A private VM can fit local model or tool requirements but adds patching, backup and capacity responsibilities. Introduce orchestration only after the workload warrants it."
+  },
+  "recipe": {
+    "lesson": "An integration guide is an architecture reference, not an implementation you have validated. Enumerate external components and verify their contracts independently. Keep tutorial claims, proposed controls and observed runtime evidence in separate records.",
+    "pipeline": "source guide -> dependency/contract inventory -> minimal isolated integration -> failure tests -> reviewed deployment plan",
+    "metrics": "Contract checks completed; documented dependency versions; access-control tests; restart/recovery behavior; external-service latency and demonstrable task completion.",
+    "failure": "Assuming a README proves a service exists, using unpinned external software, exposing a sample administrative port, and deploying a guide without testing backup and rollback.",
+    "deployment": "Pin the actual upstream service artifacts, create a minimal private staging environment and verify authentication, dependency health and recovery before exposing any endpoint. Record configuration in version control while keeping credentials external.",
+    "tradeoff": "Reusing an established external service saves implementation work but transfers part of the system's reliability to an external lifecycle. Maintain a small tested integration boundary and an export or migration path for persistent data."
+  }
+}

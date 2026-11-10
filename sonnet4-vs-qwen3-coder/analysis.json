@@ -1,0 +1,352 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "asyncio",
+        "code_evaluation",
+        "code_ingestion",
+        "dotenv",
+        "model_service",
+        "pandas",
+        "plotly",
+        "streamlit"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "handle_chat_input",
+          "line": 96,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_claude_stream",
+          "line": 115,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_qwen3_coder_stream",
+          "line": 123,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".removeprefix",
+        ".removesuffix",
+        ".strip",
+        "asyncio.gather",
+        "asyncio.run",
+        "claude_container.code",
+        "claude_data.append",
+        "container.code",
+        "dict",
+        "evaluate_code",
+        "fig.update_layout",
+        "fig.update_xaxes",
+        "fig.update_yaxes",
+        "get_parallel_responses",
+        "handle_chat_input",
+        "ingest_github_repo",
+        "load_dotenv",
+        "metric.title",
+        "pd.DataFrame",
+        "plot_data.melt",
+        "process_claude_stream",
+        "process_qwen3_coder_stream",
+        "px.bar",
+        "qwen3_coder_container.code",
+        "qwen3_coder_data.append",
+        "response_text.strip",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.code",
+        "st.column_config.TextColumn",
+        "st.columns",
+        "st.dataframe",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.plotly_chart",
+        "st.session_state.chat_history.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.success",
+        "st.text_area",
+        "st.text_input",
+        "st.title",
+        "st.write"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "code_evaluation.py",
+      "imports": [
+        "deepeval",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "evaluate_code",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "GEval",
+        "LLMTestCase",
+        "Rubric",
+        "metric.measure",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "code_ingestion.py",
+      "imports": [
+        "gitingest",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ingest_github_repo",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Exception",
+        "ingest",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "model_service.py",
+      "imports": [
+        "asyncio",
+        "litellm",
+        "os",
+        "typing"
+      ],
+      "environment": [
+        "ANTHROPIC_API_KEY",
+        "OPENROUTER_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "get_model_response_async",
+          "line": 6,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_parallel_responses",
+          "line": 51,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_model_responses",
+          "line": 57,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "acompletion",
+        "asyncio.get_event_loop",
+        "get_model_response_async",
+        "get_parallel_responses",
+        "loop.run_until_complete",
+        "os.getenv",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "notebook.ipynb#cell-1",
+      "imports": [
+        "asyncio",
+        "code_evaluation",
+        "code_ingestion",
+        "dotenv",
+        "model_service",
+        "nest_asyncio",
+        "os",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "get_full_response",
+          "line": 11,
+          "kind": "AsyncFunctionDef",
+          "doc": "Get a complete response from a model (non-streaming)"
+        },
+        {
+          "name": "process_single_query",
+          "line": 23,
+          "kind": "AsyncFunctionDef",
+          "doc": "Process a single query and return results for both models"
+        },
+        {
+          "name": "process_queries",
+          "line": 67,
+          "kind": "AsyncFunctionDef",
+          "doc": "Process a list of queries against a GitHub repository"
+        },
+        {
+          "name": "process_queries_sync",
+          "line": 94,
+          "kind": "FunctionDef",
+          "doc": "Synchronous wrapper for process_queries - works in Jupyter notebooks"
+        }
+      ],
+      "calls": [
+        ".removeprefix",
+        ".removesuffix",
+        ".strip",
+        "asyncio.gather",
+        "asyncio.get_event_loop",
+        "asyncio.run",
+        "enumerate",
+        "evaluate_code",
+        "get_full_response",
+        "get_model_response_async",
+        "ingest_github_repo",
+        "len",
+        "load_dotenv",
+        "loop.is_running",
+        "loop.run_until_complete",
+        "nest_asyncio.apply",
+        "print",
+        "process_queries",
+        "process_queries_sync",
+        "process_single_query",
+        "response_text.strip",
+        "results.append",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-2",
+      "imports": [
+        "numpy",
+        "pandas",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_results_table",
+          "line": 5,
+          "kind": "FunctionDef",
+          "doc": "Create a formatted table from evaluation results"
+        },
+        {
+          "name": "display_results_table",
+          "line": 48,
+          "kind": "FunctionDef",
+          "doc": "Display the results table with formatting"
+        },
+        {
+          "name": "display_formatted_table",
+          "line": 72,
+          "kind": "FunctionDef",
+          "doc": "Display formatted table with styling (for Jupyter notebooks)"
+        }
+      ],
+      "calls": [
+        ".apply",
+        ".copy",
+        ".format",
+        ".mean",
+        ".round",
+        "create_results_table",
+        "df.apply",
+        "df.style.set_properties",
+        "df.to_string",
+        "display_formatted_table",
+        "len",
+        "pd.DataFrame",
+        "print",
+        "range"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "notebook.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "ANTHROPIC_API_KEY",
+    "OPENAI_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "code_evaluation",
+    "code_ingestion",
+    "deepeval",
+    "dotenv",
+    "gitingest",
+    "litellm",
+    "model_service",
+    "nest_asyncio",
+    "numpy",
+    "os",
+    "pandas",
+    "plotly",
+    "streamlit",
+    "typing"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

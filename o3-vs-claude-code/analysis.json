@@ -1,0 +1,486 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "dotenv",
+        "gc",
+        "glob",
+        "llama_index",
+        "nest_asyncio",
+        "os",
+        "qdrant_client",
+        "re",
+        "streamlit",
+        "subprocess",
+        "textwrap",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-base-en-v1.5"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "parse_github_url",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "clone_repo",
+          "line": 48,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "validate_owner_repo",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "parse_docs_by_file_types",
+          "line": 55,
+          "kind": "FunctionDef",
+          "doc": "Parse documents based on file extension"
+        },
+        {
+          "name": "create_index",
+          "line": 77,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 96,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Anthropic",
+        "CodeSplitter.from_defaults",
+        "FastEmbedEmbedding",
+        "MarkdownNodeParser",
+        "OpenAI",
+        "PromptTemplate",
+        "QdrantVectorStore",
+        "SimpleDirectoryReader",
+        "StorageContext.from_defaults",
+        "ValueError",
+        "VectorStoreIndex",
+        "bool",
+        "create_index",
+        "file_types.items",
+        "gc.collect",
+        "glob.glob",
+        "index.as_query_engine",
+        "len",
+        "list",
+        "load_dotenv",
+        "load_llm",
+        "loader.load_data",
+        "match.groups",
+        "message_container.success",
+        "message_container.write",
+        "message_placeholder.markdown",
+        "model_options.keys",
+        "os.path.exists",
+        "parse_docs_by_file_types",
+        "parse_github_url",
+        "parser.get_nodes_from_documents",
+        "print",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "re.match",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.selectbox",
+        "st.session_state.messages.append",
+        "st.spinner",
+        "st.stop",
+        "st.success",
+        "st.text_input",
+        "subprocess.run",
+        "uuid.uuid4",
+        "validate_owner_repo"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-1",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "opik.configure"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-2",
+      "imports": [
+        "dotenv"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "load_dotenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-3",
+      "imports": [
+        "IPython",
+        "glob",
+        "llama_index",
+        "os",
+        "re",
+        "subprocess"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-5",
+      "imports": [
+        "llama_index",
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "CallbackManager",
+        "LlamaIndexCallbackHandler"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-6",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "claude-3-5-sonnet-20240620",
+        "claude-3-7-sonnet-20250219",
+        "o3-mini"
+      ],
+      "symbols": [
+        {
+          "name": "parse_github_url",
+          "line": 3,
+          "kind": "FunctionDef",
+          "doc": "Extract owner and repo name from GitHub URL"
+        },
+        {
+          "name": "clone_repo",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": "Clone a GitHub repository"
+        },
+        {
+          "name": "parse_docs_by_file_types",
+          "line": 13,
+          "kind": "FunctionDef",
+          "doc": "Parse documents based on file extension"
+        },
+        {
+          "name": "setup_chat_engine",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": "Set up the chat engine for a GitHub repository"
+        }
+      ],
+      "calls": [
+        "Anthropic",
+        "CodeSplitter.from_defaults",
+        "MarkdownNodeParser",
+        "OpenAI",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "ValueError",
+        "VectorStoreIndex",
+        "clone_repo",
+        "file_types.items",
+        "glob.glob",
+        "index.as_query_engine",
+        "len",
+        "loader.load_data",
+        "match.groups",
+        "os.path.exists",
+        "parse_docs_by_file_types",
+        "parse_github_url",
+        "parser.get_nodes_from_documents",
+        "print",
+        "query_engine.update_prompts",
+        "re.match",
+        "subprocess.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-7",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-8",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "Claude 3.7 Sonnet"
+      ],
+      "symbols": [],
+      "calls": [
+        "setup_chat_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "query_engine.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-11",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Opik",
+        "client.get_or_create_dataset"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-12",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "my_llm_application",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "evaluation_task",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "my_llm_application",
+        "query_engine.query",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-13",
+      "imports": [
+        "json",
+        "openai",
+        "opik",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "LLMJudgeMetric",
+          "line": 6,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "score",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": "Score the output of an LLM."
+        }
+      ],
+      "calls": [
+        "OpenAI",
+        "float",
+        "json.loads",
+        "score_result.ScoreResult",
+        "self.llm_client.chat.completions.create",
+        "self.prompt_template.format"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-14",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "LLMJudgeMetric"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-15",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "evaluate"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb#cell-16",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "Opik for LLM evaluation.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "ANTHROPIC_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "IPython",
+    "dotenv",
+    "gc",
+    "glob",
+    "json",
+    "llama_index",
+    "nest_asyncio",
+    "openai",
+    "opik",
+    "os",
+    "qdrant_client",
+    "re",
+    "streamlit",
+    "subprocess",
+    "textwrap",
+    "typing",
+    "uuid"
+  ],
+  "models": [
+    "BAAI/bge-base-en-v1.5",
+    "Claude 3.7 Sonnet",
+    "claude-3-5-sonnet-20240620",
+    "claude-3-7-sonnet-20250219",
+    "o3-mini"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "Opik for LLM evaluation.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

@@ -1,0 +1,188 @@
+{
+  "id": "deploy-agentic-rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/deploy-agentic-rag",
+  "entries": [
+    {
+      "path": "client.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "8f62aacc4011256f5fb0563784dbf09eaf0e3b5d2bd88342a8a89faaf6045029",
+      "local_sha256": "8f62aacc4011256f5fb0563784dbf09eaf0e3b5d2bd88342a8a89faaf6045029",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "client.py",
+      "path": "client.py",
+      "upstream_sha256": "9615bec64602224806ac1465232d23abac25b6fca5016b586bf42b54afb473cc",
+      "local_sha256": "3e1312abc4da7d87629064b62d8b00440a19fdfcda1c5ef6ab931ac16343a745",
+      "changes": [
+        "Added explicit connection/read timeouts to 1 direct requests calls."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "83dc8b7742ed184dd541db24cac89f7479161d4cf718b0476df9c65da842b261",
+      "local_sha256": "83dc8b7742ed184dd541db24cac89f7479161d4cf718b0476df9c65da842b261",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "8a2b96353c7674c9c294e7559127e70c96b036a0cd8d8d70688b421289fa2137",
+      "local_sha256": "8a2b96353c7674c9c294e7559127e70c96b036a0cd8d8d70688b421289fa2137",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "client.py",
+        "imports": [
+          "argparse",
+          "json",
+          "requests",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "argparse.ArgumentParser",
+          "main",
+          "parser.add_argument",
+          "parser.parse_args",
+          "print",
+          "requests.post",
+          "response.json",
+          "response.raise_for_status",
+          "result.split",
+          "time.sleep"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "litserve"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "AgenticRAGAPI",
+            "line": 15,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "setup",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "decode_request",
+            "line": 52,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "predict",
+            "line": 55,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "encode_response",
+            "line": 58,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "AgenticRAGAPI",
+          "Crew",
+          "SerperDevTool",
+          "Task",
+          "ls.LitServer",
+          "self.crew.kickoff",
+          "server.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "OPENAI_API_KEY",
+      "SERPER_API_KEY"
+    ],
+    "imports": [
+      "argparse",
+      "crewai",
+      "crewai_tools",
+      "json",
+      "litserve",
+      "requests",
+      "time"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "client.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "operations",
+  "purpose": "Serve an agentic RAG workflow through an API using LitServe."
+}

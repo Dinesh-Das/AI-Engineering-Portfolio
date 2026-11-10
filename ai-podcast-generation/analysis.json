@@ -1,0 +1,802 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "dotenv",
+        "logging",
+        "os",
+        "pathlib",
+        "src",
+        "streamlit",
+        "tempfile",
+        "time"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "init_session_state",
+          "line": 88,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "initialize_generators",
+          "line": 103,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "initialize_web_scraper",
+          "line": 136,
+          "kind": "FunctionDef",
+          "doc": "Initialize or reinitialize web scraper with provided API key"
+        },
+        {
+          "name": "add_url_source",
+          "line": 150,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "add_text_source",
+          "line": 177,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "remove_source",
+          "line": 193,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_sources_sidebar",
+          "line": 199,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_podcast",
+          "line": 267,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_add_sources_tab",
+          "line": 358,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_studio_tab",
+          "line": 382,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 422,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Path",
+        "PodcastScriptGenerator",
+        "PodcastTTSGenerator",
+        "WebScraper",
+        "add_text_source",
+        "add_url_source",
+        "enumerate",
+        "f.read",
+        "generate_podcast",
+        "init_session_state",
+        "initialize_generators",
+        "initialize_web_scraper",
+        "int",
+        "iter",
+        "len",
+        "line_dict.items",
+        "load_dotenv",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "main",
+        "next",
+        "open",
+        "os.getenv",
+        "podcast_script.to_json",
+        "podcast_style.lower",
+        "remove_source",
+        "render_add_sources_tab",
+        "render_sources_sidebar",
+        "render_studio_tab",
+        "result.get",
+        "source_name.strip",
+        "st.audio",
+        "st.button",
+        "st.columns",
+        "st.container",
+        "st.download_button",
+        "st.error",
+        "st.expander",
+        "st.markdown",
+        "st.metric",
+        "st.rerun",
+        "st.selectbox",
+        "st.session_state.script_generator.generate_script_from_text",
+        "st.session_state.sources.append",
+        "st.session_state.sources.pop",
+        "st.session_state.tts_generator.generate_podcast_audio",
+        "st.session_state.web_scraper.scrape_url",
+        "st.set_page_config",
+        "st.spinner",
+        "st.success",
+        "st.tabs",
+        "st.text_area",
+        "st.text_input",
+        "st.warning",
+        "str",
+        "tempfile.mkdtemp",
+        "text_content.split",
+        "text_content.strip",
+        "time.strftime",
+        "time.time",
+        "url_input.strip"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "app_oss.py",
+      "imports": [
+        "dotenv",
+        "logging",
+        "os",
+        "pathlib",
+        "src",
+        "streamlit",
+        "tempfile",
+        "time"
+      ],
+      "environment": [],
+      "models": [
+        "gpt-oss:20b"
+      ],
+      "symbols": [
+        {
+          "name": "init_session_state",
+          "line": 99,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "initialize_generators",
+          "line": 117,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "initialize_web_scraper",
+          "line": 151,
+          "kind": "FunctionDef",
+          "doc": "Initialize or reinitialize web scraper with provided API key"
+        },
+        {
+          "name": "add_url_source",
+          "line": 165,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "add_text_source",
+          "line": 192,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "remove_source",
+          "line": 208,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_sources_sidebar",
+          "line": 214,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_podcast",
+          "line": 282,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_add_sources_tab",
+          "line": 373,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render_studio_tab",
+          "line": 397,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 437,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Path",
+        "PodcastScriptGeneratorOSS",
+        "PodcastTTSGenerator",
+        "WebScraper",
+        "add_text_source",
+        "add_url_source",
+        "enumerate",
+        "f.read",
+        "generate_podcast",
+        "init_session_state",
+        "initialize_generators",
+        "initialize_web_scraper",
+        "int",
+        "iter",
+        "len",
+        "line_dict.items",
+        "load_dotenv",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "main",
+        "next",
+        "open",
+        "podcast_script.to_json",
+        "podcast_style.lower",
+        "remove_source",
+        "render_add_sources_tab",
+        "render_sources_sidebar",
+        "render_studio_tab",
+        "result.get",
+        "source_name.strip",
+        "st.audio",
+        "st.button",
+        "st.columns",
+        "st.container",
+        "st.download_button",
+        "st.error",
+        "st.expander",
+        "st.markdown",
+        "st.metric",
+        "st.rerun",
+        "st.selectbox",
+        "st.session_state.script_generator.generate_script_from_text",
+        "st.session_state.sources.append",
+        "st.session_state.sources.pop",
+        "st.session_state.tts_generator.generate_podcast_audio",
+        "st.session_state.web_scraper.scrape_url",
+        "st.set_page_config",
+        "st.spinner",
+        "st.success",
+        "st.tabs",
+        "st.text_area",
+        "st.text_input",
+        "st.warning",
+        "str",
+        "tempfile.mkdtemp",
+        "text_content.split",
+        "text_content.strip",
+        "time.strftime",
+        "time.time",
+        "url_input.strip"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "src/__init__.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/podcast/__init__.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/podcast/script_generator.py",
+      "imports": [
+        "crewai",
+        "dataclasses",
+        "json",
+        "logging",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "PodcastScript",
+          "line": 13,
+          "kind": "ClassDef",
+          "doc": "Represents a podcast script with metadata"
+        },
+        {
+          "name": "PodcastScriptGenerator",
+          "line": 34,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_speaker_lines",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "to_json",
+          "line": 23,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_script_from_text",
+          "line": 44,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_generate_conversation_script",
+          "line": 70,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_validate_and_clean_script",
+          "line": 158,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "LLM",
+        "PodcastScript",
+        "ValueError",
+        "cleaned_script.append",
+        "dialogue.endswith",
+        "dialogue.strip",
+        "duration_guidelines.get",
+        "isinstance",
+        "item.items",
+        "iter",
+        "json.dumps",
+        "json.loads",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "next",
+        "response.strip",
+        "response_clean.startswith",
+        "self._generate_conversation_script",
+        "self._validate_and_clean_script",
+        "self.llm.call",
+        "speaker.lower",
+        "speaker.strip",
+        "str",
+        "style_prompts.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/podcast/script_generator_oss.py",
+      "imports": [
+        "dataclasses",
+        "json",
+        "logging",
+        "requests",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "PodcastScript",
+          "line": 12,
+          "kind": "ClassDef",
+          "doc": "Represents a podcast script with metadata"
+        },
+        {
+          "name": "PodcastScriptGeneratorOSS",
+          "line": 33,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_speaker_lines",
+          "line": 19,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "to_json",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_call_ollama",
+          "line": 39,
+          "kind": "FunctionDef",
+          "doc": "Call Ollama API with the given prompt"
+        },
+        {
+          "name": "generate_script_from_text",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_generate_conversation_script",
+          "line": 91,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_validate_and_clean_script",
+          "line": 179,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "check_ollama_connection",
+          "line": 212,
+          "kind": "FunctionDef",
+          "doc": "Check if Ollama is running and the model is available"
+        }
+      ],
+      "calls": [
+        ".get",
+        "Exception",
+        "PodcastScript",
+        "ValueError",
+        "cleaned_script.append",
+        "dialogue.endswith",
+        "dialogue.strip",
+        "duration_guidelines.get",
+        "isinstance",
+        "item.items",
+        "iter",
+        "json.dumps",
+        "json.loads",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "next",
+        "requests.get",
+        "requests.post",
+        "response.json",
+        "response.raise_for_status",
+        "response.strip",
+        "response_clean.startswith",
+        "self._call_ollama",
+        "self._generate_conversation_script",
+        "self._validate_and_clean_script",
+        "speaker.lower",
+        "speaker.strip",
+        "str",
+        "style_prompts.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/podcast/text_to_speech.py",
+      "imports": [
+        "dataclasses",
+        "huggingface_hub",
+        "kokoro",
+        "logging",
+        "numpy",
+        "os",
+        "pathlib",
+        "soundfile",
+        "spacy",
+        "src",
+        "typing"
+      ],
+      "environment": [
+        "HF_HOME",
+        "KOKORO_REPO_ID",
+        "PODCAST_CACHE_DIR"
+      ],
+      "models": [
+        "en_core_web_sm"
+      ],
+      "symbols": [
+        {
+          "name": "AudioSegment",
+          "line": 33,
+          "kind": "ClassDef",
+          "doc": "Represents a single audio segment with metadata"
+        },
+        {
+          "name": "PodcastTTSGenerator",
+          "line": 42,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_podcast_audio",
+          "line": 61,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_configure_cache_dirs",
+          "line": 112,
+          "kind": "FunctionDef",
+          "doc": "Ensure consistent cache directories so large downloads persist between runs."
+        },
+        {
+          "name": "_ensure_spacy_model",
+          "line": 126,
+          "kind": "FunctionDef",
+          "doc": "Download spaCy's small English model once so Kokoro starts instantly."
+        },
+        {
+          "name": "_warm_kokoro_cache",
+          "line": 141,
+          "kind": "FunctionDef",
+          "doc": "Prefetch Kokoro repository so the first utterance does not trigger downloads."
+        },
+        {
+          "name": "_generate_single_segment",
+          "line": 152,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_clean_text_for_tts",
+          "line": 168,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_combine_audio_segments",
+          "line": 180,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".lower",
+        ".mkdir",
+        "AudioSegment",
+        "ImportError",
+        "KPipeline",
+        "Path",
+        "Path.home",
+        "audio_segments.append",
+        "cache_root.mkdir",
+        "clean_text.endswith",
+        "clean_text.replace",
+        "combined_audio.append",
+        "download",
+        "enumerate",
+        "hf_cache.mkdir",
+        "int",
+        "is_package",
+        "iter",
+        "kokoro_cache.mkdir",
+        "len",
+        "line_dict.items",
+        "logger.debug",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "next",
+        "np.concatenate",
+        "np.zeros",
+        "os.environ.get",
+        "os.environ.setdefault",
+        "os.getenv",
+        "os.path.join",
+        "output_files.append",
+        "print",
+        "self._clean_text_for_tts",
+        "self._combine_audio_segments",
+        "self._configure_cache_dirs",
+        "self._ensure_spacy_model",
+        "self._generate_single_segment",
+        "self._warm_kokoro_cache",
+        "self.pipeline",
+        "self.speaker_voices.get",
+        "sf.write",
+        "snapshot_download",
+        "speaker.replace",
+        "str",
+        "text.strip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/web_scraping/__init__.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/web_scraping/web_scraper.py",
+      "imports": [
+        "datetime",
+        "firecrawl",
+        "logging",
+        "typing",
+        "urllib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "WebScraper",
+          "line": 12,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 13,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "scrape_url",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": "Scrape a URL and return the content as text."
+        },
+        {
+          "name": "_is_valid_url",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".isoformat",
+        "Firecrawl",
+        "ValueError",
+        "all",
+        "content.split",
+        "datetime.now",
+        "len",
+        "logger.error",
+        "logger.info",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "metadata_dict.get",
+        "self._is_valid_url",
+        "self.app.scrape",
+        "str",
+        "urlparse"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "FIRECRAWL_API_KEY",
+    "HF_HOME",
+    "KOKORO_REPO_ID",
+    "OPENAI_API_KEY",
+    "PODCAST_CACHE_DIR"
+  ],
+  "imports": [
+    "crewai",
+    "dataclasses",
+    "datetime",
+    "dotenv",
+    "firecrawl",
+    "huggingface_hub",
+    "json",
+    "kokoro",
+    "logging",
+    "numpy",
+    "os",
+    "pathlib",
+    "requests",
+    "soundfile",
+    "spacy",
+    "src",
+    "streamlit",
+    "tempfile",
+    "time",
+    "typing",
+    "urllib"
+  ],
+  "models": [
+    "en_core_web_sm",
+    "gpt-oss:20b"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "app_oss.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

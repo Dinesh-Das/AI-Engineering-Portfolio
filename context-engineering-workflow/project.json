@@ -1,0 +1,1450 @@
+{
+  "id": "context-engineering-workflow",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/context-engineering-workflow",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "src/document_processing/doc_parser.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "99783d1e4ab7d06c2de3807c10064b9539fff7c4a761521227639792a3437090",
+      "local_sha256": "99783d1e4ab7d06c2de3807c10064b9539fff7c4a761521227639792a3437090",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "bfc2b0ad56af9e8c741a043a8e20aed4a4a1b6e7084f3f37634f2070030078d5",
+      "local_sha256": "bfc2b0ad56af9e8c741a043a8e20aed4a4a1b6e7084f3f37634f2070030078d5",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "80b40560145f0858fe811b4f68d50b76ae66717905707296b0e25925c35527f5",
+      "local_sha256": "80b40560145f0858fe811b4f68d50b76ae66717905707296b0e25925c35527f5",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/agents/research_agents.yaml",
+      "path": "config/agents/research_agents.yaml",
+      "upstream_sha256": "63eaeb8c35220aea9e1d97bb295ec9d507a0813d55450fe2d16e84525f846430",
+      "local_sha256": "63eaeb8c35220aea9e1d97bb295ec9d507a0813d55450fe2d16e84525f846430",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/tasks/research_tasks.yaml",
+      "path": "config/tasks/research_tasks.yaml",
+      "upstream_sha256": "68dc15af71c62f6bea5cca82bcb402c20a9f0ec670f6e05d94e6409db94cb24f",
+      "local_sha256": "68dc15af71c62f6bea5cca82bcb402c20a9f0ec670f6e05d94e6409db94cb24f",
+      "changes": []
+    },
+    {
+      "upstream_path": "data/attention-is-all-you-need-Paper.pdf",
+      "path": "data/attention-is-all-you-need-Paper.pdf",
+      "upstream_sha256": "d87d482d5ae7960e2e43d7dd6d21377e60e73e8fce1bf2a01aff7aca8a08c537",
+      "local_sha256": "d87d482d5ae7960e2e43d7dd6d21377e60e73e8fce1bf2a01aff7aca8a08c537",
+      "changes": []
+    },
+    {
+      "upstream_path": "outputs/markdown_chunks.md",
+      "path": "outputs/markdown_chunks.md",
+      "upstream_sha256": "953d0db4e0726ca2f4a1a6c12e88845d755a6ec0634d9bbe673134b0abd09c4a",
+      "local_sha256": "953d0db4e0726ca2f4a1a6c12e88845d755a6ec0634d9bbe673134b0abd09c4a",
+      "changes": []
+    },
+    {
+      "upstream_path": "outputs/structured_data.json",
+      "path": "outputs/structured_data.json",
+      "upstream_sha256": "403dfcc2bda151c0ef07578fc9b73da44e831d9e18ba76aa24321f5c107ad2e3",
+      "local_sha256": "403dfcc2bda151c0ef07578fc9b73da44e831d9e18ba76aa24321f5c107ad2e3",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "7edb90e0d47e0a38b133a783872b8b97f1a78385ceae17fff501df4baf9c442e",
+      "local_sha256": "7edb90e0d47e0a38b133a783872b8b97f1a78385ceae17fff501df4baf9c442e",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "c3ffeb5a826a35435b8a84ecec1746a3854095e40fa0f849b3ff763976e93b3a",
+      "local_sha256": "c3ffeb5a826a35435b8a84ecec1746a3854095e40fa0f849b3ff763976e93b3a",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "src/config/config_loader.py",
+      "path": "src/config/config_loader.py",
+      "upstream_sha256": "8203bfbb7681ac0ab3171946ee723b6da2ed3c6fea3986740b8dd0bce3e823b2",
+      "local_sha256": "8203bfbb7681ac0ab3171946ee723b6da2ed3c6fea3986740b8dd0bce3e823b2",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/document_processing/doc_parser.py",
+      "path": "src/document_processing/doc_parser.py",
+      "upstream_sha256": "60b7da48dc95515d476c50c5d7ce6b919e45bc0bfe3463862ef42d0bb76824dc",
+      "local_sha256": "60b7da48dc95515d476c50c5d7ce6b919e45bc0bfe3463862ef42d0bb76824dc",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/generation/generation.py",
+      "path": "src/generation/generation.py",
+      "upstream_sha256": "ba36bf52cc6132869073c06eab4a92ab3f9d52bccc285c896ce2e6474dc8eabf",
+      "local_sha256": "ba36bf52cc6132869073c06eab4a92ab3f9d52bccc285c896ce2e6474dc8eabf",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/memory/memory.py",
+      "path": "src/memory/memory.py",
+      "upstream_sha256": "88fca913b81f5bc6e3de270d53dcb7275a181e4c6bc5a7f0b275eba06adf28f8",
+      "local_sha256": "88fca913b81f5bc6e3de270d53dcb7275a181e4c6bc5a7f0b275eba06adf28f8",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/rag/embeddings.py",
+      "path": "src/rag/embeddings.py",
+      "upstream_sha256": "50f203ba226476422d62d47b362c281934f5947dbd911b2b3d4e3fac1409c545",
+      "local_sha256": "50f203ba226476422d62d47b362c281934f5947dbd911b2b3d4e3fac1409c545",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/rag/rag_pipeline.py",
+      "path": "src/rag/rag_pipeline.py",
+      "upstream_sha256": "896cc63e081ac2982cbbafa7b516663d541f289011ef0b355da0bbb6759ec715",
+      "local_sha256": "896cc63e081ac2982cbbafa7b516663d541f289011ef0b355da0bbb6759ec715",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/rag/retriever.py",
+      "path": "src/rag/retriever.py",
+      "upstream_sha256": "1a746cb1803cb73d2fdf7ad00a28f5503020e5008f9808b9a840e7be61cdc838",
+      "local_sha256": "1a746cb1803cb73d2fdf7ad00a28f5503020e5008f9808b9a840e7be61cdc838",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/tools/arxiv_tool.py",
+      "path": "src/tools/arxiv_tool.py",
+      "upstream_sha256": "b9f54e940f7304f196d66304cb8d9d894ecd10a69bece0f239abf602ae354be7",
+      "local_sha256": "b9f54e940f7304f196d66304cb8d9d894ecd10a69bece0f239abf602ae354be7",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/tools/memory_tool.py",
+      "path": "src/tools/memory_tool.py",
+      "upstream_sha256": "adf49f6997558a1e3bc170bf29afbd011a4f2d288b6c3547778fd16fd9898260",
+      "local_sha256": "adf49f6997558a1e3bc170bf29afbd011a4f2d288b6c3547778fd16fd9898260",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/tools/rag_tool.py",
+      "path": "src/tools/rag_tool.py",
+      "upstream_sha256": "2d8be89911f8d991f300d076ce34b0df536684be86c4505d97575e2a65b5c164",
+      "local_sha256": "2d8be89911f8d991f300d076ce34b0df536684be86c4505d97575e2a65b5c164",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/tools/web_search_tool.py",
+      "path": "src/tools/web_search_tool.py",
+      "upstream_sha256": "02505df11422abb52e460ba6a8ed298b4ad2f1a2accc3143ed9c2f990dcf196a",
+      "local_sha256": "02505df11422abb52e460ba6a8ed298b4ad2f1a2accc3143ed9c2f990dcf196a",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/workflows/agents.py",
+      "path": "src/workflows/agents.py",
+      "upstream_sha256": "f603340394d736a9d284c645325dcfc24be14dd5ab4fd44cc959bd7e6f1efe1d",
+      "local_sha256": "f603340394d736a9d284c645325dcfc24be14dd5ab4fd44cc959bd7e6f1efe1d",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/workflows/flow.py",
+      "path": "src/workflows/flow.py",
+      "upstream_sha256": "8dd4e013757c29405ea270fc2161f95245d619c1e9da4c17516b133c05a3ebb7",
+      "local_sha256": "8dd4e013757c29405ea270fc2161f95245d619c1e9da4c17516b133c05a3ebb7",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/workflows/tasks.py",
+      "path": "src/workflows/tasks.py",
+      "upstream_sha256": "6256ce91a02b1af7729e54fbefaf1b3d21d2cee826cda1075524df5e83cf3f5b",
+      "local_sha256": "6256ce91a02b1af7729e54fbefaf1b3d21d2cee826cda1075524df5e83cf3f5b",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "c304e955d30ae3d7fc104a0f1a0912601baacceb0e153eb29ac558f05968f06d",
+      "local_sha256": "c304e955d30ae3d7fc104a0f1a0912601baacceb0e153eb29ac558f05968f06d",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "json",
+          "os",
+          "pathlib",
+          "src",
+          "streamlit",
+          "tempfile",
+          "time",
+          "typing"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "OPENAI_API_KEY",
+          "TENSORLAKE_API_KEY",
+          "VOYAGE_API_KEY",
+          "ZEP_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "initialize_session_state",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "check_api_keys",
+            "line": 91,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "StreamlitResearchAssistant",
+            "line": 102,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "create_research_assistant",
+            "line": 144,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_uploaded_document",
+            "line": 154,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_citations_dropdown",
+            "line": 236,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_sidebar_document_processing",
+            "line": 554,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_main_chat_interface",
+            "line": 609,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_initialization_message",
+            "line": 669,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 672,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 103,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "initialize",
+            "line": 109,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "query",
+            "line": 127,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "Exception",
+          "ResearchAssistantFlow",
+          "StreamlitResearchAssistant",
+          "answer.startswith",
+          "answer.strip",
+          "assistant.flow.process_documents",
+          "assistant.initialize",
+          "bool",
+          "citation.get",
+          "context_sources.get",
+          "context_sources.keys",
+          "create_research_assistant",
+          "display_citations_dropdown",
+          "display_initialization_message",
+          "display_main_chat_interface",
+          "display_sidebar_document_processing",
+          "enumerate",
+          "error_msg.lower",
+          "evaluation_result.get",
+          "evaluation_result.keys",
+          "initialize_session_state",
+          "isinstance",
+          "json.dumps",
+          "json.loads",
+          "len",
+          "list",
+          "locator.startswith",
+          "main",
+          "os.fsync",
+          "os.getenv",
+          "os.path.exists",
+          "os.unlink",
+          "paper.get",
+          "parsed_answer.get",
+          "process_uploaded_document",
+          "progress_bar.empty",
+          "progress_bar.progress",
+          "progress_container.empty",
+          "relevance.get",
+          "relevance_scores.get",
+          "response.get",
+          "result.get",
+          "self.flow.kickoff",
+          "source_data.get",
+          "sources.append",
+          "st.button",
+          "st.caption",
+          "st.chat_input",
+          "st.columns",
+          "st.container",
+          "st.empty",
+          "st.error",
+          "st.expander",
+          "st.file_uploader",
+          "st.info",
+          "st.json",
+          "st.markdown",
+          "st.progress",
+          "st.rerun",
+          "st.session_state.assistant.query",
+          "st.session_state.chat_history.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.success",
+          "st.warning",
+          "status_text.empty",
+          "status_text.text",
+          "str",
+          "tempfile.NamedTemporaryFile",
+          "time.sleep",
+          "tmp_file.fileno",
+          "tmp_file.flush",
+          "tmp_file.write",
+          "type",
+          "uploaded_file.getvalue"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "src/config/config_loader.py",
+        "imports": [
+          "os",
+          "pathlib",
+          "typing",
+          "yaml"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ConfigLoader",
+            "line": 6,
+            "kind": "ClassDef",
+            "doc": "Utility class for loading YAML configuration files"
+          },
+          {
+            "name": "__init__",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "load_agents_config",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": "Load agents configuration from YAML file"
+          },
+          {
+            "name": "load_tasks_config",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": "Load tasks configuration from YAML file"
+          },
+          {
+            "name": "_load_yaml_file",
+            "line": 26,
+            "kind": "FunctionDef",
+            "doc": "Load a YAML file and return its contents"
+          },
+          {
+            "name": "get_agent_config",
+            "line": 45,
+            "kind": "FunctionDef",
+            "doc": "Get configuration for a specific agent"
+          },
+          {
+            "name": "get_task_config",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": "Get configuration for a specific task"
+          }
+        ],
+        "calls": [
+          "Exception",
+          "FileNotFoundError",
+          "KeyError",
+          "Path",
+          "ValueError",
+          "file_path.exists",
+          "open",
+          "self._load_yaml_file",
+          "self.load_agents_config",
+          "self.load_tasks_config",
+          "yaml.safe_load"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/document_processing/doc_parser.py",
+        "imports": [
+          "dotenv",
+          "json",
+          "os",
+          "tensorlake",
+          "typing"
+        ],
+        "environment": [
+          "TENSORLAKE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "TensorLakeClient",
+            "line": 57,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 58,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "list_uploaded_files",
+            "line": 61,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "verify_file_uploaded",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "upload",
+            "line": 83,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "parse_structured",
+            "line": 119,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_result",
+            "line": 165,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "DocumentAI",
+          "Exception",
+          "ParsingOptions",
+          "StructuredExtractionOptions",
+          "TensorLakeClient",
+          "client.get_result",
+          "client.parse_structured",
+          "client.upload",
+          "extracted_data.append",
+          "file_ids.append",
+          "hasattr",
+          "len",
+          "load_dotenv",
+          "os.getenv",
+          "os.path.exists",
+          "os.path.getsize",
+          "parse_ids.append",
+          "print",
+          "rag_chunks.append",
+          "res.model_dump",
+          "self.doc_ai.files",
+          "self.doc_ai.parse",
+          "self.doc_ai.upload",
+          "self.doc_ai.wait_for_completion",
+          "self.list_uploaded_files",
+          "self.verify_file_uploaded"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/generation/generation.py",
+        "imports": [
+          "json",
+          "openai",
+          "os",
+          "typing"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "StructuredResponseGen",
+            "line": 52,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 53,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate",
+            "line": 67,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          ".strip",
+          "OpenAI",
+          "RuntimeError",
+          "json.loads",
+          "os.getenv",
+          "self.client.chat.completions.create",
+          "self.rag_template.format"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/memory/memory.py",
+        "imports": [
+          "crewai",
+          "os",
+          "time",
+          "typing",
+          "zep_cloud",
+          "zep_crewai"
+        ],
+        "environment": [
+          "ZEP_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ZepMemoryLayer",
+            "line": 9,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "as_external_memory",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_user_message",
+            "line": 43,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_assistant_message",
+            "line": 49,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_preferences",
+            "line": 55,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "wait_for_indexing",
+            "line": 61,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_context_block",
+            "line": 64,
+            "kind": "FunctionDef",
+            "doc": "Fetch the full user context block from Zep memory."
+          }
+        ],
+        "calls": [
+          "ExternalMemory",
+          "Zep",
+          "ZepUserStorage",
+          "os.getenv",
+          "self.external_memory.save",
+          "self.zep_client.thread.create",
+          "self.zep_client.thread.delete",
+          "self.zep_client.thread.get_user_context",
+          "self.zep_client.user.add",
+          "self.zep_client.user.get",
+          "str",
+          "time.sleep"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/rag/embeddings.py",
+        "imports": [
+          "dotenv",
+          "os",
+          "typing",
+          "voyageai"
+        ],
+        "environment": [
+          "VOYAGE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ContextualizedEmbeddings",
+            "line": 11,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "embed_document_chunks",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "embed_query",
+            "line": 33,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "load_dotenv",
+          "os.getenv",
+          "self.client.contextualized_embed",
+          "voyageai.Client"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/rag/rag_pipeline.py",
+        "imports": [
+          "os",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "RAGPipeline",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": "Unified RAG pipeline combining document parsing, embeddings, and retrieval"
+          },
+          {
+            "name": "__init__",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_documents",
+            "line": 23,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "retrieve_context",
+            "line": 100,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_response",
+            "line": 111,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "query",
+            "line": 127,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".append",
+          "ContextualizedEmbeddings",
+          "Exception",
+          "MilvusVectorDB",
+          "StructuredResponseGen",
+          "TensorLakeClient",
+          "chunk.get",
+          "chunk_metadata.append",
+          "chunks.append",
+          "enumerate",
+          "hasattr",
+          "len",
+          "parse_result.model_dump",
+          "self.doc_parser.get_result",
+          "self.doc_parser.parse_structured",
+          "self.doc_parser.upload",
+          "self.embeddings.embed_document_chunks",
+          "self.embeddings.embed_query",
+          "self.generate_response",
+          "self.generator.generate",
+          "self.retrieve_context",
+          "self.vector_db.insert",
+          "self.vector_db.search",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/rag/retriever.py",
+        "imports": [
+          "pymilvus",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "MilvusVectorDB",
+            "line": 4,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 5,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_ensure_collection",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "insert",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_collection_count",
+            "line": 65,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "MilvusClient",
+          "data.append",
+          "enumerate",
+          "hit.entity.get",
+          "hits.append",
+          "index_params.add_index",
+          "len",
+          "meta.get",
+          "print",
+          "schema.add_field",
+          "self._ensure_collection",
+          "self.client.create_collection",
+          "self.client.create_schema",
+          "self.client.drop_collection",
+          "self.client.flush",
+          "self.client.get_collection_stats",
+          "self.client.has_collection",
+          "self.client.insert",
+          "self.client.prepare_index_params",
+          "self.client.search",
+          "stats.get",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/tools/arxiv_tool.py",
+        "imports": [
+          "crewai",
+          "json",
+          "pydantic",
+          "requests",
+          "typing",
+          "xml"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ArxivAPIInput",
+            "line": 9,
+            "kind": "ClassDef",
+            "doc": "Input schema for ArXiv API tool"
+          },
+          {
+            "name": "ArxivTool",
+            "line": 18,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 23,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_build_arxiv_query",
+            "line": 107,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_parse_arxiv_response",
+            "line": 127,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          ".replace",
+          "ET.fromstring",
+          "Exception",
+          "Field",
+          "answer_parts.append",
+          "author.find",
+          "authors.append",
+          "category_elem.get",
+          "citations.append",
+          "entry.find",
+          "entry.findall",
+          "enumerate",
+          "json.dumps",
+          "len",
+          "papers.append",
+          "parts.append",
+          "requests.get",
+          "response.raise_for_status",
+          "root.findall",
+          "self._build_arxiv_query",
+          "self._parse_arxiv_response",
+          "str",
+          "summary.text.strip",
+          "title.text.strip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/tools/memory_tool.py",
+        "imports": [
+          "crewai",
+          "json",
+          "pydantic",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "MemoryInput",
+            "line": 9,
+            "kind": "ClassDef",
+            "doc": "Input schema for memory search tool"
+          },
+          {
+            "name": "MemoryTool",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 19,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Field",
+          "json.dumps",
+          "self.memory_layer.get_context_block",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/tools/rag_tool.py",
+        "imports": [
+          "crewai",
+          "json",
+          "os",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "RAGInput",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": "Input schema for RAG search tool"
+          },
+          {
+            "name": "RAGTool",
+            "line": 15,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_load_documents",
+            "line": 127,
+            "kind": "FunctionDef",
+            "doc": "Helper method to load documents into the RAG pipeline"
+          }
+        ],
+        "calls": [
+          ".join",
+          "Field",
+          "citations.append",
+          "context_blocks.append",
+          "enumerate",
+          "json.dumps",
+          "len",
+          "max",
+          "os.path.exists",
+          "r.get",
+          "result.get",
+          "self._load_documents",
+          "self.rag_pipeline.process_documents",
+          "self.rag_pipeline.retrieve_context",
+          "self.rag_pipeline.vector_db.get_collection_count",
+          "source_file.split",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/tools/web_search_tool.py",
+        "imports": [
+          "crewai",
+          "firecrawl",
+          "json",
+          "os",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "WebSearchInput",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": "Input schema for web search tool"
+          },
+          {
+            "name": "FirecrawlSearchTool",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 19,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "Field",
+          "Firecrawl",
+          "answer_parts.append",
+          "app.search",
+          "citations.append",
+          "getattr",
+          "isinstance",
+          "json.dumps",
+          "len",
+          "search_results.append",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/workflows/agents.py",
+        "imports": [
+          "crewai",
+          "os",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "Agents",
+            "line": 16,
+            "kind": "ClassDef",
+            "doc": "Class for creating agents from configuration files"
+          },
+          {
+            "name": "__init__",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_rag_agent",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_memory_agent",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_web_search_agent",
+            "line": 43,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_arxiv_agent",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_evaluator_agent",
+            "line": 65,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_synthesizer_agent",
+            "line": 74,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "ArxivTool",
+          "ConfigLoader",
+          "FirecrawlSearchTool",
+          "MemoryTool",
+          "RAGTool",
+          "config.get",
+          "self.config_loader.get_agent_config"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/workflows/flow.py",
+        "imports": [
+          "agents",
+          "crewai",
+          "json",
+          "os",
+          "pydantic",
+          "src",
+          "tasks",
+          "typing"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ResearchAssistantState",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "ContextEvaluationResult",
+            "line": 19,
+            "kind": "ClassDef",
+            "doc": "Pydantic schema for context evaluation agent output validation"
+          },
+          {
+            "name": "ResearchAssistantFlow",
+            "line": 65,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "create_research_assistant_flow",
+            "line": 245,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "Config",
+            "line": 38,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 66,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_query",
+            "line": 103,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "gather_context_from_all_sources",
+            "line": 116,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "evaluate_context_relevance",
+            "line": 149,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "synthesize_final_response",
+            "line": 182,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_parse_agent_result",
+            "line": 210,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_summarize_for_memory",
+            "line": 222,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_documents",
+            "line": 241,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".__init__",
+          "Agents",
+          "Crew",
+          "Field",
+          "RAGPipeline",
+          "ResearchAssistantFlow",
+          "Tasks",
+          "ZepMemoryLayer",
+          "context_crew.kickoff",
+          "evaluation_crew.kickoff",
+          "evaluation_output.model_dump",
+          "isinstance",
+          "json.loads",
+          "len",
+          "listen",
+          "max",
+          "os.getenv",
+          "print",
+          "self._parse_agent_result",
+          "self._summarize_for_memory",
+          "self.agents.create_arxiv_agent",
+          "self.agents.create_evaluator_agent",
+          "self.agents.create_memory_agent",
+          "self.agents.create_rag_agent",
+          "self.agents.create_synthesizer_agent",
+          "self.agents.create_web_search_agent",
+          "self.memory_layer.save_assistant_message",
+          "self.memory_layer.save_user_message",
+          "self.rag_pipeline.process_documents",
+          "self.tasks.create_arxiv_search_task",
+          "self.tasks.create_context_evaluation_task",
+          "self.tasks.create_memory_retrieval_task",
+          "self.tasks.create_rag_search_task",
+          "self.tasks.create_synthesis_task",
+          "self.tasks.create_web_search_task",
+          "start",
+          "super",
+          "synthesis_crew.kickoff",
+          "truncated.rfind"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/workflows/tasks.py",
+        "imports": [
+          "crewai",
+          "json",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "Tasks",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_rag_search_task",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_memory_retrieval_task",
+            "line": 20,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_web_search_task",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_arxiv_search_task",
+            "line": 36,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_context_evaluation_task",
+            "line": 44,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_synthesis_task",
+            "line": 65,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".format",
+          "ConfigLoader",
+          "Task",
+          "context_sources.get",
+          "json.dumps",
+          "self.config_loader.get_task_config"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "config/agents/research_agents.yaml",
+      "config/tasks/research_tasks.yaml"
+    ],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "OPENAI_API_KEY",
+      "TENSORLAKE_API_KEY",
+      "VOYAGE_API_KEY",
+      "ZEP_API_KEY"
+    ],
+    "imports": [
+      "agents",
+      "crewai",
+      "dotenv",
+      "firecrawl",
+      "json",
+      "openai",
+      "os",
+      "pathlib",
+      "pydantic",
+      "pymilvus",
+      "requests",
+      "src",
+      "streamlit",
+      "tasks",
+      "tempfile",
+      "tensorlake",
+      "time",
+      "typing",
+      "voyageai",
+      "xml",
+      "yaml",
+      "zep_cloud",
+      "zep_crewai"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "src/document_processing/doc_parser.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 15
+  },
+  "category": "memory",
+  "purpose": "Coordinate multi-source research with parsing, retrieval and long-term context."
+}

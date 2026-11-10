@@ -1,0 +1,349 @@
+{
+  "id": "video-rag-gemini",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/video-rag-gemini",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "demo.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "9d5b1697c536ec3b640d240454bd6c0d7d283f1fb32ec387c20cbd90d1e7ff71",
+      "local_sha256": "9d5b1697c536ec3b640d240454bd6c0d7d283f1fb32ec387c20cbd90d1e7ff71",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "ed6f6f2ef1438f2fbc056ca5bc72ca820ec443173f0d8ca5512e95f5da8ae863",
+      "local_sha256": "ed6f6f2ef1438f2fbc056ca5bc72ca820ec443173f0d8ca5512e95f5da8ae863",
+      "changes": []
+    },
+    {
+      "upstream_path": "demo.py",
+      "path": "demo.py",
+      "upstream_sha256": "ac4f2065a55e8098e7ca502b88967f86814a58db030e9f492fce6fbfa10b1fa8",
+      "local_sha256": "ac4f2065a55e8098e7ca502b88967f86814a58db030e9f492fce6fbfa10b1fa8",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "71ab697be76fe845a2e8cdf0027bca416cd0da9c2f26f0a6cff04f3bd871d639",
+      "local_sha256": "71ab697be76fe845a2e8cdf0027bca416cd0da9c2f26f0a6cff04f3bd871d639",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "887263c7471c417a99b0ad831da693d43dec2d9f8b8ec913b56e5b8e43bdd95f",
+      "local_sha256": "887263c7471c417a99b0ad831da693d43dec2d9f8b8ec913b56e5b8e43bdd95f",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_setup.py",
+      "path": "test_setup.py",
+      "upstream_sha256": "db96f6c120b3dd8f89cd88ecbcd190056f51f0fb8277ff46f8be44468b5bda0a",
+      "local_sha256": "db96f6c120b3dd8f89cd88ecbcd190056f51f0fb8277ff46f8be44468b5bda0a",
+      "changes": []
+    },
+    {
+      "upstream_path": "USAGE.md",
+      "path": "USAGE.md",
+      "upstream_sha256": "d5c0972ee99bc03144812c527138f2dfe13f500badc9fd4716df0f987d312cda",
+      "local_sha256": "d5c0972ee99bc03144812c527138f2dfe13f500badc9fd4716df0f987d312cda",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "base64",
+          "dotenv",
+          "google",
+          "mimetypes",
+          "os",
+          "pathlib",
+          "streamlit",
+          "tempfile",
+          "time"
+        ],
+        "environment": [
+          "GEMINI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "VideoProcessor",
+            "line": 25,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "is_video_file",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": "Check if uploaded file is a video"
+          },
+          {
+            "name": "get_file_size_mb",
+            "line": 80,
+            "kind": "FunctionDef",
+            "doc": "Get file size in MB"
+          },
+          {
+            "name": "reset_chat",
+            "line": 84,
+            "kind": "FunctionDef",
+            "doc": "Reset chat history and video state"
+          },
+          {
+            "name": "display_video",
+            "line": 99,
+            "kind": "FunctionDef",
+            "doc": "Display uploaded video"
+          },
+          {
+            "name": "__init__",
+            "line": 26,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "upload_video",
+            "line": 30,
+            "kind": "FunctionDef",
+            "doc": "Upload video to Gemini File API"
+          },
+          {
+            "name": "wait_for_file_processing",
+            "line": 42,
+            "kind": "FunctionDef",
+            "doc": "Wait for video file to be processed by Gemini"
+          },
+          {
+            "name": "chat_with_video",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": "Generate response based on video content and user prompt"
+          }
+        ],
+        "calls": [
+          "Path",
+          "ValueError",
+          "VideoProcessor",
+          "display_video",
+          "enumerate",
+          "file.getvalue",
+          "genai.GenerativeModel",
+          "genai.configure",
+          "genai.delete_file",
+          "genai.get_file",
+          "genai.upload_file",
+          "get_file_size_mb",
+          "is_video_file",
+          "len",
+          "load_dotenv",
+          "message_placeholder.markdown",
+          "mime_type.startswith",
+          "mimetypes.guess_type",
+          "os.getenv",
+          "os.unlink",
+          "reset_chat",
+          "response.split",
+          "self.model.generate_content",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.file_uploader",
+          "st.header",
+          "st.info",
+          "st.markdown",
+          "st.rerun",
+          "st.session_state.messages.append",
+          "st.session_state.video_processor.chat_with_video",
+          "st.session_state.video_processor.upload_video",
+          "st.session_state.video_processor.wait_for_file_processing",
+          "st.set_page_config",
+          "st.spinner",
+          "st.success",
+          "st.text_input",
+          "st.title",
+          "st.video",
+          "st.warning",
+          "str",
+          "tempfile.NamedTemporaryFile",
+          "time.sleep",
+          "tmp_file.write",
+          "uploaded_file.getvalue"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "demo.py",
+        "imports": [
+          "dotenv",
+          "google",
+          "os",
+          "time"
+        ],
+        "environment": [
+          "GEMINI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "demo_video_chat",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": "Simple demo of video chat functionality"
+          }
+        ],
+        "calls": [
+          ".strip",
+          "demo_video_chat",
+          "genai.GenerativeModel",
+          "genai.configure",
+          "genai.delete_file",
+          "genai.get_file",
+          "genai.upload_file",
+          "input",
+          "load_dotenv",
+          "model.generate_content",
+          "os.getenv",
+          "os.path.exists",
+          "print",
+          "time.sleep",
+          "user_input.lower"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "test_setup.py",
+        "imports": [
+          "dotenv",
+          "google",
+          "os",
+          "streamlit",
+          "sys"
+        ],
+        "environment": [
+          "GEMINI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "test_imports",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Test if all required packages are installed"
+          },
+          {
+            "name": "test_api_key",
+            "line": 37,
+            "kind": "FunctionDef",
+            "doc": "Test if API key is configured"
+          },
+          {
+            "name": "test_gemini_connection",
+            "line": 59,
+            "kind": "FunctionDef",
+            "doc": "Test connection to Gemini API"
+          },
+          {
+            "name": "main",
+            "line": 92,
+            "kind": "FunctionDef",
+            "doc": "Run all tests"
+          }
+        ],
+        "calls": [
+          "genai.configure",
+          "genai.list_models",
+          "len",
+          "list",
+          "load_dotenv",
+          "main",
+          "os.getenv",
+          "print",
+          "sys.exit",
+          "test_api_key",
+          "test_gemini_connection",
+          "test_imports"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "requirements.txt"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "GEMINI_API_KEY"
+    ],
+    "imports": [
+      "base64",
+      "dotenv",
+      "google",
+      "mimetypes",
+      "os",
+      "pathlib",
+      "streamlit",
+      "sys",
+      "tempfile",
+      "time"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "demo.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 3
+  },
+  "category": "media",
+  "purpose": "Upload video to Gemini and ask grounded questions about its contents."
+}

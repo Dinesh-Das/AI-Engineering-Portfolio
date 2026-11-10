@@ -1,0 +1,257 @@
+{
+  "id": "web-browsing-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/web-browsing-agent",
+  "entries": [
+    {
+      "path": "flow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "194931f18cfc2b75bdcdd4893667f21bc18b74784ab4aceb6c1c55c2bd3c0edb",
+      "local_sha256": "194931f18cfc2b75bdcdd4893667f21bc18b74784ab4aceb6c1c55c2bd3c0edb",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "flow.py",
+      "path": "flow.py",
+      "upstream_sha256": "48c77280dfde0f6cadbab4246645f8150e27df352d6e81ec24fe0650e66dc2cd",
+      "local_sha256": "48c77280dfde0f6cadbab4246645f8150e27df352d6e81ec24fe0650e66dc2cd",
+      "changes": []
+    },
+    {
+      "upstream_path": "prompts.txt",
+      "path": "prompts.txt",
+      "upstream_sha256": "1118583bd042c0560f590907dbdc28369f36ae24dc257ae15c2da3f4bd7115ac",
+      "local_sha256": "1118583bd042c0560f590907dbdc28369f36ae24dc257ae15c2da3f4bd7115ac",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "2f4bee172527068042d72ba1dbae6bc466a5e8970c85315f93873a6cc2556835",
+      "local_sha256": "2f4bee172527068042d72ba1dbae6bc466a5e8970c85315f93873a6cc2556835",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "313d24a360ea3aa960b2ab65767e475bd6c13b22043a30fcd0cbb9826f1a0576",
+      "local_sha256": "313d24a360ea3aa960b2ab65767e475bd6c13b22043a30fcd0cbb9826f1a0576",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "stagehand_tool.py",
+      "path": "stagehand_tool.py",
+      "upstream_sha256": "b46f715c42393d853edeab61c6b55e46ac5803e2a0281b78a406add2cb141051",
+      "local_sha256": "b46f715c42393d853edeab61c6b55e46ac5803e2a0281b78a406add2cb141051",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "ac237d367402cbfad848583d9a4f3dfca411c657029a5339d2627dd7387fb583",
+      "local_sha256": "ac237d367402cbfad848583d9a4f3dfca411c657029a5339d2627dd7387fb583",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "flow.py",
+        "imports": [
+          "asyncio",
+          "crewai",
+          "dotenv",
+          "pydantic",
+          "stagehand_tool",
+          "typing"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/gpt-oss",
+          "openai/gpt-4"
+        ],
+        "symbols": [
+          {
+            "name": "stagehand_browser_tool",
+            "line": 20,
+            "kind": "FunctionDef",
+            "doc": "A tool that allows to interact with a web browser."
+          },
+          {
+            "name": "BrowserAutomationFlowState",
+            "line": 35,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "AutomationPlan",
+            "line": 40,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "BrowserAutomationFlow",
+            "line": 45,
+            "kind": "ClassDef",
+            "doc": "A CrewAI Flow to intelligently handle browser automation tasks"
+          },
+          {
+            "name": "main",
+            "line": 147,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "start_flow",
+            "line": 52,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "plan_task",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_browser_automation",
+            "line": 94,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "synthesize_result",
+            "line": 122,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "BrowserAutomationFlow",
+          "Crew",
+          "LLM",
+          "Task",
+          "asyncio.run",
+          "browser_automation",
+          "crew.kickoff",
+          "flow.kickoff_async",
+          "listen",
+          "load_dotenv",
+          "main",
+          "print",
+          "start",
+          "str",
+          "tool",
+          "website_url.lower"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "stagehand_tool.py",
+        "imports": [
+          "asyncio",
+          "nest_asyncio",
+          "os",
+          "stagehand"
+        ],
+        "environment": [
+          "MODEL_API_KEY"
+        ],
+        "models": [
+          "computer-use-preview",
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "browser_automation",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": "Performs automated browser tasks using AI agent capabilities."
+          },
+          {
+            "name": "_execute_automation",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Stagehand",
+          "StagehandConfig",
+          "_execute_automation",
+          "agent.execute",
+          "asyncio.run",
+          "nest_asyncio.apply",
+          "os.getenv",
+          "stagehand.agent",
+          "stagehand.close",
+          "stagehand.init",
+          "stagehand.page.goto"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "MODEL_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "crewai",
+      "dotenv",
+      "nest_asyncio",
+      "os",
+      "pydantic",
+      "stagehand",
+      "stagehand_tool",
+      "typing"
+    ],
+    "models": [
+      "computer-use-preview",
+      "gpt-4o",
+      "ollama/gpt-oss",
+      "openai/gpt-4"
+    ],
+    "entries": [
+      {
+        "path": "flow.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "agents",
+  "purpose": "Plan and execute browser research with CrewAI and Stagehand."
+}

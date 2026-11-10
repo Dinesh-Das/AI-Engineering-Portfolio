@@ -1,0 +1,25 @@
+{
+  "units": [],
+  "manifests": [
+    "package.json"
+  ],
+  "notebooks": [],
+  "other_code": [
+    "postcss.config.js",
+    "server.ts",
+    "src/mcp-app.ts",
+    "vite.config.ts"
+  ],
+  "environment": [
+    "AUTOTRAIN_SPACE_NAME",
+    "HF_API",
+    "HF_TOKEN",
+    "INPUT",
+    "PORT"
+  ],
+  "imports": [],
+  "models": [],
+  "entries": [],
+  "findings": [],
+  "syntax_errors": []
+}

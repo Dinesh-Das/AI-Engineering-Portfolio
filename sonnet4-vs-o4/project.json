@@ -1,0 +1,321 @@
+{
+  "id": "sonnet4-vs-o4",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/sonnet4-vs-o4",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "7ff442323b79a85a4d1c117d2bd30c889318091cf6b1c75bca80bbf8243cbd64",
+      "local_sha256": "7ff442323b79a85a4d1c117d2bd30c889318091cf6b1c75bca80bbf8243cbd64",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "3bd48a62ef50cc4d923ef587a67cccd83fa52befe9fd16001a8ca6b6a5855ebb",
+      "local_sha256": "3bd48a62ef50cc4d923ef587a67cccd83fa52befe9fd16001a8ca6b6a5855ebb",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "817bd46aa79ffd4cb03975d2a60ea0c790a91f215727393558a4e855075f8827",
+      "local_sha256": "817bd46aa79ffd4cb03975d2a60ea0c790a91f215727393558a4e855075f8827",
+      "changes": []
+    },
+    {
+      "upstream_path": "code_evaluation.py",
+      "path": "code_evaluation.py",
+      "upstream_sha256": "0e5bb0c7e3363ebd01788fa3529fe47394e8fd0117609bb45c9967566d8adb93",
+      "local_sha256": "0e5bb0c7e3363ebd01788fa3529fe47394e8fd0117609bb45c9967566d8adb93",
+      "changes": []
+    },
+    {
+      "upstream_path": "code_ingestion.py",
+      "path": "code_ingestion.py",
+      "upstream_sha256": "bb69b6533fc0f314990a98420b0dc6abf5eec62960d34d7939192f8660652e30",
+      "local_sha256": "bb69b6533fc0f314990a98420b0dc6abf5eec62960d34d7939192f8660652e30",
+      "changes": []
+    },
+    {
+      "upstream_path": "model_service.py",
+      "path": "model_service.py",
+      "upstream_sha256": "505e0f5c89387a416ad27b0562ed391d4dae52f21a6277c7e8e5b97db8d9c83a",
+      "local_sha256": "505e0f5c89387a416ad27b0562ed391d4dae52f21a6277c7e8e5b97db8d9c83a",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "cc6f06547cbd0e2be81002ffa0a77831aa489e549c160d06d7b677a892c97f91",
+      "local_sha256": "cc6f06547cbd0e2be81002ffa0a77831aa489e549c160d06d7b677a892c97f91",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "09705289d99d959ba4e0cd1c3799834036ca44c01b52dba5f79e8ad45414fafa",
+      "local_sha256": "09705289d99d959ba4e0cd1c3799834036ca44c01b52dba5f79e8ad45414fafa",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "26fb0b3217850d8693a321c02d32ccfcd1307b85a1acabdefd5f2657488efa14",
+      "local_sha256": "26fb0b3217850d8693a321c02d32ccfcd1307b85a1acabdefd5f2657488efa14",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "asyncio",
+          "code_evaluation",
+          "code_ingestion",
+          "dotenv",
+          "model_service",
+          "pandas",
+          "plotly",
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "handle_chat_input",
+            "line": 96,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_claude_stream",
+            "line": 115,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_openai_stream",
+            "line": 123,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".removeprefix",
+          ".removesuffix",
+          ".strip",
+          "asyncio.gather",
+          "asyncio.run",
+          "claude_container.code",
+          "claude_data.append",
+          "container.code",
+          "dict",
+          "evaluate_code",
+          "fig.update_layout",
+          "fig.update_xaxes",
+          "fig.update_yaxes",
+          "get_parallel_responses",
+          "handle_chat_input",
+          "ingest_github_repo",
+          "load_dotenv",
+          "metric.title",
+          "openai_container.code",
+          "openai_data.append",
+          "pd.DataFrame",
+          "plot_data.melt",
+          "process_claude_stream",
+          "process_openai_stream",
+          "px.bar",
+          "response_text.strip",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.code",
+          "st.column_config.TextColumn",
+          "st.columns",
+          "st.dataframe",
+          "st.empty",
+          "st.error",
+          "st.header",
+          "st.markdown",
+          "st.plotly_chart",
+          "st.session_state.chat_history.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.success",
+          "st.text_area",
+          "st.text_input",
+          "st.title",
+          "st.write"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "code_evaluation.py",
+        "imports": [
+          "deepeval",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "evaluate_code",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "GEval",
+          "LLMTestCase",
+          "Rubric",
+          "metric.measure",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "code_ingestion.py",
+        "imports": [
+          "gitingest",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ingest_github_repo",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Exception",
+          "ingest",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "model_service.py",
+        "imports": [
+          "asyncio",
+          "litellm",
+          "os",
+          "typing"
+        ],
+        "environment": [
+          "ANTHROPIC_API_KEY",
+          "OPENAI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_model_response_async",
+            "line": 6,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_parallel_responses",
+            "line": 51,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_model_responses",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "acompletion",
+          "asyncio.get_event_loop",
+          "get_model_response_async",
+          "get_parallel_responses",
+          "loop.run_until_complete",
+          "os.getenv",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "ANTHROPIC_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "code_evaluation",
+      "code_ingestion",
+      "deepeval",
+      "dotenv",
+      "gitingest",
+      "litellm",
+      "model_service",
+      "os",
+      "pandas",
+      "plotly",
+      "streamlit",
+      "typing"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "evaluation",
+  "purpose": "Compare code generation with shared context and DeepEval grading."
+}

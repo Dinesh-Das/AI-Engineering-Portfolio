@@ -1,0 +1,275 @@
+{
+  "units": [
+    {
+      "path": "building-financial-analyst.ipynb#cell-1",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "building-financial-analyst.ipynb#cell-2",
+      "imports": [
+        "crewai",
+        "crewai_tools",
+        "json",
+        "os",
+        "re",
+        "yfinance"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "building-financial-analyst.ipynb#cell-3",
+      "imports": [
+        "pydantic"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "QueryAnalysisOutput",
+          "line": 3,
+          "kind": "ClassDef",
+          "doc": "Structured output for the query analysis task."
+        }
+      ],
+      "calls": [
+        "Field"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "building-financial-analyst.ipynb#cell-4",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "ollama/deepseek-r1:7b"
+      ],
+      "symbols": [],
+      "calls": [
+        "Agent",
+        "CodeInterpreterTool",
+        "LLM",
+        "Task"
+      ],
+      "findings": [
+        {
+          "rule": "allow_code_execution",
+          "path": "building-financial-analyst.ipynb#cell-4",
+          "line": 47,
+          "message": "allow_code_execution=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "building-financial-analyst.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Crew",
+        "crew.kickoff"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "building-financial-analyst.ipynb#cell-6",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "finance_crew.py",
+      "imports": [
+        "crewai",
+        "crewai_tools",
+        "dotenv",
+        "json",
+        "os",
+        "pydantic",
+        "re",
+        "yfinance"
+      ],
+      "environment": [],
+      "models": [
+        "ollama/deepseek-r1:7b"
+      ],
+      "symbols": [
+        {
+          "name": "QueryAnalysisOutput",
+          "line": 13,
+          "kind": "ClassDef",
+          "doc": "Structured output for the query analysis task."
+        },
+        {
+          "name": "run_financial_analysis",
+          "line": 95,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Agent",
+        "CodeInterpreterTool",
+        "Crew",
+        "Field",
+        "LLM",
+        "Task",
+        "crew.kickoff",
+        "load_dotenv",
+        "print"
+      ],
+      "findings": [
+        {
+          "rule": "allow_code_execution",
+          "path": "finance_crew.py",
+          "line": 70,
+          "message": "allow_code_execution=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "finance_crew",
+        "mcp"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "analyze_stock",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": "Analyzes stock market data based on the query and generates executable Python code for analysis and visualization."
+        },
+        {
+          "name": "save_code",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": "Expects a nicely formatted, working and executable python code as input in form of a string. "
+        },
+        {
+          "name": "run_code_and_show_plot",
+          "line": 54,
+          "kind": "FunctionDef",
+          "doc": "Run the code in stock_analysis.py and generate the plot"
+        }
+      ],
+      "calls": [
+        "FastMCP",
+        "exec",
+        "f.read",
+        "f.write",
+        "mcp.run",
+        "mcp.tool",
+        "open",
+        "run_financial_analysis"
+      ],
+      "findings": [
+        {
+          "rule": "code-execution",
+          "path": "server.py",
+          "line": 59,
+          "message": "Review inputs to exec; untrusted data can execute code."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "building-financial-analyst.ipynb"
+  ],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "crewai",
+    "crewai_tools",
+    "dotenv",
+    "finance_crew",
+    "json",
+    "mcp",
+    "os",
+    "pydantic",
+    "re",
+    "yfinance"
+  ],
+  "models": [
+    "ollama/deepseek-r1:7b"
+  ],
+  "entries": [
+    {
+      "path": "building-financial-analyst.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "finance_crew.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [
+    {
+      "rule": "allow_code_execution",
+      "path": "building-financial-analyst.ipynb#cell-4",
+      "line": 47,
+      "message": "allow_code_execution=True crosses a code-execution trust boundary."
+    },
+    {
+      "rule": "allow_code_execution",
+      "path": "finance_crew.py",
+      "line": 70,
+      "message": "allow_code_execution=True crosses a code-execution trust boundary."
+    },
+    {
+      "rule": "code-execution",
+      "path": "server.py",
+      "line": 59,
+      "message": "Review inputs to exec; untrusted data can execute code."
+    }
+  ],
+  "syntax_errors": []
+}

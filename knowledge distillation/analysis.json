@@ -1,0 +1,308 @@
+{
+  "units": [
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-3",
+      "imports": [
+        "numpy",
+        "pandas",
+        "sys",
+        "time",
+        "torch",
+        "torchvision",
+        "tqdm"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "DataLoader",
+        "torchvision.datasets.MNIST",
+        "transforms.Compose",
+        "transforms.Normalize",
+        "transforms.ToTensor"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-8",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "TeacherNet",
+          "line": 1,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 2,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "forward",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".__init__",
+        "F.relu",
+        "nn.Conv2d",
+        "nn.Linear",
+        "nn.MaxPool2d",
+        "self.conv1",
+        "self.fc1",
+        "self.fc2",
+        "self.pool",
+        "super",
+        "x.size",
+        "x.view"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-10",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "evaluate",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".item",
+        ".sum",
+        "labels.size",
+        "model",
+        "model.eval",
+        "torch.max",
+        "torch.no_grad"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-12",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "TeacherNet",
+        "nn.CrossEntropyLoss",
+        "optim.Adam",
+        "teacher_model.parameters"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-13",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "evaluate",
+        "len",
+        "loss.backward",
+        "loss.item",
+        "print",
+        "range",
+        "teacher_criterion",
+        "teacher_model",
+        "teacher_model.train",
+        "teacher_optimizer.step",
+        "teacher_optimizer.zero_grad"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-15",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "StudentNet",
+          "line": 1,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 2,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "forward",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".__init__",
+        "F.relu",
+        "nn.Linear",
+        "self.fc1",
+        "self.fc2",
+        "super",
+        "x.size",
+        "x.view"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-17",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "StudentNet",
+        "optim.Adam",
+        "student_model.parameters"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-19",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "knowledge_distillation_loss",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "F.kl_div",
+        "F.log_softmax",
+        "F.softmax"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-20",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".detach",
+        "evaluate",
+        "knowledge_distillation_loss",
+        "len",
+        "loss.backward",
+        "loss.item",
+        "print",
+        "range",
+        "student_model",
+        "student_model.train",
+        "student_optimizer.step",
+        "student_optimizer.zero_grad",
+        "teacher_model"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-21",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb#cell-22",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "Knowledge-Distillation-Notebook.ipynb"
+  ],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "numpy",
+    "pandas",
+    "sys",
+    "time",
+    "torch",
+    "torchvision",
+    "tqdm"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "Knowledge-Distillation-Notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

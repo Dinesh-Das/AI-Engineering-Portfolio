@@ -1,0 +1,2973 @@
+{
+  "units": [
+    {
+      "path": "apps/evals-leaderboard/app.py",
+      "imports": [
+        "__future__",
+        "gradio",
+        "json",
+        "requests"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "format_model_link",
+          "line": 39,
+          "kind": "FunctionDef",
+          "doc": "Format model ID as a clickable link."
+        },
+        {
+          "name": "format_source_link",
+          "line": 44,
+          "kind": "FunctionDef",
+          "doc": "Format source as a clickable link."
+        },
+        {
+          "name": "fetch_leaderboard",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": "Fetch leaderboard data from the HF dataset."
+        },
+        {
+          "name": "refresh_handler",
+          "line": 64,
+          "kind": "FunctionDef",
+          "doc": "Refresh the leaderboard data from the dataset."
+        }
+      ],
+      "calls": [
+        ".join",
+        ".split",
+        "demo.launch",
+        "demo.load",
+        "fetch_leaderboard",
+        "format_model_link",
+        "format_source_link",
+        "gr.Blocks",
+        "gr.Dataframe",
+        "gr.Markdown",
+        "json.loads",
+        "len",
+        "metadata.get",
+        "requests.get",
+        "resp.json",
+        "resp.raise_for_status",
+        "resp.text.strip",
+        "rows.append"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "apps/evals-leaderboard/collect_evals.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "huggingface_hub",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "requests",
+        "typing",
+        "yaml"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "_normalize",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_coerce_score",
+          "line": 46,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "BenchmarkSpec",
+          "line": 63,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "EvalsCollector",
+          "line": 104,
+          "kind": "ClassDef",
+          "doc": "Collects evaluation scores from model-index metadata."
+        },
+        {
+          "name": "main",
+          "line": 427,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "matches",
+          "line": 68,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 107,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "log",
+          "line": 116,
+          "kind": "FunctionDef",
+          "doc": "Add a log message."
+        },
+        {
+          "name": "collect_all",
+          "line": 121,
+          "kind": "FunctionDef",
+          "doc": "Collect evaluation scores from trending models."
+        },
+        {
+          "name": "_fetch_trending_models",
+          "line": 137,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_collect_scores",
+          "line": 160,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_read_model_card",
+          "line": 204,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_parse_front_matter",
+          "line": 225,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_fetch_pull_requests",
+          "line": 244,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_extract_scores",
+          "line": 265,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_match_benchmark",
+          "line": 324,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_format_scores",
+          "line": 342,
+          "kind": "FunctionDef",
+          "doc": "Format scores as flat records for the dataset."
+        },
+        {
+          "name": "get_leaderboard",
+          "line": 360,
+          "kind": "FunctionDef",
+          "doc": "Get results sorted by score descending."
+        },
+        {
+          "name": "save_json",
+          "line": 364,
+          "kind": "FunctionDef",
+          "doc": "Save the leaderboard to a JSON file."
+        },
+        {
+          "name": "push_to_hub",
+          "line": 377,
+          "kind": "FunctionDef",
+          "doc": "Push the leaderboard data to a HF dataset."
+        }
+      ],
+      "calls": [
+        ".encode",
+        ".endswith",
+        ".isoformat",
+        ".join",
+        ".read_text",
+        ".strftime",
+        "BENCHMARKS.items",
+        "BENCHMARKS.keys",
+        "BenchmarkSpec",
+        "EvalsCollector",
+        "HfApi",
+        "Path",
+        "ValueError",
+        "_coerce_score",
+        "_normalize",
+        "api.create_repo",
+        "api.upload_file",
+        "argparse.ArgumentParser",
+        "author_info.get",
+        "candidate.endswith",
+        "card_meta.get",
+        "collector.collect_all",
+        "collector.get_leaderboard",
+        "collector.push_to_hub",
+        "collector.save_json",
+        "content.lstrip",
+        "content.splitlines",
+        "content.startswith",
+        "dataclass",
+        "dataset_info.get",
+        "datetime.now",
+        "disc.get",
+        "entry.get",
+        "enumerate",
+        "float",
+        "hf_hub_download",
+        "isinstance",
+        "item.get",
+        "json.dump",
+        "json.dumps",
+        "jsonl_content.encode",
+        "len",
+        "line.strip",
+        "list",
+        "main",
+        "metric.get",
+        "model.get",
+        "open",
+        "os.environ.get",
+        "parser.add_argument",
+        "parser.parse_args",
+        "payload.get",
+        "pr.get",
+        "pr_meta.get",
+        "print",
+        "prs.sort",
+        "raw_value.strip",
+        "re.sub",
+        "repo_id.split",
+        "requests.Session",
+        "response.json",
+        "response.raise_for_status",
+        "result.get",
+        "round",
+        "rows.append",
+        "scores.get",
+        "scores.items",
+        "self._collect_scores",
+        "self._extract_scores",
+        "self._fetch_pull_requests",
+        "self._fetch_trending_models",
+        "self._format_scores",
+        "self._match_benchmark",
+        "self._parse_front_matter",
+        "self._read_model_card",
+        "self.get_leaderboard",
+        "self.log",
+        "self.logs.append",
+        "self.results.extend",
+        "self.session.get",
+        "self.session.headers.update",
+        "set",
+        "sorted",
+        "spec.matches",
+        "task_info.get",
+        "text.lower",
+        "text.strip",
+        "value.strip",
+        "yaml.safe_load"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "apps/hackers-leaderboard/app.py",
+      "imports": [
+        "__future__",
+        "gradio",
+        "json",
+        "requests"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "format_username",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": "Format username as a clickable link."
+        },
+        {
+          "name": "fetch_leaderboard",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": "Fetch leaderboard data from the HF dataset."
+        },
+        {
+          "name": "refresh_handler",
+          "line": 58,
+          "kind": "FunctionDef",
+          "doc": "Refresh the leaderboard data from the dataset."
+        }
+      ],
+      "calls": [
+        ".join",
+        ".split",
+        "demo.launch",
+        "demo.load",
+        "enumerate",
+        "fetch_leaderboard",
+        "format_username",
+        "gr.Blocks",
+        "gr.Dataframe",
+        "gr.HTML",
+        "gr.Markdown",
+        "json.loads",
+        "len",
+        "metadata.get",
+        "requests.get",
+        "resp.json",
+        "resp.raise_for_status",
+        "resp.text.strip",
+        "rows.append",
+        "sum"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "apps/hackers-leaderboard/collect_points.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "huggingface_hub",
+        "json",
+        "os",
+        "requests",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "UserStats",
+          "line": 36,
+          "kind": "ClassDef",
+          "doc": "Tracks engagement stats for a single user."
+        },
+        {
+          "name": "PointsCollector",
+          "line": 63,
+          "kind": "ClassDef",
+          "doc": "Collects engagement points from the hf-skills organization."
+        },
+        {
+          "name": "main",
+          "line": 461,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "total_points",
+          "line": 48,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "to_dict",
+          "line": 51,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 66,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "log",
+          "line": 75,
+          "kind": "FunctionDef",
+          "doc": "Add a log message."
+        },
+        {
+          "name": "_fetch_org_members",
+          "line": 80,
+          "kind": "FunctionDef",
+          "doc": "Fetch all members of the organization."
+        },
+        {
+          "name": "collect_all",
+          "line": 106,
+          "kind": "FunctionDef",
+          "doc": "Collect points from all repos in the organization."
+        },
+        {
+          "name": "scan_external_repos",
+          "line": 143,
+          "kind": "FunctionDef",
+          "doc": "Scan trending repos across the Hub for PRs by org members."
+        },
+        {
+          "name": "_fetch_trending",
+          "line": 177,
+          "kind": "FunctionDef",
+          "doc": "Fetch trending repos of a given type."
+        },
+        {
+          "name": "_scan_repo_for_members",
+          "line": 190,
+          "kind": "FunctionDef",
+          "doc": "Scan a repo's discussions for activity by org members using author filter."
+        },
+        {
+          "name": "_fetch_member_discussions",
+          "line": 215,
+          "kind": "FunctionDef",
+          "doc": "Fetch discussions for a specific author on a repo."
+        },
+        {
+          "name": "_fetch_discussion_comments",
+          "line": 260,
+          "kind": "FunctionDef",
+          "doc": "Fetch comments on a discussion and count those by target author."
+        },
+        {
+          "name": "_list_repos",
+          "line": 287,
+          "kind": "FunctionDef",
+          "doc": "List all repos of a given type in the organization."
+        },
+        {
+          "name": "_scan_discussions",
+          "line": 300,
+          "kind": "FunctionDef",
+          "doc": "Scan all discussions for a repo and count engagement."
+        },
+        {
+          "name": "_process_discussion",
+          "line": 325,
+          "kind": "FunctionDef",
+          "doc": "Process a single discussion and its comments."
+        },
+        {
+          "name": "_fetch_comments",
+          "line": 341,
+          "kind": "FunctionDef",
+          "doc": "Fetch and count comments on a discussion."
+        },
+        {
+          "name": "_add_point",
+          "line": 363,
+          "kind": "FunctionDef",
+          "doc": "Add a point to a user's stats."
+        },
+        {
+          "name": "get_leaderboard",
+          "line": 392,
+          "kind": "FunctionDef",
+          "doc": "Get the leaderboard sorted by total points."
+        },
+        {
+          "name": "save_json",
+          "line": 398,
+          "kind": "FunctionDef",
+          "doc": "Save the leaderboard to a JSON file."
+        },
+        {
+          "name": "push_to_hub",
+          "line": 411,
+          "kind": "FunctionDef",
+          "doc": "Push the leaderboard data to a HF dataset."
+        }
+      ],
+      "calls": [
+        ".encode",
+        ".isoformat",
+        ".join",
+        ".strftime",
+        "HfApi",
+        "PointsCollector",
+        "UserStats",
+        "api.create_repo",
+        "api.list_organization_members",
+        "api.upload_file",
+        "argparse.ArgumentParser",
+        "author_info.get",
+        "collector.collect_all",
+        "collector.get_leaderboard",
+        "collector.push_to_hub",
+        "collector.save_json",
+        "collector.scan_external_repos",
+        "data.get",
+        "datetime.now",
+        "dict",
+        "discussion.get",
+        "enumerate",
+        "event.get",
+        "field",
+        "getattr",
+        "json.dump",
+        "json.dumps",
+        "jsonl_content.encode",
+        "leaderboard.sort",
+        "len",
+        "list",
+        "m.get",
+        "main",
+        "open",
+        "os.environ.get",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "repo_id.split",
+        "repo_id.startswith",
+        "repo_info.get",
+        "requests.Session",
+        "response.json",
+        "response.raise_for_status",
+        "self._add_point",
+        "self._fetch_comments",
+        "self._fetch_discussion_comments",
+        "self._fetch_member_discussions",
+        "self._fetch_org_members",
+        "self._fetch_trending",
+        "self._list_repos",
+        "self._process_discussion",
+        "self._scan_discussions",
+        "self._scan_repo_for_members",
+        "self.get_leaderboard",
+        "self.log",
+        "self.logs.append",
+        "self.session.get",
+        "self.session.headers.update",
+        "self.user_stats.keys",
+        "self.user_stats.values",
+        "set",
+        "setattr",
+        "stats.activities.append",
+        "stats.to_dict",
+        "sum",
+        "type_map.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "scripts/generate_agents.py",
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "load_template",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "parse_frontmatter",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": "Parse a minimal YAML-ish frontmatter block without external deps."
+        },
+        {
+          "name": "collect_skills",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "render",
+          "line": 68,
+          "kind": "FunctionDef",
+          "doc": "Very small Mustache-like renderer that only supports a single skills loop."
+        },
+        {
+          "name": "load_marketplace",
+          "line": 87,
+          "kind": "FunctionDef",
+          "doc": "Load marketplace.json and return parsed structure."
+        },
+        {
+          "name": "generate_readme_table",
+          "line": 94,
+          "kind": "FunctionDef",
+          "doc": "Generate the skills table for README.md using marketplace.json names."
+        },
+        {
+          "name": "update_readme",
+          "line": 115,
+          "kind": "FunctionDef",
+          "doc": "Update the README.md skills table between markers."
+        },
+        {
+          "name": "validate_marketplace",
+          "line": 154,
+          "kind": "FunctionDef",
+          "doc": "Validate marketplace.json against discovered skills."
+        },
+        {
+          "name": "main",
+          "line": 190,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "repl",
+          "line": 70,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        ".lower",
+        ".replace",
+        ".resolve",
+        ".splitlines",
+        ".strip",
+        "FileNotFoundError",
+        "MARKETPLACE_PATH.exists",
+        "MARKETPLACE_PATH.read_text",
+        "OUTPUT_PATH.parent.mkdir",
+        "OUTPUT_PATH.write_text",
+        "Path",
+        "README_PATH.exists",
+        "README_PATH.read_text",
+        "README_PATH.write_text",
+        "ROOT.glob",
+        "TEMPLATE_PATH.read_text",
+        "block.replace",
+        "collect_skills",
+        "content.find",
+        "errors.append",
+        "generate_readme_table",
+        "json.loads",
+        "key.strip",
+        "len",
+        "line.split",
+        "lines.append",
+        "load_marketplace",
+        "load_template",
+        "main",
+        "marketplace.get",
+        "match.group",
+        "meta.get",
+        "parse_frontmatter",
+        "plugin.get",
+        "plugins.get",
+        "print",
+        "re.search",
+        "re.sub",
+        "render",
+        "rendered_blocks.append",
+        "skill_md.parent.relative_to",
+        "skill_md.read_text",
+        "skills.append",
+        "sorted",
+        "str",
+        "sys.exit",
+        "update_readme",
+        "validate_marketplace",
+        "value.strip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-datasets/scripts/dataset_manager.py",
+      "imports": [
+        "argparse",
+        "huggingface_hub",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "init_dataset",
+          "line": 39,
+          "kind": "FunctionDef",
+          "doc": "Initialize a new dataset repository on Hugging Face Hub."
+        },
+        {
+          "name": "define_config",
+          "line": 74,
+          "kind": "FunctionDef",
+          "doc": "Define a configuration for the dataset, including a system prompt."
+        },
+        {
+          "name": "load_dataset_template",
+          "line": 97,
+          "kind": "FunctionDef",
+          "doc": "Load dataset template configuration from templates directory."
+        },
+        {
+          "name": "validate_by_template",
+          "line": 110,
+          "kind": "FunctionDef",
+          "doc": "Validate data according to template schema."
+        },
+        {
+          "name": "_validate_field_type",
+          "line": 153,
+          "kind": "FunctionDef",
+          "doc": "Validate individual field type."
+        },
+        {
+          "name": "_validate_chat_format",
+          "line": 176,
+          "kind": "FunctionDef",
+          "doc": "Validate chat-specific format."
+        },
+        {
+          "name": "_validate_classification_format",
+          "line": 198,
+          "kind": "FunctionDef",
+          "doc": "Validate classification-specific format."
+        },
+        {
+          "name": "_validate_tabular_format",
+          "line": 210,
+          "kind": "FunctionDef",
+          "doc": "Validate tabular-specific format."
+        },
+        {
+          "name": "validate_training_data",
+          "line": 232,
+          "kind": "FunctionDef",
+          "doc": "Validate training data structure according to template."
+        },
+        {
+          "name": "_basic_validation",
+          "line": 245,
+          "kind": "FunctionDef",
+          "doc": "Basic validation when no template is available."
+        },
+        {
+          "name": "add_rows",
+          "line": 255,
+          "kind": "FunctionDef",
+          "doc": "Stream updates to the dataset by uploading a new chunk of rows."
+        },
+        {
+          "name": "load_template",
+          "line": 307,
+          "kind": "FunctionDef",
+          "doc": "Load a template file from the examples directory."
+        },
+        {
+          "name": "quick_setup",
+          "line": 317,
+          "kind": "FunctionDef",
+          "doc": "Quick setup for different dataset types using templates."
+        },
+        {
+          "name": "show_stats",
+          "line": 360,
+          "kind": "FunctionDef",
+          "doc": "Display statistics about the dataset."
+        },
+        {
+          "name": "list_available_templates",
+          "line": 386,
+          "kind": "FunctionDef",
+          "doc": "List all available dataset templates with descriptions."
+        }
+      ],
+      "calls": [
+        ".encode",
+        ".glob",
+        ".join",
+        ".split",
+        "HfApi",
+        "Path",
+        "ValueError",
+        "_basic_validation",
+        "_validate_chat_format",
+        "_validate_classification_format",
+        "_validate_field_type",
+        "_validate_tabular_format",
+        "add_parser.add_argument",
+        "add_rows",
+        "all",
+        "api.list_repo_files",
+        "api.repo_info",
+        "api.upload_file",
+        "argparse.ArgumentParser",
+        "config_parser.add_argument",
+        "create_repo",
+        "define_config",
+        "enumerate",
+        "expected_type.startswith",
+        "f.startswith",
+        "field_types.items",
+        "init_dataset",
+        "init_parser.add_argument",
+        "int",
+        "isinstance",
+        "json.dumps",
+        "json.load",
+        "json.loads",
+        "jsonl_content.encode",
+        "len",
+        "list_available_templates",
+        "load_dataset_template",
+        "open",
+        "os.environ.get",
+        "parser.add_subparsers",
+        "parser.parse_args",
+        "print",
+        "quick_setup",
+        "readme_content.encode",
+        "repo_id.split",
+        "row.get",
+        "row.keys",
+        "schema.get",
+        "set",
+        "setup_parser.add_argument",
+        "show_stats",
+        "stats_parser.add_argument",
+        "str",
+        "subparsers.add_parser",
+        "template.get",
+        "template_config.get",
+        "template_path.exists",
+        "template_path.read_text",
+        "templates_dir.exists",
+        "templates_dir.glob",
+        "time.time",
+        "type",
+        "validate_by_template",
+        "validate_training_data"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-datasets/scripts/sql_manager.py",
+      "imports": [
+        "argparse",
+        "datasets",
+        "duckdb",
+        "huggingface_hub",
+        "json",
+        "os",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "HFDatasetSQL",
+          "line": 54,
+          "kind": "ClassDef",
+          "doc": "Query Hugging Face datasets using DuckDB SQL."
+        },
+        {
+          "name": "main",
+          "line": 619,
+          "kind": "FunctionDef",
+          "doc": "CLI entry point."
+        },
+        {
+          "name": "_print_results",
+          "line": 811,
+          "kind": "FunctionDef",
+          "doc": "Print results in specified format."
+        },
+        {
+          "name": "__init__",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": "Initialize the SQL manager with optional HF token."
+        },
+        {
+          "name": "_setup_connection",
+          "line": 71,
+          "kind": "FunctionDef",
+          "doc": "Configure DuckDB connection for HF access."
+        },
+        {
+          "name": "_build_hf_path",
+          "line": 77,
+          "kind": "FunctionDef",
+          "doc": "Build the hf:// path for a dataset."
+        },
+        {
+          "name": "_build_hf_path_flexible",
+          "line": 97,
+          "kind": "FunctionDef",
+          "doc": "Build flexible hf:// path with wildcards for discovery."
+        },
+        {
+          "name": "query",
+          "line": 125,
+          "kind": "FunctionDef",
+          "doc": "Execute SQL query on a Hugging Face dataset."
+        },
+        {
+          "name": "query_raw",
+          "line": 189,
+          "kind": "FunctionDef",
+          "doc": "Execute raw SQL query without path substitution."
+        },
+        {
+          "name": "describe",
+          "line": 216,
+          "kind": "FunctionDef",
+          "doc": "Get schema/structure of a dataset."
+        },
+        {
+          "name": "sample",
+          "line": 238,
+          "kind": "FunctionDef",
+          "doc": "Get a random sample from a dataset."
+        },
+        {
+          "name": "count",
+          "line": 268,
+          "kind": "FunctionDef",
+          "doc": "Count rows in a dataset, optionally with filter."
+        },
+        {
+          "name": "unique_values",
+          "line": 292,
+          "kind": "FunctionDef",
+          "doc": "Get unique values in a column."
+        },
+        {
+          "name": "histogram",
+          "line": 315,
+          "kind": "FunctionDef",
+          "doc": "Get value distribution/histogram for a column."
+        },
+        {
+          "name": "filter_and_transform",
+          "line": 345,
+          "kind": "FunctionDef",
+          "doc": "Filter and transform dataset with SQL clauses."
+        },
+        {
+          "name": "join_datasets",
+          "line": 397,
+          "kind": "FunctionDef",
+          "doc": "Join two datasets."
+        },
+        {
+          "name": "export_to_parquet",
+          "line": 443,
+          "kind": "FunctionDef",
+          "doc": "Export query results to a local Parquet file."
+        },
+        {
+          "name": "export_to_jsonl",
+          "line": 479,
+          "kind": "FunctionDef",
+          "doc": "Export query results to JSONL format."
+        },
+        {
+          "name": "push_to_hub",
+          "line": 509,
+          "kind": "FunctionDef",
+          "doc": "Query a dataset and push results to a new Hub repository."
+        },
+        {
+          "name": "create_view",
+          "line": 564,
+          "kind": "FunctionDef",
+          "doc": "Create a DuckDB view for easier querying."
+        },
+        {
+          "name": "info",
+          "line": 578,
+          "kind": "FunctionDef",
+          "doc": "Get information about a dataset including available configs and splits."
+        },
+        {
+          "name": "close",
+          "line": 614,
+          "kind": "FunctionDef",
+          "doc": "Close the database connection."
+        },
+        {
+          "name": "add_common_args",
+          "line": 659,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".fetchall",
+        ".fetchone",
+        ".join",
+        ".keys",
+        ".ljust",
+        "Dataset.from_list",
+        "HFDatasetSQL",
+        "HfApi",
+        "ImportError",
+        "_print_results",
+        "add_common_args",
+        "api.dataset_info",
+        "argparse.ArgumentParser",
+        "count_parser.add_argument",
+        "dict",
+        "ds.push_to_hub",
+        "duckdb.connect",
+        "export_parser.add_argument",
+        "f.write",
+        "getattr",
+        "histogram_parser.add_argument",
+        "info_parser.add_argument",
+        "json.dumps",
+        "len",
+        "list",
+        "main",
+        "max",
+        "open",
+        "os.environ.get",
+        "p.add_argument",
+        "parser.add_subparsers",
+        "parser.parse_args",
+        "print",
+        "processed_sql.replace",
+        "processed_sql.upper",
+        "query_parser.add_argument",
+        "r.get",
+        "raw_parser.add_argument",
+        "result.fetch_arrow_table",
+        "result.fetchall",
+        "result.fetchdf",
+        "row.get",
+        "sample_parser.add_argument",
+        "self._build_hf_path",
+        "self._setup_connection",
+        "self.conn.close",
+        "self.conn.execute",
+        "self.query",
+        "self.query_raw",
+        "sql.close",
+        "sql.count",
+        "sql.describe",
+        "sql.export_to_jsonl",
+        "sql.export_to_parquet",
+        "sql.filter_and_transform",
+        "sql.histogram",
+        "sql.info",
+        "sql.push_to_hub",
+        "sql.query",
+        "sql.query_raw",
+        "sql.replace",
+        "sql.sample",
+        "sql.unique_values",
+        "sql_parts.append",
+        "str",
+        "subparsers.add_parser",
+        "transform_parser.add_argument",
+        "unique_parser.add_argument",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/examples/artificial_analysis_to_hub.py",
+      "imports": [
+        "argparse",
+        "dotenv",
+        "huggingface_hub",
+        "os",
+        "requests"
+      ],
+      "environment": [
+        "AA_API_KEY",
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "get_model_evaluations_data",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "aa_evaluations_to_model_index",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 107,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".title",
+        "ModelCard.load",
+        "ValueError",
+        "aa_evaluations_to_model_index",
+        "argparse.ArgumentParser",
+        "card.push_to_hub",
+        "dotenv.load_dotenv",
+        "evaluations.items",
+        "get_model_evaluations_data",
+        "key.replace",
+        "main",
+        "metrics.append",
+        "model.get",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.parse_args",
+        "requests.get",
+        "response.json"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/evaluation_manager.py",
+      "imports": [
+        "argparse",
+        "dotenv",
+        "huggingface_hub",
+        "markdown_it",
+        "os",
+        "re",
+        "requests",
+        "textwrap",
+        "typing",
+        "yaml"
+      ],
+      "environment": [
+        "AA_API_KEY",
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "load_env",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": "Load .env if python-dotenv is available; keep help usable without it."
+        },
+        {
+          "name": "require_markdown_it",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "require_model_card",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "require_requests",
+          "line": 60,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "require_yaml",
+          "line": 71,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "extract_tables_from_markdown",
+          "line": 87,
+          "kind": "FunctionDef",
+          "doc": "Extract all markdown tables from content."
+        },
+        {
+          "name": "parse_markdown_table",
+          "line": 95,
+          "kind": "FunctionDef",
+          "doc": "Parse a markdown table string into headers and rows."
+        },
+        {
+          "name": "is_evaluation_table",
+          "line": 123,
+          "kind": "FunctionDef",
+          "doc": "Determine if a table contains evaluation results."
+        },
+        {
+          "name": "normalize_model_name",
+          "line": 154,
+          "kind": "FunctionDef",
+          "doc": "Normalize a model name for matching."
+        },
+        {
+          "name": "find_main_model_column",
+          "line": 176,
+          "kind": "FunctionDef",
+          "doc": "Identify the column index that corresponds to the main model."
+        },
+        {
+          "name": "find_main_model_row",
+          "line": 215,
+          "kind": "FunctionDef",
+          "doc": "Identify the row index that corresponds to the main model in a transposed table."
+        },
+        {
+          "name": "is_transposed_table",
+          "line": 262,
+          "kind": "FunctionDef",
+          "doc": "Determine if a table is transposed (models as rows, benchmarks as columns)."
+        },
+        {
+          "name": "extract_metrics_from_table",
+          "line": 319,
+          "kind": "FunctionDef",
+          "doc": "Extract metrics from parsed table data."
+        },
+        {
+          "name": "extract_evaluations_from_readme",
+          "line": 489,
+          "kind": "FunctionDef",
+          "doc": "Extract evaluation results from a model's README."
+        },
+        {
+          "name": "extract_tables_with_parser",
+          "line": 609,
+          "kind": "FunctionDef",
+          "doc": "Extract tables from markdown using markdown-it-py parser."
+        },
+        {
+          "name": "detect_table_format",
+          "line": 656,
+          "kind": "FunctionDef",
+          "doc": "Analyze a table to detect its format and identify model columns."
+        },
+        {
+          "name": "inspect_tables",
+          "line": 720,
+          "kind": "FunctionDef",
+          "doc": "Inspect and display all evaluation tables in a model's README."
+        },
+        {
+          "name": "get_open_prs",
+          "line": 788,
+          "kind": "FunctionDef",
+          "doc": "Fetch open pull requests for a Hugging Face model repository."
+        },
+        {
+          "name": "list_open_prs",
+          "line": 826,
+          "kind": "FunctionDef",
+          "doc": "Display open pull requests for a model repository."
+        },
+        {
+          "name": "get_aa_model_data",
+          "line": 853,
+          "kind": "FunctionDef",
+          "doc": "Fetch model evaluation data from Artificial Analysis API."
+        },
+        {
+          "name": "aa_data_to_model_index",
+          "line": 893,
+          "kind": "FunctionDef",
+          "doc": "Convert Artificial Analysis model data to model-index format."
+        },
+        {
+          "name": "import_aa_evaluations",
+          "line": 943,
+          "kind": "FunctionDef",
+          "doc": "Import evaluation results from Artificial Analysis for a model."
+        },
+        {
+          "name": "update_model_card_with_evaluations",
+          "line": 973,
+          "kind": "FunctionDef",
+          "doc": "Update a model card with evaluation results."
+        },
+        {
+          "name": "show_evaluations",
+          "line": 1052,
+          "kind": "FunctionDef",
+          "doc": "Display current evaluations in a model card."
+        },
+        {
+          "name": "validate_model_index",
+          "line": 1100,
+          "kind": "FunctionDef",
+          "doc": "Validate model-index format in a model card."
+        },
+        {
+          "name": "main",
+          "line": 1153,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".append",
+        ".extend",
+        ".get",
+        ".lower",
+        ".replace",
+        ".split",
+        ".strip",
+        ".title",
+        "MarkdownIt",
+        "ModelCard.load",
+        "ModuleNotFoundError",
+        "ValueError",
+        "aa_data_to_model_index",
+        "aa_parser.add_argument",
+        "all_metrics.extend",
+        "analysis.get",
+        "any",
+        "argparse.ArgumentParser",
+        "args.repo_id.split",
+        "available_models.append",
+        "benchmark_name.lower",
+        "card.push_to_hub",
+        "cell.replace",
+        "cell.strip",
+        "cleaned.lower",
+        "cleaned.strip",
+        "col_name.lower",
+        "creator.get",
+        "current_row.append",
+        "d.get",
+        "data.get",
+        "data_rows.append",
+        "dataset.get",
+        "dedent",
+        "detect_table_format",
+        "dotenv.load_dotenv",
+        "enumerate",
+        "eval_tables.append",
+        "evaluations.items",
+        "extract_evaluations_from_readme",
+        "extract_metrics_from_table",
+        "extract_parser.add_argument",
+        "extract_tables_with_parser",
+        "find_main_model_column",
+        "find_main_model_row",
+        "float",
+        "get_aa_model_data",
+        "get_open_prs",
+        "header_tokens.issubset",
+        "import_aa_evaluations",
+        "inspect_parser.add_argument",
+        "inspect_tables",
+        "is_evaluation_table",
+        "is_transposed_table",
+        "isinstance",
+        "key.replace",
+        "len",
+        "line.split",
+        "line.strip",
+        "list_open_prs",
+        "load_env",
+        "main",
+        "md.parse",
+        "metric.get",
+        "metrics.append",
+        "model.get",
+        "model_columns.append",
+        "model_data.get",
+        "model_entry.get",
+        "model_tokens.issubset",
+        "normalize_model_name",
+        "normalized.split",
+        "numeric_columns.append",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.add_subparsers",
+        "parser.parse_args",
+        "parser.print_help",
+        "print",
+        "prs_parser.add_argument",
+        "range",
+        "re.findall",
+        "re.match",
+        "re.sub",
+        "repo_id.split",
+        "requests.get",
+        "require_markdown_it",
+        "require_model_card",
+        "require_requests",
+        "require_yaml",
+        "response.json",
+        "response.raise_for_status",
+        "result.get",
+        "row_name.startswith",
+        "set",
+        "show_evaluations",
+        "show_parser.add_argument",
+        "source.get",
+        "subparsers.add_parser",
+        "sum",
+        "t.content.strip",
+        "table.get",
+        "table_str.strip",
+        "tables.append",
+        "task.get",
+        "update_model_card_with_evaluations",
+        "val.replace",
+        "validate_model_index",
+        "validate_parser.add_argument",
+        "yaml.dump"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/inspect_eval_uv.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "inspect_evals",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "_inspect_evals_tasks_root",
+          "line": 24,
+          "kind": "FunctionDef",
+          "doc": "Return the installed inspect_evals package path if available."
+        },
+        {
+          "name": "_normalize_task",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": "Allow lighteval-style `suite|task|shots` strings by keeping the task name."
+        },
+        {
+          "name": "main",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Path",
+        "_inspect_evals_tasks_root",
+        "_normalize_task",
+        "argparse.ArgumentParser",
+        "cmd.extend",
+        "len",
+        "main",
+        "os.environ.setdefault",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "str",
+        "subprocess.run",
+        "task.split",
+        "tasks_root.exists"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/inspect_vllm_uv.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "os",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "setup_environment",
+          "line": 41,
+          "kind": "FunctionDef",
+          "doc": "Configure environment variables for HuggingFace authentication."
+        },
+        {
+          "name": "run_inspect_vllm",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": "Run inspect-ai evaluation with vLLM backend."
+        },
+        {
+          "name": "run_inspect_hf",
+          "line": 118,
+          "kind": "FunctionDef",
+          "doc": "Run inspect-ai evaluation with HuggingFace Transformers backend."
+        },
+        {
+          "name": "main",
+          "line": 183,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        "argparse.ArgumentParser",
+        "cmd.append",
+        "cmd.extend",
+        "main",
+        "os.environ.setdefault",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "run_inspect_hf",
+        "run_inspect_vllm",
+        "setup_environment",
+        "str",
+        "subprocess.run",
+        "sys.exit"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "os",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "setup_environment",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": "Configure environment variables for HuggingFace authentication."
+        },
+        {
+          "name": "run_lighteval_vllm",
+          "line": 45,
+          "kind": "FunctionDef",
+          "doc": "Run lighteval with vLLM backend for efficient GPU inference."
+        },
+        {
+          "name": "run_lighteval_accelerate",
+          "line": 113,
+          "kind": "FunctionDef",
+          "doc": "Run lighteval with accelerate backend for multi-GPU distributed inference."
+        },
+        {
+          "name": "main",
+          "line": 177,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        "argparse.ArgumentParser",
+        "cmd.append",
+        "cmd.extend",
+        "main",
+        "os.environ.setdefault",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "run_lighteval_accelerate",
+        "run_lighteval_vllm",
+        "setup_environment",
+        "str",
+        "subprocess.run",
+        "sys.exit"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/run_eval_job.py",
+      "imports": [
+        "argparse",
+        "dotenv",
+        "huggingface_hub",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_eval_job",
+          "line": 32,
+          "kind": "FunctionDef",
+          "doc": "Submit an evaluation job using the Hugging Face Jobs CLI."
+        },
+        {
+          "name": "main",
+          "line": 80,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        ".resolve",
+        ".with_name",
+        "FileNotFoundError",
+        "Path",
+        "SCRIPT_PATH.exists",
+        "ValueError",
+        "argparse.ArgumentParser",
+        "cmd.extend",
+        "create_eval_job",
+        "get_token",
+        "load_dotenv",
+        "main",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "str",
+        "subprocess.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/run_vllm_eval_job.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "dotenv",
+        "huggingface_hub",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "estimate_hardware",
+          "line": 54,
+          "kind": "FunctionDef",
+          "doc": "Estimate appropriate hardware based on model ID naming conventions."
+        },
+        {
+          "name": "create_lighteval_job",
+          "line": 76,
+          "kind": "FunctionDef",
+          "doc": "Submit a lighteval evaluation job on HuggingFace Jobs."
+        },
+        {
+          "name": "create_inspect_job",
+          "line": 134,
+          "kind": "FunctionDef",
+          "doc": "Submit an inspect-ai evaluation job on HuggingFace Jobs."
+        },
+        {
+          "name": "main",
+          "line": 186,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        ".parent.resolve",
+        "FileNotFoundError",
+        "INSPECT_SCRIPT.exists",
+        "LIGHTEVAL_SCRIPT.exists",
+        "Path",
+        "ValueError",
+        "any",
+        "argparse.ArgumentParser",
+        "cmd.append",
+        "cmd.extend",
+        "create_inspect_job",
+        "create_lighteval_job",
+        "estimate_hardware",
+        "get_token",
+        "load_dotenv",
+        "main",
+        "model_id.lower",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "str",
+        "subprocess.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/test_extraction.py",
+      "imports": [
+        "evaluation_manager",
+        "yaml"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "test_table_extraction",
+          "line": 56,
+          "kind": "FunctionDef",
+          "doc": "Test markdown table extraction."
+        },
+        {
+          "name": "test_table_parsing",
+          "line": 73,
+          "kind": "FunctionDef",
+          "doc": "Test table parsing."
+        },
+        {
+          "name": "test_evaluation_detection",
+          "line": 96,
+          "kind": "FunctionDef",
+          "doc": "Test evaluation table detection."
+        },
+        {
+          "name": "test_metric_extraction",
+          "line": 116,
+          "kind": "FunctionDef",
+          "doc": "Test metric extraction."
+        },
+        {
+          "name": "test_model_index_format",
+          "line": 136,
+          "kind": "FunctionDef",
+          "doc": "Test model-index format generation."
+        },
+        {
+          "name": "main",
+          "line": 168,
+          "kind": "FunctionDef",
+          "doc": "Run all tests."
+        }
+      ],
+      "calls": [
+        "all_metrics.extend",
+        "enumerate",
+        "eval_tables.append",
+        "extract_metrics_from_table",
+        "extract_tables_from_markdown",
+        "is_evaluation_table",
+        "len",
+        "main",
+        "parse_markdown_table",
+        "parsed_tables.append",
+        "print",
+        "test_evaluation_detection",
+        "test_metric_extraction",
+        "test_model_index_format",
+        "test_table_extraction",
+        "test_table_parsing",
+        "yaml.dump"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-jobs/scripts/cot-self-instruct.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "datasets",
+        "datetime",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "random",
+        "re",
+        "sklearn",
+        "sys",
+        "torch",
+        "tqdm",
+        "transformers",
+        "typing",
+        "vllm"
+      ],
+      "environment": [
+        "HF_HUB_ENABLE_HF_TRANSFER",
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "check_gpu_availability",
+          "line": 104,
+          "kind": "FunctionDef",
+          "doc": "Check if CUDA is available and return the number of GPUs."
+        },
+        {
+          "name": "parse_thinking_output",
+          "line": 122,
+          "kind": "FunctionDef",
+          "doc": "Remove thinking tokens from model output."
+        },
+        {
+          "name": "extract_reasoning_output",
+          "line": 129,
+          "kind": "FunctionDef",
+          "doc": "Extract question and answer from reasoning task output."
+        },
+        {
+          "name": "extract_instruction_output",
+          "line": 152,
+          "kind": "FunctionDef",
+          "doc": "Extract synthetic prompt from instruction task output."
+        },
+        {
+          "name": "categorize_prompts",
+          "line": 163,
+          "kind": "FunctionDef",
+          "doc": "Categorize prompts using clustering for instruction tasks."
+        },
+        {
+          "name": "generate_synthetic_data",
+          "line": 196,
+          "kind": "FunctionDef",
+          "doc": "Generate synthetic data using CoT-Self-Instruct."
+        },
+        {
+          "name": "answer_consistency_filter",
+          "line": 267,
+          "kind": "FunctionDef",
+          "doc": "Filter reasoning tasks using Answer-Consistency."
+        },
+        {
+          "name": "rip_filter",
+          "line": 319,
+          "kind": "FunctionDef",
+          "doc": "Filter using Rejecting Instruction Preferences (RIP)."
+        },
+        {
+          "name": "create_dataset_card",
+          "line": 364,
+          "kind": "FunctionDef",
+          "doc": "Create a comprehensive dataset card."
+        },
+        {
+          "name": "main",
+          "line": 441,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".append",
+        ".get",
+        ".numpy",
+        ".strip",
+        "AutoModel.from_pretrained",
+        "AutoTokenizer.from_pretrained",
+        "Counter",
+        "Dataset.from_list",
+        "DatasetCard",
+        "INSTRUCTION_PROMPT_TEMPLATE.format",
+        "KMeans",
+        "LLM",
+        "REASONING_PROMPT_TEMPLATE.format",
+        "SamplingParams",
+        "answer_consistency_filter",
+        "answer_counts.most_common",
+        "answer_match.group",
+        "answers.append",
+        "argparse.ArgumentParser",
+        "card.push_to_hub",
+        "categories.keys",
+        "categorize_prompts",
+        "check_gpu_availability",
+        "create_dataset_card",
+        "dataset.push_to_hub",
+        "datetime.now",
+        "embeddings.append",
+        "enumerate",
+        "extract_instruction_output",
+        "extract_reasoning_output",
+        "filtered_data.append",
+        "generate_synthetic_data",
+        "item.get",
+        "kmeans.fit_predict",
+        "len",
+        "list",
+        "llm.generate",
+        "load_dataset",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "login",
+        "main",
+        "match.group",
+        "min",
+        "model",
+        "np.random.seed",
+        "os.environ.get",
+        "outputs.last_hidden_state.mean",
+        "parse_thinking_output",
+        "parser.add_argument",
+        "parser.parse_args",
+        "pbar.close",
+        "pbar.update",
+        "print",
+        "question_match.group",
+        "random.choice",
+        "random.sample",
+        "random.seed",
+        "range",
+        "re.search",
+        "re.sub",
+        "rip_filter",
+        "seed_data.index",
+        "seed_dataset.to_list",
+        "start_time.strftime",
+        "synthetic_data.append",
+        "sys.exit",
+        "text.strip",
+        "tokenizer",
+        "torch.cuda.device_count",
+        "torch.cuda.empty_cache",
+        "torch.cuda.get_device_name",
+        "torch.cuda.get_device_properties",
+        "torch.cuda.is_available",
+        "torch.manual_seed",
+        "torch.no_grad",
+        "tqdm"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-jobs/scripts/finepdfs-stats.py",
+      "imports": [
+        "argparse",
+        "ascii_graph",
+        "datasets",
+        "huggingface_hub",
+        "logging",
+        "os",
+        "pathlib",
+        "polars",
+        "sys",
+        "time"
+      ],
+      "environment": [
+        "HF_TOKEN",
+        "HF_XET_HIGH_PERFORMANCE"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "list_available_languages",
+          "line": 75,
+          "kind": "FunctionDef",
+          "doc": "List available language subsets in the dataset."
+        },
+        {
+          "name": "compute_temporal_stats",
+          "line": 91,
+          "kind": "FunctionDef",
+          "doc": "Single scan: compute stats grouped by dump for temporal analysis."
+        },
+        {
+          "name": "compute_global_stats",
+          "line": 103,
+          "kind": "FunctionDef",
+          "doc": "Compute global stats from temporal breakdown."
+        },
+        {
+          "name": "format_temporal_stats",
+          "line": 119,
+          "kind": "FunctionDef",
+          "doc": "Format temporal stats with high_edu_rate, sorted chronologically."
+        },
+        {
+          "name": "create_ascii_charts",
+          "line": 132,
+          "kind": "FunctionDef",
+          "doc": "Create ASCII bar charts showing temporal trends."
+        },
+        {
+          "name": "create_readme",
+          "line": 171,
+          "kind": "FunctionDef",
+          "doc": "Create README content for the stats dataset."
+        },
+        {
+          "name": "main",
+          "line": 274,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".agg",
+        ".alias",
+        ".group_by",
+        ".join",
+        ".list.mean",
+        ".mean",
+        ".n_unique",
+        ".select",
+        ".sort",
+        ".str.extract",
+        ".sum",
+        ".to_dicts",
+        "COMMON_LANGUAGES.get",
+        "COMMON_LANGUAGES.items",
+        "COMMON_LANGUAGES.keys",
+        "Dataset.from_polars",
+        "HfApi",
+        "Path",
+        "Pyasciigraph",
+        "api.upload_file",
+        "argparse.ArgumentParser",
+        "compute_global_stats",
+        "compute_temporal_stats",
+        "create_ascii_charts",
+        "create_readme",
+        "create_repo",
+        "df.group_by",
+        "df.head",
+        "df.select",
+        "ds.push_to_hub",
+        "format_temporal_stats",
+        "global_stats.to_dicts",
+        "global_stats.write_parquet",
+        "graph.graph",
+        "graph2.graph",
+        "item.path.replace",
+        "item.path.startswith",
+        "len",
+        "lines.append",
+        "lines.extend",
+        "list",
+        "list_available_languages",
+        "list_repo_tree",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "login",
+        "main",
+        "os.environ.get",
+        "output_dir.mkdir",
+        "parser.add_argument",
+        "parser.parse_args",
+        "pl.DataFrame",
+        "pl.col",
+        "pl.len",
+        "pl.read_parquet",
+        "pl.scan_parquet",
+        "print",
+        "query.sink_parquet",
+        "readme_content.encode",
+        "sample_query.explain",
+        "sorted",
+        "stats.get",
+        "sys.exit",
+        "temporal.with_columns",
+        "temporal_stats.head",
+        "temporal_stats.tail",
+        "temporal_stats.with_columns",
+        "temporal_stats.write_parquet",
+        "time.perf_counter",
+        "time.sleep",
+        "yearly.head",
+        "yearly.iter_rows",
+        "yearly.tail"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-jobs/scripts/generate-responses.py",
+      "imports": [
+        "argparse",
+        "datasets",
+        "datetime",
+        "huggingface_hub",
+        "logging",
+        "os",
+        "sys",
+        "torch",
+        "tqdm",
+        "transformers",
+        "typing",
+        "vllm"
+      ],
+      "environment": [
+        "HF_HUB_ENABLE_HF_TRANSFER",
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "check_gpu_availability",
+          "line": 64,
+          "kind": "FunctionDef",
+          "doc": "Check if CUDA is available and return the number of GPUs."
+        },
+        {
+          "name": "create_dataset_card",
+          "line": 82,
+          "kind": "FunctionDef",
+          "doc": "Create a comprehensive dataset card documenting the generation process."
+        },
+        {
+          "name": "main",
+          "line": 168,
+          "kind": "FunctionDef",
+          "doc": "Main generation pipeline."
+        }
+      ],
+      "calls": [
+        ".isoformat",
+        ".text.strip",
+        "AutoTokenizer.from_pretrained",
+        "DatasetCard",
+        "LLM",
+        "SamplingParams",
+        "all_prompts.append",
+        "argparse.ArgumentParser",
+        "card.push_to_hub",
+        "check_gpu_availability",
+        "create_dataset_card",
+        "cuda.device_count",
+        "cuda.get_device_name",
+        "cuda.get_device_properties",
+        "cuda.is_available",
+        "dataset.add_column",
+        "dataset.push_to_hub",
+        "dataset.select",
+        "datetime.now",
+        "enumerate",
+        "get_token",
+        "len",
+        "llm.generate",
+        "load_dataset",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "login",
+        "main",
+        "os.environ.get",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "range",
+        "skipped_info.append",
+        "sys.exit",
+        "tokenizer.apply_chat_template",
+        "tokenizer.encode",
+        "tqdm",
+        "valid_indices.append",
+        "valid_prompts.append"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/convert_to_gguf.py",
+      "imports": [
+        "huggingface_hub",
+        "os",
+        "peft",
+        "subprocess",
+        "torch",
+        "transformers"
+      ],
+      "environment": [
+        "ADAPTER_MODEL",
+        "BASE_MODEL",
+        "HF_USERNAME",
+        "OUTPUT_REPO"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".replace",
+        "ADAPTER_MODEL.split",
+        "AutoModelForCausalLM.from_pretrained",
+        "AutoTokenizer.from_pretrained",
+        "HfApi",
+        "OUTPUT_REPO.split",
+        "PeftModel.from_pretrained",
+        "api.create_repo",
+        "api.upload_file",
+        "merged_model.save_pretrained",
+        "model.merge_and_unload",
+        "os.environ.get",
+        "os.makedirs",
+        "os.path.getsize",
+        "print",
+        "quant_type.lower",
+        "quantized_files.append",
+        "readme_content.encode",
+        "subprocess.run",
+        "tokenizer.save_pretrained"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "skills/hugging-face-model-trainer/scripts/convert_to_gguf.py",
+          "line": 61,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        },
+        {
+          "rule": "trust_remote_code",
+          "path": "skills/hugging-face-model-trainer/scripts/convert_to_gguf.py",
+          "line": 79,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/dataset_inspector.py",
+      "imports": [
+        "argparse",
+        "json",
+        "sys",
+        "typing",
+        "urllib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "parse_args",
+          "line": 28,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "api_request",
+          "line": 39,
+          "kind": "FunctionDef",
+          "doc": "Make API request to Datasets Server"
+        },
+        {
+          "name": "get_splits",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": "Get available splits for dataset"
+        },
+        {
+          "name": "get_rows",
+          "line": 58,
+          "kind": "FunctionDef",
+          "doc": "Get rows from dataset"
+        },
+        {
+          "name": "find_columns",
+          "line": 64,
+          "kind": "FunctionDef",
+          "doc": "Find columns matching patterns"
+        },
+        {
+          "name": "check_sft_compatibility",
+          "line": 69,
+          "kind": "FunctionDef",
+          "doc": "Check SFT compatibility"
+        },
+        {
+          "name": "check_dpo_compatibility",
+          "line": 89,
+          "kind": "FunctionDef",
+          "doc": "Check DPO compatibility"
+        },
+        {
+          "name": "check_grpo_compatibility",
+          "line": 108,
+          "kind": "FunctionDef",
+          "doc": "Check GRPO compatibility"
+        },
+        {
+          "name": "check_kto_compatibility",
+          "line": 122,
+          "kind": "FunctionDef",
+          "doc": "Check KTO compatibility"
+        },
+        {
+          "name": "generate_mapping_code",
+          "line": 127,
+          "kind": "FunctionDef",
+          "doc": "Generate mapping code for a training method"
+        },
+        {
+          "name": "format_value_preview",
+          "line": 185,
+          "kind": "FunctionDef",
+          "doc": "Format value for preview"
+        },
+        {
+          "name": "main",
+          "line": 201,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".join",
+        ".keys",
+        "Exception",
+        "any",
+        "api_request",
+        "argparse.ArgumentParser",
+        "available_configs.add",
+        "bool",
+        "c.lower",
+        "check_dpo_compatibility",
+        "check_grpo_compatibility",
+        "check_kto_compatibility",
+        "check_sft_compatibility",
+        "example.get",
+        "find_columns",
+        "first_row.keys",
+        "format_value_preview",
+        "generate_mapping_code",
+        "get_rows",
+        "get_splits",
+        "info.get",
+        "isinstance",
+        "json.dumps",
+        "json.loads",
+        "len",
+        "list",
+        "main",
+        "parse_args",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "recommended.append",
+        "response.read",
+        "rows_data.get",
+        "set",
+        "sorted",
+        "split_info.get",
+        "str",
+        "sys.exit",
+        "urllib.parse.quote",
+        "urllib.request.urlopen"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/estimate_cost.py",
+      "imports": [
+        "argparse"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "estimate_training_time",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": "Estimate training time in hours."
+        },
+        {
+          "name": "parse_args",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "extract_model_size",
+          "line": 74,
+          "kind": "FunctionDef",
+          "doc": "Extract model size from name or return parsed value."
+        },
+        {
+          "name": "main",
+          "line": 89,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "HARDWARE_COSTS.keys",
+        "MODEL_SIZES.items",
+        "argparse.ArgumentParser",
+        "dataset_sizes.get",
+        "estimate_training_time",
+        "extract_model_size",
+        "float",
+        "hardware_multipliers.get",
+        "main",
+        "model_name.replace",
+        "parse_args",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/train_dpo_example.py",
+      "imports": [
+        "datasets",
+        "trackio",
+        "trl"
+      ],
+      "environment": [],
+      "models": [
+        "Qwen/Qwen2.5-0.5B-Instruct"
+      ],
+      "symbols": [],
+      "calls": [
+        "DPOConfig",
+        "DPOTrainer",
+        "dataset.train_test_split",
+        "len",
+        "load_dataset",
+        "print",
+        "trackio.finish",
+        "trainer.push_to_hub",
+        "trainer.train"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/train_grpo_example.py",
+      "imports": [
+        "datasets",
+        "trackio",
+        "trl"
+      ],
+      "environment": [],
+      "models": [
+        "Qwen/Qwen2.5-0.5B-Instruct"
+      ],
+      "symbols": [],
+      "calls": [
+        "GRPOConfig",
+        "GRPOTrainer",
+        "len",
+        "load_dataset",
+        "print",
+        "trainer.push_to_hub",
+        "trainer.train"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/train_sft_example.py",
+      "imports": [
+        "datasets",
+        "peft",
+        "trackio",
+        "trl"
+      ],
+      "environment": [],
+      "models": [
+        "Qwen/Qwen2.5-0.5B"
+      ],
+      "symbols": [],
+      "calls": [
+        "LoraConfig",
+        "SFTConfig",
+        "SFTTrainer",
+        "dataset.train_test_split",
+        "len",
+        "load_dataset",
+        "print",
+        "trainer.push_to_hub",
+        "trainer.train"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-paper-publisher/scripts/paper_manager.py",
+      "imports": [
+        "argparse",
+        "datetime",
+        "dotenv",
+        "huggingface_hub",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "requests",
+        "sys",
+        "typing",
+        "yaml"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "PaperManager",
+          "line": 30,
+          "kind": "ClassDef",
+          "doc": "Manages paper publishing operations on Hugging Face Hub."
+        },
+        {
+          "name": "main",
+          "line": 378,
+          "kind": "FunctionDef",
+          "doc": "Main CLI entry point."
+        },
+        {
+          "name": "__init__",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": "Initialize Paper Manager with HF token."
+        },
+        {
+          "name": "index_paper",
+          "line": 40,
+          "kind": "FunctionDef",
+          "doc": "Index a paper on Hugging Face from arXiv."
+        },
+        {
+          "name": "check_paper",
+          "line": 71,
+          "kind": "FunctionDef",
+          "doc": "Check if a paper exists on Hugging Face."
+        },
+        {
+          "name": "link_paper_to_repo",
+          "line": 103,
+          "kind": "FunctionDef",
+          "doc": "Link a paper to a model/dataset/space repository."
+        },
+        {
+          "name": "_add_paper_to_readme",
+          "line": 177,
+          "kind": "FunctionDef",
+          "doc": "Add paper reference to README content."
+        },
+        {
+          "name": "create_research_article",
+          "line": 231,
+          "kind": "FunctionDef",
+          "doc": "Create a research article from template."
+        },
+        {
+          "name": "get_arxiv_info",
+          "line": 293,
+          "kind": "FunctionDef",
+          "doc": "Fetch paper information from arXiv API."
+        },
+        {
+          "name": "generate_citation",
+          "line": 329,
+          "kind": "FunctionDef",
+          "doc": "Generate citation for a paper."
+        },
+        {
+          "name": "_clean_arxiv_id",
+          "line": 368,
+          "kind": "FunctionDef",
+          "doc": "Clean and normalize arXiv ID."
+        }
+      ],
+      "calls": [
+        ".join",
+        ".strftime",
+        ".strip",
+        "HfApi",
+        "HfFolder.get_token",
+        "PaperManager",
+        "Path",
+        "argparse.ArgumentParser",
+        "args.arxiv_ids.split",
+        "arxiv_id.replace",
+        "arxiv_id.split",
+        "arxiv_id.strip",
+        "arxiv_ids.append",
+        "arxiv_ids.extend",
+        "check_parser.add_argument",
+        "citation_parser.add_argument",
+        "content.lower",
+        "content.replace",
+        "create_parser.add_argument",
+        "datetime.now",
+        "f.read",
+        "f.write",
+        "hf_hub_download",
+        "id.strip",
+        "index_parser.add_argument",
+        "info.get",
+        "info_parser.add_argument",
+        "int",
+        "json.dumps",
+        "len",
+        "link_parser.add_argument",
+        "load_dotenv",
+        "main",
+        "manager.check_paper",
+        "manager.create_research_article",
+        "manager.generate_citation",
+        "manager.get_arxiv_info",
+        "manager.index_paper",
+        "manager.link_paper_to_repo",
+        "match.end",
+        "open",
+        "os.getenv",
+        "parser.add_subparsers",
+        "parser.parse_args",
+        "parser.print_help",
+        "print",
+        "re.findall",
+        "re.match",
+        "re.search",
+        "re.sub",
+        "requests.get",
+        "response.raise_for_status",
+        "result.get",
+        "search_parser.add_argument",
+        "self._add_paper_to_readme",
+        "self._clean_arxiv_id",
+        "self.api.upload_file",
+        "self.get_arxiv_info",
+        "str",
+        "subparsers.add_parser",
+        "summary_match.group",
+        "sys.exit",
+        "template_content.replace",
+        "template_file.exists",
+        "title_match.group",
+        "updated_content.encode"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "skills/hugging-face-tool-builder/references/baseline_hf_api.py",
+      "imports": [
+        "__future__",
+        "os",
+        "sys",
+        "urllib"
+      ],
+      "environment": [
+        "HF_TOKEN"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "show_help",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        "SystemExit",
+        "len",
+        "limit.isdigit",
+        "main",
+        "os.getenv",
+        "print",
+        "resp.read",
+        "show_help",
+        "sys.stdout.write",
+        "urllib.request.Request",
+        "urllib.request.urlopen"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "apps/evals-leaderboard/requirements.txt",
+    "apps/hackers-leaderboard/requirements.txt",
+    "skills/hugging-face-evaluation/requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [
+    "scripts/link-skills.sh",
+    "skills/hugging-face-tool-builder/references/baseline_hf_api.sh",
+    "skills/hugging-face-tool-builder/references/find_models_by_paper.sh",
+    "skills/hugging-face-tool-builder/references/hf_enrich_models.sh",
+    "skills/hugging-face-tool-builder/references/hf_model_card_frontmatter.sh",
+    "skills/hugging-face-tool-builder/references/hf_model_papers_auth.sh"
+  ],
+  "environment": [
+    "AA_API_KEY",
+    "ADAPTER_MODEL",
+    "BASE_MODEL",
+    "HF_HUB_ENABLE_HF_TRANSFER",
+    "HF_TOKEN",
+    "HF_USERNAME",
+    "HF_XET_HIGH_PERFORMANCE",
+    "OUTPUT_REPO"
+  ],
+  "imports": [
+    "__future__",
+    "argparse",
+    "ascii_graph",
+    "collections",
+    "dataclasses",
+    "datasets",
+    "datetime",
+    "dotenv",
+    "duckdb",
+    "evaluation_manager",
+    "gradio",
+    "huggingface_hub",
+    "inspect_evals",
+    "json",
+    "logging",
+    "markdown_it",
+    "numpy",
+    "os",
+    "pathlib",
+    "peft",
+    "polars",
+    "random",
+    "re",
+    "requests",
+    "sklearn",
+    "subprocess",
+    "sys",
+    "textwrap",
+    "time",
+    "torch",
+    "tqdm",
+    "trackio",
+    "transformers",
+    "trl",
+    "typing",
+    "urllib",
+    "vllm",
+    "yaml"
+  ],
+  "models": [
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "entries": [
+    {
+      "path": "apps/evals-leaderboard/app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "apps/evals-leaderboard/collect_evals.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "apps/hackers-leaderboard/app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "apps/hackers-leaderboard/collect_points.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "scripts/generate_agents.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-datasets/scripts/dataset_manager.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-datasets/scripts/sql_manager.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/examples/artificial_analysis_to_hub.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/evaluation_manager.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/inspect_eval_uv.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/inspect_vllm_uv.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/run_eval_job.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-evaluation/scripts/run_vllm_eval_job.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-jobs/scripts/cot-self-instruct.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-jobs/scripts/finepdfs-stats.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-jobs/scripts/generate-responses.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/dataset_inspector.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-model-trainer/scripts/estimate_cost.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-paper-publisher/scripts/paper_manager.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "skills/hugging-face-tool-builder/references/baseline_hf_api.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "skills/hugging-face-model-trainer/scripts/convert_to_gguf.py",
+      "line": 61,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    },
+    {
+      "rule": "trust_remote_code",
+      "path": "skills/hugging-face-model-trainer/scripts/convert_to_gguf.py",
+      "line": 79,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

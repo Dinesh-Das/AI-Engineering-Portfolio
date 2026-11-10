@@ -1,0 +1,293 @@
+{
+  "id": "hotel-booking-crew",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/hotel-booking-crew",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "563bff81ac00e6de32021288a786bf66072d30dd40b08e93bfdf19fb09e396e7",
+      "local_sha256": "563bff81ac00e6de32021288a786bf66072d30dd40b08e93bfdf19fb09e396e7",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "d7ceee0ac61e96b2e78376e60f6a9fa82aee6ed3341f69620b4ec7b52ea4616e",
+      "local_sha256": "d7ceee0ac61e96b2e78376e60f6a9fa82aee6ed3341f69620b4ec7b52ea4616e",
+      "changes": []
+    },
+    {
+      "upstream_path": "app_openai.py",
+      "path": "app_openai.py",
+      "upstream_sha256": "3aab8ea68d114ffef245a76674ebcf086a2695e528c8c7bfeef1bb4343b04fa1",
+      "local_sha256": "3aab8ea68d114ffef245a76674ebcf086a2695e528c8c7bfeef1bb4343b04fa1",
+      "changes": []
+    },
+    {
+      "upstream_path": "browserbase.py",
+      "path": "browserbase.py",
+      "upstream_sha256": "e7386fba9bdcba341940ec53afaf299fc4b542e268f12cef9ea679971ce53d27",
+      "local_sha256": "e7386fba9bdcba341940ec53afaf299fc4b542e268f12cef9ea679971ce53d27",
+      "changes": []
+    },
+    {
+      "upstream_path": "kayak.py",
+      "path": "kayak.py",
+      "upstream_sha256": "2a27f02faa4ca6c5f2b6ad7f019f3e114c57881723865f26cab50e6468142347",
+      "local_sha256": "2a27f02faa4ca6c5f2b6ad7f019f3e114c57881723865f26cab50e6468142347",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "c09c078a978d58c06d9d2282787987b68ce552484ef9b4453bd5c96cc1d6dee2",
+      "local_sha256": "c09c078a978d58c06d9d2282787987b68ce552484ef9b4453bd5c96cc1d6dee2",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "c4d3332f1e38aaa92558b8d38f408ab737e44c25b0148fc1d2dbe341b869d936",
+      "local_sha256": "c4d3332f1e38aaa92558b8d38f408ab737e44c25b0148fc1d2dbe341b869d936",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "0ae5b0b348ac0fe80f984ee9ace194faf12b95343b0f74fa93bc3d9b3fd040aa",
+      "local_sha256": "0ae5b0b348ac0fe80f984ee9ace194faf12b95343b0f74fa93bc3d9b3fd040aa",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "browserbase",
+          "crewai",
+          "datetime",
+          "dotenv",
+          "kayak",
+          "os",
+          "streamlit",
+          "sys"
+        ],
+        "environment": [
+          "BROWSERBASE_API_KEY"
+        ],
+        "models": [
+          "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": "Initialize and return Groq LLM with caching"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "LLM",
+          "Task",
+          "check_in_date.strftime",
+          "check_out_date.strftime",
+          "crew.kickoff",
+          "datetime.date.today",
+          "datetime.timedelta",
+          "load_dotenv",
+          "load_llm",
+          "os.environ.get",
+          "st.button",
+          "st.cache_data",
+          "st.columns",
+          "st.date_input",
+          "st.error",
+          "st.header",
+          "st.image",
+          "st.markdown",
+          "st.number_input",
+          "st.set_page_config",
+          "st.spinner",
+          "st.subheader",
+          "st.success",
+          "st.text_input",
+          "st.write",
+          "str"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "app_openai.py",
+        "imports": [
+          "browserbase",
+          "crewai",
+          "datetime",
+          "dotenv",
+          "kayak",
+          "os",
+          "streamlit",
+          "sys"
+        ],
+        "environment": [
+          "BROWSERBASE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Task",
+          "check_in_date.strftime",
+          "check_out_date.strftime",
+          "crew.kickoff",
+          "datetime.date.today",
+          "datetime.timedelta",
+          "load_dotenv",
+          "os.environ.get",
+          "st.button",
+          "st.columns",
+          "st.date_input",
+          "st.error",
+          "st.header",
+          "st.image",
+          "st.markdown",
+          "st.number_input",
+          "st.set_page_config",
+          "st.spinner",
+          "st.subheader",
+          "st.success",
+          "st.text_input",
+          "st.write",
+          "str"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "browserbase.py",
+        "imports": [
+          "crewai",
+          "html2text",
+          "os",
+          "playwright",
+          "time"
+        ],
+        "environment": [
+          "BROWSERBASE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "browserbase",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": "Loads a URL using a headless webbrowser"
+          }
+        ],
+        "calls": [
+          "browser.close",
+          "html2text",
+          "page.content",
+          "page.goto",
+          "playwright.chromium.connect_over_cdp",
+          "sleep",
+          "sync_playwright",
+          "tool"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "kayak.py",
+        "imports": [
+          "crewai",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "kayak_hotel_search",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": "Generates a Kayak URL for hotel searches based on location, dates, and number of adults."
+          }
+        ],
+        "calls": [
+          "print",
+          "tool"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "BROWSERBASE_API_KEY",
+      "BROWSERBASE_PROJECT_ID",
+      "OPENAI_API_KEY",
+      "OPENAI_MODEL_NAME"
+    ],
+    "imports": [
+      "browserbase",
+      "crewai",
+      "datetime",
+      "dotenv",
+      "html2text",
+      "kayak",
+      "os",
+      "playwright",
+      "streamlit",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "models": [
+      "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "agents",
+  "purpose": "Explore multi-agent hotel research with browser-backed search."
+}

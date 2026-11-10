@@ -1,0 +1,181 @@
+{
+  "id": "zep-observations",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/zep-observations",
+  "entries": [
+    {
+      "path": "check.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "seed.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "75670f0a0c9c3365aaa549b92dc4b0eabe2147b1903348ca445fc99497019989",
+      "local_sha256": "75670f0a0c9c3365aaa549b92dc4b0eabe2147b1903348ca445fc99497019989",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "check.py",
+      "path": "check.py",
+      "upstream_sha256": "1cd28b8090caf8a86fe07d37748707655fcff934042e408b0113d64d321df948",
+      "local_sha256": "1cd28b8090caf8a86fe07d37748707655fcff934042e408b0113d64d321df948",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "8df33e94fb434e38abe0b3d8c9f0010d423b6baacba714bdc44c63375ce4a119",
+      "local_sha256": "8df33e94fb434e38abe0b3d8c9f0010d423b6baacba714bdc44c63375ce4a119",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "fe0d2036356801f663b1de44705a6ccd8027392ebd06e83ac4514de8dfcded86",
+      "local_sha256": "fe0d2036356801f663b1de44705a6ccd8027392ebd06e83ac4514de8dfcded86",
+      "changes": []
+    },
+    {
+      "upstream_path": "seed.py",
+      "path": "seed.py",
+      "upstream_sha256": "53972c1e3d980895b04e2be77983744d5d7f1d31759377bd3e1651f92ddcdbdc",
+      "local_sha256": "53972c1e3d980895b04e2be77983744d5d7f1d31759377bd3e1651f92ddcdbdc",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "check.py",
+        "imports": [
+          "os",
+          "sys",
+          "zep_cloud"
+        ],
+        "environment": [
+          "ZEP_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 25,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Zep",
+          "client.graph.edge.get_by_user_id",
+          "client.graph.node.get_by_user_id",
+          "client.graph.observation.get_by_user_id",
+          "main",
+          "os.environ.get",
+          "print",
+          "sys.exit"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "seed.py",
+        "imports": [
+          "os",
+          "sys",
+          "time",
+          "zep_cloud"
+        ],
+        "environment": [
+          "ZEP_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "add_conversation",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": "Create a thread and add messages to it."
+          },
+          {
+            "name": "main",
+            "line": 49,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".lower",
+          "Message",
+          "Zep",
+          "add_conversation",
+          "client.thread.add_messages",
+          "client.thread.create",
+          "client.user.add",
+          "len",
+          "main",
+          "os.environ.get",
+          "print",
+          "str",
+          "sys.exit",
+          "time.sleep"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "requirements.txt"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "ZEP_API_KEY"
+    ],
+    "imports": [
+      "os",
+      "sys",
+      "time",
+      "zep_cloud"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "check.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "seed.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "memory",
+  "purpose": "Study how graph conversation data becomes behavioral observations."
+}

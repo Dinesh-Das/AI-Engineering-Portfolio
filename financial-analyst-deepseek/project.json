@@ -1,0 +1,363 @@
+{
+  "id": "financial-analyst-deepseek",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/financial-analyst-deepseek",
+  "entries": [
+    {
+      "path": "building-financial-analyst.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "finance_crew.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "79614b179bdfc01049326382d59f04dc2cfd56abf369e56cdbed31661d15524a",
+      "local_sha256": "79614b179bdfc01049326382d59f04dc2cfd56abf369e56cdbed31661d15524a",
+      "changes": []
+    },
+    {
+      "upstream_path": "building-financial-analyst.ipynb",
+      "path": "building-financial-analyst.ipynb",
+      "upstream_sha256": "bcd02c37049d66f3653ba664f7e73793335c251fff08eaf6fb89eeb1d20837c9",
+      "local_sha256": "6fd477aff1ffc35f32cdf82feeb76b10cfce3ceb2fd9e2d9ec246646bf4c4458",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "finance_crew.py",
+      "path": "finance_crew.py",
+      "upstream_sha256": "3acb2a319854788bc701760015a6f31d443e75368dc72db2c071847887e78a68",
+      "local_sha256": "3acb2a319854788bc701760015a6f31d443e75368dc72db2c071847887e78a68",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "d79c7605a19c2fc982dab04e4c5e8642f4de4217cfe002f6b260a9e1325f17dd",
+      "local_sha256": "d79c7605a19c2fc982dab04e4c5e8642f4de4217cfe002f6b260a9e1325f17dd",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "d37d0d1406d2ff6d23dfc972e278cc1e8cf2b77f870078a621653483cc660805",
+      "local_sha256": "d37d0d1406d2ff6d23dfc972e278cc1e8cf2b77f870078a621653483cc660805",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "6395984466eb309fb4f7baf447e9d789351f85840e73e3e8102d84f03f3d4b23",
+      "local_sha256": "6395984466eb309fb4f7baf447e9d789351f85840e73e3e8102d84f03f3d4b23",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "13cc804bfefc33ef78bcbf7fce4e08f29fff0158871314a89c847ed8e3c8198c",
+      "local_sha256": "13cc804bfefc33ef78bcbf7fce4e08f29fff0158871314a89c847ed8e3c8198c",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "building-financial-analyst.ipynb#cell-1",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "building-financial-analyst.ipynb#cell-2",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "json",
+          "os",
+          "re",
+          "yfinance"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "building-financial-analyst.ipynb#cell-3",
+        "imports": [
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "QueryAnalysisOutput",
+            "line": 3,
+            "kind": "ClassDef",
+            "doc": "Structured output for the query analysis task."
+          }
+        ],
+        "calls": [
+          "Field"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "building-financial-analyst.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1:7b"
+        ],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "CodeInterpreterTool",
+          "LLM",
+          "Task"
+        ],
+        "findings": [
+          {
+            "rule": "allow_code_execution",
+            "path": "building-financial-analyst.ipynb#cell-4",
+            "line": 47,
+            "message": "allow_code_execution=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "building-financial-analyst.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Crew",
+          "crew.kickoff"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "building-financial-analyst.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "finance_crew.py",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "dotenv",
+          "json",
+          "os",
+          "pydantic",
+          "re",
+          "yfinance"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1:7b"
+        ],
+        "symbols": [
+          {
+            "name": "QueryAnalysisOutput",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": "Structured output for the query analysis task."
+          },
+          {
+            "name": "run_financial_analysis",
+            "line": 95,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "CodeInterpreterTool",
+          "Crew",
+          "Field",
+          "LLM",
+          "Task",
+          "crew.kickoff",
+          "load_dotenv",
+          "print"
+        ],
+        "findings": [
+          {
+            "rule": "allow_code_execution",
+            "path": "finance_crew.py",
+            "line": 70,
+            "message": "allow_code_execution=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "finance_crew",
+          "mcp"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "analyze_stock",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": "Analyzes stock market data based on the query and generates executable Python code for analysis and visualization."
+          },
+          {
+            "name": "save_code",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": "Expects a nicely formatted, working and executable python code as input in form of a string. "
+          },
+          {
+            "name": "run_code_and_show_plot",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": "Run the code in stock_analysis.py and generate the plot"
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "exec",
+          "f.read",
+          "f.write",
+          "mcp.run",
+          "mcp.tool",
+          "open",
+          "run_financial_analysis"
+        ],
+        "findings": [
+          {
+            "rule": "code-execution",
+            "path": "server.py",
+            "line": 59,
+            "message": "Review inputs to exec; untrusted data can execute code."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "building-financial-analyst.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "crewai",
+      "crewai_tools",
+      "dotenv",
+      "finance_crew",
+      "json",
+      "mcp",
+      "os",
+      "pydantic",
+      "re",
+      "yfinance"
+    ],
+    "models": [
+      "ollama/deepseek-r1:7b"
+    ],
+    "entries": [
+      {
+        "path": "building-financial-analyst.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "finance_crew.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "allow_code_execution",
+        "path": "building-financial-analyst.ipynb#cell-4",
+        "line": 47,
+        "message": "allow_code_execution=True crosses a code-execution trust boundary."
+      },
+      {
+        "rule": "allow_code_execution",
+        "path": "finance_crew.py",
+        "line": 70,
+        "message": "allow_code_execution=True crosses a code-execution trust boundary."
+      },
+      {
+        "rule": "code-execution",
+        "path": "server.py",
+        "line": 59,
+        "message": "Review inputs to exec; untrusted data can execute code."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 8
+  },
+  "category": "agents",
+  "purpose": "Expose stock analysis and generated plots through a local-model MCP workflow."
+}

@@ -1,0 +1,471 @@
+{
+  "id": "ai-podcast-generator",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/ai-podcast-generator",
+  "entries": [
+    {
+      "path": "tts_converter.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "cli.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "0e88268ec58b4b3cf0bb6832310c1a5ebd351b28ef52da7380bc2da155ef94e3",
+      "local_sha256": "0e88268ec58b4b3cf0bb6832310c1a5ebd351b28ef52da7380bc2da155ef94e3",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "2385635b4e9409a623f92ca88f22ca98900ce41992d7ec5cf86b53f371ec701a",
+      "local_sha256": "2385635b4e9409a623f92ca88f22ca98900ce41992d7ec5cf86b53f371ec701a",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "reference/ui/app.py.invalid.txt",
+      "upstream_sha256": "5b9d47fdb10946eec91da17478b61b726aeba391243c57ea9031512bdc3827dd",
+      "local_sha256": "5b9d47fdb10946eec91da17478b61b726aeba391243c57ea9031512bdc3827dd",
+      "changes": [
+        "Quarantined malformed upstream UI script; AI modules remain available without that wrapper."
+      ]
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "65b9ca9f659ed7c46cfbddaf0e24fe57303986b1d6a7eeae206caf186141fd35",
+      "local_sha256": "65b9ca9f659ed7c46cfbddaf0e24fe57303986b1d6a7eeae206caf186141fd35",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "85a0d3b909bab3a7652ab66d74b35a08c46b12939fd5de554dc0522edbc26d29",
+      "local_sha256": "85a0d3b909bab3a7652ab66d74b35a08c46b12939fd5de554dc0522edbc26d29",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "scraper.py",
+      "path": "scraper.py",
+      "upstream_sha256": "69a984b508481780befc8a742075a325b218a5919714247f0e75c2954ee35358",
+      "local_sha256": "69a984b508481780befc8a742075a325b218a5919714247f0e75c2954ee35358",
+      "changes": []
+    },
+    {
+      "upstream_path": "script_generator.py",
+      "path": "script_generator.py",
+      "upstream_sha256": "b777e04c12438f29df9a199e3fd59fe331dbe8bf8af886158fcea9e1ec10f2c3",
+      "local_sha256": "ea607828ebc0214bcc3a67f776c1c1e4d5d4c96b8903ab09ade5ca07b342d343",
+      "changes": [
+        "Added explicit connection/read timeouts to 1 direct requests calls."
+      ]
+    },
+    {
+      "upstream_path": "test_audio/segment_001.mp3",
+      "path": "test_audio/segment_001.mp3",
+      "upstream_sha256": "c54fc5cece999a8a61af148a32426ea4db305f7ccb11cada39fd5eebaaecbe70",
+      "local_sha256": "c54fc5cece999a8a61af148a32426ea4db305f7ccb11cada39fd5eebaaecbe70",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_002.mp3",
+      "path": "test_audio/segment_002.mp3",
+      "upstream_sha256": "c07f183008b4b31c251543995c83f510733d4d05b16188dea849a688920c804e",
+      "local_sha256": "c07f183008b4b31c251543995c83f510733d4d05b16188dea849a688920c804e",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_003.mp3",
+      "path": "test_audio/segment_003.mp3",
+      "upstream_sha256": "5ac8131fa8de9536ecfe10b6a4441b57f0d048cd71096f27a8bb7c4b9c5c0ddd",
+      "local_sha256": "5ac8131fa8de9536ecfe10b6a4441b57f0d048cd71096f27a8bb7c4b9c5c0ddd",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_004.mp3",
+      "path": "test_audio/segment_004.mp3",
+      "upstream_sha256": "f5256f88c5e164e43ac67e22a7069623a783f48d8f947e3305d04a2438375eca",
+      "local_sha256": "f5256f88c5e164e43ac67e22a7069623a783f48d8f947e3305d04a2438375eca",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_005.mp3",
+      "path": "test_audio/segment_005.mp3",
+      "upstream_sha256": "731ca35dc56a61e2624d3c695ca8e734a235a0328be3524db08bf879aa926aaf",
+      "local_sha256": "731ca35dc56a61e2624d3c695ca8e734a235a0328be3524db08bf879aa926aaf",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_006.mp3",
+      "path": "test_audio/segment_006.mp3",
+      "upstream_sha256": "be024790bb32aaf73d4177e9a3daea91bd1f49f2ea34630f1978d64b128c6294",
+      "local_sha256": "be024790bb32aaf73d4177e9a3daea91bd1f49f2ea34630f1978d64b128c6294",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_007.mp3",
+      "path": "test_audio/segment_007.mp3",
+      "upstream_sha256": "bd806e3faeb2a97c22e33bc9ed1d8d19ac7e05833e7045d5f7c46e102e4bbb71",
+      "local_sha256": "bd806e3faeb2a97c22e33bc9ed1d8d19ac7e05833e7045d5f7c46e102e4bbb71",
+      "changes": []
+    },
+    {
+      "upstream_path": "test_audio/segment_008.mp3",
+      "path": "test_audio/segment_008.mp3",
+      "upstream_sha256": "5eec1e14b9e18017c71155aaab24c3ef1845dde92913489e0e62a55bd9974670",
+      "local_sha256": "5eec1e14b9e18017c71155aaab24c3ef1845dde92913489e0e62a55bd9974670",
+      "changes": []
+    },
+    {
+      "upstream_path": "tts_converter.py",
+      "path": "tts_converter.py",
+      "upstream_sha256": "efa0467969b10f0fc5683df68161860f3b37371e6e1594e3afb6e8c92209ffcc",
+      "local_sha256": "fcbc9af3e010d5018f06c7b79f155bfff8282dbf45a26088bf9dcc6452e14a0b",
+      "changes": [
+        "Added explicit connection/read timeouts to 1 direct requests calls."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "c65ca4399544913ed979b82e70011bdf3b5b8982526410b3649cfb10bab1dfc4",
+      "local_sha256": "c65ca4399544913ed979b82e70011bdf3b5b8982526410b3649cfb10bab1dfc4",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "scraper.py",
+        "imports": [
+          "dotenv",
+          "firecrawl",
+          "os"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "WebScraper",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "scrape",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": "Scrape content from a given URL."
+          }
+        ],
+        "calls": [
+          "Exception",
+          "Firecrawl",
+          "ValueError",
+          "getattr",
+          "isinstance",
+          "load_dotenv",
+          "os.getenv",
+          "result.get",
+          "self.app.scrape",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "script_generator.py",
+        "imports": [
+          "dotenv",
+          "os",
+          "requests"
+        ],
+        "environment": [
+          "OPENROUTER_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ScriptGenerator",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": "Generate podcast script from content using Minimax-M2."
+          },
+          {
+            "name": "_create_prompt",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Exception",
+          "load_dotenv",
+          "os.getenv",
+          "requests.post",
+          "response.json",
+          "response.raise_for_status",
+          "self._create_prompt",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "tts_converter.py",
+        "imports": [
+          "dotenv",
+          "os",
+          "requests",
+          "time"
+        ],
+        "environment": [
+          "MINIMAX_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "TTSConverter",
+            "line": 9,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "convert",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": "Convert script to speech using Minimax TTS."
+          },
+          {
+            "name": "_parse_script",
+            "line": 42,
+            "kind": "FunctionDef",
+            "doc": "Parse script into speaker and text segments."
+          },
+          {
+            "name": "_generate_and_save_speech",
+            "line": 61,
+            "kind": "FunctionDef",
+            "doc": "Generate speech for a single text segment and save to file."
+          },
+          {
+            "name": "_poll_task",
+            "line": 109,
+            "kind": "FunctionDef",
+            "doc": "Poll task status until completion."
+          },
+          {
+            "name": "_download_audio",
+            "line": 137,
+            "kind": "FunctionDef",
+            "doc": "Download audio file from Minimax API."
+          }
+        ],
+        "calls": [
+          ".split",
+          ".strip",
+          "Exception",
+          "TTSConverter",
+          "audio_files.append",
+          "converter.convert",
+          "enumerate",
+          "f.write",
+          "len",
+          "line.replace",
+          "line.startswith",
+          "line.strip",
+          "load_dotenv",
+          "open",
+          "os.getenv",
+          "os.makedirs",
+          "os.path.join",
+          "print",
+          "range",
+          "requests.get",
+          "requests.post",
+          "response.json",
+          "response.raise_for_status",
+          "result.get",
+          "script.strip",
+          "segments.append",
+          "self._download_audio",
+          "self._generate_and_save_speech",
+          "self._parse_script",
+          "self._poll_task",
+          "self.voices.get",
+          "str",
+          "time.sleep"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "cli.py",
+        "imports": [
+          "argparse",
+          "dotenv",
+          "json",
+          "os",
+          "pathlib",
+          "scraper",
+          "script_generator",
+          "tts_converter",
+          "urllib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".generate",
+          ".join",
+          ".scrape",
+          ".write_text",
+          "Path",
+          "ScriptGenerator",
+          "TTSConverter",
+          "ValueError",
+          "WebScraper",
+          "argparse.ArgumentParser",
+          "args.output_dir.mkdir",
+          "args.text_file.read_text",
+          "args.text_file.stat",
+          "content.strip",
+          "converter._parse_script",
+          "converter.convert",
+          "json.dumps",
+          "len",
+          "load_dotenv",
+          "main",
+          "manifest_path.write_text",
+          "os.environ.get",
+          "parser.add_argument",
+          "parser.add_mutually_exclusive_group",
+          "parser.error",
+          "parser.parse_args",
+          "print",
+          "required.append",
+          "source.add_argument",
+          "str",
+          "urlparse"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "MINIMAX_API_KEY",
+      "OPENROUTER_API_KEY"
+    ],
+    "imports": [
+      "argparse",
+      "dotenv",
+      "firecrawl",
+      "json",
+      "os",
+      "pathlib",
+      "requests",
+      "scraper",
+      "script_generator",
+      "time",
+      "tts_converter",
+      "urllib"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "tts_converter.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "cli.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "media",
+  "purpose": "Create article-to-podcast audio using MiniMax generation and speech.",
+  "local_additions": [
+    {
+      "path": "cli.py",
+      "local_sha256": "b6283357d0738337e58acee4cdbb3c8f2c7630f432f29a7e3f0c6acac4e35473",
+      "changes": [
+        "Added an input-bounded headless script/speech CLI with persisted stage status."
+      ]
+    }
+  ]
+}

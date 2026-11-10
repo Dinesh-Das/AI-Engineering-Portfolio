@@ -1,0 +1,40 @@
+{
+  "id": "graphiti-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/graphiti-mcp",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "160b13363214499d389c045410d977a2d92591905a04c00c0f630b99f595010c",
+      "local_sha256": "160b13363214499d389c045410d977a2d92591905a04c00c0f630b99f595010c",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "recipe",
+  "purpose": "Study a documented integration for persistent graph memory through MCP."
+}

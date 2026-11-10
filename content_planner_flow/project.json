@@ -1,0 +1,567 @@
+{
+  "id": "content_planner_flow",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/content_planner_flow",
+  "entries": [
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "0e95635802477cd18d86afd6c5ed55eed94caca5875c3f565e16be9b928e302a",
+      "local_sha256": "0e95635802477cd18d86afd6c5ed55eed94caca5875c3f565e16be9b928e302a",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "config/planner_agents.yaml",
+      "path": "config/planner_agents.yaml",
+      "upstream_sha256": "6031ff8635c51cb19c7420c6dd6100c0175c60698a9a80f4dad8586c20104552",
+      "local_sha256": "6031ff8635c51cb19c7420c6dd6100c0175c60698a9a80f4dad8586c20104552",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/planner_tasks.yaml",
+      "path": "config/planner_tasks.yaml",
+      "upstream_sha256": "53426e18c1cfb3f3fa269adc576ea4e6ca234add1d64ec063f31ff8ead7f72ac",
+      "local_sha256": "53426e18c1cfb3f3fa269adc576ea4e6ca234add1d64ec063f31ff8ead7f72ac",
+      "changes": []
+    },
+    {
+      "upstream_path": "notebook.ipynb",
+      "path": "notebook.ipynb",
+      "upstream_sha256": "fb6732075cacd14ed5e76f54204c15eed5f4bd2d39d1b4c09690ee1512adae6a",
+      "local_sha256": "0d2f30d35d82275e845aa5daa054221815a6bb06950bb004350e92904e8b56fd",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "95f8d1d28ae033c1017ebdbc0f142d1997b9be1607249a4abaeece9454fc68be",
+      "local_sha256": "95f8d1d28ae033c1017ebdbc0f142d1997b9be1607249a4abaeece9454fc68be",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "ea5568f45e392e5fd2ae77209f6c64070c8c746f9df9ebabb664c29d7ead7306",
+      "local_sha256": "ea5568f45e392e5fd2ae77209f6c64070c8c746f9df9ebabb664c29d7ead7306",
+      "changes": []
+    },
+    {
+      "upstream_path": "resources/thumbnail.png",
+      "path": "resources/thumbnail.png",
+      "upstream_sha256": "2073762ffa948190e47bcfd132e6d0ce7403f2d1a73862a2b8262ca0279a20b3",
+      "local_sha256": "2073762ffa948190e47bcfd132e6d0ce7403f2d1a73862a2b8262ca0279a20b3",
+      "changes": []
+    },
+    {
+      "upstream_path": "scheduler.py",
+      "path": "scheduler.py",
+      "upstream_sha256": "4180fde721aab8aaf4f6172dbee7c6e6136d09fea660dfb9e585897b675b1025",
+      "local_sha256": "e55a084aff25f55516f80757e487028b4d5064d267c2df45c60b63b5e71cdff9",
+      "changes": [
+        "Added explicit connection/read timeouts to 1 direct requests calls."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "notebook.ipynb#cell-4",
+        "imports": [
+          "crewai",
+          "datetime",
+          "dotenv",
+          "firecrawl",
+          "getpass",
+          "json",
+          "nest_asyncio",
+          "os",
+          "pathlib",
+          "pydantic",
+          "scheduler",
+          "subprocess",
+          "typing",
+          "uuid",
+          "yaml"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dotenv",
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "ollama/llama3.2"
+        ],
+        "symbols": [],
+        "calls": [
+          "LLM"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-10",
+        "imports": [
+          "IPython"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "HTML"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "Tweet",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": "Represents an individual tweet in a thread"
+          },
+          {
+            "name": "Thread",
+            "line": 7,
+            "kind": "ClassDef",
+            "doc": "Represents a Twitter thread"
+          }
+        ],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-13",
+        "imports": [
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "open",
+          "yaml.safe_load"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-14",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "DirectoryReadTool",
+          "FileReadTool",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "LinkedInPost",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": "Represents a LinkedIn post"
+          }
+        ],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-19",
+        "imports": [
+          "IPython"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "HTML"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-20",
+        "imports": [
+          "crewai"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ContentPlanningState",
+            "line": 3,
+            "kind": "ClassDef",
+            "doc": "State for the content planning flow"
+          },
+          {
+            "name": "CreateContentPlanningFlow",
+            "line": 12,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "scrape_blog_post",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "select_platform",
+            "line": 30,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "twitter_draft",
+            "line": 37,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "linkedin_draft",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_plan",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "publish",
+            "line": 59,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "FirecrawlApp",
+          "app.scrape_url",
+          "f.write",
+          "json.dump",
+          "linkedin_planning_crew.kickoff",
+          "listen",
+          "open",
+          "or_",
+          "os.getenv",
+          "plan.pydantic.model_dump",
+          "planning_crew.kickoff",
+          "print",
+          "router",
+          "scheduler.schedule",
+          "self.state.draft_path.split",
+          "start",
+          "str",
+          "uuid.uuid4"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-22",
+        "imports": [
+          "IPython"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "CreateContentPlanningFlow",
+          "flow.plot"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-23",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "CreateContentPlanningFlow"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-24",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "flow.kickoff"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-25",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "CreateContentPlanningFlow"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-26",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-27",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-28",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "scheduler.py",
+        "imports": [
+          "datetime",
+          "json",
+          "os",
+          "pydantic",
+          "requests",
+          "typing"
+        ],
+        "environment": [
+          "TYPEFULLY_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "json_to_typefully_content",
+            "line": 15,
+            "kind": "FunctionDef",
+            "doc": "Convert JSON thread format to Typefully's format with 4 newlines between tweets."
+          },
+          {
+            "name": "json_to_linkedin_content",
+            "line": 27,
+            "kind": "FunctionDef",
+            "doc": "Convert JSON thread format to Typefully's format."
+          },
+          {
+            "name": "schedule_thread",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": "Schedule a thread on Typefully."
+          },
+          {
+            "name": "schedule",
+            "line": 62,
+            "kind": "FunctionDef",
+            "doc": "Schedule a thread from a Pydantic model."
+          }
+        ],
+        "calls": [
+          ".isoformat",
+          ".join",
+          "datetime.datetime.utcnow",
+          "datetime.timedelta",
+          "formatted_tweets.append",
+          "json_to_linkedin_content",
+          "json_to_typefully_content",
+          "os.getenv",
+          "payload.items",
+          "print",
+          "requests.post",
+          "response.json",
+          "response.raise_for_status",
+          "schedule_thread",
+          "str",
+          "thread_model.pydantic.model_dump"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "requirements.txt"
+    ],
+    "notebooks": [
+      "notebook.ipynb"
+    ],
+    "other_code": [
+      "config/planner_agents.yaml",
+      "config/planner_tasks.yaml"
+    ],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "OPENAI_API_KEY",
+      "TYPEFULLY_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "crewai",
+      "crewai_tools",
+      "datetime",
+      "dotenv",
+      "firecrawl",
+      "getpass",
+      "json",
+      "nest_asyncio",
+      "os",
+      "pathlib",
+      "pydantic",
+      "requests",
+      "scheduler",
+      "subprocess",
+      "typing",
+      "uuid",
+      "yaml"
+    ],
+    "models": [
+      "ollama/llama3.2"
+    ],
+    "entries": [
+      {
+        "path": "notebook.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 19
+  },
+  "category": "agents",
+  "purpose": "Plan social content from web material and schedule a draft."
+}

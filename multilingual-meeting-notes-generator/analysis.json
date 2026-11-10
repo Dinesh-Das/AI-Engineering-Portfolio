@@ -1,0 +1,503 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "dotenv",
+        "gc",
+        "os",
+        "src",
+        "streamlit",
+        "tempfile"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": "Main application function."
+        },
+        {
+          "name": "_process_uploaded_file",
+          "line": 104,
+          "kind": "FunctionDef",
+          "doc": "Process the uploaded audio file with enhanced logging and error handling."
+        },
+        {
+          "name": "_save_uploaded_file",
+          "line": 134,
+          "kind": "FunctionDef",
+          "doc": "Save uploaded file to temp location."
+        },
+        {
+          "name": "_cleanup_temp_file",
+          "line": 142,
+          "kind": "FunctionDef",
+          "doc": "Delete temporary file safely and perform garbage collection."
+        },
+        {
+          "name": "_validate_api_keys",
+          "line": 152,
+          "kind": "FunctionDef",
+          "doc": "Validate API key formats."
+        },
+        {
+          "name": "_cleanup_session",
+          "line": 162,
+          "kind": "FunctionDef",
+          "doc": "Clean up session state and perform garbage collection."
+        },
+        {
+          "name": "_display_main_interface",
+          "line": 171,
+          "kind": "FunctionDef",
+          "doc": "Display the main interface."
+        },
+        {
+          "name": "_display_export_options",
+          "line": 227,
+          "kind": "FunctionDef",
+          "doc": "Show export options."
+        },
+        {
+          "name": "_generate_markdown_export",
+          "line": 241,
+          "kind": "FunctionDef",
+          "doc": "Generate markdown content for export."
+        }
+      ],
+      "calls": [
+        "MeetingProcessor",
+        "_cleanup_session",
+        "_cleanup_temp_file",
+        "_display_export_options",
+        "_display_main_interface",
+        "_generate_markdown_export",
+        "_process_uploaded_file",
+        "_save_uploaded_file",
+        "_validate_api_keys",
+        "display_action_items",
+        "display_meeting_header",
+        "display_meeting_summary",
+        "display_meeting_transcript",
+        "display_speaker_analysis",
+        "enumerate",
+        "gc.collect",
+        "item.priority.title",
+        "len",
+        "load_dotenv",
+        "main",
+        "os.unlink",
+        "print",
+        "processor.process_meeting_audio",
+        "result.processed_at.strftime",
+        "st.button",
+        "st.download_button",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.rerun",
+        "st.set_page_config",
+        "st.subheader",
+        "st.success",
+        "st.text_input",
+        "st.warning",
+        "status_container.info",
+        "status_container.success",
+        "str",
+        "temp_file.write",
+        "tempfile.NamedTemporaryFile",
+        "uploaded_file.getvalue",
+        "uploaded_file.name.split"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "src/data/data_models.py",
+      "imports": [
+        "dataclasses",
+        "datetime",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "Speaker",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": "Represents a speaker in a meeting."
+        },
+        {
+          "name": "TranscriptSegment",
+          "line": 18,
+          "kind": "ClassDef",
+          "doc": "A segment of transcribed speech."
+        },
+        {
+          "name": "ActionItem",
+          "line": 28,
+          "kind": "ClassDef",
+          "doc": "A task or action item from the meeting."
+        },
+        {
+          "name": "MeetingResult",
+          "line": 37,
+          "kind": "ClassDef",
+          "doc": "Complete meeting analysis result."
+        },
+        {
+          "name": "total_words",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": "Calculate total words in transcript."
+        },
+        {
+          "name": "avg_confidence",
+          "line": 54,
+          "kind": "FunctionDef",
+          "doc": "Calculate average confidence score."
+        },
+        {
+          "name": "unique_speakers_count",
+          "line": 61,
+          "kind": "FunctionDef",
+          "doc": "Get count of unique speakers."
+        }
+      ],
+      "calls": [
+        "dataclass",
+        "len",
+        "segment.text.split",
+        "set",
+        "sum"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/services/audio_processor.py",
+      "imports": [
+        "datetime",
+        "src"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "MeetingProcessor",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": "Main service that orchestrates the meeting processing workflow."
+        },
+        {
+          "name": "__init__",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": "Initialize with API keys."
+        },
+        {
+          "name": "process_meeting_audio",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": "Process a meeting audio file and generate comprehensive meeting notes."
+        },
+        {
+          "name": "_get_meeting_duration",
+          "line": 81,
+          "kind": "FunctionDef",
+          "doc": "Calculate meeting duration from transcript segments."
+        }
+      ],
+      "calls": [
+        ".strftime",
+        "AudioTranscriber",
+        "Exception",
+        "MeetingResult",
+        "TextAnalyzer",
+        "datetime.now",
+        "full_transcript.strip",
+        "len",
+        "max",
+        "print",
+        "self._get_meeting_duration",
+        "self.analyzer.extract_action_items",
+        "self.analyzer.generate_meeting_summary",
+        "self.analyzer.generate_meeting_title",
+        "self.analyzer.identify_speaker_names",
+        "self.transcriber.get_transcript_duration",
+        "self.transcriber.transcribe_audio",
+        "str",
+        "summary.lower",
+        "title.lower"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/services/text_analyzer.py",
+      "imports": [
+        "datetime",
+        "json",
+        "openai",
+        "re",
+        "src",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "TextAnalyzer",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": "Analyzes transcribed text to extract insights and generate summaries."
+        },
+        {
+          "name": "__init__",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": "Initialize with API key."
+        },
+        {
+          "name": "generate_meeting_summary",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": "Generate a comprehensive summary of the meeting in bullet point format."
+        },
+        {
+          "name": "extract_action_items",
+          "line": 106,
+          "kind": "FunctionDef",
+          "doc": "Extract action items and tasks from the meeting transcript."
+        },
+        {
+          "name": "identify_speaker_names",
+          "line": 180,
+          "kind": "FunctionDef",
+          "doc": "Identify actual names of speakers from the transcript."
+        },
+        {
+          "name": "generate_meeting_title",
+          "line": 282,
+          "kind": "FunctionDef",
+          "doc": "Generate a descriptive title for the meeting based on content."
+        }
+      ],
+      "calls": [
+        ".message.content.strip",
+        ".replace",
+        ".strftime",
+        ".strip",
+        "ActionItem",
+        "OpenAI",
+        "Speaker",
+        "action_items.append",
+        "datetime.now",
+        "item_data.get",
+        "json.loads",
+        "json_match.group",
+        "name_mapping.get",
+        "print",
+        "re.search",
+        "response_text.replace",
+        "response_text.startswith",
+        "self.client.chat.completions.create",
+        "str",
+        "summary_data.get",
+        "title.strip",
+        "updated_speakers.append"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "src/services/transcriber.py",
+      "imports": [
+        "assemblyai",
+        "os",
+        "src",
+        "time",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "AudioTranscriber",
+          "line": 10,
+          "kind": "ClassDef",
+          "doc": "Handles audio transcription with speaker diarization."
+        },
+        {
+          "name": "__init__",
+          "line": 13,
+          "kind": "FunctionDef",
+          "doc": "Initialize with API key."
+        },
+        {
+          "name": "transcribe_audio",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": "Transcribe audio file with speaker diarization and language detection."
+        },
+        {
+          "name": "get_transcript_duration",
+          "line": 76,
+          "kind": "FunctionDef",
+          "doc": "Get duration from the last transcript if available."
+        },
+        {
+          "name": "_extract_segments",
+          "line": 86,
+          "kind": "FunctionDef",
+          "doc": "Extract transcript segments from utterances."
+        },
+        {
+          "name": "_extract_speakers",
+          "line": 111,
+          "kind": "FunctionDef",
+          "doc": "Extract speaker information from utterances."
+        },
+        {
+          "name": "_get_detected_language",
+          "line": 138,
+          "kind": "FunctionDef",
+          "doc": "Get detected language from transcript response."
+        }
+      ],
+      "calls": [
+        ".lower",
+        "Exception",
+        "Speaker",
+        "TranscriptSegment",
+        "aai.LanguageDetectionOptions",
+        "aai.Transcriber",
+        "aai.TranscriptionConfig",
+        "hasattr",
+        "int",
+        "len",
+        "list",
+        "segments.sort",
+        "self._extract_segments",
+        "self._extract_speakers",
+        "self._get_detected_language",
+        "self._last_transcript.json_response.get",
+        "self.client.get_transcript",
+        "self.client.transcribe",
+        "set",
+        "speakers.append",
+        "str",
+        "sum",
+        "time.sleep",
+        "transcript.json_response.get",
+        "transcript.text.strip",
+        "u.text.split"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "cli.py",
+      "imports": [
+        "argparse",
+        "dataclasses",
+        "dotenv",
+        "json",
+        "os",
+        "pathlib",
+        "src"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY",
+        "OPENAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        ".process_meeting_audio",
+        "MeetingProcessor",
+        "Path",
+        "argparse.ArgumentParser",
+        "args.audio.is_file",
+        "args.audio.stat",
+        "args.output.parent.mkdir",
+        "args.output.write_text",
+        "asdict",
+        "json.dumps",
+        "load_dotenv",
+        "main",
+        "os.getenv",
+        "parser.add_argument",
+        "parser.error",
+        "parser.parse_args",
+        "print",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "ASSEMBLYAI_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "argparse",
+    "assemblyai",
+    "dataclasses",
+    "datetime",
+    "dotenv",
+    "gc",
+    "json",
+    "openai",
+    "os",
+    "pathlib",
+    "re",
+    "src",
+    "streamlit",
+    "tempfile",
+    "time",
+    "typing"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "cli.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

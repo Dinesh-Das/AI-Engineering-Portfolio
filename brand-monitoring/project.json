@@ -1,0 +1,889 @@
+{
+  "id": "brand-monitoring",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/brand-monitoring",
+  "entries": [
+    {
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/main.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "brand_monitoring_flow/.env.example",
+      "path": "brand_monitoring_flow/.env.example",
+      "upstream_sha256": "fe9b0f787ec2d2ee87895b15187d896829fbf2065b95f426c3c593e09e47a30c",
+      "local_sha256": "fe9b0f787ec2d2ee87895b15187d896829fbf2065b95f426c3c593e09e47a30c",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/pyproject.toml",
+      "path": "brand_monitoring_flow/pyproject.toml",
+      "upstream_sha256": "78f0eabc8ff32497d319424f7089d9eda60274d3332ec1a2321ff51332447389",
+      "local_sha256": "78f0eabc8ff32497d319424f7089d9eda60274d3332ec1a2321ff51332447389",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/assets/brightdata.png",
+      "path": "brand_monitoring_flow/src/assets/brightdata.png",
+      "upstream_sha256": "a64fdbf590645408a66a9e91127677fa21d7efc8edce50865d5bc1672777a2e4",
+      "local_sha256": "a64fdbf590645408a66a9e91127677fa21d7efc8edce50865d5bc1672777a2e4",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/assets/crewai.png",
+      "path": "brand_monitoring_flow/src/assets/crewai.png",
+      "upstream_sha256": "48f46992f82ed327f7b523f58f87025a286137e768cf69fc4bc52a75d529fae5",
+      "local_sha256": "48f46992f82ed327f7b523f58f87025a286137e768cf69fc4bc52a75d529fae5",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/assets/deep-seek.png",
+      "path": "brand_monitoring_flow/src/assets/deep-seek.png",
+      "upstream_sha256": "71f6fdc3c979585cff3baaa7a99214ad10790c79b25d1f97629966067d468dc2",
+      "local_sha256": "71f6fdc3c979585cff3baaa7a99214ad10790c79b25d1f97629966067d468dc2",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_app.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_app.py",
+      "upstream_sha256": "84b4788046287af537f2e7753391ce462b01ce111a459223068c64836845e29e",
+      "local_sha256": "84b4788046287af537f2e7753391ce462b01ce111a459223068c64836845e29e",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/__init__.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/agents.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/agents.yaml",
+      "upstream_sha256": "d2355099a62e84880c8f0b10398ab4bbee5850245f0724d1a21840f3b848c17f",
+      "local_sha256": "d2355099a62e84880c8f0b10398ab4bbee5850245f0724d1a21840f3b848c17f",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/tasks.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/tasks.yaml",
+      "upstream_sha256": "03d5e1fe30cdbcb8480b99d758632e0acf6f472d1b0a26d68cc1aed4c5d8a353",
+      "local_sha256": "03d5e1fe30cdbcb8480b99d758632e0acf6f472d1b0a26d68cc1aed4c5d8a353",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py",
+      "upstream_sha256": "4f3845371040f403038e4364f71c4441a2d1dfd243a682eb442f4806376724c6",
+      "local_sha256": "4f3845371040f403038e4364f71c4441a2d1dfd243a682eb442f4806376724c6",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/agents.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/agents.yaml",
+      "upstream_sha256": "f277b809757db9d393abdbf48dfc3d606f7b17c8de237eb8243e46498c7b2af1",
+      "local_sha256": "f277b809757db9d393abdbf48dfc3d606f7b17c8de237eb8243e46498c7b2af1",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/tasks.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/tasks.yaml",
+      "upstream_sha256": "974b1b8d5479dcd9967ad3149769fdf85189bde5f1d38ef919f33210d255474f",
+      "local_sha256": "974b1b8d5479dcd9967ad3149769fdf85189bde5f1d38ef919f33210d255474f",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/linkedin_crew.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/linkedin_crew.py",
+      "upstream_sha256": "8f198e3b0f0ee17d42c6fa4bbb0b0aaa5698ddff83097df01715eaf206039c29",
+      "local_sha256": "8f198e3b0f0ee17d42c6fa4bbb0b0aaa5698ddff83097df01715eaf206039c29",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/config/agents.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/config/agents.yaml",
+      "upstream_sha256": "628d259efff1998e803a851d513b4df5fbca303557fc42ac599705f6f3330dc1",
+      "local_sha256": "628d259efff1998e803a851d513b4df5fbca303557fc42ac599705f6f3330dc1",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/config/tasks.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/config/tasks.yaml",
+      "upstream_sha256": "5b4713b7ebddcaf09cbee4fa020e07a139db46368aa5e8d3c155820ca06beefc",
+      "local_sha256": "5b4713b7ebddcaf09cbee4fa020e07a139db46368aa5e8d3c155820ca06beefc",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/web_crew.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/web_crew.py",
+      "upstream_sha256": "ad0da1be9ecbff6ba6fe45ee90ce2677c6a4f127d7952efd2ae724f9ca890dfe",
+      "local_sha256": "ad0da1be9ecbff6ba6fe45ee90ce2677c6a4f127d7952efd2ae724f9ca890dfe",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/config/agents.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/config/agents.yaml",
+      "upstream_sha256": "3af994c923c914167b5507f9cb4be03ddfc0e216baa0372ce5eddaa030bf1d37",
+      "local_sha256": "3af994c923c914167b5507f9cb4be03ddfc0e216baa0372ce5eddaa030bf1d37",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/config/tasks.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/config/tasks.yaml",
+      "upstream_sha256": "eb0584c0077d76c343b2e4bdb2ffee58af0df6945342d2b1a973ec6ce5728079",
+      "local_sha256": "eb0584c0077d76c343b2e4bdb2ffee58af0df6945342d2b1a973ec6ce5728079",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/X_crew.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/X_crew.py",
+      "upstream_sha256": "1f81ad54a6508510261f58ec67ca36243b68f2da3bcf00c1411360f7ac468ddf",
+      "local_sha256": "1f81ad54a6508510261f58ec67ca36243b68f2da3bcf00c1411360f7ac468ddf",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/config/agents.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/config/agents.yaml",
+      "upstream_sha256": "c15483e5458f898fe343b62324741630e3e97710e01866c17f67161409dff486",
+      "local_sha256": "c15483e5458f898fe343b62324741630e3e97710e01866c17f67161409dff486",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/config/tasks.yaml",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/config/tasks.yaml",
+      "upstream_sha256": "8031deafeee0ac41bc75f5498d4875889507deca214a8edddd1112cb764f7408",
+      "local_sha256": "8031deafeee0ac41bc75f5498d4875889507deca214a8edddd1112cb764f7408",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/youtube_crew.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/youtube_crew.py",
+      "upstream_sha256": "c62f688deae23277e087ceb9428316d7eaa7fa27396488b80e3e8570da45bf2e",
+      "local_sha256": "c62f688deae23277e087ceb9428316d7eaa7fa27396488b80e3e8570da45bf2e",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/main.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/main.py",
+      "upstream_sha256": "02aab56f2153c6f906a7c92afdbd4915348b99b94f12e5066aa29139172a4660",
+      "local_sha256": "02aab56f2153c6f906a7c92afdbd4915348b99b94f12e5066aa29139172a4660",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/tools/__init__.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/tools/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py",
+      "path": "brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py",
+      "upstream_sha256": "36a3174c9e63fff06601b0acf80418291db0413287a88a84b86bc2986fa09321",
+      "local_sha256": "19c970e068d62ad803ea77890649e67184a250b58a9fc646e854439f812b4fea",
+      "changes": [
+        "Added explicit connection/read timeouts to 5 direct requests calls."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "559f886b35cdc1d974a859e2588e706c4fccaff28c467adc56666abc53575fae",
+      "local_sha256": "559f886b35cdc1d974a859e2588e706c4fccaff28c467adc56666abc53575fae",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "brand-monitoring-demo.mp4",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_app.py",
+        "imports": [
+          "base64",
+          "brand_monitoring_flow",
+          "gc",
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_analysis",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "start_analysis",
+            "line": 27,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".format",
+          ".read",
+          "base64.b64encode",
+          "brand_monitoring_flow.main.BrandMonitoringFlow",
+          "gc.collect",
+          "open",
+          "st.button",
+          "st.columns",
+          "st.container",
+          "st.divider",
+          "st.empty",
+          "st.error",
+          "st.expander",
+          "st.header",
+          "st.markdown",
+          "st.number_input",
+          "st.session_state.flow.kickoff",
+          "st.text_input",
+          "status_placeholder.container",
+          "status_placeholder.empty",
+          "status_placeholder.info",
+          "status_placeholder.success",
+          "str"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py",
+        "imports": [
+          "crewai",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1"
+        ],
+        "symbols": [
+          {
+            "name": "InstagramWriterReport",
+            "line": 7,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "InstagramReport",
+            "line": 12,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "InstagramCrew",
+            "line": 21,
+            "kind": "ClassDef",
+            "doc": "Instagram Analysis Crew"
+          },
+          {
+            "name": "analysis_agent",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "analysis_task",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "writer_agent",
+            "line": 41,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_report_task",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 55,
+            "kind": "FunctionDef",
+            "doc": "Creates the Instagram Analysis Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Field",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/linkedin_crew.py",
+        "imports": [
+          "crewai",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1"
+        ],
+        "symbols": [
+          {
+            "name": "LinkedInWriterReport",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "LinkedInReport",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "LinkedInCrew",
+            "line": 20,
+            "kind": "ClassDef",
+            "doc": "LinkedIn Analysis Crew"
+          },
+          {
+            "name": "analysis_agent",
+            "line": 27,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "analysis_task",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "writer_agent",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_report_task",
+            "line": 47,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": "Creates the LinkedIn Analysis Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Field",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/web_crew.py",
+        "imports": [
+          "crewai",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1"
+        ],
+        "symbols": [
+          {
+            "name": "WebWriterReport",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "WebReport",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "WebCrew",
+            "line": 20,
+            "kind": "ClassDef",
+            "doc": "Web Analysis Crew"
+          },
+          {
+            "name": "analysis_agent",
+            "line": 27,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "analysis_task",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "writer_agent",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_report_task",
+            "line": 47,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": "Creates the Web Analysis Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Field",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/X_crew.py",
+        "imports": [
+          "crewai",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1"
+        ],
+        "symbols": [
+          {
+            "name": "XWriterReport",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "XReport",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "XCrew",
+            "line": 20,
+            "kind": "ClassDef",
+            "doc": "X Analysis Crew"
+          },
+          {
+            "name": "analysis_agent",
+            "line": 27,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "analysis_task",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "writer_agent",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_report_task",
+            "line": 47,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 54,
+            "kind": "FunctionDef",
+            "doc": "Creates the X Analysis Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Field",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/youtube_crew.py",
+        "imports": [
+          "crewai",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1"
+        ],
+        "symbols": [
+          {
+            "name": "YoutubeWriterReport",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "YoutubeReport",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "YoutubeCrew",
+            "line": 21,
+            "kind": "ClassDef",
+            "doc": "YouTube Analysis Crew"
+          },
+          {
+            "name": "analysis_agent",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "analysis_task",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "writer_agent",
+            "line": 41,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_report_task",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 55,
+            "kind": "FunctionDef",
+            "doc": "Creates the YouTube Analysis Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "Field",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/main.py",
+        "imports": [
+          "asyncio",
+          "brand_monitoring_flow",
+          "crewai",
+          "pydantic",
+          "requests",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "BrandMonitoringState",
+            "line": 17,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "BrandMonitoringFlow",
+            "line": 46,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "kickoff",
+            "line": 263,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "plot",
+            "line": 268,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "scrape_data",
+            "line": 49,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "scrape_data_and_analyse",
+            "line": 68,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "linkedin_analysis",
+            "line": 70,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "instagram_analysis",
+            "line": 97,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "youtube_analysis",
+            "line": 124,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "x_analysis",
+            "line": 152,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "web_analysis",
+            "line": 182,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".kickoff",
+          ".lower",
+          "BrandMonitoringFlow",
+          "BrightDataWebSearchTool",
+          "InstagramCrew",
+          "LinkedInCrew",
+          "WebCrew",
+          "XCrew",
+          "YoutubeCrew",
+          "asyncio.create_task",
+          "asyncio.gather",
+          "brand_monitoring_flow.kickoff",
+          "brand_monitoring_flow.plot",
+          "instagram_analysis",
+          "instagram_crew.crew",
+          "kickoff",
+          "linkedin_analysis",
+          "linkedin_crew.crew",
+          "listen",
+          "print",
+          "scrape_urls",
+          "self.state.instagram_filtered_scrape_response.append",
+          "self.state.instagram_search_response.append",
+          "self.state.linkedin_filtered_scrape_response.append",
+          "self.state.linkedin_search_response.append",
+          "self.state.web_filtered_scrape_response.append",
+          "self.state.web_search_response.append",
+          "self.state.x_filtered_scrape_response.append",
+          "self.state.x_search_response.append",
+          "self.state.youtube_filtered_scrape_response.append",
+          "self.state.youtube_search_response.append",
+          "start",
+          "type",
+          "web_analysis",
+          "web_crew.crew",
+          "web_search_tool._run",
+          "x_analysis",
+          "x_crew.crew",
+          "youtube_analysis",
+          "youtube_crew.crew"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/tools/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/tools/custom_tool.py",
+        "imports": [
+          "crewai",
+          "dotenv",
+          "os",
+          "pydantic",
+          "requests",
+          "ssl",
+          "time",
+          "typing"
+        ],
+        "environment": [
+          "BRIGHT_DATA_API_KEY",
+          "BRIGHT_DATA_PASSWORD",
+          "BRIGHT_DATA_USERNAME"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "BrightDataWebSearchToolInput",
+            "line": 14,
+            "kind": "ClassDef",
+            "doc": "Input schema for BrightDataWebSearchTool."
+          },
+          {
+            "name": "BrightDataWebSearchTool",
+            "line": 18,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "scrape_urls",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 23,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "Field",
+          "len",
+          "load_dotenv",
+          "os.getenv",
+          "output_response.json",
+          "print",
+          "requests.get",
+          "requests.post",
+          "response.json",
+          "scraping_response.json",
+          "status_response.json",
+          "time.sleep",
+          "title.split"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "brand_monitoring_flow/pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/agents.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/config/tasks.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/agents.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/config/tasks.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/config/agents.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/config/tasks.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/config/agents.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/X_crew/config/tasks.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/config/agents.yaml",
+      "brand_monitoring_flow/src/brand_monitoring_flow/crews/youtube_crew/config/tasks.yaml"
+    ],
+    "environment": [
+      "BRIGHT_DATA_API_KEY",
+      "BRIGHT_DATA_PASSWORD",
+      "BRIGHT_DATA_USERNAME"
+    ],
+    "imports": [
+      "asyncio",
+      "base64",
+      "brand_monitoring_flow",
+      "crewai",
+      "dotenv",
+      "gc",
+      "os",
+      "pydantic",
+      "requests",
+      "ssl",
+      "streamlit",
+      "time",
+      "typing"
+    ],
+    "models": [
+      "ollama/deepseek-r1"
+    ],
+    "entries": [
+      {
+        "path": "brand_monitoring_flow/src/brand_monitoring_flow/main.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 10
+  },
+  "category": "agents",
+  "purpose": "Collect brand signals across multiple platforms and synthesize reports."
+}

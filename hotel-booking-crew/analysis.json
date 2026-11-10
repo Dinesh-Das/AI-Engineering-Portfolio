@@ -1,0 +1,208 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "browserbase",
+        "crewai",
+        "datetime",
+        "dotenv",
+        "kayak",
+        "os",
+        "streamlit",
+        "sys"
+      ],
+      "environment": [
+        "BROWSERBASE_API_KEY"
+      ],
+      "models": [
+        "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": "Initialize and return Groq LLM with caching"
+        }
+      ],
+      "calls": [
+        "Agent",
+        "Crew",
+        "LLM",
+        "Task",
+        "check_in_date.strftime",
+        "check_out_date.strftime",
+        "crew.kickoff",
+        "datetime.date.today",
+        "datetime.timedelta",
+        "load_dotenv",
+        "load_llm",
+        "os.environ.get",
+        "st.button",
+        "st.cache_data",
+        "st.columns",
+        "st.date_input",
+        "st.error",
+        "st.header",
+        "st.image",
+        "st.markdown",
+        "st.number_input",
+        "st.set_page_config",
+        "st.spinner",
+        "st.subheader",
+        "st.success",
+        "st.text_input",
+        "st.write",
+        "str"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "app_openai.py",
+      "imports": [
+        "browserbase",
+        "crewai",
+        "datetime",
+        "dotenv",
+        "kayak",
+        "os",
+        "streamlit",
+        "sys"
+      ],
+      "environment": [
+        "BROWSERBASE_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Agent",
+        "Crew",
+        "Task",
+        "check_in_date.strftime",
+        "check_out_date.strftime",
+        "crew.kickoff",
+        "datetime.date.today",
+        "datetime.timedelta",
+        "load_dotenv",
+        "os.environ.get",
+        "st.button",
+        "st.columns",
+        "st.date_input",
+        "st.error",
+        "st.header",
+        "st.image",
+        "st.markdown",
+        "st.number_input",
+        "st.set_page_config",
+        "st.spinner",
+        "st.subheader",
+        "st.success",
+        "st.text_input",
+        "st.write",
+        "str"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "browserbase.py",
+      "imports": [
+        "crewai",
+        "html2text",
+        "os",
+        "playwright",
+        "time"
+      ],
+      "environment": [
+        "BROWSERBASE_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "browserbase",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": "Loads a URL using a headless webbrowser"
+        }
+      ],
+      "calls": [
+        "browser.close",
+        "html2text",
+        "page.content",
+        "page.goto",
+        "playwright.chromium.connect_over_cdp",
+        "sleep",
+        "sync_playwright",
+        "tool"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "kayak.py",
+      "imports": [
+        "crewai",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "kayak_hotel_search",
+          "line": 6,
+          "kind": "FunctionDef",
+          "doc": "Generates a Kayak URL for hotel searches based on location, dates, and number of adults."
+        }
+      ],
+      "calls": [
+        "print",
+        "tool"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "BROWSERBASE_API_KEY",
+    "BROWSERBASE_PROJECT_ID",
+    "OPENAI_API_KEY",
+    "OPENAI_MODEL_NAME"
+  ],
+  "imports": [
+    "browserbase",
+    "crewai",
+    "datetime",
+    "dotenv",
+    "html2text",
+    "kayak",
+    "os",
+    "playwright",
+    "streamlit",
+    "sys",
+    "time",
+    "typing"
+  ],
+  "models": [
+    "groq/meta-llama/llama-4-scout-17b-16e-instruct"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

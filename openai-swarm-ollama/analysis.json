@@ -1,0 +1,171 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "datetime",
+        "dotenv",
+        "duckduckgo_search",
+        "streamlit",
+        "swarm"
+      ],
+      "environment": [],
+      "models": [
+        "llama3.2"
+      ],
+      "symbols": [
+        {
+          "name": "search_web",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run_workflow",
+          "line": 73,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 100,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".strftime",
+        "Agent",
+        "DDGS",
+        "Swarm",
+        "client.run",
+        "datetime.now",
+        "ddgs.text",
+        "isinstance",
+        "load_dotenv",
+        "main",
+        "message_placeholder.markdown",
+        "news_results.strip",
+        "print",
+        "run_workflow",
+        "st.button",
+        "st.columns",
+        "st.empty",
+        "st.markdown",
+        "st.rerun",
+        "st.set_page_config",
+        "st.spinner",
+        "st.text_input",
+        "st.title"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "demo.ipynb#cell-2",
+      "imports": [
+        "datetime",
+        "dotenv",
+        "duckduckgo_search",
+        "streamlit",
+        "swarm"
+      ],
+      "environment": [],
+      "models": [
+        "llama3.2"
+      ],
+      "symbols": [
+        {
+          "name": "search_web",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run_workflow",
+          "line": 73,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".strftime",
+        "Agent",
+        "DDGS",
+        "Swarm",
+        "client.run",
+        "datetime.now",
+        "ddgs.text",
+        "load_dotenv",
+        "news_results.strip",
+        "print",
+        "run_workflow"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "openai_swarm_demo.py",
+      "imports": [
+        "dotenv",
+        "swarm"
+      ],
+      "environment": [],
+      "models": [
+        "llama3.2:1b"
+      ],
+      "symbols": [
+        {
+          "name": "transfer_to_agent_b",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Agent",
+        "Swarm",
+        "client.run",
+        "load_dotenv",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "demo.ipynb"
+  ],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "datetime",
+    "dotenv",
+    "duckduckgo_search",
+    "streamlit",
+    "swarm"
+  ],
+  "models": [
+    "llama3.2",
+    "llama3.2:1b"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "demo.ipynb",
+      "kind": "notebook",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

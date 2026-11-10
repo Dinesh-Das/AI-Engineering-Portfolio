@@ -1,0 +1,190 @@
+{
+  "units": [
+    {
+      "path": "agents.py",
+      "imports": [
+        "crewai",
+        "dotenv",
+        "linkup",
+        "os",
+        "pydantic",
+        "typing"
+      ],
+      "environment": [
+        "LINKUP_API_KEY"
+      ],
+      "models": [
+        "ollama/deepseek-r1:7b"
+      ],
+      "symbols": [
+        {
+          "name": "get_llm_client",
+          "line": 13,
+          "kind": "FunctionDef",
+          "doc": "Initialize and return the LLM client"
+        },
+        {
+          "name": "LinkUpSearchInput",
+          "line": 23,
+          "kind": "ClassDef",
+          "doc": "Input schema for LinkUp Search Tool."
+        },
+        {
+          "name": "LinkUpSearchTool",
+          "line": 32,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "create_research_crew",
+          "line": 58,
+          "kind": "FunctionDef",
+          "doc": "Create and configure the research crew with all agents and tasks"
+        },
+        {
+          "name": "run_research",
+          "line": 129,
+          "kind": "FunctionDef",
+          "doc": "Run the research process and return results"
+        },
+        {
+          "name": "__init__",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_run",
+          "line": 40,
+          "kind": "FunctionDef",
+          "doc": "Execute LinkUp search and return results."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        "Agent",
+        "Crew",
+        "Field",
+        "LLM",
+        "LinkUpSearchTool",
+        "LinkupClient",
+        "Task",
+        "create_research_crew",
+        "crew.kickoff",
+        "get_llm_client",
+        "linkup_client.search",
+        "load_dotenv",
+        "os.getenv",
+        "str",
+        "super"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "app.py",
+      "imports": [
+        "agents",
+        "os",
+        "streamlit"
+      ],
+      "environment": [
+        "LINKUP_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "run_research",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.header",
+        "st.image",
+        "st.markdown",
+        "st.session_state.messages.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.success",
+        "st.text_input",
+        "st.write",
+        "str"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "agents",
+        "asyncio",
+        "mcp"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "crew_research",
+          "line": 9,
+          "kind": "AsyncFunctionDef",
+          "doc": "Run CrewAI-based research system for given user query. Can do both standard and deep web search."
+        }
+      ],
+      "calls": [
+        "FastMCP",
+        "mcp.run",
+        "mcp.tool",
+        "run_research"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "LINKUP_API_KEY"
+  ],
+  "imports": [
+    "agents",
+    "asyncio",
+    "crewai",
+    "dotenv",
+    "linkup",
+    "mcp",
+    "os",
+    "pydantic",
+    "streamlit",
+    "typing"
+  ],
+  "models": [
+    "ollama/deepseek-r1:7b"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

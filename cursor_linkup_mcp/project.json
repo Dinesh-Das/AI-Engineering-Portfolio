@@ -1,0 +1,261 @@
+{
+  "id": "cursor_linkup_mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/cursor_linkup_mcp",
+  "entries": [
+    {
+      "path": "rag.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "data/DeepSeek.pdf",
+      "path": "data/DeepSeek.pdf",
+      "upstream_sha256": "52d8ca3ac93e88cef9944e1fd03b0e04aec5954495a8250fb2fadf8fa20a4dad",
+      "local_sha256": "52d8ca3ac93e88cef9944e1fd03b0e04aec5954495a8250fb2fadf8fa20a4dad",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "4016980d3a8099a701a4b197f36898fb40dbe6f955fb62a6eb5d627da676349f",
+      "local_sha256": "4016980d3a8099a701a4b197f36898fb40dbe6f955fb62a6eb5d627da676349f",
+      "changes": []
+    },
+    {
+      "upstream_path": "rag.py",
+      "path": "rag.py",
+      "upstream_sha256": "0d381c81e8cdf95fc1f1bf807934223d064af0106759d3854ad456a19d8ce093",
+      "local_sha256": "0d381c81e8cdf95fc1f1bf807934223d064af0106759d3854ad456a19d8ce093",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "130ab05754dcfcb29de48eb0a040afaf2f1d5e9d723e1962296d0a353159ae1b",
+      "local_sha256": "130ab05754dcfcb29de48eb0a040afaf2f1d5e9d723e1962296d0a353159ae1b",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "c1b313479cf53355802c5afc4c3ffb15b9a23263a77a72b48b5fed93eab8e308",
+      "local_sha256": "c1b313479cf53355802c5afc4c3ffb15b9a23263a77a72b48b5fed93eab8e308",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "8850962833e25bd250af2ee5297dc68f92bf306ca2ec50e7b1d7061b9084a596",
+      "local_sha256": "8850962833e25bd250af2ee5297dc68f92bf306ca2ec50e7b1d7061b9084a596",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/thumbnail.png",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "rag.py",
+        "imports": [
+          "asyncio",
+          "llama_index",
+          "nest_asyncio"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "RetrieverEvent",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": "Result of running retrieval"
+          },
+          {
+            "name": "RAGWorkflow",
+            "line": 17,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 82,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest",
+            "line": 31,
+            "kind": "AsyncFunctionDef",
+            "doc": "Entry point to ingest documents from a directory."
+          },
+          {
+            "name": "retrieve",
+            "line": 42,
+            "kind": "AsyncFunctionDef",
+            "doc": "Entry point for RAG retrieval."
+          },
+          {
+            "name": "synthesize",
+            "line": 60,
+            "kind": "AsyncFunctionDef",
+            "doc": "Generate a response using retrieved nodes."
+          },
+          {
+            "name": "query",
+            "line": 67,
+            "kind": "AsyncFunctionDef",
+            "doc": "Helper method to perform a complete RAG query."
+          },
+          {
+            "name": "ingest_documents",
+            "line": 75,
+            "kind": "AsyncFunctionDef",
+            "doc": "Helper method to ingest documents."
+          }
+        ],
+        "calls": [
+          ".__init__",
+          ".load_data",
+          "CompactAndRefine",
+          "HuggingFaceEmbedding",
+          "Ollama",
+          "RAGWorkflow",
+          "RetrieverEvent",
+          "SimpleDirectoryReader",
+          "StopEvent",
+          "ValueError",
+          "VectorStoreIndex.from_documents",
+          "asyncio.run",
+          "ctx.get",
+          "ctx.set",
+          "ev.get",
+          "index.as_retriever",
+          "main",
+          "nest_asyncio.apply",
+          "print",
+          "result.async_response_gen",
+          "retriever.aretrieve",
+          "self.run",
+          "summarizer.asynthesize",
+          "super",
+          "workflow.ingest_documents",
+          "workflow.query"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "asyncio",
+          "dotenv",
+          "linkup",
+          "mcp",
+          "rag"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "web_search",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": "Search the web for the given query."
+          },
+          {
+            "name": "rag",
+            "line": 25,
+            "kind": "AsyncFunctionDef",
+            "doc": "Use a simple RAG workflow to answer queries using documents from data directory about Deep Seek"
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "LinkupClient",
+          "RAGWorkflow",
+          "asyncio.run",
+          "client.search",
+          "load_dotenv",
+          "mcp.run",
+          "mcp.tool",
+          "rag_workflow.ingest_documents",
+          "rag_workflow.query",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "asyncio",
+      "dotenv",
+      "linkup",
+      "llama_index",
+      "mcp",
+      "nest_asyncio",
+      "rag"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "rag.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "mcp",
+  "purpose": "Expose deep web search and document retrieval to an MCP client."
+}

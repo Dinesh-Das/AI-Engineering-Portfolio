@@ -1,0 +1,346 @@
+{
+  "id": "Colivara-deepseek-website-RAG",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/Colivara-deepseek-website-RAG",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "e0924e197a435afc5ed4b498cf932bcff68f19d7f1ace731e2c7e60daea7ed3b",
+      "local_sha256": "e0924e197a435afc5ed4b498cf932bcff68f19d7f1ace731e2c7e60daea7ed3b",
+      "changes": []
+    },
+    {
+      "upstream_path": "rag_code.py",
+      "path": "rag_code.py",
+      "upstream_sha256": "e976590e141fe61ce54204052de3fc6eee624163ef84fa4d41fc21eb924ff383",
+      "local_sha256": "e976590e141fe61ce54204052de3fc6eee624163ef84fa4d41fc21eb924ff383",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "1d334281d0fb4bb95b521d9fecae1bf612ea238328ddaa2312f3c481cf47dfb2",
+      "local_sha256": "b509eaeb1c8222e1075b5377df5f66f8260bfc6aca6ec429b579dbf4bfb53f05",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide.",
+        "Redacted 2 possible credential literals (values not retained)."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/deep-seek.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "video-demo.mp4",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "IPython",
+          "PIL",
+          "base64",
+          "colivara_py",
+          "dotenv",
+          "firecrawl",
+          "fpdf",
+          "gc",
+          "io",
+          "math",
+          "numpy",
+          "os",
+          "pdf2image",
+          "rag_code",
+          "random",
+          "requests",
+          "streamlit",
+          "streamlit_pdf_viewer",
+          "tempfile",
+          "time",
+          "torch",
+          "tqdm",
+          "uuid"
+        ],
+        "environment": [
+          "COLIVARA_API_KEY",
+          "FIRECRAWL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 45,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 52,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_pdf_from_screenshot",
+            "line": 74,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".format",
+          ".read",
+          "ColiVara",
+          "FPDF",
+          "FirecrawlApp",
+          "Image.open",
+          "RAG",
+          "Retriever",
+          "app.scrape_url",
+          "base64.b64encode",
+          "create_pdf_from_screenshot",
+          "f.read",
+          "f.write",
+          "file.read",
+          "gc.collect",
+          "hasattr",
+          "image.crop",
+          "isinstance",
+          "load_dotenv",
+          "math.ceil",
+          "message_placeholder.markdown",
+          "min",
+          "open",
+          "os.getenv",
+          "os.remove",
+          "pdf.add_page",
+          "pdf.image",
+          "pdf.output",
+          "pdf.set_auto_page_break",
+          "pdf_viewer",
+          "rag_client.create_collection",
+          "rag_client.upsert_document",
+          "range",
+          "requests.get",
+          "reset_chat",
+          "response.raise_for_status",
+          "slice_img.save",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.header",
+          "st.markdown",
+          "st.session_state.get",
+          "st.session_state.messages.append",
+          "st.session_state.query_engine.query",
+          "st.stop",
+          "st.success",
+          "st.text_input",
+          "status.update",
+          "status.write",
+          "status_container.status",
+          "str",
+          "time.sleep",
+          "uuid.uuid4"
+        ],
+        "findings": [
+          {
+            "rule": "network-timeout",
+            "path": "app.py",
+            "line": 75,
+            "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+          }
+        ],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "rag_code.py",
+        "imports": [
+          "Janus",
+          "PIL",
+          "base64",
+          "colivara_py",
+          "io",
+          "torch",
+          "tqdm",
+          "transformers"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "batch_iterate",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": "Yield successive n-sized chunks from lst."
+          },
+          {
+            "name": "Retriever",
+            "line": 18,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "RAG",
+            "line": 39,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 20,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 24,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 41,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_setup_llm",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_context",
+            "line": 59,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "query",
+            "line": 62,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".cpu",
+          ".eval",
+          ".to",
+          ".tolist",
+          "AutoModelForCausalLM.from_pretrained",
+          "Image.open",
+          "VLChatProcessor.from_pretrained",
+          "base64.b64decode",
+          "image.save",
+          "io.BytesIO",
+          "len",
+          "load_pil_images",
+          "range",
+          "self._setup_llm",
+          "self.generate_context",
+          "self.rag_client.search",
+          "self.retriever.search",
+          "self.tokenizer.decode",
+          "self.vl_chat_processor",
+          "self.vl_gpt.language_model.generate",
+          "self.vl_gpt.prepare_inputs_embeds"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "rag_code.py",
+            "line": 55,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "COLIVARA_API_KEY",
+      "FIRECRAWL_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "Janus",
+      "PIL",
+      "base64",
+      "colivara_py",
+      "dotenv",
+      "firecrawl",
+      "fpdf",
+      "gc",
+      "io",
+      "math",
+      "numpy",
+      "os",
+      "pdf2image",
+      "rag_code",
+      "random",
+      "requests",
+      "streamlit",
+      "streamlit_pdf_viewer",
+      "tempfile",
+      "time",
+      "torch",
+      "tqdm",
+      "transformers",
+      "uuid"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "network-timeout",
+        "path": "app.py",
+        "line": 75,
+        "message": "HTTP call has no explicit timeout; a stalled peer can occupy a worker."
+      },
+      {
+        "rule": "trust_remote_code",
+        "path": "rag_code.py",
+        "line": 55,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "rag",
+  "purpose": "Retrieve visually represented web pages and answer with a multimodal model."
+}

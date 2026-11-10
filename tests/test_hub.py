@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.analysis import analyze_python, sanitize_notebook, source_path
+from tools.analysis import analyze_python, python_cell, sanitize_notebook, source_path
 from tools.hub import build_command, get_project
 
 
@@ -34,6 +34,12 @@ class SourceBoundaryTests(unittest.TestCase):
 
 
 class NotebookTests(unittest.TestCase):
+    def test_multiline_shell_magic_inside_python_block(self):
+        code = 'if True:\n    !pip install \\\n+        package-a package-b\nelse:\n    pass\n'
+        cleaned, special = python_cell(code)
+        self.assertTrue(special)
+        self.assertIsNone(analyze_python(cleaned, 'cell')['syntax_error'])
+
     def test_outputs_execution_counts_and_widget_state_are_removed(self):
         notebook = {
             'nbformat': 4, 'nbformat_minor': 5,

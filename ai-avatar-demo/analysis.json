@@ -1,0 +1,641 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "asyncio",
+        "config",
+        "services",
+        "streamlit"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".replace",
+        "anam_service.create_session_token",
+        "asyncio.new_event_loop",
+        "asyncio.set_event_loop",
+        "components.html",
+        "loop.run_until_complete",
+        "st.button",
+        "st.caption",
+        "st.divider",
+        "st.error",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.rerun",
+        "st.set_page_config",
+        "st.stop",
+        "st.success",
+        "st.text_input",
+        "st.title",
+        "user_name.lower",
+        "user_name.split",
+        "zep_service.create_thread",
+        "zep_service.create_user"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "backend.py",
+      "imports": [
+        "config",
+        "fastapi",
+        "json",
+        "pydantic",
+        "services",
+        "time",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "Message",
+          "line": 19,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "ChatRequest",
+          "line": 24,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "SessionCreateRequest",
+          "line": 28,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "health_check",
+          "line": 60,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "test_graph",
+          "line": 65,
+          "kind": "AsyncFunctionDef",
+          "doc": "Simple debug endpoint to verify Zep graph connectivity."
+        },
+        {
+          "name": "create_zep_session",
+          "line": 86,
+          "kind": "AsyncFunctionDef",
+          "doc": "Helper endpoint to create a Zep user + thread (session) for a given user_id."
+        },
+        {
+          "name": "llm_stream",
+          "line": 120,
+          "kind": "AsyncFunctionDef",
+          "doc": "Streaming LLM endpoint with Zep KG integration."
+        },
+        {
+          "name": "event_generator",
+          "line": 148,
+          "kind": "AsyncFunctionDef",
+          "doc": "Async generator that:"
+        }
+      ],
+      "calls": [
+        ".join",
+        ".strip",
+        "FastAPI",
+        "HTTPException",
+        "Query",
+        "StreamingResponse",
+        "app.add_middleware",
+        "app.get",
+        "app.post",
+        "enumerate",
+        "event_generator",
+        "full_response.strip",
+        "json.dumps",
+        "len",
+        "llm_service.stream_chat_completion",
+        "node.get",
+        "print",
+        "reversed",
+        "str",
+        "time.time",
+        "zep_service.add_message",
+        "zep_service.create_thread",
+        "zep_service.create_user",
+        "zep_service.get_user_context",
+        "zep_service.search_graph"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "config/__init__.py",
+      "imports": [
+        "settings"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "config/settings.py",
+      "imports": [
+        "pydantic_settings",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "Settings",
+          "line": 6,
+          "kind": "ClassDef",
+          "doc": "Application settings loaded from environment variables."
+        },
+        {
+          "name": "Config",
+          "line": 22,
+          "kind": "ClassDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Settings"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "scripts/ingest_to_graph.py",
+      "imports": [
+        "dotenv",
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "zep_cloud"
+      ],
+      "environment": [
+        "ZEP_API_KEY",
+        "ZEP_DOCS_USER_ID"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 19,
+          "kind": "FunctionDef",
+          "doc": "Main function to ingest data to user graph."
+        }
+      ],
+      "calls": [
+        ".lower",
+        "Path",
+        "ValueError",
+        "Zep",
+        "chunks_path.exists",
+        "enumerate",
+        "episode_uuids.append",
+        "json.dump",
+        "json.load",
+        "len",
+        "load_dotenv",
+        "main",
+        "open",
+        "os.getenv",
+        "print",
+        "str",
+        "time.gmtime",
+        "time.sleep",
+        "time.strftime",
+        "zep.graph.add",
+        "zep.user.add"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "services/__init__.py",
+      "imports": [
+        "anam_service",
+        "llm_service",
+        "zep_service"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "services/anam_service.py",
+      "imports": [
+        "config",
+        "httpx",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "AnamService",
+          "line": 7,
+          "kind": "ClassDef",
+          "doc": "Service for interacting with Anam AI API."
+        },
+        {
+          "name": "__init__",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": "Initialize Anam AI service."
+        },
+        {
+          "name": "create_session_token",
+          "line": 20,
+          "kind": "AsyncFunctionDef",
+          "doc": "Create a session token for initializing an Anam persona."
+        }
+      ],
+      "calls": [
+        "AnamService",
+        "bool",
+        "client.post",
+        "httpx.AsyncClient",
+        "print",
+        "response.json",
+        "response.raise_for_status"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "services/llm_service.py",
+      "imports": [
+        "config",
+        "json",
+        "openai",
+        "typing"
+      ],
+      "environment": [],
+      "models": [
+        "minimax/minimax-m2"
+      ],
+      "symbols": [
+        {
+          "name": "LLMService",
+          "line": 7,
+          "kind": "ClassDef",
+          "doc": "Service for LLM interactions with Minimax M2 via OpenRouter."
+        },
+        {
+          "name": "__init__",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": "Initialize LLM service with OpenRouter."
+        },
+        {
+          "name": "stream_chat_completion",
+          "line": 20,
+          "kind": "AsyncFunctionDef",
+          "doc": "Stream chat completion from Minimax M2."
+        }
+      ],
+      "calls": [
+        "AsyncOpenAI",
+        "LLMService",
+        "ValueError",
+        "cast",
+        "openai_messages.extend",
+        "print",
+        "self.client.chat.completions.create"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "services/zep_service.py",
+      "imports": [
+        "config",
+        "typing",
+        "zep_cloud"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ZepService",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": "Service for interacting with Zep Cloud (async-safe)."
+        },
+        {
+          "name": "__init__",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_user",
+          "line": 20,
+          "kind": "AsyncFunctionDef",
+          "doc": "Create a new user in Zep."
+        },
+        {
+          "name": "create_thread",
+          "line": 46,
+          "kind": "AsyncFunctionDef",
+          "doc": "Create a new thread for a user."
+        },
+        {
+          "name": "add_message",
+          "line": 62,
+          "kind": "AsyncFunctionDef",
+          "doc": "Add a message to a thread."
+        },
+        {
+          "name": "get_user_context",
+          "line": 81,
+          "kind": "AsyncFunctionDef",
+          "doc": "Get user context from a thread using thread.get_user_context."
+        },
+        {
+          "name": "search_graph",
+          "line": 112,
+          "kind": "AsyncFunctionDef",
+          "doc": "Search the knowledge graph for a docs user (or provided user_id)."
+        },
+        {
+          "name": "add_to_graph",
+          "line": 145,
+          "kind": "AsyncFunctionDef",
+          "doc": "Add data to a user's graph (docs user by default)."
+        }
+      ],
+      "calls": [
+        ".split",
+        ".strip",
+        "AsyncZep",
+        "ZepMessage",
+        "ZepService",
+        "context.split",
+        "len",
+        "nodes.append",
+        "print",
+        "self.client.graph.add",
+        "self.client.graph.search",
+        "self.client.thread.add_messages",
+        "self.client.thread.create",
+        "self.client.thread.get_user_context",
+        "self.client.user.add"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "zep_demo.ipynb#cell-3",
+      "imports": [
+        "dotenv",
+        "openai",
+        "os",
+        "time",
+        "zep_cloud"
+      ],
+      "environment": [
+        "OPENROUTER_API_KEY",
+        "ZEP_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "ValueError",
+        "load_dotenv",
+        "os.getenv",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "OpenAI",
+        "Zep",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-7",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".lower",
+        "print",
+        "str",
+        "zep.user.add"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "enumerate",
+        "len",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-11",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "enumerate",
+        "episode_uuids.append",
+        "len",
+        "print",
+        "time.sleep",
+        "zep.graph.add"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-15",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "minimax/minimax-m2"
+      ],
+      "symbols": [
+        {
+          "name": "ask_with_knowledge",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": "Simple function to query the knowledge graph and use Minimax M2 to generate a coherent response."
+        }
+      ],
+      "calls": [
+        ".join",
+        "context_parts.append",
+        "len",
+        "openrouter_client.chat.completions.create",
+        "print",
+        "str",
+        "zep.graph.search"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-17",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "ask_with_knowledge",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-19",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "ask_with_knowledge",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "zep_demo.ipynb#cell-21",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "ask_with_knowledge",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "zep_demo.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "ANAM_API_KEY",
+    "ANAM_AVATAR_ID",
+    "ANAM_VOICE_ID",
+    "OPENROUTER_API_KEY",
+    "ZEP_API_KEY",
+    "ZEP_DOCS_USER_ID"
+  ],
+  "imports": [
+    "anam_service",
+    "asyncio",
+    "config",
+    "dotenv",
+    "fastapi",
+    "httpx",
+    "json",
+    "llm_service",
+    "openai",
+    "os",
+    "pathlib",
+    "pydantic",
+    "pydantic_settings",
+    "services",
+    "settings",
+    "streamlit",
+    "sys",
+    "time",
+    "typing",
+    "zep_cloud",
+    "zep_service"
+  ],
+  "models": [
+    "minimax/minimax-m2"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "scripts/ingest_to_graph.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "zep_demo.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

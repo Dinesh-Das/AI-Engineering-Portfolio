@@ -1,0 +1,2 @@
+{"id":"synthetic-match","expected":"42","actual":"42","relevant_ids":["doc-a"],"retrieved_ids":["doc-b","doc-a"],"should_abstain":false,"abstained":false,"latency_ms":120,"cost_usd":0.001}
+{"id":"synthetic-abstention","expected":"insufficient evidence","actual":"insufficient evidence","should_abstain":true,"abstained":true,"latency_ms":80}

@@ -1,0 +1,366 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "asyncio",
+        "base64",
+        "contextlib",
+        "dotenv",
+        "gc",
+        "io",
+        "llama_index",
+        "logging",
+        "nest_asyncio",
+        "os",
+        "qdrant_client",
+        "streamlit",
+        "sys",
+        "tempfile",
+        "time",
+        "uuid",
+        "workflow"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY",
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "BAAI/bge-large-en-v1.5",
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 55,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_pdf",
+          "line": 60,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "initialize_workflow",
+          "line": 76,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "run_workflow",
+          "line": 129,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".load_data",
+        "CorrectiveRAGWorkflow",
+        "Exception",
+        "FastEmbedEmbedding",
+        "MilvusVectorStore",
+        "OpenAI",
+        "SimpleDirectoryReader",
+        "StorageContext.from_defaults",
+        "ValueError",
+        "VectorStoreIndex.from_documents",
+        "asyncio.run",
+        "asyncio.wait_for",
+        "base64.b64encode",
+        "display_pdf",
+        "enumerate",
+        "f.getvalue",
+        "f.write",
+        "file.read",
+        "gc.collect",
+        "hasattr",
+        "initialize_workflow",
+        "io.StringIO",
+        "len",
+        "load_dotenv",
+        "load_llm",
+        "message_placeholder.markdown",
+        "nest_asyncio.apply",
+        "open",
+        "os.getenv",
+        "os.path.join",
+        "print",
+        "redirect_stdout",
+        "result.split",
+        "result_text.split",
+        "run_workflow",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.code",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.expander",
+        "st.file_uploader",
+        "st.header",
+        "st.image",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.session_state.workflow.run",
+        "st.session_state.workflow_logs.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.stop",
+        "st.success",
+        "st.write",
+        "str",
+        "tempfile.TemporaryDirectory",
+        "time.sleep",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "start_server.py",
+      "imports": [
+        "beam",
+        "subprocess",
+        "time"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "load_model",
+          "line": 3,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".add_python_packages",
+        "Image",
+        "Pod",
+        "print",
+        "streamlit_server.create",
+        "subprocess.Popen",
+        "subprocess.run",
+        "time.sleep"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "workflow.py",
+      "imports": [
+        "dotenv",
+        "llama_index",
+        "os",
+        "re",
+        "relevance_policy",
+        "requests",
+        "typing"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "RetrieveEvent",
+          "line": 32,
+          "kind": "ClassDef",
+          "doc": "Retrieve event (gets retrieved nodes)."
+        },
+        {
+          "name": "WebSearchEvent",
+          "line": 38,
+          "kind": "ClassDef",
+          "doc": "Web search event."
+        },
+        {
+          "name": "QueryEvent",
+          "line": 44,
+          "kind": "ClassDef",
+          "doc": "Query event. Queries given relevant text and search text."
+        },
+        {
+          "name": "CorrectiveRAGWorkflow",
+          "line": 85,
+          "kind": "ClassDef",
+          "doc": "Corrective RAG Workflow."
+        },
+        {
+          "name": "__init__",
+          "line": 88,
+          "kind": "FunctionDef",
+          "doc": "Init params."
+        },
+        {
+          "name": "retrieve",
+          "line": 118,
+          "kind": "AsyncFunctionDef",
+          "doc": "Retrieve the relevant nodes for the query."
+        },
+        {
+          "name": "eval_relevance",
+          "line": 144,
+          "kind": "AsyncFunctionDef",
+          "doc": "Evaluate relevancy of retrieved documents with the query."
+        },
+        {
+          "name": "_firecrawl_search",
+          "line": 191,
+          "kind": "FunctionDef",
+          "doc": "Perform web search using FireCrawl API directly."
+        },
+        {
+          "name": "web_search",
+          "line": 237,
+          "kind": "AsyncFunctionDef",
+          "doc": "Search the transformed query"
+        },
+        {
+          "name": "query_result",
+          "line": 266,
+          "kind": "AsyncFunctionDef",
+          "doc": "Get result with relevant text."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        ".join",
+        ".strip",
+        "DEFAULT_RELEVANCY_PROMPT_TEMPLATE.format",
+        "DEFAULT_TRANSFORM_QUERY_TEMPLATE.format",
+        "OpenAI",
+        "PromptTemplate",
+        "QueryEvent",
+        "RetrieveEvent",
+        "StopEvent",
+        "WebSearchEvent",
+        "ctx.get",
+        "ctx.set",
+        "data.get",
+        "enumerate",
+        "ev.get",
+        "is_relevant_grade",
+        "len",
+        "load_dotenv",
+        "needs_web_search",
+        "os.getenv",
+        "print",
+        "re.sub",
+        "relevancy.text.lower",
+        "relevancy_results.append",
+        "relevant_text.strip",
+        "requests.post",
+        "response.json",
+        "response.raise_for_status",
+        "result.get",
+        "retriever.retrieve",
+        "search_results.append",
+        "search_text.strip",
+        "self._firecrawl_search",
+        "self.index.as_retriever",
+        "self.llm.acomplete",
+        "self.llm.complete",
+        "super",
+        "type"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "relevance_policy.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "is_relevant_grade",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "needs_web_search",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": "No evidence or an invalid grader response must trigger evidence recovery."
+        }
+      ],
+      "calls": [
+        ".lower",
+        "any",
+        "grade.strip",
+        "is_relevant_grade",
+        "isinstance"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml",
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "FIRECRAWL_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "base64",
+    "beam",
+    "contextlib",
+    "dotenv",
+    "gc",
+    "io",
+    "llama_index",
+    "logging",
+    "nest_asyncio",
+    "os",
+    "qdrant_client",
+    "re",
+    "relevance_policy",
+    "requests",
+    "streamlit",
+    "subprocess",
+    "sys",
+    "tempfile",
+    "time",
+    "typing",
+    "uuid",
+    "workflow"
+  ],
+  "models": [
+    "BAAI/bge-large-en-v1.5",
+    "gpt-4o"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

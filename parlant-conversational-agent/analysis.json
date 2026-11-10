@@ -1,0 +1,108 @@
+{
+  "units": [
+    {
+      "path": "loan_approval.py",
+      "imports": [
+        "asyncio",
+        "dotenv",
+        "parlant"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "check_eligibility",
+          "line": 9,
+          "kind": "AsyncFunctionDef",
+          "doc": "Checks if the customer meets the basic qualification criteria for a loan."
+        },
+        {
+          "name": "process_documents",
+          "line": 22,
+          "kind": "AsyncFunctionDef",
+          "doc": "Simulates a service that processes and validates uploaded documents."
+        },
+        {
+          "name": "get_current_rates",
+          "line": 39,
+          "kind": "AsyncFunctionDef",
+          "doc": "Fetches the current loan interest rates based on the customer's location."
+        },
+        {
+          "name": "get_loan_types",
+          "line": 47,
+          "kind": "AsyncFunctionDef",
+          "doc": "Provides a list of available loan types."
+        },
+        {
+          "name": "add_domain_glossary",
+          "line": 54,
+          "kind": "AsyncFunctionDef",
+          "doc": "Adds domain-specific terminology to align the agent's understanding with"
+        },
+        {
+          "name": "create_loan_journey",
+          "line": 81,
+          "kind": "AsyncFunctionDef",
+          "doc": "Defines the structured, multi-step journey for loan approval."
+        },
+        {
+          "name": "main",
+          "line": 147,
+          "kind": "AsyncFunctionDef",
+          "doc": "The main function to initialize and configure the Parlant agent."
+        }
+      ],
+      "calls": [
+        "add_domain_glossary",
+        "agent.create_canned_response",
+        "agent.create_guideline",
+        "agent.create_journey",
+        "agent.create_term",
+        "asyncio.run",
+        "create_loan_journey",
+        "journey.create_guideline",
+        "journey.initial_state.transition_to",
+        "load_dotenv",
+        "main",
+        "p.Server",
+        "p.ToolResult",
+        "server.create_agent",
+        "t0.target.transition_to",
+        "t1.target.transition_to",
+        "t2.target.transition_to",
+        "t3_credit_ineligible.target.transition_to",
+        "t3_request_docs.target.transition_to",
+        "t4_process_docs.target.transition_to",
+        "t5_docs_ineligible.target.transition_to",
+        "t5_final_eligible.target.transition_to"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "dotenv",
+    "parlant"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "loan_approval.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

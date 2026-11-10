@@ -1,0 +1,177 @@
+{
+  "id": "amazon-product-analysis-server",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/amazon-product-analysis-server",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "c5442818ade1f49ab23046381c5757e4ffdfe68081283dafb071a29c08248f11",
+      "local_sha256": "c5442818ade1f49ab23046381c5757e4ffdfe68081283dafb071a29c08248f11",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "0fe0ca1fa3462e4828025c7437a1b6f892f0c1151f93888c267e7e9feb45b6c2",
+      "local_sha256": "0fe0ca1fa3462e4828025c7437a1b6f892f0c1151f93888c267e7e9feb45b6c2",
+      "changes": []
+    },
+    {
+      "upstream_path": "index.ts",
+      "path": "index.ts",
+      "upstream_sha256": "b7eb2300289e958aff2dfa5e741a53f764086ba79d80add5a07e6d8d8662a4a6",
+      "local_sha256": "b7eb2300289e958aff2dfa5e741a53f764086ba79d80add5a07e6d8d8662a4a6",
+      "changes": []
+    },
+    {
+      "upstream_path": "package-lock.json",
+      "path": "package-lock.json",
+      "upstream_sha256": "64713d8a1d8e9367320a6c9f19eec2d147df519fd38e6b2c11e3a6c860a84d9f",
+      "local_sha256": "64713d8a1d8e9367320a6c9f19eec2d147df519fd38e6b2c11e3a6c860a84d9f",
+      "changes": []
+    },
+    {
+      "upstream_path": "package.json",
+      "path": "package.json",
+      "upstream_sha256": "b54fcca170bd6e9a8c7b73bfbd3f7a5acbb85a0d7ccc6a52454815f1162c06d6",
+      "local_sha256": "b54fcca170bd6e9a8c7b73bfbd3f7a5acbb85a0d7ccc6a52454815f1162c06d6",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "88b3cc0a28908e59c931fda48f5e0425eb6d65ea6a55af0409ead4830131563b",
+      "local_sha256": "88b3cc0a28908e59c931fda48f5e0425eb6d65ea6a55af0409ead4830131563b",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "resources/amazon-product-analysis/brightdata-tools.ts",
+      "path": "resources/amazon-product-analysis/brightdata-tools.ts",
+      "upstream_sha256": "3aec6c420769d5abef9d2abcdbc6265ef28a512d9296711ad22924a215e62ff4",
+      "local_sha256": "3aec6c420769d5abef9d2abcdbc6265ef28a512d9296711ad22924a215e62ff4",
+      "changes": []
+    },
+    {
+      "upstream_path": "resources/amazon-product-analysis/server.ts",
+      "path": "resources/amazon-product-analysis/server.ts",
+      "upstream_sha256": "26a1dfca0693a26bba2d57cc1d85bc44a93d5bc62becdf0f678a97819b9a120c",
+      "local_sha256": "26a1dfca0693a26bba2d57cc1d85bc44a93d5bc62becdf0f678a97819b9a120c",
+      "changes": []
+    },
+    {
+      "upstream_path": "resources/amazon-product-analysis/types.ts",
+      "path": "resources/amazon-product-analysis/types.ts",
+      "upstream_sha256": "113d43ba3ae8f09be7e943c40e7ae582d3049d5e780f76a17191782b335943d1",
+      "local_sha256": "113d43ba3ae8f09be7e943c40e7ae582d3049d5e780f76a17191782b335943d1",
+      "changes": []
+    },
+    {
+      "upstream_path": "resources/amazon-product-analysis/utils.ts",
+      "path": "resources/amazon-product-analysis/utils.ts",
+      "upstream_sha256": "86ff190b04ff2e51b106142441a896524eb56634bdd628dacd2b70226c047fe5",
+      "local_sha256": "86ff190b04ff2e51b106142441a896524eb56634bdd628dacd2b70226c047fe5",
+      "changes": []
+    },
+    {
+      "upstream_path": "tsconfig.json",
+      "path": "tsconfig.json",
+      "upstream_sha256": "1dbdd24c9b465f66a8fd93c510cd26c12fa5bc3dcc981b112abaac941ea8f1d8",
+      "local_sha256": "1dbdd24c9b465f66a8fd93c510cd26c12fa5bc3dcc981b112abaac941ea8f1d8",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "resources/amazon-product-analysis/components/CustomerReviews.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/DeliveryInfo.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/Features.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/ImageGallery.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/PricingDeal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/ProductCard.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/ProductSpecs.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/components/SellerInfo.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/hooks/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/hooks/useProductAnalysis.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "resources/amazon-product-analysis/widget.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "resources/styles.css",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [],
+    "manifests": [
+      "package.json"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "index.ts",
+      "resources/amazon-product-analysis/brightdata-tools.ts",
+      "resources/amazon-product-analysis/server.ts",
+      "resources/amazon-product-analysis/types.ts",
+      "resources/amazon-product-analysis/utils.ts"
+    ],
+    "environment": [
+      "BRIGHTDATA_API_KEY",
+      "MCP_URL",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "mcp",
+  "purpose": "Expose product research and comparison through an MCP server."
+}

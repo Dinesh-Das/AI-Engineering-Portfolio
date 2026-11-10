@@ -1,0 +1,391 @@
+{
+  "id": "conversational-support-flow",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/conversational-support-flow",
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "support_flow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "13cba2e77ad085074ad35d86152855a1b9be68eea2135fc65aff9d4bfe7239b2",
+      "local_sha256": "13cba2e77ad085074ad35d86152855a1b9be68eea2135fc65aff9d4bfe7239b2",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "knowledge/return_policies.md",
+      "path": "knowledge/return_policies.md",
+      "upstream_sha256": "8800122e6617d8c5cc3440969460ce83539e4b5685ed3891c9cde23489833d7c",
+      "local_sha256": "8800122e6617d8c5cc3440969460ce83539e4b5685ed3891c9cde23489833d7c",
+      "changes": []
+    },
+    {
+      "upstream_path": "order_db.py",
+      "path": "order_db.py",
+      "upstream_sha256": "988553a58333a176440aa3ffb2ee7d892fe8f0b28409dca747ef68790e0fed3a",
+      "local_sha256": "988553a58333a176440aa3ffb2ee7d892fe8f0b28409dca747ef68790e0fed3a",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "cda38ef7edaafac5c4867e1cca1f6b58abaae4ce1afd45021b0f2426e5ae9497",
+      "local_sha256": "cda38ef7edaafac5c4867e1cca1f6b58abaae4ce1afd45021b0f2426e5ae9497",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "52379a5caf4be461cb887e860c99c14ca9821289d52d81348989551db87781ce",
+      "local_sha256": "52379a5caf4be461cb887e860c99c14ca9821289d52d81348989551db87781ce",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "0f275f735b796c5043e85fedaea3d698ae983eab1c6c5c53651e38a52582c635",
+      "local_sha256": "0f275f735b796c5043e85fedaea3d698ae983eab1c6c5c53651e38a52582c635",
+      "changes": []
+    },
+    {
+      "upstream_path": "support_flow.py",
+      "path": "support_flow.py",
+      "upstream_sha256": "396fa5b9209891a8b305f41f4945e82aae62fa22304108e63b9a947ff450b74e",
+      "local_sha256": "396fa5b9209891a8b305f41f4945e82aae62fa22304108e63b9a947ff450b74e",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "cdbc58433a643f3609b10d2e1f0334503171cb66a4c850e5f969b159110cb9b5",
+      "local_sha256": "cdbc58433a643f3609b10d2e1f0334503171cb66a4c850e5f969b159110cb9b5",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "frontend/.gitignore",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/AGENTS.md",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/api/copilotkit/route.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/chat.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/favicon.ico",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/globals.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/layout.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/page.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/app/providers.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/CLAUDE.md",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/eslint.config.mjs",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/package.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/postcss.config.mjs",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/README.md",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "order_db.py",
+        "imports": [
+          "dataclasses",
+          "datetime",
+          "pathlib",
+          "sqlite3"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "TrackingEvent",
+            "line": 26,
+            "kind": "ClassDef",
+            "doc": "A tracking event for an order."
+          },
+          {
+            "name": "Order",
+            "line": 35,
+            "kind": "ClassDef",
+            "doc": "An order."
+          },
+          {
+            "name": "_init_db",
+            "line": 51,
+            "kind": "FunctionDef",
+            "doc": "Initialize the database."
+          },
+          {
+            "name": "OrderManagementAPI",
+            "line": 94,
+            "kind": "ClassDef",
+            "doc": "Stand-in for a call to the internal order-management API."
+          },
+          {
+            "name": "latest_event",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": "The latest tracking event for the order, or None if there are none yet."
+          },
+          {
+            "name": "__init__",
+            "line": 97,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_order",
+            "line": 100,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".fetchall",
+          ".fetchone",
+          "Order",
+          "Path",
+          "TrackingEvent",
+          "_init_db",
+          "conn.close",
+          "conn.commit",
+          "conn.execute",
+          "conn.executemany",
+          "date.fromisoformat",
+          "field",
+          "sqlite3.connect"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "ag_ui_crewai",
+          "fastapi",
+          "support_flow"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "FastAPI",
+          "SupportFlow",
+          "add_crewai_flow_fastapi_endpoint"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "support_flow.py",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "dotenv",
+          "logging",
+          "order_db",
+          "os",
+          "re",
+          "uuid"
+        ],
+        "environment": [
+          "OPENROUTER_API_KEY"
+        ],
+        "models": [
+          "openrouter/openai/gpt-4o",
+          "openrouter/openai/gpt-4o-mini"
+        ],
+        "symbols": [
+          {
+            "name": "extract_order_id",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": "Pull a known order id out of free text, e.g. \"Where is order 4471?\" -> \"4471\"."
+          },
+          {
+            "name": "SupportState",
+            "line": 63,
+            "kind": "ClassDef",
+            "doc": "Adds the two fields later turns resolve pronouns against."
+          },
+          {
+            "name": "SupportFlow",
+            "line": 106,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_order_lookup",
+            "line": 113,
+            "kind": "FunctionDef",
+            "doc": "Status, tracking, or delivery date for an order."
+          },
+          {
+            "name": "handle_return_policy",
+            "line": 159,
+            "kind": "FunctionDef",
+            "doc": "Returns, refunds, exchanges, and damaged item claims."
+          },
+          {
+            "name": "handle_research",
+            "line": 209,
+            "kind": "FunctionDef",
+            "doc": "Live carrier delays, weather disruptions, current external conditions."
+          }
+        ],
+        "calls": [
+          ".kickoff",
+          "Agent",
+          "ConversationConfig",
+          "Crew",
+          "ExaSearchTool",
+          "LLM",
+          "ORDER_SERVICE.get_order",
+          "OrderManagementAPI",
+          "RouterConfig",
+          "SupportFlow",
+          "Task",
+          "TextFileKnowledgeSource",
+          "any",
+          "extract_order_id",
+          "flow.finalize_session_traces",
+          "flow.handle_turn",
+          "len",
+          "listen",
+          "load_dotenv",
+          "logger.exception",
+          "logging.getLogger",
+          "message.lower",
+          "persist",
+          "print",
+          "re.findall",
+          "self.append_agent_result",
+          "self.append_assistant_message",
+          "str",
+          "uuid4"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "EXA_API_KEY",
+      "OPENROUTER_API_KEY"
+    ],
+    "imports": [
+      "ag_ui_crewai",
+      "crewai",
+      "crewai_tools",
+      "dataclasses",
+      "datetime",
+      "dotenv",
+      "fastapi",
+      "logging",
+      "order_db",
+      "os",
+      "pathlib",
+      "re",
+      "sqlite3",
+      "support_flow",
+      "uuid"
+    ],
+    "models": [
+      "openrouter/openai/gpt-4o",
+      "openrouter/openai/gpt-4o-mini"
+    ],
+    "entries": [
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "support_flow.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 3
+  },
+  "category": "agents",
+  "purpose": "Route support turns among order lookup, policy retrieval and live research."
+}

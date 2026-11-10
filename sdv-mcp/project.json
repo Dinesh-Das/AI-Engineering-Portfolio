@@ -1,0 +1,227 @@
+{
+  "id": "sdv-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/sdv-mcp",
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "data/guests.csv",
+      "path": "data/guests.csv",
+      "upstream_sha256": "159fd1b84a91355be162dd3da2f6c6007acb7bfffebdc3f92422e42d5c6185db",
+      "local_sha256": "159fd1b84a91355be162dd3da2f6c6007acb7bfffebdc3f92422e42d5c6185db",
+      "changes": []
+    },
+    {
+      "upstream_path": "data/hotels.csv",
+      "path": "data/hotels.csv",
+      "upstream_sha256": "0ba53bc0bfd542fad6bde79a69fa58a0012d4323d80db727ebc459248df7ac31",
+      "local_sha256": "0ba53bc0bfd542fad6bde79a69fa58a0012d4323d80db727ebc459248df7ac31",
+      "changes": []
+    },
+    {
+      "upstream_path": "data/metadata.json",
+      "path": "data/metadata.json",
+      "upstream_sha256": "6e82068bf59779dec4ad6dab3bf9c20c2662f3ee0cecb63d9389d482d26407dd",
+      "local_sha256": "6e82068bf59779dec4ad6dab3bf9c20c2662f3ee0cecb63d9389d482d26407dd",
+      "changes": []
+    },
+    {
+      "upstream_path": "process_diagram.png",
+      "path": "process_diagram.png",
+      "upstream_sha256": "f769233d828d4d587aabd4437a87005a68da8c9cf8983e6f85cf409fe0559658",
+      "local_sha256": "f769233d828d4d587aabd4437a87005a68da8c9cf8983e6f85cf409fe0559658",
+      "changes": []
+    },
+    {
+      "upstream_path": "prompt.txt",
+      "path": "prompt.txt",
+      "upstream_sha256": "3cad7589282a93227ae2a7a1ad3fe9056fa5b09ab5abab6e7cfa6197eea46433",
+      "local_sha256": "3cad7589282a93227ae2a7a1ad3fe9056fa5b09ab5abab6e7cfa6197eea46433",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "7afa123e9487e390d97378e46265e286f6853a835ec5ac5450264ada190b5b16",
+      "local_sha256": "7afa123e9487e390d97378e46265e286f6853a835ec5ac5450264ada190b5b16",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "7f848b216f459561a875c8e3ba771c3ff868ac8a9c5ff02d6d2e751e50de688e",
+      "local_sha256": "7f848b216f459561a875c8e3ba771c3ff868ac8a9c5ff02d6d2e751e50de688e",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "efd027eb209984c56cc8157cb24ef979474ee936c4adfe1c918e7ebb398b122b",
+      "local_sha256": "efd027eb209984c56cc8157cb24ef979474ee936c4adfe1c918e7ebb398b122b",
+      "changes": []
+    },
+    {
+      "upstream_path": "tools.py",
+      "path": "tools.py",
+      "upstream_sha256": "2b55d2d5dce77451628db8353c610440e31609e6f71f0df3a85f3325e52fdd23",
+      "local_sha256": "2b55d2d5dce77451628db8353c610440e31609e6f71f0df3a85f3325e52fdd23",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "1d93986b72562c38892ec4ae39364b267d44f3d4addff4d6d74ca3079e57c093",
+      "local_sha256": "1d93986b72562c38892ec4ae39364b267d44f3d4addff4d6d74ca3079e57c093",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "server.py",
+        "imports": [
+          "mcp",
+          "tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "sdv_generate",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Generate synthetic data based on real data using SDV Synthesizer."
+          },
+          {
+            "name": "sdv_evaluate",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": "Evaluate the quality of synthetic data compared to real data."
+          },
+          {
+            "name": "sdv_visualize",
+            "line": 53,
+            "kind": "FunctionDef",
+            "doc": "Generate visualization comparing real and synthetic data for a specific column."
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "evaluate",
+          "generate",
+          "mcp.run",
+          "mcp.tool",
+          "str",
+          "visualize"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "tools.py",
+        "imports": [
+          "os",
+          "pandas",
+          "sdv"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "generate",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": "Generate synthetic data based on real data using SDV Synthesizer."
+          },
+          {
+            "name": "evaluate",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": "Evaluate the quality of synthetic data compared to real data."
+          },
+          {
+            "name": "visualize",
+            "line": 110,
+            "kind": "FunctionDef",
+            "doc": "Generate visualization comparing real and synthetic data for a specific column."
+          }
+        ],
+        "calls": [
+          ".replace",
+          "CSVHandler",
+          "FileNotFoundError",
+          "HMASynthesizer",
+          "Metadata.load_from_json",
+          "RuntimeError",
+          "ValueError",
+          "column_name.replace",
+          "connector.read",
+          "df.to_csv",
+          "evaluate_quality",
+          "fig.write_image",
+          "get_column_plot",
+          "len",
+          "list",
+          "os.makedirs",
+          "os.path.abspath",
+          "os.path.exists",
+          "os.path.join",
+          "pd.read_csv",
+          "properties_df.to_dict",
+          "quality_report.get_properties",
+          "quality_report.get_score",
+          "synthesizer.fit",
+          "synthesizer.sample",
+          "synthetic_data.items",
+          "synthetic_data.keys"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "mcp",
+      "os",
+      "pandas",
+      "sdv",
+      "tools"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "mcp",
+  "purpose": "Expose local synthetic-data training, generation and statistical evaluation through MCP."
+}

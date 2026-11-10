@@ -1,0 +1,223 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "assemblyai",
+        "base64",
+        "dotenv",
+        "gc",
+        "os",
+        "pathlib",
+        "streamlit",
+        "uuid"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "get_logo_base64",
+          "line": 439,
+          "kind": "FunctionDef",
+          "doc": "Convert logo file to base64 string for embedding"
+        },
+        {
+          "name": "reset_chat",
+          "line": 452,
+          "kind": "FunctionDef",
+          "doc": "Reset chat session"
+        },
+        {
+          "name": "timestamp_string",
+          "line": 457,
+          "kind": "FunctionDef",
+          "doc": "Convert milliseconds to HH:MM:SS format"
+        },
+        {
+          "name": "display_transcription",
+          "line": 464,
+          "kind": "FunctionDef",
+          "doc": "Display transcription with timestamps"
+        },
+        {
+          "name": "display_summary",
+          "line": 484,
+          "kind": "FunctionDef",
+          "doc": "Display summary"
+        },
+        {
+          "name": "display_speakers",
+          "line": 491,
+          "kind": "FunctionDef",
+          "doc": "Display speaker analysis"
+        },
+        {
+          "name": "display_sentiment",
+          "line": 530,
+          "kind": "FunctionDef",
+          "doc": "Display sentiment analysis"
+        },
+        {
+          "name": "display_topics",
+          "line": 584,
+          "kind": "FunctionDef",
+          "doc": "Display topic analysis"
+        },
+        {
+          "name": "display_chat",
+          "line": 612,
+          "kind": "FunctionDef",
+          "doc": "Display chat interface"
+        },
+        {
+          "name": "main",
+          "line": 662,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".format",
+        ".upper",
+        "Path",
+        "aai.Transcriber",
+        "aai.TranscriptionConfig",
+        "base64.b64encode",
+        "display_chat",
+        "display_sentiment",
+        "display_speakers",
+        "display_summary",
+        "display_topics",
+        "display_transcription",
+        "divmod",
+        "gc.collect",
+        "get_logo_base64",
+        "img_file.read",
+        "len",
+        "load_dotenv",
+        "logo_path.exists",
+        "main",
+        "open",
+        "os.getenv",
+        "result.response.strip",
+        "set",
+        "sorted",
+        "speakers.add",
+        "st.audio",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.error",
+        "st.file_uploader",
+        "st.info",
+        "st.markdown",
+        "st.session_state.messages.append",
+        "st.session_state.transcriber.transcribe",
+        "st.session_state.transcript.lemur.task",
+        "st.set_page_config",
+        "st.spinner",
+        "st.subheader",
+        "st.success",
+        "st.tabs",
+        "st.write",
+        "str",
+        "timestamp_string",
+        "transcript.get_sentences",
+        "transcript.iab_categories.summary.items",
+        "uuid.uuid4"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "assemblyai",
+        "dotenv",
+        "mcp",
+        "os",
+        "typing"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "_format_timestamp",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "transcribe_audio",
+          "line": 21,
+          "kind": "FunctionDef",
+          "doc": "This MCP tool accepts either a URL or an absolute local path to an audio file, transcribes it"
+        },
+        {
+          "name": "get_audio_data",
+          "line": 45,
+          "kind": "FunctionDef",
+          "doc": "This MCP tool accepts a set of flags and returns a dictionary of features from the last transcript."
+        }
+      ],
+      "calls": [
+        ".join",
+        ".transcribe",
+        "FastMCP",
+        "_format_timestamp",
+        "aai.Transcriber",
+        "aai.TranscriptionConfig",
+        "details.append",
+        "load_dotenv",
+        "mcp.run",
+        "mcp.tool",
+        "os.getenv",
+        "transcript.get_sentences"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "ASSEMBLYAI_API_KEY"
+  ],
+  "imports": [
+    "assemblyai",
+    "base64",
+    "dotenv",
+    "gc",
+    "mcp",
+    "os",
+    "pathlib",
+    "streamlit",
+    "typing",
+    "uuid"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

@@ -1,0 +1,437 @@
+{
+  "id": "mcp-video-rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/mcp-video-rag",
+  "entries": [
+    {
+      "path": "main.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "video_rag.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "aa6cd82ec99d3b23bb710949af17e79e79eae6985b13d4856f24e91a025b2ab6",
+      "local_sha256": "aa6cd82ec99d3b23bb710949af17e79e79eae6985b13d4856f24e91a025b2ab6",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "3bd48a62ef50cc4d923ef587a67cccd83fa52befe9fd16001a8ca6b6a5855ebb",
+      "local_sha256": "3bd48a62ef50cc4d923ef587a67cccd83fa52befe9fd16001a8ca6b6a5855ebb",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "main.py",
+      "path": "main.py",
+      "upstream_sha256": "3b233cf438e0af30eef0065bffd75b50e9dedf3c53cf5f718b1357ff4ac6ec91",
+      "local_sha256": "3b233cf438e0af30eef0065bffd75b50e9dedf3c53cf5f718b1357ff4ac6ec91",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "de5a8984c2be598f47e9c932d0166a89d06156b7f6fb12e99c7b66906d0fd8a3",
+      "local_sha256": "de5a8984c2be598f47e9c932d0166a89d06156b7f6fb12e99c7b66906d0fd8a3",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "000e1cac19e42592f5887f1fc2d09ee1edd787bea88f3c47096fdfb3ba060480",
+      "local_sha256": "000e1cac19e42592f5887f1fc2d09ee1edd787bea88f3c47096fdfb3ba060480",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "86fe233841aafe2d807e5efac3b0198776c7049eef5b43ca5a27eedc07c7bcaa",
+      "local_sha256": "86fe233841aafe2d807e5efac3b0198776c7049eef5b43ca5a27eedc07c7bcaa",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "a7639920b8fc778f35ec9dc2db6aa279108c7e9ff13b5bc0437bedc32e4493b8",
+      "local_sha256": "a7639920b8fc778f35ec9dc2db6aa279108c7e9ff13b5bc0437bedc32e4493b8",
+      "changes": []
+    },
+    {
+      "upstream_path": "video_rag.ipynb",
+      "path": "video_rag.ipynb",
+      "upstream_sha256": "d6108b29f3a3725f0d7dc99200241a64f7b32bff56af0b7276cc83cccf7aa6c1",
+      "local_sha256": "2a4a7252fed47d59ff081f4e13a0fa6a22e29d774ade90fed820e0bd40aebb88",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "videos/messi-goals.mp4",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "main.py",
+        "imports": [
+          "dotenv",
+          "logging",
+          "moviepy",
+          "os",
+          "pathlib",
+          "ragie",
+          "time"
+        ],
+        "environment": [
+          "RAGIE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "clear_index",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest_data",
+            "line": 49,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "retrieve_data",
+            "line": 86,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "chunk_video",
+            "line": 111,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Path",
+          "Ragie",
+          "VideoFileClip",
+          "chunk.metadata.get",
+          "clear_index",
+          "f.read",
+          "ingest_data",
+          "len",
+          "load_dotenv",
+          "logger.error",
+          "logger.info",
+          "logger.warning",
+          "logging.basicConfig",
+          "logging.getLogger",
+          "min",
+          "open",
+          "os.getenv",
+          "os.listdir",
+          "output_dir.mkdir",
+          "print",
+          "ragie.documents.create",
+          "ragie.documents.delete",
+          "ragie.documents.get",
+          "ragie.documents.list",
+          "ragie.retrievals.retrieve",
+          "retrieve_data",
+          "str",
+          "time.sleep",
+          "video.subclipped",
+          "video_chunk.write_videofile"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "main",
+          "mcp"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ingest_data_tool",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": "Loads data from a directory into the Ragie index. Wait until the data is fully ingested before continuing."
+          },
+          {
+            "name": "retrieve_data_tool",
+            "line": 25,
+            "kind": "FunctionDef",
+            "doc": "Retrieves data from the Ragie index based on the query. The data is returned as a list of dictionaries, each containing the following keys:"
+          },
+          {
+            "name": "show_video_tool",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": "Creates and saves a video chunk based on the document name, start time, and end time of the chunk."
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "chunk_video",
+          "clear_index",
+          "ingest_data",
+          "mcp.run",
+          "mcp.tool",
+          "retrieve_data",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "video_rag.ipynb#cell-2",
+        "imports": [
+          "dotenv",
+          "os",
+          "ragie",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dotenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-3",
+        "imports": [],
+        "environment": [
+          "RAGIE_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Ragie",
+          "os.getenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print",
+          "ragie.documents.delete",
+          "ragie.documents.list"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "open",
+          "os.path.join",
+          "print",
+          "ragie.documents.create"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print",
+          "ragie.retrievals.retrieve"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "chunk.metadata.get",
+          "content.append",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-14",
+        "imports": [
+          "moviepy"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "VideoFileClip",
+          "goal_clip.write_videofile",
+          "video.subclipped"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-15",
+        "imports": [
+          "IPython",
+          "pathlib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "HTML",
+          "Path",
+          "display",
+          "print",
+          "video_path.exists"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "video_rag.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "video_rag.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "RAGIE_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "dotenv",
+      "logging",
+      "main",
+      "mcp",
+      "moviepy",
+      "os",
+      "pathlib",
+      "ragie",
+      "time"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "main.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "video_rag.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 12
+  },
+  "category": "mcp",
+  "purpose": "Expose video ingestion, retrieval and clip selection through Ragie-backed MCP tools."
+}

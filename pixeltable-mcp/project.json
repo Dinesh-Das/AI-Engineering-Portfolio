@@ -1,0 +1,1451 @@
+{
+  "id": "pixeltable-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/pixeltable-mcp",
+  "entries": [
+    {
+      "path": "audio-index/server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "base-sdk/server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "crewai_mcp.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "doc-index/server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "image-index/server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "video-index/server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "66690335ec38a34c2c6d6d38a3305e78eac4666d4561602cb0f6ed51c3076b12",
+      "local_sha256": "66690335ec38a34c2c6d6d38a3305e78eac4666d4561602cb0f6ed51c3076b12",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "audio-index/Dockerfile",
+      "path": "audio-index/Dockerfile",
+      "upstream_sha256": "a63e12c6a397f936ecd6df8300ab44ae4893cc2b31fdfd57eb4a1e5485a0062d",
+      "local_sha256": "a63e12c6a397f936ecd6df8300ab44ae4893cc2b31fdfd57eb4a1e5485a0062d",
+      "changes": []
+    },
+    {
+      "upstream_path": "audio-index/README.md",
+      "path": "audio-index/README.md",
+      "upstream_sha256": "ed0351ae5953387868e5ffebed7d228ad3a03c88fa3cdca1a702e2f7dfc81578",
+      "local_sha256": "ed0351ae5953387868e5ffebed7d228ad3a03c88fa3cdca1a702e2f7dfc81578",
+      "changes": []
+    },
+    {
+      "upstream_path": "audio-index/requirements.txt",
+      "path": "audio-index/requirements.txt",
+      "upstream_sha256": "38aa4655d6ccb6ab67da2dfd376ad2c844663bd9c624d91a151fb59bd4185dd6",
+      "local_sha256": "38aa4655d6ccb6ab67da2dfd376ad2c844663bd9c624d91a151fb59bd4185dd6",
+      "changes": []
+    },
+    {
+      "upstream_path": "audio-index/server.py",
+      "path": "audio-index/server.py",
+      "upstream_sha256": "8bf02335a8b9c6d336ae9fbcf043de73a3fb6f63c2667f79206cf744a59989f5",
+      "local_sha256": "8bf02335a8b9c6d336ae9fbcf043de73a3fb6f63c2667f79206cf744a59989f5",
+      "changes": []
+    },
+    {
+      "upstream_path": "audio-index/test.py",
+      "path": "audio-index/test.py",
+      "upstream_sha256": "93a14359f0bb0e4181ffb02c3bff575af568da810af8c193a4a2fd9f13ba276a",
+      "local_sha256": "93a14359f0bb0e4181ffb02c3bff575af568da810af8c193a4a2fd9f13ba276a",
+      "changes": []
+    },
+    {
+      "upstream_path": "audio-index/tools.py",
+      "path": "audio-index/tools.py",
+      "upstream_sha256": "cf0c019c0591e617560230ffd1e44547aa5609b34b51cd24257ec4317a8c5ceb",
+      "local_sha256": "cf0c019c0591e617560230ffd1e44547aa5609b34b51cd24257ec4317a8c5ceb",
+      "changes": []
+    },
+    {
+      "upstream_path": "base-sdk/Dockerfile",
+      "path": "base-sdk/Dockerfile",
+      "upstream_sha256": "00ee9d555e879ecce2dcd5016f40a8e42995a0b3d0446b1b4ef9a808c2cbebee",
+      "local_sha256": "00ee9d555e879ecce2dcd5016f40a8e42995a0b3d0446b1b4ef9a808c2cbebee",
+      "changes": []
+    },
+    {
+      "upstream_path": "base-sdk/README.md",
+      "path": "base-sdk/README.md",
+      "upstream_sha256": "8898b4e90f42ca6256fd4996e698fa96b0aef8ca6d55940f461b3ea18a8f6478",
+      "local_sha256": "8898b4e90f42ca6256fd4996e698fa96b0aef8ca6d55940f461b3ea18a8f6478",
+      "changes": []
+    },
+    {
+      "upstream_path": "base-sdk/requirements.txt",
+      "path": "base-sdk/requirements.txt",
+      "upstream_sha256": "50495baa3bae66c07b3349efc525c6fd6a5784bb8fa64a32144c7ef2beadd7de",
+      "local_sha256": "50495baa3bae66c07b3349efc525c6fd6a5784bb8fa64a32144c7ef2beadd7de",
+      "changes": []
+    },
+    {
+      "upstream_path": "base-sdk/server.py",
+      "path": "base-sdk/server.py",
+      "upstream_sha256": "58d8dcf4dcb7304a8eec4b0c805ba3f8d7011f857ac724ab0ea856287dad69fa",
+      "local_sha256": "58d8dcf4dcb7304a8eec4b0c805ba3f8d7011f857ac724ab0ea856287dad69fa",
+      "changes": []
+    },
+    {
+      "upstream_path": "base-sdk/tools.py",
+      "path": "base-sdk/tools.py",
+      "upstream_sha256": "d51677ed0fbd35556873aee233f60ca47bf48e6f2b5109f93f32fd777f90326f",
+      "local_sha256": "d51677ed0fbd35556873aee233f60ca47bf48e6f2b5109f93f32fd777f90326f",
+      "changes": []
+    },
+    {
+      "upstream_path": "crewai_mcp.ipynb",
+      "path": "crewai_mcp.ipynb",
+      "upstream_sha256": "ee074282b2e1459050b4fff43a0691747001ca5140b7e28afd989ab0fc29f247",
+      "local_sha256": "47b219d93f25bb86d76c687eba31940b8e25660154249913150c727cd5e0acd5",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "doc-index/Dockerfile",
+      "path": "doc-index/Dockerfile",
+      "upstream_sha256": "1aa5e89e50b86cef773913f5658419e2a78ac52c41d11d3887fb83b9062bcb03",
+      "local_sha256": "1aa5e89e50b86cef773913f5658419e2a78ac52c41d11d3887fb83b9062bcb03",
+      "changes": []
+    },
+    {
+      "upstream_path": "doc-index/requirements.txt",
+      "path": "doc-index/requirements.txt",
+      "upstream_sha256": "b7e0d425beac9294bc399b9cd292f7808f7998fdd260e0c3c6a38e302374ec78",
+      "local_sha256": "b7e0d425beac9294bc399b9cd292f7808f7998fdd260e0c3c6a38e302374ec78",
+      "changes": []
+    },
+    {
+      "upstream_path": "doc-index/server.py",
+      "path": "doc-index/server.py",
+      "upstream_sha256": "bc4a90bf117cdb9480d41cf35914d614c74b5bb5a0df7126f402126830c1c0be",
+      "local_sha256": "bc4a90bf117cdb9480d41cf35914d614c74b5bb5a0df7126f402126830c1c0be",
+      "changes": []
+    },
+    {
+      "upstream_path": "doc-index/test.py",
+      "path": "doc-index/test.py",
+      "upstream_sha256": "de2d80143f0a0c1de8bc3cc40d720a21dd1ee22e9267ed3ae0a1788331fbe623",
+      "local_sha256": "de2d80143f0a0c1de8bc3cc40d720a21dd1ee22e9267ed3ae0a1788331fbe623",
+      "changes": []
+    },
+    {
+      "upstream_path": "doc-index/tools.py",
+      "path": "doc-index/tools.py",
+      "upstream_sha256": "6919e41d15e9e3bb8bb461ff7c4420feaba855acacc88f99e3b58b4c24af1d84",
+      "local_sha256": "6919e41d15e9e3bb8bb461ff7c4420feaba855acacc88f99e3b58b4c24af1d84",
+      "changes": []
+    },
+    {
+      "upstream_path": "docker-compose.yaml",
+      "path": "docker-compose.yaml",
+      "upstream_sha256": "bffcf50ca48b9e0dff299acd1097440bfe064e9784383eb4c187a16d9c38668a",
+      "local_sha256": "bffcf50ca48b9e0dff299acd1097440bfe064e9784383eb4c187a16d9c38668a",
+      "changes": []
+    },
+    {
+      "upstream_path": "image-index/Dockerfile",
+      "path": "image-index/Dockerfile",
+      "upstream_sha256": "b61b2a76ea1af1add47be18a341b2ab717643541f1bb8d5885e8dc64f0175455",
+      "local_sha256": "b61b2a76ea1af1add47be18a341b2ab717643541f1bb8d5885e8dc64f0175455",
+      "changes": []
+    },
+    {
+      "upstream_path": "image-index/requirements.txt",
+      "path": "image-index/requirements.txt",
+      "upstream_sha256": "a48f7dc6f13435c3962de5db778a75ea36558c7e2a9de7bb38b2fd6074a24ed4",
+      "local_sha256": "a48f7dc6f13435c3962de5db778a75ea36558c7e2a9de7bb38b2fd6074a24ed4",
+      "changes": []
+    },
+    {
+      "upstream_path": "image-index/server.py",
+      "path": "image-index/server.py",
+      "upstream_sha256": "0f4ccdd2994441e90ac257329224fa88007d62abea08ccf33ce1474c6055eca2",
+      "local_sha256": "0f4ccdd2994441e90ac257329224fa88007d62abea08ccf33ce1474c6055eca2",
+      "changes": []
+    },
+    {
+      "upstream_path": "image-index/test.py",
+      "path": "image-index/test.py",
+      "upstream_sha256": "84ed39507add623444e4db480f5aee8ba12daef0f688b4e6702b625684657628",
+      "local_sha256": "84ed39507add623444e4db480f5aee8ba12daef0f688b4e6702b625684657628",
+      "changes": []
+    },
+    {
+      "upstream_path": "image-index/tools.py",
+      "path": "image-index/tools.py",
+      "upstream_sha256": "2127b7b24d7eb84366f76d4a50ced5160459226fa688b343aadb74ace1064175",
+      "local_sha256": "2127b7b24d7eb84366f76d4a50ced5160459226fa688b343aadb74ace1064175",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "5fce226c5351709989969be2ef6398dfd85a431c667b036946b0895c847ff480",
+      "local_sha256": "5fce226c5351709989969be2ef6398dfd85a431c667b036946b0895c847ff480",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "9f79bd65ad0a2bf6164ea24632d36b5951931b00987365015d164d483322c8a7",
+      "local_sha256": "9f79bd65ad0a2bf6164ea24632d36b5951931b00987365015d164d483322c8a7",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "5a0a4622c9b9d004802ffc9d33f3f1177afb259f115f7532b031392c48fa848c",
+      "local_sha256": "5a0a4622c9b9d004802ffc9d33f3f1177afb259f115f7532b031392c48fa848c",
+      "changes": []
+    },
+    {
+      "upstream_path": "video-index/Dockerfile",
+      "path": "video-index/Dockerfile",
+      "upstream_sha256": "238f7634d5184e42d3b71f0973b4a3cf74565cf18f98c1d72cb2f13b559e7436",
+      "local_sha256": "238f7634d5184e42d3b71f0973b4a3cf74565cf18f98c1d72cb2f13b559e7436",
+      "changes": []
+    },
+    {
+      "upstream_path": "video-index/requirements.txt",
+      "path": "video-index/requirements.txt",
+      "upstream_sha256": "cae662ad7345bd0149d3c61d7080e0e4f2824f0c8c54abe4e9b7205ec1646c01",
+      "local_sha256": "cae662ad7345bd0149d3c61d7080e0e4f2824f0c8c54abe4e9b7205ec1646c01",
+      "changes": []
+    },
+    {
+      "upstream_path": "video-index/server.py",
+      "path": "video-index/server.py",
+      "upstream_sha256": "5eb979cb93384cf71f1839f745fb1fd9a3e07cc8c56098a90c5931e92e7a0ddb",
+      "local_sha256": "5eb979cb93384cf71f1839f745fb1fd9a3e07cc8c56098a90c5931e92e7a0ddb",
+      "changes": []
+    },
+    {
+      "upstream_path": "video-index/test.py",
+      "path": "video-index/test.py",
+      "upstream_sha256": "f1f0dfadf881216bf959abcbdde21e6921ff895d1b7bc8a8226a06874a4ac1f0",
+      "local_sha256": "f1f0dfadf881216bf959abcbdde21e6921ff895d1b7bc8a8226a06874a4ac1f0",
+      "changes": []
+    },
+    {
+      "upstream_path": "video-index/tools.py",
+      "path": "video-index/tools.py",
+      "upstream_sha256": "04f852de26813bd4b3f3833715ed2fd69222b8c1f5793c1c4e9cd0a956c15cba",
+      "local_sha256": "04f852de26813bd4b3f3833715ed2fd69222b8c1f5793c1c4e9cd0a956c15cba",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "audio-index/server.py",
+        "imports": [
+          "argparse",
+          "logging",
+          "mcp",
+          "starlette",
+          "tools",
+          "uvicorn"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_starlette_app",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": "Create a Starlette application that can serve the provided mcp server with SSE."
+          },
+          {
+            "name": "parse_arguments",
+            "line": 75,
+            "kind": "FunctionDef",
+            "doc": "Parse command line arguments."
+          },
+          {
+            "name": "handle_sse",
+            "line": 33,
+            "kind": "AsyncFunctionDef",
+            "doc": "Handle SSE connections from clients."
+          }
+        ],
+        "calls": [
+          "Middleware",
+          "Mount",
+          "Route",
+          "SseServerTransport",
+          "Starlette",
+          "argparse.ArgumentParser",
+          "create_starlette_app",
+          "logger.error",
+          "logger.info",
+          "logging.basicConfig",
+          "logging.getLogger",
+          "mcp_server.create_initialization_options",
+          "mcp_server.run",
+          "parse_arguments",
+          "parser.add_argument",
+          "parser.parse_args",
+          "sse.connect_sse",
+          "str",
+          "uvicorn.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "audio-index/test.py",
+        "imports": [
+          "pixeltable"
+        ],
+        "environment": [],
+        "models": [
+          "base.en",
+          "intfloat/e5-large-v2"
+        ],
+        "symbols": [],
+        "calls": [
+          ".collect",
+          ".limit",
+          ".select",
+          "AudioSplitter.create",
+          "StringSplitter.create",
+          "audio_index.insert",
+          "chunks_view.add_computed_column",
+          "print",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.create_view",
+          "pxt.drop_table",
+          "pxt.get_table",
+          "pxt.get_view",
+          "pxt.list_tables",
+          "sentence_transformer.using",
+          "sentences_view.add_embedding_index",
+          "sentences_view.order_by",
+          "sentences_view.text.similarity",
+          "whisper.transcribe"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "audio-index/tools.py",
+        "imports": [
+          "logging",
+          "mcp",
+          "os",
+          "pixeltable",
+          "typing"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "base.en",
+          "intfloat/e5-large-v2"
+        ],
+        "symbols": [
+          {
+            "name": "_get_table_names",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": "Generate the full table and view names for a given table name."
+          },
+          {
+            "name": "_load_existing_index",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": "Load an existing audio index into the registry."
+          },
+          {
+            "name": "_get_openai_api_key",
+            "line": 74,
+            "kind": "FunctionDef",
+            "doc": "Get OpenAI API key from environment variables."
+          },
+          {
+            "name": "setup_audio_index",
+            "line": 90,
+            "kind": "FunctionDef",
+            "doc": "Set up an audio index with the provided name and OpenAI API key."
+          },
+          {
+            "name": "insert_audio",
+            "line": 166,
+            "kind": "FunctionDef",
+            "doc": "Insert an audio file into the specified audio index."
+          },
+          {
+            "name": "query_audio",
+            "line": 193,
+            "kind": "FunctionDef",
+            "doc": "Query the specified audio index with a text question."
+          },
+          {
+            "name": "list_audio_tables",
+            "line": 237,
+            "kind": "FunctionDef",
+            "doc": "List all audio indexes currently available."
+          }
+        ],
+        "calls": [
+          ".collect",
+          ".itertuples",
+          ".join",
+          ".limit",
+          ".select",
+          "AudioSplitter.create",
+          "FastMCP",
+          "StringSplitter.create",
+          "ValueError",
+          "_get_openai_api_key",
+          "_get_table_names",
+          "_load_existing_index",
+          "audio_index.insert",
+          "chunks_view.add_computed_column",
+          "enumerate",
+          "len",
+          "logger.error",
+          "logger.info",
+          "logger.warning",
+          "logging.basicConfig",
+          "logging.getLogger",
+          "mcp.tool",
+          "os.getenv",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.create_view",
+          "pxt.get_table",
+          "pxt.get_view",
+          "pxt.list_tables",
+          "results.to_pandas",
+          "sentence_transformer.using",
+          "sentences_view.add_embedding_index",
+          "sentences_view.order_by",
+          "sentences_view.text.similarity",
+          "str",
+          "t.endswith",
+          "t.startswith",
+          "table.split",
+          "whisper.transcribe"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "base-sdk/server.py",
+        "imports": [
+          "argparse",
+          "mcp",
+          "starlette",
+          "tools",
+          "uvicorn"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_starlette_app",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Create a Starlette application that can server the provied mcp server with SSE."
+          },
+          {
+            "name": "handle_sse",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Mount",
+          "Route",
+          "SseServerTransport",
+          "Starlette",
+          "argparse.ArgumentParser",
+          "create_starlette_app",
+          "mcp_server.create_initialization_options",
+          "mcp_server.run",
+          "parser.add_argument",
+          "parser.parse_args",
+          "sse.connect_sse",
+          "uvicorn.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "base-sdk/tools.py",
+        "imports": [
+          "mcp",
+          "pixeltable"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_table",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": "Create a table in Pixeltable."
+          },
+          {
+            "name": "insert_data",
+            "line": 73,
+            "kind": "FunctionDef",
+            "doc": "Insert data into a table in Pixeltable."
+          },
+          {
+            "name": "add_computed_column",
+            "line": 92,
+            "kind": "FunctionDef",
+            "doc": "Add a computed column to a table in Pixeltable."
+          },
+          {
+            "name": "create_view",
+            "line": 127,
+            "kind": "FunctionDef",
+            "doc": "Create a view based on a table in Pixeltable."
+          },
+          {
+            "name": "execute_query",
+            "line": 164,
+            "kind": "FunctionDef",
+            "doc": "Execute a query on a table or view in Pixeltable."
+          },
+          {
+            "name": "create_query",
+            "line": 240,
+            "kind": "FunctionDef",
+            "doc": "Create a named query in Pixeltable."
+          }
+        ],
+        "calls": [
+          ".collect",
+          ".join",
+          ".to_string",
+          "FastMCP",
+          "col_type.lower",
+          "columns.items",
+          "eval",
+          "exec",
+          "expression.replace",
+          "filter_expr.replace",
+          "getattr",
+          "hasattr",
+          "mcp.tool",
+          "pxt.create_table",
+          "pxt.create_view",
+          "pxt.get_table",
+          "pxt.get_view",
+          "pxt.list_tables",
+          "query.collect",
+          "query.limit",
+          "query.order_by",
+          "query.select",
+          "query.where",
+          "result.to_pandas",
+          "select_args.append",
+          "str",
+          "table.add_computed_column",
+          "table.insert",
+          "table.where",
+          "type_mapping.keys",
+          "where_expr.replace"
+        ],
+        "findings": [
+          {
+            "rule": "code-execution",
+            "path": "base-sdk/tools.py",
+            "line": 115,
+            "message": "Review inputs to eval; untrusted data can execute code."
+          },
+          {
+            "rule": "code-execution",
+            "path": "base-sdk/tools.py",
+            "line": 269,
+            "message": "Review inputs to exec; untrusted data can execute code."
+          },
+          {
+            "rule": "code-execution",
+            "path": "base-sdk/tools.py",
+            "line": 150,
+            "message": "Review inputs to eval; untrusted data can execute code."
+          },
+          {
+            "rule": "code-execution",
+            "path": "base-sdk/tools.py",
+            "line": 200,
+            "message": "Review inputs to eval; untrusted data can execute code."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-3",
+        "imports": [
+          "IPython",
+          "crewai",
+          "crewai_tools",
+          "os",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-5",
+        "imports": [
+          "dotenv"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dotenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "ollama/gemma3",
+          "openai/gpt-4",
+          "openai/o3-mini"
+        ],
+        "symbols": [],
+        "calls": [
+          "LLM"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "MCPServerAdapter",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "PixeltableFlowState",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "Specialist",
+            "line": 6,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "PixeltableManagerFlow",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": "A CrewAI Flow to intelligently delegate multimodal indexing/search queries"
+          },
+          {
+            "name": "start_flow",
+            "line": 17,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "route_query",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": "Uses an agent to determine the correct specialist for the user's query."
+          },
+          {
+            "name": "handle_image_task",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_video_task",
+            "line": 115,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_audio_task",
+            "line": 173,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_document_task",
+            "line": 231,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_default_task",
+            "line": 289,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "synthesize_result",
+            "line": 308,
+            "kind": "FunctionDef",
+            "doc": "Uses a synthesis agent to create a user-friendly final response."
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "MCPServerAdapter",
+          "Task",
+          "crew.kickoff",
+          "listen",
+          "or_",
+          "print",
+          "router",
+          "start",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "HTML"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "PixeltableManagerFlow"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "flow.kickoff_async",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crewai_mcp.ipynb#cell-18",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "flow.kickoff_async",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "doc-index/server.py",
+        "imports": [
+          "argparse",
+          "mcp",
+          "starlette",
+          "tools",
+          "uvicorn"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_starlette_app",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Create a Starlette application that can server the provied mcp server with SSE."
+          },
+          {
+            "name": "handle_sse",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Mount",
+          "Route",
+          "SseServerTransport",
+          "Starlette",
+          "argparse.ArgumentParser",
+          "create_starlette_app",
+          "mcp_server.create_initialization_options",
+          "mcp_server.run",
+          "parser.add_argument",
+          "parser.parse_args",
+          "sse.connect_sse",
+          "uvicorn.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "doc-index/test.py",
+        "imports": [
+          "pixeltable"
+        ],
+        "environment": [],
+        "models": [
+          "intfloat/e5-large-v2"
+        ],
+        "symbols": [
+          {
+            "name": "search_documents",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "find_relevant_text",
+            "line": 68,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".collect",
+          ".limit",
+          ".select",
+          "DocumentSplitter.create",
+          "documents_chunks.add_embedding_index",
+          "documents_chunks.order_by",
+          "documents_chunks.text.similarity",
+          "documents_t.insert",
+          "find_relevant_text",
+          "print",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.create_view",
+          "pxt.drop_dir",
+          "sentence_transformer.using"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "doc-index/tools.py",
+        "imports": [
+          "mcp",
+          "pixeltable"
+        ],
+        "environment": [],
+        "models": [
+          "intfloat/e5-large-v2"
+        ],
+        "symbols": [
+          {
+            "name": "setup_document_index",
+            "line": 15,
+            "kind": "FunctionDef",
+            "doc": "Set up a document index with the provided name."
+          },
+          {
+            "name": "insert_document",
+            "line": 73,
+            "kind": "FunctionDef",
+            "doc": "Insert a document file into the specified document index."
+          },
+          {
+            "name": "query_document",
+            "line": 94,
+            "kind": "FunctionDef",
+            "doc": "Query the specified document index with a text question."
+          },
+          {
+            "name": "list_document_tables",
+            "line": 131,
+            "kind": "FunctionDef",
+            "doc": "List all document indexes currently available."
+          }
+        ],
+        "calls": [
+          ".collect",
+          ".itertuples",
+          ".join",
+          ".limit",
+          ".select",
+          "DocumentSplitter.create",
+          "FastMCP",
+          "chunks_view.add_embedding_index",
+          "chunks_view.order_by",
+          "chunks_view.text.similarity",
+          "document_index.insert",
+          "enumerate",
+          "mcp.tool",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.create_view",
+          "pxt.get_table",
+          "pxt.list_tables",
+          "results.to_pandas",
+          "sentence_transformer.using",
+          "str",
+          "t.startswith"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "image-index/server.py",
+        "imports": [
+          "argparse",
+          "mcp",
+          "starlette",
+          "tools",
+          "uvicorn"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_starlette_app",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Create a Starlette application that can server the provied mcp server with SSE."
+          },
+          {
+            "name": "handle_sse",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Mount",
+          "Route",
+          "SseServerTransport",
+          "Starlette",
+          "argparse.ArgumentParser",
+          "create_starlette_app",
+          "mcp_server.create_initialization_options",
+          "mcp_server.run",
+          "parser.add_argument",
+          "parser.parse_args",
+          "sse.connect_sse",
+          "uvicorn.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "image-index/test.py",
+        "imports": [
+          "os",
+          "pixeltable"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4o-mini",
+          "intfloat/e5-large-v2"
+        ],
+        "symbols": [],
+        "calls": [
+          ".collect",
+          ".itertuples",
+          ".limit",
+          ".select",
+          "enumerate",
+          "image_index.add_computed_column",
+          "image_index.add_embedding_index",
+          "image_index.image_description.similarity",
+          "image_index.insert",
+          "image_index.order_by",
+          "print",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.drop_dir",
+          "pxt.get_table",
+          "pxt.list_tables",
+          "results.to_pandas",
+          "sentence_transformer.using",
+          "vision"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "image-index/tools.py",
+        "imports": [
+          "mcp",
+          "os",
+          "pixeltable"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4o-mini",
+          "intfloat/e5-large-v2"
+        ],
+        "symbols": [
+          {
+            "name": "_get_openai_api_key",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": "Get OpenAI API key from environment variables."
+          },
+          {
+            "name": "setup_image_index",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": "Set up an image index with the provided name and OpenAI API key."
+          },
+          {
+            "name": "insert_image",
+            "line": 90,
+            "kind": "FunctionDef",
+            "doc": "Insert an image file into the specified image index."
+          },
+          {
+            "name": "query_image",
+            "line": 111,
+            "kind": "FunctionDef",
+            "doc": "Query the specified image index with a text description."
+          },
+          {
+            "name": "list_image_tables",
+            "line": 149,
+            "kind": "FunctionDef",
+            "doc": "List all image indexes currently available."
+          }
+        ],
+        "calls": [
+          ".collect",
+          ".itertuples",
+          ".join",
+          ".limit",
+          ".select",
+          "FastMCP",
+          "ValueError",
+          "_get_openai_api_key",
+          "enumerate",
+          "image_index.add_computed_column",
+          "image_index.add_embedding_index",
+          "image_index.image_description.similarity",
+          "image_index.insert",
+          "image_index.order_by",
+          "mcp.tool",
+          "os.getenv",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.get_table",
+          "pxt.list_tables",
+          "results.to_pandas",
+          "sentence_transformer.using",
+          "str",
+          "t.startswith",
+          "vision"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "video-index/server.py",
+        "imports": [
+          "argparse",
+          "mcp",
+          "starlette",
+          "tools",
+          "uvicorn"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_starlette_app",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Create a Starlette application that can server the provied mcp server with SSE."
+          },
+          {
+            "name": "handle_sse",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Mount",
+          "Route",
+          "SseServerTransport",
+          "Starlette",
+          "argparse.ArgumentParser",
+          "create_starlette_app",
+          "mcp_server.create_initialization_options",
+          "mcp_server.run",
+          "parser.add_argument",
+          "parser.parse_args",
+          "sse.connect_sse",
+          "uvicorn.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "video-index/test.py",
+        "imports": [
+          "datetime",
+          "pixeltable"
+        ],
+        "environment": [],
+        "models": [
+          "gpt-4o-mini",
+          "intfloat/e5-large-v2",
+          "whisper-1"
+        ],
+        "symbols": [],
+        "calls": [
+          ".collect",
+          ".limit",
+          ".select",
+          "AudioSplitter.create",
+          "FrameIterator.create",
+          "StringSplitter.create",
+          "chunks_view.add_computed_column",
+          "datetime.now",
+          "extract_audio",
+          "frames_view.add_computed_column",
+          "frames_view.add_embedding_index",
+          "frames_view.image_description.similarity",
+          "frames_view.order_by",
+          "openai.transcriptions",
+          "print",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.create_view",
+          "range",
+          "sentence_transformer.using",
+          "transcription_chunks.add_embedding_index",
+          "transcription_chunks.order_by",
+          "transcription_chunks.text.similarity",
+          "video_index.add_computed_column",
+          "video_index.insert",
+          "vision"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "video-index/tools.py",
+        "imports": [
+          "datetime",
+          "mcp",
+          "os",
+          "pixeltable"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "intfloat/e5-large-v2",
+          "whisper-1"
+        ],
+        "symbols": [
+          {
+            "name": "_get_openai_api_key",
+            "line": 20,
+            "kind": "FunctionDef",
+            "doc": "Get OpenAI API key from environment variables."
+          },
+          {
+            "name": "setup_video_index",
+            "line": 36,
+            "kind": "FunctionDef",
+            "doc": "Set up a video index with the provided name and OpenAI API key."
+          },
+          {
+            "name": "insert_video",
+            "line": 116,
+            "kind": "FunctionDef",
+            "doc": "Insert a video file into the specified video index."
+          },
+          {
+            "name": "query_video",
+            "line": 137,
+            "kind": "FunctionDef",
+            "doc": "Query the specified video index with a text question."
+          },
+          {
+            "name": "list_video_tables",
+            "line": 176,
+            "kind": "FunctionDef",
+            "doc": "List all video indexes currently available."
+          }
+        ],
+        "calls": [
+          ".collect",
+          ".itertuples",
+          ".join",
+          ".limit",
+          ".select",
+          "AudioSplitter.create",
+          "FastMCP",
+          "StringSplitter.create",
+          "ValueError",
+          "_get_openai_api_key",
+          "chunks_view.add_computed_column",
+          "datetime.now",
+          "enumerate",
+          "extract_audio",
+          "mcp.tool",
+          "openai.transcriptions",
+          "os.getenv",
+          "pxt.create_dir",
+          "pxt.create_table",
+          "pxt.create_view",
+          "pxt.get_table",
+          "pxt.list_tables",
+          "results.to_pandas",
+          "sentence_transformer.using",
+          "sentences_view.add_embedding_index",
+          "sentences_view.order_by",
+          "sentences_view.text.similarity",
+          "str",
+          "t.startswith",
+          "video_index.add_computed_column",
+          "video_index.insert"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "audio-index/requirements.txt",
+      "base-sdk/requirements.txt",
+      "doc-index/requirements.txt",
+      "image-index/requirements.txt",
+      "pyproject.toml",
+      "video-index/requirements.txt"
+    ],
+    "notebooks": [
+      "crewai_mcp.ipynb"
+    ],
+    "other_code": [
+      "docker-compose.yaml"
+    ],
+    "environment": [
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "argparse",
+      "crewai",
+      "crewai_tools",
+      "datetime",
+      "dotenv",
+      "logging",
+      "mcp",
+      "os",
+      "pixeltable",
+      "pydantic",
+      "starlette",
+      "tools",
+      "typing",
+      "uvicorn"
+    ],
+    "models": [
+      "base.en",
+      "gpt-4o-mini",
+      "intfloat/e5-large-v2",
+      "ollama/gemma3",
+      "openai/gpt-4",
+      "openai/o3-mini",
+      "whisper-1"
+    ],
+    "entries": [
+      {
+        "path": "audio-index/server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "base-sdk/server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "crewai_mcp.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "doc-index/server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "image-index/server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "video-index/server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "code-execution",
+        "path": "base-sdk/tools.py",
+        "line": 115,
+        "message": "Review inputs to eval; untrusted data can execute code."
+      },
+      {
+        "rule": "code-execution",
+        "path": "base-sdk/tools.py",
+        "line": 269,
+        "message": "Review inputs to exec; untrusted data can execute code."
+      },
+      {
+        "rule": "code-execution",
+        "path": "base-sdk/tools.py",
+        "line": 150,
+        "message": "Review inputs to eval; untrusted data can execute code."
+      },
+      {
+        "rule": "code-execution",
+        "path": "base-sdk/tools.py",
+        "line": 200,
+        "message": "Review inputs to eval; untrusted data can execute code."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 24
+  },
+  "category": "mcp",
+  "purpose": "Coordinate multimodal storage and computed transformations through MCP."
+}

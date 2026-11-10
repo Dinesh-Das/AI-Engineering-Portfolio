@@ -1,0 +1,95 @@
+# Reverse engineering: art_mcp_rl
+
+## Problem and reconstructed mechanism
+
+Train an LLM to use MCP database tools with reinforcement learning.
+
+ART rollouts call an MCP SQLite server and assign rewards to tool-assisted answers; training quality depends on the reward contract.
+
+Conceptual data flow (an architectural interpretation of the source, not a recorded execution trace):
+
+```text
+validated versioned dataset -> baseline evaluation -> isolated training job -> checkpoint/adapter -> independent evaluation -> export parity -> registered artifact
+```
+
+## Source map
+
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+
+| Source | Important definitions | Dependencies / role |
+| --- | --- | --- |
+| [mcp_rl.ipynb#cell-8](mcp_rl.ipynb#cell-8) | top-level workflow |  |
+| [mcp_rl.ipynb#cell-9](mcp_rl.ipynb#cell-9) | top-level workflow |  |
+| [mcp_rl.ipynb#cell-10](mcp_rl.ipynb#cell-10) | log, log_json | json, time, traceback, typing |
+| [mcp_rl.ipynb#cell-11](mcp_rl.ipynb#cell-11) | mcp_session, list_tools_and_resources, call_mcp_tool | contextlib, mcp |
+| [mcp_rl.ipynb#cell-13](mcp_rl.ipynb#cell-13) | get_content_text |  |
+| [mcp_rl.ipynb#cell-22](mcp_rl.ipynb#cell-22) | McpScenario, rollout |  |
+| [mcp_server.py](mcp_server.py) | list_tables, describe_table, run_query | fastmcp, json, sqlite3 |
+
+## Function and class walkthrough
+
+Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
+
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [mcp_rl.ipynb#cell-10](mcp_rl.ipynb#cell-10) | 16 | log | FunctionDef |
+| [mcp_rl.ipynb#cell-10](mcp_rl.ipynb#cell-10) | 26 | log_json | FunctionDef |
+| [mcp_rl.ipynb#cell-11](mcp_rl.ipynb#cell-11) | 11 | mcp_session | Connects to the remote Smithery MCP server using the full URL that includes |
+| [mcp_rl.ipynb#cell-11](mcp_rl.ipynb#cell-11) | 22 | list_tools_and_resources | Return (tools_result, resources_result) from the remote Smithery server. |
+| [mcp_rl.ipynb#cell-11](mcp_rl.ipynb#cell-11) | 37 | call_mcp_tool | Invoke a tool on the remote Smithery server and return the CallToolResult. |
+| [mcp_rl.ipynb#cell-13](mcp_rl.ipynb#cell-13) | 1 | get_content_text | FunctionDef |
+| [mcp_rl.ipynb#cell-22](mcp_rl.ipynb#cell-22) | 2 | McpScenario | A scenario for MCP agent evaluation against a remote Smithery server. |
+| [mcp_rl.ipynb#cell-22](mcp_rl.ipynb#cell-22) | 10 | rollout | Run an MCP agent rollout against the remote Smithery MCP server. |
+| [mcp_server.py](mcp_server.py) | 81 | list_tables | List all tables in the database. |
+| [mcp_server.py](mcp_server.py) | 92 | describe_table | Get the column names, types, and constraints for a specific table. |
+| [mcp_server.py](mcp_server.py) | 121 | run_query | Execute a read-only SQL query and return the results. |
+
+## Models, dependencies and configuration
+
+Detected model literals (not a guarantee that a provider still serves them):
+
+- `Qwen/Qwen2.5-3B-Instruct`
+- `openai/gpt-5-nano`
+- `openrouter/openai/gpt-4o-mini`
+- `sql-agent-3b`
+
+Detected import roots: `art`, `contextlib`, `dataclasses`, `dotenv`, `fastmcp`, `gc`, `json`, `mcp`, `numpy`, `openai`, `os`, `random`, `sqlite3`, `subprocess`, `time`, `torch`, `traceback`, `typing`, `unsloth`, `weave`
+
+Retained dependency manifests: None. Reproducible dependency resolution remains a prerequisite for a live run.
+
+Environment names detected from code/configuration:
+
+- `OPENROUTER_API_KEY`
+- `UNSLOTH_FORCE_FLOAT16`
+- `WANDB_API_KEY`
+
+Some names are optional endpoints, tracing settings or path selectors. Read each lookup before deciding which values are required. Model weights, external services and training hardware are not supplied by this folder.
+
+## Improvements actually applied
+
+Every project now has a source/version manifest, empty environment template, a documented headless execution boundary, evaluation protocol and production learning guide. Source-level transformations are recorded below; SHA-256 hashes distinguish the original bytes from the local port. No untested dependency upgrade or provider migration is represented as completed.
+
+| File | Recorded change |
+| --- | --- |
+| [mcp_rl.ipynb](mcp_rl.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
+| [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [licenses/LGPL-3.0.txt](licenses/LGPL-3.0.txt) | Included license text referenced by the notebook source notice. |
+| [licenses/GPL-3.0.txt](licenses/GPL-3.0.txt) | Included license text referenced by the notebook source notice. |
+
+## Code-level review leads
+
+These AST rules detect a small set of risky patterns and are not a complete security audit. Enforce authorization and resource limits in deterministic code; prompts and tool descriptions are not access controls.
+
+The limited static rules found no matching patterns. This does not establish application security, dependency safety or provider compatibility.
+
+## Known source limitations
+
+No syntax errors were detected in the inspected Python units/cells.
+
+Quarantined `.invalid.txt` files contain incomplete upstream examples, not runnable notebooks/scripts. Original UI shells may still couple initialization, caching and session state to the AI code; extracting those into tested backend services is described in LEARNINGS.md. A discovered entry may also require installation as a package, a database, service credentials or GPU support.
+
+No source code was imported or executed by the inspection tool. No reported tutorial benchmark, accuracy or latency claim was reproduced. Review dependency locks and model licenses separately before a real release.
+
+## Attribution and reproducibility
+
+[Pinned upstream source](https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/art_mcp_rl); revision `042aeb5067384981eeba6a07fa882f436bb1660d`. `project.json` records file hashes, transformations, omissions and validation state. Original source notices, including any third-party exceptions, remain authoritative. Use the original file map to compare this port with the pinned upstream tree.

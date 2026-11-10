@@ -1,0 +1,39 @@
+{
+  "units": [
+    {
+      "path": "main.py",
+      "imports": [
+        "mindsdb_sdk"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "agent.completion_stream",
+        "mindsdb_sdk.connect",
+        "print",
+        "server.agents.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "mindsdb_sdk"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "main.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

@@ -1,0 +1,142 @@
+{
+  "id": "eyelevel-mcp-rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/eyelevel-mcp-rag",
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "83ef4dbd120a8f17993105c3274e7700e8e2b9669ef3a2b8e6c7dbc9a186121a",
+      "local_sha256": "83ef4dbd120a8f17993105c3274e7700e8e2b9669ef3a2b8e6c7dbc9a186121a",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "docs/DeepSeek.pdf",
+      "path": "docs/DeepSeek.pdf",
+      "upstream_sha256": "52d8ca3ac93e88cef9944e1fd03b0e04aec5954495a8250fb2fadf8fa20a4dad",
+      "local_sha256": "52d8ca3ac93e88cef9944e1fd03b0e04aec5954495a8250fb2fadf8fa20a4dad",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "19516897f98dcef5196cb1e5e16dc27558630ecd33e792c7638bc0de2b60ca22",
+      "local_sha256": "19516897f98dcef5196cb1e5e16dc27558630ecd33e792c7638bc0de2b60ca22",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "202099ac6c510fda3e0c5725c766498f8bd6d7e7744cb4c6000050e675792144",
+      "local_sha256": "202099ac6c510fda3e0c5725c766498f8bd6d7e7744cb4c6000050e675792144",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "f6d01af34a9aaef40b5e46bfd074c6822ac19c87a2ccd05742ec592e04c99d41",
+      "local_sha256": "f6d01af34a9aaef40b5e46bfd074c6822ac19c87a2ccd05742ec592e04c99d41",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "b1c9aaddaa7ff170301244f3eda4d83324f27ba5d3cf38c15939a76e582357ef",
+      "local_sha256": "b1c9aaddaa7ff170301244f3eda4d83324f27ba5d3cf38c15939a76e582357ef",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "server.py",
+        "imports": [
+          "dotenv",
+          "groundx",
+          "mcp",
+          "os"
+        ],
+        "environment": [
+          "GROUNDX_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "search_doc_for_rag_context",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": "Searches and retrieves relevant context from a knowledge base,"
+          },
+          {
+            "name": "ingest_documents",
+            "line": 30,
+            "kind": "FunctionDef",
+            "doc": "Ingest documents from a local file into the knowledge base."
+          }
+        ],
+        "calls": [
+          "Document",
+          "FastMCP",
+          "GroundX",
+          "client.ingest",
+          "client.search.content",
+          "dict",
+          "load_dotenv",
+          "mcp.run",
+          "mcp.tool",
+          "os.getenv",
+          "os.path.basename"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "GROUNDX_API_KEY"
+    ],
+    "imports": [
+      "dotenv",
+      "groundx",
+      "mcp",
+      "os"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 1
+  },
+  "category": "mcp",
+  "purpose": "Expose complex-document ingestion and retrieval through GroundX-backed MCP tools."
+}

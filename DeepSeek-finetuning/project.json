@@ -1,0 +1,378 @@
+{
+  "id": "DeepSeek-finetuning",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/DeepSeek-finetuning",
+  "entries": [
+    {
+      "path": "Fine_tune_DeepSeek.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "Fine_tune_DeepSeek.ipynb",
+      "path": "Fine_tune_DeepSeek.ipynb",
+      "upstream_sha256": "4fb2eb8c157d228fc0f7ec40d0b5ffa2765561e83a80916ae6b60e0ecb3809e1",
+      "local_sha256": "87caf6a42ebb7f1e238d4a9973b650e5db643e4ceb4d7f383337de76d74325e2",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "a887c29e8dddba4d8ea906c51b541aea04dbc5163b8f8263ae76bcf895c8ef61",
+      "local_sha256": "a887c29e8dddba4d8ea906c51b541aea04dbc5163b8f8263ae76bcf895c8ef61",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-1",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-2",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-3",
+        "imports": [
+          "torch",
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [
+          "unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit"
+        ],
+        "symbols": [],
+        "calls": [
+          "FastLanguageModel.from_pretrained"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "FastLanguageModel.get_peft_model"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-6",
+        "imports": [
+          "datasets"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dataset",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-8",
+        "imports": [
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "to_sharegpt"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-9",
+        "imports": [
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "standardize_sharegpt"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-12",
+        "imports": [
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "apply_chat_template"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-14",
+        "imports": [
+          "transformers",
+          "trl",
+          "unsloth"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "SFTTrainer",
+          "TrainingArguments",
+          "is_bfloat16_supported"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "trainer.train"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-18",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "model.save_pretrained_gguf"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-19",
+        "imports": [
+          "subprocess",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "subprocess.Popen",
+          "time.sleep"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-20",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-22",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-23",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-24",
+        "imports": [
+          "ollama"
+        ],
+        "environment": [],
+        "models": [
+          "deepseek_finetuned_model"
+        ],
+        "symbols": [],
+        "calls": [
+          "ollama.chat",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Fine_tune_DeepSeek.ipynb#cell-25",
+        "imports": [
+          "IPython",
+          "ollama"
+        ],
+        "environment": [],
+        "models": [
+          "deepseek_finetuned_model"
+        ],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "ollama.chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "Fine_tune_DeepSeek.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "IPython",
+      "datasets",
+      "ollama",
+      "subprocess",
+      "time",
+      "torch",
+      "transformers",
+      "trl",
+      "unsloth"
+    ],
+    "models": [
+      "deepseek_finetuned_model",
+      "unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit"
+    ],
+    "entries": [
+      {
+        "path": "Fine_tune_DeepSeek.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 20
+  },
+  "category": "training",
+  "purpose": "Adapt a distilled DeepSeek model and export it for local inference."
+}

@@ -1,0 +1,782 @@
+{
+  "id": "documentation-writer-flow",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/documentation-writer-flow",
+  "entries": [
+    {
+      "path": "Building_Code_Documentation_Agents_Local.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "main.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "79614b179bdfc01049326382d59f04dc2cfd56abf369e56cdbed31661d15524a",
+      "local_sha256": "79614b179bdfc01049326382d59f04dc2cfd56abf369e56cdbed31661d15524a",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "Building_Code_Documentation_Agents_Local.ipynb",
+      "path": "Building_Code_Documentation_Agents_Local.ipynb",
+      "upstream_sha256": "a23dfccd4eacec028b7c6d79a7f7bc5d5c790a3048cb6003da27c0c1dcc66d13",
+      "local_sha256": "f97f75272250af788e0c5d81f9def2f376f7c564c5ec90c6544cc002b8f1d383",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "config/documentation_agents.yaml",
+      "path": "config/documentation_agents.yaml",
+      "upstream_sha256": "dcea23b007cfb094e6879833a9729c51321dd89947ecbc345cce257bf0b273f1",
+      "local_sha256": "dcea23b007cfb094e6879833a9729c51321dd89947ecbc345cce257bf0b273f1",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/documentation_tasks.yaml",
+      "path": "config/documentation_tasks.yaml",
+      "upstream_sha256": "5bba6a920f5fc985bdf2776803ac1de7a93a28eb0f906210889b9c55a0c58b76",
+      "local_sha256": "5bba6a920f5fc985bdf2776803ac1de7a93a28eb0f906210889b9c55a0c58b76",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/planner_agents.yaml",
+      "path": "config/planner_agents.yaml",
+      "upstream_sha256": "989ae6cd1ddc40432d0da374c4adc5f9acc37022493bf0243e8a26ca640f9bf5",
+      "local_sha256": "989ae6cd1ddc40432d0da374c4adc5f9acc37022493bf0243e8a26ca640f9bf5",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/planner_tasks.yaml",
+      "path": "config/planner_tasks.yaml",
+      "upstream_sha256": "e9d8d500880bb0068a9182e633a38f64797614a08cb24513aadcb4f9b324e5da",
+      "local_sha256": "e9d8d500880bb0068a9182e633a38f64797614a08cb24513aadcb4f9b324e5da",
+      "changes": []
+    },
+    {
+      "upstream_path": "crew.py",
+      "path": "crew.py",
+      "upstream_sha256": "73cb966df191b8f206eb3609e229934c028ed5901424cf89455671b0727916d2",
+      "local_sha256": "73cb966df191b8f206eb3609e229934c028ed5901424cf89455671b0727916d2",
+      "changes": []
+    },
+    {
+      "upstream_path": "documentation_flow.py",
+      "path": "documentation_flow.py",
+      "upstream_sha256": "8db76ddde990c54fb1783b5934fa764c1c2d4e0682160d9e4f2e870916742a2d",
+      "local_sha256": "8db76ddde990c54fb1783b5934fa764c1c2d4e0682160d9e4f2e870916742a2d",
+      "changes": []
+    },
+    {
+      "upstream_path": "main.py",
+      "path": "main.py",
+      "upstream_sha256": "e03875b350c68e2617cde40131e2a7df3be1ddf2ff9fc79eb33d3f866c6e768a",
+      "local_sha256": "e03875b350c68e2617cde40131e2a7df3be1ddf2ff9fc79eb33d3f866c6e768a",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "b94208d247536d0948e55c42dbafe180a987152c99ec1aa4fabe7ce61455d1dc",
+      "local_sha256": "b94208d247536d0948e55c42dbafe180a987152c99ec1aa4fabe7ce61455d1dc",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "52b713d83b8aea4d135f8165b6ad94a1c21f95778aad6bacce9d18599f202019",
+      "local_sha256": "52b713d83b8aea4d135f8165b6ad94a1c21f95778aad6bacce9d18599f202019",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "schemas/models.py",
+      "path": "schemas/models.py",
+      "upstream_sha256": "1ea7fee330be8d0919020dcb99a4a7f406da90ec81df5712241835e69c298fd3",
+      "local_sha256": "1ea7fee330be8d0919020dcb99a4a7f406da90ec81df5712241835e69c298fd3",
+      "changes": []
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "20532c4b7b8b20e6c86fb2a5e4928f1bb08ac543feed375018ef45b98fb40d2e",
+      "local_sha256": "20532c4b7b8b20e6c86fb2a5e4928f1bb08ac543feed375018ef45b98fb40d2e",
+      "changes": []
+    },
+    {
+      "upstream_path": "utils.py",
+      "path": "utils.py",
+      "upstream_sha256": "44348a012f28e32e03ecd90080f3c2f772c5ffc1159393a66f4cefb1edc4bb13",
+      "local_sha256": "44348a012f28e32e03ecd90080f3c2f772c5ffc1159393a66f4cefb1edc4bb13",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "80ef62531df4848e4168c9cfe4107eb40ad6cf8ebbc24af3a2a30c0dc9905ff3",
+      "local_sha256": "80ef62531df4848e4168c9cfe4107eb40ad6cf8ebbc24af3a2a30c0dc9905ff3",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-3",
+        "imports": [
+          "crewai"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/llama3.2"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 3,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "LLM"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-5",
+        "imports": [
+          "crewai",
+          "nest_asyncio",
+          "pathlib",
+          "pydantic",
+          "subprocess",
+          "yaml"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "DocItem",
+            "line": 2,
+            "kind": "ClassDef",
+            "doc": "Represents a documentation item"
+          },
+          {
+            "name": "DocPlan",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": "Documentation plan"
+          }
+        ],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-14",
+        "imports": [
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "DirectoryReadTool",
+          "FileReadTool",
+          "Task",
+          "load_llm",
+          "open",
+          "yaml.safe_load"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-16",
+        "imports": [
+          "crewai",
+          "re"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "check_mermaid_syntax",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          ".replace",
+          "block.strip",
+          "corrected_lines.append",
+          "diagram_text.split",
+          "match.group",
+          "re.findall",
+          "re.sub",
+          "text.replace"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-17",
+        "imports": [
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [
+          "nomic-embed-text"
+        ],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Crew",
+          "DirectoryReadTool",
+          "FileReadTool",
+          "Task",
+          "WebsiteSearchTool",
+          "dict",
+          "load_llm",
+          "open",
+          "yaml.safe_load"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-19",
+        "imports": [
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "DocumentationState",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": "State for the documentation flow"
+          },
+          {
+            "name": "CreateDocumentationFlow",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "clone_repo",
+            "line": 17,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "plan_docs",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_plan",
+            "line": 43,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_docs",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".exists",
+          ".join",
+          ".replace",
+          "Path",
+          "doc.title.lower",
+          "docs_dir.mkdir",
+          "documentation_crew.kickoff",
+          "f.write",
+          "listen",
+          "open",
+          "planning_crew.kickoff",
+          "print",
+          "self.state.docs.append",
+          "self.state.project_url.split",
+          "start",
+          "str",
+          "subprocess.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-21",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "CreateDocumentationFlow",
+          "flow.kickoff"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb#cell-23",
+        "imports": [
+          "IPython",
+          "pathlib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".read_text",
+          "Markdown",
+          "display",
+          "docs_dir.glob",
+          "pathlib.Path",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "crew.py",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "schemas",
+          "utils"
+        ],
+        "environment": [],
+        "models": [
+          "nomic-embed-text"
+        ],
+        "symbols": [
+          {
+            "name": "initialize_planning_crew",
+            "line": 17,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "initialize_documentation_crew",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "DirectoryReadTool",
+          "FileReadTool",
+          "Task",
+          "WebsiteSearchTool",
+          "dict",
+          "load_llm",
+          "load_yaml_config"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "documentation_flow.py",
+        "imports": [
+          "crew",
+          "crewai",
+          "pathlib",
+          "pydantic",
+          "shutil",
+          "subprocess",
+          "typing",
+          "utils"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "DocumentationState",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": "State for the documentation flow"
+          },
+          {
+            "name": "CreateDocumentationFlow",
+            "line": 18,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "clone_repo",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "plan_docs",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_plan",
+            "line": 49,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_docs",
+            "line": 58,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".exists",
+          ".join",
+          ".replace",
+          "Path",
+          "doc.title.lower",
+          "docs_dir.exists",
+          "docs_dir.mkdir",
+          "documentation_crew.kickoff",
+          "f.write",
+          "initialize_documentation_crew",
+          "initialize_planning_crew",
+          "listen",
+          "open",
+          "planning_crew.kickoff",
+          "print",
+          "rmtree",
+          "self.state.docs.append",
+          "self.state.project_url.split",
+          "start",
+          "str",
+          "subprocess.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "main.py",
+        "imports": [
+          "documentation_flow",
+          "nest_asyncio"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "run_doc_flow",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "CreateDocumentationFlow",
+          "flow.kickoff",
+          "input",
+          "nest_asyncio.apply",
+          "run_doc_flow"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "schemas/models.py",
+        "imports": [
+          "pydantic",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "DocItem",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": "Represents a documentation item"
+          },
+          {
+            "name": "DocPlan",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": "Documentation plan"
+          }
+        ],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "main",
+          "mcp",
+          "pathlib",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "write_documentation",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Generates the documentation for the given GitHub repository URL."
+          },
+          {
+            "name": "list_docs",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": "Lists the documentation files that are generated successfully."
+          },
+          {
+            "name": "view_content",
+            "line": 51,
+            "kind": "FunctionDef",
+            "doc": "Displays the content of a generated documentation file."
+          }
+        ],
+        "calls": [
+          ".join",
+          "FastMCP",
+          "FileNotFoundError",
+          "Path",
+          "ValueError",
+          "docs_dir.exists",
+          "docs_dir.glob",
+          "file_path.startswith",
+          "mcp.run",
+          "mcp.tool",
+          "output_lines.append",
+          "path.exists",
+          "path.is_file",
+          "path.read_text",
+          "repo_url.startswith",
+          "run_doc_flow",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "utils.py",
+        "imports": [
+          "crewai",
+          "os",
+          "re",
+          "stat",
+          "yaml"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1:7b"
+        ],
+        "symbols": [
+          {
+            "name": "load_yaml_config",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "load_llm",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "check_mermaid_syntax",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "remove_readonly",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          ".replace",
+          "LLM",
+          "block.strip",
+          "corrected_lines.append",
+          "diagram_text.split",
+          "func",
+          "match.group",
+          "open",
+          "os.chmod",
+          "re.findall",
+          "re.sub",
+          "text.replace",
+          "yaml.safe_load"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "Building_Code_Documentation_Agents_Local.ipynb"
+    ],
+    "other_code": [
+      "config/documentation_agents.yaml",
+      "config/documentation_tasks.yaml",
+      "config/planner_agents.yaml",
+      "config/planner_tasks.yaml"
+    ],
+    "environment": [],
+    "imports": [
+      "IPython",
+      "crew",
+      "crewai",
+      "crewai_tools",
+      "documentation_flow",
+      "main",
+      "mcp",
+      "nest_asyncio",
+      "os",
+      "pathlib",
+      "pydantic",
+      "re",
+      "schemas",
+      "shutil",
+      "stat",
+      "subprocess",
+      "typing",
+      "utils",
+      "yaml"
+    ],
+    "models": [
+      "nomic-embed-text",
+      "ollama/deepseek-r1:7b",
+      "ollama/llama3.2"
+    ],
+    "entries": [
+      {
+        "path": "Building_Code_Documentation_Agents_Local.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "main.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 17
+  },
+  "category": "agents",
+  "purpose": "Produce repository documentation through planning and writing agents."
+}

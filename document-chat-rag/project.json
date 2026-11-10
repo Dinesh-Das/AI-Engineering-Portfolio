@@ -1,0 +1,542 @@
+{
+  "id": "document-chat-rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/document-chat-rag",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "main_self_hosted_vectorDB.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "rag_demo.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "76c26e9c13a5733e5566ef2f32ac4ebae60e05db6096f425d37382b60538dd32",
+      "local_sha256": "76c26e9c13a5733e5566ef2f32ac4ebae60e05db6096f425d37382b60538dd32",
+      "changes": []
+    },
+    {
+      "upstream_path": "docs/dspy.pdf",
+      "path": "docs/dspy.pdf",
+      "upstream_sha256": "5309836325c3a580b6c176242f49f21ca40e413b0acd514e74b67e16bb1b56bc",
+      "local_sha256": "5309836325c3a580b6c176242f49f21ca40e413b0acd514e74b67e16bb1b56bc",
+      "changes": []
+    },
+    {
+      "upstream_path": "main_self_hosted_vectorDB.ipynb",
+      "path": "main_self_hosted_vectorDB.ipynb",
+      "upstream_sha256": "956ffd7383485c106405fd81f1e4dfc053d8d4becba0fc22c413243ccc50562e",
+      "local_sha256": "1cc99c7e440570a620454afbdd8a42d643cc8cc097665d0fe6f54529d6237d97",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "rag_demo.ipynb",
+      "path": "rag_demo.ipynb",
+      "upstream_sha256": "5bf4760a54d3c2fce47a8a7c9606029245622f99e286a11c84b1b0140d03b917",
+      "local_sha256": "8c363a642d5e40938b280799ebbc50b603edc7dcf07dc014d33a61290e81cdb4",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "71ae0e88a075e9a71573b12cfae5416fbca66fb47e5d74bf648ed3a33ac66fef",
+      "local_sha256": "71ae0e88a075e9a71573b12cfae5416fbca66fb47e5d74bf648ed3a33ac66fef",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "resources/thumbnail.png",
+      "path": "resources/thumbnail.png",
+      "upstream_sha256": "c9386a822c2e50248f5153d8ef885aa095e02a43ce0015bf58447278842ce79e",
+      "local_sha256": "c9386a822c2e50248f5153d8ef885aa095e02a43ce0015bf58447278842ce79e",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "IPython",
+          "base64",
+          "gc",
+          "llama_index",
+          "os",
+          "random",
+          "streamlit",
+          "tempfile",
+          "time",
+          "uuid"
+        ],
+        "environment": [],
+        "models": [
+          "BAAI/bge-large-en-v1.5",
+          "llama3.3"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "reset_chat",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 41,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".decode",
+          "HuggingFaceEmbedding",
+          "Ollama",
+          "PromptTemplate",
+          "SimpleDirectoryReader",
+          "VectorStoreIndex.from_documents",
+          "base64.b64encode",
+          "display_pdf",
+          "f.write",
+          "file.read",
+          "gc.collect",
+          "index.as_query_engine",
+          "load_llm",
+          "loader.load_data",
+          "message_placeholder.markdown",
+          "open",
+          "os.path.exists",
+          "os.path.join",
+          "query_engine.query",
+          "query_engine.update_prompts",
+          "reset_chat",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.file_uploader",
+          "st.header",
+          "st.markdown",
+          "st.session_state.get",
+          "st.session_state.messages.append",
+          "st.stop",
+          "st.success",
+          "st.write",
+          "tempfile.TemporaryDirectory",
+          "uploaded_file.getvalue",
+          "uuid.uuid4"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "app.py",
+            "line": 89,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-2",
+        "imports": [
+          "IPython",
+          "dotenv",
+          "llama_index",
+          "nest_asyncio",
+          "qdrant_client"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_index",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "QdrantVectorStore",
+          "StorageContext.from_defaults",
+          "VectorStoreIndex.from_documents",
+          "qdrant_client.QdrantClient"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "BAAI/bge-large-en-v1.5",
+          "llama3.3"
+        ],
+        "symbols": [],
+        "calls": [
+          "HuggingFaceEmbedding",
+          "Ollama"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "main_self_hosted_vectorDB.ipynb#cell-7",
+            "line": 5,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "PromptTemplate",
+          "SimpleDirectoryReader",
+          "VectorStoreIndex.from_documents",
+          "create_index",
+          "index.as_query_engine",
+          "loader.load_data",
+          "print",
+          "query_engine.query",
+          "query_engine.update_prompts"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-2",
+        "imports": [
+          "IPython",
+          "llama_index",
+          "nest_asyncio",
+          "qdrant_client"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_index",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "QdrantVectorStore",
+          "StorageContext.from_defaults",
+          "VectorStoreIndex.from_documents",
+          "qdrant_client.QdrantClient"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "BAAI/bge-large-en-v1.5",
+          "cross-encoder/ms-marco-MiniLM-L-2-v2",
+          "llama3.2:1b"
+        ],
+        "symbols": [],
+        "calls": [
+          "HuggingFaceEmbedding",
+          "Ollama",
+          "SentenceTransformerRerank"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "rag_demo.ipynb#cell-6",
+            "line": 4,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "PromptTemplate",
+          "SimpleDirectoryReader",
+          "VectorStoreIndex.from_documents",
+          "create_index",
+          "index.as_query_engine",
+          "loader.load_data",
+          "print",
+          "query_engine.query",
+          "query_engine.update_prompts"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_demo.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "main_self_hosted_vectorDB.ipynb",
+      "rag_demo.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "IPython",
+      "base64",
+      "dotenv",
+      "gc",
+      "llama_index",
+      "nest_asyncio",
+      "os",
+      "qdrant_client",
+      "random",
+      "streamlit",
+      "tempfile",
+      "time",
+      "uuid"
+    ],
+    "models": [
+      "BAAI/bge-large-en-v1.5",
+      "cross-encoder/ms-marco-MiniLM-L-2-v2",
+      "llama3.2:1b",
+      "llama3.3"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "main_self_hosted_vectorDB.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "rag_demo.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "trust_remote_code",
+        "path": "app.py",
+        "line": 89,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      },
+      {
+        "rule": "trust_remote_code",
+        "path": "main_self_hosted_vectorDB.ipynb#cell-7",
+        "line": 5,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      },
+      {
+        "rule": "trust_remote_code",
+        "path": "rag_demo.ipynb#cell-6",
+        "line": 4,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 18
+  },
+  "category": "rag",
+  "purpose": "Build document-grounded question answering with local models and optional vector storage."
+}

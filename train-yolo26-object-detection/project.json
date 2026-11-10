@@ -1,0 +1,504 @@
+{
+  "id": "train-yolo26-object-detection",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/train-yolo26-object-detection",
+  "entries": [
+    {
+      "path": "train_yolo26_object_detection.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".comet.config.example",
+      "path": ".comet.config.example",
+      "upstream_sha256": "31f4b4c3072a1348106321a4b9c435da5134876943f3e09a948495ab6ec8812d",
+      "local_sha256": "31f4b4c3072a1348106321a4b9c435da5134876943f3e09a948495ab6ec8812d",
+      "changes": []
+    },
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "a9a447bc1a129cb052d111b27666e16e7d4bdddf4bd9aa3d37f13f5910d246e6",
+      "local_sha256": "a9a447bc1a129cb052d111b27666e16e7d4bdddf4bd9aa3d37f13f5910d246e6",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "boxing.png",
+      "path": "boxing.png",
+      "upstream_sha256": "3d3415ce7cd3c808adfd8cdab02a75ca3a91b397074ee4eb44c367100b8d79ef",
+      "local_sha256": "3d3415ce7cd3c808adfd8cdab02a75ca3a91b397074ee4eb44c367100b8d79ef",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "88477430e371929d1cef18b07a3171c14d67240ecf587fec060766bdf650d9df",
+      "local_sha256": "88477430e371929d1cef18b07a3171c14d67240ecf587fec060766bdf650d9df",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "2c51ae1bd1870abf085ba24637ff59157074b2fbbe4f84255cdd950885bd67cf",
+      "local_sha256": "2c51ae1bd1870abf085ba24637ff59157074b2fbbe4f84255cdd950885bd67cf",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "train_yolo26_object_detection.ipynb",
+      "path": "train_yolo26_object_detection.ipynb",
+      "upstream_sha256": "f72d23cf9d8a76f1a1c6ac64ceb13c4a27c623e0af5c07fd5ba1931d6c6fad8d",
+      "local_sha256": "d751be4abada87c3f938714c64f2180d1eb7eb27a1e6396c4d0f9bb5fa47fbf8",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "56ba9e4a705ed491ed291d1d4c81cda58ef995209aadc8d89bb1cbfcd925812a",
+      "local_sha256": "56ba9e4a705ed491ed291d1d4c81cda58ef995209aadc8d89bb1cbfcd925812a",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-5",
+        "imports": [
+          "os"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "os.getcwd",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-6",
+        "imports": [
+          "ultralytics"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "ultralytics.checks"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-9",
+        "imports": [
+          "PIL",
+          "ultralytics"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Image.open",
+          "YOLO",
+          "model.predict"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-15",
+        "imports": [
+          "supervision"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "sv.Detections.from_ultralytics"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-16",
+        "imports": [
+          "PIL",
+          "supervision"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "annotate",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": "Annotate an image with detections."
+          }
+        ],
+        "calls": [
+          "box_annotator.annotate",
+          "image.copy",
+          "label_annotator.annotate",
+          "out.thumbnail",
+          "sv.BoxAnnotator",
+          "sv.LabelAnnotator",
+          "sv.calculate_optimal_text_scale"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "annotate"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-19",
+        "imports": [
+          "dotenv",
+          "os",
+          "roboflow"
+        ],
+        "environment": [
+          "ROBOFLOW_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".project",
+          "Roboflow",
+          "load_dotenv",
+          "os.environ.get",
+          "project.version",
+          "rf.workspace",
+          "version.download"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-21",
+        "imports": [
+          "comet_ml"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "comet_ml.login"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-22",
+        "imports": [
+          "ultralytics"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "YOLO",
+          "model.train"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-24",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-25",
+        "imports": [
+          "IPython"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "IPyImage"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-26",
+        "imports": [
+          "IPython"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "IPyImage"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-27",
+        "imports": [
+          "IPython"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "IPyImage"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-29",
+        "imports": [
+          "ultralytics"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "YOLO",
+          "model.val"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-32",
+        "imports": [
+          "ultralytics"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "YOLO"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-33",
+        "imports": [
+          "supervision"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "sv.DetectionDataset.from_yolo"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-34",
+        "imports": [
+          "PIL",
+          "supervision"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "annotate",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": "Annotate an image with detections."
+          }
+        ],
+        "calls": [
+          "box_annotator.annotate",
+          "image.copy",
+          "label_annotator.annotate",
+          "out.thumbnail",
+          "sv.BoxAnnotator",
+          "sv.ColorPalette.from_hex",
+          "sv.LabelAnnotator",
+          "sv.calculate_optimal_text_scale"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-35",
+        "imports": [
+          "matplotlib",
+          "random"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Image.open",
+          "annotate",
+          "annotated_images.append",
+          "ax.axis",
+          "ax.imshow",
+          "len",
+          "model.predict",
+          "plt.subplots",
+          "plt.subplots_adjust",
+          "random.sample",
+          "range",
+          "sv.Detections.from_ultralytics",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "train_yolo26_object_detection.ipynb#cell-36",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "train_yolo26_object_detection.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "ROBOFLOW_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "PIL",
+      "comet_ml",
+      "dotenv",
+      "matplotlib",
+      "os",
+      "random",
+      "roboflow",
+      "supervision",
+      "ultralytics"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "train_yolo26_object_detection.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 22
+  },
+  "category": "training",
+  "purpose": "Fine-tune an object detector on a custom Roboflow dataset and track experiments."
+}

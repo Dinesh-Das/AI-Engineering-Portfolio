@@ -1,0 +1,559 @@
+{
+  "units": [
+    {
+      "path": "evaluation.ipynb#cell-1",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "opik.configure"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-2",
+      "imports": [
+        "dotenv"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "load_dotenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-4",
+      "imports": [
+        "asyncio",
+        "workflow"
+      ],
+      "environment": [],
+      "models": [
+        "gemma3",
+        "llama3.2"
+      ],
+      "symbols": [
+        {
+          "name": "load_workflow",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "RAGWorkflow"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "Gemma3"
+      ],
+      "symbols": [],
+      "calls": [
+        "load_workflow"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-7",
+      "imports": [
+        "llama_index",
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "CallbackManager",
+        "LlamaIndexCallbackHandler"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-8",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "workflow.ingest_documents"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "workflow.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-11",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Opik",
+        "client.get_or_create_dataset"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-12",
+      "imports": [
+        "pandas"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "pd.read_csv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-13",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "df.iterrows"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-14",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "dataset.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-15",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "my_llm_application",
+          "line": 4,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "evaluation_task",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "my_llm_application",
+        "str",
+        "workflow.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-16",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "AnswerRelevance",
+        "ContextPrecision",
+        "ContextRecall",
+        "Hallucination"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-17",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "evaluate"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-18",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-1",
+      "imports": [
+        "nest_asyncio"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "nest_asyncio.apply"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-2",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-small-en-v1.5",
+        "llama3.2"
+      ],
+      "symbols": [],
+      "calls": [
+        "HuggingFaceEmbedding",
+        "Ollama"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-3",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "RetrieverEvent",
+          "line": 5,
+          "kind": "ClassDef",
+          "doc": "Result of running retrieval"
+        }
+      ],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-4",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "RAGWorkflow",
+          "line": 11,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "ingest",
+          "line": 13,
+          "kind": "AsyncFunctionDef",
+          "doc": "Entry point to ingest a document, triggered by a StartEvent with `dirname`."
+        },
+        {
+          "name": "retrieve",
+          "line": 26,
+          "kind": "AsyncFunctionDef",
+          "doc": "Entry point for RAG, triggered by a StartEvent with `query`."
+        },
+        {
+          "name": "synthesize",
+          "line": 52,
+          "kind": "AsyncFunctionDef",
+          "doc": "Return a streaming response using reranked nodes."
+        }
+      ],
+      "calls": [
+        ".load_data",
+        "CompactAndRefine",
+        "RetrieverEvent",
+        "SimpleDirectoryReader",
+        "StopEvent",
+        "VectorStoreIndex.from_documents",
+        "ctx.get",
+        "ctx.set",
+        "ev.get",
+        "index.as_retriever",
+        "len",
+        "print",
+        "retriever.aretrieve",
+        "summarizer.asynthesize"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-6",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "RAGWorkflow",
+        "w.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-8",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "result.async_response_gen",
+        "w.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.py",
+      "imports": [
+        "asyncio",
+        "llama_index",
+        "nest_asyncio"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "RetrieverEvent",
+          "line": 13,
+          "kind": "ClassDef",
+          "doc": "Result of running retrieval"
+        },
+        {
+          "name": "RAGWorkflow",
+          "line": 17,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 82,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ingest",
+          "line": 31,
+          "kind": "AsyncFunctionDef",
+          "doc": "Entry point to ingest documents from a directory."
+        },
+        {
+          "name": "retrieve",
+          "line": 42,
+          "kind": "AsyncFunctionDef",
+          "doc": "Entry point for RAG retrieval."
+        },
+        {
+          "name": "synthesize",
+          "line": 60,
+          "kind": "AsyncFunctionDef",
+          "doc": "Generate a response using retrieved nodes."
+        },
+        {
+          "name": "query",
+          "line": 67,
+          "kind": "AsyncFunctionDef",
+          "doc": "Helper method to perform a complete RAG query."
+        },
+        {
+          "name": "ingest_documents",
+          "line": 75,
+          "kind": "AsyncFunctionDef",
+          "doc": "Helper method to ingest documents."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        ".load_data",
+        "CompactAndRefine",
+        "HuggingFaceEmbedding",
+        "Ollama",
+        "RAGWorkflow",
+        "RetrieverEvent",
+        "SimpleDirectoryReader",
+        "StopEvent",
+        "ValueError",
+        "VectorStoreIndex.from_documents",
+        "asyncio.run",
+        "ctx.get",
+        "ctx.set",
+        "ev.get",
+        "index.as_retriever",
+        "main",
+        "nest_asyncio.apply",
+        "print",
+        "result.async_response_gen",
+        "retriever.aretrieve",
+        "self.run",
+        "summarizer.asynthesize",
+        "super",
+        "workflow.ingest_documents",
+        "workflow.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "evaluation.ipynb",
+    "workflow.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "dotenv",
+    "llama_index",
+    "nest_asyncio",
+    "opik",
+    "pandas",
+    "workflow"
+  ],
+  "models": [
+    "BAAI/bge-small-en-v1.5",
+    "Gemma3",
+    "gemma3",
+    "llama3.2"
+  ],
+  "entries": [
+    {
+      "path": "evaluation.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "workflow.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "workflow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

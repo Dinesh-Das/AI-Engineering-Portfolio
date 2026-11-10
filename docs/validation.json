@@ -1,0 +1,19 @@
+{
+  "projects": 102,
+  "inventory_entries": 119,
+  "dispositions": {
+    "included": 102,
+    "excluded-ocr": 4,
+    "excluded-resource": 4,
+    "excluded-ui": 7,
+    "missing-upstream": 2
+  },
+  "python_files_compiled": 329,
+  "notebook_cells_compiled": 549,
+  "cells_with_ipython_syntax": 25,
+  "documents_checked": 417,
+  "failures": [],
+  "live_model_tests": false,
+  "gpu_training": false,
+  "deployed": false
+}

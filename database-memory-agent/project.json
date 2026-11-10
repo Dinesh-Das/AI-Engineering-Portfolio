@@ -1,0 +1,503 @@
+{
+  "id": "database-memory-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/database-memory-agent",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "main.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "2c7d946136f40aa5d53a8587e064d1a57d5a97a4152c3bbb2fd5059ba6638e80",
+      "local_sha256": "b5d967044693b8ad311d2df9f08d01000b12b8a3c206752daa7a77a12fb52ed8",
+      "changes": [
+        "Redacted 2 possible credential literals (values not retained).",
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "958b1744fe361eef388c426a66238a15961917fab39afb9025984b71667c54b5",
+      "local_sha256": "958b1744fe361eef388c426a66238a15961917fab39afb9025984b71667c54b5",
+      "changes": []
+    },
+    {
+      "upstream_path": "config.py",
+      "path": "config.py",
+      "upstream_sha256": "042370d15c9f2b492f0d1a6e71e2ab11f90b00288e93a6d6b51eec6dbe9681fa",
+      "local_sha256": "042370d15c9f2b492f0d1a6e71e2ab11f90b00288e93a6d6b51eec6dbe9681fa",
+      "changes": []
+    },
+    {
+      "upstream_path": "ingest_data.py",
+      "path": "ingest_data.py",
+      "upstream_sha256": "f01635020e1161a72e28e8de13ddcf922db649c73793ac80cdb7ee0381e4fae8",
+      "local_sha256": "f01635020e1161a72e28e8de13ddcf922db649c73793ac80cdb7ee0381e4fae8",
+      "changes": []
+    },
+    {
+      "upstream_path": "main.py",
+      "path": "main.py",
+      "upstream_sha256": "51b44fcdd4b33a81c9243808542abc7dbb804616237907d1f7279811a46d48f1",
+      "local_sha256": "51b44fcdd4b33a81c9243808542abc7dbb804616237907d1f7279811a46d48f1",
+      "changes": []
+    },
+    {
+      "upstream_path": "memory.py",
+      "path": "memory.py",
+      "upstream_sha256": "c7cbf57f7449fe6816a4482c2f9201d188039a36f286a1b4f1deba69a27b4ffc",
+      "local_sha256": "c7cbf57f7449fe6816a4482c2f9201d188039a36f286a1b4f1deba69a27b4ffc",
+      "changes": []
+    },
+    {
+      "upstream_path": "planning.py",
+      "path": "planning.py",
+      "upstream_sha256": "e1830da904155134b16622ed5f2cc08565a65079b6eee22e689d5833f13b978c",
+      "local_sha256": "e1830da904155134b16622ed5f2cc08565a65079b6eee22e689d5833f13b978c",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "f92c6980d7e0855b77fd00a29f38a5f4da6d9fe177ec7fb4670e4592a60b9b46",
+      "local_sha256": "f92c6980d7e0855b77fd00a29f38a5f4da6d9fe177ec7fb4670e4592a60b9b46",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "fcfe7d911b515325c3b9d16c6bacacdbcb2e80e5f1abd0ef99cd61d318fd9365",
+      "local_sha256": "fcfe7d911b515325c3b9d16c6bacacdbcb2e80e5f1abd0ef99cd61d318fd9365",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "tools.py",
+      "path": "tools.py",
+      "upstream_sha256": "f59947cfb84c7a0d5db74cae99e944e7c071bbc32f880b77e5fc442e78b84d82",
+      "local_sha256": "f59947cfb84c7a0d5db74cae99e944e7c071bbc32f880b77e5fc442e78b84d82",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "1c169b98547b866b21ed83c5240f64e575d2310d1fed0b61a0cc98bf9c8b3016",
+      "local_sha256": "1c169b98547b866b21ed83c5240f64e575d2310d1fed0b61a0cc98bf9c8b3016",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "base64",
+          "config",
+          "dotenv",
+          "ingest_data",
+          "io",
+          "planning",
+          "streamlit",
+          "sys",
+          "uuid"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 33,
+            "kind": "FunctionDef",
+            "doc": "Reset chat history."
+          },
+          {
+            "name": "display_pdf",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": "Display PDF preview in sidebar."
+          },
+          {
+            "name": "check_vector_index",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": "Check if vector index exists and is ready."
+          },
+          {
+            "name": "process_pdf_upload",
+            "line": 66,
+            "kind": "FunctionDef",
+            "doc": "Process uploaded PDF and ingest into MongoDB."
+          },
+          {
+            "name": "ingest_sample_data",
+            "line": 87,
+            "kind": "FunctionDef",
+            "doc": "Ingest sample MongoDB earnings report."
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".get",
+          "StringIO",
+          "base64.b64encode",
+          "check_vector_index",
+          "display_pdf",
+          "file.read",
+          "generate_response",
+          "ingest_data",
+          "ingest_sample_data",
+          "list",
+          "load_dotenv",
+          "message_placeholder.markdown",
+          "process_pdf_upload",
+          "reset_chat",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.code",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.file_uploader",
+          "st.header",
+          "st.info",
+          "st.markdown",
+          "st.rerun",
+          "st.session_state.messages.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.stop",
+          "st.success",
+          "st.warning",
+          "str",
+          "tool_selector",
+          "uuid.uuid4",
+          "vector_collection.list_search_indexes"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "config.py",
+        "imports": [
+          "dotenv",
+          "openai",
+          "os",
+          "pymongo",
+          "voyageai"
+        ],
+        "environment": [
+          "MONGODB_URI",
+          "OPENAI_API_KEY",
+          "VOYAGE_API_KEY"
+        ],
+        "models": [
+          "gpt-4o",
+          "voyage-3-large"
+        ],
+        "symbols": [],
+        "calls": [
+          "MongoClient",
+          "OpenAI",
+          "load_dotenv",
+          "os.getenv",
+          "voyageai.Client"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "ingest_data.py",
+        "imports": [
+          "config",
+          "langchain_community",
+          "langchain_text_splitters",
+          "pymongo",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_embedding",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest_data",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "PyPDFLoader",
+          "RecursiveCharacterTextSplitter",
+          "SearchIndexModel",
+          "docs_to_insert.append",
+          "enumerate",
+          "get_embedding",
+          "index.get",
+          "len",
+          "list",
+          "loader.load",
+          "predicate",
+          "print",
+          "text_splitter.split_documents",
+          "time.sleep",
+          "vector_collection.create_search_index",
+          "vector_collection.insert_many",
+          "vector_collection.list_search_indexes",
+          "voyage_client.embed"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "main.py",
+        "imports": [
+          "config",
+          "ingest_data",
+          "planning"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "generate_response",
+          "ingest_data",
+          "input",
+          "mongo_client.close",
+          "print",
+          "run_ingest.lower",
+          "user_query.lower",
+          "user_query.strip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "memory.py",
+        "imports": [
+          "config",
+          "datetime",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "store_chat_message",
+            "line": 5,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "retrieve_session_history",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".sort",
+          "datetime.now",
+          "memory_collection.find",
+          "memory_collection.insert_one"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "planning.py",
+        "imports": [
+          "config",
+          "memory",
+          "tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "tool_selector",
+            "line": 5,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_response",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_llm_response",
+            "line": 85,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "any",
+          "calculator_tool",
+          "eval",
+          "get_llm_response",
+          "llm_input.append",
+          "llm_input.extend",
+          "messages.append",
+          "messages.extend",
+          "msg.get",
+          "openai_client.chat.completions.create",
+          "print",
+          "retrieve_session_history",
+          "store_chat_message",
+          "tool_call.get",
+          "tool_selector",
+          "vector_search_tool"
+        ],
+        "findings": [
+          {
+            "rule": "code-execution",
+            "path": "planning.py",
+            "line": 41,
+            "message": "Review inputs to eval; untrusted data can execute code."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "tools.py",
+        "imports": [
+          "config",
+          "ingest_data"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "vector_search_tool",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "calculator_tool",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "array_of_results.append",
+          "eval",
+          "get_embedding",
+          "str",
+          "vector_collection.aggregate"
+        ],
+        "findings": [
+          {
+            "rule": "code-execution",
+            "path": "tools.py",
+            "line": 34,
+            "message": "Review inputs to eval; untrusted data can execute code."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "MONGODB_URI",
+      "OPENAI_API_KEY",
+      "VOYAGE_API_KEY"
+    ],
+    "imports": [
+      "base64",
+      "config",
+      "datetime",
+      "dotenv",
+      "ingest_data",
+      "io",
+      "langchain_community",
+      "langchain_text_splitters",
+      "memory",
+      "openai",
+      "os",
+      "planning",
+      "pymongo",
+      "streamlit",
+      "sys",
+      "time",
+      "tools",
+      "typing",
+      "uuid",
+      "voyageai"
+    ],
+    "models": [
+      "gpt-4o",
+      "voyage-3-large"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "main.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "code-execution",
+        "path": "planning.py",
+        "line": 41,
+        "message": "Review inputs to eval; untrusted data can execute code."
+      },
+      {
+        "rule": "code-execution",
+        "path": "tools.py",
+        "line": 34,
+        "message": "Review inputs to eval; untrusted data can execute code."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 7
+  },
+  "category": "memory",
+  "purpose": "Combine conversation history, semantic document search and tool selection in MongoDB."
+}

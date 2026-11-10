@@ -1,0 +1,524 @@
+{
+  "id": "chat-with-code",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/chat-with-code",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "f5870a040f3f95a457808beb0e4c807f9f37b04ae138d03152a240d6da0aa348",
+      "local_sha256": "f5870a040f3f95a457808beb0e4c807f9f37b04ae138d03152a240d6da0aa348",
+      "changes": []
+    },
+    {
+      "upstream_path": "notebook.ipynb",
+      "path": "notebook.ipynb",
+      "upstream_sha256": "86818f7a3eb8a6dd4ddfce36d840b7697409e7de8695187ad6044cd3c5a312c8",
+      "local_sha256": "ef9cb7002e2fc3f9f801a841a22c81a8ee25b5452ee31c92fe48245f6dbd7cb5",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "e38c896688a54968756b3264fca3b3e4103183f895cc820392ddc122f926d35e",
+      "local_sha256": "e38c896688a54968756b3264fca3b3e4103183f895cc820392ddc122f926d35e",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "13a9064bfa6696c7b5a501e770c5d8b73361210d93a7b5aad32a9f5b9dbe5fa6",
+      "local_sha256": "13a9064bfa6696c7b5a501e770c5d8b73361210d93a7b5aad32a9f5b9dbe5fa6",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "27cb9b733e2729c810618302c62149c32f5815195e415bda225ff11e801cc92d",
+      "local_sha256": "27cb9b733e2729c810618302c62149c32f5815195e415bda225ff11e801cc92d",
+      "changes": []
+    },
+    {
+      "upstream_path": "validation.py",
+      "path": "validation.py",
+      "upstream_sha256": "631d56533e8e6b9e13cfde5ee43d72ac8ef0f40c0611fbecaf7ddb5156ec497c",
+      "local_sha256": "631d56533e8e6b9e13cfde5ee43d72ac8ef0f40c0611fbecaf7ddb5156ec497c",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "cleanlab_codex",
+          "dotenv",
+          "gc",
+          "glob",
+          "llama_index",
+          "nest_asyncio",
+          "os",
+          "re",
+          "streamlit",
+          "subprocess",
+          "time",
+          "uuid",
+          "validation"
+        ],
+        "environment": [
+          "CODEX_API_KEY"
+        ],
+        "models": [
+          "BAAI/bge-base-en-v1.5",
+          "qwen/qwen3-coder:free"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "initialize_codex_project",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "parse_github_url",
+            "line": 53,
+            "kind": "FunctionDef",
+            "doc": "Parse the GitHub URL to extract owner and repository name."
+          },
+          {
+            "name": "clone_repo",
+            "line": 60,
+            "kind": "FunctionDef",
+            "doc": "Clone the GitHub repository."
+          },
+          {
+            "name": "validate_owner_repo",
+            "line": 67,
+            "kind": "FunctionDef",
+            "doc": "Validate the owner and repository name."
+          },
+          {
+            "name": "parse_docs_by_file_types",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": "Parse documents by file types in the specified directory."
+          },
+          {
+            "name": "create_index",
+            "line": 91,
+            "kind": "FunctionDef",
+            "doc": "Create a Milvus collection and return a vectorstore index."
+          },
+          {
+            "name": "reset_chat",
+            "line": 117,
+            "kind": "FunctionDef",
+            "doc": "Reset the chat state."
+          }
+        ],
+        "calls": [
+          "Client",
+          "CodeSplitter.from_defaults",
+          "HuggingFaceEmbedding",
+          "MarkdownNodeParser",
+          "MilvusVectorStore",
+          "OpenRouter",
+          "Project.from_access_key",
+          "PromptTemplate",
+          "SimpleDirectoryReader",
+          "StorageContext.from_defaults",
+          "VectorStoreIndex",
+          "bool",
+          "codex_client.create_project",
+          "codex_validated_query",
+          "create_index",
+          "file_types.items",
+          "gc.collect",
+          "glob.glob",
+          "index.as_query_engine",
+          "initialize_codex_project",
+          "len",
+          "load_llm",
+          "loader.load_data",
+          "match.groups",
+          "message_container.success",
+          "message_container.write",
+          "message_placeholder.markdown",
+          "os.getcwd",
+          "os.path.exists",
+          "os.path.join",
+          "parse_docs_by_file_types",
+          "parse_github_url",
+          "parser.get_nodes_from_documents",
+          "project.create_access_key",
+          "query_engine.update_prompts",
+          "re.match",
+          "reset_chat",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.divider",
+          "st.empty",
+          "st.error",
+          "st.header",
+          "st.markdown",
+          "st.session_state.messages.append",
+          "st.spinner",
+          "st.stop",
+          "st.success",
+          "st.text_input",
+          "subprocess.run",
+          "time.sleep",
+          "uuid.uuid4",
+          "validate_owner_repo"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "notebook.ipynb#cell-3",
+        "imports": [
+          "IPython",
+          "dotenv",
+          "glob",
+          "llama_index",
+          "nest_asyncio",
+          "os",
+          "re",
+          "subprocess"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-5",
+        "imports": [
+          "cleanlab_codex"
+        ],
+        "environment": [
+          "CODEX_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Client",
+          "Project.from_access_key",
+          "codex_client.create_project",
+          "project.create_access_key"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "BAAI/bge-base-en-v1.5",
+          "qwen/qwen3-coder:free"
+        ],
+        "symbols": [],
+        "calls": [
+          "HuggingFaceEmbedding",
+          "OpenRouter"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "parse_github_url",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "clone_github_repo",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "validate_owner_repo",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "parse_docs_by_file_types",
+            "line": 17,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_index",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "CodeSplitter.from_defaults",
+          "MarkdownNodeParser",
+          "MilvusVectorStore",
+          "SimpleDirectoryReader",
+          "StorageContext.from_defaults",
+          "VectorStoreIndex",
+          "bool",
+          "glob.glob",
+          "len",
+          "loader.load_data",
+          "match.groups",
+          "parser.get_nodes_from_documents",
+          "print",
+          "re.match",
+          "subprocess.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "setup_query_engine",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "PromptTemplate",
+          "VectorStoreIndex",
+          "clone_github_repo",
+          "create_index",
+          "file_types.items",
+          "index.as_query_engine",
+          "os.getcwd",
+          "os.path.exists",
+          "os.path.join",
+          "parse_docs_by_file_types",
+          "parse_github_url",
+          "print",
+          "query_engine.update_prompts",
+          "validate_owner_repo"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "setup_query_engine"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "query_engine.query",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-19",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "codex_validated_query",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "project.validate",
+          "prompt_template.format",
+          "query_engine.query",
+          "result.model_dump",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-21",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".items",
+          "codex_validated_query",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "validation.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "codex_validated_query",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": "Validates a user query against a RAG pipeline response using Cleanlab Codex."
+          }
+        ],
+        "calls": [
+          ".join",
+          "project.validate",
+          "prompt_template.format",
+          "query_engine.query",
+          "result.model_dump",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "notebook.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "CODEX_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "cleanlab_codex",
+      "dotenv",
+      "gc",
+      "glob",
+      "llama_index",
+      "nest_asyncio",
+      "os",
+      "re",
+      "streamlit",
+      "subprocess",
+      "time",
+      "uuid",
+      "validation"
+    ],
+    "models": [
+      "BAAI/bge-base-en-v1.5",
+      "qwen/qwen3-coder:free"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "notebook.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 12
+  },
+  "category": "rag",
+  "purpose": "Retrieve repository context for code questions and validate responses."
+}

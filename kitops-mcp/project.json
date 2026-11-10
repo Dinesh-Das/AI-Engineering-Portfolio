@@ -1,0 +1,337 @@
+{
+  "id": "kitops-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/kitops-mcp",
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "ml-project/data/sample.csv",
+      "path": "ml-project/data/sample.csv",
+      "upstream_sha256": "b0aa0684081084e01175a8ee98e580b630d0606c4d42234cf2d97305d533a583",
+      "local_sha256": "b0aa0684081084e01175a8ee98e580b630d0606c4d42234cf2d97305d533a583",
+      "changes": []
+    },
+    {
+      "upstream_path": "ml-project/docs/LICENSE",
+      "path": "ml-project/docs/LICENSE",
+      "upstream_sha256": "5ad8c213095c573921d7388edf93f6a9f54490b8ebf3b165ae8ef1947cf70846",
+      "local_sha256": "5ad8c213095c573921d7388edf93f6a9f54490b8ebf3b165ae8ef1947cf70846",
+      "changes": []
+    },
+    {
+      "upstream_path": "ml-project/docs/README.md",
+      "path": "ml-project/docs/README.md",
+      "upstream_sha256": "0e47e465ace16f516a0724acf6700eae13fad55aedad554de395bceecbac63b1",
+      "local_sha256": "0e47e465ace16f516a0724acf6700eae13fad55aedad554de395bceecbac63b1",
+      "changes": []
+    },
+    {
+      "upstream_path": "ml-project/Kitfile",
+      "path": "ml-project/Kitfile",
+      "upstream_sha256": "16779440371ae6c5d446b1124485b5a7d232d40fce8518412d0860012e1e2bb1",
+      "local_sha256": "16779440371ae6c5d446b1124485b5a7d232d40fce8518412d0860012e1e2bb1",
+      "changes": []
+    },
+    {
+      "upstream_path": "ml-project/model/model.pkl",
+      "path": "ml-project/model/model.pkl",
+      "upstream_sha256": "24a8e4d10420d821b8a1602f9f62ab5660d123f1c807b01448b782d7c1aff5f9",
+      "local_sha256": "24a8e4d10420d821b8a1602f9f62ab5660d123f1c807b01448b782d7c1aff5f9",
+      "changes": []
+    },
+    {
+      "upstream_path": "ml-project/requirements.txt",
+      "path": "ml-project/requirements.txt",
+      "upstream_sha256": "647440fe81a66527299984e52a1769bc44637172086d6cd09a6ddf17d0956434",
+      "local_sha256": "647440fe81a66527299984e52a1769bc44637172086d6cd09a6ddf17d0956434",
+      "changes": []
+    },
+    {
+      "upstream_path": "ml-project/train.py",
+      "path": "ml-project/train.py",
+      "upstream_sha256": "5617aecea60430f558eda4305591fa17b076b1e9c5ab5708c588108a68aee686",
+      "local_sha256": "5617aecea60430f558eda4305591fa17b076b1e9c5ab5708c588108a68aee686",
+      "changes": []
+    },
+    {
+      "upstream_path": "prompt.txt",
+      "path": "prompt.txt",
+      "upstream_sha256": "021a213ea0a110069eae2a56965dfaf9ee45e014add8864883228d0f4177f137",
+      "local_sha256": "021a213ea0a110069eae2a56965dfaf9ee45e014add8864883228d0f4177f137",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "433d9f9febcea53708b307212973cb0324a60ca045753ca693bc51f2d326360b",
+      "local_sha256": "433d9f9febcea53708b307212973cb0324a60ca045753ca693bc51f2d326360b",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "5ab81b5a6ba3b145e28c8890bb7a218da67011f481c42c8b6cbf87372ec9ac27",
+      "local_sha256": "5ab81b5a6ba3b145e28c8890bb7a218da67011f481c42c8b6cbf87372ec9ac27",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "731fbf8ad28a90808ccc4bb54b14b7e580a26e93ceee20fe8c331b10b8614252",
+      "local_sha256": "731fbf8ad28a90808ccc4bb54b14b7e580a26e93ceee20fe8c331b10b8614252",
+      "changes": []
+    },
+    {
+      "upstream_path": "tools.py",
+      "path": "tools.py",
+      "upstream_sha256": "22cacff35f9705f820ca0ea90799971a9207fca8dd53dffa40f5a39685add721",
+      "local_sha256": "22cacff35f9705f820ca0ea90799971a9207fca8dd53dffa40f5a39685add721",
+      "changes": []
+    },
+    {
+      "upstream_path": "util.py",
+      "path": "util.py",
+      "upstream_sha256": "480cf8ca2965b60fb4bc9225eb4280add7d2c97860f7d54962876420619763fa",
+      "local_sha256": "480cf8ca2965b60fb4bc9225eb4280add7d2c97860f7d54962876420619763fa",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "7b53ac55a9381ce553dbdd578a53c52a66feb987bc691c22e9dd59a9f205af5d",
+      "local_sha256": "7b53ac55a9381ce553dbdd578a53c52a66feb987bc691c22e9dd59a9f205af5d",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "ml-project/train.py",
+        "imports": [
+          "joblib",
+          "os",
+          "pandas",
+          "sklearn"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "LogisticRegression",
+          "exit",
+          "joblib.dump",
+          "model.fit",
+          "os.makedirs",
+          "os.path.dirname",
+          "os.path.exists",
+          "pd.read_csv",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "mcp",
+          "tools",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_kitfile",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": "Create a new Kitfile at the specified directory with the given ModelKit name."
+          },
+          {
+            "name": "inspect_modelkit",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": "Inspect a ModelKit and return its detailed information from the remote registry."
+          },
+          {
+            "name": "push_and_pack_modelkit",
+            "line": 56,
+            "kind": "FunctionDef",
+            "doc": "Pack the project situated at the working directory and push it as a ModelKit to the remote registry."
+          },
+          {
+            "name": "pull_and_unpack_modelkit",
+            "line": 78,
+            "kind": "FunctionDef",
+            "doc": "Pull a ModelKit from the remote registry and unpack it to the specified directory."
+          },
+          {
+            "name": "remove_modelkit",
+            "line": 104,
+            "kind": "FunctionDef",
+            "doc": "Remove a ModelKit from the remote registry."
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "mcp.run",
+          "mcp.tool",
+          "tools.create",
+          "tools.inspect",
+          "tools.pull_and_unpack",
+          "tools.push_and_pack",
+          "tools.remove"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "tools.py",
+        "imports": [
+          "json",
+          "kitops",
+          "os",
+          "typing",
+          "util"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": "Create a new Kitfile at the specified path with referred modelkit name."
+          },
+          {
+            "name": "inspect",
+            "line": 53,
+            "kind": "FunctionDef",
+            "doc": "Inspect a ModelKit and return its detailed information."
+          },
+          {
+            "name": "push_and_pack",
+            "line": 73,
+            "kind": "FunctionDef",
+            "doc": "Pack and push a ModelKit to the repository."
+          },
+          {
+            "name": "pull_and_unpack",
+            "line": 105,
+            "kind": "FunctionDef",
+            "doc": "Pull and unpack a ModelKit to the working directory."
+          },
+          {
+            "name": "remove",
+            "line": 138,
+            "kind": "FunctionDef",
+            "doc": "Remove a ModelKit from the remote registry only."
+          }
+        ],
+        "calls": [
+          ".join",
+          "FileNotFoundError",
+          "Kitfile",
+          "ModelKitManager",
+          "RuntimeError",
+          "ValueError",
+          "_process_command_flags",
+          "_run",
+          "command.extend",
+          "init",
+          "json.loads",
+          "kitfile.save",
+          "manager.pack_and_push_modelkit",
+          "manager.pull_and_unpack_modelkit",
+          "manager.remove_modelkit",
+          "os.makedirs",
+          "os.path.abspath",
+          "os.path.exists",
+          "os.path.isdir",
+          "os.path.join",
+          "os.remove",
+          "os.rename",
+          "result.stdout.strip",
+          "str",
+          "validate_modelkit_tag"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "util.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "validate_modelkit_tag",
+            "line": 1,
+            "kind": "FunctionDef",
+            "doc": "Validate that ModelKit tag has correct format"
+          }
+        ],
+        "calls": [
+          "ValueError",
+          "isinstance",
+          "modelkit_tag.count",
+          "modelkit_tag.rsplit",
+          "path.split"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "ml-project/requirements.txt",
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "joblib",
+      "json",
+      "kitops",
+      "mcp",
+      "os",
+      "pandas",
+      "sklearn",
+      "tools",
+      "typing",
+      "util"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "operations",
+  "purpose": "Manage machine-learning ModelKit artifacts through an MCP tool boundary."
+}

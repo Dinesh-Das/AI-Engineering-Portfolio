@@ -1,0 +1,589 @@
+{
+  "units": [
+    {
+      "path": "data_gen.ipynb#cell-2",
+      "imports": [
+        "langchain",
+        "langchain_community",
+        "langchain_openai",
+        "pandas",
+        "ragas"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-3",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "pd.set_option"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "DirectoryLoader",
+        "RecursiveCharacterTextSplitter",
+        "loader.load_and_split"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-6",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "len"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-8",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".to_json"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-10",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "llama3",
+        "nomic-embed-text",
+        "phi3"
+      ],
+      "symbols": [],
+      "calls": [
+        "Ollama",
+        "OllamaEmbeddings",
+        "critic_llm.invoke",
+        "generator_llm.invoke",
+        "len",
+        "ollama_emb.embed_query",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-12",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "TestsetGenerator.from_langchain",
+        "generator.generate_with_langchain_docs"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-14",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".dropna",
+        "test_df.head",
+        "testset.to_pandas"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-15",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "test_df.to_csv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-16",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "len"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "data_gen.ipynb#cell-17",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-3",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-4",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "opik.configure"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-7",
+      "imports": [
+        "dotenv"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "load_dotenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-9",
+      "imports": [
+        "os",
+        "requests"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "f.write",
+        "open",
+        "os.makedirs",
+        "requests.get"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-11",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "my_function",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "my_function"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-13",
+      "imports": [
+        "openai",
+        "opik"
+      ],
+      "environment": [],
+      "models": [
+        "gpt-3.5-turbo"
+      ],
+      "symbols": [],
+      "calls": [
+        "OpenAI",
+        "openai_client.chat.completions.create",
+        "print",
+        "track_openai"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-16",
+      "imports": [
+        "llama_index",
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "CallbackManager",
+        "LlamaIndexCallbackHandler"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-19",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".load_data",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "index.as_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-21",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "query_engine.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-23",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-26",
+      "imports": [
+        "pandas"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "df.head",
+        "pd.read_csv",
+        "pd.set_option"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-28",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Opik",
+        "client.get_or_create_dataset"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-30",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "df.iterrows"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-31",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "dataset.insert"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-34",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".load_data",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "index.as_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-36",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "my_llm_application",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "query_engine.query",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-38",
+      "imports": [
+        "openai",
+        "opik"
+      ],
+      "environment": [],
+      "models": [
+        "gpt-3.5-turbo"
+      ],
+      "symbols": [],
+      "calls": [
+        "openai.OpenAI",
+        "track_openai"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-40",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "evaluation_task",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "my_llm_application"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-42",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Opik",
+        "client.get_or_create_dataset"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-44",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "AnswerRelevance",
+        "ContextPrecision",
+        "ContextRecall",
+        "Hallucination"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "demo.ipynb#cell-46",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "evaluate"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "data_gen.ipynb",
+    "demo.ipynb"
+  ],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "dotenv",
+    "langchain",
+    "langchain_community",
+    "langchain_openai",
+    "llama_index",
+    "openai",
+    "opik",
+    "os",
+    "pandas",
+    "ragas",
+    "requests"
+  ],
+  "models": [
+    "gpt-3.5-turbo",
+    "llama3",
+    "nomic-embed-text",
+    "phi3"
+  ],
+  "entries": [
+    {
+      "path": "data_gen.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "demo.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

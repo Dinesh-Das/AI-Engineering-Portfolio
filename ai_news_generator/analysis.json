@@ -1,0 +1,79 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "crewai",
+        "crewai_tools",
+        "dotenv",
+        "os",
+        "streamlit"
+      ],
+      "environment": [],
+      "models": [
+        "command-r"
+      ],
+      "symbols": [
+        {
+          "name": "generate_content",
+          "line": 48,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".replace",
+        "Agent",
+        "Crew",
+        "LLM",
+        "SerperDevTool",
+        "Task",
+        "crew.kickoff",
+        "generate_content",
+        "load_dotenv",
+        "st.button",
+        "st.download_button",
+        "st.error",
+        "st.expander",
+        "st.header",
+        "st.markdown",
+        "st.set_page_config",
+        "st.slider",
+        "st.spinner",
+        "st.text_area",
+        "st.title",
+        "str",
+        "topic.lower"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "COHERE_API_KEY",
+    "SERPER_API_KEY"
+  ],
+  "imports": [
+    "crewai",
+    "crewai_tools",
+    "dotenv",
+    "os",
+    "streamlit"
+  ],
+  "models": [
+    "command-r"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

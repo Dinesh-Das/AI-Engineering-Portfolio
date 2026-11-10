@@ -1,0 +1,553 @@
+{
+  "id": "mcp-agentic-rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/mcp-agentic-rag",
+  "entries": [
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "notebook.ipynb",
+      "path": "notebook.ipynb",
+      "upstream_sha256": "78ae07f85575cce50a7efc9306a33cb066c4ea79ee3bdfeb93a11657ec1bdccb",
+      "local_sha256": "ae72b877893816a52c7d28859e970828214bc66df93567301d8fd0d0ba399c4d",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "rag_code.py",
+      "path": "rag_code.py",
+      "upstream_sha256": "f0a244bcce0db90edeaac7cfb60e836d649a4215ad07ac2448eceecacf20affb",
+      "local_sha256": "f0a244bcce0db90edeaac7cfb60e836d649a4215ad07ac2448eceecacf20affb",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "2d6de55e64516d1f727c6cae479921600518df5c2dae562b14539ed55cf710f2",
+      "local_sha256": "2d6de55e64516d1f727c6cae479921600518df5c2dae562b14539ed55cf710f2",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "2fddeb22b3086076fe8a542ba122b0db4d9d9a518d70b7e36dc97f6b6b233dd3",
+      "local_sha256": "42d2a02a75ea51f7b97fb3176fbe41579875b7c5561c018703dcec0d484c9ef4",
+      "changes": [
+        "Added explicit connection/read timeouts to 1 direct requests calls."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "notebook.ipynb#cell-1",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "notebook.ipynb#cell-2",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "faq_text.split",
+          "i.replace"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-4",
+        "imports": [
+          "llama_index",
+          "tqdm"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "batch_iterate",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "EmbedData",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_load_embed_model",
+            "line": 19,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_embedding",
+            "line": 25,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "embed",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "HuggingFaceEmbedding",
+          "batch_iterate",
+          "len",
+          "range",
+          "self._load_embed_model",
+          "self.embed_model.get_text_embedding_batch",
+          "self.embeddings.extend",
+          "self.generate_embedding",
+          "tqdm"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "notebook.ipynb#cell-4",
+            "line": 20,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "EmbedData",
+          "embeddata.embed"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-6",
+        "imports": [
+          "qdrant_client"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "QdrantVDB",
+            "line": 4,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 6,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "define_client",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_collection",
+            "line": 15,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest_data",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "QdrantClient",
+          "batch_iterate",
+          "len",
+          "models.OptimizersConfigDiff",
+          "models.VectorParams",
+          "self.client.collection_exists",
+          "self.client.create_collection",
+          "self.client.update_collection",
+          "self.client.upload_collection",
+          "tqdm",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "QdrantVDB",
+          "database.create_collection",
+          "database.define_client",
+          "database.ingest_data"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "Retriever",
+            "line": 1,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 3,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "combined_prompt.append",
+          "dict",
+          "models.QuantizationSearchParams",
+          "models.SearchParams",
+          "self.embeddata.embed_model.get_query_embedding",
+          "self.vector_db.client.search"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".search",
+          "Retriever"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_code.py",
+        "imports": [
+          "llama_index",
+          "qdrant_client",
+          "tqdm"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "batch_iterate",
+            "line": 68,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "EmbedData",
+            "line": 72,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "QdrantVDB",
+            "line": 106,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "Retriever",
+            "line": 149,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 74,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_load_embed_model",
+            "line": 83,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_embedding",
+            "line": 90,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "embed",
+            "line": 93,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 108,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "define_client",
+            "line": 114,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_collection",
+            "line": 118,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest_data",
+            "line": 134,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 151,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 156,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "HuggingFaceEmbedding",
+          "QdrantClient",
+          "batch_iterate",
+          "combined_prompt.append",
+          "dict",
+          "faq_text.split",
+          "i.replace",
+          "len",
+          "models.OptimizersConfigDiff",
+          "models.QuantizationSearchParams",
+          "models.SearchParams",
+          "models.VectorParams",
+          "range",
+          "self._load_embed_model",
+          "self.client.collection_exists",
+          "self.client.create_collection",
+          "self.client.update_collection",
+          "self.client.upload_collection",
+          "self.define_client",
+          "self.embed_model.get_text_embedding_batch",
+          "self.embeddata.embed_model.get_query_embedding",
+          "self.embeddings.extend",
+          "self.generate_embedding",
+          "self.vector_db.client.search",
+          "tqdm",
+          "zip"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "rag_code.py",
+            "line": 84,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "dotenv",
+          "mcp",
+          "os",
+          "rag_code",
+          "requests",
+          "ssl"
+        ],
+        "environment": [
+          "BRIGHT_DATA_PASSWORD",
+          "BRIGHT_DATA_USERNAME"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "machine_learning_faq_retrieval_tool",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": "Retrieve the most relevant documents from the machine learning"
+          },
+          {
+            "name": "bright_data_web_search_tool",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": "Search for information on a given topic using Bright Data."
+          }
+        ],
+        "calls": [
+          ".join",
+          "EmbedData",
+          "FastMCP",
+          "QdrantVDB",
+          "Retriever",
+          "ValueError",
+          "isinstance",
+          "load_dotenv",
+          "mcp.run",
+          "mcp.tool",
+          "os.getenv",
+          "print",
+          "query.split",
+          "requests.get",
+          "response.json",
+          "retriever.search"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "notebook.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "BRIGHT_DATA_PASSWORD",
+      "BRIGHT_DATA_USERNAME"
+    ],
+    "imports": [
+      "dotenv",
+      "llama_index",
+      "mcp",
+      "os",
+      "qdrant_client",
+      "rag_code",
+      "requests",
+      "ssl",
+      "tqdm"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "notebook.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "trust_remote_code",
+        "path": "notebook.ipynb#cell-4",
+        "line": 20,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      },
+      {
+        "rule": "trust_remote_code",
+        "path": "rag_code.py",
+        "line": 84,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 11
+  },
+  "category": "mcp",
+  "purpose": "Expose web-ingested retrieval through MCP using Bright Data and Qdrant."
+}

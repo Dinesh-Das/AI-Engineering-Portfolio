@@ -32,7 +32,8 @@ def build_command(root: Path, project: dict, entry: str) -> list[str]:
         return [sys.executable, str(path)]
     if registered['kind'] == 'notebook' and path.suffix == '.ipynb':
         return [sys.executable, '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute',
-                '--ExecutePreprocessor.allow_errors=False', '--ExecutePreprocessor.timeout=120',
+                '--ExecutePreprocessor.allow_errors=False', '--ExecutePreprocessor.force_raise_errors=True',
+                '--ExecutePreprocessor.store_widget_state=False', '--ExecutePreprocessor.timeout=120',
                 '--output-dir', str(root / 'outputs'), str(path)]
     raise ValueError('Unsupported entry type')
 
@@ -42,7 +43,7 @@ def check_project(root: Path, project: dict) -> list[str]:
     for name in ('README.md', 'REVERSE_ENGINEERING.md', 'LEARNINGS.md', 'project.json', 'UPSTREAM_LICENSE'):
         if not (root / name).is_file():
             errors.append(f'Missing {name}')
-    for record in project['files']:
+    for record in project['files'] + project.get('local_additions', []):
         path = source_path(root, record['path'])
         if not path.is_file():
             errors.append(f'Missing source: {record["path"]}')
@@ -63,6 +64,7 @@ def main(argv=None) -> int:
     parser.add_argument('--entry', help='Exact inventoried relative entry path')
     parser.add_argument('--execute', action='store_true', help='Actually execute source; may make paid API calls')
     parser.add_argument('--timeout', type=int, default=120, help='Whole-process deadline in seconds (1–3600)')
+    parser.add_argument('--entry-args', nargs=argparse.REMAINDER, default=[], help='Arguments passed to a Python entry; place last')
     args = parser.parse_args(argv)
     try:
         catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
@@ -90,7 +92,11 @@ def main(argv=None) -> int:
                 raise ValueError('--timeout must be between 1 and 3600 seconds')
             root = source_path(ROOT, projects[0]['id'])
             command = build_command(root, projects[0], args.entry)
-            print(json.dumps({'cwd': str(root), 'command': command, 'execute': args.execute}, indent=2))
+            if args.entry_args:
+                if not args.entry.endswith('.py'):
+                    raise ValueError('--entry-args is supported only for Python script entries')
+                command += args.entry_args
+            print(json.dumps({'cwd': str(root), 'command': command, 'execute': args.execute}, indent=2), flush=True)
             if args.execute:
                 # No shell expansion; subprocess.run kills and waits for the direct child on timeout.
                 # Descendant jobs/GPU processes require a worker/container boundary in production.

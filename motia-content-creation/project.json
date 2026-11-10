@@ -1,0 +1,359 @@
+{
+  "id": "motia-content-creation",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/motia-content-creation",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "5b3c78518f600df9f792c7706b9ba7dbce4b277412bb66936df3e4c67098cb9a",
+      "local_sha256": "5b3c78518f600df9f792c7706b9ba7dbce4b277412bb66936df3e4c67098cb9a",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "9eeb3b48a7beabaeb52ec0a218dc2730c8d052de93c98e949f1391466a11914a",
+      "local_sha256": "9eeb3b48a7beabaeb52ec0a218dc2730c8d052de93c98e949f1391466a11914a",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/index.js",
+      "path": "config/index.js",
+      "upstream_sha256": "a2cf1e87f6f7105c57a3bd4fefe891ccdd0b0119a486e3cd3567486d4357ee88",
+      "local_sha256": "a2cf1e87f6f7105c57a3bd4fefe891ccdd0b0119a486e3cd3567486d4357ee88",
+      "changes": []
+    },
+    {
+      "upstream_path": "motia-workbench.json",
+      "path": "motia-workbench.json",
+      "upstream_sha256": "5815693b668f43ee1b5855eeeed0b3304ec9d3757107232c66ec97aa6533c9dd",
+      "local_sha256": "5815693b668f43ee1b5855eeeed0b3304ec9d3757107232c66ec97aa6533c9dd",
+      "changes": []
+    },
+    {
+      "upstream_path": "package.json",
+      "path": "package.json",
+      "upstream_sha256": "811cbbd0f043f03b7f2e4365f1f89e228a96d7d065319cf1c2a89b65c5079d04",
+      "local_sha256": "811cbbd0f043f03b7f2e4365f1f89e228a96d7d065319cf1c2a89b65c5079d04",
+      "changes": []
+    },
+    {
+      "upstream_path": "prompts/linkedin-prompt.txt",
+      "path": "prompts/linkedin-prompt.txt",
+      "upstream_sha256": "51a6688014c2c5759105ef123987ac1b3197a8b7336dfea01bf2c6f18c85d85b",
+      "local_sha256": "51a6688014c2c5759105ef123987ac1b3197a8b7336dfea01bf2c6f18c85d85b",
+      "changes": []
+    },
+    {
+      "upstream_path": "prompts/twitter-prompt.txt",
+      "path": "prompts/twitter-prompt.txt",
+      "upstream_sha256": "d9b5d211dc2644edd8466bc3661fe194aa0d1f0ba7597faa88fbc39a059a2c27",
+      "local_sha256": "d9b5d211dc2644edd8466bc3661fe194aa0d1f0ba7597faa88fbc39a059a2c27",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "649d24a45c3b8d1aa394fc89103621bca7a90e3489c1f9af90e37d0dfb010dec",
+      "local_sha256": "649d24a45c3b8d1aa394fc89103621bca7a90e3489c1f9af90e37d0dfb010dec",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "2b88c1ed13ec86194819f38c0b684710e11ea3a6ab2790d02938d5e946acd18c",
+      "local_sha256": "2b88c1ed13ec86194819f38c0b684710e11ea3a6ab2790d02938d5e946acd18c",
+      "changes": []
+    },
+    {
+      "upstream_path": "steps/api.step.py",
+      "path": "steps/api.step.py",
+      "upstream_sha256": "52eb571d05602080b51279be739d28c38aecae4631ab803c9689669864a8ba81",
+      "local_sha256": "52eb571d05602080b51279be739d28c38aecae4631ab803c9689669864a8ba81",
+      "changes": []
+    },
+    {
+      "upstream_path": "steps/generate-linkedin.step.py",
+      "path": "steps/generate-linkedin.step.py",
+      "upstream_sha256": "65417c69577f0f553d8f5908b70e554dff4d41f9ea98ba7f68c18b9f20d2fcfe",
+      "local_sha256": "65417c69577f0f553d8f5908b70e554dff4d41f9ea98ba7f68c18b9f20d2fcfe",
+      "changes": []
+    },
+    {
+      "upstream_path": "steps/generate-twitter.step.py",
+      "path": "steps/generate-twitter.step.py",
+      "upstream_sha256": "b7cc6f2ef6b94b6b47c9a499699e4e8be596d533423c431f87024a51934e36db",
+      "local_sha256": "b7cc6f2ef6b94b6b47c9a499699e4e8be596d533423c431f87024a51934e36db",
+      "changes": []
+    },
+    {
+      "upstream_path": "steps/schedule-linkedin.step.ts",
+      "path": "steps/schedule-linkedin.step.ts",
+      "upstream_sha256": "be705ccefa88097532a8225a2c19f8a73e52c8eb82eab2f8a834885598e64e86",
+      "local_sha256": "be705ccefa88097532a8225a2c19f8a73e52c8eb82eab2f8a834885598e64e86",
+      "changes": []
+    },
+    {
+      "upstream_path": "steps/schedule-twitter.step.ts",
+      "path": "steps/schedule-twitter.step.ts",
+      "upstream_sha256": "cf52d74d7ac7ddd118c52d24f9da5e720d5ee21accac5527be3b557a2f735778",
+      "local_sha256": "cf52d74d7ac7ddd118c52d24f9da5e720d5ee21accac5527be3b557a2f735778",
+      "changes": []
+    },
+    {
+      "upstream_path": "steps/scrape.step.py",
+      "path": "steps/scrape.step.py",
+      "upstream_sha256": "18fcbbfcacdf8d33ce5c24d14a10447ae483f32d2724728d258bc92cf50c2610",
+      "local_sha256": "18fcbbfcacdf8d33ce5c24d14a10447ae483f32d2724728d258bc92cf50c2610",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "steps/api.step.py",
+        "imports": [
+          "datetime",
+          "pydantic",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "RequestBody",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "SuccessResponse",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "ErrorResponse",
+            "line": 14,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "handler",
+            "line": 32,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ErrorResponse.model_json_schema",
+          "RequestBody.model_json_schema",
+          "SuccessResponse.model_json_schema",
+          "context.emit",
+          "context.logger.info",
+          "int",
+          "str",
+          "time.time"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "steps/generate-linkedin.step.py",
+        "imports": [
+          "datetime",
+          "dotenv",
+          "json",
+          "openai",
+          "os",
+          "pydantic"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "GenerateInput",
+            "line": 14,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "handler",
+            "line": 31,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".isoformat",
+          ".replace",
+          "AsyncOpenAI",
+          "GenerateInput.model_json_schema",
+          "context.emit",
+          "context.logger.error",
+          "context.logger.info",
+          "datetime.now",
+          "f.read",
+          "json.loads",
+          "linkedinPromptTemplate.replace",
+          "load_dotenv",
+          "open",
+          "openai_client.chat.completions.create",
+          "os.getenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "steps/generate-twitter.step.py",
+        "imports": [
+          "datetime",
+          "dotenv",
+          "json",
+          "openai",
+          "os",
+          "pydantic"
+        ],
+        "environment": [
+          "OPENAI_API_KEY"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "GenerateInput",
+            "line": 14,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "handler",
+            "line": 31,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".isoformat",
+          ".replace",
+          "AsyncOpenAI",
+          "GenerateInput.model_json_schema",
+          "context.emit",
+          "context.logger.error",
+          "context.logger.info",
+          "datetime.now",
+          "f.read",
+          "json.loads",
+          "load_dotenv",
+          "open",
+          "openai_client.chat.completions.create",
+          "os.getenv",
+          "twitterPromptTemplate.replace"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "steps/scrape.step.py",
+        "imports": [
+          "datetime",
+          "dotenv",
+          "firecrawl",
+          "os",
+          "pydantic"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ScrapeInput",
+            "line": 11,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "handler",
+            "line": 26,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Exception",
+          "FirecrawlApp",
+          "ScrapeInput.model_json_schema",
+          "app.scrape_url",
+          "context.emit",
+          "context.logger.info",
+          "len",
+          "load_dotenv",
+          "os.getenv",
+          "scrapeResult.metadata.get"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "package.json",
+      "requirements.txt"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "config/index.js",
+      "steps/schedule-linkedin.step.ts",
+      "steps/schedule-twitter.step.ts"
+    ],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "MOTIA_PORT",
+      "OLLAMA_MODEL",
+      "OPENAI_API_KEY",
+      "TYPEFULLY_API_KEY"
+    ],
+    "imports": [
+      "datetime",
+      "dotenv",
+      "firecrawl",
+      "json",
+      "openai",
+      "os",
+      "pydantic",
+      "time"
+    ],
+    "models": [
+      "gpt-4o"
+    ],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "agents",
+  "purpose": "Implement event-driven article-to-social-content generation."
+}

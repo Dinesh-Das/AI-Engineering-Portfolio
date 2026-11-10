@@ -1,0 +1,350 @@
+{
+  "units": [
+    {
+      "path": "config.py",
+      "imports": [
+        "dotenv",
+        "os"
+      ],
+      "environment": [
+        "ASSEMBLYAI_API_KEY",
+        "EMBEDDING_DIMENSION",
+        "EMBEDDING_MODEL",
+        "LLM_MODEL",
+        "MILVUS_COLLECTION_NAME",
+        "MILVUS_HOST",
+        "MILVUS_PORT",
+        "OPENAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "int",
+        "load_dotenv",
+        "os.getenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "main.py",
+      "imports": [
+        "PyPDF2",
+        "assemblyai",
+        "config",
+        "crewai",
+        "dataclasses",
+        "glob",
+        "logging",
+        "openai",
+        "os",
+        "pathlib",
+        "pymilvus",
+        "sounddevice",
+        "soundfile",
+        "tempfile",
+        "traceback",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "DataIngestionState",
+          "line": 40,
+          "kind": "ClassDef",
+          "doc": "State for data ingestion flow"
+        },
+        {
+          "name": "QueryState",
+          "line": 49,
+          "kind": "ClassDef",
+          "doc": "State for query processing flow"
+        },
+        {
+          "name": "get_milvus_connection",
+          "line": 58,
+          "kind": "FunctionDef",
+          "doc": "Get or create Milvus connection"
+        },
+        {
+          "name": "get_collection",
+          "line": 71,
+          "kind": "FunctionDef",
+          "doc": "Get or create collection"
+        },
+        {
+          "name": "transcribe_audio_file",
+          "line": 81,
+          "kind": "FunctionDef",
+          "doc": "Transcribe audio file using AssemblyAI"
+        },
+        {
+          "name": "search_vector_database",
+          "line": 88,
+          "kind": "FunctionDef",
+          "doc": "Search vector database for relevant information"
+        },
+        {
+          "name": "format_search_results",
+          "line": 125,
+          "kind": "FunctionDef",
+          "doc": "Format search results into readable string"
+        },
+        {
+          "name": "SearchKnowledgeBaseTool",
+          "line": 143,
+          "kind": "ClassDef",
+          "doc": "Tool for searching the knowledge base"
+        },
+        {
+          "name": "DataIngestionFlow",
+          "line": 156,
+          "kind": "ClassDef",
+          "doc": "CrewAI Flow for data ingestion and vector database setup"
+        },
+        {
+          "name": "MultimodalRAGFlow",
+          "line": 320,
+          "kind": "ClassDef",
+          "doc": "CrewAI Flow for query processing and response generation"
+        },
+        {
+          "name": "record_audio",
+          "line": 423,
+          "kind": "FunctionDef",
+          "doc": "Record audio from microphone and save to temporary file"
+        },
+        {
+          "name": "process_query",
+          "line": 448,
+          "kind": "FunctionDef",
+          "doc": "Process a query through the RAG flow"
+        },
+        {
+          "name": "check_system_status",
+          "line": 466,
+          "kind": "FunctionDef",
+          "doc": "Check if the system is ready"
+        },
+        {
+          "name": "main",
+          "line": 492,
+          "kind": "FunctionDef",
+          "doc": "Main application entry point"
+        },
+        {
+          "name": "_run",
+          "line": 149,
+          "kind": "FunctionDef",
+          "doc": "Search the knowledge base and return formatted results"
+        },
+        {
+          "name": "__init__",
+          "line": 159,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "discover_files",
+          "line": 163,
+          "kind": "FunctionDef",
+          "doc": "Discover all files in the data directory"
+        },
+        {
+          "name": "setup_vector_database",
+          "line": 181,
+          "kind": "FunctionDef",
+          "doc": "Initialize Milvus connection and collection"
+        },
+        {
+          "name": "process_multimodal_data",
+          "line": 208,
+          "kind": "FunctionDef",
+          "doc": "Process discovered files from the data directory"
+        },
+        {
+          "name": "generate_embeddings_flow",
+          "line": 273,
+          "kind": "FunctionDef",
+          "doc": "Generate embeddings for processed chunks"
+        },
+        {
+          "name": "store_in_vector_database",
+          "line": 303,
+          "kind": "FunctionDef",
+          "doc": "Insert processed chunks into Milvus"
+        },
+        {
+          "name": "__init__",
+          "line": 323,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "transcribe_audio_if_needed",
+          "line": 327,
+          "kind": "FunctionDef",
+          "doc": "Transcribe audio if query is audio-based"
+        },
+        {
+          "name": "search_knowledge_base",
+          "line": 340,
+          "kind": "FunctionDef",
+          "doc": "Search the vector database for relevant information"
+        },
+        {
+          "name": "generate_response",
+          "line": 356,
+          "kind": "FunctionDef",
+          "doc": "Generate final response using CrewAI agents"
+        }
+      ],
+      "calls": [
+        ".__init__",
+        ".join",
+        ".strip",
+        "Agent",
+        "Collection",
+        "CollectionSchema",
+        "Crew",
+        "DataIngestionFlow",
+        "DataIngestionState",
+        "FieldSchema",
+        "FileNotFoundError",
+        "MultimodalRAGFlow",
+        "Path",
+        "PdfReader",
+        "QueryState",
+        "SearchKnowledgeBaseTool",
+        "Task",
+        "_collection.load",
+        "aai.Transcriber",
+        "all",
+        "all_embeddings.extend",
+        "check_system_status",
+        "chunk.copy",
+        "chunk.get",
+        "chunk.strip",
+        "chunks.append",
+        "collection.create_index",
+        "collection.get_statistics",
+        "collection.load",
+        "collection.search",
+        "connections.connect",
+        "crew.kickoff",
+        "data_dir.exists",
+        "discovered_files.extend",
+        "duration.isdigit",
+        "f.read",
+        "field",
+        "file_path.suffix.lower",
+        "format_search_results",
+        "formatted_results.append",
+        "get_collection",
+        "get_milvus_connection",
+        "glob.glob",
+        "hit.entity.get",
+        "ingestion_flow.discover_files",
+        "ingestion_flow.generate_embeddings_flow",
+        "ingestion_flow.process_multimodal_data",
+        "ingestion_flow.setup_vector_database",
+        "ingestion_flow.store_in_vector_database",
+        "input",
+        "int",
+        "len",
+        "list",
+        "listen",
+        "logger.error",
+        "logger.info",
+        "logger.warning",
+        "logging.basicConfig",
+        "logging.getLogger",
+        "main",
+        "open",
+        "openai.OpenAI",
+        "openai_client.embeddings.create",
+        "os.unlink",
+        "page.extract_text",
+        "print",
+        "process_query",
+        "processed_files.append",
+        "rag_flow.generate_response",
+        "rag_flow.search_knowledge_base",
+        "rag_flow.transcribe_audio_if_needed",
+        "range",
+        "record_audio",
+        "sd.rec",
+        "sd.wait",
+        "search_results.append",
+        "search_vector_database",
+        "set",
+        "sf.write",
+        "sorted",
+        "start",
+        "state.collection.flush",
+        "state.collection.insert",
+        "stats.get",
+        "str",
+        "super",
+        "tempfile.NamedTemporaryFile",
+        "traceback.print_exc",
+        "transcribe_audio_file",
+        "transcriber.transcribe",
+        "updated_chunks.append",
+        "utility.has_collection",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [
+    "docker-compose.yml"
+  ],
+  "environment": [
+    "ASSEMBLYAI_API_KEY",
+    "EMBEDDING_DIMENSION",
+    "EMBEDDING_MODEL",
+    "LLM_MODEL",
+    "MILVUS_COLLECTION_NAME",
+    "MILVUS_HOST",
+    "MILVUS_PORT",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "PyPDF2",
+    "assemblyai",
+    "config",
+    "crewai",
+    "dataclasses",
+    "dotenv",
+    "glob",
+    "logging",
+    "openai",
+    "os",
+    "pathlib",
+    "pymilvus",
+    "sounddevice",
+    "soundfile",
+    "tempfile",
+    "traceback",
+    "typing"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "main.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

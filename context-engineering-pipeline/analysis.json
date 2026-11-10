@@ -1,0 +1,574 @@
+{
+  "units": [
+    {
+      "path": "context_engineering_notebook.ipynb#cell-3",
+      "imports": [
+        "getpass",
+        "os"
+      ],
+      "environment": [
+        "OPENAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "getpass.getpass"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-6",
+      "imports": [
+        "pixeltable"
+      ],
+      "environment": [],
+      "models": [
+        "intfloat/e5-large-v2"
+      ],
+      "symbols": [],
+      "calls": [
+        "DocumentSplitter.create",
+        "documents_chunks.add_embedding_index",
+        "pxt.create_dir",
+        "pxt.create_table",
+        "pxt.create_view",
+        "pxt.drop_dir",
+        "sentence_transformer.using"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-8",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "documents_t.insert",
+        "pxt.get_table"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "documents_chunks.collect"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-11",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "find_documents",
+          "line": 2,
+          "kind": "FunctionDef",
+          "doc": "Function to return top five chunks from financial documents that are most similar to query, ranked by vector similarity for use of RAG."
+        }
+      ],
+      "calls": [
+        ".limit",
+        ".select",
+        "documents_chunks.order_by",
+        "documents_chunks.text.similarity"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-13",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "pxt.mcp_udfs"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-15",
+      "imports": [
+        "pixelagent"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Agent",
+        "pxt.tools"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-17",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "tools_agent.tool_call"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-18",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "tools_agent.tool_call"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-21",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "memory.collect",
+        "pxt.get_table"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-22",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".collect",
+        "memory.select",
+        "print",
+        "pxt.get_table",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-24",
+      "imports": [
+        "pixeltable"
+      ],
+      "environment": [],
+      "models": [
+        "intfloat/e5-large-v2"
+      ],
+      "symbols": [],
+      "calls": [
+        "huggingface.sentence_transformer",
+        "memory.add_computed_column",
+        "memory.add_embedding_index",
+        "pxt.get_table",
+        "pxtf.string.format"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-25",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "memory.collect",
+        "pxt.get_table"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-27",
+      "imports": [
+        "pathlib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Path",
+        "memory.collect",
+        "memory.select",
+        "pxt.get_table",
+        "pxt.io.export_lancedb"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-28",
+      "imports": [
+        "lancedb"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".to_pandas",
+        "db.open_table",
+        "lancedb.connect"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-30",
+      "imports": [
+        "lancedb",
+        "numpy",
+        "pandas",
+        "sentence_transformers"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "search_memory",
+          "line": 6,
+          "kind": "FunctionDef",
+          "doc": "Top-k search over LanceDB and return cosine similarity scores."
+        },
+        {
+          "name": "_cos",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".astype",
+        ".limit",
+        ".to_pandas",
+        "SentenceTransformer",
+        "_cos",
+        "db.open_table",
+        "df.iterrows",
+        "df.sort_values",
+        "float",
+        "hasattr",
+        "lancedb.connect",
+        "model.encode",
+        "np.asarray",
+        "np.dot",
+        "np.linalg.norm",
+        "tbl.search"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-31",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "search_memory"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-34",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-35",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "tools_agent.tool_call"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-36",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".collect",
+        "memory.select",
+        "pxt.get_table",
+        "zip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-37",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "search_memory"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-38",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-40",
+      "imports": [
+        "pixelagent"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Agent"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-41",
+      "imports": [
+        "tiktoken"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "count_tokens",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "within_budget",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "_enc.encode",
+        "count_tokens",
+        "len",
+        "tiktoken.get_encoding"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-42",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "maybe_summarize_block",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": "If `text` > max_tokens, compress to ~target_tokens (or ~max_tokens//2 if not given)."
+        }
+      ],
+      "calls": [
+        ".message.content.strip",
+        ".strip",
+        "max",
+        "str",
+        "summarizer_agent.chat",
+        "within_budget"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-43",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "build_context_prompt_with_summarization",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".strip",
+        "maybe_summarize_block"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-44",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "build_context_prompt_with_summarization"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-46",
+      "imports": [
+        "pixelagent"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Agent"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "context_engineering_notebook.ipynb#cell-47",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "response_agent.chat"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "context_engineering_notebook.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "getpass",
+    "lancedb",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "pixelagent",
+    "pixeltable",
+    "sentence_transformers",
+    "tiktoken"
+  ],
+  "models": [
+    "intfloat/e5-large-v2"
+  ],
+  "entries": [
+    {
+      "path": "context_engineering_notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

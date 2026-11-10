@@ -1,18 +1,18 @@
 # Work checklist
 
-- [ ] Pin upstream revision and reconcile every project path.
+- [x] Pin upstream revision and reconcile every project path.
   - Acceptance: tree and README entries have inclusion/exclusion/missing reasons.
   - Verify: inventory coverage test.
-- [ ] Import independent project folders with MIT attribution and cleared notebooks.
+- [x] Import independent project folders with MIT attribution and cleared notebooks.
   - Acceptance: source hashes and intentional transformations are recorded.
   - Verify: source-integrity and notebook-output checks.
-- [ ] Add source-specific reverse engineering and learning documents.
+- [x] Add source-specific reverse engineering and learning documents.
   - Acceptance: every included project has architecture, experiments, evaluation and deployment guidance.
   - Verify: documentation and metadata validation.
-- [ ] Implement tested improvements and headless local tooling.
+- [x] Implement tested improvements and headless local tooling.
   - Acceptance: useful offline commands; credential-free checks; bounded execution and path validation.
   - Verify: unit tests and actual CLI checks.
-- [ ] Review, validate the entire collection, and commit on main.
+- [x] Review, validate the entire collection, and commit on main.
   - Acceptance: no accidental credentials; recorded validation results; clean working tree.
   - Verify: tests, catalog coverage, syntax report and git status.
 

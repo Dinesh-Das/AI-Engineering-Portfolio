@@ -1,0 +1,220 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "gc",
+        "llama_index",
+        "os",
+        "pandas",
+        "streamlit",
+        "tempfile",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-large-en-v1.5",
+        "llama3.2"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 30,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_excel",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "DoclingReader",
+        "HuggingFaceEmbedding",
+        "MarkdownNodeParser",
+        "Ollama",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "display_excel",
+        "f.write",
+        "gc.collect",
+        "index.as_query_engine",
+        "load_llm",
+        "loader.load_data",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.exists",
+        "os.path.join",
+        "pd.read_excel",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.dataframe",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.write",
+        "tempfile.TemporaryDirectory",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "app.py",
+          "line": 76,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "rag_excel.py",
+      "imports": [
+        "gc",
+        "llama_index",
+        "os",
+        "pandas",
+        "streamlit",
+        "tempfile",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-large-en-v1.5",
+        "qwen3"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 30,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_excel",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "DoclingReader",
+        "HuggingFaceEmbedding",
+        "MarkdownNodeParser",
+        "Ollama",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "display_excel",
+        "f.write",
+        "gc.collect",
+        "index.as_query_engine",
+        "load_llm",
+        "loader.load_data",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.exists",
+        "os.path.join",
+        "pd.read_excel",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.dataframe",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.write",
+        "tempfile.TemporaryDirectory",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "rag_excel.py",
+          "line": 76,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": true,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "gc",
+    "llama_index",
+    "os",
+    "pandas",
+    "streamlit",
+    "tempfile",
+    "uuid"
+  ],
+  "models": [
+    "BAAI/bge-large-en-v1.5",
+    "llama3.2",
+    "qwen3"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "app.py",
+      "line": 76,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    },
+    {
+      "rule": "trust_remote_code",
+      "path": "rag_excel.py",
+      "line": 76,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

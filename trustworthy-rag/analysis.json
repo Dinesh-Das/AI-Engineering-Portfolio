@@ -1,0 +1,447 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "IPython",
+        "base64",
+        "gc",
+        "llama_index",
+        "llama_parse",
+        "os",
+        "random",
+        "streamlit",
+        "tempfile",
+        "time",
+        "utils",
+        "uuid"
+      ],
+      "environment": [
+        "CLEANLAB_API_KEY"
+      ],
+      "models": [
+        "BAAI/bge-large-en-v1.5"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_pdf",
+          "line": 49,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        "CleanlabTLM",
+        "HuggingFaceEmbedding",
+        "LlamaParse",
+        "PromptTemplate",
+        "VectorStoreIndex.from_documents",
+        "base64.b64encode",
+        "display_pdf",
+        "f.write",
+        "file.read",
+        "gc.collect",
+        "index.as_query_engine",
+        "load_llm",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.join",
+        "outputs_with_trustworthiness",
+        "parser.load_data",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "reset_chat",
+        "response_str.split",
+        "setup_trustworthiness_handler",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.write",
+        "str",
+        "tempfile.TemporaryDirectory",
+        "time.sleep",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "app.py",
+          "line": 93,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "main.ipynb#cell-1",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-3",
+      "imports": [
+        "dotenv",
+        "llama_index",
+        "os"
+      ],
+      "environment": [
+        "CLEANLAB_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "CleanlabTLM",
+        "load_dotenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-4",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "llm.complete",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-6",
+      "imports": [
+        "llama_index",
+        "utils"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-7",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "BAAI/bge-small-en-v1.5"
+      ],
+      "symbols": [],
+      "calls": [
+        "HuggingFaceEmbedding"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-8",
+      "imports": [
+        "llama_index",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "GetTrustworthinessScoreAndReasoning",
+          "line": 8,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "display_response",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "class_name",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": "Class name."
+        },
+        {
+          "name": "handle",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "GetTrustworthinessScoreAndReasoning",
+        "get_dispatcher",
+        "isinstance",
+        "print",
+        "root_dispatcher.add_event_handler",
+        "round",
+        "self.events.append"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-10",
+      "imports": [
+        "llama_parse"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".load_data",
+        "LlamaParse"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-11",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "VectorStoreIndex.from_documents"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-12",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "index.as_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-13",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "print",
+        "query_engine.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-14",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "display_response"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "main.ipynb#cell-15",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "utils.py",
+      "imports": [
+        "llama_index",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "GetTrustworthinessScoreAndReasoning",
+          "line": 8,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "setup_trustworthiness_handler",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": "Initialize and register the trustworthiness event handler."
+        },
+        {
+          "name": "display_response",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": "Display the response along with trustworthiness information."
+        },
+        {
+          "name": "outputs_with_trustworthiness",
+          "line": 46,
+          "kind": "FunctionDef",
+          "doc": "Display the response along with trustworthiness information."
+        },
+        {
+          "name": "class_name",
+          "line": 14,
+          "kind": "FunctionDef",
+          "doc": "Class name."
+        },
+        {
+          "name": "handle",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "GetTrustworthinessScoreAndReasoning",
+        "get_dispatcher",
+        "isinstance",
+        "print",
+        "root_dispatcher.add_event_handler",
+        "round",
+        "self.events.append"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "main.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "CLEANLAB_API_KEY",
+    "LLAMA_CLOUD_API_KEY"
+  ],
+  "imports": [
+    "IPython",
+    "base64",
+    "dotenv",
+    "gc",
+    "llama_index",
+    "llama_parse",
+    "os",
+    "random",
+    "streamlit",
+    "tempfile",
+    "time",
+    "typing",
+    "utils",
+    "uuid"
+  ],
+  "models": [
+    "BAAI/bge-large-en-v1.5",
+    "BAAI/bge-small-en-v1.5"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "main.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "app.py",
+      "line": 93,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

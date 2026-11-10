@@ -54,10 +54,17 @@ def python_cell(source: str) -> tuple[str, bool]:
         return '', True
     special = False
     lines = []
+    continuation = False
     for line in source.splitlines():
+        if continuation:
+            continuation = line.rstrip().endswith('\\')
+            lines.append('')
+            continue
         if line.lstrip().startswith(('%', '!')):
-            lines.append('# notebook magic omitted for syntax inspection')
+            indent = line[:len(line) - len(line.lstrip())]
+            lines.append(indent + 'pass # notebook magic omitted for syntax inspection')
             special = True
+            continuation = line.rstrip().endswith('\\')
         else:
             lines.append(line)
     return '\n'.join(lines), special
@@ -139,7 +146,13 @@ def analyze_project(root: Path, tracked: list[str]) -> dict:
         if path.suffix == '.py':
             units.append(analyze_python(path.read_text(encoding='utf-8-sig'), relative))
         elif path.suffix == '.ipynb':
-            notebook = json.loads(path.read_text(encoding='utf-8-sig'))
+            try:
+                notebook = json.loads(path.read_text(encoding='utf-8-sig'))
+            except json.JSONDecodeError as error:
+                unit = analyze_python('', relative)
+                unit['syntax_error'] = {'line': error.lineno, 'message': 'Invalid notebook JSON: ' + error.msg}
+                units.append(unit)
+                continue
             notebooks.append(relative)
             for index, source in code_cells(notebook):
                 cleaned, special = python_cell(source)

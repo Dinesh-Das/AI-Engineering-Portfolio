@@ -1,0 +1,595 @@
+{
+  "id": "stagehand x mcp-use",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/stagehand%20x%20mcp-use",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "stagehand_mcp.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env-example",
+      "path": ".env-example",
+      "upstream_sha256": "0b5627e0e5aa32a450f3d9c31a0e7216b14cda944d1bc2ff9f37ceb36fe97579",
+      "local_sha256": "0b5627e0e5aa32a450f3d9c31a0e7216b14cda944d1bc2ff9f37ceb36fe97579",
+      "changes": []
+    },
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent_wrapper.py",
+      "path": "agent_wrapper.py",
+      "upstream_sha256": "b0476b56d39a3aeb368c553470ce3968dd22af9a620bd0206132d984502d6310",
+      "local_sha256": "b0476b56d39a3aeb368c553470ce3968dd22af9a620bd0206132d984502d6310",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "15394b80e7b3df00b51117f83c52b2c668b2dc1947edec79eb2ed00749ff6dca",
+      "local_sha256": "15394b80e7b3df00b51117f83c52b2c668b2dc1947edec79eb2ed00749ff6dca",
+      "changes": []
+    },
+    {
+      "upstream_path": "mcp-config.json-example",
+      "path": "mcp-config.json-example",
+      "upstream_sha256": "949b784cd8e81a21b900b4383cd1e4e72d9589ef11f7a4e0f92f0beb2e304a0c",
+      "local_sha256": "949b784cd8e81a21b900b4383cd1e4e72d9589ef11f7a4e0f92f0beb2e304a0c",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "f569691e5f0797a36ed30accb1e4ba428ecb82c97825669b90fbb60b7649c41f",
+      "local_sha256": "f569691e5f0797a36ed30accb1e4ba428ecb82c97825669b90fbb60b7649c41f",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "7bdc603a3c6a3d182f9b85da51fb5351a812e663de9b91e7312fb68b4736cea3",
+      "local_sha256": "7bdc603a3c6a3d182f9b85da51fb5351a812e663de9b91e7312fb68b4736cea3",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "565283d8de6a2bd22f33c87043cb8fbfd60f8fc2c41baeaa028776a35026bd59",
+      "local_sha256": "565283d8de6a2bd22f33c87043cb8fbfd60f8fc2c41baeaa028776a35026bd59",
+      "changes": []
+    },
+    {
+      "upstream_path": "stagehand_mcp.py",
+      "path": "stagehand_mcp.py",
+      "upstream_sha256": "52b13a2805342d1f1151bacc5ce091cdab82b5f6669244b0a160521a2e6dd8f9",
+      "local_sha256": "52b13a2805342d1f1151bacc5ce091cdab82b5f6669244b0a160521a2e6dd8f9",
+      "changes": []
+    },
+    {
+      "upstream_path": "stagehand_tool.py",
+      "path": "stagehand_tool.py",
+      "upstream_sha256": "d4bdf5b4564699abc1291e277cb67314e63ea7475c7011bf2eda5c89e200a6a7",
+      "local_sha256": "d4bdf5b4564699abc1291e277cb67314e63ea7475c7011bf2eda5c89e200a6a7",
+      "changes": []
+    },
+    {
+      "upstream_path": "styles.py",
+      "path": "styles.py",
+      "upstream_sha256": "bdb02177eeafc69d8644d8b3d65d6034776d8dcc01525885f8f214a7d9d739d5",
+      "local_sha256": "bdb02177eeafc69d8644d8b3d65d6034776d8dcc01525885f8f214a7d9d739d5",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "8d7c5667ed022e5fefbeb7f94a0439364a5226ff5a28cf164888cfad86b56528",
+      "local_sha256": "8d7c5667ed022e5fefbeb7f94a0439364a5226ff5a28cf164888cfad86b56528",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/mcp-use.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/stagehand.png",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "agent_wrapper.py",
+        "imports": [
+          "asyncio",
+          "inspect",
+          "json",
+          "mcp_use",
+          "streamlit",
+          "time",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ToolCallTracker",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": "Tracks tool calls and provides updates for the UI."
+          },
+          {
+            "name": "StreamingMCPAgent",
+            "line": 62,
+            "kind": "ClassDef",
+            "doc": "Wrapper around MCPAgent to provide streaming tool updates."
+          },
+          {
+            "name": "create_streaming_agent",
+            "line": 153,
+            "kind": "FunctionDef",
+            "doc": "Create a streaming wrapper for the given MCPAgent."
+          },
+          {
+            "name": "__init__",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "start_tool_call",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": "Start tracking a new tool call."
+          },
+          {
+            "name": "complete_tool_call",
+            "line": 33,
+            "kind": "FunctionDef",
+            "doc": "Complete a tool call with result or error."
+          },
+          {
+            "name": "get_current_tools",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": "Get currently executing tools."
+          },
+          {
+            "name": "get_completed_tools",
+            "line": 52,
+            "kind": "FunctionDef",
+            "doc": "Get completed tools for current step."
+          },
+          {
+            "name": "next_step",
+            "line": 56,
+            "kind": "FunctionDef",
+            "doc": "Move to next step, clear current tools."
+          },
+          {
+            "name": "__init__",
+            "line": 65,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_patch_agent",
+            "line": 70,
+            "kind": "FunctionDef",
+            "doc": "Patch the agent to intercept tool calls."
+          },
+          {
+            "name": "run_with_streaming",
+            "line": 81,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run agent with streaming updates to UI containers."
+          },
+          {
+            "name": "_run_with_monitoring",
+            "line": 96,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run agent with real-time monitoring."
+          },
+          {
+            "name": "_show_tool_discovery_phase",
+            "line": 116,
+            "kind": "AsyncFunctionDef",
+            "doc": "Show the tool discovery phase."
+          },
+          {
+            "name": "_monitor_execution",
+            "line": 121,
+            "kind": "AsyncFunctionDef",
+            "doc": "Monitor agent execution and show minimal tool execution logs."
+          },
+          {
+            "name": "patched_run",
+            "line": 75,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "StreamingMCPAgent",
+          "ToolCallTracker",
+          "asyncio.create_task",
+          "asyncio.sleep",
+          "enumerate",
+          "execution_log.text",
+          "len",
+          "log_text.replace",
+          "monitor_task.cancel",
+          "original_run",
+          "progress_container.error",
+          "progress_container.info",
+          "progress_container.success",
+          "self._monitor_execution",
+          "self._patch_agent",
+          "self._run_with_monitoring",
+          "self._show_tool_discovery_phase",
+          "self.agent.run",
+          "self.current_tools.append",
+          "self.current_tools.clear",
+          "self.tool_history.append",
+          "st.empty",
+          "str",
+          "time.time",
+          "tool_container.expander",
+          "tool_info.copy"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "app.py",
+        "imports": [
+          "agent_wrapper",
+          "asyncio",
+          "base64",
+          "dotenv",
+          "json",
+          "langchain_openai",
+          "mcp_use",
+          "os",
+          "streamlit",
+          "styles",
+          "time",
+          "warnings"
+        ],
+        "environment": [
+          "DEBUG_MCP"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "_activate",
+            "line": 42,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_activate",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "handle_clear",
+            "line": 79,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_file_b64",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_render_hero",
+            "line": 86,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_looks_transient",
+            "line": 103,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "run_agent",
+            "line": 109,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "run_streaming_agent",
+            "line": 115,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run agent with streaming tool updates."
+          }
+        ],
+        "calls": [
+          ".decode",
+          "ChatOpenAI",
+          "MCPAgent",
+          "MCPClient.from_dict",
+          "_activate",
+          "_file_b64",
+          "_render_hero",
+          "agent.run",
+          "asyncio.run",
+          "base64.b64encode",
+          "create_streaming_agent",
+          "err_msg.lower",
+          "f.read",
+          "inject_css",
+          "json.loads",
+          "load_dotenv",
+          "mcp_use.set_debug",
+          "open",
+          "os.getenv",
+          "os.path.join",
+          "progress_container.error",
+          "result_container.markdown",
+          "run_streaming_agent",
+          "st.button",
+          "st.caption",
+          "st.chat_input",
+          "st.chat_message",
+          "st.container",
+          "st.divider",
+          "st.empty",
+          "st.markdown",
+          "st.session_state.messages.append",
+          "st.session_state.setdefault",
+          "st.session_state.update",
+          "st.set_page_config",
+          "st.sidebar.error",
+          "st.sidebar.success",
+          "st.success",
+          "st.text_area",
+          "str",
+          "streaming_agent.run_with_streaming",
+          "warnings.filterwarnings"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "asyncio",
+          "langchain_openai",
+          "mcp_use"
+        ],
+        "environment": [],
+        "models": [
+          "gpt-4o-mini"
+        ],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 5,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ChatOpenAI",
+          "MCPAgent",
+          "MCPClient.from_config_file",
+          "agent.run",
+          "asyncio.run",
+          "client.close_all_sessions",
+          "client.create_all_sessions",
+          "client.get_server_names",
+          "client.get_session",
+          "getattr",
+          "main",
+          "print",
+          "session.list_tools",
+          "set",
+          "sorted",
+          "str",
+          "tools.add"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "stagehand_mcp.py",
+        "imports": [
+          "mcp",
+          "stagehand_tool"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "browser_automation_tool",
+            "line": 10,
+            "kind": "FunctionDef",
+            "doc": "Perform browser automation."
+          },
+          {
+            "name": "add_numbers",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": "Add two numbers together."
+          }
+        ],
+        "calls": [
+          "FastMCP",
+          "browser_automation",
+          "mcp.run",
+          "mcp.tool",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "stagehand_tool.py",
+        "imports": [
+          "asyncio",
+          "nest_asyncio",
+          "os",
+          "stagehand"
+        ],
+        "environment": [
+          "MODEL_API_KEY"
+        ],
+        "models": [
+          "computer-use-preview",
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "browser_automation",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": "Performs automated browser tasks using AI agent capabilities."
+          },
+          {
+            "name": "_execute_automation",
+            "line": 14,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Stagehand",
+          "StagehandConfig",
+          "_execute_automation",
+          "agent.execute",
+          "asyncio.run",
+          "nest_asyncio.apply",
+          "os.getenv",
+          "stagehand.agent",
+          "stagehand.close",
+          "stagehand.init",
+          "stagehand.page.goto"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "styles.py",
+        "imports": [
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "inject_css",
+            "line": 5,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "st.markdown"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "BROWSERBASE_API_KEY",
+      "BROWSERBASE_PROJECT_ID",
+      "DEBUG_MCP",
+      "MODEL_API_KEY"
+    ],
+    "imports": [
+      "agent_wrapper",
+      "asyncio",
+      "base64",
+      "dotenv",
+      "inspect",
+      "json",
+      "langchain_openai",
+      "mcp",
+      "mcp_use",
+      "nest_asyncio",
+      "os",
+      "stagehand",
+      "stagehand_tool",
+      "streamlit",
+      "styles",
+      "time",
+      "typing",
+      "warnings"
+    ],
+    "models": [
+      "computer-use-preview",
+      "gpt-4o",
+      "gpt-4o-mini"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "stagehand_mcp.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 6
+  },
+  "category": "agents",
+  "purpose": "Connect a local agent to browser-automation tools through MCP."
+}

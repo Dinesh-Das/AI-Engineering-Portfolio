@@ -1,0 +1,1992 @@
+{
+  "id": "open-agent-builder",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/open-agent-builder",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": ".eslintrc.json",
+      "path": ".eslintrc.json",
+      "upstream_sha256": "534970d978bd52189aa04b21dd618fc2e2efb2ec42effc1021ed51f673079d32",
+      "local_sha256": "534970d978bd52189aa04b21dd618fc2e2efb2ec42effc1021ed51f673079d32",
+      "changes": []
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "5cf1b525e5937f2424cc518d2d374b93280b282e5bebf6c5bad0f08546c57e5a",
+      "local_sha256": "5cf1b525e5937f2424cc518d2d374b93280b282e5bebf6c5bad0f08546c57e5a",
+      "changes": []
+    },
+    {
+      "upstream_path": ".npmrc",
+      "path": ".npmrc",
+      "upstream_sha256": "2d2a164460fb5bcd1d8e4b4bab8dfd4b05680863a3f3af56aa4b2b016ef843cc",
+      "local_sha256": "2d2a164460fb5bcd1d8e4b4bab8dfd4b05680863a3f3af56aa4b2b016ef843cc",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/approval/[approvalId]/resume/route.ts",
+      "path": "app/api/approval/[approvalId]/resume/route.ts",
+      "upstream_sha256": "0cc3fa2e962dbbfa4bb762d1521560dbd7ee82149037697233a17a48b0798c41",
+      "local_sha256": "0cc3fa2e962dbbfa4bb762d1521560dbd7ee82149037697233a17a48b0798c41",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/approval/[approvalId]/route.ts",
+      "path": "app/api/approval/[approvalId]/route.ts",
+      "upstream_sha256": "34ca4f3419220797e1e74990922c66480b7938d0b80bb8ae1c0fe434d55ecabb",
+      "local_sha256": "34ca4f3419220797e1e74990922c66480b7938d0b80bb8ae1c0fe434d55ecabb",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/approval/route.ts",
+      "path": "app/api/approval/route.ts",
+      "upstream_sha256": "ad1729faacc7eacf01f6098ba8ea262ff9fa7c664cbc2b11aa8dcab243489d0d",
+      "local_sha256": "ad1729faacc7eacf01f6098ba8ea262ff9fa7c664cbc2b11aa8dcab243489d0d",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/config/route.ts",
+      "path": "app/api/config/route.ts",
+      "upstream_sha256": "0b29f9ebdeef404e00334dc4d3c9720d9273afa8e72019f2ddb295030f39cd64",
+      "local_sha256": "0b29f9ebdeef404e00334dc4d3c9720d9273afa8e72019f2ddb295030f39cd64",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/execute-agent/route.ts",
+      "path": "app/api/execute-agent/route.ts",
+      "upstream_sha256": "3cd804204176d11ea293c71ca0e618f5d796f2588c07c86a6c184dcd4c143014",
+      "local_sha256": "3cd804204176d11ea293c71ca0e618f5d796f2588c07c86a6c184dcd4c143014",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/execute-extract/route.ts",
+      "path": "app/api/execute-extract/route.ts",
+      "upstream_sha256": "a8b21525e1072ec39f68e257103a80361ff29e0532c6f54f664fbc2e45a94c03",
+      "local_sha256": "a8b21525e1072ec39f68e257103a80361ff29e0532c6f54f664fbc2e45a94c03",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/execute-guardrails/route.ts",
+      "path": "app/api/execute-guardrails/route.ts",
+      "upstream_sha256": "930ca7d2426423c52f41a0fd6cfb68258739eaa28f82749bf69cb9f8b37e4951",
+      "local_sha256": "930ca7d2426423c52f41a0fd6cfb68258739eaa28f82749bf69cb9f8b37e4951",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/execute-mcp/route.ts",
+      "path": "app/api/execute-mcp/route.ts",
+      "upstream_sha256": "ed8da8b19e66f99b39c52346a5256ed1156b4659e1c571f9a079f5001a9e49a3",
+      "local_sha256": "ed8da8b19e66f99b39c52346a5256ed1156b4659e1c571f9a079f5001a9e49a3",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/mcp/registry/route.ts",
+      "path": "app/api/mcp/registry/route.ts",
+      "upstream_sha256": "ffd4e03c654513d827687504719e39c22b9071622a936de29618ca4714c531b5",
+      "local_sha256": "ffd4e03c654513d827687504719e39c22b9071622a936de29618ca4714c531b5",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/templates/seed/route.ts",
+      "path": "app/api/templates/seed/route.ts",
+      "upstream_sha256": "285bb28687b669d518d2a4cf08f8de33ffa98d4419686d14a5a50a6686f76e79",
+      "local_sha256": "285bb28687b669d518d2a4cf08f8de33ffa98d4419686d14a5a50a6686f76e79",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/templates/update/route.ts",
+      "path": "app/api/templates/update/route.ts",
+      "upstream_sha256": "2d9363dfcf88bf5244f303fb35f05d629f48d9af34802f002fbeaf4c74f10463",
+      "local_sha256": "2d9363dfcf88bf5244f303fb35f05d629f48d9af34802f002fbeaf4c74f10463",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/test-mcp-connection/route.ts",
+      "path": "app/api/test-mcp-connection/route.ts",
+      "upstream_sha256": "b5b636ecf310988195e8c0853b2be95ce2e821e99a626d845623096837afc42a",
+      "local_sha256": "b5b636ecf310988195e8c0853b2be95ce2e821e99a626d845623096837afc42a",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflow/execute/route.ts",
+      "path": "app/api/workflow/execute/route.ts",
+      "upstream_sha256": "da6c078813d8b85bd783b4c75466113027857e5083a947499202fdf5fd450873",
+      "local_sha256": "da6c078813d8b85bd783b4c75466113027857e5083a947499202fdf5fd450873",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/execute/route.ts",
+      "path": "app/api/workflows/[workflowId]/execute/route.ts",
+      "upstream_sha256": "528d3c88d36100168519f5b146f3b53fb413f019c154807d74882ae80a591357",
+      "local_sha256": "528d3c88d36100168519f5b146f3b53fb413f019c154807d74882ae80a591357",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/execute-langgraph/route.ts",
+      "path": "app/api/workflows/[workflowId]/execute-langgraph/route.ts",
+      "upstream_sha256": "7c32ffd44a3203ef94aa6d4b01a1317e8923775bc3362125ef15cb922b8b71a6",
+      "local_sha256": "7c32ffd44a3203ef94aa6d4b01a1317e8923775bc3362125ef15cb922b8b71a6",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/execute-stream/route.ts",
+      "path": "app/api/workflows/[workflowId]/execute-stream/route.ts",
+      "upstream_sha256": "92f74b30afd3134655f63e575f6795dc3736944f52b266746261ce0c3c0cf151",
+      "local_sha256": "92f74b30afd3134655f63e575f6795dc3736944f52b266746261ce0c3c0cf151",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/export-code/route.ts",
+      "path": "app/api/workflows/[workflowId]/export-code/route.ts",
+      "upstream_sha256": "db92a7757521d20b5279252f3f8af347de537185257cec549960388a87e33ba9",
+      "local_sha256": "db92a7757521d20b5279252f3f8af347de537185257cec549960388a87e33ba9",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/export-langgraph/route.ts",
+      "path": "app/api/workflows/[workflowId]/export-langgraph/route.ts",
+      "upstream_sha256": "dc1c50d1c06d756ffe2f6a32d652e5be8662790b775a0cf19dae71f4896c5cfc",
+      "local_sha256": "dc1c50d1c06d756ffe2f6a32d652e5be8662790b775a0cf19dae71f4896c5cfc",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/resume/route.ts",
+      "path": "app/api/workflows/[workflowId]/resume/route.ts",
+      "upstream_sha256": "cd7ef48059f51f7440c41a2649d90ebf568dbf061fc2687961c8ac034d5fae56",
+      "local_sha256": "cd7ef48059f51f7440c41a2649d90ebf568dbf061fc2687961c8ac034d5fae56",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/[workflowId]/route.ts",
+      "path": "app/api/workflows/[workflowId]/route.ts",
+      "upstream_sha256": "3b4229af668a1533f12e1d6833871558899b9a9509602a3a20ae004444576f3d",
+      "local_sha256": "3b4229af668a1533f12e1d6833871558899b9a9509602a3a20ae004444576f3d",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/cleanup/route.ts",
+      "path": "app/api/workflows/cleanup/route.ts",
+      "upstream_sha256": "51b28905fef7551e47dc4823743c32efe569b1f66d637479a283822f34a609b0",
+      "local_sha256": "51b28905fef7551e47dc4823743c32efe569b1f66d637479a283822f34a609b0",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/import-langgraph/route.ts",
+      "path": "app/api/workflows/import-langgraph/route.ts",
+      "upstream_sha256": "9d59e6c4c15bf595c93d0813b931ff5a5c171bd662973b3e231c6b8112632b56",
+      "local_sha256": "9d59e6c4c15bf595c93d0813b931ff5a5c171bd662973b3e231c6b8112632b56",
+      "changes": []
+    },
+    {
+      "upstream_path": "app/api/workflows/route.ts",
+      "path": "app/api/workflows/route.ts",
+      "upstream_sha256": "480fb2d5c34844e778f4e1bc7850cfa3f89f34618a30b7ce719d18a9e578195f",
+      "local_sha256": "480fb2d5c34844e778f4e1bc7850cfa3f89f34618a30b7ce719d18a9e578195f",
+      "changes": []
+    },
+    {
+      "upstream_path": "atoms/sheets.ts",
+      "path": "atoms/sheets.ts",
+      "upstream_sha256": "8805b4cad182174673abf90379d16d7f25f324c6fedde3c8b9871399267ab881",
+      "local_sha256": "8805b4cad182174673abf90379d16d7f25f324c6fedde3c8b9871399267ab881",
+      "changes": []
+    },
+    {
+      "upstream_path": "colors.json",
+      "path": "colors.json",
+      "upstream_sha256": "c57e115c24ec4189aff5d402429b43f529c27e10b09ba4a374053aec3e0e1f90",
+      "local_sha256": "c57e115c24ec4189aff5d402429b43f529c27e10b09ba4a374053aec3e0e1f90",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/_generated/api.d.ts",
+      "path": "convex/_generated/api.d.ts",
+      "upstream_sha256": "ca9ad3917dc5aa545fcaa59cba805b2195a3df96bd5e1e2dc2c35bb2c368da3f",
+      "local_sha256": "ca9ad3917dc5aa545fcaa59cba805b2195a3df96bd5e1e2dc2c35bb2c368da3f",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/_generated/api.js",
+      "path": "convex/_generated/api.js",
+      "upstream_sha256": "fbe8bcf881ddae62c14ae6e6fe286cae256714b761dfa0682958e7fb0e4d8940",
+      "local_sha256": "fbe8bcf881ddae62c14ae6e6fe286cae256714b761dfa0682958e7fb0e4d8940",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/_generated/dataModel.d.ts",
+      "path": "convex/_generated/dataModel.d.ts",
+      "upstream_sha256": "2aba7cbfa392427da414625f2a4f2fdc7681fff9ee14411e7b65e0dbd0a6502a",
+      "local_sha256": "2aba7cbfa392427da414625f2a4f2fdc7681fff9ee14411e7b65e0dbd0a6502a",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/_generated/server.d.ts",
+      "path": "convex/_generated/server.d.ts",
+      "upstream_sha256": "37aa39ad62cb883ad2f32009f375f9ae78c9f4b4b30efdd6c36ff473e528d809",
+      "local_sha256": "37aa39ad62cb883ad2f32009f375f9ae78c9f4b4b30efdd6c36ff473e528d809",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/_generated/server.js",
+      "path": "convex/_generated/server.js",
+      "upstream_sha256": "874700c5eba0b7060858035dfc185dd76489c5b3920c160f49f748daf86e6802",
+      "local_sha256": "874700c5eba0b7060858035dfc185dd76489c5b3920c160f49f748daf86e6802",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/admin.ts",
+      "path": "convex/admin.ts",
+      "upstream_sha256": "7cd8982e498d518862123c2892339a8bef092cc2d9b9babebb85b142b70e5258",
+      "local_sha256": "7cd8982e498d518862123c2892339a8bef092cc2d9b9babebb85b142b70e5258",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/apiKeys.ts",
+      "path": "convex/apiKeys.ts",
+      "upstream_sha256": "395f021c51263e1465cba38fae5a22129a2758bc2731228ea61642d15fda0e99",
+      "local_sha256": "395f021c51263e1465cba38fae5a22129a2758bc2731228ea61642d15fda0e99",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/approvals.ts",
+      "path": "convex/approvals.ts",
+      "upstream_sha256": "66a3458970d4d19601c70a298455e168f30cb390bb7a8aa326c943c20cdf8ed7",
+      "local_sha256": "66a3458970d4d19601c70a298455e168f30cb390bb7a8aa326c943c20cdf8ed7",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/auth.config.ts",
+      "path": "convex/auth.config.ts",
+      "upstream_sha256": "6698c401897bab47508421686d80e3bc959471b46661bd23a6237ab828037520",
+      "local_sha256": "6698c401897bab47508421686d80e3bc959471b46661bd23a6237ab828037520",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/executions.ts",
+      "path": "convex/executions.ts",
+      "upstream_sha256": "ddfc592db29f6a02258d798ce1c76f951624adcc73f476a67496e961b7f2820a",
+      "local_sha256": "ddfc592db29f6a02258d798ce1c76f951624adcc73f476a67496e961b7f2820a",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/mcpServers.ts",
+      "path": "convex/mcpServers.ts",
+      "upstream_sha256": "59c38d4f77a626ad72bb45acfd58c7f33b5d64d52d12c34e122d7a1923300897",
+      "local_sha256": "59c38d4f77a626ad72bb45acfd58c7f33b5d64d52d12c34e122d7a1923300897",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/README.md",
+      "path": "convex/README.md",
+      "upstream_sha256": "3d52e02fc80ca0505c6d8b87dfc77e723f9a249776bc45c90e29bb4406122424",
+      "local_sha256": "3d52e02fc80ca0505c6d8b87dfc77e723f9a249776bc45c90e29bb4406122424",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/schema.ts",
+      "path": "convex/schema.ts",
+      "upstream_sha256": "a9ba1792c01e34b5c67425cfa810a1e51f1ef4b67c2ddb2e61c11043cfbea1c9",
+      "local_sha256": "a9ba1792c01e34b5c67425cfa810a1e51f1ef4b67c2ddb2e61c11043cfbea1c9",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/templates.ts",
+      "path": "convex/templates.ts",
+      "upstream_sha256": "6d6d3f69f2921e633eebf41375fb8a17f315aa57b1969d6b6ca0ba18d881d60a",
+      "local_sha256": "6d6d3f69f2921e633eebf41375fb8a17f315aa57b1969d6b6ca0ba18d881d60a",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/tsconfig.json",
+      "path": "convex/tsconfig.json",
+      "upstream_sha256": "425856d9cabe39ee2026e99ff6e0bd3ad0afc5e58751d91dbe1dd3e5e7c0c9a5",
+      "local_sha256": "425856d9cabe39ee2026e99ff6e0bd3ad0afc5e58751d91dbe1dd3e5e7c0c9a5",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/userLLMKeys.ts",
+      "path": "convex/userLLMKeys.ts",
+      "upstream_sha256": "e47a6a9086b371b97d2388a29becd19bddded78177c83db740cf708ce3ff7608",
+      "local_sha256": "e47a6a9086b371b97d2388a29becd19bddded78177c83db740cf708ce3ff7608",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/userMCPs.ts",
+      "path": "convex/userMCPs.ts",
+      "upstream_sha256": "4cfd443bbfb643eacc3d7327b015bd140990e0d85e871aae979d7a623671ffae",
+      "local_sha256": "4cfd443bbfb643eacc3d7327b015bd140990e0d85e871aae979d7a623671ffae",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex/workflows.ts",
+      "path": "convex/workflows.ts",
+      "upstream_sha256": "57fe29f98d3e5c3dfc82735bfeaac03c7eeca6cbd3e495f69986e9110dac9094",
+      "local_sha256": "57fe29f98d3e5c3dfc82735bfeaac03c7eeca6cbd3e495f69986e9110dac9094",
+      "changes": []
+    },
+    {
+      "upstream_path": "convex.json",
+      "path": "convex.json",
+      "upstream_sha256": "5f3559daefbe685630c17f86d08c579ff0f82e9db670db61c0c5436885074aa6",
+      "local_sha256": "5f3559daefbe685630c17f86d08c579ff0f82e9db670db61c0c5436885074aa6",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/api/auth.ts",
+      "path": "lib/api/auth.ts",
+      "upstream_sha256": "16f6a702da5ccb2c948b9b096ce96e97c1439d93490a03210722d759475fb4b3",
+      "local_sha256": "16f6a702da5ccb2c948b9b096ce96e97c1439d93490a03210722d759475fb4b3",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/api/config.ts",
+      "path": "lib/api/config.ts",
+      "upstream_sha256": "930ab1fc1da2107305a9b8c619098adb38e1e3e9850bc14c1ee61a1d1a11fcdc",
+      "local_sha256": "930ab1fc1da2107305a9b8c619098adb38e1e3e9850bc14c1ee61a1d1a11fcdc",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/api/llm-keys.ts",
+      "path": "lib/api/llm-keys.ts",
+      "upstream_sha256": "98b86e636b122a7f3d099f055ba9e83cf2d175de0dd298295a8ebf2e377b14a7",
+      "local_sha256": "98b86e636b122a7f3d099f055ba9e83cf2d175de0dd298295a8ebf2e377b14a7",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/api/models.ts",
+      "path": "lib/api/models.ts",
+      "upstream_sha256": "82daaf6e592b98464290dcd0c59391a090f76a7321333350970c9a700e285814",
+      "local_sha256": "82daaf6e592b98464290dcd0c59391a090f76a7321333350970c9a700e285814",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/approval/approval-store.ts",
+      "path": "lib/approval/approval-store.ts",
+      "upstream_sha256": "94472c449f59c0a0248b6215bdc29c11fe12c39cb1c13910d5b066d32a6b61cc",
+      "local_sha256": "94472c449f59c0a0248b6215bdc29c11fe12c39cb1c13910d5b066d32a6b61cc",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/arcade/auth-store.ts",
+      "path": "lib/arcade/auth-store.ts",
+      "upstream_sha256": "c084fa01ef62a4524f501893c12c8b333c94b9bc175fa33a152efa7a679757bf",
+      "local_sha256": "c084fa01ef62a4524f501893c12c8b333c94b9bc175fa33a152efa7a679757bf",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/arcade/openai-tools.ts",
+      "path": "lib/arcade/openai-tools.ts",
+      "upstream_sha256": "c52ec7c536aec53ff0bacc022a0b68b26582fb8dce70f4811dd8bc742ca527b2",
+      "local_sha256": "c52ec7c536aec53ff0bacc022a0b68b26582fb8dce70f4811dd8bc742ca527b2",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/arcade/tools.ts",
+      "path": "lib/arcade/tools.ts",
+      "upstream_sha256": "582eee739d6c2631ff0022888a4be07a5bbe394b9b2246ae6ac497636833ef9f",
+      "local_sha256": "582eee739d6c2631ff0022888a4be07a5bbe394b9b2246ae6ac497636833ef9f",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/arcade/workflow-helpers.ts",
+      "path": "lib/arcade/workflow-helpers.ts",
+      "upstream_sha256": "f4a199fee650c97e3e2ceb0e888ecb325b7302da583c39933ebd1bf4b5569a63",
+      "local_sha256": "f4a199fee650c97e3e2ceb0e888ecb325b7302da583c39933ebd1bf4b5569a63",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/config/llm-config.ts",
+      "path": "lib/config/llm-config.ts",
+      "upstream_sha256": "0ba69520c23d90c0f32126f675e657a8d7a4c4ff21b673d24fb5bd4f2582c13b",
+      "local_sha256": "0ba69520c23d90c0f32126f675e657a8d7a4c4ff21b673d24fb5bd4f2582c13b",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/convex/client.ts",
+      "path": "lib/convex/client.ts",
+      "upstream_sha256": "836118eade40c63d8ecfde3833ee5e913439ba437805ee63a00dc43414a69f6b",
+      "local_sha256": "836118eade40c63d8ecfde3833ee5e913439ba437805ee63a00dc43414a69f6b",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/errors/index.ts",
+      "path": "lib/errors/index.ts",
+      "upstream_sha256": "dcb26bba79ebe24210aa5630cd4e4042c9df3735491b33d4de861c42ecc13053",
+      "local_sha256": "dcb26bba79ebe24210aa5630cd4e4042c9df3735491b33d4de861c42ecc13053",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/errors/WorkflowError.ts",
+      "path": "lib/errors/WorkflowError.ts",
+      "upstream_sha256": "ca9134e56f9efc2471d86527bf4d78054a1cf1c6b9663ecdc02c6bb3f7fea343",
+      "local_sha256": "ca9134e56f9efc2471d86527bf4d78054a1cf1c6b9663ecdc02c6bb3f7fea343",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/mcp/mcp-registry.ts",
+      "path": "lib/mcp/mcp-registry.ts",
+      "upstream_sha256": "2c5b5e197bf66850214065b99aa9121b9867abc2e235866c3fa576bbe3cde981",
+      "local_sha256": "2c5b5e197bf66850214065b99aa9121b9867abc2e235866c3fa576bbe3cde981",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/mcp/resolver.ts",
+      "path": "lib/mcp/resolver.ts",
+      "upstream_sha256": "fe879d56b9279b5dab71782df2f6c685e7b810113463247dd079491c1c48012b",
+      "local_sha256": "fe879d56b9279b5dab71782df2f6c685e7b810113463247dd079491c1c48012b",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/duplicate-detection.ts",
+      "path": "lib/workflow/duplicate-detection.ts",
+      "upstream_sha256": "a3c59cf9bcf9327f3da8ce307e5d56e624c07190f8670c1b2fd2712bb4e99e08",
+      "local_sha256": "a3c59cf9bcf9327f3da8ce307e5d56e624c07190f8670c1b2fd2712bb4e99e08",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/edge-cleanup.ts",
+      "path": "lib/workflow/edge-cleanup.ts",
+      "upstream_sha256": "2cdadc135323cc490f5a444038b9acd076e7320f09b80446c2f5cb156c8bf507",
+      "local_sha256": "2cdadc135323cc490f5a444038b9acd076e7320f09b80446c2f5cb156c8bf507",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/error-boundaries.ts",
+      "path": "lib/workflow/error-boundaries.ts",
+      "upstream_sha256": "88e6b9a71aa6cbd08a4a92b2dd5672f77b9d2a2453d192c97f8b32c96641e88e",
+      "local_sha256": "88e6b9a71aa6cbd08a4a92b2dd5672f77b9d2a2453d192c97f8b32c96641e88e",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/agent.ts",
+      "path": "lib/workflow/executors/agent.ts",
+      "upstream_sha256": "37ae031a615da887518e4e2c12a317a968307015c5dc5d95c4b7114336490e73",
+      "local_sha256": "37ae031a615da887518e4e2c12a317a968307015c5dc5d95c4b7114336490e73",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/arcade.ts",
+      "path": "lib/workflow/executors/arcade.ts",
+      "upstream_sha256": "440127e77ea401fdd0a541dc7e1e984fbb3cdb4ed82424f00f0bcaee1a15824c",
+      "local_sha256": "440127e77ea401fdd0a541dc7e1e984fbb3cdb4ed82424f00f0bcaee1a15824c",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/data.ts",
+      "path": "lib/workflow/executors/data.ts",
+      "upstream_sha256": "9cf5ccb0b4b74550d5d31eed77c557a06a2e40eb0409850d6225f84a3fe6c51c",
+      "local_sha256": "9cf5ccb0b4b74550d5d31eed77c557a06a2e40eb0409850d6225f84a3fe6c51c",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/extract.ts",
+      "path": "lib/workflow/executors/extract.ts",
+      "upstream_sha256": "b0d905b4e2e6ac13aa06931c73b112f0a244c18a98c37c863b7cab2e290f3c02",
+      "local_sha256": "b0d905b4e2e6ac13aa06931c73b112f0a244c18a98c37c863b7cab2e290f3c02",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/http.ts",
+      "path": "lib/workflow/executors/http.ts",
+      "upstream_sha256": "a96cb969c46412eaf01ce4b92fa1d620945289c719cefe2351fe150ec856e16a",
+      "local_sha256": "a96cb969c46412eaf01ce4b92fa1d620945289c719cefe2351fe150ec856e16a",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/logic.ts",
+      "path": "lib/workflow/executors/logic.ts",
+      "upstream_sha256": "9766f86fe1b0a3bc26b8f26bc1ce2566a9e626ffda6413a54b11ef2aaa27ddfb",
+      "local_sha256": "9766f86fe1b0a3bc26b8f26bc1ce2566a9e626ffda6413a54b11ef2aaa27ddfb",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/mcp.ts",
+      "path": "lib/workflow/executors/mcp.ts",
+      "upstream_sha256": "046d721a2b5c7793704fc96231393c5f93cfdd033f882ef923edbe3ba10f0a48",
+      "local_sha256": "046d721a2b5c7793704fc96231393c5f93cfdd033f882ef923edbe3ba10f0a48",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/executors/tools.ts",
+      "path": "lib/workflow/executors/tools.ts",
+      "upstream_sha256": "245036efd082b43d9875b034d6d5e6940488ac18f16eb37fe172f7cf528f7dbe",
+      "local_sha256": "245036efd082b43d9875b034d6d5e6940488ac18f16eb37fe172f7cf528f7dbe",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/langgraph.ts",
+      "path": "lib/workflow/langgraph.ts",
+      "upstream_sha256": "dde6a7decd6a46012985f7dbfd69ec7edb869426952cecc8bbb0e5d6f26a5914",
+      "local_sha256": "dde6a7decd6a46012985f7dbfd69ec7edb869426952cecc8bbb0e5d6f26a5914",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/mcp-registry.ts",
+      "path": "lib/workflow/mcp-registry.ts",
+      "upstream_sha256": "a8f0df539c8cd1c274b205b5599ffe836c39cda3cba459a50b0c120a21418798",
+      "local_sha256": "a8f0df539c8cd1c274b205b5599ffe836c39cda3cba459a50b0c120a21418798",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/storage.ts",
+      "path": "lib/workflow/storage.ts",
+      "upstream_sha256": "8a6e929873614854dc75a1034a7ffd34064daa2549c4bc10708b213acb4862a9",
+      "local_sha256": "8a6e929873614854dc75a1034a7ffd34064daa2549c4bc10708b213acb4862a9",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/templates/examples/01-simple-agent.ts",
+      "path": "lib/workflow/templates/examples/01-simple-agent.ts",
+      "upstream_sha256": "a9d2183bf5d6aff64f3ac98351df37dc5697ce6e22e8dbc50234fb328a6baf55",
+      "local_sha256": "a9d2183bf5d6aff64f3ac98351df37dc5697ce6e22e8dbc50234fb328a6baf55",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/templates/examples/index.ts",
+      "path": "lib/workflow/templates/examples/index.ts",
+      "upstream_sha256": "ddd7585e5cfa81f0077d56ce68f2aa0b1a041867b51fff72496ea92cb1cc9fb9",
+      "local_sha256": "ddd7585e5cfa81f0077d56ce68f2aa0b1a041867b51fff72496ea92cb1cc9fb9",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/types.ts",
+      "path": "lib/workflow/types.ts",
+      "upstream_sha256": "f5bdac5717416370d37e1e13242f20796050a52a3474221fcbc6058ca64a603f",
+      "local_sha256": "f5bdac5717416370d37e1e13242f20796050a52a3474221fcbc6058ca64a603f",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/validation.ts",
+      "path": "lib/workflow/validation.ts",
+      "upstream_sha256": "11ddfbee316ec4dd5615b63a2ee2404aba39d4a015876d46992fc56ddca212ff",
+      "local_sha256": "11ddfbee316ec4dd5615b63a2ee2404aba39d4a015876d46992fc56ddca212ff",
+      "changes": []
+    },
+    {
+      "upstream_path": "lib/workflow/variable-substitution.ts",
+      "path": "lib/workflow/variable-substitution.ts",
+      "upstream_sha256": "d9f700ba38230aa656ed2961c8ba912f2d3a9fca3976e8062e469794c45f8505",
+      "local_sha256": "d9f700ba38230aa656ed2961c8ba912f2d3a9fca3976e8062e469794c45f8505",
+      "changes": []
+    },
+    {
+      "upstream_path": "next-env.d.ts",
+      "path": "next-env.d.ts",
+      "upstream_sha256": "083e23c4c5e7761db151134ea1ef7896120c86c5888cdc8a861f534f7e86d6fd",
+      "local_sha256": "083e23c4c5e7761db151134ea1ef7896120c86c5888cdc8a861f534f7e86d6fd",
+      "changes": []
+    },
+    {
+      "upstream_path": "next.config.js",
+      "path": "next.config.js",
+      "upstream_sha256": "3f2c16da6ab9b3241d294cec3a3d19e3f8bc8012c5d39016c783bb95918c2436",
+      "local_sha256": "3f2c16da6ab9b3241d294cec3a3d19e3f8bc8012c5d39016c783bb95918c2436",
+      "changes": []
+    },
+    {
+      "upstream_path": "package-lock.json",
+      "path": "package-lock.json",
+      "upstream_sha256": "7d0b92745b0ca256f73af7035ea904986bbefa04be49fbc3b68373b441e58faf",
+      "local_sha256": "7d0b92745b0ca256f73af7035ea904986bbefa04be49fbc3b68373b441e58faf",
+      "changes": []
+    },
+    {
+      "upstream_path": "package.json",
+      "path": "package.json",
+      "upstream_sha256": "660f1622a4fd94ef98e53c782f2dc21dbca8976fa262f7c195c41593f398d22a",
+      "local_sha256": "660f1622a4fd94ef98e53c782f2dc21dbca8976fa262f7c195c41593f398d22a",
+      "changes": []
+    },
+    {
+      "upstream_path": "postcss.config.js",
+      "path": "postcss.config.js",
+      "upstream_sha256": "30e694b1ce52e7da3711410dcec7dbf357db5bc5f97efbdf7359e6dc26100207",
+      "local_sha256": "30e694b1ce52e7da3711410dcec7dbf357db5bc5f97efbdf7359e6dc26100207",
+      "changes": []
+    },
+    {
+      "upstream_path": "proxy.ts",
+      "path": "proxy.ts",
+      "upstream_sha256": "966287329ec44e93da94565d695fdeaf254a02fcafcb79dda731e4e204a6c7ea",
+      "local_sha256": "966287329ec44e93da94565d695fdeaf254a02fcafcb79dda731e4e204a6c7ea",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "122315927b8c10d676200ed8cf531d3cc3bbfa127e22d6ea3d7614c7094e3d12",
+      "local_sha256": "122315927b8c10d676200ed8cf531d3cc3bbfa127e22d6ea3d7614c7094e3d12",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "repomix.config.json",
+      "path": "repomix.config.json",
+      "upstream_sha256": "acba54c4d4da7d616313cabc2917fcfd61304e604baf56c45c5286505e91e72c",
+      "local_sha256": "acba54c4d4da7d616313cabc2917fcfd61304e604baf56c45c5286505e91e72c",
+      "changes": []
+    },
+    {
+      "upstream_path": "tailwind.config.ts",
+      "path": "tailwind.config.ts",
+      "upstream_sha256": "4cc143123b308e975b6f7bd37b524f46a77529129336e80672808a8f74e19fc0",
+      "local_sha256": "4cc143123b308e975b6f7bd37b524f46a77529129336e80672808a8f74e19fc0",
+      "changes": []
+    },
+    {
+      "upstream_path": "tsconfig.json",
+      "path": "tsconfig.json",
+      "upstream_sha256": "d1810f1e08f8ad338c16d6fc6e11547bb5b2ebd8682db351b2e51bcaeb3b41bd",
+      "local_sha256": "d1810f1e08f8ad338c16d6fc6e11547bb5b2ebd8682db351b2e51bcaeb3b41bd",
+      "changes": []
+    },
+    {
+      "upstream_path": "utils/cn.ts",
+      "path": "utils/cn.ts",
+      "upstream_sha256": "06fc3cad378e087219df28ec809c02997712bf8b1b81148eeaa579b19c1584d9",
+      "local_sha256": "06fc3cad378e087219df28ec809c02997712bf8b1b81148eeaa579b19c1584d9",
+      "changes": []
+    },
+    {
+      "upstream_path": "utils/init-canvas.ts",
+      "path": "utils/init-canvas.ts",
+      "upstream_sha256": "761f03949d8a8b69446e0ae6f7921e39313e3c89120abb5b8cedfda749bfe8f5",
+      "local_sha256": "761f03949d8a8b69446e0ae6f7921e39313e3c89120abb5b8cedfda749bfe8f5",
+      "changes": []
+    },
+    {
+      "upstream_path": "utils/on-visible.ts",
+      "path": "utils/on-visible.ts",
+      "upstream_sha256": "c59e13312170ec41a4b563bc349910c66880db4a178b2083d97e6eac43bee27c",
+      "local_sha256": "c59e13312170ec41a4b563bc349910c66880db4a178b2083d97e6eac43bee27c",
+      "changes": []
+    },
+    {
+      "upstream_path": "utils/set-timeout-on-visible.ts",
+      "path": "utils/set-timeout-on-visible.ts",
+      "upstream_sha256": "ee416841f55f900c251f30efb0dcbf02663fa1c26a50acbc706461ff75c77fcc",
+      "local_sha256": "ee416841f55f900c251f30efb0dcbf02663fa1c26a50acbc706461ff75c77fcc",
+      "changes": []
+    },
+    {
+      "upstream_path": "utils/sleep.ts",
+      "path": "utils/sleep.ts",
+      "upstream_sha256": "ddf9afc20afbcd59bfcb1def3c453ac26f15515f75dcdb200c2e568f195c7e68",
+      "local_sha256": "ddf9afc20afbcd59bfcb1def3c453ac26f15515f75dcdb200c2e568f195c7e68",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "app/layout.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "app/page.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "app/sign-in/[[...sign-in]]/page.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "app/sign-up/[[...sign-up]]/page.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "app/workflows/[workflowId]/page.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "app/workflows/[workflowId]/run/page.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "app/workflows/page.tsx",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/EndpointsCrawl/EndpointsCrawl.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/EndpointsExtract/EndpointsExtract.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/EndpointsMap/EndpointsMap.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/EndpointsScrape/EndpointsScrape.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/EndpointsSearch/EndpointsSearch.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/Extract/Extract.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/endpoints/Mcp/Mcp.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Background/_svg/CenterStar.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Background/Background.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Background/BackgroundOuterPiece.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Badge/Badge.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Hero.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/Pixi.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/ascii.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/cell.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/cellReveal.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/AnimatedRect.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/BlinkingContainer.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/Dot.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/crawl.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/mapping.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/scrape.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/search.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero/Title/Title.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-flame/data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-flame/HeroFlame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-input/_svg/ArrowRight.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-input/_svg/Globe.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-input/Button/Button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-input/HeroInput.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-input/Tabs/Mobile/Mobile.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-input/Tabs/Tabs.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/_svg/BrowserMobile.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/_svg/BrowserTab.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/Code/Code.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/Code/Loading/_svg/Check.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/Code/Loading/Loading.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/HeroScraping.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/HeroScraping.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/hero-scraping/Tag/Tag.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/step2/Step2Placeholder.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ConfirmDialog.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ConnectionMapperModal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ConnectorsPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/CustomNodes.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx.backup",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/EdgeLabelModal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ExecutionPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ExportLangGraphButton.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ExtractNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/HTTPNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/LogicNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/MCPPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/NodeArgumentsPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/NodeIOBadges.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/NodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/NoteNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/OutputSchemaPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/PasteConfigModal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/PreviewPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/PublishModal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/SaveAsTemplateModal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/SettingsPanelSimple.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ShareWorkflowModal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/StartNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/TestEndpointPanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/ToolsNodePanel.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/UniversalOutputSelector.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/VariableReferencePicker.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/WorkflowBuilder.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/app/(home)/sections/workflow-builder/WorkflowNameEditor.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/FirecrawlIcon/FirecrawlIcon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/hooks/use-dropdown-hover.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/providers/BigIntProvider.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/animated-dot-icon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ascii-background.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ascii-flame-background.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/button/Button.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/button/Button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/buttons/capsule-button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/buttons/fire-action-link.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/buttons/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/buttons/slate-button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/color-styles/color-styles.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/combobox/combobox.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/ascii-explosion.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/auth-pulse/auth-pulse.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/auth-pulse/pulse-data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/core-flame.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/core-flame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/explosion-data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/flame-background.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/Flame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/hero-flame-data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/hero-flame-right.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/hero-flame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/slate-grid/grid-data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/slate-grid/slate-grid.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/subtle-explosion.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/subtle-wave/subtle-wave.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/flame/subtle-wave/wave-data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/effects/subtle-ascii-animation.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ErrorBoundary.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/firecrawl-icon/firecrawl-icon-static.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/firecrawl-icon/firecrawl-icon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/flame-button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/_svg/Logo.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/BrandKit/_svg/Download.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/BrandKit/_svg/Guidelines.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/BrandKit/_svg/Icon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/BrandKit/BrandKit.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Content/Content.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Content/NavItemRow.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Github/Flame/data.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Github/Flame/Flame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Github/Github.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Mobile/Item/Item.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Mobile/Mobile.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Stories/_svg/ArrowUp.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Stories/_svg/Replit.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Stories/Flame/Flame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Stories/Stories.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Dropdown/Wrapper/Wrapper.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Github/_svg/GithubIcon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Github/GithubClient.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/HeaderContext.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Affiliate.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Api.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/ArrowRight.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Careers.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Changelog.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Chats.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Lead.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/MCP.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Platforms.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Research.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Student.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/_svg/Templates.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/Item/_svg/ChevronDown.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/Item/Item.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/Nav.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Nav/RenderEndpointIcon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Toggle/Toggle.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/header/Wrapper/Wrapper.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/hero-flame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/animated-chevron.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/animated-icons.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/arrow-animated.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/check.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/chevron-slide.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/copied.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/copy.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/curve.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/fingerprint-icon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/GitHub.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/Logo.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/openai.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/source-icon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/symbol-colored.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/symbol-white.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/tremor-placeholder.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/wordmark-colored.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/icons/wordmark-white.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/image/getImageSrc.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/image/Image.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/layout/animated-height.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/layout/animated-width.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/layout/curvy-rect-divider.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/layout/curvy-rect.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/loading/Shimmer.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/loading/usage-loading.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/lockBody.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/logo-cloud/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/logo-cloud/logo-cloud.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/logo-cloud/logo-cloud2/Logocloud.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/logo-cloud/logo-cloud2/Logocloud.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/macbook-scroll.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/notifications/slack-notification.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/pixi/Pixi.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/pixi/PixiAssetManager.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/pixi/utils.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/play-tabs.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/Playground/Context/types.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/portal-to-body/PortalToBody.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/preview/json-error-highlighter.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/preview/live-preview-frame.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/preview/multiple-web-browsers.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/preview/web-browser.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/pylon.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/search-params-provider/search-params-provider.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/section-head/SectionHead.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/section-head/SectionHead.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/section-title/SectionTitle.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/tabs/Tabs.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/app-dialog.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/ascii-dot-loader.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/dot-grid-loader.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/empty-state.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/loading-state.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/mobile-sheet.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/ui/stat-card.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/shared/utils/portal-to-body.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/button-demo.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/code.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/image.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/loading-dashboard.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/LoadingDots/index.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/LoadingDots/LoadingDots.module.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/LoadingDots/LoadingDots.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/magic/animated-shiny-text-lw.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/magic/animated-shiny-text.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/magic/dock.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/magic/dot-pattern.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/magic/gradual-spacing.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/magic/ripple.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/menu-header.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/menu.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/modal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/motion/scramble-text.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/motion/text-reveal.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/scrollbar.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/accordion.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/alert-dialog.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/badge.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/button.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/button.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/card.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/checkbox.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/collapsible.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/combobox.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/context-menu.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/data-table.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/dialog.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/dropdown-menu.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/form.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/input.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/label.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/navigation-menu.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/popover.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/progress.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/scroll-area.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/select.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/separator.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/sheet.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/slider.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/switch.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/tabs.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/textarea.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/toast.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/toggle.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/tooltip-radix.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/shadcn/tooltip.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/spinner.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/table.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/ui/video.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "components/workflow/WorkflowExecutionRenderer.tsx",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "convex/tsconfig.tsbuildinfo",
+      "reason": "Generated build cache omitted."
+    },
+    {
+      "path": "hooks/useApprovalWatch.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "hooks/useDebouncedEffect.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "hooks/useWorkflow.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "hooks/useWorkflowExecution.ts",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "public/compressor.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "public/favicon.png",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/additional-styles/custom-fonts.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/additional-styles/theme.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/additional-styles/utility-patterns.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/chrome-bug.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/colors.json",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/components/button.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/components/code.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/components/index.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/animations.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/base/body.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/base/layout.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/base/reset.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/colors.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/fonts.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/typography.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/design-system/utilities.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/fire.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/main.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "styles/workflow-execution.css",
+      "reason": "Frontend, generated output or development automation omitted."
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "reason": "Generated build cache omitted."
+    }
+  ],
+  "analysis": {
+    "units": [],
+    "manifests": [
+      "package.json"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "app/api/approval/[approvalId]/resume/route.ts",
+      "app/api/approval/[approvalId]/route.ts",
+      "app/api/approval/route.ts",
+      "app/api/config/route.ts",
+      "app/api/execute-agent/route.ts",
+      "app/api/execute-extract/route.ts",
+      "app/api/execute-guardrails/route.ts",
+      "app/api/execute-mcp/route.ts",
+      "app/api/mcp/registry/route.ts",
+      "app/api/templates/seed/route.ts",
+      "app/api/templates/update/route.ts",
+      "app/api/test-mcp-connection/route.ts",
+      "app/api/workflow/execute/route.ts",
+      "app/api/workflows/[workflowId]/execute/route.ts",
+      "app/api/workflows/[workflowId]/execute-langgraph/route.ts",
+      "app/api/workflows/[workflowId]/execute-stream/route.ts",
+      "app/api/workflows/[workflowId]/export-code/route.ts",
+      "app/api/workflows/[workflowId]/export-langgraph/route.ts",
+      "app/api/workflows/[workflowId]/resume/route.ts",
+      "app/api/workflows/[workflowId]/route.ts",
+      "app/api/workflows/cleanup/route.ts",
+      "app/api/workflows/import-langgraph/route.ts",
+      "app/api/workflows/route.ts",
+      "atoms/sheets.ts",
+      "convex/_generated/api.d.ts",
+      "convex/_generated/api.js",
+      "convex/_generated/dataModel.d.ts",
+      "convex/_generated/server.d.ts",
+      "convex/_generated/server.js",
+      "convex/admin.ts",
+      "convex/apiKeys.ts",
+      "convex/approvals.ts",
+      "convex/auth.config.ts",
+      "convex/executions.ts",
+      "convex/mcpServers.ts",
+      "convex/schema.ts",
+      "convex/templates.ts",
+      "convex/userLLMKeys.ts",
+      "convex/userMCPs.ts",
+      "convex/workflows.ts",
+      "lib/api/auth.ts",
+      "lib/api/config.ts",
+      "lib/api/llm-keys.ts",
+      "lib/api/models.ts",
+      "lib/approval/approval-store.ts",
+      "lib/arcade/auth-store.ts",
+      "lib/arcade/openai-tools.ts",
+      "lib/arcade/tools.ts",
+      "lib/arcade/workflow-helpers.ts",
+      "lib/config/llm-config.ts",
+      "lib/convex/client.ts",
+      "lib/errors/index.ts",
+      "lib/errors/WorkflowError.ts",
+      "lib/mcp/mcp-registry.ts",
+      "lib/mcp/resolver.ts",
+      "lib/workflow/duplicate-detection.ts",
+      "lib/workflow/edge-cleanup.ts",
+      "lib/workflow/error-boundaries.ts",
+      "lib/workflow/executors/agent.ts",
+      "lib/workflow/executors/arcade.ts",
+      "lib/workflow/executors/data.ts",
+      "lib/workflow/executors/extract.ts",
+      "lib/workflow/executors/http.ts",
+      "lib/workflow/executors/logic.ts",
+      "lib/workflow/executors/mcp.ts",
+      "lib/workflow/executors/tools.ts",
+      "lib/workflow/langgraph.ts",
+      "lib/workflow/mcp-registry.ts",
+      "lib/workflow/storage.ts",
+      "lib/workflow/templates/examples/01-simple-agent.ts",
+      "lib/workflow/templates/examples/index.ts",
+      "lib/workflow/types.ts",
+      "lib/workflow/validation.ts",
+      "lib/workflow/variable-substitution.ts",
+      "next-env.d.ts",
+      "next.config.js",
+      "postcss.config.js",
+      "proxy.ts",
+      "tailwind.config.ts",
+      "utils/cn.ts",
+      "utils/init-canvas.ts",
+      "utils/on-visible.ts",
+      "utils/set-timeout-on-visible.ts",
+      "utils/sleep.ts"
+    ],
+    "environment": [
+      "ABSOLUTE_MAX",
+      "ANTHROPIC_API_KEY",
+      "ARCADE_API_KEY",
+      "E2B_API_KEY",
+      "FIRECRAWL_API_KEY",
+      "GROQ_API_KEY",
+      "MAX_SCRIPT_LENGTH",
+      "MOCK_AGENT_RESPONSE",
+      "NEXT_PUBLIC_CONVEX_URL",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "agents",
+  "purpose": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps."
+}

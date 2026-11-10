@@ -1,0 +1,124 @@
+{
+  "units": [
+    {
+      "path": "client.py",
+      "imports": [
+        "argparse",
+        "json",
+        "requests",
+        "time"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "argparse.ArgumentParser",
+        "main",
+        "parser.add_argument",
+        "parser.parse_args",
+        "print",
+        "requests.post",
+        "response.json",
+        "response.raise_for_status",
+        "result.split",
+        "time.sleep"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "crewai",
+        "crewai_tools",
+        "litserve"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "AgenticRAGAPI",
+          "line": 15,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "setup",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "decode_request",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "predict",
+          "line": 55,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "encode_response",
+          "line": 58,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Agent",
+        "AgenticRAGAPI",
+        "Crew",
+        "SerperDevTool",
+        "Task",
+        "ls.LitServer",
+        "self.crew.kickoff",
+        "server.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "OPENAI_API_KEY",
+    "SERPER_API_KEY"
+  ],
+  "imports": [
+    "argparse",
+    "crewai",
+    "crewai_tools",
+    "json",
+    "litserve",
+    "requests",
+    "time"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "client.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

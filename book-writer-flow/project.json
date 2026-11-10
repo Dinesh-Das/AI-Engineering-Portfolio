@@ -1,0 +1,551 @@
+{
+  "id": "book-writer-flow",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/book-writer-flow",
+  "entries": [
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "book_flow/book_writing_flow/.env.example",
+      "path": "book_flow/book_writing_flow/.env.example",
+      "upstream_sha256": "26584db26204fc3b08ab3ac2057bc40039800212cca17d2a3f042d518ffa72d3",
+      "local_sha256": "26584db26204fc3b08ab3ac2057bc40039800212cca17d2a3f042d518ffa72d3",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/pyproject.toml",
+      "path": "book_flow/book_writing_flow/pyproject.toml",
+      "upstream_sha256": "c7180337044978fa859e737927dce330778d70cdaa047805565a0ae978e4fcaa",
+      "local_sha256": "c7180337044978fa859e737927dce330778d70cdaa047805565a0ae978e4fcaa",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/README.md",
+      "path": "book_flow/book_writing_flow/README.md",
+      "upstream_sha256": "6f30c535ee735e7e4e8a924a196a4d4c05b785268d9b44eeb2f36cc1afad9b35",
+      "local_sha256": "6f30c535ee735e7e4e8a924a196a4d4c05b785268d9b44eeb2f36cc1afad9b35",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book.md",
+      "path": "book_flow/book_writing_flow/src/book.md",
+      "upstream_sha256": "a10f3f897b36c5dcbfb7287e018be5f9570e8728b4f326e36fd0f0a9497a53bb",
+      "local_sha256": "a10f3f897b36c5dcbfb7287e018be5f9570e8728b4f326e36fd0f0a9497a53bb",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/__init__.py",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/agents.yaml",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/agents.yaml",
+      "upstream_sha256": "b3f99ed760943b09cb9b72ba3373accc5ed4035042c0e65dd6fdbcf675e9d7ca",
+      "local_sha256": "b3f99ed760943b09cb9b72ba3373accc5ed4035042c0e65dd6fdbcf675e9d7ca",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/tasks.yaml",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/tasks.yaml",
+      "upstream_sha256": "f905157fcbef1ab15839b57ed07d45fe9032e244b0b955be4d438c5733b2ed8b",
+      "local_sha256": "f905157fcbef1ab15839b57ed07d45fe9032e244b0b955be4d438c5733b2ed8b",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/outline_crew.py",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/outline_crew.py",
+      "upstream_sha256": "460d71265edbb84099fe6f3aef64346c3e433d8abefade64c2482d48eeb5dd7f",
+      "local_sha256": "460d71265edbb84099fe6f3aef64346c3e433d8abefade64c2482d48eeb5dd7f",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/agents.yaml",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/agents.yaml",
+      "upstream_sha256": "a47f58eba4cd7cf2d2cceefd861f52fec63641e09e6102a1f034bfb4044140dc",
+      "local_sha256": "a47f58eba4cd7cf2d2cceefd861f52fec63641e09e6102a1f034bfb4044140dc",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/tasks.yaml",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/tasks.yaml",
+      "upstream_sha256": "fed90fe2dcb46c324d6cd7a6e7f444213e1343cb77eeeb67ceb5a29c3bd786cc",
+      "local_sha256": "fed90fe2dcb46c324d6cd7a6e7f444213e1343cb77eeeb67ceb5a29c3bd786cc",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/writer_crew.py",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/writer_crew.py",
+      "upstream_sha256": "240e0859531c67104bdc998398ead6460ba42d1e58c66c8260920f85e4c580ea",
+      "local_sha256": "240e0859531c67104bdc998398ead6460ba42d1e58c66c8260920f85e4c580ea",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+      "upstream_sha256": "466dd93b6f2a7b9a20c7e717cdd801e611debc761ea53f7268f92772197a2040",
+      "local_sha256": "466dd93b6f2a7b9a20c7e717cdd801e611debc761ea53f7268f92772197a2040",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/tools/__init__.py",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/tools/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py",
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py",
+      "upstream_sha256": "abd6cd5fba8196da4627a71f27c3d2f32a5902ddf373b606c0316d662ef9217a",
+      "local_sha256": "488c47b41d56cc3bd431118d361eddf92b5142a65dd664f9786adfd940110317",
+      "changes": [
+        "Added explicit connection/read timeouts to 1 direct requests calls."
+      ]
+    },
+    {
+      "upstream_path": "Final_book.pdf",
+      "path": "Final_book.pdf",
+      "upstream_sha256": "e955f2fd9ed075fdd964fcc2919c97029dc05e002a1816d6038ece33f3164e50",
+      "local_sha256": "e955f2fd9ed075fdd964fcc2919c97029dc05e002a1816d6038ece33f3164e50",
+      "changes": []
+    },
+    {
+      "upstream_path": "notebook.ipynb",
+      "path": "notebook.ipynb",
+      "upstream_sha256": "e39c49cf88cd4c6c764f63b79a4bb1dd9ff7d966ede661dea50e5f713dc28b8b",
+      "local_sha256": "1f6723768e84d4a240d58a72a217f460b56114468480d417c323b03426e3b88e",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "1d2ba2ee232762f4603a79cfe90e5bd89f85a17aeaf263846eb752f204dc1686",
+      "local_sha256": "1d2ba2ee232762f4603a79cfe90e5bd89f85a17aeaf263846eb752f204dc1686",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "final book.mp4",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "flow kickoff.mp4",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/outline_crew.py",
+        "imports": [
+          "book_writing_flow",
+          "crewai",
+          "crewai_tools",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/gemma3:4b"
+        ],
+        "symbols": [
+          {
+            "name": "Outline",
+            "line": 9,
+            "kind": "ClassDef",
+            "doc": "Outline of the book"
+          },
+          {
+            "name": "OutlineCrew",
+            "line": 15,
+            "kind": "ClassDef",
+            "doc": "Outline Crew"
+          },
+          {
+            "name": "research_agent",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "research_task",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "outline_writer",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_outline",
+            "line": 37,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 42,
+            "kind": "FunctionDef",
+            "doc": "Creates the Outline Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "BrightDataWebSearchTool",
+          "Crew",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/writer_crew.py",
+        "imports": [
+          "book_writing_flow",
+          "crewai",
+          "crewai_tools",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/gemma3:4b"
+        ],
+        "symbols": [
+          {
+            "name": "Chapter",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": "Chapter of the book"
+          },
+          {
+            "name": "ChapterWriterCrew",
+            "line": 16,
+            "kind": "ClassDef",
+            "doc": "Chapter Writer Crew"
+          },
+          {
+            "name": "topic_researcher",
+            "line": 23,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "research_topic",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "writer",
+            "line": 33,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_chapter",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 43,
+            "kind": "FunctionDef",
+            "doc": "Creates the Research Crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "BrightDataWebSearchTool",
+          "Crew",
+          "LLM",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+        "imports": [
+          "asyncio",
+          "book_writing_flow",
+          "crewai",
+          "dotenv",
+          "os",
+          "pydantic"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "Chapter",
+            "line": 15,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "BookState",
+            "line": 19,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "BookFlow",
+            "line": 26,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "kickoff",
+            "line": 75,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "plot",
+            "line": 80,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_outline",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_chapters",
+            "line": 36,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "save_book",
+            "line": 67,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "write_single_chapter",
+            "line": 40,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".crew",
+          ".kickoff",
+          "BookFlow",
+          "ChapterWriterCrew",
+          "OutlineCrew",
+          "asyncio.create_task",
+          "asyncio.gather",
+          "asyncio.run",
+          "book_flow.kickoff_async",
+          "book_flow.plot",
+          "f.write",
+          "kickoff",
+          "len",
+          "listen",
+          "load_dotenv",
+          "open",
+          "print",
+          "range",
+          "self.state.chapters.extend",
+          "start",
+          "tasks.append",
+          "write_single_chapter"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/tools/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py",
+        "imports": [
+          "crewai",
+          "dotenv",
+          "os",
+          "pydantic",
+          "requests",
+          "ssl",
+          "typing"
+        ],
+        "environment": [
+          "BRIGHDATA_PASSWORD",
+          "BRIGHDATA_USERNAME"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "BrightDataWebSearchToolInput",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": "Input schema for BrightDataWebSearchTool."
+          },
+          {
+            "name": "BrightDataWebSearchTool",
+            "line": 17,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "Field",
+          "load_dotenv",
+          "os.getenv",
+          "requests.get",
+          "response.json",
+          "title.split"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "notebook.ipynb#cell-2",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "notebook.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "notebook.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [
+      "book_flow/book_writing_flow/pyproject.toml"
+    ],
+    "notebooks": [
+      "notebook.ipynb"
+    ],
+    "other_code": [
+      "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/agents.yaml",
+      "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/tasks.yaml",
+      "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/agents.yaml",
+      "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/tasks.yaml"
+    ],
+    "environment": [
+      "BRIGHDATA_PASSWORD",
+      "BRIGHDATA_USERNAME",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "book_writing_flow",
+      "crewai",
+      "crewai_tools",
+      "dotenv",
+      "os",
+      "pydantic",
+      "requests",
+      "ssl",
+      "typing"
+    ],
+    "models": [
+      "ollama/gemma3:4b"
+    ],
+    "entries": [
+      {
+        "path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "notebook.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 9
+  },
+  "category": "agents",
+  "purpose": "Generate a researched outline and chapters with a persistent workflow state."
+}

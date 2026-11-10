@@ -1,0 +1,1318 @@
+{
+  "id": "agentic_rag",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/agentic_rag",
+  "entries": [
+    {
+      "path": "agentic_rag.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "demo_llama3.2.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "src/agentic_rag/agentic_rag.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "src/agentic_rag/main.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "src/agentic_rag/tools/custom_tool.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "15b941be5311d5b304427220875a7e95186fcebb7ccf9eb7df51a1def3be66d7",
+      "local_sha256": "15b941be5311d5b304427220875a7e95186fcebb7ccf9eb7df51a1def3be66d7",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "71c53db2685bc70c2ab670c185ef05881ceeab30747df014e8c7b0d2f292bf2a",
+      "local_sha256": "71c53db2685bc70c2ab670c185ef05881ceeab30747df014e8c7b0d2f292bf2a",
+      "changes": []
+    },
+    {
+      "upstream_path": "agentic_rag.ipynb",
+      "path": "agentic_rag.ipynb",
+      "upstream_sha256": "6f5eeefff715b039e878ce6500caa61fb5f1499556991ec0af23866e07cabfbf",
+      "local_sha256": "29b015e75a0e69472c80f97dfb6ef5e1d9b2abc21b4107899171c99c3f37ec4f",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "90cab83797430e9499c876016231ad0f76aa68b9c4119f58ada6ad332fe8e5e3",
+      "local_sha256": "90cab83797430e9499c876016231ad0f76aa68b9c4119f58ada6ad332fe8e5e3",
+      "changes": []
+    },
+    {
+      "upstream_path": "app_deep_seek.py",
+      "path": "app_deep_seek.py",
+      "upstream_sha256": "109db8386a7ea41f5e0c5a5fe9d15de93b48a031971a5ec47510aa68ae419dc0",
+      "local_sha256": "109db8386a7ea41f5e0c5a5fe9d15de93b48a031971a5ec47510aa68ae419dc0",
+      "changes": []
+    },
+    {
+      "upstream_path": "app_llama3.2.py",
+      "path": "app_llama3.2.py",
+      "upstream_sha256": "e09c6e0888726ca41c2c1f27c0ab3b826532fe1f46e4d7cf6b3227596e3bc564",
+      "local_sha256": "e09c6e0888726ca41c2c1f27c0ab3b826532fe1f46e4d7cf6b3227596e3bc564",
+      "changes": []
+    },
+    {
+      "upstream_path": "demo_llama3.2.ipynb",
+      "path": "demo_llama3.2.ipynb",
+      "upstream_sha256": "620d0b44eeb173ddb5435264c0b7da4e1f9453d9b2c8fe417384ab4065606ac8",
+      "local_sha256": "b14ff1024c798308ba73f999f9c519b7456dd235a57946fc23d28bb3a73b81d2",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "knowledge/dspy.pdf",
+      "path": "knowledge/dspy.pdf",
+      "upstream_sha256": "5309836325c3a580b6c176242f49f21ca40e413b0acd514e74b67e16bb1b56bc",
+      "local_sha256": "5309836325c3a580b6c176242f49f21ca40e413b0acd514e74b67e16bb1b56bc",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "5d87ac76022532ffdc87ec5f881dd794fc003d020faa01738ac9b3714a1c73f0",
+      "local_sha256": "5d87ac76022532ffdc87ec5f881dd794fc003d020faa01738ac9b3714a1c73f0",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "f2ca97e68058935aaa27822157b77bd23a3c4634045bacd3005ff69b187895ea",
+      "local_sha256": "f2ca97e68058935aaa27822157b77bd23a3c4634045bacd3005ff69b187895ea",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "src/agentic_rag/__init__.py",
+      "path": "src/agentic_rag/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/agentic_rag/agentic_rag.ipynb",
+      "path": "src/agentic_rag/agentic_rag.ipynb",
+      "upstream_sha256": "99575f7c23d06a0e1c39322fedc44946a3f53c911de561c19b650df3e55a4e54",
+      "local_sha256": "d99d25d5caabbe33915e50f777d8916a4add14c3e6910554301fc4f335ba82bc",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "src/agentic_rag/config/agents.yaml",
+      "path": "src/agentic_rag/config/agents.yaml",
+      "upstream_sha256": "f8154ca81c93720eb940be1e7490f14082ea3fc666b34a801d3534136aaec908",
+      "local_sha256": "f8154ca81c93720eb940be1e7490f14082ea3fc666b34a801d3534136aaec908",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/agentic_rag/config/tasks.yaml",
+      "path": "src/agentic_rag/config/tasks.yaml",
+      "upstream_sha256": "e75815264ea1a8c929413f08a6a7a5a4ad01ff047ae2a2c1676b9b5317f15319",
+      "local_sha256": "e75815264ea1a8c929413f08a6a7a5a4ad01ff047ae2a2c1676b9b5317f15319",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/agentic_rag/crew.py",
+      "path": "src/agentic_rag/crew.py",
+      "upstream_sha256": "e097959fd146e44de997615f7afde50343b16a9cbaf6fceed611a3010cde5dbe",
+      "local_sha256": "e097959fd146e44de997615f7afde50343b16a9cbaf6fceed611a3010cde5dbe",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/agentic_rag/main.py",
+      "path": "src/agentic_rag/main.py",
+      "upstream_sha256": "1d7c41b1f413380244c7bb195d994ef7f2af57256207af8ade30ce2c66bd9d30",
+      "local_sha256": "1d7c41b1f413380244c7bb195d994ef7f2af57256207af8ade30ce2c66bd9d30",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/agentic_rag/tools/__init__.py",
+      "path": "src/agentic_rag/tools/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/agentic_rag/tools/custom_tool.py",
+      "path": "src/agentic_rag/tools/custom_tool.py",
+      "upstream_sha256": "5f9c78f5928224c1b7cf3a5db01832a974379a3c7f357f45749374072a80e585",
+      "local_sha256": "5f9c78f5928224c1b7cf3a5db01832a974379a3c7f357f45749374072a80e585",
+      "changes": []
+    },
+    {
+      "upstream_path": "thumbnail/thumbnail.png",
+      "path": "thumbnail/thumbnail.png",
+      "upstream_sha256": "1d9ea43a4193e0b1d2935ba9a411e1f5f0f4f9e345798f581def44df43834610",
+      "local_sha256": "1d9ea43a4193e0b1d2935ba9a411e1f5f0f4f9e345798f581def44df43834610",
+      "changes": []
+    },
+    {
+      "upstream_path": "thumbnail/youtube.png",
+      "path": "thumbnail/youtube.png",
+      "upstream_sha256": "1d9ea43a4193e0b1d2935ba9a411e1f5f0f4f9e345798f581def44df43834610",
+      "local_sha256": "1d9ea43a4193e0b1d2935ba9a411e1f5f0f4f9e345798f581def44df43834610",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/deep-seek.png",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "agentic_rag.ipynb#cell-1",
+        "imports": [
+          "crewai",
+          "langchain_openai",
+          "os"
+        ],
+        "environment": [
+          "GROQ_API_KEY"
+        ],
+        "models": [
+          "llama3-8b-8192"
+        ],
+        "symbols": [],
+        "calls": [
+          "ChatOpenAI"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-2",
+        "imports": [
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [
+          "BAAI/bge-small-en-v1.5",
+          "llama3-8b-8192"
+        ],
+        "symbols": [],
+        "calls": [
+          "PDFSearchTool",
+          "dict"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "rag_tool.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-4",
+        "imports": [
+          "langchain_community",
+          "os"
+        ],
+        "environment": [
+          "TAVILY_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "TavilySearchResults",
+          "userdata.get"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "web_search_tool.run"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-7",
+        "imports": [
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "router_tool",
+            "line": 3,
+            "kind": "FunctionDef",
+            "doc": "Router Function"
+          }
+        ],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-9",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-19",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-21",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-23",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-25",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-27",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-29",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Crew"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-30",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-31",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "rag_crew.kickoff"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "agentic_rag.ipynb#cell-32",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "app.py",
+        "imports": [
+          "base64",
+          "crewai",
+          "crewai_tools",
+          "gc",
+          "os",
+          "src",
+          "streamlit",
+          "tempfile",
+          "time"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_agents_and_tasks",
+            "line": 15,
+            "kind": "FunctionDef",
+            "doc": "Creates a Crew with the given PDF tool (if any) and a web search tool."
+          },
+          {
+            "name": "reset_chat",
+            "line": 94,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 98,
+            "kind": "FunctionDef",
+            "doc": "Displays the uploaded PDF in an iframe."
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".format",
+          ".read",
+          "Agent",
+          "Crew",
+          "DocumentSearchTool",
+          "SerperDevTool",
+          "Task",
+          "base64.b64encode",
+          "create_agents_and_tasks",
+          "display_pdf",
+          "enumerate",
+          "f.write",
+          "gc.collect",
+          "len",
+          "message_placeholder.markdown",
+          "open",
+          "os.path.join",
+          "result.split",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.empty",
+          "st.file_uploader",
+          "st.header",
+          "st.markdown",
+          "st.session_state.crew.kickoff",
+          "st.session_state.messages.append",
+          "st.spinner",
+          "st.success",
+          "tempfile.TemporaryDirectory",
+          "time.sleep",
+          "uploaded_file.getvalue"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "app_deep_seek.py",
+        "imports": [
+          "base64",
+          "crewai",
+          "gc",
+          "os",
+          "src",
+          "streamlit",
+          "tempfile",
+          "time"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/deepseek-r1:7b"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_agents_and_tasks",
+            "line": 23,
+            "kind": "FunctionDef",
+            "doc": "Creates a Crew with the given PDF tool (if any) and a web search tool."
+          },
+          {
+            "name": "reset_chat",
+            "line": 104,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 108,
+            "kind": "FunctionDef",
+            "doc": "Displays the uploaded PDF in an iframe."
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".format",
+          ".read",
+          "Agent",
+          "Crew",
+          "DocumentSearchTool",
+          "FireCrawlWebSearchTool",
+          "LLM",
+          "Task",
+          "base64.b64encode",
+          "create_agents_and_tasks",
+          "display_pdf",
+          "enumerate",
+          "f.write",
+          "gc.collect",
+          "len",
+          "load_llm",
+          "message_placeholder.markdown",
+          "open",
+          "os.path.join",
+          "result.split",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.empty",
+          "st.file_uploader",
+          "st.header",
+          "st.markdown",
+          "st.session_state.crew.kickoff",
+          "st.session_state.messages.append",
+          "st.spinner",
+          "st.success",
+          "tempfile.TemporaryDirectory",
+          "time.sleep",
+          "uploaded_file.getvalue"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "app_llama3.2.py",
+        "imports": [
+          "base64",
+          "crewai",
+          "gc",
+          "os",
+          "src",
+          "streamlit",
+          "tempfile",
+          "time"
+        ],
+        "environment": [],
+        "models": [
+          "ollama/llama3.2"
+        ],
+        "symbols": [
+          {
+            "name": "load_llm",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_agents_and_tasks",
+            "line": 23,
+            "kind": "FunctionDef",
+            "doc": "Creates a Crew with the given PDF tool (if any) and a web search tool."
+          },
+          {
+            "name": "reset_chat",
+            "line": 104,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 108,
+            "kind": "FunctionDef",
+            "doc": "Displays the uploaded PDF in an iframe."
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".format",
+          ".read",
+          "Agent",
+          "Crew",
+          "DocumentSearchTool",
+          "FireCrawlWebSearchTool",
+          "LLM",
+          "Task",
+          "base64.b64encode",
+          "create_agents_and_tasks",
+          "display_pdf",
+          "enumerate",
+          "f.write",
+          "gc.collect",
+          "len",
+          "load_llm",
+          "message_placeholder.markdown",
+          "open",
+          "os.path.join",
+          "result.split",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.empty",
+          "st.file_uploader",
+          "st.header",
+          "st.markdown",
+          "st.session_state.crew.kickoff",
+          "st.session_state.messages.append",
+          "st.spinner",
+          "st.success",
+          "tempfile.TemporaryDirectory",
+          "time.sleep",
+          "uploaded_file.getvalue"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-2",
+        "imports": [
+          "crewai",
+          "src",
+          "warnings"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "warnings.filterwarnings"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "ollama/llama3.2"
+        ],
+        "symbols": [],
+        "calls": [
+          "LLM"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "DocumentSearchTool"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "FireCrawlWebSearchTool"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-12",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-14",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Crew"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-16",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "crew.kickoff"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "demo_llama3.2.ipynb#cell-18",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-1",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-2",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "DocumentSearchTool"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "SerperDevTool"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-5",
+        "imports": [
+          "yaml"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "open",
+          "yaml.safe_load"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Agent",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Crew"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "crew.kickoff",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "src/agentic_rag/crew.py",
+        "imports": [
+          "agentic_rag",
+          "crewai",
+          "crewai_tools"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "AgenticRag",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": "AgenticRag crew"
+          },
+          {
+            "name": "retriever_agent",
+            "line": 29,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "response_synthesizer_agent",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "retrieval_task",
+            "line": 53,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "response_task",
+            "line": 59,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "crew",
+            "line": 65,
+            "kind": "FunctionDef",
+            "doc": "Creates the AgenticRag crew"
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Crew",
+          "DocumentSearchTool",
+          "SerperDevTool",
+          "Task"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/agentic_rag/main.py",
+        "imports": [
+          "agentic_rag",
+          "sys",
+          "warnings"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "run",
+            "line": 14,
+            "kind": "FunctionDef",
+            "doc": "Run the crew."
+          },
+          {
+            "name": "train",
+            "line": 24,
+            "kind": "FunctionDef",
+            "doc": "Train the crew for a given number of iterations."
+          },
+          {
+            "name": "replay",
+            "line": 37,
+            "kind": "FunctionDef",
+            "doc": "Replay the crew execution from a specific task."
+          },
+          {
+            "name": "test",
+            "line": 47,
+            "kind": "FunctionDef",
+            "doc": "Test the crew execution and returns the results."
+          }
+        ],
+        "calls": [
+          ".crew",
+          ".kickoff",
+          ".replay",
+          ".test",
+          ".train",
+          "AgenticRag",
+          "Exception",
+          "int",
+          "warnings.filterwarnings"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/agentic_rag/tools/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/agentic_rag/tools/custom_tool.py",
+        "imports": [
+          "chonkie",
+          "crewai",
+          "markitdown",
+          "os",
+          "pydantic",
+          "qdrant_client",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "DocumentSearchToolInput",
+            "line": 9,
+            "kind": "ClassDef",
+            "doc": "Input schema for DocumentSearchTool."
+          },
+          {
+            "name": "DocumentSearchTool",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "test_document_searcher",
+            "line": 69,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 19,
+            "kind": "FunctionDef",
+            "doc": "Initialize the searcher with a PDF file path and set up the Qdrant collection."
+          },
+          {
+            "name": "_extract_text",
+            "line": 26,
+            "kind": "FunctionDef",
+            "doc": "Extract raw text from PDF using MarkItDown."
+          },
+          {
+            "name": "_create_chunks",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": "Create semantic chunks from raw text."
+          },
+          {
+            "name": "_process_document",
+            "line": 42,
+            "kind": "FunctionDef",
+            "doc": "Process the document and add chunks to Qdrant collection."
+          },
+          {
+            "name": "_run",
+            "line": 58,
+            "kind": "FunctionDef",
+            "doc": "Search the document with a query string."
+          }
+        ],
+        "calls": [
+          ".__init__",
+          "ConfigDict",
+          "DocumentSearchTool",
+          "Field",
+          "MarkItDown",
+          "QdrantClient",
+          "SemanticChunker",
+          "chunker.chunk",
+          "len",
+          "list",
+          "md.convert",
+          "os.path.basename",
+          "print",
+          "range",
+          "searcher._run",
+          "self._create_chunks",
+          "self._extract_text",
+          "self._process_document",
+          "self.client.add",
+          "self.client.query",
+          "separator.join",
+          "super",
+          "test_document_searcher"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [
+      "agentic_rag.ipynb",
+      "demo_llama3.2.ipynb",
+      "src/agentic_rag/agentic_rag.ipynb"
+    ],
+    "other_code": [
+      "src/agentic_rag/config/agents.yaml",
+      "src/agentic_rag/config/tasks.yaml"
+    ],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "GROQ_API_KEY",
+      "MODEL",
+      "OPENAI_API_KEY",
+      "SERPER_API_KEY",
+      "TAVILY_API_KEY"
+    ],
+    "imports": [
+      "agentic_rag",
+      "base64",
+      "chonkie",
+      "crewai",
+      "crewai_tools",
+      "gc",
+      "langchain_community",
+      "langchain_openai",
+      "markitdown",
+      "os",
+      "pydantic",
+      "qdrant_client",
+      "src",
+      "streamlit",
+      "sys",
+      "tempfile",
+      "time",
+      "tools",
+      "typing",
+      "warnings",
+      "yaml"
+    ],
+    "models": [
+      "BAAI/bge-small-en-v1.5",
+      "llama3-8b-8192",
+      "ollama/deepseek-r1:7b",
+      "ollama/llama3.2"
+    ],
+    "entries": [
+      {
+        "path": "agentic_rag.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "demo_llama3.2.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "src/agentic_rag/agentic_rag.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "src/agentic_rag/main.py",
+        "kind": "python",
+        "ui": false
+      },
+      {
+        "path": "src/agentic_rag/tools/custom_tool.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 46
+  },
+  "category": "rag",
+  "purpose": "Route questions to document retrieval and use web fallback when needed."
+}

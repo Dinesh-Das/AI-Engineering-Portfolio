@@ -1,0 +1,27 @@
+# Evaluation protocol: openclaw-secure-deployment
+
+## Hypothesis
+
+Draw the reachable ports before and after the proposed controls and test access from trusted and untrusted networks.
+
+## Dataset and cases
+
+Create a small versioned development set and a separate holdout. Include successful inputs, unanswerable/unsupported requests, malformed inputs, conflicting evidence, cross-user boundaries where relevant, and a simulated dependency timeout. Keep original documents, media timestamps, graph facts or executable expected results as ground truth.
+
+## Metrics
+
+Contract checks completed; documented dependency versions; access-control tests; restart/recovery behavior; external-service latency and demonstrable task completion.
+
+The collection's `tools.evaluate` helper computes exact answer match, retrieval recall/MRR, abstention accuracy and latency/cost summaries from observations you supply. It does not call a model, grade prose semantically or manufacture results. Use task-specific metrics in addition: executable tests for code, field-level matching for extraction, WER/diarization for audio, and held-out accuracy/AP for training.
+
+## Run record
+
+For every case record: case ID, dataset version, source revision, model/provider revision, prompt/tool settings, expected evidence/outcome, actual evidence/outcome, elapsed milliseconds and cost if known. Keep missing metrics missing; never treat absent labels as a perfect score.
+
+Use `python -m tools.evaluate --input observations.jsonl` from the collection root. See [metric format](../docs/EVALUATION_FORMAT.md).
+
+## Passing decision
+
+Choose quality and cost/latency limits before observing the candidate results. Compare with a frozen baseline, inspect the worst failures and test repeated runs for nondeterministic output. Judge-based grading should be blinded and calibrated on an independently reviewed anchor set. Syntax/integrity checks establish source health only; they do not pass this quality evaluation.
+
+Status at import: no live model observations, no GPU training result and no production benchmark reproduced.

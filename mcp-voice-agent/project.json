@@ -1,0 +1,249 @@
+{
+  "id": "mcp-voice-agent",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/mcp-voice-agent",
+  "entries": [
+    {
+      "path": "agent.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "1905eae2201049bd2472e747af781817126b1102e12c11e666783cacafcb4eea",
+      "local_sha256": "1905eae2201049bd2472e747af781817126b1102e12c11e666783cacafcb4eea",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "7f383fbafa7848b07cbc563768af87686345b004c881a2d3d98a8830b1e98937",
+      "local_sha256": "7f383fbafa7848b07cbc563768af87686345b004c881a2d3d98a8830b1e98937",
+      "changes": []
+    },
+    {
+      "upstream_path": "agent.py",
+      "path": "agent.py",
+      "upstream_sha256": "50bb7c253f7cdb6a53156d856d5319165ea5336992141d7585cbc48a5e058f91",
+      "local_sha256": "50bb7c253f7cdb6a53156d856d5319165ea5336992141d7585cbc48a5e058f91",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "08d2741ed5437bfa04b749c8132ff66e7c201db6eabfd190b008c2ee407d89e9",
+      "local_sha256": "08d2741ed5437bfa04b749c8132ff66e7c201db6eabfd190b008c2ee407d89e9",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "c851546c63a7dc122ae4034a2e2fec3ca958395514430bbd454a38bd9c81714d",
+      "local_sha256": "c851546c63a7dc122ae4034a2e2fec3ca958395514430bbd454a38bd9c81714d",
+      "changes": []
+    },
+    {
+      "upstream_path": "setup.sh",
+      "path": "setup.sh",
+      "upstream_sha256": "32ff293a26752f8f6bb4d2d6eee48733ebb5c34e1108c5ca9085cf8e03893abf",
+      "local_sha256": "32ff293a26752f8f6bb4d2d6eee48733ebb5c34e1108c5ca9085cf8e03893abf",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "agent.py",
+        "imports": [
+          "__future__",
+          "asyncio",
+          "copy",
+          "dotenv",
+          "firecrawl",
+          "inspect",
+          "json",
+          "livekit",
+          "logging",
+          "os",
+          "pydantic_ai",
+          "typing"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "SUPABASE_ACCESS_TOKEN"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "_py_type",
+            "line": 51,
+            "kind": "FunctionDef",
+            "doc": "Convert JSON schema types into Python typing annotations."
+          },
+          {
+            "name": "schema_to_google_docstring",
+            "line": 75,
+            "kind": "FunctionDef",
+            "doc": "Generate a Google-style docstring section from a JSON schema."
+          },
+          {
+            "name": "firecrawl_search",
+            "line": 107,
+            "kind": "AsyncFunctionDef",
+            "doc": "Search the web via Firecrawl."
+          },
+          {
+            "name": "build_livekit_tools",
+            "line": 143,
+            "kind": "AsyncFunctionDef",
+            "doc": "Build LiveKit tools from a Supabase MCP server."
+          },
+          {
+            "name": "entrypoint",
+            "line": 223,
+            "kind": "AsyncFunctionDef",
+            "doc": "Main entrypoint for the LiveKit agent."
+          },
+          {
+            "name": "make_proxy",
+            "line": 169,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "proxy",
+            "line": 175,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".capitalize",
+          ".get",
+          ".join",
+          "Agent",
+          "AgentSession",
+          "EnvironmentError",
+          "FirecrawlApp",
+          "MCPServerStdio",
+          "ScrapeOptions",
+          "WorkerOptions",
+          "_props.items",
+          "_py_type",
+          "assemblyai.STT",
+          "asyncio.get_event_loop",
+          "asyncio.sleep",
+          "build_livekit_tools",
+          "cli.run_app",
+          "copy.deepcopy",
+          "ctx.connect",
+          "firecrawl_app.crawl_url",
+          "function_tool",
+          "hasattr",
+          "inspect.Parameter",
+          "inspect.Signature",
+          "isinstance",
+          "json.loads",
+          "kwargs.items",
+          "len",
+          "lines.append",
+          "list",
+          "load_dotenv",
+          "logger.debug",
+          "logger.error",
+          "logger.info",
+          "logger.warning",
+          "logging.basicConfig",
+          "logging.getLogger",
+          "loop.run_in_executor",
+          "make_proxy",
+          "openai.LLM",
+          "openai.TTS",
+          "os.getenv",
+          "params.append",
+          "prop.get",
+          "props.items",
+          "ps.get",
+          "schema.get",
+          "schema.setdefault",
+          "schema_to_google_docstring",
+          "server.__aenter__",
+          "server.__aexit__",
+          "server.call_tool",
+          "server.list_tools",
+          "session.generate_reply",
+          "session.start",
+          "set",
+          "silero.VAD.load",
+          "subtype.capitalize",
+          "t.capitalize",
+          "tools.append"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "requirements.txt"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "setup.sh"
+    ],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "LIVEKIT_API_KEY",
+      "LIVEKIT_API_SECRET",
+      "LIVEKIT_URL",
+      "OPENAI_API_KEY",
+      "SUPABASE_ACCESS_TOKEN"
+    ],
+    "imports": [
+      "__future__",
+      "asyncio",
+      "copy",
+      "dotenv",
+      "firecrawl",
+      "inspect",
+      "json",
+      "livekit",
+      "logging",
+      "os",
+      "pydantic_ai",
+      "typing"
+    ],
+    "models": [
+      "gpt-4o"
+    ],
+    "entries": [
+      {
+        "path": "agent.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 1
+  },
+  "category": "voice",
+  "purpose": "Give a LiveKit voice agent MCP-backed web and database tools."
+}

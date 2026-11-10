@@ -1,0 +1,345 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "IPython",
+        "base64",
+        "gc",
+        "numpy",
+        "os",
+        "pdf2image",
+        "rag_code",
+        "random",
+        "streamlit",
+        "tempfile",
+        "time",
+        "torch",
+        "tqdm",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_pdf",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".format",
+        ".read",
+        ".save",
+        "EmbedData",
+        "QdrantVDB_QB",
+        "RAG",
+        "Retriever",
+        "base64.b64encode",
+        "convert_from_path",
+        "display_pdf",
+        "embeddata.embed",
+        "f.write",
+        "file.read",
+        "gc.collect",
+        "len",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.join",
+        "qdrant_vdb.create_collection",
+        "qdrant_vdb.define_client",
+        "qdrant_vdb.ingest_data",
+        "query_engine.query",
+        "range",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.write",
+        "str",
+        "tempfile.TemporaryDirectory",
+        "time.sleep",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "rag_code.py",
+      "imports": [
+        "Janus",
+        "base64",
+        "colpali_engine",
+        "io",
+        "qdrant_client",
+        "torch",
+        "tqdm",
+        "transformers"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "batch_iterate",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": "Yield successive n-sized chunks from lst."
+        },
+        {
+          "name": "image_to_base64",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "EmbedData",
+          "line": 24,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "QdrantVDB_QB",
+          "line": 69,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "Retriever",
+          "line": 114,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "RAG",
+          "line": 138,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_load_embed_model",
+          "line": 32,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_query_embedding",
+          "line": 44,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_embedding",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "embed",
+          "line": 60,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 71,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "define_client",
+          "line": 76,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_collection",
+          "line": 80,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ingest_data",
+          "line": 97,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 116,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "search",
+          "line": 121,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 140,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "_setup_llm",
+          "line": 149,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_context",
+          "line": 158,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "query",
+          "line": 163,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".cpu",
+        ".decode",
+        ".eval",
+        ".float",
+        ".numpy",
+        ".to",
+        ".tolist",
+        "AutoModelForCausalLM.from_pretrained",
+        "BytesIO",
+        "ColPali.from_pretrained",
+        "ColPaliProcessor.from_pretrained",
+        "QdrantClient",
+        "VLChatProcessor.from_pretrained",
+        "base64.b64encode",
+        "batch_iterate",
+        "buffered.getvalue",
+        "enumerate",
+        "image.save",
+        "image_to_base64",
+        "len",
+        "load_pil_images",
+        "models.MultiVectorConfig",
+        "models.PointStruct",
+        "models.QuantizationSearchParams",
+        "models.SearchParams",
+        "models.VectorParams",
+        "points.append",
+        "range",
+        "self._load_embed_model",
+        "self._setup_llm",
+        "self.client.collection_exists",
+        "self.client.create_collection",
+        "self.client.upsert",
+        "self.embed_model",
+        "self.embeddata.get_query_embedding",
+        "self.embeddings.extend",
+        "self.generate_context",
+        "self.generate_embedding",
+        "self.processor.process_images",
+        "self.processor.process_queries",
+        "self.retriever.search",
+        "self.tokenizer.decode",
+        "self.vector_db.client.query_points",
+        "self.vl_chat_processor",
+        "self.vl_gpt.language_model.generate",
+        "self.vl_gpt.prepare_inputs_embeds",
+        "torch.no_grad",
+        "tqdm"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "rag_code.py",
+          "line": 33,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        },
+        {
+          "rule": "trust_remote_code",
+          "path": "rag_code.py",
+          "line": 154,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "IPython",
+    "Janus",
+    "base64",
+    "colpali_engine",
+    "gc",
+    "io",
+    "numpy",
+    "os",
+    "pdf2image",
+    "qdrant_client",
+    "rag_code",
+    "random",
+    "streamlit",
+    "tempfile",
+    "time",
+    "torch",
+    "tqdm",
+    "transformers",
+    "uuid"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "rag_code.py",
+      "line": 33,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    },
+    {
+      "rule": "trust_remote_code",
+      "path": "rag_code.py",
+      "line": 154,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

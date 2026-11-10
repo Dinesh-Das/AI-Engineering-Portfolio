@@ -1,0 +1,511 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "IPython",
+        "base64",
+        "dotenv",
+        "gc",
+        "llama_index",
+        "os",
+        "random",
+        "streamlit",
+        "tempfile",
+        "time",
+        "uuid"
+      ],
+      "environment": [
+        "GROQ_API_KEY"
+      ],
+      "models": [
+        "BAAI/bge-large-en-v1.5",
+        "deepseek-r1-distill-llama-70b",
+        "meta-llama/llama-4-scout-17b-16e-instruct"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 41,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_pdf",
+          "line": 46,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".format",
+        ".read",
+        "FastEmbedEmbedding",
+        "Groq",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "base64.b64encode",
+        "display_pdf",
+        "f.write",
+        "file.read",
+        "gc.collect",
+        "index.as_query_engine",
+        "load_dotenv",
+        "load_llm",
+        "loader.load_data",
+        "message_placeholder.markdown",
+        "open",
+        "os.getenv",
+        "os.path.exists",
+        "os.path.join",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.image",
+        "st.markdown",
+        "st.selectbox",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.text_input",
+        "st.write",
+        "tempfile.TemporaryDirectory",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "evaluation.ipynb#cell-1",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "opik.configure"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-2",
+      "imports": [
+        "dotenv",
+        "nest_asyncio"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "load_dotenv",
+        "nest_asyncio.apply"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-4",
+      "imports": [
+        "llama_index",
+        "os"
+      ],
+      "environment": [
+        "GROQ_API_KEY"
+      ],
+      "models": [
+        "deepseek-r1-distill-llama-70b",
+        "meta-llama/llama-4-scout-17b-16e-instruct"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Groq",
+        "os.getenv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [
+        "Llama-4"
+      ],
+      "symbols": [],
+      "calls": [
+        "load_llm"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-7",
+      "imports": [
+        "llama_index",
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "CallbackManager",
+        "LlamaIndexCallbackHandler"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-9",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Opik",
+        "client.get_or_create_dataset"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-10",
+      "imports": [
+        "pandas"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "pd.read_csv"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-11",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "df.iterrows"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-13",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-14",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [
+        "nomic-ai/nomic-embed-text-v1"
+      ],
+      "symbols": [],
+      "calls": [
+        ".load_data",
+        "FastEmbedEmbedding",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "index.as_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-15",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "my_llm_application",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "evaluation_task",
+          "line": 8,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "my_llm_application",
+        "query_engine.query",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-16",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "AnswerRelevance",
+        "ContextPrecision",
+        "ContextRecall",
+        "Hallucination"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-17",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "evaluate"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "evaluation.ipynb#cell-18",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "workflow.py",
+      "imports": [
+        "asyncio",
+        "llama_index",
+        "nest_asyncio",
+        "os"
+      ],
+      "environment": [
+        "GROQ_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "RetrieverEvent",
+          "line": 17,
+          "kind": "ClassDef",
+          "doc": "Result of running retrieval"
+        },
+        {
+          "name": "RAGWorkflow",
+          "line": 21,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 91,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ingest",
+          "line": 40,
+          "kind": "AsyncFunctionDef",
+          "doc": "Entry point to ingest documents from a directory."
+        },
+        {
+          "name": "retrieve",
+          "line": 51,
+          "kind": "AsyncFunctionDef",
+          "doc": "Entry point for RAG retrieval."
+        },
+        {
+          "name": "synthesize",
+          "line": 69,
+          "kind": "AsyncFunctionDef",
+          "doc": "Generate a response using retrieved nodes."
+        },
+        {
+          "name": "query",
+          "line": 76,
+          "kind": "AsyncFunctionDef",
+          "doc": "Helper method to perform a complete RAG query."
+        },
+        {
+          "name": "ingest_documents",
+          "line": 84,
+          "kind": "AsyncFunctionDef",
+          "doc": "Helper method to ingest documents."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        ".join",
+        ".load_data",
+        "CompactAndRefine",
+        "FastEmbedEmbedding",
+        "GROQ_MODELS.get",
+        "GROQ_MODELS.keys",
+        "Groq",
+        "RAGWorkflow",
+        "RetrieverEvent",
+        "SimpleDirectoryReader",
+        "StopEvent",
+        "ValueError",
+        "VectorStoreIndex.from_documents",
+        "asyncio.run",
+        "ctx.get",
+        "ctx.set",
+        "ev.get",
+        "index.as_retriever",
+        "main",
+        "os.getenv",
+        "print",
+        "result.async_response_gen",
+        "retriever.aretrieve",
+        "self.run",
+        "summarizer.asynthesize",
+        "super",
+        "workflow.ingest_documents",
+        "workflow.query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "evaluation.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "GROQ_API_KEY"
+  ],
+  "imports": [
+    "IPython",
+    "asyncio",
+    "base64",
+    "dotenv",
+    "gc",
+    "llama_index",
+    "nest_asyncio",
+    "opik",
+    "os",
+    "pandas",
+    "random",
+    "streamlit",
+    "tempfile",
+    "time",
+    "uuid"
+  ],
+  "models": [
+    "BAAI/bge-large-en-v1.5",
+    "Llama-4",
+    "deepseek-r1-distill-llama-70b",
+    "meta-llama/llama-4-scout-17b-16e-instruct",
+    "nomic-ai/nomic-embed-text-v1"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "evaluation.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "workflow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

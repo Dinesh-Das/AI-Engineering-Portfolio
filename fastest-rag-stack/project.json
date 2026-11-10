@@ -1,0 +1,847 @@
+{
+  "id": "fastest-rag-stack",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/fastest-rag-stack",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    },
+    {
+      "path": "sambanova.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "ba8c9684d51f2e9cf3792dfb40d325e2714c16705bbf3b90075eee55020ef965",
+      "local_sha256": "ba8c9684d51f2e9cf3792dfb40d325e2714c16705bbf3b90075eee55020ef965",
+      "changes": []
+    },
+    {
+      "upstream_path": "docs/dspy.pdf",
+      "path": "docs/dspy.pdf",
+      "upstream_sha256": "5309836325c3a580b6c176242f49f21ca40e413b0acd514e74b67e16bb1b56bc",
+      "local_sha256": "5309836325c3a580b6c176242f49f21ca40e413b0acd514e74b67e16bb1b56bc",
+      "changes": []
+    },
+    {
+      "upstream_path": "notebook.ipynb",
+      "path": "notebook.ipynb",
+      "upstream_sha256": "f79317bb6cb7f8791915b3cf2a9e0e59c8d3348860730db5df6636e76649abab",
+      "local_sha256": "f3f921cec7eccb9340e2ac8b7337f08bb754fb6c60696debda104f42e6e2f5ae",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets.",
+        "Fixed unmatched closing parenthesis in notebook cell 23."
+      ]
+    },
+    {
+      "upstream_path": "rag_code.py",
+      "path": "rag_code.py",
+      "upstream_sha256": "d95ac67c428011899af290704dd20b0f422af2f97beafc76288f634b219b3b3c",
+      "local_sha256": "d95ac67c428011899af290704dd20b0f422af2f97beafc76288f634b219b3b3c",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "0de63b843b56f89f174b173f79c6816149261bfe64825b0f9f888dda60720e38",
+      "local_sha256": "0de63b843b56f89f174b173f79c6816149261bfe64825b0f9f888dda60720e38",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "resources/thumbnail.png",
+      "path": "resources/thumbnail.png",
+      "upstream_sha256": "c9386a822c2e50248f5153d8ef885aa095e02a43ce0015bf58447278842ce79e",
+      "local_sha256": "c9386a822c2e50248f5153d8ef885aa095e02a43ce0015bf58447278842ce79e",
+      "changes": []
+    },
+    {
+      "upstream_path": "sambanova.ipynb",
+      "path": "sambanova.ipynb",
+      "upstream_sha256": "0e9b2aa643ff25a0baca8e3fa91d7f4780608217b6b77f4cf63d1f3dac5e5706",
+      "local_sha256": "28073ec2c31b8de16392cc1db126001b803ea853812d0285ca3b2cb7e6a039d4",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "IPython",
+          "base64",
+          "dotenv",
+          "gc",
+          "llama_index",
+          "openai",
+          "os",
+          "rag_code",
+          "random",
+          "streamlit",
+          "tempfile",
+          "time",
+          "uuid"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".decode",
+          "EmbedData",
+          "QdrantVDB_QB",
+          "RAG",
+          "Retriever",
+          "SimpleDirectoryReader",
+          "base64.b64encode",
+          "display_pdf",
+          "embeddata.embed",
+          "f.write",
+          "file.read",
+          "gc.collect",
+          "load_dotenv",
+          "loader.load_data",
+          "message_placeholder.markdown",
+          "open",
+          "os.path.exists",
+          "os.path.join",
+          "qdrant_vdb.create_collection",
+          "qdrant_vdb.define_client",
+          "qdrant_vdb.ingest_data",
+          "query_engine.query",
+          "reset_chat",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.file_uploader",
+          "st.header",
+          "st.markdown",
+          "st.session_state.get",
+          "st.session_state.messages.append",
+          "st.stop",
+          "st.success",
+          "st.write",
+          "tempfile.TemporaryDirectory",
+          "uploaded_file.getvalue",
+          "uuid.uuid4"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "notebook.ipynb#cell-2",
+        "imports": [
+          "IPython",
+          "dotenv",
+          "llama_index",
+          "nest_asyncio",
+          "openai",
+          "os",
+          "qdrant_client"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "nest_asyncio.apply"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-4",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-5",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "create_index",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "QdrantVectorStore",
+          "StorageContext.from_defaults",
+          "VectorStoreIndex.from_documents",
+          "qdrant_client.QdrantClient"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-6",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "BAAI/bge-large-en-v1.5",
+          "Meta-Llama-3.3-70B-Instruct"
+        ],
+        "symbols": [],
+        "calls": [
+          "HuggingFaceEmbedding",
+          "SambaNovaCloud"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "notebook.ipynb#cell-6",
+            "line": 5,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-7",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "PromptTemplate",
+          "SimpleDirectoryReader",
+          "VectorStoreIndex.from_documents",
+          "create_index",
+          "index.as_query_engine",
+          "loader.load_data",
+          "print",
+          "query_engine.query",
+          "query_engine.update_prompts"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-8",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "Markdown",
+          "display",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-10",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "notebook.ipynb#cell-11",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": true
+      },
+      {
+        "path": "notebook.ipynb#cell-12",
+        "imports": [
+          "dotenv",
+          "llama_index",
+          "os"
+        ],
+        "environment": [
+          "SAMBANOVA_API_KEY"
+        ],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "load_dotenv",
+          "os.getenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-13",
+        "imports": [],
+        "environment": [],
+        "models": [
+          "Meta-Llama-3.3-70B-Instruct"
+        ],
+        "symbols": [],
+        "calls": [
+          "SambaNovaCloud"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-14",
+        "imports": [
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-15",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "ChatMessage",
+          "llm.chat",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-16",
+        "imports": [
+          "llama_index",
+          "rag_code"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-17",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "EmbedData",
+          "QdrantVDB_QB",
+          "RAG",
+          "Retriever",
+          "SimpleDirectoryReader",
+          "embeddata.embed",
+          "loader.load_data",
+          "qdrant_vdb.create_collection",
+          "qdrant_vdb.define_client",
+          "qdrant_vdb.ingest_data"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-18",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "query_engine.query"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-19",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-20",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-21",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "ChatMessage",
+          "print",
+          "query_engine.llm.stream_complete"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-22",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-23",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-24",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "ai_stream_msgs.append",
+          "message_placeholder.markdown",
+          "query_engine.llm.stream_chat"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-25",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-26",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "notebook.ipynb#cell-27",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "rag_code.py",
+        "imports": [
+          "llama_index",
+          "qdrant_client"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "batch_iterate",
+            "line": 11,
+            "kind": "FunctionDef",
+            "doc": "Yield successive n-sized chunks from lst."
+          },
+          {
+            "name": "EmbedData",
+            "line": 16,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "QdrantVDB_QB",
+            "line": 39,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "Retriever",
+            "line": 80,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "RAG",
+            "line": 109,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_load_embed_model",
+            "line": 24,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_embedding",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "embed",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 41,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "define_client",
+            "line": 46,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_collection",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest_data",
+            "line": 67,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 87,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 111,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_setup_llm",
+            "line": 133,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_context",
+            "line": 140,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "query",
+            "line": 153,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          "ChatMessage",
+          "HuggingFaceEmbedding",
+          "QdrantClient",
+          "SambaNovaCloud",
+          "batch_iterate",
+          "combined_prompt.append",
+          "dict",
+          "len",
+          "models.BinaryQuantization",
+          "models.BinaryQuantizationConfig",
+          "models.OptimizersConfigDiff",
+          "models.QuantizationSearchParams",
+          "models.SearchParams",
+          "models.VectorParams",
+          "range",
+          "self._load_embed_model",
+          "self._setup_llm",
+          "self.client.collection_exists",
+          "self.client.create_collection",
+          "self.client.update_collection",
+          "self.client.upload_collection",
+          "self.embed_model.get_text_embedding_batch",
+          "self.embeddata.embed_model.get_query_embedding",
+          "self.embeddings.extend",
+          "self.generate_context",
+          "self.generate_embedding",
+          "self.llm.stream_complete",
+          "self.qa_prompt_tmpl_str.format",
+          "self.retriever.search",
+          "self.vector_db.client.search",
+          "zip"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "rag_code.py",
+            "line": 25,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "sambanova.ipynb#cell-1",
+        "imports": [
+          "dotenv",
+          "llama_index"
+        ],
+        "environment": [],
+        "models": [
+          "Meta-Llama-3.1-405B-Instruct"
+        ],
+        "symbols": [],
+        "calls": [
+          "SambaNovaCloud",
+          "load_dotenv"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "sambanova.ipynb#cell-2",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          "llm.stream_complete",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "sambanova.ipynb#cell-3",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null,
+        "notebook_magics": false
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "notebook.ipynb",
+      "sambanova.ipynb"
+    ],
+    "other_code": [],
+    "environment": [
+      "SAMBANOVA_API_KEY"
+    ],
+    "imports": [
+      "IPython",
+      "base64",
+      "dotenv",
+      "gc",
+      "llama_index",
+      "nest_asyncio",
+      "openai",
+      "os",
+      "qdrant_client",
+      "rag_code",
+      "random",
+      "streamlit",
+      "tempfile",
+      "time",
+      "uuid"
+    ],
+    "models": [
+      "BAAI/bge-large-en-v1.5",
+      "Meta-Llama-3.1-405B-Instruct",
+      "Meta-Llama-3.3-70B-Instruct"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "notebook.ipynb",
+        "kind": "notebook",
+        "ui": false
+      },
+      {
+        "path": "sambanova.ipynb",
+        "kind": "notebook",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "trust_remote_code",
+        "path": "notebook.ipynb#cell-6",
+        "line": 5,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      },
+      {
+        "rule": "trust_remote_code",
+        "path": "rag_code.py",
+        "line": 25,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 30
+  },
+  "category": "retrieval",
+  "purpose": "Combine quantized Qdrant retrieval with SambaNova-hosted generation."
+}

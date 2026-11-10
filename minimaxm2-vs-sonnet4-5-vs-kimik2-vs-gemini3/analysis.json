@@ -1,0 +1,265 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "asyncio",
+        "code_evaluation_opik",
+        "code_ingestion",
+        "dotenv",
+        "model_service",
+        "pandas",
+        "plotly",
+        "streamlit"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "handle_chat_input",
+          "line": 186,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_model1_stream",
+          "line": 221,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_model2_stream",
+          "line": 240,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "validate_evaluation_result",
+          "line": 329,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".removeprefix",
+        ".removesuffix",
+        ".strip",
+        "all_models.index",
+        "asyncio.gather",
+        "asyncio.run",
+        "container.code",
+        "dict",
+        "evaluate_code",
+        "fig.update_layout",
+        "fig.update_xaxes",
+        "fig.update_yaxes",
+        "get_all_model_names",
+        "get_parallel_responses",
+        "handle_chat_input",
+        "ingest_github_repo",
+        "isinstance",
+        "len",
+        "load_dotenv",
+        "message.get",
+        "metric.title",
+        "model1_container.code",
+        "model1_data.append",
+        "model2_container.code",
+        "model2_data.append",
+        "pd.DataFrame",
+        "plot_data.melt",
+        "process_model1_stream",
+        "process_model2_stream",
+        "px.bar",
+        "response_text.strip",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.code",
+        "st.column_config.TextColumn",
+        "st.columns",
+        "st.dataframe",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.plotly_chart",
+        "st.selectbox",
+        "st.session_state.chat_history.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.stop",
+        "st.success",
+        "st.text_area",
+        "st.text_input",
+        "st.title",
+        "st.write",
+        "str",
+        "validate_evaluation_result"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "code_evaluation_opik.py",
+      "imports": [
+        "opik"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "evaluate_code",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": "Evaluate generated Python code using Comet Opik's GEval metrics."
+        }
+      ],
+      "calls": [
+        "GEval",
+        "ValueError",
+        "best_practices_metric.score",
+        "correctness_metric.score",
+        "generated_code.strip",
+        "readability_metric.score",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "code_ingestion.py",
+      "imports": [
+        "gitingest"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ingest_github_repo",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Exception",
+        "ValueError",
+        "ingest",
+        "isinstance",
+        "repo_url.startswith",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "model_service.py",
+      "imports": [
+        "asyncio",
+        "litellm",
+        "os",
+        "typing"
+      ],
+      "environment": [
+        "OPENROUTER_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "get_model_response_async",
+          "line": 16,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_parallel_responses",
+          "line": 76,
+          "kind": "AsyncFunctionDef",
+          "doc": "Get parallel responses from two selected models."
+        },
+        {
+          "name": "get_model_responses",
+          "line": 97,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_all_model_names",
+          "line": 104,
+          "kind": "FunctionDef",
+          "doc": "Get all available model names for dropdown selection."
+        },
+        {
+          "name": "validate_model_name",
+          "line": 113,
+          "kind": "FunctionDef",
+          "doc": "Validate if a model name exists in available models."
+        },
+        {
+          "name": "get_model_mapping",
+          "line": 118,
+          "kind": "FunctionDef",
+          "doc": "Get the model mapping for a given model name."
+        }
+      ],
+      "calls": [
+        ".lower",
+        "AVAILABLE_MODELS.keys",
+        "ValueError",
+        "acompletion",
+        "asyncio.get_event_loop",
+        "get_model_mapping",
+        "get_model_response_async",
+        "get_parallel_responses",
+        "hasattr",
+        "list",
+        "loop.run_until_complete",
+        "os.getenv",
+        "print",
+        "str",
+        "validate_model_name"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "OPENAI_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "code_evaluation_opik",
+    "code_ingestion",
+    "dotenv",
+    "gitingest",
+    "litellm",
+    "model_service",
+    "opik",
+    "os",
+    "pandas",
+    "plotly",
+    "streamlit",
+    "typing"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

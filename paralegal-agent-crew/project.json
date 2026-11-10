@@ -1,0 +1,1088 @@
+{
+  "id": "paralegal-agent-crew",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/paralegal-agent-crew",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "examples/test.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "377344d0958979a28ffad82b53c94a81f48fc7df27c5c57fc86a7583c815252d",
+      "local_sha256": "377344d0958979a28ffad82b53c94a81f48fc7df27c5c57fc86a7583c815252d",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "1cec25fd8bb9dceeb0f1b6bdd05c31ca0708caa7c256e122f9cc9d9bec62ead3",
+      "local_sha256": "1cec25fd8bb9dceeb0f1b6bdd05c31ca0708caa7c256e122f9cc9d9bec62ead3",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "bf0c1b1cc1cc76fbd71c31ca85cae961e5c786b93099adefa854817aa5b4c9bd",
+      "local_sha256": "bf0c1b1cc1cc76fbd71c31ca85cae961e5c786b93099adefa854817aa5b4c9bd",
+      "changes": []
+    },
+    {
+      "upstream_path": "config/settings.py",
+      "path": "config/settings.py",
+      "upstream_sha256": "55701e18427b551e5bc847d6e4b09d7af79bd8e7970812e6fa20b44ab71ac7f6",
+      "local_sha256": "55701e18427b551e5bc847d6e4b09d7af79bd8e7970812e6fa20b44ab71ac7f6",
+      "changes": []
+    },
+    {
+      "upstream_path": "data/raft.pdf",
+      "path": "data/raft.pdf",
+      "upstream_sha256": "9c92d8e29972f272e6033c29d07e3bfe691e932676459e71af621be6b2105919",
+      "local_sha256": "9c92d8e29972f272e6033c29d07e3bfe691e932676459e71af621be6b2105919",
+      "changes": []
+    },
+    {
+      "upstream_path": "examples/test.py",
+      "path": "examples/test.py",
+      "upstream_sha256": "de8c88c93dcee6d28dae9caaa142efd4114627784646c9dbea0be84a8ba692a1",
+      "local_sha256": "de8c88c93dcee6d28dae9caaa142efd4114627784646c9dbea0be84a8ba692a1",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "2797a7ef3c227da9118c3dfb341d28293d14fdfba778d73da3c5f7f96b2f99c1",
+      "local_sha256": "2797a7ef3c227da9118c3dfb341d28293d14fdfba778d73da3c5f7f96b2f99c1",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "4b06ca6632753e8d313222c0d6c7da3039f9a2299e4012774ed55353ff1d0523",
+      "local_sha256": "4b06ca6632753e8d313222c0d6c7da3039f9a2299e4012774ed55353ff1d0523",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "src/embeddings/embed_data.py",
+      "path": "src/embeddings/embed_data.py",
+      "upstream_sha256": "ba8f45fb5468ff55f4cedccae71de2bff32d0521e87054665aa3eec5c45c170a",
+      "local_sha256": "ba8f45fb5468ff55f4cedccae71de2bff32d0521e87054665aa3eec5c45c170a",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/generation/rag.py",
+      "path": "src/generation/rag.py",
+      "upstream_sha256": "af91304aec05b3bd8e56f5e3368ada0a6b3c0d18fa65d53161a0d3a4927eeff4",
+      "local_sha256": "af91304aec05b3bd8e56f5e3368ada0a6b3c0d18fa65d53161a0d3a4927eeff4",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/indexing/milvus_vdb.py",
+      "path": "src/indexing/milvus_vdb.py",
+      "upstream_sha256": "33cf5707a87bbbe9c46ad333230b8130cb6953b767882fa9068fb5d7975d1949",
+      "local_sha256": "33cf5707a87bbbe9c46ad333230b8130cb6953b767882fa9068fb5d7975d1949",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/retrieval/retriever_rerank.py",
+      "path": "src/retrieval/retriever_rerank.py",
+      "upstream_sha256": "42e4c3a9b6dec08f927a07a98518689e74dc38ac1640b7804eec0c1f28021d42",
+      "local_sha256": "42e4c3a9b6dec08f927a07a98518689e74dc38ac1640b7804eec0c1f28021d42",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/tools/firecrawl_search_tool.py",
+      "path": "src/tools/firecrawl_search_tool.py",
+      "upstream_sha256": "caeb478e36ca1a06b281d29a56c4580936fb54cc460660d2669744079df0882e",
+      "local_sha256": "caeb478e36ca1a06b281d29a56c4580936fb54cc460660d2669744079df0882e",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/workflows/agent_workflow.py",
+      "path": "src/workflows/agent_workflow.py",
+      "upstream_sha256": "709ba54b149e1a436b39e329e9a19a35a61403c8f0edd54a60addcb509134f29",
+      "local_sha256": "709ba54b149e1a436b39e329e9a19a35a61403c8f0edd54a60addcb509134f29",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/workflows/events.py",
+      "path": "src/workflows/events.py",
+      "upstream_sha256": "5f191b71d1622491111f420f9b0c51d0085b6316f88658da3e7d3984e495842a",
+      "local_sha256": "5f191b71d1622491111f420f9b0c51d0085b6316f88658da3e7d3984e495842a",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "5fb2d7fabe1b48f2c5b300c5b44fa9252b84276e6115f06d330dfedc8275a9a9",
+      "local_sha256": "5fb2d7fabe1b48f2c5b300c5b44fa9252b84276e6115f06d330dfedc8275a9a9",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "ansi2html",
+          "asyncio",
+          "base64",
+          "config",
+          "contextlib",
+          "dotenv",
+          "gc",
+          "io",
+          "nest_asyncio",
+          "os",
+          "pathlib",
+          "pypdf",
+          "re",
+          "src",
+          "streamlit",
+          "tempfile",
+          "time",
+          "uuid"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "OPENAI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 51,
+            "kind": "FunctionDef",
+            "doc": "Reset chat history and clear memory."
+          },
+          {
+            "name": "display_pdf",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": "Display PDF preview in sidebar."
+          },
+          {
+            "name": "render_logs",
+            "line": 69,
+            "kind": "FunctionDef",
+            "doc": "Render logs with ANSI colors and emojis nicely in Streamlit"
+          },
+          {
+            "name": "load_and_split_pdf",
+            "line": 84,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "initialize_workflow",
+            "line": 107,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "run_workflow",
+            "line": 183,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "cleanup_resources",
+            "line": 195,
+            "kind": "FunctionDef",
+            "doc": "Cleanup vector database and other resources."
+          }
+        ],
+        "calls": [
+          ".decode",
+          ".join",
+          "Ansi2HTMLConverter",
+          "EmbedData",
+          "MilvusVDB",
+          "ParalegalAgentWorkflow",
+          "PdfReader",
+          "RAG",
+          "Retriever",
+          "asyncio.run",
+          "base64.b64encode",
+          "c.get",
+          "c.strip",
+          "chunks.append",
+          "cleanup_resources",
+          "conv.convert",
+          "display_pdf",
+          "embed_data.embed",
+          "enumerate",
+          "f.getvalue",
+          "f.write",
+          "file.read",
+          "float",
+          "full_response.split",
+          "full_text.split",
+          "full_text_parts.append",
+          "gc.collect",
+          "getattr",
+          "initialize_workflow",
+          "io.StringIO",
+          "isinstance",
+          "len",
+          "load_and_split_pdf",
+          "load_dotenv",
+          "max",
+          "message_placeholder.markdown",
+          "nest_asyncio.apply",
+          "open",
+          "os.getenv",
+          "os.path.join",
+          "page.extract_text",
+          "redirect_stdout",
+          "result.get",
+          "retriever.get_citations",
+          "retriever.search",
+          "run_workflow",
+          "st.balloons",
+          "st.button",
+          "st.caption",
+          "st.chat_input",
+          "st.chat_message",
+          "st.code",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.expander",
+          "st.file_uploader",
+          "st.header",
+          "st.info",
+          "st.markdown",
+          "st.rerun",
+          "st.session_state.get",
+          "st.session_state.messages.append",
+          "st.session_state.vector_db.close",
+          "st.session_state.workflow.run_workflow",
+          "st.session_state.workflow_logs.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.stop",
+          "st.success",
+          "st.text_input",
+          "st.warning",
+          "str",
+          "tempfile.TemporaryDirectory",
+          "time.perf_counter",
+          "time.sleep",
+          "times.append",
+          "uploaded_file.getvalue",
+          "uuid.uuid4",
+          "vector_db.create_collection",
+          "vector_db.ingest_data",
+          "vector_db.initialize_client"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "config/settings.py",
+        "imports": [
+          "os",
+          "pathlib",
+          "pydantic_settings"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "Settings",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "Config",
+            "line": 34,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__post_init__",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".mkdir",
+          ".parent.mkdir",
+          "Path",
+          "Settings"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "examples/test.py",
+        "imports": [
+          "asyncio",
+          "config",
+          "loguru",
+          "os",
+          "pathlib",
+          "pypdf",
+          "src",
+          "sys",
+          "warnings"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "OPENAI_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_citations",
+            "line": 19,
+            "kind": "FunctionDef",
+            "doc": "Return retrieval results as simple citation dicts."
+          },
+          {
+            "name": "print_citations",
+            "line": 35,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 50,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "print_detailed_results",
+            "line": 205,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "test_retrieval",
+            "line": 225,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".exists",
+          ".join",
+          ".lower",
+          ".strip",
+          "EmbedData",
+          "MilvusVDB",
+          "ParalegalAgentWorkflow",
+          "Path",
+          "PdfReader",
+          "RAG",
+          "Retriever",
+          "asyncio.run",
+          "c.get",
+          "citations.append",
+          "embed_data.embed",
+          "enumerate",
+          "float",
+          "full_text.split",
+          "get_citations",
+          "input",
+          "item.get",
+          "len",
+          "logger.error",
+          "logger.info",
+          "logger.warning",
+          "main",
+          "max",
+          "min",
+          "os.getenv",
+          "page.extract_text",
+          "pages_text.append",
+          "print",
+          "print_citations",
+          "print_detailed_results",
+          "query.lower",
+          "result.get",
+          "retriever.search",
+          "retriever.search_with_scores",
+          "str",
+          "sys.path.append",
+          "text_chunks.append",
+          "vector_db.close",
+          "vector_db.create_collection",
+          "vector_db.ingest_data",
+          "vector_db.initialize_client",
+          "warnings.filterwarnings",
+          "workflow.run_workflow"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/embeddings/embed_data.py",
+        "imports": [
+          "config",
+          "loguru",
+          "numpy",
+          "sentence_transformers",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "batch_iterate",
+            "line": 7,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "EmbedData",
+            "line": 11,
+            "kind": "ClassDef",
+            "doc": "Handles document embedding with binary quantization support."
+          },
+          {
+            "name": "__init__",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_load_embed_model",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": "Load the embedding model using sentence-transformers"
+          },
+          {
+            "name": "_binary_quantize",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": "Convert float32 embeddings to binary vectors."
+          },
+          {
+            "name": "generate_embedding",
+            "line": 47,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "embed",
+            "line": 57,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_query_embedding",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "binary_quantize_query",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "clear",
+            "line": 89,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".astype",
+          ".tobytes",
+          ".tolist",
+          "SentenceTransformer",
+          "batch_iterate",
+          "embeddings.tolist",
+          "len",
+          "logger.info",
+          "max",
+          "min",
+          "np.array",
+          "np.packbits",
+          "np.where",
+          "range",
+          "self._binary_quantize",
+          "self._load_embed_model",
+          "self.binary_embeddings.clear",
+          "self.binary_embeddings.extend",
+          "self.contexts.clear",
+          "self.embed_model.encode",
+          "self.embeddings.clear",
+          "self.embeddings.extend",
+          "self.generate_embedding",
+          "vec.tobytes"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "src/embeddings/embed_data.py",
+            "line": 31,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/generation/rag.py",
+        "imports": [
+          "config",
+          "crewai",
+          "loguru",
+          "pydantic",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ChatMessage",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "RAG",
+            "line": 12,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 13,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_setup_llm",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_context",
+            "line": 60,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "query",
+            "line": 64,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_detailed_response",
+            "line": 72,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "set_prompt_template",
+            "line": 90,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "set_system_message",
+            "line": 95,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ChatMessage",
+          "LLM",
+          "ValueError",
+          "logger.info",
+          "self._setup_llm",
+          "self.generate_context",
+          "self.llm.call",
+          "self.prompt_template.format",
+          "self.query",
+          "self.retriever.get_combined_context",
+          "self.retriever.search_with_scores"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/indexing/milvus_vdb.py",
+        "imports": [
+          "config",
+          "loguru",
+          "pymilvus",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "MilvusVDB",
+            "line": 7,
+            "kind": "ClassDef",
+            "doc": "Milvus vector database with binary quantization support."
+          },
+          {
+            "name": "__init__",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "initialize_client",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_collection",
+            "line": 30,
+            "kind": "FunctionDef",
+            "doc": "Create collection with binary vector support."
+          },
+          {
+            "name": "ingest_data",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": "Ingest embedded data into the vector database."
+          },
+          {
+            "name": "search",
+            "line": 113,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "collection_exists",
+            "line": 146,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_collection_info",
+            "line": 151,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "close",
+            "line": 167,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "MilvusClient",
+          "RuntimeError",
+          "batch_iterate",
+          "data_batch.append",
+          "formatted_results.append",
+          "index_params.add_index",
+          "len",
+          "logger.error",
+          "logger.info",
+          "schema.add_field",
+          "self.client.close",
+          "self.client.create_collection",
+          "self.client.create_schema",
+          "self.client.drop_collection",
+          "self.client.get_collection_stats",
+          "self.client.has_collection",
+          "self.client.insert",
+          "self.client.prepare_index_params",
+          "self.client.search",
+          "self.collection_exists",
+          "zip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/retrieval/retriever_rerank.py",
+        "imports": [
+          "config",
+          "loguru",
+          "pydantic",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "TextNode",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "NodeWithScore",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "Retriever",
+            "line": 17,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 28,
+            "kind": "FunctionDef",
+            "doc": "Search for relevant documents using vector similarity."
+          },
+          {
+            "name": "get_contexts",
+            "line": 60,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_combined_context",
+            "line": 64,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search_with_scores",
+            "line": 68,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_citations",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          ".strip",
+          "Field",
+          "NodeWithScore",
+          "TextNode",
+          "citations.append",
+          "enumerate",
+          "item.get",
+          "len",
+          "nodes_with_scores.append",
+          "results.append",
+          "self.embed_data.binary_quantize_query",
+          "self.embed_data.get_query_embedding",
+          "self.get_contexts",
+          "self.search",
+          "self.search_with_scores",
+          "self.vector_db.search",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/tools/firecrawl_search_tool.py",
+        "imports": [
+          "config",
+          "crewai",
+          "firecrawl",
+          "os",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "FirecrawlSearchInput",
+            "line": 8,
+            "kind": "ClassDef",
+            "doc": "Input schema for Firecrawl web search tool"
+          },
+          {
+            "name": "FirecrawlSearchTool",
+            "line": 13,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "_run",
+            "line": 21,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".join",
+          ".strip",
+          "Field",
+          "FirecrawlApp",
+          "app.search",
+          "getattr",
+          "isinstance",
+          "os.getenv",
+          "result.get",
+          "search_contents.append"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/workflows/agent_workflow.py",
+        "imports": [
+          "config",
+          "crewai",
+          "events",
+          "loguru",
+          "pydantic",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ParalegalAgentState",
+            "line": 75,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "ParalegalAgentWorkflow",
+            "line": 79,
+            "kind": "ClassDef",
+            "doc": "Paralegal Agent Workflow with router and web search fallback using CrewAI Flows."
+          },
+          {
+            "name": "__init__",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "retrieve",
+            "line": 98,
+            "kind": "FunctionDef",
+            "doc": "Retrieve relevant documents from vector database"
+          },
+          {
+            "name": "generate_rag_response",
+            "line": 113,
+            "kind": "FunctionDef",
+            "doc": "Generate initial RAG response"
+          },
+          {
+            "name": "evaluate_response",
+            "line": 130,
+            "kind": "FunctionDef",
+            "doc": "Evaluate RAG response quality and route accordingly"
+          },
+          {
+            "name": "perform_web_search",
+            "line": 145,
+            "kind": "FunctionDef",
+            "doc": "Perform web search if insufficient information from RAG response"
+          },
+          {
+            "name": "synthesize_response",
+            "line": 172,
+            "kind": "FunctionDef",
+            "doc": "Synthesize final response from RAG and web search results"
+          },
+          {
+            "name": "run_workflow",
+            "line": 210,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run the complete flow for a given query."
+          }
+        ],
+        "calls": [
+          ".__init__",
+          ".run",
+          ".split",
+          ".strip",
+          ".upper",
+          "EvaluateEvent",
+          "FirecrawlSearchTool",
+          "LLM",
+          "QUERY_OPTIMIZATION_TEMPLATE.format",
+          "ROUTER_EVALUATION_TEMPLATE.format",
+          "RetrieveEvent",
+          "SYNTHESIS_TEMPLATE.format",
+          "SynthesizeEvent",
+          "ValueError",
+          "getattr",
+          "isinstance",
+          "len",
+          "listen",
+          "logger.error",
+          "logger.info",
+          "or_",
+          "router",
+          "self.kickoff_async",
+          "self.llm.call",
+          "self.rag.query",
+          "self.retriever.search",
+          "start",
+          "str",
+          "super"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "src/workflows/events.py",
+        "imports": [
+          "pydantic",
+          "src",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "RetrieveEvent",
+            "line": 5,
+            "kind": "ClassDef",
+            "doc": "Event containing retrieved nodes from vector database."
+          },
+          {
+            "name": "EvaluateEvent",
+            "line": 10,
+            "kind": "ClassDef",
+            "doc": "Event for evaluating RAG response quality."
+          },
+          {
+            "name": "WebSearchEvent",
+            "line": 16,
+            "kind": "ClassDef",
+            "doc": "Event for web search when RAG response is insufficient."
+          },
+          {
+            "name": "SynthesizeEvent",
+            "line": 22,
+            "kind": "ClassDef",
+            "doc": "Event for final response synthesis."
+          }
+        ],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "ansi2html",
+      "asyncio",
+      "base64",
+      "config",
+      "contextlib",
+      "crewai",
+      "dotenv",
+      "events",
+      "firecrawl",
+      "gc",
+      "io",
+      "loguru",
+      "nest_asyncio",
+      "numpy",
+      "os",
+      "pathlib",
+      "pydantic",
+      "pydantic_settings",
+      "pymilvus",
+      "pypdf",
+      "re",
+      "sentence_transformers",
+      "src",
+      "streamlit",
+      "sys",
+      "tempfile",
+      "time",
+      "typing",
+      "uuid",
+      "warnings"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "examples/test.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [
+      {
+        "rule": "trust_remote_code",
+        "path": "src/embeddings/embed_data.py",
+        "line": 31,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 10
+  },
+  "category": "rag",
+  "purpose": "Retrieve legal-document evidence, rerank it and use research fallback."
+}

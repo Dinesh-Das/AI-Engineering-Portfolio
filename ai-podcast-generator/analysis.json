@@ -1,0 +1,296 @@
+{
+  "units": [
+    {
+      "path": "scraper.py",
+      "imports": [
+        "dotenv",
+        "firecrawl",
+        "os"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "WebScraper",
+          "line": 8,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "scrape",
+          "line": 12,
+          "kind": "FunctionDef",
+          "doc": "Scrape content from a given URL."
+        }
+      ],
+      "calls": [
+        "Exception",
+        "Firecrawl",
+        "ValueError",
+        "getattr",
+        "isinstance",
+        "load_dotenv",
+        "os.getenv",
+        "result.get",
+        "self.app.scrape",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "script_generator.py",
+      "imports": [
+        "dotenv",
+        "os",
+        "requests"
+      ],
+      "environment": [
+        "OPENROUTER_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ScriptGenerator",
+          "line": 8,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate",
+          "line": 13,
+          "kind": "FunctionDef",
+          "doc": "Generate podcast script from content using Minimax-M2."
+        },
+        {
+          "name": "_create_prompt",
+          "line": 39,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Exception",
+        "load_dotenv",
+        "os.getenv",
+        "requests.post",
+        "response.json",
+        "response.raise_for_status",
+        "self._create_prompt",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "tts_converter.py",
+      "imports": [
+        "dotenv",
+        "os",
+        "requests",
+        "time"
+      ],
+      "environment": [
+        "MINIMAX_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "TTSConverter",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "convert",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": "Convert script to speech using Minimax TTS."
+        },
+        {
+          "name": "_parse_script",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": "Parse script into speaker and text segments."
+        },
+        {
+          "name": "_generate_and_save_speech",
+          "line": 61,
+          "kind": "FunctionDef",
+          "doc": "Generate speech for a single text segment and save to file."
+        },
+        {
+          "name": "_poll_task",
+          "line": 109,
+          "kind": "FunctionDef",
+          "doc": "Poll task status until completion."
+        },
+        {
+          "name": "_download_audio",
+          "line": 137,
+          "kind": "FunctionDef",
+          "doc": "Download audio file from Minimax API."
+        }
+      ],
+      "calls": [
+        ".split",
+        ".strip",
+        "Exception",
+        "TTSConverter",
+        "audio_files.append",
+        "converter.convert",
+        "enumerate",
+        "f.write",
+        "len",
+        "line.replace",
+        "line.startswith",
+        "line.strip",
+        "load_dotenv",
+        "open",
+        "os.getenv",
+        "os.makedirs",
+        "os.path.join",
+        "print",
+        "range",
+        "requests.get",
+        "requests.post",
+        "response.json",
+        "response.raise_for_status",
+        "result.get",
+        "script.strip",
+        "segments.append",
+        "self._download_audio",
+        "self._generate_and_save_speech",
+        "self._parse_script",
+        "self._poll_task",
+        "self.voices.get",
+        "str",
+        "time.sleep"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "cli.py",
+      "imports": [
+        "argparse",
+        "dotenv",
+        "json",
+        "os",
+        "pathlib",
+        "scraper",
+        "script_generator",
+        "tts_converter",
+        "urllib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".generate",
+        ".join",
+        ".scrape",
+        ".write_text",
+        "Path",
+        "ScriptGenerator",
+        "TTSConverter",
+        "ValueError",
+        "WebScraper",
+        "argparse.ArgumentParser",
+        "args.output_dir.mkdir",
+        "args.text_file.read_text",
+        "args.text_file.stat",
+        "content.strip",
+        "converter._parse_script",
+        "converter.convert",
+        "json.dumps",
+        "len",
+        "load_dotenv",
+        "main",
+        "manifest_path.write_text",
+        "os.environ.get",
+        "parser.add_argument",
+        "parser.add_mutually_exclusive_group",
+        "parser.error",
+        "parser.parse_args",
+        "print",
+        "required.append",
+        "source.add_argument",
+        "str",
+        "urlparse"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "FIRECRAWL_API_KEY",
+    "MINIMAX_API_KEY",
+    "OPENROUTER_API_KEY"
+  ],
+  "imports": [
+    "argparse",
+    "dotenv",
+    "firecrawl",
+    "json",
+    "os",
+    "pathlib",
+    "requests",
+    "scraper",
+    "script_generator",
+    "time",
+    "tts_converter",
+    "urllib"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "tts_converter.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "cli.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

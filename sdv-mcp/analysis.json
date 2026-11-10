@@ -1,0 +1,130 @@
+{
+  "units": [
+    {
+      "path": "server.py",
+      "imports": [
+        "mcp",
+        "tools"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "sdv_generate",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": "Generate synthetic data based on real data using SDV Synthesizer."
+        },
+        {
+          "name": "sdv_evaluate",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": "Evaluate the quality of synthetic data compared to real data."
+        },
+        {
+          "name": "sdv_visualize",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": "Generate visualization comparing real and synthetic data for a specific column."
+        }
+      ],
+      "calls": [
+        "FastMCP",
+        "evaluate",
+        "generate",
+        "mcp.run",
+        "mcp.tool",
+        "str",
+        "visualize"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "tools.py",
+      "imports": [
+        "os",
+        "pandas",
+        "sdv"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "generate",
+          "line": 9,
+          "kind": "FunctionDef",
+          "doc": "Generate synthetic data based on real data using SDV Synthesizer."
+        },
+        {
+          "name": "evaluate",
+          "line": 48,
+          "kind": "FunctionDef",
+          "doc": "Evaluate the quality of synthetic data compared to real data."
+        },
+        {
+          "name": "visualize",
+          "line": 110,
+          "kind": "FunctionDef",
+          "doc": "Generate visualization comparing real and synthetic data for a specific column."
+        }
+      ],
+      "calls": [
+        ".replace",
+        "CSVHandler",
+        "FileNotFoundError",
+        "HMASynthesizer",
+        "Metadata.load_from_json",
+        "RuntimeError",
+        "ValueError",
+        "column_name.replace",
+        "connector.read",
+        "df.to_csv",
+        "evaluate_quality",
+        "fig.write_image",
+        "get_column_plot",
+        "len",
+        "list",
+        "os.makedirs",
+        "os.path.abspath",
+        "os.path.exists",
+        "os.path.join",
+        "pd.read_csv",
+        "properties_df.to_dict",
+        "quality_report.get_properties",
+        "quality_report.get_score",
+        "synthesizer.fit",
+        "synthesizer.sample",
+        "synthetic_data.items",
+        "synthetic_data.keys"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "mcp",
+    "os",
+    "pandas",
+    "sdv",
+    "tools"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

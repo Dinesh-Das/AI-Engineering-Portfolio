@@ -1,0 +1,267 @@
+{
+  "units": [
+    {
+      "path": "agent1.py",
+      "imports": [
+        "math",
+        "python_a2a",
+        "re"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "SineAgent",
+          "line": 10,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_sine",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": "Get the sine of a number."
+        },
+        {
+          "name": "handle_task",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "SineAgent",
+        "TaskStatus",
+        "agent",
+        "float",
+        "match.group",
+        "math.sin",
+        "print",
+        "re.search",
+        "run_server",
+        "self.get_sine",
+        "skill"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "agent2.py",
+      "imports": [
+        "math",
+        "python_a2a",
+        "re"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "CosineAgent",
+          "line": 10,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_cosine",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": "Get the cosine of a number."
+        },
+        {
+          "name": "handle_task",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "CosineAgent",
+        "TaskStatus",
+        "agent",
+        "float",
+        "match.group",
+        "math.cos",
+        "print",
+        "re.search",
+        "run_server",
+        "self.get_cosine",
+        "skill"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "agent3.py",
+      "imports": [
+        "math",
+        "python_a2a",
+        "re"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "TangentAgent",
+          "line": 10,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "get_tangent",
+          "line": 17,
+          "kind": "FunctionDef",
+          "doc": "Get the tangent of a number."
+        },
+        {
+          "name": "handle_task",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "TangentAgent",
+        "TaskStatus",
+        "agent",
+        "float",
+        "match.group",
+        "math.tan",
+        "print",
+        "re.search",
+        "run_server",
+        "self.get_tangent",
+        "skill"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "notebook.ipynb#cell-1",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "notebook.ipynb#cell-2",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-3",
+      "imports": [
+        "python_a2a"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "A2AClient",
+        "AIAgentRouter",
+        "AgentNetwork",
+        "network.add"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-4",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "agent.ask",
+        "network.get_agent",
+        "print",
+        "router.route_query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "agent.ask",
+        "network.get_agent",
+        "print",
+        "router.route_query"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-6",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "notebook.ipynb"
+  ],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "math",
+    "python_a2a",
+    "re"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "agent1.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "agent2.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "agent3.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

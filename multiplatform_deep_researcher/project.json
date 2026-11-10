@@ -1,0 +1,333 @@
+{
+  "id": "multiplatform_deep_researcher",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/multiplatform_deep_researcher",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "flow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "7d97d738c207cd8d9c517437a89f2dad675a31d84983990fb6333bafb1757304",
+      "local_sha256": "7d97d738c207cd8d9c517437a89f2dad675a31d84983990fb6333bafb1757304",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "93fee90ddfc84ef18e8342839b033097bd9c5b98a8c0254169e00731a174846d",
+      "local_sha256": "93fee90ddfc84ef18e8342839b033097bd9c5b98a8c0254169e00731a174846d",
+      "changes": []
+    },
+    {
+      "upstream_path": "flow.py",
+      "path": "flow.py",
+      "upstream_sha256": "367b749f58336328b0a3c52dc21a1a2e8e08e2c3ad4805a54bf2af555f4a1529",
+      "local_sha256": "367b749f58336328b0a3c52dc21a1a2e8e08e2c3ad4805a54bf2af555f4a1529",
+      "changes": []
+    },
+    {
+      "upstream_path": "output.md",
+      "path": "output.md",
+      "upstream_sha256": "5d771f8e92f67c39cf054de880e78257231775495f636112587693a5f4b0265b",
+      "local_sha256": "5d771f8e92f67c39cf054de880e78257231775495f636112587693a5f4b0265b",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "3e7427255980bbf6b482d77070bfe82a44639fb318ae22692303590ec5b3f15e",
+      "local_sha256": "3e7427255980bbf6b482d77070bfe82a44639fb318ae22692303590ec5b3f15e",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "92b31a0d5e8cf263dd4cfe7203ddb6df35ba36246f724e0a752a5673a40de763",
+      "local_sha256": "92b31a0d5e8cf263dd4cfe7203ddb6df35ba36246f724e0a752a5673a40de763",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "research.py",
+      "path": "research.py",
+      "upstream_sha256": "a8c860e84782313317a14cf6844ecb2a6ca91220cc6e7083a7b48e38ab6e63e0",
+      "local_sha256": "a8c860e84782313317a14cf6844ecb2a6ca91220cc6e7083a7b48e38ab6e63e0",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "daf50161b50bdf8341f0ddc97fa73838f49c88e4def78768dd7cd39dff82d53b",
+      "local_sha256": "daf50161b50bdf8341f0ddc97fa73838f49c88e4def78768dd7cd39dff82d53b",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "asyncio",
+          "os",
+          "research",
+          "streamlit"
+        ],
+        "environment": [
+          "BRIGHT_DATA_API_TOKEN"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "asyncio.run",
+          "run_deep_research",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.markdown",
+          "st.session_state.messages.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.success",
+          "st.text_input",
+          "st.write",
+          "str"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "flow.py",
+        "imports": [
+          "asyncio",
+          "crewai",
+          "crewai_tools",
+          "dotenv",
+          "json",
+          "logging",
+          "mcp",
+          "os",
+          "pydantic",
+          "typing"
+        ],
+        "environment": [
+          "BRIGHT_DATA_API_TOKEN"
+        ],
+        "models": [
+          "ollama/gpt-oss",
+          "openai/gpt-4o",
+          "openai/o3-mini"
+        ],
+        "symbols": [
+          {
+            "name": "URLBuckets",
+            "line": 20,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "SpecialistOutput",
+            "line": 28,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "DeepResearchFlowState",
+            "line": 36,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "server_params",
+            "line": 42,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "DeepResearchFlow",
+            "line": 54,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 280,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "start_flow",
+            "line": 60,
+            "kind": "FunctionDef",
+            "doc": "Start the flow by setting the query in the state."
+          },
+          {
+            "name": "collect_urls",
+            "line": 66,
+            "kind": "FunctionDef",
+            "doc": "Search web for user query and return URLBuckets object."
+          },
+          {
+            "name": "dispatch_to_specialists",
+            "line": 126,
+            "kind": "FunctionDef",
+            "doc": "Fan-out to platform specialists. Each platform is processed independently."
+          },
+          {
+            "name": "synthesize_response",
+            "line": 225,
+            "kind": "FunctionDef",
+            "doc": "Final deep research response synthesis."
+          },
+          {
+            "name": "_process_platform",
+            "line": 131,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".model_dump",
+          "Agent",
+          "Crew",
+          "DeepResearchFlow",
+          "Field",
+          "LLM",
+          "MCPServerAdapter",
+          "RuntimeError",
+          "SpecialistOutput",
+          "StdioServerParameters",
+          "Task",
+          "URLBuckets",
+          "_process_platform",
+          "asyncio.run",
+          "crew.kickoff",
+          "flattened_results.append",
+          "flattened_results.extend",
+          "flow.kickoff_async",
+          "isinstance",
+          "json.loads",
+          "listen",
+          "load_dotenv",
+          "logging.exception",
+          "main",
+          "os.getenv",
+          "out.model_dump",
+          "platform.capitalize",
+          "print",
+          "results.append",
+          "server_params",
+          "start",
+          "str",
+          "type",
+          "url_buckets_dict.items"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "research.py",
+        "imports": [
+          "flow",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "run_deep_research",
+            "line": 5,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run the deep research flow and return the result."
+          }
+        ],
+        "calls": [
+          "DeepResearchFlow",
+          "flow.kickoff_async",
+          "payload.get",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "BRIGHT_DATA_API_TOKEN",
+      "OPENAI_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "crewai",
+      "crewai_tools",
+      "dotenv",
+      "flow",
+      "json",
+      "logging",
+      "mcp",
+      "os",
+      "pydantic",
+      "research",
+      "streamlit",
+      "typing"
+    ],
+    "models": [
+      "ollama/gpt-oss",
+      "openai/gpt-4o",
+      "openai/o3-mini"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "flow.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 3
+  },
+  "category": "agents",
+  "purpose": "Research a question through platform-specific source specialists."
+}

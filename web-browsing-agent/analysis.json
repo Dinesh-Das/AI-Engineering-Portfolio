@@ -1,0 +1,179 @@
+{
+  "units": [
+    {
+      "path": "flow.py",
+      "imports": [
+        "asyncio",
+        "crewai",
+        "dotenv",
+        "pydantic",
+        "stagehand_tool",
+        "typing"
+      ],
+      "environment": [],
+      "models": [
+        "ollama/gpt-oss",
+        "openai/gpt-4"
+      ],
+      "symbols": [
+        {
+          "name": "stagehand_browser_tool",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": "A tool that allows to interact with a web browser."
+        },
+        {
+          "name": "BrowserAutomationFlowState",
+          "line": 35,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "AutomationPlan",
+          "line": 40,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "BrowserAutomationFlow",
+          "line": 45,
+          "kind": "ClassDef",
+          "doc": "A CrewAI Flow to intelligently handle browser automation tasks"
+        },
+        {
+          "name": "main",
+          "line": 147,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "start_flow",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "plan_task",
+          "line": 57,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "handle_browser_automation",
+          "line": 94,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "synthesize_result",
+          "line": 122,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Agent",
+        "BrowserAutomationFlow",
+        "Crew",
+        "LLM",
+        "Task",
+        "asyncio.run",
+        "browser_automation",
+        "crew.kickoff",
+        "flow.kickoff_async",
+        "listen",
+        "load_dotenv",
+        "main",
+        "print",
+        "start",
+        "str",
+        "tool",
+        "website_url.lower"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "stagehand_tool.py",
+      "imports": [
+        "asyncio",
+        "nest_asyncio",
+        "os",
+        "stagehand"
+      ],
+      "environment": [
+        "MODEL_API_KEY"
+      ],
+      "models": [
+        "computer-use-preview",
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "browser_automation",
+          "line": 11,
+          "kind": "FunctionDef",
+          "doc": "Performs automated browser tasks using AI agent capabilities."
+        },
+        {
+          "name": "_execute_automation",
+          "line": 14,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Stagehand",
+        "StagehandConfig",
+        "_execute_automation",
+        "agent.execute",
+        "asyncio.run",
+        "nest_asyncio.apply",
+        "os.getenv",
+        "stagehand.agent",
+        "stagehand.close",
+        "stagehand.init",
+        "stagehand.page.goto"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "MODEL_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "crewai",
+    "dotenv",
+    "nest_asyncio",
+    "os",
+    "pydantic",
+    "stagehand",
+    "stagehand_tool",
+    "typing"
+  ],
+  "models": [
+    "computer-use-preview",
+    "gpt-4o",
+    "ollama/gpt-oss",
+    "openai/gpt-4"
+  ],
+  "entries": [
+    {
+      "path": "flow.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

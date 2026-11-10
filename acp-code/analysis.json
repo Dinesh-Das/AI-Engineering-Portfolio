@@ -1,0 +1,139 @@
+{
+  "units": [
+    {
+      "path": "acp_client.py",
+      "imports": [
+        "acp_sdk",
+        "asyncio"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "run_workflow",
+          "line": 4,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Client",
+        "asyncio.run",
+        "drafter.run_sync",
+        "print",
+        "run_workflow",
+        "verifier.run_sync"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "crew_acp_server.py",
+      "imports": [
+        "acp_sdk",
+        "collections",
+        "crewai"
+      ],
+      "environment": [],
+      "models": [
+        "ollama_chat/qwen2.5:14b"
+      ],
+      "symbols": [
+        {
+          "name": "research_drafter",
+          "line": 15,
+          "kind": "AsyncFunctionDef",
+          "doc": "Agent that creates a general research summary on a given topic."
+        }
+      ],
+      "calls": [
+        "Agent",
+        "Crew",
+        "LLM",
+        "Message",
+        "MessagePart",
+        "Server",
+        "Task",
+        "crew.kickoff_async",
+        "server.agent",
+        "server.run",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "smolagents_acp_server.py",
+      "imports": [
+        "acp_sdk",
+        "collections",
+        "smolagents",
+        "warnings"
+      ],
+      "environment": [],
+      "models": [
+        "ollama_chat/qwen2.5:14b"
+      ],
+      "symbols": [
+        {
+          "name": "research_verifier",
+          "line": 19,
+          "kind": "AsyncFunctionDef",
+          "doc": "Agent that fact-checks and enhances a research summary using web search."
+        }
+      ],
+      "calls": [
+        "CodeAgent",
+        "DuckDuckGoSearchTool",
+        "LiteLLMModel",
+        "Message",
+        "MessagePart",
+        "Server",
+        "agent.run",
+        "server.agent",
+        "server.run",
+        "str",
+        "warnings.filterwarnings"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "acp_sdk",
+    "asyncio",
+    "collections",
+    "crewai",
+    "smolagents",
+    "warnings"
+  ],
+  "models": [
+    "ollama_chat/qwen2.5:14b"
+  ],
+  "entries": [
+    {
+      "path": "acp_client.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "crew_acp_server.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "smolagents_acp_server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

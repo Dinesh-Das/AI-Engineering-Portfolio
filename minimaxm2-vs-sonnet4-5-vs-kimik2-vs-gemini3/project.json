@@ -1,0 +1,410 @@
+{
+  "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "425d9e9ad5ed0cd6be11e7ab30b95db7885bd3de51aa3f448dd26ee534818f12",
+      "local_sha256": "425d9e9ad5ed0cd6be11e7ab30b95db7885bd3de51aa3f448dd26ee534818f12",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".opik.config",
+      "path": ".opik.config",
+      "upstream_sha256": "0ab8dc7bd780f9f1d5dc5a157ade4968b162d45047c8d8a65febb6092f3d4757",
+      "local_sha256": "0ab8dc7bd780f9f1d5dc5a157ade4968b162d45047c8d8a65febb6092f3d4757",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "c872ef94dc8832095d91dffb0a1170b8e51d42e9411a450ec6a4fc610d0b992b",
+      "local_sha256": "c872ef94dc8832095d91dffb0a1170b8e51d42e9411a450ec6a4fc610d0b992b",
+      "changes": []
+    },
+    {
+      "upstream_path": "code_evaluation_opik.py",
+      "path": "code_evaluation_opik.py",
+      "upstream_sha256": "11ae6663555be29c605e5ed3a6867fff15144c4ffa354d854a2a09794f2746d3",
+      "local_sha256": "11ae6663555be29c605e5ed3a6867fff15144c4ffa354d854a2a09794f2746d3",
+      "changes": []
+    },
+    {
+      "upstream_path": "code_ingestion.py",
+      "path": "code_ingestion.py",
+      "upstream_sha256": "13c1341f65ff289747dce1416fdef797b226cdb4f5409d2977eacee7a151634a",
+      "local_sha256": "13c1341f65ff289747dce1416fdef797b226cdb4f5409d2977eacee7a151634a",
+      "changes": []
+    },
+    {
+      "upstream_path": "model_service.py",
+      "path": "model_service.py",
+      "upstream_sha256": "a41434487f786ea2822bd33a50deefec98bfdad69e1f7b988f0ff6f26c7aae2d",
+      "local_sha256": "a41434487f786ea2822bd33a50deefec98bfdad69e1f7b988f0ff6f26c7aae2d",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "ef79d4095bd05b2f40f6a625f66a4df29f45763e0d36f65d6ba0389a40bfc098",
+      "local_sha256": "ef79d4095bd05b2f40f6a625f66a4df29f45763e0d36f65d6ba0389a40bfc098",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "851a11a612bce65c08c759d88e794a7a8338eab85f37bd0257d31e69d73019bc",
+      "local_sha256": "851a11a612bce65c08c759d88e794a7a8338eab85f37bd0257d31e69d73019bc",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "2fccb643b231c67f8fdb3b1d16c91214f24fe0ba043b1f288873b07624633d4f",
+      "local_sha256": "2fccb643b231c67f8fdb3b1d16c91214f24fe0ba043b1f288873b07624633d4f",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/api_keys.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/best_practices.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/code_correctness.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/code_readability.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/evaluate_generated_code.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/generate_model_response.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/ingest_repository.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/streamlit_ui.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/test_results_1.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/test_results_2.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/test_results_3.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/test_results_4.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/workflow.gif",
+      "reason": "Demo media or presentation-only source omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "asyncio",
+          "code_evaluation_opik",
+          "code_ingestion",
+          "dotenv",
+          "model_service",
+          "pandas",
+          "plotly",
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "handle_chat_input",
+            "line": 186,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_model1_stream",
+            "line": 221,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "process_model2_stream",
+            "line": 240,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "validate_evaluation_result",
+            "line": 329,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".removeprefix",
+          ".removesuffix",
+          ".strip",
+          "all_models.index",
+          "asyncio.gather",
+          "asyncio.run",
+          "container.code",
+          "dict",
+          "evaluate_code",
+          "fig.update_layout",
+          "fig.update_xaxes",
+          "fig.update_yaxes",
+          "get_all_model_names",
+          "get_parallel_responses",
+          "handle_chat_input",
+          "ingest_github_repo",
+          "isinstance",
+          "len",
+          "load_dotenv",
+          "message.get",
+          "metric.title",
+          "model1_container.code",
+          "model1_data.append",
+          "model2_container.code",
+          "model2_data.append",
+          "pd.DataFrame",
+          "plot_data.melt",
+          "process_model1_stream",
+          "process_model2_stream",
+          "px.bar",
+          "response_text.strip",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.code",
+          "st.column_config.TextColumn",
+          "st.columns",
+          "st.dataframe",
+          "st.empty",
+          "st.error",
+          "st.header",
+          "st.markdown",
+          "st.plotly_chart",
+          "st.selectbox",
+          "st.session_state.chat_history.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.stop",
+          "st.success",
+          "st.text_area",
+          "st.text_input",
+          "st.title",
+          "st.write",
+          "str",
+          "validate_evaluation_result"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "code_evaluation_opik.py",
+        "imports": [
+          "opik"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "evaluate_code",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": "Evaluate generated Python code using Comet Opik's GEval metrics."
+          }
+        ],
+        "calls": [
+          "GEval",
+          "ValueError",
+          "best_practices_metric.score",
+          "correctness_metric.score",
+          "generated_code.strip",
+          "readability_metric.score",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "code_ingestion.py",
+        "imports": [
+          "gitingest"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "ingest_github_repo",
+            "line": 4,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Exception",
+          "ValueError",
+          "ingest",
+          "isinstance",
+          "repo_url.startswith",
+          "str"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "model_service.py",
+        "imports": [
+          "asyncio",
+          "litellm",
+          "os",
+          "typing"
+        ],
+        "environment": [
+          "OPENROUTER_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "get_model_response_async",
+            "line": 16,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_parallel_responses",
+            "line": 76,
+            "kind": "AsyncFunctionDef",
+            "doc": "Get parallel responses from two selected models."
+          },
+          {
+            "name": "get_model_responses",
+            "line": 97,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "get_all_model_names",
+            "line": 104,
+            "kind": "FunctionDef",
+            "doc": "Get all available model names for dropdown selection."
+          },
+          {
+            "name": "validate_model_name",
+            "line": 113,
+            "kind": "FunctionDef",
+            "doc": "Validate if a model name exists in available models."
+          },
+          {
+            "name": "get_model_mapping",
+            "line": 118,
+            "kind": "FunctionDef",
+            "doc": "Get the model mapping for a given model name."
+          }
+        ],
+        "calls": [
+          ".lower",
+          "AVAILABLE_MODELS.keys",
+          "ValueError",
+          "acompletion",
+          "asyncio.get_event_loop",
+          "get_model_mapping",
+          "get_model_response_async",
+          "get_parallel_responses",
+          "hasattr",
+          "list",
+          "loop.run_until_complete",
+          "os.getenv",
+          "print",
+          "str",
+          "validate_model_name"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "OPENAI_API_KEY",
+      "OPENROUTER_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "code_evaluation_opik",
+      "code_ingestion",
+      "dotenv",
+      "gitingest",
+      "litellm",
+      "model_service",
+      "opik",
+      "os",
+      "pandas",
+      "plotly",
+      "streamlit",
+      "typing"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 4
+  },
+  "category": "evaluation",
+  "purpose": "Benchmark several code-generation providers against common repository context."
+}

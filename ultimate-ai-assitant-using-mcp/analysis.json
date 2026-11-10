@@ -1,0 +1,174 @@
+{
+  "units": [
+    {
+      "path": "mcp_streamlit_app.py",
+      "imports": [
+        "asyncio",
+        "base64",
+        "dotenv",
+        "json",
+        "langchain_openai",
+        "mcp_use",
+        "os",
+        "streamlit",
+        "warnings"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY",
+        "OPENAI_API_KEY",
+        "RAGIE_API_KEY"
+      ],
+      "models": [
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_mcp_client",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": "Create MCPClient from configuration dictionary."
+        },
+        {
+          "name": "create_agent",
+          "line": 52,
+          "kind": "FunctionDef",
+          "doc": "Create MCPAgent with the client."
+        },
+        {
+          "name": "run_agent_query",
+          "line": 65,
+          "kind": "AsyncFunctionDef",
+          "doc": "Run a query through the MCP agent."
+        }
+      ],
+      "calls": [
+        ".items",
+        "ChatOpenAI",
+        "MCPAgent",
+        "MCPClient.from_dict",
+        "agent.run",
+        "asyncio.new_event_loop",
+        "asyncio.set_event_loop",
+        "config_dict.get",
+        "config_text.strip",
+        "create_agent",
+        "create_mcp_client",
+        "json.dumps",
+        "json.loads",
+        "load_dotenv",
+        "loop.close",
+        "loop.run_until_complete",
+        "mcp_use.set_debug",
+        "os.getenv",
+        "reset_chat",
+        "run_agent_query",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.divider",
+        "st.error",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.rerun",
+        "st.session_state.messages.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.subheader",
+        "st.success",
+        "st.text_area",
+        "st.warning",
+        "str",
+        "warnings.filterwarnings"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "server.py",
+      "imports": [
+        "asyncio",
+        "dotenv",
+        "langchain_ollama",
+        "langchain_openai",
+        "mcp_use",
+        "os",
+        "warnings"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY",
+        "OPENAI_API_KEY",
+        "RAGIE_API_KEY"
+      ],
+      "models": [
+        "gpt-4o"
+      ],
+      "symbols": [
+        {
+          "name": "main",
+          "line": 13,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "ChatOpenAI",
+        "MCPAgent",
+        "MCPClient.from_dict",
+        "agent.run",
+        "asyncio.run",
+        "load_dotenv",
+        "main",
+        "mcp_use.set_debug",
+        "os.getenv",
+        "print",
+        "warnings.filterwarnings"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml",
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "FIRECRAWL_API_KEY",
+    "OPENAI_API_KEY",
+    "RAGIE_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "base64",
+    "dotenv",
+    "json",
+    "langchain_ollama",
+    "langchain_openai",
+    "mcp_use",
+    "os",
+    "streamlit",
+    "warnings"
+  ],
+  "models": [
+    "gpt-4o"
+  ],
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

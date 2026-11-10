@@ -1,0 +1,840 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "ast",
+        "asyncio",
+        "llama_index",
+        "nest_asyncio",
+        "os",
+        "pandas",
+        "plotly",
+        "random",
+        "shutil",
+        "sqlalchemy",
+        "streamlit",
+        "tempfile",
+        "time",
+        "tools",
+        "torch",
+        "uuid",
+        "workflow"
+      ],
+      "environment": [
+        "CODEX_API_KEY"
+      ],
+      "models": [
+        "BAAI/bge-small-en-v1.5",
+        "qwen/qwen-turbo"
+      ],
+      "symbols": [
+        {
+          "name": "reset_chat",
+          "line": 72,
+          "kind": "FunctionDef",
+          "doc": "Reset the chat history and clear context"
+        },
+        {
+          "name": "get_database_connection",
+          "line": 86,
+          "kind": "FunctionDef",
+          "doc": "Create a database connection"
+        },
+        {
+          "name": "get_table_data",
+          "line": 101,
+          "kind": "FunctionDef",
+          "doc": "Get data from the specified table"
+        },
+        {
+          "name": "get_table_schema",
+          "line": 116,
+          "kind": "FunctionDef",
+          "doc": "Get the schema of the specified table"
+        },
+        {
+          "name": "create_population_chart",
+          "line": 132,
+          "kind": "FunctionDef",
+          "doc": "Create a population chart using Plotly"
+        },
+        {
+          "name": "create_state_distribution_chart",
+          "line": 159,
+          "kind": "FunctionDef",
+          "doc": "Create a state distribution chart"
+        },
+        {
+          "name": "create_population_scatter",
+          "line": 179,
+          "kind": "FunctionDef",
+          "doc": "Create a scatter plot of cities by population"
+        },
+        {
+          "name": "render_database_tab",
+          "line": 203,
+          "kind": "FunctionDef",
+          "doc": "Render the database visualization tab"
+        },
+        {
+          "name": "initialize_model",
+          "line": 373,
+          "kind": "FunctionDef",
+          "doc": "Initialize models for LLM and embedding"
+        },
+        {
+          "name": "handle_file_upload",
+          "line": 386,
+          "kind": "FunctionDef",
+          "doc": "Function to handle multiple file uploads with temporary directory"
+        },
+        {
+          "name": "initialize_workflow",
+          "line": 427,
+          "kind": "FunctionDef",
+          "doc": "Initialize workflow with the given tools"
+        },
+        {
+          "name": "process_query",
+          "line": 438,
+          "kind": "AsyncFunctionDef",
+          "doc": "Function to process a query using the workflow"
+        },
+        {
+          "name": "main",
+          "line": 526,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".head",
+        ".mean",
+        ".nunique",
+        ".str.contains",
+        ".sum",
+        ".value_counts",
+        "HuggingFaceEmbedding",
+        "OpenRouter",
+        "RouterOutputAgentWorkflow",
+        "ast.literal_eval",
+        "asyncio.run",
+        "asyncio.wait_for",
+        "conn.execute",
+        "create_engine",
+        "create_population_chart",
+        "create_population_scatter",
+        "create_state_distribution_chart",
+        "df.nlargest",
+        "df.sort_values",
+        "df.to_csv",
+        "displayed_response.strip",
+        "engine.connect",
+        "enumerate",
+        "f.write",
+        "fig.update_layout",
+        "file_paths.append",
+        "filtered_df.sort_values",
+        "get_codex_project_info",
+        "get_database_connection",
+        "get_table_data",
+        "get_table_schema",
+        "handle_file_upload",
+        "hasattr",
+        "initialize_model",
+        "initialize_workflow",
+        "int",
+        "isinstance",
+        "len",
+        "list",
+        "main",
+        "message_placeholder.markdown",
+        "msg.additional_kwargs.get",
+        "msg.content.lower",
+        "nest_asyncio.apply",
+        "open",
+        "os.path.exists",
+        "os.path.join",
+        "pd.DataFrame",
+        "pd.read_sql_query",
+        "print",
+        "process_query",
+        "px.bar",
+        "px.pie",
+        "px.scatter",
+        "query_options.keys",
+        "random.uniform",
+        "render_database_tab",
+        "response.split",
+        "response_content.startswith",
+        "result.fetchall",
+        "result_df.to_csv",
+        "round",
+        "setup_document_tool",
+        "setup_sql_tool",
+        "shutil.rmtree",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.column_config.NumberColumn",
+        "st.column_config.TextColumn",
+        "st.columns",
+        "st.dataframe",
+        "st.download_button",
+        "st.empty",
+        "st.error",
+        "st.expander",
+        "st.file_uploader",
+        "st.header",
+        "st.info",
+        "st.markdown",
+        "st.metric",
+        "st.plotly_chart",
+        "st.rerun",
+        "st.selectbox",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.session_state.uploaded_files.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.subheader",
+        "st.success",
+        "st.tabs",
+        "st.text_area",
+        "st.text_input",
+        "st.title",
+        "st.warning",
+        "st.write",
+        "state_counts.items",
+        "str",
+        "tempfile.mkdtemp",
+        "text",
+        "time.sleep",
+        "tool_usage_info.append",
+        "tools.append",
+        "top_cities.iterrows",
+        "uploaded_file.getbuffer",
+        "uuid.uuid4",
+        "workflow.run"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "notebook.ipynb#cell-3",
+      "imports": [
+        "os"
+      ],
+      "environment": [
+        "CODEX_API_KEY"
+      ],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-4",
+      "imports": [
+        "nest_asyncio"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "nest_asyncio.apply"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-6",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-small-en-v1.5",
+        "qwen/qwen-turbo"
+      ],
+      "symbols": [],
+      "calls": [
+        "HuggingFaceEmbedding",
+        "OpenRouter"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-8",
+      "imports": [
+        "llama_index",
+        "sqlalchemy"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "NLSQLTableQueryEngine",
+        "SQLDatabase",
+        "create_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-10",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_docs_query_engine",
+          "line": 6,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "DoclingReader",
+        "MarkdownNodeParser",
+        "MilvusVectorStore",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "StorageContext.from_defaults",
+        "VectorStoreIndex.from_documents",
+        "loader.load_data",
+        "vector_index.as_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-12",
+      "imports": [
+        "cleanlab_codex"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_codex_project",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Client",
+        "Project.from_access_key",
+        "codex_client.create_project",
+        "project.create_access_key"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-14",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "create_codex_project",
+        "create_docs_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-16",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "document_query_tool",
+          "line": 1,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        "docs_query_engine.query",
+        "project.validate",
+        "prompt_template.format",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-18",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "FunctionTool.from_defaults",
+        "QueryEngineTool.from_defaults"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-20",
+      "imports": [
+        "llama_index",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "InputEvent",
+          "line": 15,
+          "kind": "ClassDef",
+          "doc": "Input event."
+        },
+        {
+          "name": "GatherToolsEvent",
+          "line": 19,
+          "kind": "ClassDef",
+          "doc": "Gather Tools Event"
+        },
+        {
+          "name": "ToolCallEvent",
+          "line": 25,
+          "kind": "ClassDef",
+          "doc": "Tool Call event"
+        },
+        {
+          "name": "ToolCallEventResult",
+          "line": 31,
+          "kind": "ClassDef",
+          "doc": "Tool call event result."
+        },
+        {
+          "name": "RouterOutputAgentWorkflow",
+          "line": 37,
+          "kind": "ClassDef",
+          "doc": "Custom router output agent workflow."
+        },
+        {
+          "name": "__init__",
+          "line": 40,
+          "kind": "FunctionDef",
+          "doc": "Constructor."
+        },
+        {
+          "name": "reset",
+          "line": 60,
+          "kind": "FunctionDef",
+          "doc": "Resets Chat History"
+        },
+        {
+          "name": "prepare_chat",
+          "line": 65,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "chat",
+          "line": 76,
+          "kind": "AsyncFunctionDef",
+          "doc": "Appends msg to chat history, then gets tool calls."
+        },
+        {
+          "name": "dispatch_calls",
+          "line": 108,
+          "kind": "AsyncFunctionDef",
+          "doc": "Dispatches calls."
+        },
+        {
+          "name": "call_tool",
+          "line": 120,
+          "kind": "AsyncFunctionDef",
+          "doc": "Calls tool."
+        },
+        {
+          "name": "gather",
+          "line": 144,
+          "kind": "AsyncFunctionDef",
+          "doc": "Gathers tool calls."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        "ChatMessage",
+        "GatherToolsEvent",
+        "InputEvent",
+        "StopEvent",
+        "ToolCallEvent",
+        "ToolCallEventResult",
+        "ValueError",
+        "chat_history.append",
+        "ctx.collect_events",
+        "ctx.get",
+        "ctx.send_event",
+        "ctx.set",
+        "ev.get",
+        "len",
+        "print",
+        "self.chat_history.append",
+        "self.llm.achat_with_tools",
+        "self.llm.get_tool_calls_from_response",
+        "step",
+        "str",
+        "super",
+        "tool.acall"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-22",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "RouterOutputAgentWorkflow"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-24",
+      "imports": [
+        "llama_index"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "draw_all_possible_flows"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-26",
+      "imports": [
+        "IPython"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Markdown",
+        "display",
+        "wf.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-27",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "Markdown",
+        "display",
+        "wf.run"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "tools.py",
+      "imports": [
+        "cleanlab_codex",
+        "llama_index",
+        "os",
+        "sqlalchemy",
+        "uuid"
+      ],
+      "environment": [
+        "CODEX_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "create_codex_project",
+          "line": 24,
+          "kind": "FunctionDef",
+          "doc": "Create a Codex project for document validation."
+        },
+        {
+          "name": "get_or_create_codex_project",
+          "line": 54,
+          "kind": "FunctionDef",
+          "doc": "Get existing Codex project or create a new one for the session."
+        },
+        {
+          "name": "get_codex_project_info",
+          "line": 72,
+          "kind": "FunctionDef",
+          "doc": "Get information about the current Codex project for debugging."
+        },
+        {
+          "name": "setup_sql_tool",
+          "line": 104,
+          "kind": "FunctionDef",
+          "doc": "Setup SQL query tool for querying city database."
+        },
+        {
+          "name": "setup_document_tool",
+          "line": 138,
+          "kind": "FunctionDef",
+          "doc": "Setup document query tool from uploaded documents with Codex validation."
+        },
+        {
+          "name": "document_query_tool",
+          "line": 191,
+          "kind": "FunctionDef",
+          "doc": "Query documents with Codex validation for enhanced accuracy."
+        }
+      ],
+      "calls": [
+        ".join",
+        "Client",
+        "DoclingReader",
+        "FileNotFoundError",
+        "FunctionTool.from_defaults",
+        "MarkdownNodeParser",
+        "MilvusVectorStore",
+        "NLSQLTableQueryEngine",
+        "Project.from_access_key",
+        "PromptTemplate",
+        "QueryEngineTool.from_defaults",
+        "SQLDatabase",
+        "SimpleDirectoryReader",
+        "StorageContext.from_defaults",
+        "VectorStoreIndex.from_documents",
+        "codex_client.create_project",
+        "codex_project.validate",
+        "create_codex_project",
+        "create_engine",
+        "docs_query_engine.query",
+        "float",
+        "get_or_create_codex_project",
+        "loader.load_data",
+        "os.environ.get",
+        "os.path.exists",
+        "print",
+        "project.create_access_key",
+        "prompt_template.format",
+        "result.model_dump",
+        "str",
+        "uuid.uuid4",
+        "vector_index.as_query_engine"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "workflow.py",
+      "imports": [
+        "asyncio",
+        "llama_index",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "InputEvent",
+          "line": 21,
+          "kind": "ClassDef",
+          "doc": "Input event."
+        },
+        {
+          "name": "GatherToolsEvent",
+          "line": 25,
+          "kind": "ClassDef",
+          "doc": "Gather Tools Event"
+        },
+        {
+          "name": "ToolCallEvent",
+          "line": 31,
+          "kind": "ClassDef",
+          "doc": "Tool Call event"
+        },
+        {
+          "name": "ToolCallEventResult",
+          "line": 37,
+          "kind": "ClassDef",
+          "doc": "Tool call event result."
+        },
+        {
+          "name": "RouterOutputAgentWorkflow",
+          "line": 43,
+          "kind": "ClassDef",
+          "doc": "Custom router output agent workflow."
+        },
+        {
+          "name": "__init__",
+          "line": 46,
+          "kind": "FunctionDef",
+          "doc": "Constructor."
+        },
+        {
+          "name": "reset",
+          "line": 69,
+          "kind": "FunctionDef",
+          "doc": "Resets Chat History"
+        },
+        {
+          "name": "prepare_chat",
+          "line": 74,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "chat",
+          "line": 85,
+          "kind": "AsyncFunctionDef",
+          "doc": "Appends msg to chat history, then gets tool calls."
+        },
+        {
+          "name": "dispatch_calls",
+          "line": 120,
+          "kind": "AsyncFunctionDef",
+          "doc": "Dispatches calls."
+        },
+        {
+          "name": "call_tool",
+          "line": 132,
+          "kind": "AsyncFunctionDef",
+          "doc": "Calls tool."
+        },
+        {
+          "name": "gather",
+          "line": 204,
+          "kind": "AsyncFunctionDef",
+          "doc": "Gathers tool calls."
+        }
+      ],
+      "calls": [
+        ".__init__",
+        "ChatMessage",
+        "GatherToolsEvent",
+        "InputEvent",
+        "StopEvent",
+        "ToolCallEvent",
+        "ToolCallEventResult",
+        "ValueError",
+        "chat_history.append",
+        "ctx.collect_events",
+        "ctx.get",
+        "ctx.send_event",
+        "ctx.set",
+        "ev.get",
+        "isinstance",
+        "len",
+        "output.get",
+        "print",
+        "self.chat_history.append",
+        "self.llm.achat_with_tools",
+        "self.llm.get_tool_calls_from_response",
+        "step",
+        "str",
+        "super",
+        "tool.acall"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [
+    "notebook.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "CODEX_API_KEY"
+  ],
+  "imports": [
+    "IPython",
+    "ast",
+    "asyncio",
+    "cleanlab_codex",
+    "llama_index",
+    "nest_asyncio",
+    "os",
+    "pandas",
+    "plotly",
+    "random",
+    "shutil",
+    "sqlalchemy",
+    "streamlit",
+    "tempfile",
+    "time",
+    "tools",
+    "torch",
+    "typing",
+    "uuid",
+    "workflow"
+  ],
+  "models": [
+    "BAAI/bge-small-en-v1.5",
+    "qwen/qwen-turbo"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

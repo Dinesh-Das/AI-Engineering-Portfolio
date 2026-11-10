@@ -1,0 +1,133 @@
+{
+  "id": "run-jev-inside-agent-harness",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/run-jev-inside-agent-harness",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "506428a99353247edf57dd9e9cf689b36cf6e5d13dd55a116404c212563e9161",
+      "local_sha256": "506428a99353247edf57dd9e9cf689b36cf6e5d13dd55a116404c212563e9161",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/agent-with-jev.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/agent-without-jev.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/closed-vs-open-harness.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/code-mode.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/confidence-threshold.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/connector-jev-mcp.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/context-volume-levers.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/credential-isolation.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/decision-cost-comparison.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/deferred-tool-loading.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/enterprise-bench-results.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/jev-choice-question.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/jev-workflow.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/llm-vs-jev.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/offloading.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/requests-vs-issues.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/results-with-vs-without-jev.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/settings-models.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/subagents.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/trueforge-architecture.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/trueforge-banner.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/TrueForge.mp4",
+      "reason": "Demo media or presentation-only source omitted."
+    },
+    {
+      "path": "assets/weekly-schedule.jpg",
+      "reason": "Screenshots and promotional assets omitted."
+    }
+  ],
+  "analysis": {
+    "units": [],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "recipe",
+  "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide."
+}

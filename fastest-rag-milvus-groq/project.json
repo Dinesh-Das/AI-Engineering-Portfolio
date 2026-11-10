@@ -1,0 +1,453 @@
+{
+  "id": "fastest-rag-milvus-groq",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/fastest-rag-milvus-groq",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".beamignore",
+      "path": ".beamignore",
+      "upstream_sha256": "94056d91897dd1a77ad8d2a4deb6d213970012b956512f82c157368766a47642",
+      "local_sha256": "94056d91897dd1a77ad8d2a4deb6d213970012b956512f82c157368766a47642",
+      "changes": []
+    },
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "b57d2f594fbbd135c25f21a0fad2b7f0bacb36dfb9e0222cb1ddbb4fecae9537",
+      "local_sha256": "b57d2f594fbbd135c25f21a0fad2b7f0bacb36dfb9e0222cb1ddbb4fecae9537",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "2810fdac8f6599a0d1562fcfbba4ab05016c58f96fb68e74340ab426b0c41921",
+      "local_sha256": "2810fdac8f6599a0d1562fcfbba4ab05016c58f96fb68e74340ab426b0c41921",
+      "changes": []
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "afc0bb84d5dd56c7008b95c9fbac84efb173ae0157acfdd2304d11afaddceac3",
+      "local_sha256": "afc0bb84d5dd56c7008b95c9fbac84efb173ae0157acfdd2304d11afaddceac3",
+      "changes": []
+    },
+    {
+      "upstream_path": "docs/raft.pdf",
+      "path": "docs/raft.pdf",
+      "upstream_sha256": "9c92d8e29972f272e6033c29d07e3bfe691e932676459e71af621be6b2105919",
+      "local_sha256": "9c92d8e29972f272e6033c29d07e3bfe691e932676459e71af621be6b2105919",
+      "changes": []
+    },
+    {
+      "upstream_path": "rag.py",
+      "path": "rag.py",
+      "upstream_sha256": "aa1c4af6cdbffa4b719a41abd6b0cfd6cf0bbb648607c1689799081058ed5512",
+      "local_sha256": "aa1c4af6cdbffa4b719a41abd6b0cfd6cf0bbb648607c1689799081058ed5512",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "56c9bde5311faa6a54327bf5a68b3de41f652e630180437778028442bdd683d6",
+      "local_sha256": "56c9bde5311faa6a54327bf5a68b3de41f652e630180437778028442bdd683d6",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "start_server.py",
+      "path": "start_server.py",
+      "upstream_sha256": "abb0773c360ad0d0c558db629bf1519594b93ef4ccdd2e1c81c10989d5889840",
+      "local_sha256": "abb0773c360ad0d0c558db629bf1519594b93ef4ccdd2e1c81c10989d5889840",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "base64",
+          "dotenv",
+          "gc",
+          "llama_index",
+          "os",
+          "rag",
+          "streamlit",
+          "tempfile",
+          "time",
+          "uuid"
+        ],
+        "environment": [
+          "GROQ_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 27,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "display_pdf",
+            "line": 32,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".decode",
+          "EmbedData",
+          "MilvusVDB_BQ",
+          "RAG",
+          "Retriever",
+          "SimpleDirectoryReader",
+          "base64.b64encode",
+          "candidate.startswith",
+          "display_pdf",
+          "embeddata.embed",
+          "embeddata.embed_model.get_text_embedding",
+          "f.write",
+          "file.read",
+          "gc.collect",
+          "hasattr",
+          "int",
+          "len",
+          "load_dotenv",
+          "loader.load_data",
+          "message_placeholder.markdown",
+          "milvus_vdb.create_collection",
+          "milvus_vdb.define_client",
+          "milvus_vdb.ingest_data",
+          "open",
+          "os.getenv",
+          "os.path.exists",
+          "os.path.join",
+          "os.remove",
+          "progress_bar.progress",
+          "query_engine.generate_context",
+          "query_engine.llm.stream_complete",
+          "query_engine.prompt_template.format",
+          "reset_chat",
+          "st.button",
+          "st.caption",
+          "st.chat_input",
+          "st.chat_message",
+          "st.columns",
+          "st.empty",
+          "st.error",
+          "st.file_uploader",
+          "st.header",
+          "st.info",
+          "st.markdown",
+          "st.progress",
+          "st.session_state.get",
+          "st.session_state.messages.append",
+          "st.stop",
+          "st.success",
+          "st.text",
+          "st.text_input",
+          "st.warning",
+          "st.write",
+          "str",
+          "tempfile.TemporaryDirectory",
+          "tempfile.gettempdir",
+          "time.perf_counter",
+          "uploaded_file.getvalue",
+          "uuid.uuid4"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "rag.py",
+        "imports": [
+          "llama_index",
+          "logging",
+          "numpy",
+          "os",
+          "pymilvus"
+        ],
+        "environment": [
+          "GROQ_API_KEY"
+        ],
+        "models": [],
+        "symbols": [
+          {
+            "name": "batch_iterate",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": "Yield successive n-sized chunks from list."
+          },
+          {
+            "name": "EmbedData",
+            "line": 17,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "MilvusVDB_BQ",
+            "line": 60,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "Retriever",
+            "line": 144,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "RAG",
+            "line": 187,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 18,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_load_embed_model",
+            "line": 25,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_embedding",
+            "line": 33,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_binary_quantize",
+            "line": 36,
+            "kind": "FunctionDef",
+            "doc": "Convert float32 embeddings to binary vectors"
+          },
+          {
+            "name": "embed",
+            "line": 44,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 61,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "define_client",
+            "line": 74,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_collection",
+            "line": 82,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ingest_data",
+            "line": 117,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 145,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_binary_quantize_query",
+            "line": 150,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "search",
+            "line": 157,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 188,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "_setup_llm",
+            "line": 207,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_context",
+            "line": 218,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "query",
+            "line": 228,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "chat_query",
+            "line": 243,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".astype",
+          ".join",
+          ".tobytes",
+          "ChatMessage",
+          "Groq",
+          "HuggingFaceEmbedding",
+          "MilvusClient",
+          "ValueError",
+          "batch_iterate",
+          "combined_context.append",
+          "data_batch.append",
+          "formatted_results.append",
+          "index_params.add_index",
+          "len",
+          "logger.error",
+          "logger.info",
+          "logging.basicConfig",
+          "logging.getLogger",
+          "np.array",
+          "np.packbits",
+          "np.where",
+          "os.getenv",
+          "range",
+          "schema.add_field",
+          "self._binary_quantize",
+          "self._binary_quantize_query",
+          "self._load_embed_model",
+          "self._setup_llm",
+          "self.binary_embeddings.extend",
+          "self.client.create_collection",
+          "self.client.create_schema",
+          "self.client.drop_collection",
+          "self.client.has_collection",
+          "self.client.insert",
+          "self.client.prepare_index_params",
+          "self.embed_model.get_text_embedding_batch",
+          "self.embeddata.embed_model.get_query_embedding",
+          "self.embeddings.extend",
+          "self.generate_context",
+          "self.generate_embedding",
+          "self.llm.chat",
+          "self.llm.complete",
+          "self.llm.stream_chat",
+          "self.llm.stream_complete",
+          "self.prompt_template.format",
+          "self.retriever.search",
+          "self.vector_db.client.search",
+          "vec.tobytes",
+          "zip"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "rag.py",
+            "line": 26,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "start_server.py",
+        "imports": [
+          "beam"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".add_python_packages",
+          "Image",
+          "Pod",
+          "print",
+          "streamlit_server.create"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "GROQ_API_KEY"
+    ],
+    "imports": [
+      "base64",
+      "beam",
+      "dotenv",
+      "gc",
+      "llama_index",
+      "logging",
+      "numpy",
+      "os",
+      "pymilvus",
+      "rag",
+      "streamlit",
+      "tempfile",
+      "time",
+      "uuid"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "trust_remote_code",
+        "path": "rag.py",
+        "line": 26,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 3
+  },
+  "category": "retrieval",
+  "purpose": "Explore binary-vector retrieval with Milvus and hosted generation with Groq."
+}

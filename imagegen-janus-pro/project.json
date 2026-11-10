@@ -1,0 +1,206 @@
+{
+  "id": "imagegen-janus-pro",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/imagegen-janus-pro",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "788593da01d3594f344f30f15cadc6f8ac18bb724c891e0cf6aac8d2cafeaf64",
+      "local_sha256": "788593da01d3594f344f30f15cadc6f8ac18bb724c891e0cf6aac8d2cafeaf64",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "0d0cfbaac8011cdfc20388f7dea7582e10b061b13f4ff2d6e746dd9ba5d4518a",
+      "local_sha256": "0d0cfbaac8011cdfc20388f7dea7582e10b061b13f4ff2d6e746dd9ba5d4518a",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "PIL",
+          "janus",
+          "numpy",
+          "streamlit",
+          "torch",
+          "transformers"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "load_model_and_processor",
+            "line": 12,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "multimodal_understanding",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate",
+            "line": 90,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "unpack",
+            "line": 144,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "generate_image",
+            "line": 153,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 198,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "",
+          ".convert",
+          ".cpu",
+          ".numpy",
+          ".resize",
+          ".to",
+          ".tolist",
+          ".transpose",
+          ".view",
+          "AutoConfig.from_pretrained",
+          "AutoModelForCausalLM.from_pretrained",
+          "Image.fromarray",
+          "Image.open",
+          "VLChatProcessor.from_pretrained",
+          "decoded_patches.to",
+          "generate",
+          "generate_image",
+          "generated_tokens.to",
+          "img_embeds.unsqueeze",
+          "len",
+          "load_model_and_processor",
+          "main",
+          "multimodal_understanding",
+          "next_token.squeeze",
+          "next_token.unsqueeze",
+          "np.clip",
+          "np.random.seed",
+          "np.zeros",
+          "range",
+          "st.button",
+          "st.columns",
+          "st.expander",
+          "st.file_uploader",
+          "st.header",
+          "st.image",
+          "st.number_input",
+          "st.slider",
+          "st.spinner",
+          "st.subheader",
+          "st.tabs",
+          "st.text_area",
+          "st.text_input",
+          "st.title",
+          "st.warning",
+          "st.write",
+          "tokenizer.decode",
+          "tokenizer.encode",
+          "torch.LongTensor",
+          "torch.cat",
+          "torch.cuda.empty_cache",
+          "torch.cuda.is_available",
+          "torch.cuda.manual_seed",
+          "torch.inference_mode",
+          "torch.manual_seed",
+          "torch.multinomial",
+          "torch.softmax",
+          "torch.zeros",
+          "unpack",
+          "vl_chat_processor",
+          "vl_chat_processor.apply_sft_template_for_multi_turn_prompts",
+          "vl_gpt.gen_head",
+          "vl_gpt.gen_vision_model.decode_code",
+          "vl_gpt.language_model.generate",
+          "vl_gpt.language_model.get_input_embeddings",
+          "vl_gpt.language_model.model",
+          "vl_gpt.prepare_gen_img_embeds",
+          "vl_gpt.prepare_inputs_embeds",
+          "vl_gpt_model.cuda",
+          "vl_gpt_model.to"
+        ],
+        "findings": [
+          {
+            "rule": "trust_remote_code",
+            "path": "app.py",
+            "line": 18,
+            "message": "trust_remote_code=True crosses a code-execution trust boundary."
+          }
+        ],
+        "ui": true,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "PIL",
+      "janus",
+      "numpy",
+      "streamlit",
+      "torch",
+      "transformers"
+    ],
+    "models": [],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [
+      {
+        "rule": "trust_remote_code",
+        "path": "app.py",
+        "line": 18,
+        "message": "trust_remote_code=True crosses a code-execution trust boundary."
+      }
+    ],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 1
+  },
+  "category": "media",
+  "purpose": "Study local Janus-Pro multimodal understanding and image generation."
+}

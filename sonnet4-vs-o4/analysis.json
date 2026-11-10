@@ -1,0 +1,222 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "asyncio",
+        "code_evaluation",
+        "code_ingestion",
+        "dotenv",
+        "model_service",
+        "pandas",
+        "plotly",
+        "streamlit"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "handle_chat_input",
+          "line": 96,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_claude_stream",
+          "line": 115,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "process_openai_stream",
+          "line": 123,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".removeprefix",
+        ".removesuffix",
+        ".strip",
+        "asyncio.gather",
+        "asyncio.run",
+        "claude_container.code",
+        "claude_data.append",
+        "container.code",
+        "dict",
+        "evaluate_code",
+        "fig.update_layout",
+        "fig.update_xaxes",
+        "fig.update_yaxes",
+        "get_parallel_responses",
+        "handle_chat_input",
+        "ingest_github_repo",
+        "load_dotenv",
+        "metric.title",
+        "openai_container.code",
+        "openai_data.append",
+        "pd.DataFrame",
+        "plot_data.melt",
+        "process_claude_stream",
+        "process_openai_stream",
+        "px.bar",
+        "response_text.strip",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.code",
+        "st.column_config.TextColumn",
+        "st.columns",
+        "st.dataframe",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.plotly_chart",
+        "st.session_state.chat_history.append",
+        "st.set_page_config",
+        "st.spinner",
+        "st.success",
+        "st.text_area",
+        "st.text_input",
+        "st.title",
+        "st.write"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "code_evaluation.py",
+      "imports": [
+        "deepeval",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "evaluate_code",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "GEval",
+        "LLMTestCase",
+        "Rubric",
+        "metric.measure",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "code_ingestion.py",
+      "imports": [
+        "gitingest",
+        "typing"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ingest_github_repo",
+          "line": 4,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "Exception",
+        "ingest",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "model_service.py",
+      "imports": [
+        "asyncio",
+        "litellm",
+        "os",
+        "typing"
+      ],
+      "environment": [
+        "ANTHROPIC_API_KEY",
+        "OPENAI_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "get_model_response_async",
+          "line": 6,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_parallel_responses",
+          "line": 51,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "get_model_responses",
+          "line": 57,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "acompletion",
+        "asyncio.get_event_loop",
+        "get_model_response_async",
+        "get_parallel_responses",
+        "loop.run_until_complete",
+        "os.getenv",
+        "str"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "pyproject.toml"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "ANTHROPIC_API_KEY",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "code_evaluation",
+    "code_ingestion",
+    "deepeval",
+    "dotenv",
+    "gitingest",
+    "litellm",
+    "model_service",
+    "os",
+    "pandas",
+    "plotly",
+    "streamlit",
+    "typing"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

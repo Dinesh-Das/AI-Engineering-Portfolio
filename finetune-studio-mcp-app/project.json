@@ -1,0 +1,149 @@
+{
+  "id": "finetune-studio-mcp-app",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/finetune-studio-mcp-app",
+  "entries": [],
+  "files": [
+    {
+      "upstream_path": ".gitignore",
+      "path": ".gitignore",
+      "upstream_sha256": "afdaa446d4b9ecba7b164ebc459325529d2894e6727e0c4c8228595db6fec164",
+      "local_sha256": "afdaa446d4b9ecba7b164ebc459325529d2894e6727e0c4c8228595db6fec164",
+      "changes": []
+    },
+    {
+      "upstream_path": "package-lock.json",
+      "path": "package-lock.json",
+      "upstream_sha256": "a55db5ee8f4899906398cd121446ebd569f638c6e63f15011435ded0a3be93a8",
+      "local_sha256": "a55db5ee8f4899906398cd121446ebd569f638c6e63f15011435ded0a3be93a8",
+      "changes": []
+    },
+    {
+      "upstream_path": "package.json",
+      "path": "package.json",
+      "upstream_sha256": "ae3337879425cad42297e1831cfb06d3d344a7955aea816edb45e2783a21a14f",
+      "local_sha256": "ae3337879425cad42297e1831cfb06d3d344a7955aea816edb45e2783a21a14f",
+      "changes": []
+    },
+    {
+      "upstream_path": "postcss.config.js",
+      "path": "postcss.config.js",
+      "upstream_sha256": "3d94d4de2580ae6b4467816a186b4474ac3d13c612e0ee0bb823b1017d566799",
+      "local_sha256": "3d94d4de2580ae6b4467816a186b4474ac3d13c612e0ee0bb823b1017d566799",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "396e5792ca9ecb25f3c20570096fd1ddaa55fe4868e3ab8f411494f073cd3850",
+      "local_sha256": "396e5792ca9ecb25f3c20570096fd1ddaa55fe4868e3ab8f411494f073cd3850",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "server.ts",
+      "path": "server.ts",
+      "upstream_sha256": "13b15df133de972638bae361f3f4304dae1b224ae3127f68f98badd704f7f217",
+      "local_sha256": "13b15df133de972638bae361f3f4304dae1b224ae3127f68f98badd704f7f217",
+      "changes": []
+    },
+    {
+      "upstream_path": "src/mcp-app.ts",
+      "path": "src/mcp-app.ts",
+      "upstream_sha256": "220262f31c68697946dd669b5e6966c07d4a7762aa9c8a329d25ca4e4108cd2e",
+      "local_sha256": "220262f31c68697946dd669b5e6966c07d4a7762aa9c8a329d25ca4e4108cd2e",
+      "changes": []
+    },
+    {
+      "upstream_path": "tsconfig.json",
+      "path": "tsconfig.json",
+      "upstream_sha256": "57858462755546095d8c4e4897ee7a09470535df9e7b723587ca3ac4514a2ffa",
+      "local_sha256": "57858462755546095d8c4e4897ee7a09470535df9e7b723587ca3ac4514a2ffa",
+      "changes": []
+    },
+    {
+      "upstream_path": "vite.config.ts",
+      "path": "vite.config.ts",
+      "upstream_sha256": "ea822f9c918cdd1e096f0461b5aad549630efe42551a56bacad5e0f3085465eb",
+      "local_sha256": "ea822f9c918cdd1e096f0461b5aad549630efe42551a56bacad5e0f3085465eb",
+      "changes": []
+    },
+    {
+      "upstream_path": "widget.html",
+      "path": "widget.html",
+      "upstream_sha256": "009304780528047ed189fa974fcb8a0f5fc851d12fcba7a8b5e743f48a486a3a",
+      "local_sha256": "009304780528047ed189fa974fcb8a0f5fc851d12fcba7a8b5e743f48a486a3a",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": "assets/autotrain-setup.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/claude-connector.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/hardware.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/hftoken.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/manufact-env.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/secrets.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "assets/studio.png",
+      "reason": "Screenshots and promotional assets omitted."
+    },
+    {
+      "path": "dist/widget.html",
+      "reason": "Frontend, generated output or development automation omitted."
+    }
+  ],
+  "analysis": {
+    "units": [],
+    "manifests": [
+      "package.json"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "postcss.config.js",
+      "server.ts",
+      "src/mcp-app.ts",
+      "vite.config.ts"
+    ],
+    "environment": [
+      "AUTOTRAIN_SPACE_NAME",
+      "HF_API",
+      "HF_TOKEN",
+      "INPUT",
+      "PORT"
+    ],
+    "imports": [],
+    "models": [],
+    "entries": [],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 0
+  },
+  "category": "training",
+  "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs."
+}

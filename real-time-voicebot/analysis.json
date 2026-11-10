@@ -1,0 +1,124 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "assemblyai",
+        "elevenlabs",
+        "openai"
+      ],
+      "environment": [],
+      "models": [
+        "gpt-3.5-turbo"
+      ],
+      "symbols": [
+        {
+          "name": "AI_Assistant",
+          "line": 6,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 7,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "stop_transcription",
+          "line": 20,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "on_open",
+          "line": 25,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "on_error",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "on_close",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "on_data",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "start_transcription",
+          "line": 45,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_ai_response",
+          "line": 59,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_audio",
+          "line": 79,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "AI_Assistant",
+        "ElevenLabs",
+        "OpenAI",
+        "aai.RealtimeTranscriber",
+        "aai.extras.MicrophoneStream",
+        "ai_assistant.generate_audio",
+        "ai_assistant.start_transcription",
+        "isinstance",
+        "print",
+        "self.elevenlabs_client.generate",
+        "self.generate_ai_response",
+        "self.generate_audio",
+        "self.interaction.append",
+        "self.openai_client.chat.completions.create",
+        "self.start_transcription",
+        "self.stop_transcription",
+        "self.transcriber.close",
+        "self.transcriber.connect",
+        "self.transcriber.stream",
+        "stream"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "assemblyai",
+    "elevenlabs",
+    "openai"
+  ],
+  "models": [
+    "gpt-3.5-turbo"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

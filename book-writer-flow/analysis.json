@@ -1,0 +1,387 @@
+{
+  "units": [
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/__init__.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/outline_crew.py",
+      "imports": [
+        "book_writing_flow",
+        "crewai",
+        "crewai_tools",
+        "pydantic"
+      ],
+      "environment": [],
+      "models": [
+        "ollama/gemma3:4b"
+      ],
+      "symbols": [
+        {
+          "name": "Outline",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": "Outline of the book"
+        },
+        {
+          "name": "OutlineCrew",
+          "line": 15,
+          "kind": "ClassDef",
+          "doc": "Outline Crew"
+        },
+        {
+          "name": "research_agent",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "research_task",
+          "line": 28,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "outline_writer",
+          "line": 32,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "write_outline",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "crew",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": "Creates the Outline Crew"
+        }
+      ],
+      "calls": [
+        "Agent",
+        "BrightDataWebSearchTool",
+        "Crew",
+        "LLM",
+        "Task"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/writer_crew.py",
+      "imports": [
+        "book_writing_flow",
+        "crewai",
+        "crewai_tools",
+        "pydantic"
+      ],
+      "environment": [],
+      "models": [
+        "ollama/gemma3:4b"
+      ],
+      "symbols": [
+        {
+          "name": "Chapter",
+          "line": 10,
+          "kind": "ClassDef",
+          "doc": "Chapter of the book"
+        },
+        {
+          "name": "ChapterWriterCrew",
+          "line": 16,
+          "kind": "ClassDef",
+          "doc": "Chapter Writer Crew"
+        },
+        {
+          "name": "topic_researcher",
+          "line": 23,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "research_topic",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "writer",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "write_chapter",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "crew",
+          "line": 43,
+          "kind": "FunctionDef",
+          "doc": "Creates the Research Crew"
+        }
+      ],
+      "calls": [
+        "Agent",
+        "BrightDataWebSearchTool",
+        "Crew",
+        "LLM",
+        "Task"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+      "imports": [
+        "asyncio",
+        "book_writing_flow",
+        "crewai",
+        "dotenv",
+        "os",
+        "pydantic"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "Chapter",
+          "line": 15,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "BookState",
+          "line": 19,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "BookFlow",
+          "line": 26,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "kickoff",
+          "line": 75,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "plot",
+          "line": 80,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_outline",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "generate_chapters",
+          "line": 36,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "save_book",
+          "line": 67,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "write_single_chapter",
+          "line": 40,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".crew",
+        ".kickoff",
+        "BookFlow",
+        "ChapterWriterCrew",
+        "OutlineCrew",
+        "asyncio.create_task",
+        "asyncio.gather",
+        "asyncio.run",
+        "book_flow.kickoff_async",
+        "book_flow.plot",
+        "f.write",
+        "kickoff",
+        "len",
+        "listen",
+        "load_dotenv",
+        "open",
+        "print",
+        "range",
+        "self.state.chapters.extend",
+        "start",
+        "tasks.append",
+        "write_single_chapter"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/tools/__init__.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/tools/custom_tool.py",
+      "imports": [
+        "crewai",
+        "dotenv",
+        "os",
+        "pydantic",
+        "requests",
+        "ssl",
+        "typing"
+      ],
+      "environment": [
+        "BRIGHDATA_PASSWORD",
+        "BRIGHDATA_USERNAME"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "BrightDataWebSearchToolInput",
+          "line": 13,
+          "kind": "ClassDef",
+          "doc": "Input schema for BrightDataWebSearchTool."
+        },
+        {
+          "name": "BrightDataWebSearchTool",
+          "line": 17,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "_run",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".join",
+        "Field",
+        "load_dotenv",
+        "os.getenv",
+        "requests.get",
+        "response.json",
+        "title.split"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "notebook.ipynb#cell-2",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "notebook.ipynb#cell-3",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "notebook.ipynb#cell-4",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [
+    "book_flow/book_writing_flow/pyproject.toml"
+  ],
+  "notebooks": [
+    "notebook.ipynb"
+  ],
+  "other_code": [
+    "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/agents.yaml",
+    "book_flow/book_writing_flow/src/book_writing_flow/crews/Outline_crew/config/tasks.yaml",
+    "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/agents.yaml",
+    "book_flow/book_writing_flow/src/book_writing_flow/crews/Writer_crew/config/tasks.yaml"
+  ],
+  "environment": [
+    "BRIGHDATA_PASSWORD",
+    "BRIGHDATA_USERNAME",
+    "OPENAI_API_KEY"
+  ],
+  "imports": [
+    "asyncio",
+    "book_writing_flow",
+    "crewai",
+    "crewai_tools",
+    "dotenv",
+    "os",
+    "pydantic",
+    "requests",
+    "ssl",
+    "typing"
+  ],
+  "models": [
+    "ollama/gemma3:4b"
+  ],
+  "entries": [
+    {
+      "path": "book_flow/book_writing_flow/src/book_writing_flow/main.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

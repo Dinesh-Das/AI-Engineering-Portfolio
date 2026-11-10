@@ -1,0 +1,129 @@
+{
+  "id": "ai_news_generator",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/ai_news_generator",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".env.example",
+      "path": "UPSTREAM_ENV.example",
+      "upstream_sha256": "ac6fdc56e30fc7834ba9200e61572c615fcf47ef02379683d51caf1ce7833fff",
+      "local_sha256": "ac6fdc56e30fc7834ba9200e61572c615fcf47ef02379683d51caf1ce7833fff",
+      "changes": [
+        "Reference template renamed; local .env.example contains empty values."
+      ]
+    },
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "fc090eacbe5521173b4daac501f88b71e8b26f90754ec4c819261ef2fa92eccb",
+      "local_sha256": "fc090eacbe5521173b4daac501f88b71e8b26f90754ec4c819261ef2fa92eccb",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "e2971133073ee8c0ec7b29c351996a7bfdb8f9a478186c0c6332d26cd0ff34c9",
+      "local_sha256": "e2971133073ee8c0ec7b29c351996a7bfdb8f9a478186c0c6332d26cd0ff34c9",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "crewai",
+          "crewai_tools",
+          "dotenv",
+          "os",
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [
+          "command-r"
+        ],
+        "symbols": [
+          {
+            "name": "generate_content",
+            "line": 48,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".replace",
+          "Agent",
+          "Crew",
+          "LLM",
+          "SerperDevTool",
+          "Task",
+          "crew.kickoff",
+          "generate_content",
+          "load_dotenv",
+          "st.button",
+          "st.download_button",
+          "st.error",
+          "st.expander",
+          "st.header",
+          "st.markdown",
+          "st.set_page_config",
+          "st.slider",
+          "st.spinner",
+          "st.text_area",
+          "st.title",
+          "str",
+          "topic.lower"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "COHERE_API_KEY",
+      "SERPER_API_KEY"
+    ],
+    "imports": [
+      "crewai",
+      "crewai_tools",
+      "dotenv",
+      "os",
+      "streamlit"
+    ],
+    "models": [
+      "command-r"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 1
+  },
+  "category": "agents",
+  "purpose": "Generate sourced AI news using CrewAI and Cohere."
+}

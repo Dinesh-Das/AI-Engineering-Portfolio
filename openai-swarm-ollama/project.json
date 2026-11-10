@@ -1,0 +1,229 @@
+{
+  "id": "openai-swarm-ollama",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/openai-swarm-ollama",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "demo.ipynb",
+      "kind": "notebook",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "f56f6b8c2789feacb01f00ea81d7ec607b3b6134795eeca9bd73a64705335485",
+      "local_sha256": "f56f6b8c2789feacb01f00ea81d7ec607b3b6134795eeca9bd73a64705335485",
+      "changes": []
+    },
+    {
+      "upstream_path": "demo.ipynb",
+      "path": "demo.ipynb",
+      "upstream_sha256": "173458451257b34bb4960bfe75078d15174f13910f49572c85714a7ed08ad732",
+      "local_sha256": "1e11f1416cf4e6cb78a45162100f135930438609d8c9aeefc009b91ae624b349",
+      "changes": [
+        "Cleared notebook outputs, execution counters, execution metadata and saved widgets."
+      ]
+    },
+    {
+      "upstream_path": "openai_swarm_demo.py",
+      "path": "openai_swarm_demo.py",
+      "upstream_sha256": "cb551dc3e4373b1133c2eb1b69f33038db8582e5f817a8ff59a56fd5c3df309e",
+      "local_sha256": "cb551dc3e4373b1133c2eb1b69f33038db8582e5f817a8ff59a56fd5c3df309e",
+      "changes": []
+    }
+  ],
+  "omitted": [
+    {
+      "path": ".env",
+      "reason": "Actual environment file omitted."
+    }
+  ],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "datetime",
+          "dotenv",
+          "duckduckgo_search",
+          "streamlit",
+          "swarm"
+        ],
+        "environment": [],
+        "models": [
+          "llama3.2"
+        ],
+        "symbols": [
+          {
+            "name": "search_web",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "run_workflow",
+            "line": 73,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 100,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".strftime",
+          "Agent",
+          "DDGS",
+          "Swarm",
+          "client.run",
+          "datetime.now",
+          "ddgs.text",
+          "isinstance",
+          "load_dotenv",
+          "main",
+          "message_placeholder.markdown",
+          "news_results.strip",
+          "print",
+          "run_workflow",
+          "st.button",
+          "st.columns",
+          "st.empty",
+          "st.markdown",
+          "st.rerun",
+          "st.set_page_config",
+          "st.spinner",
+          "st.text_input",
+          "st.title"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "demo.ipynb#cell-2",
+        "imports": [
+          "datetime",
+          "dotenv",
+          "duckduckgo_search",
+          "streamlit",
+          "swarm"
+        ],
+        "environment": [],
+        "models": [
+          "llama3.2"
+        ],
+        "symbols": [
+          {
+            "name": "search_web",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "run_workflow",
+            "line": 73,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".strftime",
+          "Agent",
+          "DDGS",
+          "Swarm",
+          "client.run",
+          "datetime.now",
+          "ddgs.text",
+          "load_dotenv",
+          "news_results.strip",
+          "print",
+          "run_workflow"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null,
+        "notebook_magics": false
+      },
+      {
+        "path": "openai_swarm_demo.py",
+        "imports": [
+          "dotenv",
+          "swarm"
+        ],
+        "environment": [],
+        "models": [
+          "llama3.2:1b"
+        ],
+        "symbols": [
+          {
+            "name": "transfer_to_agent_b",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "Agent",
+          "Swarm",
+          "client.run",
+          "load_dotenv",
+          "print"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [],
+    "notebooks": [
+      "demo.ipynb"
+    ],
+    "other_code": [],
+    "environment": [],
+    "imports": [
+      "datetime",
+      "dotenv",
+      "duckduckgo_search",
+      "streamlit",
+      "swarm"
+    ],
+    "models": [
+      "llama3.2",
+      "llama3.2:1b"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "demo.ipynb",
+        "kind": "notebook",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 3
+  },
+  "category": "agents",
+  "purpose": "Explore local-model handoffs between lightweight agents."
+}

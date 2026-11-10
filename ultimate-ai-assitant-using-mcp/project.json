@@ -1,0 +1,250 @@
+{
+  "id": "ultimate-ai-assitant-using-mcp",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/ultimate-ai-assitant-using-mcp",
+  "entries": [
+    {
+      "path": "server.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": ".python-version",
+      "path": ".python-version",
+      "upstream_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "local_sha256": "8dfda54ba2f66ab3a8ebab460f4338bbeea1fb1e0f85ce06fe3530aa3c64679b",
+      "changes": []
+    },
+    {
+      "upstream_path": "mcp_streamlit_app.py",
+      "path": "mcp_streamlit_app.py",
+      "upstream_sha256": "81ff90411706c592243830d8f0ba6255bbfa02bdb207a6db255fe54935a529e4",
+      "local_sha256": "81ff90411706c592243830d8f0ba6255bbfa02bdb207a6db255fe54935a529e4",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "484f323378391711a6ce72068f331ca5aa5c412fcc9fa10ff479bffae35053a4",
+      "local_sha256": "484f323378391711a6ce72068f331ca5aa5c412fcc9fa10ff479bffae35053a4",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "6a4f7fafc35cf089590e7b807491325bf66684c8a1225e11efe3a34b93bbc776",
+      "local_sha256": "6a4f7fafc35cf089590e7b807491325bf66684c8a1225e11efe3a34b93bbc776",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "requirements.txt",
+      "path": "requirements.txt",
+      "upstream_sha256": "3cda4d8909f6cbf24b23fd0ae77a6422b9e4ff9f4baec5de0a4d7a60bdbec935",
+      "local_sha256": "3cda4d8909f6cbf24b23fd0ae77a6422b9e4ff9f4baec5de0a4d7a60bdbec935",
+      "changes": []
+    },
+    {
+      "upstream_path": "server.py",
+      "path": "server.py",
+      "upstream_sha256": "d727215f9c417e02e6fe94fb633dba215bbc08d98104dd3c234c41d5bc63a332",
+      "local_sha256": "d727215f9c417e02e6fe94fb633dba215bbc08d98104dd3c234c41d5bc63a332",
+      "changes": []
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "0f1856beed5b646047f2839784721a6711ad9dd8f6fa705ea6aa580975789c5e",
+      "local_sha256": "0f1856beed5b646047f2839784721a6711ad9dd8f6fa705ea6aa580975789c5e",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "mcp_streamlit_app.py",
+        "imports": [
+          "asyncio",
+          "base64",
+          "dotenv",
+          "json",
+          "langchain_openai",
+          "mcp_use",
+          "os",
+          "streamlit",
+          "warnings"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "OPENAI_API_KEY",
+          "RAGIE_API_KEY"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "reset_chat",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "create_mcp_client",
+            "line": 43,
+            "kind": "FunctionDef",
+            "doc": "Create MCPClient from configuration dictionary."
+          },
+          {
+            "name": "create_agent",
+            "line": 52,
+            "kind": "FunctionDef",
+            "doc": "Create MCPAgent with the client."
+          },
+          {
+            "name": "run_agent_query",
+            "line": 65,
+            "kind": "AsyncFunctionDef",
+            "doc": "Run a query through the MCP agent."
+          }
+        ],
+        "calls": [
+          ".items",
+          "ChatOpenAI",
+          "MCPAgent",
+          "MCPClient.from_dict",
+          "agent.run",
+          "asyncio.new_event_loop",
+          "asyncio.set_event_loop",
+          "config_dict.get",
+          "config_text.strip",
+          "create_agent",
+          "create_mcp_client",
+          "json.dumps",
+          "json.loads",
+          "load_dotenv",
+          "loop.close",
+          "loop.run_until_complete",
+          "mcp_use.set_debug",
+          "os.getenv",
+          "reset_chat",
+          "run_agent_query",
+          "st.button",
+          "st.chat_input",
+          "st.chat_message",
+          "st.divider",
+          "st.error",
+          "st.header",
+          "st.info",
+          "st.markdown",
+          "st.rerun",
+          "st.session_state.messages.append",
+          "st.set_page_config",
+          "st.spinner",
+          "st.subheader",
+          "st.success",
+          "st.text_area",
+          "st.warning",
+          "str",
+          "warnings.filterwarnings"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "server.py",
+        "imports": [
+          "asyncio",
+          "dotenv",
+          "langchain_ollama",
+          "langchain_openai",
+          "mcp_use",
+          "os",
+          "warnings"
+        ],
+        "environment": [
+          "FIRECRAWL_API_KEY",
+          "OPENAI_API_KEY",
+          "RAGIE_API_KEY"
+        ],
+        "models": [
+          "gpt-4o"
+        ],
+        "symbols": [
+          {
+            "name": "main",
+            "line": 13,
+            "kind": "AsyncFunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          "ChatOpenAI",
+          "MCPAgent",
+          "MCPClient.from_dict",
+          "agent.run",
+          "asyncio.run",
+          "load_dotenv",
+          "main",
+          "mcp_use.set_debug",
+          "os.getenv",
+          "print",
+          "warnings.filterwarnings"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "notebooks": [],
+    "other_code": [],
+    "environment": [
+      "FIRECRAWL_API_KEY",
+      "OPENAI_API_KEY",
+      "RAGIE_API_KEY"
+    ],
+    "imports": [
+      "asyncio",
+      "base64",
+      "dotenv",
+      "json",
+      "langchain_ollama",
+      "langchain_openai",
+      "mcp_use",
+      "os",
+      "streamlit",
+      "warnings"
+    ],
+    "models": [
+      "gpt-4o"
+    ],
+    "entries": [
+      {
+        "path": "server.py",
+        "kind": "python",
+        "ui": false
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 2
+  },
+  "category": "mcp",
+  "purpose": "Explore one agent connecting to several MCP servers."
+}

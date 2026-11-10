@@ -1,0 +1,162 @@
+{
+  "units": [
+    {
+      "path": "voice_agent.py",
+      "imports": [
+        "dotenv",
+        "livekit",
+        "llama_index",
+        "logging",
+        "os"
+      ],
+      "environment": [],
+      "models": [
+        "BAAI/bge-small-en-v1.5",
+        "gemma3",
+        "sonic-2"
+      ],
+      "symbols": [
+        {
+          "name": "prewarm",
+          "line": 47,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "entrypoint",
+          "line": 51,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".append",
+        ".load_data",
+        "ChatContext",
+        "HuggingFaceEmbedding",
+        "Ollama",
+        "SimpleDirectoryReader",
+        "StorageContext.from_defaults",
+        "VectorStoreIndex.from_documents",
+        "VoicePipelineAgent",
+        "WorkerOptions",
+        "agent.say",
+        "agent.start",
+        "assemblyai.STT",
+        "cartesia.TTS",
+        "cli.run_app",
+        "ctx.connect",
+        "ctx.wait_for_participant",
+        "index.as_chat_engine",
+        "index.storage_context.persist",
+        "llama_index.LLM",
+        "load_dotenv",
+        "load_index_from_storage",
+        "logger.info",
+        "logging.getLogger",
+        "os.path.exists",
+        "print",
+        "silero.VAD.load"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "voice_agent_openai.py",
+      "imports": [
+        "dotenv",
+        "livekit",
+        "llama_index",
+        "logging",
+        "os"
+      ],
+      "environment": [],
+      "models": [
+        "sonic-2"
+      ],
+      "symbols": [
+        {
+          "name": "prewarm",
+          "line": 42,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "entrypoint",
+          "line": 46,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".append",
+        ".load_data",
+        "ChatContext",
+        "SimpleDirectoryReader",
+        "StorageContext.from_defaults",
+        "VectorStoreIndex.from_documents",
+        "VoicePipelineAgent",
+        "WorkerOptions",
+        "agent.say",
+        "agent.start",
+        "cartesia.TTS",
+        "cli.run_app",
+        "ctx.connect",
+        "ctx.wait_for_participant",
+        "index.as_chat_engine",
+        "index.storage_context.persist",
+        "llama_index.LLM",
+        "load_dotenv",
+        "load_index_from_storage",
+        "logger.info",
+        "logging.getLogger",
+        "openai.STT",
+        "os.path.exists",
+        "print",
+        "silero.VAD.load"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [
+    "requirements.txt"
+  ],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [
+    "ASSEMBLYAI_API_KEY",
+    "CARTESIA_API_KEY",
+    "LIVEKIT_API_KEY",
+    "LIVEKIT_API_SECRET",
+    "LIVEKIT_URL"
+  ],
+  "imports": [
+    "dotenv",
+    "livekit",
+    "llama_index",
+    "logging",
+    "os"
+  ],
+  "models": [
+    "BAAI/bge-small-en-v1.5",
+    "gemma3",
+    "sonic-2"
+  ],
+  "entries": [
+    {
+      "path": "voice_agent.py",
+      "kind": "python",
+      "ui": false
+    },
+    {
+      "path": "voice_agent_openai.py",
+      "kind": "python",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

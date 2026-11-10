@@ -1,0 +1,125 @@
+{
+  "units": [
+    {
+      "path": "rag-modernbert.py",
+      "imports": [
+        "IPython",
+        "base64",
+        "gc",
+        "llama_index",
+        "os",
+        "random",
+        "streamlit",
+        "tempfile",
+        "time",
+        "uuid"
+      ],
+      "environment": [],
+      "models": [
+        "llama3.2",
+        "nomic-ai/modernbert-embed-base"
+      ],
+      "symbols": [
+        {
+          "name": "load_llm",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 35,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "display_pdf",
+          "line": 41,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".decode",
+        "HuggingFaceEmbedding",
+        "Ollama",
+        "PromptTemplate",
+        "SimpleDirectoryReader",
+        "VectorStoreIndex.from_documents",
+        "base64.b64encode",
+        "display_pdf",
+        "f.write",
+        "file.read",
+        "gc.collect",
+        "index.as_query_engine",
+        "load_llm",
+        "loader.load_data",
+        "message_placeholder.markdown",
+        "open",
+        "os.path.exists",
+        "os.path.join",
+        "print",
+        "query_engine.query",
+        "query_engine.update_prompts",
+        "reset_chat",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.empty",
+        "st.error",
+        "st.file_uploader",
+        "st.header",
+        "st.markdown",
+        "st.session_state.get",
+        "st.session_state.messages.append",
+        "st.stop",
+        "st.success",
+        "st.write",
+        "tempfile.TemporaryDirectory",
+        "uploaded_file.getvalue",
+        "uuid.uuid4"
+      ],
+      "findings": [
+        {
+          "rule": "trust_remote_code",
+          "path": "rag-modernbert.py",
+          "line": 90,
+          "message": "trust_remote_code=True crosses a code-execution trust boundary."
+        }
+      ],
+      "ui": true,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [],
+  "environment": [],
+  "imports": [
+    "IPython",
+    "base64",
+    "gc",
+    "llama_index",
+    "os",
+    "random",
+    "streamlit",
+    "tempfile",
+    "time",
+    "uuid"
+  ],
+  "models": [
+    "llama3.2",
+    "nomic-ai/modernbert-embed-base"
+  ],
+  "entries": [],
+  "findings": [
+    {
+      "rule": "trust_remote_code",
+      "path": "rag-modernbert.py",
+      "line": 90,
+      "message": "trust_remote_code=True crosses a code-execution trust boundary."
+    }
+  ],
+  "syntax_errors": []
+}

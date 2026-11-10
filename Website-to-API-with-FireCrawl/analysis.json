@@ -1,0 +1,351 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "base64",
+        "dotenv",
+        "firecrawl",
+        "gc",
+        "inspect",
+        "os",
+        "pandas",
+        "pydantic",
+        "streamlit",
+        "time",
+        "typing"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "load_app",
+          "line": 18,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "reset_chat",
+          "line": 29,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_dynamic_model",
+          "line": 33,
+          "kind": "FunctionDef",
+          "doc": "Create a dynamic Pydantic model from schema fields."
+        },
+        {
+          "name": "create_schema_from_fields",
+          "line": 56,
+          "kind": "FunctionDef",
+          "doc": "Create schema using Pydantic model."
+        },
+        {
+          "name": "convert_to_table",
+          "line": 64,
+          "kind": "FunctionDef",
+          "doc": "Convert a list of dictionaries to a markdown table."
+        },
+        {
+          "name": "stream_text",
+          "line": 75,
+          "kind": "FunctionDef",
+          "doc": "Stream text with a typing effect."
+        }
+      ],
+      "calls": [
+        ".decode",
+        ".format",
+        ".index",
+        ".keys",
+        ".read",
+        "FirecrawlApp",
+        "any",
+        "app.extract",
+        "base64.b64encode",
+        "convert_to_table",
+        "create_dynamic_model",
+        "create_schema_from_fields",
+        "df.to_markdown",
+        "enumerate",
+        "gc.collect",
+        "isinstance",
+        "len",
+        "list",
+        "load_app",
+        "load_dotenv",
+        "model_class.model_json_schema",
+        "open",
+        "os.getenv",
+        "pd.DataFrame",
+        "placeholder.markdown",
+        "print",
+        "st.button",
+        "st.chat_input",
+        "st.chat_message",
+        "st.columns",
+        "st.divider",
+        "st.empty",
+        "st.error",
+        "st.header",
+        "st.markdown",
+        "st.selectbox",
+        "st.session_state.messages.append",
+        "st.session_state.schema_fields.append",
+        "st.spinner",
+        "st.subheader",
+        "st.text_input",
+        "str",
+        "stream_text",
+        "time.sleep",
+        "type"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "notebook.ipynb#cell-1",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": true
+    },
+    {
+      "path": "notebook.ipynb#cell-2",
+      "imports": [
+        "dotenv",
+        "firecrawl",
+        "os",
+        "pandas",
+        "pydantic",
+        "time",
+        "typing"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "WebsiteScraper",
+          "line": 9,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 10,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "create_dynamic_model",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": "Create a dynamic Pydantic model from schema fields."
+        },
+        {
+          "name": "create_schema_from_fields",
+          "line": 37,
+          "kind": "FunctionDef",
+          "doc": "Create schema using Pydantic model."
+        },
+        {
+          "name": "convert_to_table",
+          "line": 45,
+          "kind": "FunctionDef",
+          "doc": "Convert data to a pandas DataFrame and return as string."
+        },
+        {
+          "name": "scrape_website",
+          "line": 53,
+          "kind": "FunctionDef",
+          "doc": "Main function to scrape website data."
+        }
+      ],
+      "calls": [
+        "Exception",
+        "FirecrawlApp",
+        "ValueError",
+        "any",
+        "df.to_string",
+        "load_dotenv",
+        "model_class.model_json_schema",
+        "os.getenv",
+        "pd.DataFrame",
+        "self.app.extract",
+        "self.create_dynamic_model",
+        "self.create_schema_from_fields",
+        "str",
+        "type"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-3",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "WebsiteScraper",
+        "print",
+        "scraper.scrape_website"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-4",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-5",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ExtractSchema",
+          "line": 1,
+          "kind": "ClassDef",
+          "doc": ""
+        }
+      ],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-6",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "ExtractSchema.model_json_schema"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-7",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        "scraper.create_schema_from_fields"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-8",
+      "imports": [
+        "firecrawl",
+        "pydantic"
+      ],
+      "environment": [
+        "FIRECRAWL_API_KEY"
+      ],
+      "models": [],
+      "symbols": [
+        {
+          "name": "ExtractSchema",
+          "line": 7,
+          "kind": "ClassDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "ExtractSchema.model_json_schema",
+        "FirecrawlApp",
+        "app.extract",
+        "os.getenv",
+        "print"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    },
+    {
+      "path": "notebook.ipynb#cell-9",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null,
+      "notebook_magics": false
+    }
+  ],
+  "manifests": [],
+  "notebooks": [
+    "notebook.ipynb"
+  ],
+  "other_code": [],
+  "environment": [
+    "FIRECRAWL_API_KEY"
+  ],
+  "imports": [
+    "base64",
+    "dotenv",
+    "firecrawl",
+    "gc",
+    "inspect",
+    "os",
+    "pandas",
+    "pydantic",
+    "streamlit",
+    "time",
+    "typing"
+  ],
+  "models": [],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "notebook.ipynb",
+      "kind": "notebook",
+      "ui": false
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}
