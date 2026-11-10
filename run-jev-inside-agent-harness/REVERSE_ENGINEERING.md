@@ -14,11 +14,30 @@ source guide -> dependency/contract inventory -> minimal isolated integration ->
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | guide, schema or fixture |  |
+| [assets/agent-with-jev.jpg](assets/agent-with-jev.jpg) | guide, schema or fixture |  |
+| [assets/agent-without-jev.jpg](assets/agent-without-jev.jpg) | guide, schema or fixture |  |
+| [assets/closed-vs-open-harness.jpg](assets/closed-vs-open-harness.jpg) | guide, schema or fixture |  |
+| [assets/code-mode.jpg](assets/code-mode.jpg) | guide, schema or fixture |  |
+| [assets/confidence-threshold.jpg](assets/confidence-threshold.jpg) | guide, schema or fixture |  |
+| [assets/connector-jev-mcp.jpg](assets/connector-jev-mcp.jpg) | guide, schema or fixture |  |
+| [assets/context-volume-levers.jpg](assets/context-volume-levers.jpg) | guide, schema or fixture |  |
+| [assets/credential-isolation.jpg](assets/credential-isolation.jpg) | guide, schema or fixture |  |
+| [assets/decision-cost-comparison.jpg](assets/decision-cost-comparison.jpg) | guide, schema or fixture |  |
+| [assets/deferred-tool-loading.jpg](assets/deferred-tool-loading.jpg) | guide, schema or fixture |  |
+| [assets/enterprise-bench-results.jpg](assets/enterprise-bench-results.jpg) | guide, schema or fixture |  |
+| [assets/jev-choice-question.jpg](assets/jev-choice-question.jpg) | guide, schema or fixture |  |
+| [assets/jev-workflow.jpg](assets/jev-workflow.jpg) | guide, schema or fixture |  |
+| [assets/llm-vs-jev.jpg](assets/llm-vs-jev.jpg) | guide, schema or fixture |  |
+| [assets/offloading.jpg](assets/offloading.jpg) | guide, schema or fixture |  |
+| [assets/requests-vs-issues.jpg](assets/requests-vs-issues.jpg) | guide, schema or fixture |  |
+| [assets/results-with-vs-without-jev.jpg](assets/results-with-vs-without-jev.jpg) | guide, schema or fixture |  |
+| [assets/settings-models.jpg](assets/settings-models.jpg) | guide, schema or fixture |  |
+| [assets/subagents.jpg](assets/subagents.jpg) | guide, schema or fixture |  |
 
 ## Function and class walkthrough
 
@@ -49,6 +68,28 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/agent-with-jev.jpg](assets/agent-with-jev.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/agent-without-jev.jpg](assets/agent-without-jev.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/closed-vs-open-harness.jpg](assets/closed-vs-open-harness.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/code-mode.jpg](assets/code-mode.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/confidence-threshold.jpg](assets/confidence-threshold.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/connector-jev-mcp.jpg](assets/connector-jev-mcp.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/context-volume-levers.jpg](assets/context-volume-levers.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/credential-isolation.jpg](assets/credential-isolation.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/decision-cost-comparison.jpg](assets/decision-cost-comparison.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/deferred-tool-loading.jpg](assets/deferred-tool-loading.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/enterprise-bench-results.jpg](assets/enterprise-bench-results.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/jev-choice-question.jpg](assets/jev-choice-question.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/jev-workflow.jpg](assets/jev-workflow.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/llm-vs-jev.jpg](assets/llm-vs-jev.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/offloading.jpg](assets/offloading.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/requests-vs-issues.jpg](assets/requests-vs-issues.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/results-with-vs-without-jev.jpg](assets/results-with-vs-without-jev.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/settings-models.jpg](assets/settings-models.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/subagents.jpg](assets/subagents.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/trueforge-architecture.jpg](assets/trueforge-architecture.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/trueforge-banner.jpg](assets/trueforge-banner.jpg) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/weekly-schedule.jpg](assets/weekly-schedule.jpg) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

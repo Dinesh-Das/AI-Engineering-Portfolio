@@ -9,6 +9,7 @@ Graph schema and event fixtures; no standalone application runtime. Original sou
 - [Reverse engineering](REVERSE_ENGINEERING.md): source map, architecture, model/dependency choices, code-level findings and changes.
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
+- [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup
@@ -31,11 +32,12 @@ Copy-Item .env.example .env
 
 A `.env` file is loaded only if the selected implementation calls a dotenv loader. Otherwise set process environment variables or inject them through the job runtime. No credentials are bundled.
 
+
 ## Headless execution
 
-Use the source walkthrough below to identify the backend integration boundary. There is no automatic launch command for this project. UI wrappers are not launched. For a guide-only project, deploy and test the external service described by the guide; this folder does not pretend to contain that service.
+No standalone headless command was identified. Use the UI entry table if present, or inspect the reusable source. For a guide-only project, deploy and test the external service described by the guide; this folder does not pretend to contain that service.
 
-No standalone Python/notebook entry point was identified. The source may be a reusable library, an external-service recipe or a TypeScript backend.
+No standalone Python/notebook entry point was identified. The source may be a reusable library, an external-service recipe or a TypeScript application.
 
 ## Verification status
 
@@ -45,4 +47,4 @@ Run the collection check from its root: `.\run.ps1 check --project "omnigraph-mu
 
 ## Provenance
 
-Source: [omnigraph-multi-agent](https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/omnigraph-multi-agent) at `042aeb5067384981eeba6a07fa882f436bb1660d`. Imported 2026-11-10. The original MIT notice is retained in [UPSTREAM_LICENSE](UPSTREAM_LICENSE); preserve any additional notices embedded in source files. Omitted presentation assets and every source transformation are listed in project.json.
+Source: [omnigraph-multi-agent](https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/omnigraph-multi-agent) at `042aeb5067384981eeba6a07fa882f436bb1660d`. Imported 2026-11-10. The original MIT notice is retained in [UPSTREAM_LICENSE](UPSTREAM_LICENSE); preserve any additional notices embedded in source files. Omitted artifacts and every source transformation are listed in project.json.

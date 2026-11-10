@@ -86,22 +86,36 @@
       "upstream_sha256": "bf2268d0da4c0dbba12ebdcb97ddbebad063b692be3e6862987275adacd98c27",
       "local_sha256": "bf2268d0da4c0dbba12ebdcb97ddbebad063b692be3e6862987275adacd98c27",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/groq-logo.png",
       "path": "assets/groq-logo.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "0e850239869d38759864acf2d8ed8e5bfc83bcc26bd4d44315bc03b53d934aa9",
+      "local_sha256": "0e850239869d38759864acf2d8ed8e5bfc83bcc26bd4d44315bc03b53d934aa9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "assets/linkup.png",
       "path": "assets/linkup.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "dc32eca5b7cd3c95aadc3fc40b0ea7526556a3570ecbac987ddeb9cc66e7fd20",
+      "local_sha256": "dc32eca5b7cd3c95aadc3fc40b0ea7526556a3570ecbac987ddeb9cc66e7fd20",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "assets/llamaindex.png",
       "path": "assets/llamaindex.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "c1194e7693b1c4c68f2c9cbbe0f7092a7665a3368d8d5ee1ab999e7d2930ce2e",
+      "local_sha256": "c1194e7693b1c4c68f2c9cbbe0f7092a7665a3368d8d5ee1ab999e7d2930ce2e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -609,5 +623,25 @@
     "plain_python_units_checked": 16
   },
   "category": "evaluation",
-  "purpose": "Compare Qwen3 and DeepSeek on a common RAG evaluation pipeline."
+  "purpose": "Compare Qwen3 and DeepSeek on a common RAG evaluation pipeline.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

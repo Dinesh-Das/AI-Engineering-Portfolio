@@ -14,11 +14,11 @@ validated document/URL -> parse/render -> extraction schema -> model/parser outp
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_app, reset_chat, create_dynamic_model, create_schema_from_fields, convert_to_table, stream_text | UI reference |
+| [app.py](app.py) | load_app, reset_chat, create_dynamic_model, create_schema_from_fields, convert_to_table, stream_text | UI surface |
 | [notebook.ipynb#cell-2](notebook.ipynb#cell-2) | WebsiteScraper, create_dynamic_model, create_schema_from_fields, convert_to_table, scrape_website | dotenv, firecrawl, os, pandas, pydantic, time, typing |
 | [notebook.ipynb#cell-5](notebook.ipynb#cell-5) | ExtractSchema |  |
 | [notebook.ipynb#cell-8](notebook.ipynb#cell-8) | ExtractSchema | firecrawl, pydantic |
@@ -29,6 +29,12 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 18 | load_app | FunctionDef |
+| [app.py](app.py) | 29 | reset_chat | FunctionDef |
+| [app.py](app.py) | 33 | create_dynamic_model | Create a dynamic Pydantic model from schema fields. |
+| [app.py](app.py) | 56 | create_schema_from_fields | Create schema using Pydantic model. |
+| [app.py](app.py) | 64 | convert_to_table | Convert a list of dictionaries to a markdown table. |
+| [app.py](app.py) | 75 | stream_text | Stream text with a typing effect. |
 | [notebook.ipynb#cell-2](notebook.ipynb#cell-2) | 9 | WebsiteScraper | ClassDef |
 | [notebook.ipynb#cell-2](notebook.ipynb#cell-2) | 16 | create_dynamic_model | Create a dynamic Pydantic model from schema fields. |
 | [notebook.ipynb#cell-2](notebook.ipynb#cell-2) | 37 | create_schema_from_fields | Create schema using Pydantic model. |
@@ -61,6 +67,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/firecrawl.png](assets/firecrawl.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

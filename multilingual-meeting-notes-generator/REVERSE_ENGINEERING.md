@@ -14,15 +14,16 @@ audio stream/upload -> ASR with timestamps -> turn/segment state -> retrieval or
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | main | UI reference |
+| [app.py](app.py) | main | UI surface |
 | [src/data/data_models.py](src/data/data_models.py) | Speaker, TranscriptSegment, ActionItem, MeetingResult, total_words, avg_confidence, unique_speakers_count | dataclasses, datetime, typing |
 | [src/services/audio_processor.py](src/services/audio_processor.py) | MeetingProcessor, process_meeting_audio | datetime, src |
 | [src/services/text_analyzer.py](src/services/text_analyzer.py) | TextAnalyzer, generate_meeting_summary, extract_action_items, identify_speaker_names, generate_meeting_title | datetime, json, openai, re, src, typing |
 | [src/services/transcriber.py](src/services/transcriber.py) | AudioTranscriber, transcribe_audio, get_transcript_duration | assemblyai, os, src, time, typing |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | display_meeting_header, display_meeting_summary, display_speaker_analysis, display_action_items, display_meeting_transcript | UI surface |
 | [cli.py](cli.py) | main | argparse, dataclasses, dotenv, json, os, pathlib, src |
 
 ## Function and class walkthrough
@@ -31,6 +32,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 26 | main | Main application function. |
 | [src/data/data_models.py](src/data/data_models.py) | 9 | Speaker | Represents a speaker in a meeting. |
 | [src/data/data_models.py](src/data/data_models.py) | 18 | TranscriptSegment | A segment of transcribed speech. |
 | [src/data/data_models.py](src/data/data_models.py) | 28 | ActionItem | A task or action item from the meeting. |
@@ -48,6 +50,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [src/services/transcriber.py](src/services/transcriber.py) | 10 | AudioTranscriber | Handles audio transcription with speaker diarization. |
 | [src/services/transcriber.py](src/services/transcriber.py) | 18 | transcribe_audio | Transcribe audio file with speaker diarization and language detection. |
 | [src/services/transcriber.py](src/services/transcriber.py) | 76 | get_transcript_duration | Get duration from the last transcript if available. |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | 8 | display_meeting_header | Display the main meeting header with key metrics. |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | 22 | display_meeting_summary | Display the generated meeting summary with clear formatting. |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | 87 | display_speaker_analysis | Display speaker information and what they said. |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | 118 | display_action_items | Display action items organized by assignee with clean, elegant styling. |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | 185 | display_meeting_transcript | Display the meeting transcript with enhanced formatting. |
 | [cli.py](cli.py) | 10 | main | FunctionDef |
 
 ## Models, dependencies and configuration
@@ -74,6 +81,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [src/ui/ui_components.py](src/ui/ui_components.py) | Restored frontend source/asset after UI scope was authorized. |
 | [cli.py](cli.py) | Added a size-bounded headless meeting-processing CLI with structured JSON output. |
 
 ## Code-level review leads

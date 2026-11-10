@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, reset_chat, display_pdf | UI reference |
+| [app.py](app.py) | load_llm, reset_chat, display_pdf | UI surface |
 | [main_self_hosted_vectorDB.ipynb#cell-5](main_self_hosted_vectorDB.ipynb#cell-5) | create_index |  |
 | [main_self_hosted_vectorDB.ipynb#cell-7](main_self_hosted_vectorDB.ipynb#cell-7) | top-level workflow |  |
 | [rag_demo.ipynb#cell-5](rag_demo.ipynb#cell-5) | create_index |  |
@@ -30,6 +30,9 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 31 | load_llm | FunctionDef |
+| [app.py](app.py) | 35 | reset_chat | FunctionDef |
+| [app.py](app.py) | 41 | display_pdf | FunctionDef |
 | [main_self_hosted_vectorDB.ipynb#cell-5](main_self_hosted_vectorDB.ipynb#cell-5) | 8 | create_index | FunctionDef |
 | [rag_demo.ipynb#cell-5](rag_demo.ipynb#cell-5) | 8 | create_index | FunctionDef |
 

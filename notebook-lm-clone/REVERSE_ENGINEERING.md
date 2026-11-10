@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | create_interactive_citations, init_session_state, reset_chat, initialize_pipeline, process_uploaded_files, process_urls, process_youtube_video, process_text, render_sources_sidebar, render_source_upload_dialog, render_chat_interface, generate_podcast | UI reference |
+| [app.py](app.py) | create_interactive_citations, init_session_state, reset_chat, initialize_pipeline, process_uploaded_files, process_urls, process_youtube_video, process_text, render_sources_sidebar, render_source_upload_dialog, render_chat_interface, generate_podcast | UI surface |
 | [notebooks/notebook-lm-walkthrough.ipynb#cell-18](notebooks/notebook-lm-walkthrough.ipynb#cell-18) | top-level workflow | src |
 | [notebooks/notebook-lm-walkthrough.ipynb#cell-27](notebooks/notebook-lm-walkthrough.ipynb#cell-27) | top-level workflow | src |
 | [notebooks/notebook-lm-walkthrough.ipynb#cell-34](notebooks/notebook-lm-walkthrough.ipynb#cell-34) | top-level workflow | src |
@@ -40,6 +40,22 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 16 | create_interactive_citations | FunctionDef |
+| [app.py](app.py) | 278 | init_session_state | FunctionDef |
+| [app.py](app.py) | 292 | reset_chat | FunctionDef |
+| [app.py](app.py) | 322 | initialize_pipeline | FunctionDef |
+| [app.py](app.py) | 391 | process_uploaded_files | FunctionDef |
+| [app.py](app.py) | 447 | process_urls | FunctionDef |
+| [app.py](app.py) | 488 | process_youtube_video | FunctionDef |
+| [app.py](app.py) | 531 | process_text | FunctionDef |
+| [app.py](app.py) | 572 | render_sources_sidebar | FunctionDef |
+| [app.py](app.py) | 600 | render_source_upload_dialog | FunctionDef |
+| [app.py](app.py) | 658 | render_chat_interface | FunctionDef |
+| [app.py](app.py) | 749 | generate_podcast | FunctionDef |
+| [app.py](app.py) | 899 | render_studio_tab | FunctionDef |
+| [app.py](app.py) | 939 | main | FunctionDef |
+| [app.py](app.py) | 30 | replace_citation | Replace citation number with interactive element |
+| [app.py](app.py) | 795 | ChunkLike | ClassDef |
 | [src/audio_processing/audio_transcriber.py](src/audio_processing/audio_transcriber.py) | 17 | SpeakerSegment | Represents a speaker segment with timing and content |
 | [src/audio_processing/audio_transcriber.py](src/audio_processing/audio_transcriber.py) | 34 | AudioTranscriber | ClassDef |
 | [src/audio_processing/audio_transcriber.py](src/audio_processing/audio_transcriber.py) | 25 | get_timestamp_str | FunctionDef |
@@ -138,6 +154,8 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [notebooks/notebook-lm-walkthrough.ipynb](notebooks/notebook-lm-walkthrough.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/app-UI.png](assets/app-UI.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/flow-diagram.jpg](assets/flow-diagram.jpg) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

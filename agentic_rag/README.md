@@ -4,11 +4,12 @@ Route questions to document retrieval and use web fallback when needed.
 
 ## What is in this folder
 
-AI implementation with Python source and/or notebooks; original UI wrappers are reference only. Original source is reused under its upstream license; this is a source-backed learning port with recorded improvements, not a claim of an independently rewritten or production-certified implementation.
+AI implementation with Python source and/or notebooks; retained UI source is available for study and explicit launch. Original source is reused under its upstream license; this is a source-backed learning port with recorded improvements, not a claim of an independently rewritten or production-certified implementation.
 
 - [Reverse engineering](REVERSE_ENGINEERING.md): source map, architecture, model/dependency choices, code-level findings and changes.
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
+- [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup
@@ -42,6 +43,23 @@ Copy-Item .env.example .env
 
 A `.env` file is loaded only if the selected implementation calls a dotenv loader. Otherwise set process environment variables or inject them through the job runtime. No credentials are bundled.
 
+## UI execution and learning
+
+Original UI source is now in scope. Prepare the relevant manifest-owning environment before explicit launch; these framework integrations are not automatically verified.
+
+Preview from the collection root:
+
+```powershell
+.\run.ps1 ui --project "agentic_rag" --entry "app.py"
+```
+
+Append `--execute` only after reviewing the entry and configuring its isolated dependencies. Original apps may require databases, model services or credentials.
+
+| UI entry | Runtime |
+| --- | --- |
+| [app.py](app.py) | streamlit |
+
+
 ## Headless execution
 
 From the collection root, preview the command without executing source:
@@ -55,7 +73,7 @@ After configuring an isolated environment and reviewing the entry, append `--exe
 | Candidate | Kind | UI dependency |
 | --- | --- | --- |
 | [agentic_rag.ipynb](agentic_rag.ipynb) | notebook | headless candidate |
-| [app.py](app.py) | python | reference only |
+| [app.py](app.py) | python | launch with ui action |
 | [demo_llama3.2.ipynb](demo_llama3.2.ipynb) | notebook | headless candidate |
 | [src/agentic_rag/agentic_rag.ipynb](src/agentic_rag/agentic_rag.ipynb) | notebook | headless candidate |
 | [src/agentic_rag/main.py](src/agentic_rag/main.py) | python | headless candidate |
@@ -69,4 +87,4 @@ Run the collection check from its root: `.\run.ps1 check --project "agentic_rag"
 
 ## Provenance
 
-Source: [agentic_rag](https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/agentic_rag) at `042aeb5067384981eeba6a07fa882f436bb1660d`. Imported 2026-11-10. The original MIT notice is retained in [UPSTREAM_LICENSE](UPSTREAM_LICENSE); preserve any additional notices embedded in source files. Omitted presentation assets and every source transformation are listed in project.json.
+Source: [agentic_rag](https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/agentic_rag) at `042aeb5067384981eeba6a07fa882f436bb1660d`. Imported 2026-11-10. The original MIT notice is retained in [UPSTREAM_LICENSE](UPSTREAM_LICENSE); preserve any additional notices embedded in source files. Omitted artifacts and every source transformation are listed in project.json.

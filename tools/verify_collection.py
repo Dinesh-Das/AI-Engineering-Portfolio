@@ -4,18 +4,22 @@ import ast
 import json
 import re
 import sys
+import hashlib
 from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote
 
 from .analysis import analyze_project, code_cells, python_cell
 from .hub import ROOT, check_project
+from .learning_contract import validate_learning
 
 
 def verify(root=ROOT):
     catalog = json.loads((root / 'catalog.json').read_text(encoding='utf-8'))
     snapshot = json.loads((root / 'docs/upstream-tree.json').read_text(encoding='utf-8'))
     errors = []
+    if catalog.get('learning_required') is not True:
+        errors.append('Learning must remain a required catalog capability')
     ids = [p['id'] for p in catalog['projects']]
     if len(ids) != len(set(ids)):
         errors.append('Duplicate project IDs')
@@ -30,8 +34,10 @@ def verify(root=ROOT):
         errors.append('Source snapshot revision mismatch')
     documents = [root / p for p in ('README.md', 'PROJECT_INDEX.md', 'docs/INVENTORY.md',
                                    'docs/CHANGES.md', 'docs/LEARNING_PATH.md', 'docs/DEPLOYMENT_PLAYBOOK.md',
-                                   'docs/EVALUATION_FORMAT.md', 'docs/SOURCES.md', 'docs/THIRD_PARTY_NOTICES.md')]
+                                   'docs/EVALUATION_FORMAT.md', 'docs/SOURCES.md', 'docs/THIRD_PARTY_NOTICES.md',
+                                   'docs/LEARNING_CONTRACT.md', 'docs/UI_DESIGN.md', 'docs/UI_VALIDATION.md')]
     python_files = notebook_cells = magic_cells = 0
+    ui_bundles = 0
     for project in catalog['projects']:
         project_root = root / project['id']
         errors.extend(project['id'] + ': ' + error for error in check_project(project_root, project))
@@ -66,7 +72,13 @@ def verify(root=ROOT):
         for line in (project_root / '.env.example').read_text(encoding='utf-8').splitlines():
             if line and not line.startswith('#') and (not re.fullmatch(r'[A-Z][A-Z0-9_]*=', line)):
                 errors.append(project['id'] + ': environment template contains a nonempty/invalid value')
-        documents.extend(project_root / name for name in ('README.md', 'REVERSE_ENGINEERING.md', 'LEARNINGS.md', 'EVALUATION.md'))
+        documents.extend(project_root / name for name in ('README.md', 'REVERSE_ENGINEERING.md', 'LEARNINGS.md', 'EVALUATION.md', 'LEARNING_JOURNAL.md'))
+        if project.get('learning_ui'):
+            ui_bundles += 1
+            documents.append(project_root / 'UI_GUIDE.md')
+            for relative in ('__init__.py', 'protocol.py', 'server.py', 'static/app.js', 'static/index.html', 'static/style.css'):
+                if (project_root / 'learning_ui' / relative).read_bytes() != (root / 'tools/chat_lab' / relative).read_bytes():
+                    errors.append(project['id'] + ': bundled UI differs from the tested canonical runtime')
     for document in documents:
         if not document.is_file():
             errors.append('Missing document: ' + str(document.relative_to(root)))
@@ -80,10 +92,31 @@ def verify(root=ROOT):
                 continue
             if not (document.parent / relative).is_file():
                 errors.append(f'{document.relative_to(root)}: broken local link {target}')
+    browser_report_path = root / 'docs/ui-validation.json'
+    browser_verified = 0
+    if browser_report_path.exists():
+        browser_report = json.loads(browser_report_path.read_text(encoding='utf-8'))
+        fingerprint = hashlib.sha256()
+        for relative in ('__init__.py', 'protocol.py', 'server.py', 'static/app.js', 'static/index.html', 'static/style.css'):
+            fingerprint.update((relative + '\0').encode())
+            fingerprint.update((root / 'tools/chat_lab' / relative).read_bytes())
+        fingerprint.update((root / 'tools/ui_profiles.json').read_bytes())
+        if browser_report.get('runtime_sha256') != fingerprint.hexdigest():
+            errors.append('UI browser evidence is stale for the current runtime/profile source')
+        else:
+            verified_ids = {p['id'] for p in browser_report.get('projects', []) if p.get('passed') is True}
+            expected_ids = {p['id'] for p in catalog['projects'] if p.get('learning_ui')}
+            browser_verified = len(verified_ids)
+            if browser_report.get('failures') or verified_ids != expected_ids or browser_report.get('fixture') is not True:
+                errors.append('UI browser fixtures did not pass for every learning bundle')
+    elif ui_bundles:
+        errors.append('Missing UI browser evidence')
     return {'projects': len(ids), 'inventory_entries': len(catalog['inventory']),
             'dispositions': dict(Counter(r['status'] for r in catalog['inventory'])),
             'python_files_compiled': python_files, 'notebook_cells_compiled': notebook_cells,
             'cells_with_ipython_syntax': magic_cells, 'documents_checked': len(documents),
+            'learning_contracts_checked': len(ids), 'independent_ui_bundles_checked': ui_bundles,
+            'browser_fixture_projects_verified': browser_verified,
             'failures': errors, 'live_model_tests': False, 'gpu_training': False, 'deployed': False}
 
 

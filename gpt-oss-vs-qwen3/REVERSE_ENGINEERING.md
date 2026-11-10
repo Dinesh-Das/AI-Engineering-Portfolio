@@ -14,14 +14,14 @@ versioned task set -> identical context/settings -> candidate generation -> blin
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | handle_chat_input, process_response1, process_response2, validate_evaluation_result | UI reference |
+| [app.py](app.py) | handle_chat_input, process_response1, process_response2, validate_evaluation_result | UI surface |
 | [code_evaluation_opik.py](code_evaluation_opik.py) | evaluate_reasoning, evaluate_code | opik |
 | [model_service.py](model_service.py) | get_model_response_async, get_parallel_responses, get_all_model_names | asyncio, litellm, os |
-| [test_system.py](test_system.py) | test_model_service, test_evaluation_system, test_system_integration, main | UI reference |
+| [test_system.py](test_system.py) | test_model_service, test_evaluation_system, test_system_integration, main | UI surface |
 
 ## Function and class walkthrough
 
@@ -29,11 +29,19 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 171 | handle_chat_input | AsyncFunctionDef |
+| [app.py](app.py) | 192 | process_response1 | AsyncFunctionDef |
+| [app.py](app.py) | 218 | process_response2 | AsyncFunctionDef |
+| [app.py](app.py) | 325 | validate_evaluation_result | FunctionDef |
 | [code_evaluation_opik.py](code_evaluation_opik.py) | 4 | evaluate_reasoning | Evaluate reasoning capabilities of generated responses using Comet Opik's GEval metrics. |
 | [code_evaluation_opik.py](code_evaluation_opik.py) | 216 | evaluate_code | Backward compatibility wrapper for evaluate_reasoning. |
 | [model_service.py](model_service.py) | 14 | get_model_response_async | Get response from reasoning models with reasoning tokens. |
 | [model_service.py](model_service.py) | 63 | get_parallel_responses | Get two parallel responses from selected models for comparison. |
 | [model_service.py](model_service.py) | 75 | get_all_model_names | Get all available model names. |
+| [test_system.py](test_system.py) | 12 | test_model_service | Test the model service functionality. |
+| [test_system.py](test_system.py) | 33 | test_evaluation_system | Test the evaluation system. |
+| [test_system.py](test_system.py) | 76 | test_system_integration | Test basic system integration. |
+| [test_system.py](test_system.py) | 106 | main | Run all tests. |
 
 ## Models, dependencies and configuration
 

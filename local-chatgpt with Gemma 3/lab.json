@@ -1,0 +1,13 @@
+{
+  "id": "local-chatgpt with Gemma 3",
+  "title": "Gemma visual dialogue",
+  "model": "gemma3:4b",
+  "vision": true,
+  "thinking": false,
+  "focus": "Ground a follow-up in the image.",
+  "description": "Study a small local vision model with image questions, follow-up turns and explicit input budgets.",
+  "lesson": "The source uses Chainlit sessions and Gemma 3 image inputs, but blocks the async event loop with synchronous inference and a greeting sleep. The learning version separates transport from presentation and keeps completed image turns in context.",
+  "experiment": "Use a chart with legible units. Ask for a value and then its units in a follow-up; compare with a fresh tab that has never received the chart.",
+  "starter": "Read the attached chart. Cite the visible labels and units, and say if a value cannot be read reliably.",
+  "pitfall": "Sending the same image in every retained turn increases context and memory cost; a plausible chart value is not evidence of correct visual reading."
+}

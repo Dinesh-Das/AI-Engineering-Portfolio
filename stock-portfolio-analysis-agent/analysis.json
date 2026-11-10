@@ -255,11 +255,34 @@
     }
   ],
   "manifests": [
-    "pyproject.toml"
+    "pyproject.toml",
+    "frontend/package.json"
   ],
   "notebooks": [],
-  "other_code": [],
+  "other_code": [
+    "frontend/next-env.d.ts",
+    "frontend/next.config.ts",
+    "frontend/pnpm-lock.yaml",
+    "frontend/postcss.config.mjs",
+    "frontend/src/app/api/copilotkit/route.ts",
+    "frontend/src/app/components/cash-panel.tsx",
+    "frontend/src/app/components/chart-components/allocation-table.tsx",
+    "frontend/src/app/components/chart-components/bar-chart.tsx",
+    "frontend/src/app/components/chart-components/insight-card.tsx",
+    "frontend/src/app/components/chart-components/line-chart.tsx",
+    "frontend/src/app/components/chart-components/section-title.tsx",
+    "frontend/src/app/components/component-tree.tsx",
+    "frontend/src/app/components/generative-canvas.tsx",
+    "frontend/src/app/components/prompt-panel.tsx",
+    "frontend/src/app/components/theme-provider.tsx",
+    "frontend/src/app/components/tool-logs.tsx",
+    "frontend/src/app/globals.css",
+    "frontend/src/app/layout.tsx",
+    "frontend/src/app/page.tsx",
+    "frontend/src/utils/prompts.ts"
+  ],
   "environment": [
+    "NEXT_PUBLIC_CREWAI_URL",
     "OPENAI_API_KEY",
     "PORT"
   ],

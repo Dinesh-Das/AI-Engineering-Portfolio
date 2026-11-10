@@ -14,11 +14,11 @@ versioned task set -> identical context/settings -> candidate generation -> blin
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, parse_github_url, clone_repo, validate_owner_repo, parse_docs_by_file_types, create_index, reset_chat | UI reference |
+| [app.py](app.py) | load_llm, parse_github_url, clone_repo, validate_owner_repo, parse_docs_by_file_types, create_index, reset_chat | UI surface |
 | [Opik for LLM evaluation.ipynb#cell-6](Opik%20for%20LLM%20evaluation.ipynb#cell-6) | parse_github_url, clone_repo, parse_docs_by_file_types, setup_chat_engine |  |
 | [Opik for LLM evaluation.ipynb#cell-8](Opik%20for%20LLM%20evaluation.ipynb#cell-8) | top-level workflow |  |
 | [Opik for LLM evaluation.ipynb#cell-12](Opik%20for%20LLM%20evaluation.ipynb#cell-12) | my_llm_application, evaluation_task | opik |
@@ -30,6 +30,13 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 33 | load_llm | FunctionDef |
+| [app.py](app.py) | 43 | parse_github_url | FunctionDef |
+| [app.py](app.py) | 48 | clone_repo | FunctionDef |
+| [app.py](app.py) | 52 | validate_owner_repo | FunctionDef |
+| [app.py](app.py) | 55 | parse_docs_by_file_types | Parse documents based on file extension |
+| [app.py](app.py) | 77 | create_index | FunctionDef |
+| [app.py](app.py) | 96 | reset_chat | FunctionDef |
 | [Opik for LLM evaluation.ipynb#cell-6](Opik%20for%20LLM%20evaluation.ipynb#cell-6) | 3 | parse_github_url | Extract owner and repo name from GitHub URL |
 | [Opik for LLM evaluation.ipynb#cell-6](Opik%20for%20LLM%20evaluation.ipynb#cell-6) | 9 | clone_repo | Clone a GitHub repository |
 | [Opik for LLM evaluation.ipynb#cell-6](Opik%20for%20LLM%20evaluation.ipynb#cell-6) | 13 | parse_docs_by_file_types | Parse documents based on file extension |

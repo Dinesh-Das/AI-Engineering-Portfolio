@@ -930,5 +930,29 @@
     "plain_python_units_checked": 9
   },
   "category": "media",
-  "purpose": "Turn source material into a two-speaker podcast with cloud or local generation."
+  "purpose": "Turn source material into a two-speaker podcast with cloud or local generation.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    },
+    {
+      "path": "app_oss.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

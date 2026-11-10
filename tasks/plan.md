@@ -1,6 +1,14 @@
 # Implementation plan
 
-The user authorized implementation of the complete non-UI, non-OCR AI collection. Work stays on main. The repository is empty initially; there is no completed local OCR code to alter.
+The initial AI collection is complete as a source-learning port. The user's follow-up authorizes UI category projects and requires the learning aspect throughout. Work stays on main. Four completed OCR folders now exist locally and must be preserved.
+
+## Follow-up: include UI and preserve learning
+
+1. Extend the pinned source inventory with the seven UI-category projects, restoring previously omitted frontend source/assets without overwriting existing project files or the moved OCR work.
+2. Preserve all upstream references and create a small runnable local learning interface for each new UI project, with project-specific model/capability settings and separated transport/state/presentation code.
+3. Test stream parsing, model request validation, failure and cancellation, per-tab history, responsive behavior, keyboard access and accessibility. Use clearly labeled fixtures for browser tests; report live model checks separately.
+4. Extend per-project guides with AI/UI architecture, controlled experiments, scenario-based learning and production tradeoffs. Enforce the learning contract through collection validation and link existing OCR guides.
+5. Verify the expanded catalog and source hashes, review changes, and commit only this task's changes on main.
 
 1. Pin upstream main, inventory all tree directories and README links, classify exclusions and missing sources.
 2. Import AI source and necessary samples with license/provenance; omit frontend-only assets and sanitize notebook outputs.

@@ -563,5 +563,20 @@
     "plain_python_units_checked": 19
   },
   "category": "agents",
-  "purpose": "Plan social content from web material and schedule a draft."
+  "purpose": "Plan social content from web material and schedule a draft.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

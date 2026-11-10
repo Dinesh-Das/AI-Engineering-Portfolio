@@ -83,24 +83,39 @@
       "changes": [
         "Fixed evidence fallback routing and aligned context filtering with strict affirmative grading; unit-tested routing on extracted workflow methods without SDK imports."
       ]
+    },
+    {
+      "upstream_path": "assets/firecrawl-logo-with-fire.png",
+      "path": "assets/firecrawl-logo-with-fire.png",
+      "upstream_sha256": "a5ac99b50a6fb78c480b62ed567d3f381f20d621be033a8b73ed2bc2f16f0c14",
+      "local_sha256": "a5ac99b50a6fb78c480b62ed567d3f381f20d621be033a8b73ed2bc2f16f0c14",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/firecrawl_logo.png",
+      "path": "assets/firecrawl_logo.png",
+      "upstream_sha256": "40b85912f49f4a1b45f42b85bbb39150fb7c0823c1c4ecadaa82860a988fa884",
+      "local_sha256": "40b85912f49f4a1b45f42b85bbb39150fb7c0823c1c4ecadaa82860a988fa884",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/images.jpeg",
+      "path": "assets/images.jpeg",
+      "upstream_sha256": "ee82bee749f9994ebb110584959cb00cde82da8f93285e481a9e130f39674524",
+      "local_sha256": "ee82bee749f9994ebb110584959cb00cde82da8f93285e481a9e130f39674524",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
       "path": "assets/animation.gif",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "assets/firecrawl-logo-with-fire.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/firecrawl_logo.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/images.jpeg",
-      "reason": "Screenshots and promotional assets omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -487,5 +502,25 @@
         "Added a strict relevance gate; reject misleading yes substrings and recover from empty retrieval."
       ]
     }
-  ]
+  ],
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

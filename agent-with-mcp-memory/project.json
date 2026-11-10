@@ -62,24 +62,29 @@
       "upstream_sha256": "26a5389fa8a59e5df8b289115afff70c9cc8871ecb1697775aeea15c6a22e5c4",
       "local_sha256": "26a5389fa8a59e5df8b289115afff70c9cc8871ecb1697775aeea15c6a22e5c4",
       "changes": []
+    },
+    {
+      "upstream_path": "assets/thumbnail.jpeg",
+      "path": "assets/thumbnail.jpeg",
+      "upstream_sha256": "a58b9f5674fe2edafc0d353a326bf93eb1096ce18d26e6427d3fdc3273f0fb2a",
+      "local_sha256": "a58b9f5674fe2edafc0d353a326bf93eb1096ce18d26e6427d3fdc3273f0fb2a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
       "path": "assets/agent-crashcourse1.gif",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     },
     {
       "path": "assets/agent-crashcourse2.gif",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "assets/thumbnail.jpeg",
-      "reason": "Screenshots and promotional assets omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     },
     {
       "path": "assets/zep-memory.gif",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -488,5 +493,20 @@
     "plain_python_units_checked": 17
   },
   "category": "memory",
-  "purpose": "Give a local agent web tools, persistent graph memory and traceable behavior."
+  "purpose": "Give a local agent web tools, persistent graph memory and traceable behavior.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

@@ -74,78 +74,164 @@
       "upstream_sha256": "cdbc58433a643f3609b10d2e1f0334503171cb66a4c850e5f969b159110cb9b5",
       "local_sha256": "cdbc58433a643f3609b10d2e1f0334503171cb66a4c850e5f969b159110cb9b5",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "frontend/.gitignore",
       "path": "frontend/.gitignore",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "cfdbd5a321f3ba279e434c025fc9a44bf2d3bd3a1af5affb8429d79bd18af054",
+      "local_sha256": "cfdbd5a321f3ba279e434c025fc9a44bf2d3bd3a1af5affb8429d79bd18af054",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
-      "path": "frontend/AGENTS.md",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_path": "frontend/AGENTS.md",
+      "path": "frontend/AGENTS.upstream.md",
+      "upstream_sha256": "ec1b6e023814ae1a510b02ea62229e5eb035d75e39e3335d5ea7f5ce5654d567",
+      "local_sha256": "ec1b6e023814ae1a510b02ea62229e5eb035d75e39e3335d5ea7f5ce5654d567",
+      "changes": [
+        "Quarantined imported agent instructions as reference documentation.",
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/api/copilotkit/route.ts",
       "path": "frontend/app/api/copilotkit/route.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "6c3b1bfbf87eceed119e10d8237dad8e549f9c7312f6e0b9701a9b97fc2843e7",
+      "local_sha256": "6c3b1bfbf87eceed119e10d8237dad8e549f9c7312f6e0b9701a9b97fc2843e7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/chat.tsx",
       "path": "frontend/app/chat.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "f936f736269b80f878aa33326238c988d1d7b40036534dd41b98761c76794d2f",
+      "local_sha256": "f936f736269b80f878aa33326238c988d1d7b40036534dd41b98761c76794d2f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/favicon.ico",
       "path": "frontend/app/favicon.ico",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932",
+      "local_sha256": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/globals.css",
       "path": "frontend/app/globals.css",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "1367b379a03294323912dcba2d57a124d572adba71745b53003fa33fcb328ba2",
+      "local_sha256": "1367b379a03294323912dcba2d57a124d572adba71745b53003fa33fcb328ba2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/layout.tsx",
       "path": "frontend/app/layout.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "b16b7541c6375f17730288f30a6ea4ff299a2876205263e3d1101ae324e838b2",
+      "local_sha256": "b16b7541c6375f17730288f30a6ea4ff299a2876205263e3d1101ae324e838b2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/page.tsx",
       "path": "frontend/app/page.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "a917af0003442792edd123edcdd4650cb2d3d283b9706a1bf49091cf39103c95",
+      "local_sha256": "a917af0003442792edd123edcdd4650cb2d3d283b9706a1bf49091cf39103c95",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/app/providers.tsx",
       "path": "frontend/app/providers.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "6aa0cfa693271ace2ebc6266d00b007a61ae0a7c924a21c596177c5185c31e0b",
+      "local_sha256": "6aa0cfa693271ace2ebc6266d00b007a61ae0a7c924a21c596177c5185c31e0b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
-      "path": "frontend/CLAUDE.md",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_path": "frontend/CLAUDE.md",
+      "path": "frontend/CLAUDE.upstream.md",
+      "upstream_sha256": "d631d88045f74623d568adfb4783b72e3d1b732330d749bc6c72e6648d4581d3",
+      "local_sha256": "d631d88045f74623d568adfb4783b72e3d1b732330d749bc6c72e6648d4581d3",
+      "changes": [
+        "Quarantined imported agent instructions as reference documentation.",
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/eslint.config.mjs",
       "path": "frontend/eslint.config.mjs",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "275a07c13fc7c83a652efcfa9fb6a207c451a2f5088e6793415ce44281285720",
+      "local_sha256": "275a07c13fc7c83a652efcfa9fb6a207c451a2f5088e6793415ce44281285720",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/next.config.ts",
       "path": "frontend/next.config.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "local_sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/package-lock.json",
       "path": "frontend/package-lock.json",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "b169dfd873ed7537b9cc3e0b2326c4752ef4c961cb66f27094def26c450f7b14",
+      "local_sha256": "b169dfd873ed7537b9cc3e0b2326c4752ef4c961cb66f27094def26c450f7b14",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/package.json",
       "path": "frontend/package.json",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "0da3bb9c905e8900dbd0595c7333ff70d3f5e6c7e48da8f63119e04b4bf8d1ad",
+      "local_sha256": "0da3bb9c905e8900dbd0595c7333ff70d3f5e6c7e48da8f63119e04b4bf8d1ad",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/postcss.config.mjs",
       "path": "frontend/postcss.config.mjs",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "7b299d3d3b16699ddda397c0b2373b3af4f25f8fc9ccc9b3d9e64ef083bc1c21",
+      "local_sha256": "7b299d3d3b16699ddda397c0b2373b3af4f25f8fc9ccc9b3d9e64ef083bc1c21",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/README.md",
       "path": "frontend/README.md",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "3b3ed71ebf50e973209bc634f6849e8ecf235a6c0686c285e1f36af5caa1c2cc",
+      "local_sha256": "3b3ed71ebf50e973209bc634f6849e8ecf235a6c0686c285e1f36af5caa1c2cc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/tsconfig.json",
       "path": "frontend/tsconfig.json",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "fbff01604d6cb54694be707f26e7a0eb21a6ef796b888c6a1dab1839fa7c6ccc",
+      "local_sha256": "fbff01604d6cb54694be707f26e7a0eb21a6ef796b888c6a1dab1839fa7c6ccc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -334,11 +420,23 @@
       }
     ],
     "manifests": [
-      "pyproject.toml"
+      "pyproject.toml",
+      "frontend/package.json"
     ],
     "notebooks": [],
-    "other_code": [],
+    "other_code": [
+      "frontend/app/api/copilotkit/route.ts",
+      "frontend/app/chat.tsx",
+      "frontend/app/globals.css",
+      "frontend/app/layout.tsx",
+      "frontend/app/page.tsx",
+      "frontend/app/providers.tsx",
+      "frontend/eslint.config.mjs",
+      "frontend/next.config.ts",
+      "frontend/postcss.config.mjs"
+    ],
     "environment": [
+      "CREWAI_BACKEND_URL",
       "EXA_API_KEY",
       "OPENROUTER_API_KEY"
     ],
@@ -387,5 +485,26 @@
     "plain_python_units_checked": 3
   },
   "category": "agents",
-  "purpose": "Route support turns among order lookup, policy retrieval and live research."
+  "purpose": "Route support turns among order lookup, policy retrieval and live research.",
+  "ui_entries": [
+    {
+      "path": "frontend/package.json",
+      "kind": "npm",
+      "script": "dev"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

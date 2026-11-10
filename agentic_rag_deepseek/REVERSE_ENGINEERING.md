@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app_deep_seek.py](app_deep_seek.py) | load_llm, create_agents_and_tasks, reset_chat, display_pdf | UI reference |
+| [app_deep_seek.py](app_deep_seek.py) | load_llm, create_agents_and_tasks, reset_chat, display_pdf | UI surface |
 | [src/agentic_rag/crew.py](src/agentic_rag/crew.py) | AgenticRag, retriever_agent, response_synthesizer_agent, retrieval_task, response_task, crew | agentic_rag, crewai, crewai_tools |
 | [src/agentic_rag/main.py](src/agentic_rag/main.py) | run, train, replay, test | agentic_rag, sys, warnings |
 | [src/agentic_rag/tools/custom_tool.py](src/agentic_rag/tools/custom_tool.py) | DocumentSearchToolInput, DocumentSearchTool, test_document_searcher | crewai, dotenv, groundx, os, pydantic, typing |
@@ -31,6 +31,10 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app_deep_seek.py](app_deep_seek.py) | 13 | load_llm | FunctionDef |
+| [app_deep_seek.py](app_deep_seek.py) | 23 | create_agents_and_tasks | Creates a Crew with the given PDF tool (if any) and a web search tool. |
+| [app_deep_seek.py](app_deep_seek.py) | 104 | reset_chat | FunctionDef |
+| [app_deep_seek.py](app_deep_seek.py) | 108 | display_pdf | Displays the uploaded PDF in an iframe. |
 | [src/agentic_rag/crew.py](src/agentic_rag/crew.py) | 13 | AgenticRag | AgenticRag crew |
 | [src/agentic_rag/crew.py](src/agentic_rag/crew.py) | 29 | retriever_agent | FunctionDef |
 | [src/agentic_rag/crew.py](src/agentic_rag/crew.py) | 40 | response_synthesizer_agent | FunctionDef |
@@ -72,6 +76,8 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [src/agentic_rag/agentic_rag.ipynb](src/agentic_rag/agentic_rag.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [src/agentic_rag/tools/test.ipynb.invalid.txt](src/agentic_rag/tools/test.ipynb.invalid.txt) | Empty/invalid upstream notebook quarantined; no executable lesson was present. |
+| [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/thumbnail.png](assets/thumbnail.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

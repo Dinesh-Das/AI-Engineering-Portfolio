@@ -14,11 +14,11 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat | UI reference |
+| [app.py](app.py) | reset_chat | UI surface |
 | [flow.py](flow.py) | URLBuckets, SpecialistOutput, DeepResearchFlowState, server_params, DeepResearchFlow, main, start_flow, collect_urls, dispatch_to_specialists, synthesize_response | asyncio, crewai, crewai_tools, dotenv, json, logging, mcp, os |
 | [research.py](research.py) | run_deep_research | flow, typing |
 
@@ -28,6 +28,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 18 | reset_chat | FunctionDef |
 | [flow.py](flow.py) | 20 | URLBuckets | ClassDef |
 | [flow.py](flow.py) | 28 | SpecialistOutput | ClassDef |
 | [flow.py](flow.py) | 36 | DeepResearchFlowState | ClassDef |

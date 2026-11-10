@@ -12,100 +12,210 @@
       "changes": [
         "Preserved upstream README separately from the local learning guide."
       ]
+    },
+    {
+      "upstream_path": "assets/agent-with-jev.jpg",
+      "path": "assets/agent-with-jev.jpg",
+      "upstream_sha256": "7e72bfec8b085d9428e3cb24dac2b9630ceb8f0c0077c29ba2d937f3b7b87c23",
+      "local_sha256": "7e72bfec8b085d9428e3cb24dac2b9630ceb8f0c0077c29ba2d937f3b7b87c23",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/agent-without-jev.jpg",
+      "path": "assets/agent-without-jev.jpg",
+      "upstream_sha256": "f87806e8c7a41ba6a96c023e482fdefcce34f0d1412fee70357b2281f8d541e8",
+      "local_sha256": "f87806e8c7a41ba6a96c023e482fdefcce34f0d1412fee70357b2281f8d541e8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/closed-vs-open-harness.jpg",
+      "path": "assets/closed-vs-open-harness.jpg",
+      "upstream_sha256": "4c83971ef4f75483894fd8945ea44d25d18f6788ee6534f839b6019e98f249cf",
+      "local_sha256": "4c83971ef4f75483894fd8945ea44d25d18f6788ee6534f839b6019e98f249cf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/code-mode.jpg",
+      "path": "assets/code-mode.jpg",
+      "upstream_sha256": "a3e275e2e54e03481ae682b359c1bd172f4ba02615a9da86bc14c856fa2df5a3",
+      "local_sha256": "a3e275e2e54e03481ae682b359c1bd172f4ba02615a9da86bc14c856fa2df5a3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/confidence-threshold.jpg",
+      "path": "assets/confidence-threshold.jpg",
+      "upstream_sha256": "0472eec030283d2407e459ba1b057cf845570d85a8d6d946b5eadfa735dd151f",
+      "local_sha256": "0472eec030283d2407e459ba1b057cf845570d85a8d6d946b5eadfa735dd151f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/connector-jev-mcp.jpg",
+      "path": "assets/connector-jev-mcp.jpg",
+      "upstream_sha256": "02fb7c6a1ff11b5cd22d54faa502d9ee6f19e46fd223856ece93133512a91dcc",
+      "local_sha256": "02fb7c6a1ff11b5cd22d54faa502d9ee6f19e46fd223856ece93133512a91dcc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/context-volume-levers.jpg",
+      "path": "assets/context-volume-levers.jpg",
+      "upstream_sha256": "b392d24934aeb50947ad4e3c1771934c6b747733a55c8209179895cb8c1ae8e9",
+      "local_sha256": "b392d24934aeb50947ad4e3c1771934c6b747733a55c8209179895cb8c1ae8e9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/credential-isolation.jpg",
+      "path": "assets/credential-isolation.jpg",
+      "upstream_sha256": "9e10c4767879109afbe99d2007532db84439b72b9c3f31f9837908b34a8c82d2",
+      "local_sha256": "9e10c4767879109afbe99d2007532db84439b72b9c3f31f9837908b34a8c82d2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/decision-cost-comparison.jpg",
+      "path": "assets/decision-cost-comparison.jpg",
+      "upstream_sha256": "4fc2940c3552d2f7df0b86313f0fe60bca8661097cc913d483a9ecd421e215f7",
+      "local_sha256": "4fc2940c3552d2f7df0b86313f0fe60bca8661097cc913d483a9ecd421e215f7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/deferred-tool-loading.jpg",
+      "path": "assets/deferred-tool-loading.jpg",
+      "upstream_sha256": "3318184c20cd44bf8e73f0d7c6e5b0234176d24bfe514d0d19256e3b4e3c2378",
+      "local_sha256": "3318184c20cd44bf8e73f0d7c6e5b0234176d24bfe514d0d19256e3b4e3c2378",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/enterprise-bench-results.jpg",
+      "path": "assets/enterprise-bench-results.jpg",
+      "upstream_sha256": "0dad05f244fabcf8cc657402e4dfe5d867df3e2722a85b4ce1ac83740a684ab6",
+      "local_sha256": "0dad05f244fabcf8cc657402e4dfe5d867df3e2722a85b4ce1ac83740a684ab6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/jev-choice-question.jpg",
+      "path": "assets/jev-choice-question.jpg",
+      "upstream_sha256": "f02cd199867cb76326ea777f42510824cf840d2ae40729972c2f7a3d242c2822",
+      "local_sha256": "f02cd199867cb76326ea777f42510824cf840d2ae40729972c2f7a3d242c2822",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/jev-workflow.jpg",
+      "path": "assets/jev-workflow.jpg",
+      "upstream_sha256": "d8060469728b8da5e8aa0cdc481b01e32a2db90cab55cbe80713e3cddcc5d94a",
+      "local_sha256": "d8060469728b8da5e8aa0cdc481b01e32a2db90cab55cbe80713e3cddcc5d94a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/llm-vs-jev.jpg",
+      "path": "assets/llm-vs-jev.jpg",
+      "upstream_sha256": "6a270c010fb1316a737932a814e5bb7a63779b0c5c6cc3fec5f8190544c14405",
+      "local_sha256": "6a270c010fb1316a737932a814e5bb7a63779b0c5c6cc3fec5f8190544c14405",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/offloading.jpg",
+      "path": "assets/offloading.jpg",
+      "upstream_sha256": "7ae6bc25e690e5722009f19bcc7ff2ce1a10baffc69a538d91622b69d7ff1fb2",
+      "local_sha256": "7ae6bc25e690e5722009f19bcc7ff2ce1a10baffc69a538d91622b69d7ff1fb2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/requests-vs-issues.jpg",
+      "path": "assets/requests-vs-issues.jpg",
+      "upstream_sha256": "6c3b438fd5328bb6a6994f768269b7d4c06f83fdeb1da493a49d11f1399a0bef",
+      "local_sha256": "6c3b438fd5328bb6a6994f768269b7d4c06f83fdeb1da493a49d11f1399a0bef",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/results-with-vs-without-jev.jpg",
+      "path": "assets/results-with-vs-without-jev.jpg",
+      "upstream_sha256": "1c2002714421cddeb1125404f659c2769920f271a80a98a2074dd1994f0fa9ca",
+      "local_sha256": "1c2002714421cddeb1125404f659c2769920f271a80a98a2074dd1994f0fa9ca",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/settings-models.jpg",
+      "path": "assets/settings-models.jpg",
+      "upstream_sha256": "73096b22a4b5dc52abf236e49616bece988fbe7481e5af83ff0a02b116fc5e6a",
+      "local_sha256": "73096b22a4b5dc52abf236e49616bece988fbe7481e5af83ff0a02b116fc5e6a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/subagents.jpg",
+      "path": "assets/subagents.jpg",
+      "upstream_sha256": "93efe2ab6d7591e70ddcbb3a7fd0ca70fbacd3655472452a3dac28175e465ee4",
+      "local_sha256": "93efe2ab6d7591e70ddcbb3a7fd0ca70fbacd3655472452a3dac28175e465ee4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/trueforge-architecture.jpg",
+      "path": "assets/trueforge-architecture.jpg",
+      "upstream_sha256": "42a66268c2853b64b567cd754886cf0ca070516c3a39e10058fd7a331cbe2942",
+      "local_sha256": "42a66268c2853b64b567cd754886cf0ca070516c3a39e10058fd7a331cbe2942",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/trueforge-banner.jpg",
+      "path": "assets/trueforge-banner.jpg",
+      "upstream_sha256": "cb465704a5fb49d0d6549394874a3ae52e67cb77dede0089c0020915624ce941",
+      "local_sha256": "cb465704a5fb49d0d6549394874a3ae52e67cb77dede0089c0020915624ce941",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/weekly-schedule.jpg",
+      "path": "assets/weekly-schedule.jpg",
+      "upstream_sha256": "93350291e9dfcfb47cf384cc566e52b61eec8993aec35cc31faf6c48c6d66cdf",
+      "local_sha256": "93350291e9dfcfb47cf384cc566e52b61eec8993aec35cc31faf6c48c6d66cdf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
-      "path": "assets/agent-with-jev.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/agent-without-jev.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/closed-vs-open-harness.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/code-mode.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/confidence-threshold.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/connector-jev-mcp.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/context-volume-levers.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/credential-isolation.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/decision-cost-comparison.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/deferred-tool-loading.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/enterprise-bench-results.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/jev-choice-question.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/jev-workflow.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/llm-vs-jev.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/offloading.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/requests-vs-issues.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/results-with-vs-without-jev.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/settings-models.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/subagents.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/trueforge-architecture.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/trueforge-banner.jpg",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
       "path": "assets/TrueForge.mp4",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "assets/weekly-schedule.jpg",
-      "reason": "Screenshots and promotional assets omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -129,5 +239,20 @@
     "plain_python_units_checked": 0
   },
   "category": "recipe",
-  "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide."
+  "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

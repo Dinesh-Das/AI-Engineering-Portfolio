@@ -41,14 +41,18 @@
       "upstream_sha256": "c092a2e9d228700b7eef742ab5132c635828eb399726f214416860e2a12c4008",
       "local_sha256": "c092a2e9d228700b7eef742ab5132c635828eb399726f214416860e2a12c4008",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/context_engineering_pipeline.jpg",
       "path": "assets/context_engineering_pipeline.jpg",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "1867514c42224d8664dcab4a900e0fced0f029c58218dfc06b0735edf5de6a74",
+      "local_sha256": "1867514c42224d8664dcab4a900e0fced0f029c58218dfc06b0735edf5de6a74",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -632,5 +636,20 @@
     "plain_python_units_checked": 29
   },
   "category": "memory",
-  "purpose": "Assemble useful context from documents, memory and structured stores under a token budget."
+  "purpose": "Assemble useful context from documents, memory and structured stores under a token budget.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

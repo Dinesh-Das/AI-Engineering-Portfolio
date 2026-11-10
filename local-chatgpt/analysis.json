@@ -1,0 +1,394 @@
+{
+  "units": [
+    {
+      "path": "app.py",
+      "imports": [
+        "chainlit",
+        "ollama"
+      ],
+      "environment": [],
+      "models": [
+        "llama3.2-vision"
+      ],
+      "symbols": [
+        {
+          "name": "start_chat",
+          "line": 5,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "tool",
+          "line": 26,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 48,
+          "kind": "AsyncFunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        "cl.Message",
+        "cl.step",
+        "cl.user_session.get",
+        "cl.user_session.set",
+        "interaction.append",
+        "msg.send",
+        "msg.stream_token",
+        "ollama.chat",
+        "tool"
+      ],
+      "findings": [],
+      "ui": true,
+      "syntax_error": null
+    },
+    {
+      "path": "learning_ui/protocol.py",
+      "imports": [
+        "base64",
+        "binascii",
+        "json",
+        "math",
+        "re",
+        "time",
+        "urllib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "NoRedirect",
+          "line": 21,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "local_opener",
+          "line": 26,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "ReasoningSplitter",
+          "line": 31,
+          "kind": "ClassDef",
+          "doc": "Keep partial delimiters between chunks so final-answer text is never dropped."
+        },
+        {
+          "name": "_image",
+          "line": 65,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "validate_request",
+          "line": 79,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "loopback_base",
+          "line": 134,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "stream_ollama",
+          "line": 144,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "redirect_request",
+          "line": 22,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "__init__",
+          "line": 34,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "feed",
+          "line": 38,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "finish",
+          "line": 59,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".encode",
+        ".open",
+        "NoRedirect",
+        "RuntimeError",
+        "ValueError",
+        "_image",
+        "base64.b64decode",
+        "clean.append",
+        "content.strip",
+        "enumerate",
+        "event.get",
+        "events.append",
+        "isinstance",
+        "json.dumps",
+        "json.loads",
+        "len",
+        "line.strip",
+        "local_opener",
+        "loopback_base",
+        "math.isfinite",
+        "message.get",
+        "min",
+        "next",
+        "profile.get",
+        "range",
+        "raw.startswith",
+        "re.fullmatch",
+        "request.get",
+        "response.readline",
+        "self.buffer.endswith",
+        "self.buffer.find",
+        "sum",
+        "time.monotonic",
+        "type",
+        "urllib.parse.urlsplit",
+        "urllib.request.ProxyHandler",
+        "urllib.request.Request",
+        "urllib.request.build_opener",
+        "value.rstrip"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "learning_ui/server.py",
+      "imports": [
+        "argparse",
+        "http",
+        "json",
+        "pathlib",
+        "protocol",
+        "threading",
+        "time",
+        "urllib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [
+        {
+          "name": "fixture_chunks",
+          "line": 16,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "make_server",
+          "line": 31,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "main",
+          "line": 165,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "Handler",
+          "line": 35,
+          "kind": "ClassDef",
+          "doc": ""
+        },
+        {
+          "name": "log_message",
+          "line": 36,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "headers_for",
+          "line": 39,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "json_response",
+          "line": 50,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "local_origin",
+          "line": 55,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "do_GET",
+          "line": 63,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "event",
+          "line": 87,
+          "kind": "FunctionDef",
+          "doc": ""
+        },
+        {
+          "name": "do_POST",
+          "line": 91,
+          "kind": "FunctionDef",
+          "doc": ""
+        }
+      ],
+      "calls": [
+        ".encode",
+        ".open",
+        ".read_bytes",
+        ".with_name",
+        "Path",
+        "ReasoningSplitter",
+        "RuntimeError",
+        "ThreadingHTTPServer",
+        "ValueError",
+        "argparse.ArgumentParser",
+        "args.profile.read_text",
+        "chunk.get",
+        "chunks.close",
+        "data.get",
+        "fixture_chunks",
+        "int",
+        "isinstance",
+        "json.dumps",
+        "json.loads",
+        "len",
+        "local_opener",
+        "loopback_base",
+        "main",
+        "make_server",
+        "message.get",
+        "parser.add_argument",
+        "parser.error",
+        "parser.feed",
+        "parser.finish",
+        "parser.parse_args",
+        "print",
+        "profile.get",
+        "range",
+        "request.get",
+        "response.read",
+        "round",
+        "self.connection.settimeout",
+        "self.end_headers",
+        "self.event",
+        "self.headers.get",
+        "self.headers.get_content_type",
+        "self.headers_for",
+        "self.json_response",
+        "self.local_origin",
+        "self.rfile.read",
+        "self.send_header",
+        "self.send_response",
+        "self.wfile.flush",
+        "self.wfile.write",
+        "server.serve_forever",
+        "server.server_close",
+        "slots.acquire",
+        "slots.release",
+        "str",
+        "stream_ollama",
+        "threading.BoundedSemaphore",
+        "time.monotonic",
+        "time.sleep",
+        "updates.append",
+        "validate_request"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "learning_ui/__init__.py",
+      "imports": [],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    },
+    {
+      "path": "learning_app.py",
+      "imports": [
+        "learning_ui",
+        "pathlib"
+      ],
+      "environment": [],
+      "models": [],
+      "symbols": [],
+      "calls": [
+        ".with_name",
+        "Path",
+        "main"
+      ],
+      "findings": [],
+      "ui": false,
+      "syntax_error": null
+    }
+  ],
+  "manifests": [],
+  "notebooks": [],
+  "other_code": [
+    "learning_ui/static/app.js",
+    "learning_ui/static/index.html",
+    "learning_ui/static/style.css"
+  ],
+  "environment": [],
+  "imports": [
+    "argparse",
+    "base64",
+    "binascii",
+    "chainlit",
+    "http",
+    "json",
+    "learning_ui",
+    "math",
+    "ollama",
+    "pathlib",
+    "protocol",
+    "re",
+    "threading",
+    "time",
+    "urllib"
+  ],
+  "models": [
+    "llama3.2-vision"
+  ],
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "learning_app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "findings": [],
+  "syntax_errors": []
+}

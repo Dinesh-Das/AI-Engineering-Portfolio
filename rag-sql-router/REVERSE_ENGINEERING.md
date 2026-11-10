@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat, get_database_connection, get_table_data, get_table_schema, create_population_chart, create_state_distribution_chart, create_population_scatter, render_database_tab, initialize_model, handle_file_upload, initialize_workflow, process_query | UI reference |
+| [app.py](app.py) | reset_chat, get_database_connection, get_table_data, get_table_schema, create_population_chart, create_state_distribution_chart, create_population_scatter, render_database_tab, initialize_model, handle_file_upload, initialize_workflow, process_query | UI surface |
 | [notebook.ipynb#cell-6](notebook.ipynb#cell-6) | top-level workflow | llama_index |
 | [notebook.ipynb#cell-10](notebook.ipynb#cell-10) | create_docs_query_engine | llama_index |
 | [notebook.ipynb#cell-12](notebook.ipynb#cell-12) | create_codex_project | cleanlab_codex |
@@ -26,6 +26,7 @@ The following table is extracted from this project's actual retained files. Note
 | [notebook.ipynb#cell-20](notebook.ipynb#cell-20) | InputEvent, GatherToolsEvent, ToolCallEvent, ToolCallEventResult, RouterOutputAgentWorkflow, reset, prepare_chat, chat, dispatch_calls, call_tool, gather | llama_index, typing |
 | [tools.py](tools.py) | create_codex_project, get_or_create_codex_project, get_codex_project_info, setup_sql_tool, setup_document_tool, document_query_tool | cleanlab_codex, llama_index, os, sqlalchemy, uuid |
 | [workflow.py](workflow.py) | InputEvent, GatherToolsEvent, ToolCallEvent, ToolCallEventResult, RouterOutputAgentWorkflow, reset, prepare_chat, chat, dispatch_calls, call_tool, gather | asyncio, llama_index, typing |
+| [workflow_all_flows.html](workflow_all_flows.html) | backend/configuration source; inspect directly | .html |
 
 ## Function and class walkthrough
 
@@ -33,6 +34,19 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 72 | reset_chat | Reset the chat history and clear context |
+| [app.py](app.py) | 86 | get_database_connection | Create a database connection |
+| [app.py](app.py) | 101 | get_table_data | Get data from the specified table |
+| [app.py](app.py) | 116 | get_table_schema | Get the schema of the specified table |
+| [app.py](app.py) | 132 | create_population_chart | Create a population chart using Plotly |
+| [app.py](app.py) | 159 | create_state_distribution_chart | Create a state distribution chart |
+| [app.py](app.py) | 179 | create_population_scatter | Create a scatter plot of cities by population |
+| [app.py](app.py) | 203 | render_database_tab | Render the database visualization tab |
+| [app.py](app.py) | 373 | initialize_model | Initialize models for LLM and embedding |
+| [app.py](app.py) | 386 | handle_file_upload | Function to handle multiple file uploads with temporary directory |
+| [app.py](app.py) | 427 | initialize_workflow | Initialize workflow with the given tools |
+| [app.py](app.py) | 438 | process_query | Function to process a query using the workflow |
+| [app.py](app.py) | 526 | main | FunctionDef |
 | [notebook.ipynb#cell-10](notebook.ipynb#cell-10) | 6 | create_docs_query_engine | FunctionDef |
 | [notebook.ipynb#cell-12](notebook.ipynb#cell-12) | 4 | create_codex_project | FunctionDef |
 | [notebook.ipynb#cell-16](notebook.ipynb#cell-16) | 1 | document_query_tool | FunctionDef |
@@ -90,6 +104,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [notebook.ipynb](notebook.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [.streamlit/config.toml](.streamlit/config.toml) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

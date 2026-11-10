@@ -58,24 +58,39 @@
       "upstream_sha256": "e7618d46a57d536c59c87a65ce630bc5e6ece280f094daf3e128e490a21f8c6d",
       "local_sha256": "e7618d46a57d536c59c87a65ce630bc5e6ece280f094daf3e128e490a21f8c6d",
       "changes": []
+    },
+    {
+      "upstream_path": "assets/cerebras.png",
+      "path": "assets/cerebras.png",
+      "upstream_sha256": "9722273cb49919bf0e6d0a3cef7cb62038e36f7369c140beb9291b139f85f1e8",
+      "local_sha256": "9722273cb49919bf0e6d0a3cef7cb62038e36f7369c140beb9291b139f85f1e8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/download.png",
+      "path": "assets/download.png",
+      "upstream_sha256": "9df54731740a038b97099dbfad53f07a2f639ab32258365b1d32c9ef9f314e84",
+      "local_sha256": "9df54731740a038b97099dbfad53f07a2f639ab32258365b1d32c9ef9f314e84",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/llamaindex.png",
+      "path": "assets/llamaindex.png",
+      "upstream_sha256": "c1194e7693b1c4c68f2c9cbbe0f7092a7665a3368d8d5ee1ab999e7d2930ce2e",
+      "local_sha256": "c1194e7693b1c4c68f2c9cbbe0f7092a7665a3368d8d5ee1ab999e7d2930ce2e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
-      "path": "assets/cerebras.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/download.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/llamaindex.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
       "path": "video demo.mp4",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -327,5 +342,25 @@
     "plain_python_units_checked": 2
   },
   "category": "rag",
-  "purpose": "Use a hosted Llama 4 model in a local document-retrieval workflow."
+  "purpose": "Use a hosted Llama 4 model in a local document-retrieval workflow.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

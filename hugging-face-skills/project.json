@@ -803,28 +803,33 @@
       "upstream_sha256": "3a297136ee212fb2d09896b45666f06ccf52828f1e3f6a805f74a31aea91b4e9",
       "local_sha256": "3a297136ee212fb2d09896b45666f06ccf52828f1e3f6a805f74a31aea91b4e9",
       "changes": []
+    },
+    {
+      "upstream_path": "skills/hugging-face-tool-builder/references/baseline_hf_api.tsx",
+      "path": "skills/hugging-face-tool-builder/references/baseline_hf_api.tsx",
+      "upstream_sha256": "46099270a1c9ba532c21878dda728c7c3bc3902dd6c5bd96de1de9e1ad681dce",
+      "local_sha256": "46099270a1c9ba532c21878dda728c7c3bc3902dd6c5bd96de1de9e1ad681dce",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
       "path": ".github/workflows/generate-agents.yml",
-      "reason": "Frontend, generated output or development automation omitted."
+      "reason": "Generated output or development automation omitted."
     },
     {
       "path": ".github/workflows/push-evals-leaderboard.yml",
-      "reason": "Frontend, generated output or development automation omitted."
+      "reason": "Generated output or development automation omitted."
     },
     {
       "path": ".github/workflows/push-hackers-leaderboard.yml",
-      "reason": "Frontend, generated output or development automation omitted."
+      "reason": "Generated output or development automation omitted."
     },
     {
       "path": ".github/workflows/push-quests.yml",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "skills/hugging-face-tool-builder/references/baseline_hf_api.tsx",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Generated output or development automation omitted."
     }
   ],
   "analysis": {
@@ -3617,11 +3622,13 @@
     "notebooks": [],
     "other_code": [
       "scripts/link-skills.sh",
+      "skills/hugging-face-jobs/index.html",
       "skills/hugging-face-tool-builder/references/baseline_hf_api.sh",
       "skills/hugging-face-tool-builder/references/find_models_by_paper.sh",
       "skills/hugging-face-tool-builder/references/hf_enrich_models.sh",
       "skills/hugging-face-tool-builder/references/hf_model_card_frontmatter.sh",
-      "skills/hugging-face-tool-builder/references/hf_model_papers_auth.sh"
+      "skills/hugging-face-tool-builder/references/hf_model_papers_auth.sh",
+      "skills/hugging-face-tool-builder/references/baseline_hf_api.tsx"
     ],
     "environment": [
       "AA_API_KEY",
@@ -3809,5 +3816,20 @@
     "plain_python_units_checked": 26
   },
   "category": "operations",
-  "purpose": "Inspect reusable dataset, evaluation, training and publishing scripts for AI agents."
+  "purpose": "Inspect reusable dataset, evaluation, training and publishing scripts for AI agents.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

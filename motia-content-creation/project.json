@@ -355,5 +355,26 @@
     "plain_python_units_checked": 4
   },
   "category": "agents",
-  "purpose": "Implement event-driven article-to-social-content generation."
+  "purpose": "Implement event-driven article-to-social-content generation.",
+  "ui_entries": [
+    {
+      "path": "package.json",
+      "kind": "npm",
+      "script": "dev"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

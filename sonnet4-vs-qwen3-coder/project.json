@@ -454,5 +454,25 @@
     "plain_python_units_checked": 6
   },
   "category": "evaluation",
-  "purpose": "Evaluate Claude and Qwen3-Coder against repository-grounded tasks."
+  "purpose": "Evaluate Claude and Qwen3-Coder against repository-grounded tasks.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

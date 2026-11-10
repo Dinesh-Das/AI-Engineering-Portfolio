@@ -14,12 +14,12 @@ authenticated turn -> retrieve scoped history/facts -> select context under budg
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [agent.py](agent.py) | ZepConversableAgent | autogen, typing, zep_cloud |
-| [app.py](app.py) | initialize_zep_client, initialize_session, create_agents, handle_conversations, main | UI reference |
+| [app.py](app.py) | initialize_zep_client, initialize_session, create_agents, handle_conversations, main | UI surface |
 | [util.py](util.py) | generate_user_id | re |
 
 ## Function and class walkthrough
@@ -29,6 +29,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
 | [agent.py](agent.py) | 7 | ZepConversableAgent | A custom ConversableAgent that integrates with Zep for long-term memory. |
+| [app.py](app.py) | 18 | initialize_zep_client | Initialize the Zep client with the provided API key. |
+| [app.py](app.py) | 29 | initialize_session | Initialize the session state and Zep connection. |
+| [app.py](app.py) | 105 | create_agents | Create and configure the conversational agents. |
+| [app.py](app.py) | 133 | handle_conversations | Process user input and generate assistant response. |
+| [app.py](app.py) | 190 | main | Main application entry point. |
 | [util.py](util.py) | 4 | generate_user_id | Generates a consistent user ID from first and last name. |
 
 ## Models, dependencies and configuration

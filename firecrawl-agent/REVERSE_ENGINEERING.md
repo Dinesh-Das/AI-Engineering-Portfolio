@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, reset_chat, display_pdf, initialize_workflow, run_workflow | UI reference |
+| [app.py](app.py) | load_llm, reset_chat, display_pdf, initialize_workflow, run_workflow | UI surface |
 | [start_server.py](start_server.py) | load_model | beam, subprocess, time |
 | [workflow.py](workflow.py) | RetrieveEvent, WebSearchEvent, QueryEvent, CorrectiveRAGWorkflow, retrieve, eval_relevance, web_search, query_result | dotenv, llama_index, os, re, relevance_policy, requests, typing |
 | [relevance_policy.py](relevance_policy.py) | is_relevant_grade, needs_web_search |  |
@@ -29,6 +29,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 49 | load_llm | FunctionDef |
+| [app.py](app.py) | 55 | reset_chat | FunctionDef |
+| [app.py](app.py) | 60 | display_pdf | FunctionDef |
+| [app.py](app.py) | 76 | initialize_workflow | FunctionDef |
+| [app.py](app.py) | 129 | run_workflow | AsyncFunctionDef |
 | [start_server.py](start_server.py) | 3 | load_model | FunctionDef |
 | [workflow.py](workflow.py) | 32 | RetrieveEvent | Retrieve event (gets retrieved nodes). |
 | [workflow.py](workflow.py) | 38 | WebSearchEvent | Web search event. |
@@ -67,6 +72,9 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [workflow.py](workflow.py) | Fixed evidence fallback routing and aligned context filtering with strict affirmative grading; unit-tested routing on extracted workflow methods without SDK imports. |
+| [assets/firecrawl-logo-with-fire.png](assets/firecrawl-logo-with-fire.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/firecrawl_logo.png](assets/firecrawl_logo.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/images.jpeg](assets/images.jpeg) | Restored frontend source/asset after UI scope was authorized. |
 | [relevance_policy.py](relevance_policy.py) | Added a strict relevance gate; reject misleading yes substrings and recover from empty retrieval. |
 
 ## Code-level review leads

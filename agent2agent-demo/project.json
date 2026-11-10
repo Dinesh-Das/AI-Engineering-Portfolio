@@ -333,5 +333,20 @@
     "plain_python_units_checked": 9
   },
   "category": "agents",
-  "purpose": "Understand agent-to-agent communication through sine, cosine and tangent services."
+  "purpose": "Understand agent-to-agent communication through sine, cosine and tangent services.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

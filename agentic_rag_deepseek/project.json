@@ -118,18 +118,27 @@
       "changes": [
         "Empty/invalid upstream notebook quarantined; no executable lesson was present."
       ]
-    }
-  ],
-  "omitted": [
-    {
-      "path": "assets/deep-seek.png",
-      "reason": "Screenshots and promotional assets omitted."
     },
     {
+      "upstream_path": "assets/deep-seek.png",
+      "path": "assets/deep-seek.png",
+      "upstream_sha256": "71f6fdc3c979585cff3baaa7a99214ad10790c79b25d1f97629966067d468dc2",
+      "local_sha256": "71f6fdc3c979585cff3baaa7a99214ad10790c79b25d1f97629966067d468dc2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/thumbnail.png",
       "path": "assets/thumbnail.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "ba33929a3774e0ad2c060cb5ea701fb44f3fe738e9dfd2ac71281d56ff46a2ed",
+      "local_sha256": "ba33929a3774e0ad2c060cb5ea701fb44f3fe738e9dfd2ac71281d56ff46a2ed",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -613,5 +622,20 @@
     "plain_python_units_checked": 14
   },
   "category": "rag",
-  "purpose": "Combine a local reasoning model with managed document parsing and search."
+  "purpose": "Combine a local reasoning model with managed document parsing and search.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

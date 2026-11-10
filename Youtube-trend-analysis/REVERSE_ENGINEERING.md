@@ -14,11 +14,11 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, create_agents_and_tasks, reset_chat, start_analysis, add_channel_field | UI reference |
+| [app.py](app.py) | load_llm, create_agents_and_tasks, reset_chat, start_analysis, add_channel_field | UI surface |
 | [brightdata_scrapper.py](brightdata_scrapper.py) | trigger_scraping_niche, trigger_scraping_channels, get_progress, get_output | dotenv, json, os, subprocess, time |
 | [config.yaml](config.yaml) | backend/configuration source; inspect directly | .yaml |
 
@@ -28,6 +28,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 22 | load_llm | FunctionDef |
+| [app.py](app.py) | 35 | create_agents_and_tasks | Creates a Crew for analysis of the channel scrapped output |
+| [app.py](app.py) | 96 | reset_chat | FunctionDef |
+| [app.py](app.py) | 100 | start_analysis | FunctionDef |
+| [app.py](app.py) | 201 | add_channel_field | FunctionDef |
 | [brightdata_scrapper.py](brightdata_scrapper.py) | 10 | trigger_scraping_niche | FunctionDef |
 | [brightdata_scrapper.py](brightdata_scrapper.py) | 42 | trigger_scraping_channels | FunctionDef |
 | [brightdata_scrapper.py](brightdata_scrapper.py) | 84 | get_progress | FunctionDef |
@@ -57,6 +62,8 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/brightdata.png](assets/brightdata.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/crewai.png](assets/crewai.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

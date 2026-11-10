@@ -14,11 +14,11 @@ versioned task set -> identical context/settings -> candidate generation -> blin
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | handle_chat_input, process_model1_stream, process_model2_stream, validate_evaluation_result | UI reference |
+| [app.py](app.py) | handle_chat_input, process_model1_stream, process_model2_stream, validate_evaluation_result | UI surface |
 | [code_evaluation_opik.py](code_evaluation_opik.py) | evaluate_code | opik |
 | [code_ingestion.py](code_ingestion.py) | ingest_github_repo | gitingest |
 | [model_service.py](model_service.py) | get_model_response_async, get_parallel_responses, get_model_responses, get_all_model_names, validate_model_name, get_model_mapping | asyncio, litellm, os, typing |
@@ -29,6 +29,10 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 186 | handle_chat_input | AsyncFunctionDef |
+| [app.py](app.py) | 221 | process_model1_stream | AsyncFunctionDef |
+| [app.py](app.py) | 240 | process_model2_stream | AsyncFunctionDef |
+| [app.py](app.py) | 329 | validate_evaluation_result | FunctionDef |
 | [code_evaluation_opik.py](code_evaluation_opik.py) | 4 | evaluate_code | Evaluate generated Python code using Comet Opik's GEval metrics. |
 | [code_ingestion.py](code_ingestion.py) | 4 | ingest_github_repo | FunctionDef |
 | [model_service.py](model_service.py) | 16 | get_model_response_async | AsyncFunctionDef |

@@ -76,60 +76,115 @@
       "upstream_sha256": "2fccb643b231c67f8fdb3b1d16c91214f24fe0ba043b1f288873b07624633d4f",
       "local_sha256": "2fccb643b231c67f8fdb3b1d16c91214f24fe0ba043b1f288873b07624633d4f",
       "changes": []
+    },
+    {
+      "upstream_path": "assets/best_practices.png",
+      "path": "assets/best_practices.png",
+      "upstream_sha256": "c4f0ee5673743e6671d35f3ec74312d80c5d3cb4c84f1b423dea96662669749d",
+      "local_sha256": "c4f0ee5673743e6671d35f3ec74312d80c5d3cb4c84f1b423dea96662669749d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/code_correctness.png",
+      "path": "assets/code_correctness.png",
+      "upstream_sha256": "604372c7a99b09868586a76fb3bf4a65be7b816c36854545ad6e60a8295fd011",
+      "local_sha256": "604372c7a99b09868586a76fb3bf4a65be7b816c36854545ad6e60a8295fd011",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/code_readability.png",
+      "path": "assets/code_readability.png",
+      "upstream_sha256": "08f96994dacd0a55068277f167c3535bdf9dd9e0eef281036b99961707ef027c",
+      "local_sha256": "08f96994dacd0a55068277f167c3535bdf9dd9e0eef281036b99961707ef027c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/evaluate_generated_code.png",
+      "path": "assets/evaluate_generated_code.png",
+      "upstream_sha256": "c91c22ca9b41bb3b2c5f9b01ee227f64fed83afeee9f33a6fbca359c85365884",
+      "local_sha256": "c91c22ca9b41bb3b2c5f9b01ee227f64fed83afeee9f33a6fbca359c85365884",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/generate_model_response.png",
+      "path": "assets/generate_model_response.png",
+      "upstream_sha256": "adce4f8fc254e1ba542b886d37a36373cba31249354cedb56eb73f9b61a12469",
+      "local_sha256": "adce4f8fc254e1ba542b886d37a36373cba31249354cedb56eb73f9b61a12469",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/ingest_repository.png",
+      "path": "assets/ingest_repository.png",
+      "upstream_sha256": "99649eb427da67b9246bc01945f9a57d7beb4123af1ffa7dbee803a2a8f6c9a3",
+      "local_sha256": "99649eb427da67b9246bc01945f9a57d7beb4123af1ffa7dbee803a2a8f6c9a3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/streamlit_ui.png",
+      "path": "assets/streamlit_ui.png",
+      "upstream_sha256": "667e4b9b8f41340a1065cdbaf7da021ab545d7660ff6c799fba49cf38d3fe056",
+      "local_sha256": "667e4b9b8f41340a1065cdbaf7da021ab545d7660ff6c799fba49cf38d3fe056",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/test_results_1.png",
+      "path": "assets/test_results_1.png",
+      "upstream_sha256": "6ed678e0bc313cfaa41d1c61c9a47ed9e594876cd1bef072990a840ef4fb8abf",
+      "local_sha256": "6ed678e0bc313cfaa41d1c61c9a47ed9e594876cd1bef072990a840ef4fb8abf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/test_results_2.png",
+      "path": "assets/test_results_2.png",
+      "upstream_sha256": "a489087942a1d0a502aef1ad655cbf9990860f042c48a20fa2a08cb26ec77e49",
+      "local_sha256": "a489087942a1d0a502aef1ad655cbf9990860f042c48a20fa2a08cb26ec77e49",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/test_results_3.png",
+      "path": "assets/test_results_3.png",
+      "upstream_sha256": "23c699a592441a5b4668c4a501ae7186cef9791d50acbbb4b9d3d69ed11aa5c0",
+      "local_sha256": "23c699a592441a5b4668c4a501ae7186cef9791d50acbbb4b9d3d69ed11aa5c0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/test_results_4.png",
+      "path": "assets/test_results_4.png",
+      "upstream_sha256": "e06ff06fb502d8b3c9b976bb42c2cb0dec5307ec7e5875e8333f88a6cff7ecb7",
+      "local_sha256": "e06ff06fb502d8b3c9b976bb42c2cb0dec5307ec7e5875e8333f88a6cff7ecb7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
       "path": "assets/api_keys.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/best_practices.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/code_correctness.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/code_readability.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/evaluate_generated_code.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/generate_model_response.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/ingest_repository.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/streamlit_ui.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/test_results_1.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/test_results_2.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/test_results_3.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/test_results_4.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "reason": "Credential-setup screenshot omitted; use the textual configuration guide."
     },
     {
       "path": "assets/workflow.gif",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -406,5 +461,25 @@
     "plain_python_units_checked": 4
   },
   "category": "evaluation",
-  "purpose": "Benchmark several code-generation providers against common repository context."
+  "purpose": "Benchmark several code-generation providers against common repository context.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

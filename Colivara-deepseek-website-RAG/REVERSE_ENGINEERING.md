@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat, display_pdf, create_pdf_from_screenshot | UI reference |
+| [app.py](app.py) | reset_chat, display_pdf, create_pdf_from_screenshot | UI surface |
 | [rag_code.py](rag_code.py) | batch_iterate, Retriever, RAG, search, generate_context, query | Janus, PIL, base64, colivara_py, io, torch, tqdm, transformers |
 
 ## Function and class walkthrough
@@ -27,6 +27,9 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 45 | reset_chat | FunctionDef |
+| [app.py](app.py) | 52 | display_pdf | FunctionDef |
+| [app.py](app.py) | 74 | create_pdf_from_screenshot | FunctionDef |
 | [rag_code.py](rag_code.py) | 12 | batch_iterate | Yield successive n-sized chunks from lst. |
 | [rag_code.py](rag_code.py) | 18 | Retriever | ClassDef |
 | [rag_code.py](rag_code.py) | 39 | RAG | ClassDef |
@@ -59,6 +62,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Redacted 2 possible credential literals (values not retained). |
+| [assets/deep-seek.png](assets/deep-seek.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

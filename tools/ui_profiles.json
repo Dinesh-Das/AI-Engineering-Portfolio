@@ -1,0 +1,65 @@
+{
+  "local-chatgpt": {
+    "title": "Local Llama vision", "model": "llama3.2-vision", "vision": true, "thinking": false,
+    "focus": "An image changes the context.",
+    "description": "Follow an image and a question from a browser turn to a local multimodal model.",
+    "lesson": "The original Chainlit app passes image paths to the SDK, waits for a complete answer, then replays characters. This version sends bounded base64 images through the REST API and displays tokens as they arrive.",
+    "experiment": "Ask about one image, then repeat the question without the image in a fresh conversation. Compare supported visual details and first-token latency.",
+    "starter": "Describe the main objects in the attached image. Separate what is visible from what you are inferring.",
+    "pitfall": "Character-by-character display after a blocking model call is not provider streaming. Local deployment also needs image/context memory budgets."
+  },
+  "local-chatgpt with DeepSeek": {
+    "title": "Local DeepSeek dialogue", "model": "deepseek-r1", "vision": false, "thinking": true, "think": "default",
+    "focus": "History is an explicit input.",
+    "description": "Inspect conversational context, streamed output and the effect of changing one generation setting.",
+    "lesson": "The original app stores a per-session list, calls Ollama synchronously inside an async handler and replays the result. Separate UI state from the bounded provider request and only commit completed turns.",
+    "experiment": "Introduce a fact, ask a follow-up, then repeat the follow-up in another tab. Confirm context continuity within one tab and isolation across tabs.",
+    "starter": "For this conversation, the fictional project code is MAPLE-17. What evidence would you need to verify that code outside this conversation?",
+    "pitfall": "A fluent follow-up can come from supplied history rather than persistent memory. Interrupted or failed turns should not silently become successful history."
+  },
+  "local-chatgpt with Gemma 3": {
+    "title": "Gemma visual dialogue", "model": "gemma3:4b", "vision": true, "thinking": false,
+    "focus": "Ground a follow-up in the image.",
+    "description": "Study a small local vision model with image questions, follow-up turns and explicit input budgets.",
+    "lesson": "The source uses Chainlit sessions and Gemma 3 image inputs, but blocks the async event loop with synchronous inference and a greeting sleep. The learning version separates transport from presentation and keeps completed image turns in context.",
+    "experiment": "Use a chart with legible units. Ask for a value and then its units in a follow-up; compare with a fresh tab that has never received the chart.",
+    "starter": "Read the attached chart. Cite the visible labels and units, and say if a value cannot be read reliably.",
+    "pitfall": "Sending the same image in every retained turn increases context and memory cost; a plausible chart value is not evidence of correct visual reading."
+  },
+  "deepseek-thinking-ui": {
+    "title": "DeepSeek stream inspector", "model": "deepseek-r1", "vision": false, "thinking": true, "think": "default",
+    "focus": "A chunk is not a sentence.",
+    "description": "Separate model-provided trace from the final answer without losing data at streaming boundaries.",
+    "lesson": "The upstream two-pass parser assumes think tags align with chunks and can drop answer text following a closing tag in the same chunk. The incremental parser retains partial delimiters and preserves the entire final answer.",
+    "experiment": "Replay a trace and final answer with the closing tag split at every character boundary. Compare the assembled answer with the unsplit reference, then test a real arithmetic answer separately.",
+    "starter": "A notebook costs 37 rupees and a pen costs 19 rupees. What is the total for three notebooks and two pens? Give the final total clearly.",
+    "pitfall": "The displayed trace is generated model output, not a correctness proof. Stream segmentation must not change the final answer."
+  },
+  "qwen3-thinking-ui": {
+    "title": "Qwen thinking lab", "model": "qwen3:4b", "vision": false, "thinking": true, "think": "true",
+    "focus": "Compare capability with cost.",
+    "description": "Explore Qwen's thinking controls while keeping final-answer quality separate from trace length.",
+    "lesson": "The source uses think-tag parsing over a stream. Modern Ollama can return native thinking and content fields; the learning transport accepts both forms while keeping traces out of subsequent answer history.",
+    "experiment": "Use a fixed set of exact-answer tasks with thinking enabled and disabled where supported. Record correctness, first-token time, completion time and token usage rather than judging a longer trace as better.",
+    "starter": "A train travels 84 km in 70 minutes at a constant speed. What is its speed in kilometres per hour? State the final number and unit.",
+    "pitfall": "Thinking modes are model/version capabilities. An unsupported option is an integration error, not evidence that the model cannot solve the task."
+  },
+  "gpt-oss-thinking-ui": {
+    "title": "GPT-OSS response notebook", "model": "gpt-oss:20b", "vision": false, "thinking": true, "think": "low",
+    "focus": "Two channels, one lifecycle.",
+    "description": "Inspect native thinking and answer events with visible cancellation, completion and measurement states.",
+    "lesson": "The original code collects native thinking and content fields but displays the answer after its stream loop finishes. The new UI updates each channel incrementally and records when the stream actually completes.",
+    "experiment": "Compare supported thinking levels on the same held-out questions. Stop one generation mid-stream and verify that its partial answer is visible but excluded from future model history.",
+    "starter": "List the assumptions needed to compare two model deployments fairly, then give a concise final checklist.",
+    "pitfall": "A 20B local model has substantial memory and cold-start requirements. Fixture timing is UI evidence only and must never be reported as GPU/model performance."
+  },
+  "streaming-ai-chatbot": {
+    "title": "Streaming state notebook", "model": "llama3.2", "vision": false, "thinking": false,
+    "focus": "Accepted is not completed.",
+    "description": "Trace an event-driven response through accepted, streaming, completed, failed and interrupted states.",
+    "lesson": "The pinned Motia project references three step files that are absent from its source tree. This explicitly reconstructed local Ollama version makes the same lifecycle observable without claiming that missing Motia implementation was recovered.",
+    "experiment": "Run the completed, failed and slow-stream fixtures. Confirm that only a completed answer enters the next request's history, then inspect the exported notes for each terminal status.",
+    "starter": "Explain how accepted, streaming and completed states differ in an asynchronous AI request. Include one failure example.",
+    "pitfall": "HTTP acceptance does not prove model success. Retries need stable turn IDs in a shared production service; browser memory is intentionally only a local learning implementation."
+  }
+}

@@ -314,5 +314,25 @@
     "plain_python_units_checked": 5
   },
   "category": "memory",
-  "purpose": "Add persistent Zep memory to an AutoGen conversational agent."
+  "purpose": "Add persistent Zep memory to an AutoGen conversational agent.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

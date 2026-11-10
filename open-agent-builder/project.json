@@ -677,1192 +677,2662 @@
       "upstream_sha256": "ddf9afc20afbcd59bfcb1def3c453ac26f15515f75dcdb200c2e568f195c7e68",
       "local_sha256": "ddf9afc20afbcd59bfcb1def3c453ac26f15515f75dcdb200c2e568f195c7e68",
       "changes": []
+    },
+    {
+      "upstream_path": "app/layout.tsx",
+      "path": "app/layout.tsx",
+      "upstream_sha256": "40ab2ad97624a883fb788cb90f8846a976745ffb0ee1fe84c7fbd7195739ccde",
+      "local_sha256": "40ab2ad97624a883fb788cb90f8846a976745ffb0ee1fe84c7fbd7195739ccde",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "app/page.tsx",
+      "path": "app/page.tsx",
+      "upstream_sha256": "5a25ce89de07d93b0769dd75ef44cdbda6395e6d50f79456f076caf9e9bcb2bf",
+      "local_sha256": "5a25ce89de07d93b0769dd75ef44cdbda6395e6d50f79456f076caf9e9bcb2bf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "app/sign-in/[[...sign-in]]/page.tsx",
+      "path": "app/sign-in/[[...sign-in]]/page.tsx",
+      "upstream_sha256": "3bb6ac6fd34a3c6f7754f47179d4051d3eec82b3b6dc161c2f120fc4bdd361d5",
+      "local_sha256": "3bb6ac6fd34a3c6f7754f47179d4051d3eec82b3b6dc161c2f120fc4bdd361d5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "app/sign-up/[[...sign-up]]/page.tsx",
+      "path": "app/sign-up/[[...sign-up]]/page.tsx",
+      "upstream_sha256": "900f6e6ab33048dc722c612a34c7024a748688f82d1c9987c9df0caf142ce31c",
+      "local_sha256": "900f6e6ab33048dc722c612a34c7024a748688f82d1c9987c9df0caf142ce31c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "app/workflows/[workflowId]/page.tsx",
+      "path": "app/workflows/[workflowId]/page.tsx",
+      "upstream_sha256": "215a58edded8a441b7829495b5fb1e63dc0bee1f24fb51f47ea708e762bf72dd",
+      "local_sha256": "215a58edded8a441b7829495b5fb1e63dc0bee1f24fb51f47ea708e762bf72dd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "app/workflows/[workflowId]/run/page.tsx",
+      "path": "app/workflows/[workflowId]/run/page.tsx",
+      "upstream_sha256": "2343fffe88e5164f4b637466190c205a80f47a3699efb0cb580282aba4ca0f66",
+      "local_sha256": "2343fffe88e5164f4b637466190c205a80f47a3699efb0cb580282aba4ca0f66",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "app/workflows/page.tsx",
+      "path": "app/workflows/page.tsx",
+      "upstream_sha256": "da3f34597d92d281a581b3aecd8304148c7ac6da5725c091d55c7941185f3548",
+      "local_sha256": "da3f34597d92d281a581b3aecd8304148c7ac6da5725c091d55c7941185f3548",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/EndpointsCrawl/EndpointsCrawl.tsx",
+      "path": "components/app/(home)/sections/endpoints/EndpointsCrawl/EndpointsCrawl.tsx",
+      "upstream_sha256": "2970ded41df9b686c8234578f93c55d3ddd27eccdcf39f4fd822de4af48eef3b",
+      "local_sha256": "2970ded41df9b686c8234578f93c55d3ddd27eccdcf39f4fd822de4af48eef3b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/EndpointsExtract/EndpointsExtract.tsx",
+      "path": "components/app/(home)/sections/endpoints/EndpointsExtract/EndpointsExtract.tsx",
+      "upstream_sha256": "0c6c632f3edfa67838fa9400797d459fedc9ef9f0b08fce20181fab781556bf4",
+      "local_sha256": "0c6c632f3edfa67838fa9400797d459fedc9ef9f0b08fce20181fab781556bf4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/EndpointsMap/EndpointsMap.tsx",
+      "path": "components/app/(home)/sections/endpoints/EndpointsMap/EndpointsMap.tsx",
+      "upstream_sha256": "7160dace79eb98661318cc1d2190e89ec2b894f75abfc0f132a59165c71752c1",
+      "local_sha256": "7160dace79eb98661318cc1d2190e89ec2b894f75abfc0f132a59165c71752c1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/EndpointsScrape/EndpointsScrape.tsx",
+      "path": "components/app/(home)/sections/endpoints/EndpointsScrape/EndpointsScrape.tsx",
+      "upstream_sha256": "8fc331440f2ab87bdb4b82d54ab527b7e078d53a1391df7ad4742c6d7d03f226",
+      "local_sha256": "8fc331440f2ab87bdb4b82d54ab527b7e078d53a1391df7ad4742c6d7d03f226",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/EndpointsSearch/EndpointsSearch.tsx",
+      "path": "components/app/(home)/sections/endpoints/EndpointsSearch/EndpointsSearch.tsx",
+      "upstream_sha256": "5a84eed5ff484da686e9f39c5eacb161e71634bd5302a966c8fc09345c400787",
+      "local_sha256": "5a84eed5ff484da686e9f39c5eacb161e71634bd5302a966c8fc09345c400787",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/Extract/Extract.tsx",
+      "path": "components/app/(home)/sections/endpoints/Extract/Extract.tsx",
+      "upstream_sha256": "997a22c3fd600a38115a98de157d1f69387ad8ca4b24398788ba59ec255d1c3d",
+      "local_sha256": "997a22c3fd600a38115a98de157d1f69387ad8ca4b24398788ba59ec255d1c3d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/endpoints/Mcp/Mcp.tsx",
+      "path": "components/app/(home)/sections/endpoints/Mcp/Mcp.tsx",
+      "upstream_sha256": "bf82ea5268416080884b315e475bd701f12e60310788f48ce8c9ef421a6347b2",
+      "local_sha256": "bf82ea5268416080884b315e475bd701f12e60310788f48ce8c9ef421a6347b2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Background/_svg/CenterStar.tsx",
+      "path": "components/app/(home)/sections/hero/Background/_svg/CenterStar.tsx",
+      "upstream_sha256": "3c3079fe70a264bb62c7cbdec602070e5210abc765d0557326dd1f3bd5d3315a",
+      "local_sha256": "3c3079fe70a264bb62c7cbdec602070e5210abc765d0557326dd1f3bd5d3315a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Background/Background.tsx",
+      "path": "components/app/(home)/sections/hero/Background/Background.tsx",
+      "upstream_sha256": "87268d242980173168931ee5d028c3b851db934975da32e275f28fff2886bf6e",
+      "local_sha256": "87268d242980173168931ee5d028c3b851db934975da32e275f28fff2886bf6e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Background/BackgroundOuterPiece.tsx",
+      "path": "components/app/(home)/sections/hero/Background/BackgroundOuterPiece.tsx",
+      "upstream_sha256": "22b4569c3f1ec6adba1ad56ba1ce72ec5ba9a263c3481f5f9fc9597ec040df28",
+      "local_sha256": "22b4569c3f1ec6adba1ad56ba1ce72ec5ba9a263c3481f5f9fc9597ec040df28",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Badge/Badge.tsx",
+      "path": "components/app/(home)/sections/hero/Badge/Badge.tsx",
+      "upstream_sha256": "a53959cecfd6a7e4092c4786dbdaa638ef0a440e07070007321b66005a9e2a81",
+      "local_sha256": "a53959cecfd6a7e4092c4786dbdaa638ef0a440e07070007321b66005a9e2a81",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Hero.tsx",
+      "path": "components/app/(home)/sections/hero/Hero.tsx",
+      "upstream_sha256": "b4b8c8af3a665748b2474d76aeef952575ec9a1c3370006ed00dae3bce4abcb3",
+      "local_sha256": "b4b8c8af3a665748b2474d76aeef952575ec9a1c3370006ed00dae3bce4abcb3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/Pixi.tsx",
+      "path": "components/app/(home)/sections/hero/Pixi/Pixi.tsx",
+      "upstream_sha256": "91cd38de4619f437dbc7fe9a1e7547cb71ecf5d1e24f331dd198387e409311f0",
+      "local_sha256": "91cd38de4619f437dbc7fe9a1e7547cb71ecf5d1e24f331dd198387e409311f0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/ascii.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/ascii.ts",
+      "upstream_sha256": "448af337da581803846a81b630f84f416d30847f958b272204d27195bf808f08",
+      "local_sha256": "448af337da581803846a81b630f84f416d30847f958b272204d27195bf808f08",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/cell.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/cell.ts",
+      "upstream_sha256": "c6456846f3cd14d494109a2eba2bc0263dcdae14ac46db22edcdb39441888743",
+      "local_sha256": "c6456846f3cd14d494109a2eba2bc0263dcdae14ac46db22edcdb39441888743",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/cellReveal.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/cellReveal.ts",
+      "upstream_sha256": "fc809f328db39ba6988dcb2d0b80dc36653a4e02d0d58a702b34463b2b23c57f",
+      "local_sha256": "fc809f328db39ba6988dcb2d0b80dc36653a4e02d0d58a702b34463b2b23c57f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/AnimatedRect.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/AnimatedRect.ts",
+      "upstream_sha256": "0e7d25057e3a8f59842dc12ca22fe116dc5f485598858eeee65cf98ecf1c4bef",
+      "local_sha256": "0e7d25057e3a8f59842dc12ca22fe116dc5f485598858eeee65cf98ecf1c4bef",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/BlinkingContainer.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/BlinkingContainer.ts",
+      "upstream_sha256": "2e91e9569680bdb6d4ec9428a1c922db145b61943baf21511a61d784f5f1555e",
+      "local_sha256": "2e91e9569680bdb6d4ec9428a1c922db145b61943baf21511a61d784f5f1555e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/Dot.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/Dot.ts",
+      "upstream_sha256": "2fe0a1a831c9468570dfdbc357e290f59cf92c1dc8870991706dbe40f6af66e7",
+      "local_sha256": "2fe0a1a831c9468570dfdbc357e290f59cf92c1dc8870991706dbe40f6af66e7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/crawl.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/crawl.ts",
+      "upstream_sha256": "7adec5808bdb0f935959ea4b3adbbbfd22feb69107b52434bed6902a031765fe",
+      "local_sha256": "7adec5808bdb0f935959ea4b3adbbbfd22feb69107b52434bed6902a031765fe",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/index.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/index.ts",
+      "upstream_sha256": "4acdf3d5784917469a42178451e25d2e82482621fbe74878f079d0ab356fc40d",
+      "local_sha256": "4acdf3d5784917469a42178451e25d2e82482621fbe74878f079d0ab356fc40d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/mapping.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/mapping.ts",
+      "upstream_sha256": "685336dda279a19f5abcd4616b92a8886345b259e96362d29da5e96bae339b1d",
+      "local_sha256": "685336dda279a19f5abcd4616b92a8886345b259e96362d29da5e96bae339b1d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/scrape.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/scrape.ts",
+      "upstream_sha256": "acd709f06f66e8750c09b2ff873fa1c5b2d7381d78c7f20863f1469a73656bb0",
+      "local_sha256": "acd709f06f66e8750c09b2ff873fa1c5b2d7381d78c7f20863f1469a73656bb0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Pixi/tickers/features/search.ts",
+      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/search.ts",
+      "upstream_sha256": "9c7eeb062479e90fca705b1274654ef484be15b9ae696fd712bfe37968ded38c",
+      "local_sha256": "9c7eeb062479e90fca705b1274654ef484be15b9ae696fd712bfe37968ded38c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero/Title/Title.tsx",
+      "path": "components/app/(home)/sections/hero/Title/Title.tsx",
+      "upstream_sha256": "1f2458735d7f10ca84865db7443850da3a7b54930b00861e5e74368ea575c5cc",
+      "local_sha256": "1f2458735d7f10ca84865db7443850da3a7b54930b00861e5e74368ea575c5cc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-flame/data.json",
+      "path": "components/app/(home)/sections/hero-flame/data.json",
+      "upstream_sha256": "c788df125f6b768f65bdeb94d0247c034cfa38cf2fa00311fe2c30717c59fa93",
+      "local_sha256": "c788df125f6b768f65bdeb94d0247c034cfa38cf2fa00311fe2c30717c59fa93",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-flame/HeroFlame.tsx",
+      "path": "components/app/(home)/sections/hero-flame/HeroFlame.tsx",
+      "upstream_sha256": "baf3cfbfb4ea798d537bc5f3c7737e14731ae3b0327d1ed65e0979948eb679ba",
+      "local_sha256": "baf3cfbfb4ea798d537bc5f3c7737e14731ae3b0327d1ed65e0979948eb679ba",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-input/_svg/ArrowRight.tsx",
+      "path": "components/app/(home)/sections/hero-input/_svg/ArrowRight.tsx",
+      "upstream_sha256": "bc0f5b63b655b863ed143a5256d05bc49b2b2367f6c819d26cdc66f52b49aff1",
+      "local_sha256": "bc0f5b63b655b863ed143a5256d05bc49b2b2367f6c819d26cdc66f52b49aff1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-input/_svg/Globe.tsx",
+      "path": "components/app/(home)/sections/hero-input/_svg/Globe.tsx",
+      "upstream_sha256": "8101d149a856e4955cdebcf8e6dbbcb6a2585d91b0e695f05752c23f5afc65ca",
+      "local_sha256": "8101d149a856e4955cdebcf8e6dbbcb6a2585d91b0e695f05752c23f5afc65ca",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-input/Button/Button.tsx",
+      "path": "components/app/(home)/sections/hero-input/Button/Button.tsx",
+      "upstream_sha256": "1d91afdf09dba30c0ab2bb38c9e9bda4ad457c624ab26d63cfc8a516264f0ef8",
+      "local_sha256": "1d91afdf09dba30c0ab2bb38c9e9bda4ad457c624ab26d63cfc8a516264f0ef8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-input/HeroInput.tsx",
+      "path": "components/app/(home)/sections/hero-input/HeroInput.tsx",
+      "upstream_sha256": "8b218be52a4426c766d7c77268bf1c5408ea8461aa31a7ea9eaf51c1cd12a1d1",
+      "local_sha256": "8b218be52a4426c766d7c77268bf1c5408ea8461aa31a7ea9eaf51c1cd12a1d1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-input/Tabs/Mobile/Mobile.tsx",
+      "path": "components/app/(home)/sections/hero-input/Tabs/Mobile/Mobile.tsx",
+      "upstream_sha256": "9385a1aa58f938ab29e497fafec62aa3e3ca27c0399db38125b4ba29afa57c2e",
+      "local_sha256": "9385a1aa58f938ab29e497fafec62aa3e3ca27c0399db38125b4ba29afa57c2e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-input/Tabs/Tabs.tsx",
+      "path": "components/app/(home)/sections/hero-input/Tabs/Tabs.tsx",
+      "upstream_sha256": "c0f5a77b7b1008d36038ec9d46ef15c7d4312a762c0f315ab625cc031d88b178",
+      "local_sha256": "c0f5a77b7b1008d36038ec9d46ef15c7d4312a762c0f315ab625cc031d88b178",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/_svg/BrowserMobile.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/_svg/BrowserMobile.tsx",
+      "upstream_sha256": "6a516313019de6720557a278d6daaa25c2d783d8a2595eed0080871f3a4811a3",
+      "local_sha256": "6a516313019de6720557a278d6daaa25c2d783d8a2595eed0080871f3a4811a3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/_svg/BrowserTab.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/_svg/BrowserTab.tsx",
+      "upstream_sha256": "cccb8c0c4cd3199545f2193b50dece0ca11bf32f8d9bdf4c539e082f105d9633",
+      "local_sha256": "cccb8c0c4cd3199545f2193b50dece0ca11bf32f8d9bdf4c539e082f105d9633",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/Code/Code.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/Code/Code.tsx",
+      "upstream_sha256": "51a4dfcc0202c4f81eba44733df425190d750a1c2610734c86289856b97c560e",
+      "local_sha256": "51a4dfcc0202c4f81eba44733df425190d750a1c2610734c86289856b97c560e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/Code/Loading/_svg/Check.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/Code/Loading/_svg/Check.tsx",
+      "upstream_sha256": "58d1819459caeed78e48d6e057c0cb609c1cb7942c05a33fe6607282f1e1a89a",
+      "local_sha256": "58d1819459caeed78e48d6e057c0cb609c1cb7942c05a33fe6607282f1e1a89a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/Code/Loading/Loading.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/Code/Loading/Loading.tsx",
+      "upstream_sha256": "c6ef3db28f0489f56d397a14bd935321bc7a89c39d401297ba88d57f419cc1e5",
+      "local_sha256": "c6ef3db28f0489f56d397a14bd935321bc7a89c39d401297ba88d57f419cc1e5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/HeroScraping.css",
+      "path": "components/app/(home)/sections/hero-scraping/HeroScraping.css",
+      "upstream_sha256": "eedc7c4511854b18924fea4d0eb899b00e34df86c046bada2662052b89f13cca",
+      "local_sha256": "eedc7c4511854b18924fea4d0eb899b00e34df86c046bada2662052b89f13cca",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/HeroScraping.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/HeroScraping.tsx",
+      "upstream_sha256": "b7b644478016144b17df46da46d71bb872d81e22e8ed2fbd91c299913e9f2e84",
+      "local_sha256": "b7b644478016144b17df46da46d71bb872d81e22e8ed2fbd91c299913e9f2e84",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/hero-scraping/Tag/Tag.tsx",
+      "path": "components/app/(home)/sections/hero-scraping/Tag/Tag.tsx",
+      "upstream_sha256": "9096063754df8460c48806de5bffe3b0c2123ae15fb4239a9ff304054a9bda9b",
+      "local_sha256": "9096063754df8460c48806de5bffe3b0c2123ae15fb4239a9ff304054a9bda9b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/step2/Step2Placeholder.tsx",
+      "path": "components/app/(home)/sections/step2/Step2Placeholder.tsx",
+      "upstream_sha256": "bf4277c3293103eac9d666e9debe06bd4dd5278baa3f05a3bd540cff7412008d",
+      "local_sha256": "bf4277c3293103eac9d666e9debe06bd4dd5278baa3f05a3bd540cff7412008d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ConfirmDialog.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ConfirmDialog.tsx",
+      "upstream_sha256": "500f37a375005b79bad3862a396994d63bca52c24e16362f41206de6bf1ea1ee",
+      "local_sha256": "500f37a375005b79bad3862a396994d63bca52c24e16362f41206de6bf1ea1ee",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ConnectionMapperModal.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ConnectionMapperModal.tsx",
+      "upstream_sha256": "ec97d3df437e8fe10a1d016f130eeaaecc79e3d1bba512f886a497465e6112ae",
+      "local_sha256": "ec97d3df437e8fe10a1d016f130eeaaecc79e3d1bba512f886a497465e6112ae",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ConnectorsPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ConnectorsPanel.tsx",
+      "upstream_sha256": "97576b8495f47c2041cf854bd18b41f88c7c5580df514eabb7c5daf153fcb206",
+      "local_sha256": "97576b8495f47c2041cf854bd18b41f88c7c5580df514eabb7c5daf153fcb206",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/CustomNodes.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/CustomNodes.tsx",
+      "upstream_sha256": "a7df952409cb6e9d10bb78592a2c1a10635fffd722a291f72eec53602d341126",
+      "local_sha256": "a7df952409cb6e9d10bb78592a2c1a10635fffd722a291f72eec53602d341126",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx",
+      "upstream_sha256": "d0cb0619742fb53deedad3d93ef40410b726e1820b6dc8a5971a2cfb32850083",
+      "local_sha256": "d0cb0619742fb53deedad3d93ef40410b726e1820b6dc8a5971a2cfb32850083",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/EdgeLabelModal.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/EdgeLabelModal.tsx",
+      "upstream_sha256": "61cf29697fe9c2df8b8f2b4c297b4e422f658288b8a13822292bbe1ba74518e6",
+      "local_sha256": "61cf29697fe9c2df8b8f2b4c297b4e422f658288b8a13822292bbe1ba74518e6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ExecutionPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ExecutionPanel.tsx",
+      "upstream_sha256": "a9a946d9464d9de0d72c8291902478150be15eee3a5c7086c260c4ab99a860e7",
+      "local_sha256": "a9a946d9464d9de0d72c8291902478150be15eee3a5c7086c260c4ab99a860e7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ExportLangGraphButton.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ExportLangGraphButton.tsx",
+      "upstream_sha256": "19c036b350d7ebe3148d52dda178b26bde9f74a6b971d3d37ba8b2d1ae39c2b3",
+      "local_sha256": "19c036b350d7ebe3148d52dda178b26bde9f74a6b971d3d37ba8b2d1ae39c2b3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ExtractNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ExtractNodePanel.tsx",
+      "upstream_sha256": "4a97d0ff74c66a6893ffc36af3f0c08264d6341d827b992507308c8c8c66ac9e",
+      "local_sha256": "4a97d0ff74c66a6893ffc36af3f0c08264d6341d827b992507308c8c8c66ac9e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/HTTPNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/HTTPNodePanel.tsx",
+      "upstream_sha256": "968e9c9b6feb3b4c05ec4e798777ebd5502b6f09198b84953a0ca2c5a6e16d56",
+      "local_sha256": "968e9c9b6feb3b4c05ec4e798777ebd5502b6f09198b84953a0ca2c5a6e16d56",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/LogicNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/LogicNodePanel.tsx",
+      "upstream_sha256": "55ff4a97ecf725dbc09d13941dd0db39e4c76533cb18e7ee6267ee40dc5d885f",
+      "local_sha256": "55ff4a97ecf725dbc09d13941dd0db39e4c76533cb18e7ee6267ee40dc5d885f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/MCPPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/MCPPanel.tsx",
+      "upstream_sha256": "91465c54010977c39f07de9739742e1e8878331014967e63de2a87e3dce11e9a",
+      "local_sha256": "91465c54010977c39f07de9739742e1e8878331014967e63de2a87e3dce11e9a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/NodeArgumentsPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/NodeArgumentsPanel.tsx",
+      "upstream_sha256": "7a56dd1f7ba7736abd706de66acde26daa79ec7d5def282c3cf28415f73df521",
+      "local_sha256": "7a56dd1f7ba7736abd706de66acde26daa79ec7d5def282c3cf28415f73df521",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/NodeIOBadges.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/NodeIOBadges.tsx",
+      "upstream_sha256": "2793f0af1376251ab88ccf949fe1a357cca7df827140c088888620572ac8c831",
+      "local_sha256": "2793f0af1376251ab88ccf949fe1a357cca7df827140c088888620572ac8c831",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/NodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/NodePanel.tsx",
+      "upstream_sha256": "3e4be7bcfaf46c946f637a4caf305f1bdef493f2f0603d68193636672ea7ce3e",
+      "local_sha256": "3e4be7bcfaf46c946f637a4caf305f1bdef493f2f0603d68193636672ea7ce3e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/NoteNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/NoteNodePanel.tsx",
+      "upstream_sha256": "0f8e23370a81b6402a54c6b01a690f50cc28dd964d85c98bd87ecad866993238",
+      "local_sha256": "0f8e23370a81b6402a54c6b01a690f50cc28dd964d85c98bd87ecad866993238",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/OutputSchemaPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/OutputSchemaPanel.tsx",
+      "upstream_sha256": "21425faeb5d02d8288cfb208900c2597d85a4307761a4534e7b4ee9cc949d920",
+      "local_sha256": "21425faeb5d02d8288cfb208900c2597d85a4307761a4534e7b4ee9cc949d920",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/PasteConfigModal.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/PasteConfigModal.tsx",
+      "upstream_sha256": "94b8095ea6f1917c334df0f45cf38339b176590b859d021a69a3543e2906c831",
+      "local_sha256": "94b8095ea6f1917c334df0f45cf38339b176590b859d021a69a3543e2906c831",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/PreviewPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/PreviewPanel.tsx",
+      "upstream_sha256": "3409c432d610d95d5046101550953127fe4336fcbb949e559510301a05247717",
+      "local_sha256": "3409c432d610d95d5046101550953127fe4336fcbb949e559510301a05247717",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/PublishModal.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/PublishModal.tsx",
+      "upstream_sha256": "5dfe9a36285c142bdc387599e433070d3668630e6cc0d19b153207a04c72bf98",
+      "local_sha256": "5dfe9a36285c142bdc387599e433070d3668630e6cc0d19b153207a04c72bf98",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/SaveAsTemplateModal.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/SaveAsTemplateModal.tsx",
+      "upstream_sha256": "9934c26430d19f9706d92616e222f8c0ebca2eb67caee1bacda4c6da61e69b82",
+      "local_sha256": "9934c26430d19f9706d92616e222f8c0ebca2eb67caee1bacda4c6da61e69b82",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/SettingsPanelSimple.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/SettingsPanelSimple.tsx",
+      "upstream_sha256": "dfde245aa45b0efd58200e6746980f1dbe203f10f0c7a77172f4994a1ea62546",
+      "local_sha256": "dfde245aa45b0efd58200e6746980f1dbe203f10f0c7a77172f4994a1ea62546",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ShareWorkflowModal.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ShareWorkflowModal.tsx",
+      "upstream_sha256": "6a88dff3fc1845ae963467f5fc0631a0999c5100e6dfca035a5faa1f70b23418",
+      "local_sha256": "6a88dff3fc1845ae963467f5fc0631a0999c5100e6dfca035a5faa1f70b23418",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/StartNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/StartNodePanel.tsx",
+      "upstream_sha256": "660215ab5f045cf335d5b5ac62a7030fa5088ee336210b8c7961282565580bc2",
+      "local_sha256": "660215ab5f045cf335d5b5ac62a7030fa5088ee336210b8c7961282565580bc2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/TestEndpointPanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/TestEndpointPanel.tsx",
+      "upstream_sha256": "8005336042b8b9c3d803f6e4d4889395ecbbaf5646cb34b9be41c610998b63c8",
+      "local_sha256": "8005336042b8b9c3d803f6e4d4889395ecbbaf5646cb34b9be41c610998b63c8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/ToolsNodePanel.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/ToolsNodePanel.tsx",
+      "upstream_sha256": "81a626aa48e4acdebffbd152c07c7c6edc1d87c7f6d929d88f8f212849119382",
+      "local_sha256": "81a626aa48e4acdebffbd152c07c7c6edc1d87c7f6d929d88f8f212849119382",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/UniversalOutputSelector.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/UniversalOutputSelector.tsx",
+      "upstream_sha256": "dd7ff1d38a59b11c06b1b4ab879e2839d6261420a70ce9ab49583b3cdc5e9e66",
+      "local_sha256": "dd7ff1d38a59b11c06b1b4ab879e2839d6261420a70ce9ab49583b3cdc5e9e66",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/VariableReferencePicker.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/VariableReferencePicker.tsx",
+      "upstream_sha256": "f5044031675d45f5ddc76b3d3a7d6c315a705e533a5f3d08e6d6653157a1c698",
+      "local_sha256": "f5044031675d45f5ddc76b3d3a7d6c315a705e533a5f3d08e6d6653157a1c698",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/WorkflowBuilder.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/WorkflowBuilder.tsx",
+      "upstream_sha256": "f1fe397065a062e9903cc5f39ebe1add746d10270edc024aee29bc8f451495f4",
+      "local_sha256": "f1fe397065a062e9903cc5f39ebe1add746d10270edc024aee29bc8f451495f4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/app/(home)/sections/workflow-builder/WorkflowNameEditor.tsx",
+      "path": "components/app/(home)/sections/workflow-builder/WorkflowNameEditor.tsx",
+      "upstream_sha256": "c29635b4cdd297c8633a124573e7076ea4241241463da8bf8e5b63146a7753a5",
+      "local_sha256": "c29635b4cdd297c8633a124573e7076ea4241241463da8bf8e5b63146a7753a5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/FirecrawlIcon/FirecrawlIcon.tsx",
+      "path": "components/FirecrawlIcon/FirecrawlIcon.tsx",
+      "upstream_sha256": "8a6026a4f80593e8b8ac3dfe6ecd26f165f5675e5f15a123bd56141fbc823657",
+      "local_sha256": "8a6026a4f80593e8b8ac3dfe6ecd26f165f5675e5f15a123bd56141fbc823657",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/hooks/use-dropdown-hover.ts",
+      "path": "components/hooks/use-dropdown-hover.ts",
+      "upstream_sha256": "6e4f5dbf6151e4e6f512cfbd1225b0a06a859af0aa6be30742ead22d6b07b169",
+      "local_sha256": "6e4f5dbf6151e4e6f512cfbd1225b0a06a859af0aa6be30742ead22d6b07b169",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/providers/BigIntProvider.tsx",
+      "path": "components/providers/BigIntProvider.tsx",
+      "upstream_sha256": "95c58ce501ccc5f144e1d3eb104f3364557b5801cfb1cda41bed92b20f8cfd7a",
+      "local_sha256": "95c58ce501ccc5f144e1d3eb104f3364557b5801cfb1cda41bed92b20f8cfd7a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/animated-dot-icon.tsx",
+      "path": "components/shared/animated-dot-icon.tsx",
+      "upstream_sha256": "ed84a21b89cef72600c6ed9424a4f921c3b807d4c9b467712c321d057d93aeea",
+      "local_sha256": "ed84a21b89cef72600c6ed9424a4f921c3b807d4c9b467712c321d057d93aeea",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ascii-background.tsx",
+      "path": "components/shared/ascii-background.tsx",
+      "upstream_sha256": "c788a477fb0aa0403a77cf2292bd675bef70fdd30bfd3e95ba0aa0ce7cb67c6b",
+      "local_sha256": "c788a477fb0aa0403a77cf2292bd675bef70fdd30bfd3e95ba0aa0ce7cb67c6b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ascii-flame-background.tsx",
+      "path": "components/shared/ascii-flame-background.tsx",
+      "upstream_sha256": "5e24624549fa0989150243267a612aa28b9888b84c4123505ececd79cf55919d",
+      "local_sha256": "5e24624549fa0989150243267a612aa28b9888b84c4123505ececd79cf55919d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/button/Button.css",
+      "path": "components/shared/button/Button.css",
+      "upstream_sha256": "5c408a9535e9c453fbe15672279b96b344592c82a80d4b879f9cd95bc8dd9650",
+      "local_sha256": "5c408a9535e9c453fbe15672279b96b344592c82a80d4b879f9cd95bc8dd9650",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/button/Button.tsx",
+      "path": "components/shared/button/Button.tsx",
+      "upstream_sha256": "3fd785bcaa97af3b8219646e5d6fbfdca5983bd695a25ba3d16f50be838fa236",
+      "local_sha256": "3fd785bcaa97af3b8219646e5d6fbfdca5983bd695a25ba3d16f50be838fa236",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/buttons/capsule-button.tsx",
+      "path": "components/shared/buttons/capsule-button.tsx",
+      "upstream_sha256": "3b88ab29a1396fe0b95d7bf8846380c65a00fadcc4e1817be9f89dc483b3ded7",
+      "local_sha256": "3b88ab29a1396fe0b95d7bf8846380c65a00fadcc4e1817be9f89dc483b3ded7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/buttons/fire-action-link.tsx",
+      "path": "components/shared/buttons/fire-action-link.tsx",
+      "upstream_sha256": "273274e4547e02f70f216f4bfc622ded864a3f8d5f7a54af5ddd5f7efa26a73a",
+      "local_sha256": "273274e4547e02f70f216f4bfc622ded864a3f8d5f7a54af5ddd5f7efa26a73a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/buttons/index.ts",
+      "path": "components/shared/buttons/index.ts",
+      "upstream_sha256": "94d031868362381f57807d77ab564c7ffed0aee06eefb19324a80461fcfebfc2",
+      "local_sha256": "94d031868362381f57807d77ab564c7ffed0aee06eefb19324a80461fcfebfc2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/buttons/slate-button.tsx",
+      "path": "components/shared/buttons/slate-button.tsx",
+      "upstream_sha256": "89f56ee2358b68ad6a1339707ee63ceed7e0e85390b96b5aac0f206e7603adb8",
+      "local_sha256": "89f56ee2358b68ad6a1339707ee63ceed7e0e85390b96b5aac0f206e7603adb8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/color-styles/color-styles.tsx",
+      "path": "components/shared/color-styles/color-styles.tsx",
+      "upstream_sha256": "8b69257072e0e52229a157ef797869347d9f3d9329b71ffb664b8bef8d5a5f8a",
+      "local_sha256": "8b69257072e0e52229a157ef797869347d9f3d9329b71ffb664b8bef8d5a5f8a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/combobox/combobox.tsx",
+      "path": "components/shared/combobox/combobox.tsx",
+      "upstream_sha256": "3c4896c08cbf8c36dcef597342acf2c0e0fb00d2b010ebcba8ebfd9959f05f9f",
+      "local_sha256": "3c4896c08cbf8c36dcef597342acf2c0e0fb00d2b010ebcba8ebfd9959f05f9f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/ascii-explosion.tsx",
+      "path": "components/shared/effects/flame/ascii-explosion.tsx",
+      "upstream_sha256": "d2a33ae5abe4738f74ba293bb0848379fd45cfb0b3b1db87cc033f75af965447",
+      "local_sha256": "d2a33ae5abe4738f74ba293bb0848379fd45cfb0b3b1db87cc033f75af965447",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/auth-pulse/auth-pulse.tsx",
+      "path": "components/shared/effects/flame/auth-pulse/auth-pulse.tsx",
+      "upstream_sha256": "c8eb2a29806d2a2016924eecce32293889b93b804d5a59f60923d0aed609afe1",
+      "local_sha256": "c8eb2a29806d2a2016924eecce32293889b93b804d5a59f60923d0aed609afe1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/auth-pulse/pulse-data.json",
+      "path": "components/shared/effects/flame/auth-pulse/pulse-data.json",
+      "upstream_sha256": "1e2751d9dff0d428a8e71e653bee27649b190a2c185abab04cea4492213dc83f",
+      "local_sha256": "1e2751d9dff0d428a8e71e653bee27649b190a2c185abab04cea4492213dc83f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/core-flame.json",
+      "path": "components/shared/effects/flame/core-flame.json",
+      "upstream_sha256": "f5ada532e8acd73a035b86e379b9d9fe4f67e675be1f2d99b20629339fe167fd",
+      "local_sha256": "f5ada532e8acd73a035b86e379b9d9fe4f67e675be1f2d99b20629339fe167fd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/core-flame.tsx",
+      "path": "components/shared/effects/flame/core-flame.tsx",
+      "upstream_sha256": "fbc4347e4290466240719b446f308844e808904443bda4e995a36475d87a976c",
+      "local_sha256": "fbc4347e4290466240719b446f308844e808904443bda4e995a36475d87a976c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/explosion-data.json",
+      "path": "components/shared/effects/flame/explosion-data.json",
+      "upstream_sha256": "81e707d03d215f055665a9db94e9bb4aa4755fd1e258a24a3178d7079a30dad9",
+      "local_sha256": "81e707d03d215f055665a9db94e9bb4aa4755fd1e258a24a3178d7079a30dad9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/flame-background.tsx",
+      "path": "components/shared/effects/flame/flame-background.tsx",
+      "upstream_sha256": "e9a54acf83ca79fdbfb338bd74a342d6368fa68316a6bacac28d19926dcaedef",
+      "local_sha256": "e9a54acf83ca79fdbfb338bd74a342d6368fa68316a6bacac28d19926dcaedef",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/Flame.tsx",
+      "path": "components/shared/effects/flame/Flame.tsx",
+      "upstream_sha256": "91a12897935752811d3e2fb5da0ac0eda303b2823f4ecfc56af7e21cc7603cda",
+      "local_sha256": "91a12897935752811d3e2fb5da0ac0eda303b2823f4ecfc56af7e21cc7603cda",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/hero-flame-data.json",
+      "path": "components/shared/effects/flame/hero-flame-data.json",
+      "upstream_sha256": "c788df125f6b768f65bdeb94d0247c034cfa38cf2fa00311fe2c30717c59fa93",
+      "local_sha256": "c788df125f6b768f65bdeb94d0247c034cfa38cf2fa00311fe2c30717c59fa93",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/hero-flame-right.tsx",
+      "path": "components/shared/effects/flame/hero-flame-right.tsx",
+      "upstream_sha256": "1b7676b5e28b3312322cbaec69c13ec31bcdf41f668373501a6b4bd33a87402e",
+      "local_sha256": "1b7676b5e28b3312322cbaec69c13ec31bcdf41f668373501a6b4bd33a87402e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/hero-flame.tsx",
+      "path": "components/shared/effects/flame/hero-flame.tsx",
+      "upstream_sha256": "acbce1cb197269b2a070a49a5f88b70e78f2cd9ea8979d91ec579bb64a61f140",
+      "local_sha256": "acbce1cb197269b2a070a49a5f88b70e78f2cd9ea8979d91ec579bb64a61f140",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/index.ts",
+      "path": "components/shared/effects/flame/index.ts",
+      "upstream_sha256": "7cf2e6cf45b11d681c89a0d8822d28257a394abb2b39f0eca8f883c77ca78b4a",
+      "local_sha256": "7cf2e6cf45b11d681c89a0d8822d28257a394abb2b39f0eca8f883c77ca78b4a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/slate-grid/grid-data.json",
+      "path": "components/shared/effects/flame/slate-grid/grid-data.json",
+      "upstream_sha256": "c194868c74fdee637c99f3e51a62daf206b6371bf389df93709598c03c9ff7a2",
+      "local_sha256": "c194868c74fdee637c99f3e51a62daf206b6371bf389df93709598c03c9ff7a2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/slate-grid/slate-grid.tsx",
+      "path": "components/shared/effects/flame/slate-grid/slate-grid.tsx",
+      "upstream_sha256": "baf0a41ab70473cce399fc0212d7ee17221bc81c7c6a43c13beb5d451c5b394b",
+      "local_sha256": "baf0a41ab70473cce399fc0212d7ee17221bc81c7c6a43c13beb5d451c5b394b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/subtle-explosion.tsx",
+      "path": "components/shared/effects/flame/subtle-explosion.tsx",
+      "upstream_sha256": "414fab150cd8d3746ab0c1bcc91d121581ca04d44401e2fec18a6026a4cfaba5",
+      "local_sha256": "414fab150cd8d3746ab0c1bcc91d121581ca04d44401e2fec18a6026a4cfaba5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/subtle-wave/subtle-wave.tsx",
+      "path": "components/shared/effects/flame/subtle-wave/subtle-wave.tsx",
+      "upstream_sha256": "a32bdd75158853185cd6fc66968145bd37b7c032e03f96b5f9b7100d6dfa9556",
+      "local_sha256": "a32bdd75158853185cd6fc66968145bd37b7c032e03f96b5f9b7100d6dfa9556",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/flame/subtle-wave/wave-data.json",
+      "path": "components/shared/effects/flame/subtle-wave/wave-data.json",
+      "upstream_sha256": "a98b11a0eaf6b94194dd6979d33c7d64f05f598245a2d18132ccdb0c6dcb6e75",
+      "local_sha256": "a98b11a0eaf6b94194dd6979d33c7d64f05f598245a2d18132ccdb0c6dcb6e75",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/index.ts",
+      "path": "components/shared/effects/index.ts",
+      "upstream_sha256": "75b0568c9272be8e2f9b3561b7334aa15cebe061ee97973a270674a8a75f3add",
+      "local_sha256": "75b0568c9272be8e2f9b3561b7334aa15cebe061ee97973a270674a8a75f3add",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/effects/subtle-ascii-animation.tsx",
+      "path": "components/shared/effects/subtle-ascii-animation.tsx",
+      "upstream_sha256": "3bed0f2d52f3f5718bec69eed5a3a15596ce057c4daa036c569ee0037ba3beb2",
+      "local_sha256": "3bed0f2d52f3f5718bec69eed5a3a15596ce057c4daa036c569ee0037ba3beb2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ErrorBoundary.tsx",
+      "path": "components/shared/ErrorBoundary.tsx",
+      "upstream_sha256": "c6ebdd1af2f8a21b7029ba28e1ca93459f38737729931be0373c200e9c58ef5f",
+      "local_sha256": "c6ebdd1af2f8a21b7029ba28e1ca93459f38737729931be0373c200e9c58ef5f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/firecrawl-icon/firecrawl-icon-static.tsx",
+      "path": "components/shared/firecrawl-icon/firecrawl-icon-static.tsx",
+      "upstream_sha256": "a9785d937cffbc15e65749f6067ac1b1e213fbe9ae6949aa34a0565c459590ab",
+      "local_sha256": "a9785d937cffbc15e65749f6067ac1b1e213fbe9ae6949aa34a0565c459590ab",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/firecrawl-icon/firecrawl-icon.tsx",
+      "path": "components/shared/firecrawl-icon/firecrawl-icon.tsx",
+      "upstream_sha256": "8a6026a4f80593e8b8ac3dfe6ecd26f165f5675e5f15a123bd56141fbc823657",
+      "local_sha256": "8a6026a4f80593e8b8ac3dfe6ecd26f165f5675e5f15a123bd56141fbc823657",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/flame-button.tsx",
+      "path": "components/shared/flame-button.tsx",
+      "upstream_sha256": "f0238b3b950ccb13970d73412a6c07fcda62aa6a27b7af7f6812f449ef247ddf",
+      "local_sha256": "f0238b3b950ccb13970d73412a6c07fcda62aa6a27b7af7f6812f449ef247ddf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/_svg/Logo.tsx",
+      "path": "components/shared/header/_svg/Logo.tsx",
+      "upstream_sha256": "65d150a5afe473a61aab3d3a1a6191dab4f426c046ffcf7d1f24f0eb42e0958b",
+      "local_sha256": "65d150a5afe473a61aab3d3a1a6191dab4f426c046ffcf7d1f24f0eb42e0958b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/BrandKit/_svg/Download.tsx",
+      "path": "components/shared/header/BrandKit/_svg/Download.tsx",
+      "upstream_sha256": "8a2371fd0294691aeccdb1fd7e81184397aed2ed5ec5ee820025c4a9637301f7",
+      "local_sha256": "8a2371fd0294691aeccdb1fd7e81184397aed2ed5ec5ee820025c4a9637301f7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/BrandKit/_svg/Guidelines.tsx",
+      "path": "components/shared/header/BrandKit/_svg/Guidelines.tsx",
+      "upstream_sha256": "833d2e05c80c3db6857b666235de09d6ecc04939ffe5b866ec83e9646c5fde8c",
+      "local_sha256": "833d2e05c80c3db6857b666235de09d6ecc04939ffe5b866ec83e9646c5fde8c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/BrandKit/_svg/Icon.tsx",
+      "path": "components/shared/header/BrandKit/_svg/Icon.tsx",
+      "upstream_sha256": "7bf2ce94cfdb3a186e06be5d15996430b1f6070934151785654e464a1a7bf4e6",
+      "local_sha256": "7bf2ce94cfdb3a186e06be5d15996430b1f6070934151785654e464a1a7bf4e6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/BrandKit/BrandKit.tsx",
+      "path": "components/shared/header/BrandKit/BrandKit.tsx",
+      "upstream_sha256": "f0f77bf8b090413cd1dcb31fa0ec12e708aa8e35c344f3d6cabc1b015dcf84ee",
+      "local_sha256": "f0f77bf8b090413cd1dcb31fa0ec12e708aa8e35c344f3d6cabc1b015dcf84ee",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Content/Content.tsx",
+      "path": "components/shared/header/Dropdown/Content/Content.tsx",
+      "upstream_sha256": "3931001d62a9a27cad5b3a08e43487e2010773e214bba14063e7765f47f311e8",
+      "local_sha256": "3931001d62a9a27cad5b3a08e43487e2010773e214bba14063e7765f47f311e8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Content/NavItemRow.tsx",
+      "path": "components/shared/header/Dropdown/Content/NavItemRow.tsx",
+      "upstream_sha256": "6bbd8fd799f692b70a2c8920a77b52ea9b23908bb992ba02f55a6cb9d4bd812d",
+      "local_sha256": "6bbd8fd799f692b70a2c8920a77b52ea9b23908bb992ba02f55a6cb9d4bd812d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Github/Flame/data.json",
+      "path": "components/shared/header/Dropdown/Github/Flame/data.json",
+      "upstream_sha256": "2e84f181da9d7ceacd8147ec247dd01f607b4381515ae831c67330900fb852db",
+      "local_sha256": "2e84f181da9d7ceacd8147ec247dd01f607b4381515ae831c67330900fb852db",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Github/Flame/Flame.tsx",
+      "path": "components/shared/header/Dropdown/Github/Flame/Flame.tsx",
+      "upstream_sha256": "eac96352dfa9296feafa9fcddbfeaa49628ac3a77ee6af296ab0964b00ee5e39",
+      "local_sha256": "eac96352dfa9296feafa9fcddbfeaa49628ac3a77ee6af296ab0964b00ee5e39",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Github/Github.tsx",
+      "path": "components/shared/header/Dropdown/Github/Github.tsx",
+      "upstream_sha256": "4e10e62e533865ffaed3a6dfe52cc088c47f752bd60f360fa6d6e8e3fa2732bd",
+      "local_sha256": "4e10e62e533865ffaed3a6dfe52cc088c47f752bd60f360fa6d6e8e3fa2732bd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Mobile/Item/Item.tsx",
+      "path": "components/shared/header/Dropdown/Mobile/Item/Item.tsx",
+      "upstream_sha256": "133c7af055a1dcd0d974722aa01cf8a54302f40b1be12bac0bf0f31a83e72487",
+      "local_sha256": "133c7af055a1dcd0d974722aa01cf8a54302f40b1be12bac0bf0f31a83e72487",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Mobile/Mobile.tsx",
+      "path": "components/shared/header/Dropdown/Mobile/Mobile.tsx",
+      "upstream_sha256": "39da16e533c67a3656897afe9841bd052094b968dfa9000114769c2a6a1ffb3c",
+      "local_sha256": "39da16e533c67a3656897afe9841bd052094b968dfa9000114769c2a6a1ffb3c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Stories/_svg/ArrowUp.tsx",
+      "path": "components/shared/header/Dropdown/Stories/_svg/ArrowUp.tsx",
+      "upstream_sha256": "94b6d6b3eedc85c3cbde525245e535e570c9175de2a33a1b93e8003f6cfd0ca7",
+      "local_sha256": "94b6d6b3eedc85c3cbde525245e535e570c9175de2a33a1b93e8003f6cfd0ca7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Stories/_svg/Replit.tsx",
+      "path": "components/shared/header/Dropdown/Stories/_svg/Replit.tsx",
+      "upstream_sha256": "0ac204007d5bd4e3d66f52fe3c64fc84397ddf4c3091afaa2c84969b19c1b8f3",
+      "local_sha256": "0ac204007d5bd4e3d66f52fe3c64fc84397ddf4c3091afaa2c84969b19c1b8f3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Stories/Flame/Flame.tsx",
+      "path": "components/shared/header/Dropdown/Stories/Flame/Flame.tsx",
+      "upstream_sha256": "0c56d1764052f994f261c7d01d1aa852f9ca23546fed4e70201f2ef474a1eb31",
+      "local_sha256": "0c56d1764052f994f261c7d01d1aa852f9ca23546fed4e70201f2ef474a1eb31",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Stories/Stories.tsx",
+      "path": "components/shared/header/Dropdown/Stories/Stories.tsx",
+      "upstream_sha256": "a5a1a2f2cadee5d37e528c6cd70328fb4c0d646958a9643ba66f07497ba5b1e3",
+      "local_sha256": "a5a1a2f2cadee5d37e528c6cd70328fb4c0d646958a9643ba66f07497ba5b1e3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Dropdown/Wrapper/Wrapper.tsx",
+      "path": "components/shared/header/Dropdown/Wrapper/Wrapper.tsx",
+      "upstream_sha256": "7d237530293a78ea494aa64ecd66e23a0ffd6e9444d060645021eb11a19dfd60",
+      "local_sha256": "7d237530293a78ea494aa64ecd66e23a0ffd6e9444d060645021eb11a19dfd60",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Github/_svg/GithubIcon.tsx",
+      "path": "components/shared/header/Github/_svg/GithubIcon.tsx",
+      "upstream_sha256": "cb30fb88165bf7b70bb5cf9e533cfdfb2ec32c692198b0a9a698e9cd58794a7b",
+      "local_sha256": "cb30fb88165bf7b70bb5cf9e533cfdfb2ec32c692198b0a9a698e9cd58794a7b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Github/GithubClient.tsx",
+      "path": "components/shared/header/Github/GithubClient.tsx",
+      "upstream_sha256": "76efc754e3cbcd89059cf6169b1bd1edb9cfe28385487b89aa2945bb6848ac2f",
+      "local_sha256": "76efc754e3cbcd89059cf6169b1bd1edb9cfe28385487b89aa2945bb6848ac2f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/HeaderContext.tsx",
+      "path": "components/shared/header/HeaderContext.tsx",
+      "upstream_sha256": "6e4b86c1ab835424af42d9f99543dfd1bf19c0328926705205ea82029d58af87",
+      "local_sha256": "6e4b86c1ab835424af42d9f99543dfd1bf19c0328926705205ea82029d58af87",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Affiliate.tsx",
+      "path": "components/shared/header/Nav/_svg/Affiliate.tsx",
+      "upstream_sha256": "8517aa4e6466aea34196b2addb9d98f740ac8c05154af3d36cd63cded41b38d1",
+      "local_sha256": "8517aa4e6466aea34196b2addb9d98f740ac8c05154af3d36cd63cded41b38d1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Api.tsx",
+      "path": "components/shared/header/Nav/_svg/Api.tsx",
+      "upstream_sha256": "b1f3d414d4a1a740e95a410c017bcaf22e72c3100170458b368b6fa0290e38cc",
+      "local_sha256": "b1f3d414d4a1a740e95a410c017bcaf22e72c3100170458b368b6fa0290e38cc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/ArrowRight.tsx",
+      "path": "components/shared/header/Nav/_svg/ArrowRight.tsx",
+      "upstream_sha256": "e2931f80d9a701c5d282fef872f4496228066500d552a7b85347cf2d9efcc2a0",
+      "local_sha256": "e2931f80d9a701c5d282fef872f4496228066500d552a7b85347cf2d9efcc2a0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Careers.tsx",
+      "path": "components/shared/header/Nav/_svg/Careers.tsx",
+      "upstream_sha256": "a00eb157aee564b74e1636002ab0c08427554a5111609a674d1b131c043d1e83",
+      "local_sha256": "a00eb157aee564b74e1636002ab0c08427554a5111609a674d1b131c043d1e83",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Changelog.tsx",
+      "path": "components/shared/header/Nav/_svg/Changelog.tsx",
+      "upstream_sha256": "5cf1fad9c533b769e351660bf54a7eecaf96cffa9a7c28a6990f94ce5d32020d",
+      "local_sha256": "5cf1fad9c533b769e351660bf54a7eecaf96cffa9a7c28a6990f94ce5d32020d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Chats.tsx",
+      "path": "components/shared/header/Nav/_svg/Chats.tsx",
+      "upstream_sha256": "665bfa1b3d089faee84209a78d968479d01e9472af98637a05fb697f4f2e241e",
+      "local_sha256": "665bfa1b3d089faee84209a78d968479d01e9472af98637a05fb697f4f2e241e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Lead.tsx",
+      "path": "components/shared/header/Nav/_svg/Lead.tsx",
+      "upstream_sha256": "f969a91fc899fb5dfff5060330cd0d73323d02df2f292a3f78d9c73d3e72e28a",
+      "local_sha256": "f969a91fc899fb5dfff5060330cd0d73323d02df2f292a3f78d9c73d3e72e28a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/MCP.tsx",
+      "path": "components/shared/header/Nav/_svg/MCP.tsx",
+      "upstream_sha256": "6d6ea1c0963c6c83cbbefa82cbfb1d268f9169885903903277a687e8347789b9",
+      "local_sha256": "6d6ea1c0963c6c83cbbefa82cbfb1d268f9169885903903277a687e8347789b9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Platforms.tsx",
+      "path": "components/shared/header/Nav/_svg/Platforms.tsx",
+      "upstream_sha256": "eb2d23f614d746abc215f7d59fb0484835512993fffac385c37489f7b18c0745",
+      "local_sha256": "eb2d23f614d746abc215f7d59fb0484835512993fffac385c37489f7b18c0745",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Research.tsx",
+      "path": "components/shared/header/Nav/_svg/Research.tsx",
+      "upstream_sha256": "67b6941d8b71f41f3838c6c3f96ed172ff1f6777d6fa9aea3c5b24d3b6539905",
+      "local_sha256": "67b6941d8b71f41f3838c6c3f96ed172ff1f6777d6fa9aea3c5b24d3b6539905",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Student.tsx",
+      "path": "components/shared/header/Nav/_svg/Student.tsx",
+      "upstream_sha256": "cc21991635348ef8b9daedff4d193b9f3f65cbf9e3e0d2ab2cfb83f4701a87cd",
+      "local_sha256": "cc21991635348ef8b9daedff4d193b9f3f65cbf9e3e0d2ab2cfb83f4701a87cd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/_svg/Templates.tsx",
+      "path": "components/shared/header/Nav/_svg/Templates.tsx",
+      "upstream_sha256": "32ef38960778072501f242c9eb7075e4d35ba218cd6eace71c12b34dd88b647f",
+      "local_sha256": "32ef38960778072501f242c9eb7075e4d35ba218cd6eace71c12b34dd88b647f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/Item/_svg/ChevronDown.tsx",
+      "path": "components/shared/header/Nav/Item/_svg/ChevronDown.tsx",
+      "upstream_sha256": "22835f20e3d7a3007c791ca7305a529e2e9ea2176b1c41b40f844870e93a3250",
+      "local_sha256": "22835f20e3d7a3007c791ca7305a529e2e9ea2176b1c41b40f844870e93a3250",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/Item/Item.tsx",
+      "path": "components/shared/header/Nav/Item/Item.tsx",
+      "upstream_sha256": "74dbe0114cfa366e92b1aa0217013b01b43a9cc178c8e05906a5e6cad5265b44",
+      "local_sha256": "74dbe0114cfa366e92b1aa0217013b01b43a9cc178c8e05906a5e6cad5265b44",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/Nav.tsx",
+      "path": "components/shared/header/Nav/Nav.tsx",
+      "upstream_sha256": "67c5d7405c1dd015ca7c04f252c24d7fc062bcccbf9a2aca1ca3485dc9f9077b",
+      "local_sha256": "67c5d7405c1dd015ca7c04f252c24d7fc062bcccbf9a2aca1ca3485dc9f9077b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Nav/RenderEndpointIcon.tsx",
+      "path": "components/shared/header/Nav/RenderEndpointIcon.tsx",
+      "upstream_sha256": "90058848c6ebcaaea9616048d992489322b11b7de17bba9795530b8143e54ca6",
+      "local_sha256": "90058848c6ebcaaea9616048d992489322b11b7de17bba9795530b8143e54ca6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Toggle/Toggle.tsx",
+      "path": "components/shared/header/Toggle/Toggle.tsx",
+      "upstream_sha256": "13f581aa18c0167b521d44c630b360c2016b709ff03b530492bf6d81b382e45e",
+      "local_sha256": "13f581aa18c0167b521d44c630b360c2016b709ff03b530492bf6d81b382e45e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/header/Wrapper/Wrapper.tsx",
+      "path": "components/shared/header/Wrapper/Wrapper.tsx",
+      "upstream_sha256": "16c64fb4d241ba47bd3ee5f21e61703f59895caea139bef7a2a608cc6807f8b2",
+      "local_sha256": "16c64fb4d241ba47bd3ee5f21e61703f59895caea139bef7a2a608cc6807f8b2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/hero-flame.tsx",
+      "path": "components/shared/hero-flame.tsx",
+      "upstream_sha256": "67869e30000dfc3eaf0c28bbfc42303e3967577cdf7b20327d631e12fd05f15c",
+      "local_sha256": "67869e30000dfc3eaf0c28bbfc42303e3967577cdf7b20327d631e12fd05f15c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/animated-chevron.tsx",
+      "path": "components/shared/icons/animated-chevron.tsx",
+      "upstream_sha256": "479651a480c61b032cb3505d105531816fcac3f9d4a08170892f456181b045b9",
+      "local_sha256": "479651a480c61b032cb3505d105531816fcac3f9d4a08170892f456181b045b9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/animated-icons.tsx",
+      "path": "components/shared/icons/animated-icons.tsx",
+      "upstream_sha256": "480fd6fa0fbf95b14f1895d210ffc2cea0458d7449c53b8c1f9fd50d7ef4772c",
+      "local_sha256": "480fd6fa0fbf95b14f1895d210ffc2cea0458d7449c53b8c1f9fd50d7ef4772c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/arrow-animated.tsx",
+      "path": "components/shared/icons/arrow-animated.tsx",
+      "upstream_sha256": "a04b7e2151ebd547901ce94141256b62f081653b9f89259bd98f1e45c9b5a691",
+      "local_sha256": "a04b7e2151ebd547901ce94141256b62f081653b9f89259bd98f1e45c9b5a691",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/check.tsx",
+      "path": "components/shared/icons/check.tsx",
+      "upstream_sha256": "58d1819459caeed78e48d6e057c0cb609c1cb7942c05a33fe6607282f1e1a89a",
+      "local_sha256": "58d1819459caeed78e48d6e057c0cb609c1cb7942c05a33fe6607282f1e1a89a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/chevron-slide.tsx",
+      "path": "components/shared/icons/chevron-slide.tsx",
+      "upstream_sha256": "a78935836814bc2989e6d3a65ab49baadd6dde57441034f54a0d2cf276a08fd0",
+      "local_sha256": "a78935836814bc2989e6d3a65ab49baadd6dde57441034f54a0d2cf276a08fd0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/copied.tsx",
+      "path": "components/shared/icons/copied.tsx",
+      "upstream_sha256": "bb18d875eb8d70dd68e5e3eeaa6caa297e22bb67bf5d9e22903ebd295c67d9f2",
+      "local_sha256": "bb18d875eb8d70dd68e5e3eeaa6caa297e22bb67bf5d9e22903ebd295c67d9f2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/copy.tsx",
+      "path": "components/shared/icons/copy.tsx",
+      "upstream_sha256": "949dc2ce85df9bfd8e9aaa157669d501f26e522c3f798a88e68d8183a6943738",
+      "local_sha256": "949dc2ce85df9bfd8e9aaa157669d501f26e522c3f798a88e68d8183a6943738",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/curve.tsx",
+      "path": "components/shared/icons/curve.tsx",
+      "upstream_sha256": "a3a8ace3ede563d3406743922b6fac14ce4be769f82f0df755bf8bc65aae149a",
+      "local_sha256": "a3a8ace3ede563d3406743922b6fac14ce4be769f82f0df755bf8bc65aae149a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/fingerprint-icon.tsx",
+      "path": "components/shared/icons/fingerprint-icon.tsx",
+      "upstream_sha256": "56fb7bf67a39b923bc4eceff3e4d501431af82143467ba1a35030100edcde3f6",
+      "local_sha256": "56fb7bf67a39b923bc4eceff3e4d501431af82143467ba1a35030100edcde3f6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/GitHub.tsx",
+      "path": "components/shared/icons/GitHub.tsx",
+      "upstream_sha256": "33a26526d276a25b33ebbcf1fcf38864515fdc28dc8df2205c9083744bd09b1b",
+      "local_sha256": "33a26526d276a25b33ebbcf1fcf38864515fdc28dc8df2205c9083744bd09b1b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/Logo.tsx",
+      "path": "components/shared/icons/Logo.tsx",
+      "upstream_sha256": "389cd1d7382ebab76b09104a00b93e93d50d93b97ef88bad1455f7ad387a64b9",
+      "local_sha256": "389cd1d7382ebab76b09104a00b93e93d50d93b97ef88bad1455f7ad387a64b9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/openai.tsx",
+      "path": "components/shared/icons/openai.tsx",
+      "upstream_sha256": "592f9c0c9dc14cff09e41f83587e41d89001b672ca3822661a49343a6af342e7",
+      "local_sha256": "592f9c0c9dc14cff09e41f83587e41d89001b672ca3822661a49343a6af342e7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/source-icon.tsx",
+      "path": "components/shared/icons/source-icon.tsx",
+      "upstream_sha256": "1f9fcb861224ec2e08458326ea1d83bb2d9796d8333f709d0c4538c33105899a",
+      "local_sha256": "1f9fcb861224ec2e08458326ea1d83bb2d9796d8333f709d0c4538c33105899a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/symbol-colored.tsx",
+      "path": "components/shared/icons/symbol-colored.tsx",
+      "upstream_sha256": "f55403000e9604d63a7dd643ec5ae0a5f536fa9e156da40575bc66623dc8c551",
+      "local_sha256": "f55403000e9604d63a7dd643ec5ae0a5f536fa9e156da40575bc66623dc8c551",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/symbol-white.tsx",
+      "path": "components/shared/icons/symbol-white.tsx",
+      "upstream_sha256": "892b7fba5fbf82d34e753db4c4285980bd12a7ef6f08376baec17fae2a7cba60",
+      "local_sha256": "892b7fba5fbf82d34e753db4c4285980bd12a7ef6f08376baec17fae2a7cba60",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/tremor-placeholder.tsx",
+      "path": "components/shared/icons/tremor-placeholder.tsx",
+      "upstream_sha256": "b86cfc7c86b1ba0ea1be8de0e343eee8bb21b9513b728b8a3744c5468af41d9e",
+      "local_sha256": "b86cfc7c86b1ba0ea1be8de0e343eee8bb21b9513b728b8a3744c5468af41d9e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/wordmark-colored.tsx",
+      "path": "components/shared/icons/wordmark-colored.tsx",
+      "upstream_sha256": "40bd16a1272f1182aeb8581b294149695cbadf3a9336bcaf92d5b73f1e26b1e1",
+      "local_sha256": "40bd16a1272f1182aeb8581b294149695cbadf3a9336bcaf92d5b73f1e26b1e1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/icons/wordmark-white.tsx",
+      "path": "components/shared/icons/wordmark-white.tsx",
+      "upstream_sha256": "670ea52a90fe1388259c94d0ade98859b1eb38db9d1fdcb8ccb16c1918e47c51",
+      "local_sha256": "670ea52a90fe1388259c94d0ade98859b1eb38db9d1fdcb8ccb16c1918e47c51",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/image/getImageSrc.ts",
+      "path": "components/shared/image/getImageSrc.ts",
+      "upstream_sha256": "61a2f5f60ddf408fc9436ccf6829456ad955f97c189660cee63937e9d3f4a371",
+      "local_sha256": "61a2f5f60ddf408fc9436ccf6829456ad955f97c189660cee63937e9d3f4a371",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/image/Image.tsx",
+      "path": "components/shared/image/Image.tsx",
+      "upstream_sha256": "d77288f83dd4f150dc99371fcfaef343c00936a0f04cd5e4e505e710b2d91dbd",
+      "local_sha256": "d77288f83dd4f150dc99371fcfaef343c00936a0f04cd5e4e505e710b2d91dbd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/layout/animated-height.tsx",
+      "path": "components/shared/layout/animated-height.tsx",
+      "upstream_sha256": "2b7f5cf34030f82adafec17f30fc97c589ed5e1ea1a056cf474b2c107215b6b4",
+      "local_sha256": "2b7f5cf34030f82adafec17f30fc97c589ed5e1ea1a056cf474b2c107215b6b4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/layout/animated-width.tsx",
+      "path": "components/shared/layout/animated-width.tsx",
+      "upstream_sha256": "f76093223c0f6ff1e7e38d95e304d053c57855782a33207da96b5c6387991d72",
+      "local_sha256": "f76093223c0f6ff1e7e38d95e304d053c57855782a33207da96b5c6387991d72",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/layout/curvy-rect-divider.tsx",
+      "path": "components/shared/layout/curvy-rect-divider.tsx",
+      "upstream_sha256": "4ff439aeac0d1bbefef7a0f778084178eeaa7a99d5ce8fb4bda87e63304b1368",
+      "local_sha256": "4ff439aeac0d1bbefef7a0f778084178eeaa7a99d5ce8fb4bda87e63304b1368",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/layout/curvy-rect.tsx",
+      "path": "components/shared/layout/curvy-rect.tsx",
+      "upstream_sha256": "2f0b48cdd060f4f424114d1a56555a6c8bf1037706063b921ad0aeb07d0023c6",
+      "local_sha256": "2f0b48cdd060f4f424114d1a56555a6c8bf1037706063b921ad0aeb07d0023c6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/loading/Shimmer.tsx",
+      "path": "components/shared/loading/Shimmer.tsx",
+      "upstream_sha256": "206cc7189e2c1703bb320b4e4ea7a3e1de57d83559c4f9a2028b75bfec0b5c14",
+      "local_sha256": "206cc7189e2c1703bb320b4e4ea7a3e1de57d83559c4f9a2028b75bfec0b5c14",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/loading/usage-loading.tsx",
+      "path": "components/shared/loading/usage-loading.tsx",
+      "upstream_sha256": "ba4a8587dcccf058ce5a0402a38bafbb218693ba1474d53b4003acad64460797",
+      "local_sha256": "ba4a8587dcccf058ce5a0402a38bafbb218693ba1474d53b4003acad64460797",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/lockBody.tsx",
+      "path": "components/shared/lockBody.tsx",
+      "upstream_sha256": "cbb967164553e3d7dd6f815f05873cf8ab702368ea6a05a9e334dad019236aa7",
+      "local_sha256": "cbb967164553e3d7dd6f815f05873cf8ab702368ea6a05a9e334dad019236aa7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/logo-cloud/index.ts",
+      "path": "components/shared/logo-cloud/index.ts",
+      "upstream_sha256": "f136e3435e270f7eebd5fd0930b7cfcfd7b162becae8f2dc41879b48b3f702d9",
+      "local_sha256": "f136e3435e270f7eebd5fd0930b7cfcfd7b162becae8f2dc41879b48b3f702d9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/logo-cloud/logo-cloud.tsx",
+      "path": "components/shared/logo-cloud/logo-cloud.tsx",
+      "upstream_sha256": "15b43513c7bc482208c42a1ab3438a0b12583ed2d15dd360a3ee97958d4a90f3",
+      "local_sha256": "15b43513c7bc482208c42a1ab3438a0b12583ed2d15dd360a3ee97958d4a90f3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/logo-cloud/logo-cloud2/Logocloud.css",
+      "path": "components/shared/logo-cloud/logo-cloud2/Logocloud.css",
+      "upstream_sha256": "481aae54427cd1bbf76dba8e4a41eb850ae6807208d9d069c6cdec677cec57b7",
+      "local_sha256": "481aae54427cd1bbf76dba8e4a41eb850ae6807208d9d069c6cdec677cec57b7",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/logo-cloud/logo-cloud2/Logocloud.tsx",
+      "path": "components/shared/logo-cloud/logo-cloud2/Logocloud.tsx",
+      "upstream_sha256": "b47621c5b4f752ee1fc43ac9c817941b443b2e47d81bc9f681848f1c9210ae60",
+      "local_sha256": "b47621c5b4f752ee1fc43ac9c817941b443b2e47d81bc9f681848f1c9210ae60",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/macbook-scroll.tsx",
+      "path": "components/shared/macbook-scroll.tsx",
+      "upstream_sha256": "45662767ba04523457d333763cb43be44af8829bf8939d253475d624b7ffcbba",
+      "local_sha256": "45662767ba04523457d333763cb43be44af8829bf8939d253475d624b7ffcbba",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/notifications/slack-notification.tsx",
+      "path": "components/shared/notifications/slack-notification.tsx",
+      "upstream_sha256": "63e87795afa3d532384b18cd0f6d9885d5eed36a151bb7703b610f1730ba08bd",
+      "local_sha256": "63e87795afa3d532384b18cd0f6d9885d5eed36a151bb7703b610f1730ba08bd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/pixi/Pixi.tsx",
+      "path": "components/shared/pixi/Pixi.tsx",
+      "upstream_sha256": "9afe9dfefcc636e713608bc2e20d696b64d1b86382efae7fa865b404213aebcc",
+      "local_sha256": "9afe9dfefcc636e713608bc2e20d696b64d1b86382efae7fa865b404213aebcc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/pixi/PixiAssetManager.ts",
+      "path": "components/shared/pixi/PixiAssetManager.ts",
+      "upstream_sha256": "a4952937516d9e999d01707a2c32fcc5dcf7e7aa3ba7493094dd72642662be75",
+      "local_sha256": "a4952937516d9e999d01707a2c32fcc5dcf7e7aa3ba7493094dd72642662be75",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/pixi/utils.ts",
+      "path": "components/shared/pixi/utils.ts",
+      "upstream_sha256": "e38aef29eaf096a71c97db91665897d12079274f7350c311e8a599056babc6e1",
+      "local_sha256": "e38aef29eaf096a71c97db91665897d12079274f7350c311e8a599056babc6e1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/play-tabs.tsx",
+      "path": "components/shared/play-tabs.tsx",
+      "upstream_sha256": "13d36242464b092d377f95319f0404bcda9a02897246d5ceb0206d64f89113f4",
+      "local_sha256": "13d36242464b092d377f95319f0404bcda9a02897246d5ceb0206d64f89113f4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/Playground/Context/types.ts",
+      "path": "components/shared/Playground/Context/types.ts",
+      "upstream_sha256": "f16998e1d6e5bd3f93011a041d2d2d512be1fadb3c695d1d2dccaa7d03a2a43b",
+      "local_sha256": "f16998e1d6e5bd3f93011a041d2d2d512be1fadb3c695d1d2dccaa7d03a2a43b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/portal-to-body/PortalToBody.tsx",
+      "path": "components/shared/portal-to-body/PortalToBody.tsx",
+      "upstream_sha256": "5398f39dfe77929942765f842780a4b49d1c2d7e346acdc3871f5af61983fa8e",
+      "local_sha256": "5398f39dfe77929942765f842780a4b49d1c2d7e346acdc3871f5af61983fa8e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/preview/json-error-highlighter.tsx",
+      "path": "components/shared/preview/json-error-highlighter.tsx",
+      "upstream_sha256": "32b3efe5d4156181be615f5d742ca97cacea227ae5fe42b9a272e74ca49bc095",
+      "local_sha256": "32b3efe5d4156181be615f5d742ca97cacea227ae5fe42b9a272e74ca49bc095",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/preview/live-preview-frame.tsx",
+      "path": "components/shared/preview/live-preview-frame.tsx",
+      "upstream_sha256": "3db08330293acea2d88f91fe4a31ea4bafda45d38ee2cb457c2a246b8f633a76",
+      "local_sha256": "3db08330293acea2d88f91fe4a31ea4bafda45d38ee2cb457c2a246b8f633a76",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/preview/multiple-web-browsers.tsx",
+      "path": "components/shared/preview/multiple-web-browsers.tsx",
+      "upstream_sha256": "ca6c58fc7b48086046ff80be26eb722df82f921539de9e0fb14ebcfef176a56b",
+      "local_sha256": "ca6c58fc7b48086046ff80be26eb722df82f921539de9e0fb14ebcfef176a56b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/preview/web-browser.tsx",
+      "path": "components/shared/preview/web-browser.tsx",
+      "upstream_sha256": "9c4ef7e3e6f82d1a30d69bc5247526e034ec69e7337c5b7a1d1730ed1ba7367d",
+      "local_sha256": "9c4ef7e3e6f82d1a30d69bc5247526e034ec69e7337c5b7a1d1730ed1ba7367d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/pylon.tsx",
+      "path": "components/shared/pylon.tsx",
+      "upstream_sha256": "d9a5699bcf792c61cf500fb7bb78bd96fa7d156ce6ee6dc22d20b0c04facd63d",
+      "local_sha256": "d9a5699bcf792c61cf500fb7bb78bd96fa7d156ce6ee6dc22d20b0c04facd63d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/search-params-provider/search-params-provider.tsx",
+      "path": "components/shared/search-params-provider/search-params-provider.tsx",
+      "upstream_sha256": "ef29973fcace648f4ecc0b2dc97692fb7907ae6e8179bfa6d2ee267fd3e463e8",
+      "local_sha256": "ef29973fcace648f4ecc0b2dc97692fb7907ae6e8179bfa6d2ee267fd3e463e8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/section-head/SectionHead.css",
+      "path": "components/shared/section-head/SectionHead.css",
+      "upstream_sha256": "fc761c2a780849cbfa088b6cb40dfd61a8f44325a1e11efe492918b812d15b53",
+      "local_sha256": "fc761c2a780849cbfa088b6cb40dfd61a8f44325a1e11efe492918b812d15b53",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/section-head/SectionHead.tsx",
+      "path": "components/shared/section-head/SectionHead.tsx",
+      "upstream_sha256": "a18e5b64ae6c00f330def0b4cf88318d4c245744af7ecec1d0b8608cc80cf0bc",
+      "local_sha256": "a18e5b64ae6c00f330def0b4cf88318d4c245744af7ecec1d0b8608cc80cf0bc",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/section-title/SectionTitle.tsx",
+      "path": "components/shared/section-title/SectionTitle.tsx",
+      "upstream_sha256": "dc83700abc59c01c58646c5442292cc85765f993726a8fd1bbad50cd74db8fda",
+      "local_sha256": "dc83700abc59c01c58646c5442292cc85765f993726a8fd1bbad50cd74db8fda",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/tabs/Tabs.tsx",
+      "path": "components/shared/tabs/Tabs.tsx",
+      "upstream_sha256": "0e075fde629754b982981d0f9410964d20acf8d8e48236d6ea342458391d5afe",
+      "local_sha256": "0e075fde629754b982981d0f9410964d20acf8d8e48236d6ea342458391d5afe",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/app-dialog.tsx",
+      "path": "components/shared/ui/app-dialog.tsx",
+      "upstream_sha256": "70e974e0c299a8d94fa6ce9d9e003536951205f2672ea6773fcf888a512ec542",
+      "local_sha256": "70e974e0c299a8d94fa6ce9d9e003536951205f2672ea6773fcf888a512ec542",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/ascii-dot-loader.tsx",
+      "path": "components/shared/ui/ascii-dot-loader.tsx",
+      "upstream_sha256": "e879c05b99ee99f9101dfca33e83751ae6ca12c146b340bc58636490e555409a",
+      "local_sha256": "e879c05b99ee99f9101dfca33e83751ae6ca12c146b340bc58636490e555409a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/dot-grid-loader.tsx",
+      "path": "components/shared/ui/dot-grid-loader.tsx",
+      "upstream_sha256": "4146079b493e4cc94fc4c928b0c9657f2dde88a219231ddb4ad22f91e60d4730",
+      "local_sha256": "4146079b493e4cc94fc4c928b0c9657f2dde88a219231ddb4ad22f91e60d4730",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/empty-state.tsx",
+      "path": "components/shared/ui/empty-state.tsx",
+      "upstream_sha256": "0648ae52ef8add7b97eabda55c917bdec0681e1cd24d038d72dcf790475fd934",
+      "local_sha256": "0648ae52ef8add7b97eabda55c917bdec0681e1cd24d038d72dcf790475fd934",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/index.ts",
+      "path": "components/shared/ui/index.ts",
+      "upstream_sha256": "b2f89843f7bbe2e97ea54720668af6da13074b850519437aa95ec8b49fc15b76",
+      "local_sha256": "b2f89843f7bbe2e97ea54720668af6da13074b850519437aa95ec8b49fc15b76",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/loading-state.tsx",
+      "path": "components/shared/ui/loading-state.tsx",
+      "upstream_sha256": "d39822c494cfd2f487b887d2e5a8150d223742cef43d773ff6ed56232c6a1027",
+      "local_sha256": "d39822c494cfd2f487b887d2e5a8150d223742cef43d773ff6ed56232c6a1027",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/mobile-sheet.tsx",
+      "path": "components/shared/ui/mobile-sheet.tsx",
+      "upstream_sha256": "d1c32bdedab0cd3c4d0f6d477f31f47f594d3f3c6d1316b78a24493a5dabe4e4",
+      "local_sha256": "d1c32bdedab0cd3c4d0f6d477f31f47f594d3f3c6d1316b78a24493a5dabe4e4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/ui/stat-card.tsx",
+      "path": "components/shared/ui/stat-card.tsx",
+      "upstream_sha256": "cb3cf9d1a29b9a9feac7652cbf8f1262623653f6f47610b4ce3d215409828966",
+      "local_sha256": "cb3cf9d1a29b9a9feac7652cbf8f1262623653f6f47610b4ce3d215409828966",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/shared/utils/portal-to-body.tsx",
+      "path": "components/shared/utils/portal-to-body.tsx",
+      "upstream_sha256": "5398f39dfe77929942765f842780a4b49d1c2d7e346acdc3871f5af61983fa8e",
+      "local_sha256": "5398f39dfe77929942765f842780a4b49d1c2d7e346acdc3871f5af61983fa8e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/button-demo.tsx",
+      "path": "components/ui/button-demo.tsx",
+      "upstream_sha256": "089bc0e74e37d94e81fd2ebf18bc9cc100247d3f6d71f8da2ea3a4b9620470a8",
+      "local_sha256": "089bc0e74e37d94e81fd2ebf18bc9cc100247d3f6d71f8da2ea3a4b9620470a8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/button.tsx",
+      "path": "components/ui/button.tsx",
+      "upstream_sha256": "534b024634e046070719a0fe8cf0037ec850a77bb80036329851b586da9137d3",
+      "local_sha256": "534b024634e046070719a0fe8cf0037ec850a77bb80036329851b586da9137d3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/code.tsx",
+      "path": "components/ui/code.tsx",
+      "upstream_sha256": "8b385859112015add032ddbcf781ce9dfea95f1502d232aa4ff6802e016a3e6c",
+      "local_sha256": "8b385859112015add032ddbcf781ce9dfea95f1502d232aa4ff6802e016a3e6c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/image.tsx",
+      "path": "components/ui/image.tsx",
+      "upstream_sha256": "d77288f83dd4f150dc99371fcfaef343c00936a0f04cd5e4e505e710b2d91dbd",
+      "local_sha256": "d77288f83dd4f150dc99371fcfaef343c00936a0f04cd5e4e505e710b2d91dbd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/index.ts",
+      "path": "components/ui/index.ts",
+      "upstream_sha256": "4d3adf155fb4dde7837f5ea26977164c0711efea3a6856f79c72477114eb01ee",
+      "local_sha256": "4d3adf155fb4dde7837f5ea26977164c0711efea3a6856f79c72477114eb01ee",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/loading-dashboard.tsx",
+      "path": "components/ui/loading-dashboard.tsx",
+      "upstream_sha256": "7dde3862c954889829b876b55d8820b11c00dcdc774792e0fd73043ab1f21763",
+      "local_sha256": "7dde3862c954889829b876b55d8820b11c00dcdc774792e0fd73043ab1f21763",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/LoadingDots/index.ts",
+      "path": "components/ui/LoadingDots/index.ts",
+      "upstream_sha256": "250b65629f7418ff2c9b9e7afd66af3ccccb90a21406a35f3715dc082c446317",
+      "local_sha256": "250b65629f7418ff2c9b9e7afd66af3ccccb90a21406a35f3715dc082c446317",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/LoadingDots/LoadingDots.module.css",
+      "path": "components/ui/LoadingDots/LoadingDots.module.css",
+      "upstream_sha256": "e46fb7e68c7530d1bdb78076a644da16d2caf310c2b9daf5d69a13ef5ca3a84a",
+      "local_sha256": "e46fb7e68c7530d1bdb78076a644da16d2caf310c2b9daf5d69a13ef5ca3a84a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/LoadingDots/LoadingDots.tsx",
+      "path": "components/ui/LoadingDots/LoadingDots.tsx",
+      "upstream_sha256": "90e0c64b0b6eee56695f359619b81b173e5e824f801d8a9fb98d59c62a03fc30",
+      "local_sha256": "90e0c64b0b6eee56695f359619b81b173e5e824f801d8a9fb98d59c62a03fc30",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/magic/animated-shiny-text-lw.tsx",
+      "path": "components/ui/magic/animated-shiny-text-lw.tsx",
+      "upstream_sha256": "e88f2b25e4a7980dbd4e1c2cd9731a9ff9ed1db76b2dfa84bfaddfcef5487526",
+      "local_sha256": "e88f2b25e4a7980dbd4e1c2cd9731a9ff9ed1db76b2dfa84bfaddfcef5487526",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/magic/animated-shiny-text.tsx",
+      "path": "components/ui/magic/animated-shiny-text.tsx",
+      "upstream_sha256": "a91724d714034fbcb30b09fb552b279513205a2bddd3511ba71394f1ba54df2f",
+      "local_sha256": "a91724d714034fbcb30b09fb552b279513205a2bddd3511ba71394f1ba54df2f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/magic/dock.tsx",
+      "path": "components/ui/magic/dock.tsx",
+      "upstream_sha256": "eb54f4fa8e66d89febf2fba6c15405165da30b8d77ece523dbbbd509550e93aa",
+      "local_sha256": "eb54f4fa8e66d89febf2fba6c15405165da30b8d77ece523dbbbd509550e93aa",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/magic/dot-pattern.tsx",
+      "path": "components/ui/magic/dot-pattern.tsx",
+      "upstream_sha256": "70e8013a700a5e955293fc80fd67304f758ff12b572e755a0a9a6ae8357f7136",
+      "local_sha256": "70e8013a700a5e955293fc80fd67304f758ff12b572e755a0a9a6ae8357f7136",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/magic/gradual-spacing.tsx",
+      "path": "components/ui/magic/gradual-spacing.tsx",
+      "upstream_sha256": "cfe7aec4f65956e70c68b6ab6bab9a657f33047aa55418d1d230da8aa141493d",
+      "local_sha256": "cfe7aec4f65956e70c68b6ab6bab9a657f33047aa55418d1d230da8aa141493d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/magic/ripple.tsx",
+      "path": "components/ui/magic/ripple.tsx",
+      "upstream_sha256": "38afc3ab22bca3b02bd4a482c7bfe845fccbdb31a45a416423d64e8063f7f55b",
+      "local_sha256": "38afc3ab22bca3b02bd4a482c7bfe845fccbdb31a45a416423d64e8063f7f55b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/menu-header.tsx",
+      "path": "components/ui/menu-header.tsx",
+      "upstream_sha256": "b9190dd57fa4f557597ae833a40bee4b81b57b0afb9dbc103b8232117fd5a76d",
+      "local_sha256": "b9190dd57fa4f557597ae833a40bee4b81b57b0afb9dbc103b8232117fd5a76d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/menu.tsx",
+      "path": "components/ui/menu.tsx",
+      "upstream_sha256": "40a18b72e89a5f217d312e1424486ef74b3afc484b7ca910eb73f004aad29a4c",
+      "local_sha256": "40a18b72e89a5f217d312e1424486ef74b3afc484b7ca910eb73f004aad29a4c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/modal.tsx",
+      "path": "components/ui/modal.tsx",
+      "upstream_sha256": "faccc5d4d0b5e801d2e5bc5e21657868e7b292418141db8252d7731f491eb516",
+      "local_sha256": "faccc5d4d0b5e801d2e5bc5e21657868e7b292418141db8252d7731f491eb516",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/motion/scramble-text.tsx",
+      "path": "components/ui/motion/scramble-text.tsx",
+      "upstream_sha256": "f8c7d207f0298f4d629bc593bd4942636f692d8a023ccabd704ed6e854120a60",
+      "local_sha256": "f8c7d207f0298f4d629bc593bd4942636f692d8a023ccabd704ed6e854120a60",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/motion/text-reveal.tsx",
+      "path": "components/ui/motion/text-reveal.tsx",
+      "upstream_sha256": "bd24c153619986ff4351c9bd12575f363ae4c560f89df0e3f2408da97540151e",
+      "local_sha256": "bd24c153619986ff4351c9bd12575f363ae4c560f89df0e3f2408da97540151e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/scrollbar.tsx",
+      "path": "components/ui/scrollbar.tsx",
+      "upstream_sha256": "bc84284bf28bcb55cae12cf18a6cf2327837305273490b7e60df2cfe2726c097",
+      "local_sha256": "bc84284bf28bcb55cae12cf18a6cf2327837305273490b7e60df2cfe2726c097",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/accordion.tsx",
+      "path": "components/ui/shadcn/accordion.tsx",
+      "upstream_sha256": "68d3150396575f56d6fc14a3685f0c4f0ab4601d16dc45f14271bfac9a982238",
+      "local_sha256": "68d3150396575f56d6fc14a3685f0c4f0ab4601d16dc45f14271bfac9a982238",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/alert-dialog.tsx",
+      "path": "components/ui/shadcn/alert-dialog.tsx",
+      "upstream_sha256": "45a672c3a877a89602a0cd98a9db8809971dec2cd64a9f3ab87b9b039356d9f6",
+      "local_sha256": "45a672c3a877a89602a0cd98a9db8809971dec2cd64a9f3ab87b9b039356d9f6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/badge.tsx",
+      "path": "components/ui/shadcn/badge.tsx",
+      "upstream_sha256": "7c139e2944092ce8d90267b957c025e7876c04817b4e80b51e912a44cc83a314",
+      "local_sha256": "7c139e2944092ce8d90267b957c025e7876c04817b4e80b51e912a44cc83a314",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/button.css",
+      "path": "components/ui/shadcn/button.css",
+      "upstream_sha256": "8046fc46857892be5bc9037a371efdbb99d412de6983b3aae55053d610740a8f",
+      "local_sha256": "8046fc46857892be5bc9037a371efdbb99d412de6983b3aae55053d610740a8f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/button.tsx",
+      "path": "components/ui/shadcn/button.tsx",
+      "upstream_sha256": "a4806e489cb8af302a4ba16bdb0ab4aa7d4775b0d55086711683b71448ae176a",
+      "local_sha256": "a4806e489cb8af302a4ba16bdb0ab4aa7d4775b0d55086711683b71448ae176a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/card.tsx",
+      "path": "components/ui/shadcn/card.tsx",
+      "upstream_sha256": "3ce53f3e2f3a72df99bb8504abfba921bd6b6c6b5bb1a76ca1dd6343afccd3f9",
+      "local_sha256": "3ce53f3e2f3a72df99bb8504abfba921bd6b6c6b5bb1a76ca1dd6343afccd3f9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/checkbox.tsx",
+      "path": "components/ui/shadcn/checkbox.tsx",
+      "upstream_sha256": "f99473dc61b52f4c48ed7673fa36a48853c91d3c69a34ee444593d0cc61085f2",
+      "local_sha256": "f99473dc61b52f4c48ed7673fa36a48853c91d3c69a34ee444593d0cc61085f2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/collapsible.tsx",
+      "path": "components/ui/shadcn/collapsible.tsx",
+      "upstream_sha256": "0be1d5082be6ce6a06e0f67accb38ef50e981f111187e3954d0a1bca062f52e1",
+      "local_sha256": "0be1d5082be6ce6a06e0f67accb38ef50e981f111187e3954d0a1bca062f52e1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/combobox.tsx",
+      "path": "components/ui/shadcn/combobox.tsx",
+      "upstream_sha256": "3463aef0a9397db135733179ed965769907f76cc54063cd906cf7190390955d9",
+      "local_sha256": "3463aef0a9397db135733179ed965769907f76cc54063cd906cf7190390955d9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/context-menu.tsx",
+      "path": "components/ui/shadcn/context-menu.tsx",
+      "upstream_sha256": "ac19fa0c223dda7274c140afb12a3a22497658f474259adf3b66bb9650b6c802",
+      "local_sha256": "ac19fa0c223dda7274c140afb12a3a22497658f474259adf3b66bb9650b6c802",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/data-table.tsx",
+      "path": "components/ui/shadcn/data-table.tsx",
+      "upstream_sha256": "2e8c024b793519c6c61ddcbec11974fbd3d7aa896fdedab4eedeaad7cb2d766f",
+      "local_sha256": "2e8c024b793519c6c61ddcbec11974fbd3d7aa896fdedab4eedeaad7cb2d766f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/dialog.tsx",
+      "path": "components/ui/shadcn/dialog.tsx",
+      "upstream_sha256": "a500b675478ff529a3e4a2e8f199b224f4c8ecd739bfb9b92fca6614aa422c0e",
+      "local_sha256": "a500b675478ff529a3e4a2e8f199b224f4c8ecd739bfb9b92fca6614aa422c0e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/dropdown-menu.tsx",
+      "path": "components/ui/shadcn/dropdown-menu.tsx",
+      "upstream_sha256": "6116424294950a40ae47ea60bf71aaf9973a237409c7ba6eacecdd5bd131c6f2",
+      "local_sha256": "6116424294950a40ae47ea60bf71aaf9973a237409c7ba6eacecdd5bd131c6f2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/form.tsx",
+      "path": "components/ui/shadcn/form.tsx",
+      "upstream_sha256": "6e7141533ea83ec9b99208c67bf28f0d40aefdaf3977aa2b61f8a38465d312c1",
+      "local_sha256": "6e7141533ea83ec9b99208c67bf28f0d40aefdaf3977aa2b61f8a38465d312c1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/input.tsx",
+      "path": "components/ui/shadcn/input.tsx",
+      "upstream_sha256": "c07619beccfbe0252c583f5df42b1e20540b6b84089393a25539974b098c0438",
+      "local_sha256": "c07619beccfbe0252c583f5df42b1e20540b6b84089393a25539974b098c0438",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/label.tsx",
+      "path": "components/ui/shadcn/label.tsx",
+      "upstream_sha256": "7fcbdf3b647b0c74aa2e33a31ae84a5d9d16e647e7e1ea8a788c88039ca3922f",
+      "local_sha256": "7fcbdf3b647b0c74aa2e33a31ae84a5d9d16e647e7e1ea8a788c88039ca3922f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/navigation-menu.tsx",
+      "path": "components/ui/shadcn/navigation-menu.tsx",
+      "upstream_sha256": "05aac61597adc8f588703752dbc33b23e24b3aa4d4b9571b50266367d2a9bc0c",
+      "local_sha256": "05aac61597adc8f588703752dbc33b23e24b3aa4d4b9571b50266367d2a9bc0c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/popover.tsx",
+      "path": "components/ui/shadcn/popover.tsx",
+      "upstream_sha256": "a63c3c76b52c329923b056879ef33d9ae18b1e7a17dc347e3395eb6c8ead5477",
+      "local_sha256": "a63c3c76b52c329923b056879ef33d9ae18b1e7a17dc347e3395eb6c8ead5477",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/progress.tsx",
+      "path": "components/ui/shadcn/progress.tsx",
+      "upstream_sha256": "334470c246db29846a219987e130c6553acbfdce0917bcd2268aac5d66e0a1a9",
+      "local_sha256": "334470c246db29846a219987e130c6553acbfdce0917bcd2268aac5d66e0a1a9",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/scroll-area.tsx",
+      "path": "components/ui/shadcn/scroll-area.tsx",
+      "upstream_sha256": "c0c7e55fb9d5db2bed28074732c5c43416c914e4307d59c02b4865c25d95ebfd",
+      "local_sha256": "c0c7e55fb9d5db2bed28074732c5c43416c914e4307d59c02b4865c25d95ebfd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/select.tsx",
+      "path": "components/ui/shadcn/select.tsx",
+      "upstream_sha256": "80d02e91797783520c44316956997adf019ef567082d7b00249bf87d83c3ce57",
+      "local_sha256": "80d02e91797783520c44316956997adf019ef567082d7b00249bf87d83c3ce57",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/separator.tsx",
+      "path": "components/ui/shadcn/separator.tsx",
+      "upstream_sha256": "b90e932c935e7733674761e2a51425f7ef5ecfaf5c59e56fbe32f21a721ae85e",
+      "local_sha256": "b90e932c935e7733674761e2a51425f7ef5ecfaf5c59e56fbe32f21a721ae85e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/sheet.tsx",
+      "path": "components/ui/shadcn/sheet.tsx",
+      "upstream_sha256": "2b7963da7ca7b6f1794a4f24f92c25e2fd3f16ec4eb7640312a8be67c08a6dad",
+      "local_sha256": "2b7963da7ca7b6f1794a4f24f92c25e2fd3f16ec4eb7640312a8be67c08a6dad",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/slider.tsx",
+      "path": "components/ui/shadcn/slider.tsx",
+      "upstream_sha256": "c2c156116357f74ae540baca52ef25b8c2ed5491c74aa440b83e2e72c9bb035a",
+      "local_sha256": "c2c156116357f74ae540baca52ef25b8c2ed5491c74aa440b83e2e72c9bb035a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/switch.tsx",
+      "path": "components/ui/shadcn/switch.tsx",
+      "upstream_sha256": "98b53f1bc63ccc58ac26e562da157741ad18282912e3280c6853a6c104561f78",
+      "local_sha256": "98b53f1bc63ccc58ac26e562da157741ad18282912e3280c6853a6c104561f78",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/tabs.tsx",
+      "path": "components/ui/shadcn/tabs.tsx",
+      "upstream_sha256": "077a854fbe1d2f232761613a4c6d0c62c97a9bc9f6c2e4084b9caf0103ddb3c1",
+      "local_sha256": "077a854fbe1d2f232761613a4c6d0c62c97a9bc9f6c2e4084b9caf0103ddb3c1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/textarea.tsx",
+      "path": "components/ui/shadcn/textarea.tsx",
+      "upstream_sha256": "3550f5f9076fab4aa702cf452806ca44dfcfb79454d557b478538d6203f0f8fe",
+      "local_sha256": "3550f5f9076fab4aa702cf452806ca44dfcfb79454d557b478538d6203f0f8fe",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/toast.tsx",
+      "path": "components/ui/shadcn/toast.tsx",
+      "upstream_sha256": "64628dd666bc45c286321a8a75d08cd86d321a1a624c09545e9354bd8e2e8367",
+      "local_sha256": "64628dd666bc45c286321a8a75d08cd86d321a1a624c09545e9354bd8e2e8367",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/toggle.tsx",
+      "path": "components/ui/shadcn/toggle.tsx",
+      "upstream_sha256": "18208484401636d8a1cb558730b51dd39656198f588b2df469f427dffed1b79c",
+      "local_sha256": "18208484401636d8a1cb558730b51dd39656198f588b2df469f427dffed1b79c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/tooltip-radix.tsx",
+      "path": "components/ui/shadcn/tooltip-radix.tsx",
+      "upstream_sha256": "91bc01c3c17f051755de37ef7c59965f4b9c5d6f6b21986118056709ddc1b4bf",
+      "local_sha256": "91bc01c3c17f051755de37ef7c59965f4b9c5d6f6b21986118056709ddc1b4bf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/shadcn/tooltip.tsx",
+      "path": "components/ui/shadcn/tooltip.tsx",
+      "upstream_sha256": "9015f77d63d26c91ca3b79402933766df7eb652f7317cea7593c7c58395a5b18",
+      "local_sha256": "9015f77d63d26c91ca3b79402933766df7eb652f7317cea7593c7c58395a5b18",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/spinner.tsx",
+      "path": "components/ui/spinner.tsx",
+      "upstream_sha256": "ce4c96921b73fe8cf718e0e2307ee16020df59c68fa9a40387362c3ee9d1f594",
+      "local_sha256": "ce4c96921b73fe8cf718e0e2307ee16020df59c68fa9a40387362c3ee9d1f594",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/table.tsx",
+      "path": "components/ui/table.tsx",
+      "upstream_sha256": "f12369c4b255fea355f24ff55e9bcff011c78cc0841d1eddad28e7eca4ae83f6",
+      "local_sha256": "f12369c4b255fea355f24ff55e9bcff011c78cc0841d1eddad28e7eca4ae83f6",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/ui/video.tsx",
+      "path": "components/ui/video.tsx",
+      "upstream_sha256": "48113ff18e36a1b1c553bdf1d8801a3d1c76e4510ea7b0246399fa2005db020d",
+      "local_sha256": "48113ff18e36a1b1c553bdf1d8801a3d1c76e4510ea7b0246399fa2005db020d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "components/workflow/WorkflowExecutionRenderer.tsx",
+      "path": "components/workflow/WorkflowExecutionRenderer.tsx",
+      "upstream_sha256": "9ca68fe218b0f831e46dcbc98d328b6a0cc808c3d55891923c52eb5682b6a06a",
+      "local_sha256": "9ca68fe218b0f831e46dcbc98d328b6a0cc808c3d55891923c52eb5682b6a06a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "hooks/useApprovalWatch.ts",
+      "path": "hooks/useApprovalWatch.ts",
+      "upstream_sha256": "f3f8e5866767a780300bd9fae065a4e159763dfccb2e160017842dfa2217a2e3",
+      "local_sha256": "f3f8e5866767a780300bd9fae065a4e159763dfccb2e160017842dfa2217a2e3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "hooks/useDebouncedEffect.ts",
+      "path": "hooks/useDebouncedEffect.ts",
+      "upstream_sha256": "5c5c83e4b441d77bea968ed4366d3efa46f5848f0b1ccfb46300cf43b09abfac",
+      "local_sha256": "5c5c83e4b441d77bea968ed4366d3efa46f5848f0b1ccfb46300cf43b09abfac",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "hooks/useWorkflow.ts",
+      "path": "hooks/useWorkflow.ts",
+      "upstream_sha256": "68dabbd782ff5887600ec3f659811d1a51550c94b64b20fb4b1ad1fac8763df8",
+      "local_sha256": "68dabbd782ff5887600ec3f659811d1a51550c94b64b20fb4b1ad1fac8763df8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "hooks/useWorkflowExecution.ts",
+      "path": "hooks/useWorkflowExecution.ts",
+      "upstream_sha256": "477fa2f2b289bf92043a357ffe55d871e2e38658af803ebe37832bfa18d7d4c1",
+      "local_sha256": "477fa2f2b289bf92043a357ffe55d871e2e38658af803ebe37832bfa18d7d4c1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "public/compressor.json",
+      "path": "public/compressor.json",
+      "upstream_sha256": "9a718d190e2a72411b133f1a7e708519ffa1e01ab25ae2c89aecb2062d48ef8e",
+      "local_sha256": "9a718d190e2a72411b133f1a7e708519ffa1e01ab25ae2c89aecb2062d48ef8e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "public/favicon.png",
+      "path": "public/favicon.png",
+      "upstream_sha256": "8ffad81ff3c64a776123c779e994e220ef2cf8e1943cd030f6aa2f1c63c5154d",
+      "local_sha256": "8ffad81ff3c64a776123c779e994e220ef2cf8e1943cd030f6aa2f1c63c5154d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/additional-styles/custom-fonts.css",
+      "path": "styles/additional-styles/custom-fonts.css",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/additional-styles/theme.css",
+      "path": "styles/additional-styles/theme.css",
+      "upstream_sha256": "68ba610ad8410774f0f75657637fe0c1dc1357462b6b542c5a4fdf693a23fcda",
+      "local_sha256": "68ba610ad8410774f0f75657637fe0c1dc1357462b6b542c5a4fdf693a23fcda",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/additional-styles/utility-patterns.css",
+      "path": "styles/additional-styles/utility-patterns.css",
+      "upstream_sha256": "cb9db172d14fe56a8dceb85c64a3d4bfe72f70f186b36f56cddb18dd823d101a",
+      "local_sha256": "cb9db172d14fe56a8dceb85c64a3d4bfe72f70f186b36f56cddb18dd823d101a",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/chrome-bug.css",
+      "path": "styles/chrome-bug.css",
+      "upstream_sha256": "aa7adb1e29733f90e10100a42a0e02460202903b55391fd6ffde02ec9b99efb1",
+      "local_sha256": "aa7adb1e29733f90e10100a42a0e02460202903b55391fd6ffde02ec9b99efb1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/colors.json",
+      "path": "styles/colors.json",
+      "upstream_sha256": "c57e115c24ec4189aff5d402429b43f529c27e10b09ba4a374053aec3e0e1f90",
+      "local_sha256": "c57e115c24ec4189aff5d402429b43f529c27e10b09ba4a374053aec3e0e1f90",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/components/button.css",
+      "path": "styles/components/button.css",
+      "upstream_sha256": "5c408a9535e9c453fbe15672279b96b344592c82a80d4b879f9cd95bc8dd9650",
+      "local_sha256": "5c408a9535e9c453fbe15672279b96b344592c82a80d4b879f9cd95bc8dd9650",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/components/code.css",
+      "path": "styles/components/code.css",
+      "upstream_sha256": "778583dd593b0ea8899cc5bd863dfc64c8d6dc78a2d2b0c34893dc3f725aa844",
+      "local_sha256": "778583dd593b0ea8899cc5bd863dfc64c8d6dc78a2d2b0c34893dc3f725aa844",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/components/index.css",
+      "path": "styles/components/index.css",
+      "upstream_sha256": "7fb904957caa502ecb75feab2988d7831d1e1cf253cdbc18821491388c4e94e1",
+      "local_sha256": "7fb904957caa502ecb75feab2988d7831d1e1cf253cdbc18821491388c4e94e1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/animations.css",
+      "path": "styles/design-system/animations.css",
+      "upstream_sha256": "ada52ce0f280d4c55afc07a04dba7f6b9828c8c42d40a3d2c2fa6559b035922c",
+      "local_sha256": "ada52ce0f280d4c55afc07a04dba7f6b9828c8c42d40a3d2c2fa6559b035922c",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/base/body.css",
+      "path": "styles/design-system/base/body.css",
+      "upstream_sha256": "f843c6eaa36aa47b19269d657cce27fc4b6bec2cb12604b41d98d80a8fa3d79b",
+      "local_sha256": "f843c6eaa36aa47b19269d657cce27fc4b6bec2cb12604b41d98d80a8fa3d79b",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/base/layout.css",
+      "path": "styles/design-system/base/layout.css",
+      "upstream_sha256": "27ac5794f39037910b14bb73635ddbd86b666375a60b04c6a21c172d0df1af4f",
+      "local_sha256": "27ac5794f39037910b14bb73635ddbd86b666375a60b04c6a21c172d0df1af4f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/base/reset.css",
+      "path": "styles/design-system/base/reset.css",
+      "upstream_sha256": "115d9ce31ba68ac267baa576b97da735c18ba65b1695a524d4a1bb0d4cf50920",
+      "local_sha256": "115d9ce31ba68ac267baa576b97da735c18ba65b1695a524d4a1bb0d4cf50920",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/colors.css",
+      "path": "styles/design-system/colors.css",
+      "upstream_sha256": "e1ec7cbcc09e27ece307551e4dfda93e9504de9de88a0bc96aef9c35ab358335",
+      "local_sha256": "e1ec7cbcc09e27ece307551e4dfda93e9504de9de88a0bc96aef9c35ab358335",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/fonts.css",
+      "path": "styles/design-system/fonts.css",
+      "upstream_sha256": "a17a61792d129cd1e5bd3f01d3fd5d97c7ea3442a6035260fd13a5dba8d8a42f",
+      "local_sha256": "a17a61792d129cd1e5bd3f01d3fd5d97c7ea3442a6035260fd13a5dba8d8a42f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/typography.css",
+      "path": "styles/design-system/typography.css",
+      "upstream_sha256": "276a21919f693a85ae51e053c2647744413bba08a1dc471063187b939867459e",
+      "local_sha256": "276a21919f693a85ae51e053c2647744413bba08a1dc471063187b939867459e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/design-system/utilities.css",
+      "path": "styles/design-system/utilities.css",
+      "upstream_sha256": "0d6a10ddd4275a5f72aaed95fb08b7ef55effe4658c23672b2679fd53f87c0aa",
+      "local_sha256": "0d6a10ddd4275a5f72aaed95fb08b7ef55effe4658c23672b2679fd53f87c0aa",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/fire.css",
+      "path": "styles/fire.css",
+      "upstream_sha256": "523fbbd28b8b27089fe894f3e129d45a7fe629f85bb5f8f66406f1c058bac018",
+      "local_sha256": "523fbbd28b8b27089fe894f3e129d45a7fe629f85bb5f8f66406f1c058bac018",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/main.css",
+      "path": "styles/main.css",
+      "upstream_sha256": "4d4d324581d7ddb6d4156bbf739ff084f2c03af6b5a986914d9c4443cf6d139f",
+      "local_sha256": "4d4d324581d7ddb6d4156bbf739ff084f2c03af6b5a986914d9c4443cf6d139f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "styles/workflow-execution.css",
+      "path": "styles/workflow-execution.css",
+      "upstream_sha256": "7d6cb0663d6e313ab9e309064d52d60933a8232eab9ac3f518cd79914ce149af",
+      "local_sha256": "7d6cb0663d6e313ab9e309064d52d60933a8232eab9ac3f518cd79914ce149af",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
-      "path": "app/layout.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "app/page.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "app/sign-in/[[...sign-in]]/page.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "app/sign-up/[[...sign-up]]/page.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "app/workflows/[workflowId]/page.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "app/workflows/[workflowId]/run/page.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "app/workflows/page.tsx",
-      "reason": "Demo media or presentation-only source omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/EndpointsCrawl/EndpointsCrawl.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/EndpointsExtract/EndpointsExtract.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/EndpointsMap/EndpointsMap.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/EndpointsScrape/EndpointsScrape.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/EndpointsSearch/EndpointsSearch.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/Extract/Extract.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/endpoints/Mcp/Mcp.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Background/_svg/CenterStar.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Background/Background.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Background/BackgroundOuterPiece.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Badge/Badge.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Hero.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/Pixi.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/ascii.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/cell.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/cellReveal.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/AnimatedRect.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/BlinkingContainer.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/components/Dot.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/crawl.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/mapping.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/scrape.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Pixi/tickers/features/search.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero/Title/Title.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-flame/data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-flame/HeroFlame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-input/_svg/ArrowRight.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-input/_svg/Globe.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-input/Button/Button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-input/HeroInput.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-input/Tabs/Mobile/Mobile.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-input/Tabs/Tabs.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/_svg/BrowserMobile.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/_svg/BrowserTab.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/Code/Code.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/Code/Loading/_svg/Check.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/Code/Loading/Loading.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/HeroScraping.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/HeroScraping.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/hero-scraping/Tag/Tag.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/step2/Step2Placeholder.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ConfirmDialog.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ConnectionMapperModal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ConnectorsPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/CustomNodes.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
       "path": "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx.backup",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/EdgeLabelModal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ExecutionPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ExportLangGraphButton.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ExtractNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/HTTPNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/LogicNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/MCPPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/NodeArgumentsPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/NodeIOBadges.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/NodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/NoteNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/OutputSchemaPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/PasteConfigModal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/PreviewPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/PublishModal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/SaveAsTemplateModal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/SettingsPanelSimple.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ShareWorkflowModal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/StartNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/TestEndpointPanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/ToolsNodePanel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/UniversalOutputSelector.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/VariableReferencePicker.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/WorkflowBuilder.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/app/(home)/sections/workflow-builder/WorkflowNameEditor.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/FirecrawlIcon/FirecrawlIcon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/hooks/use-dropdown-hover.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/providers/BigIntProvider.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/animated-dot-icon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ascii-background.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ascii-flame-background.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/button/Button.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/button/Button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/buttons/capsule-button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/buttons/fire-action-link.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/buttons/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/buttons/slate-button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/color-styles/color-styles.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/combobox/combobox.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/ascii-explosion.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/auth-pulse/auth-pulse.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/auth-pulse/pulse-data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/core-flame.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/core-flame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/explosion-data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/flame-background.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/Flame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/hero-flame-data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/hero-flame-right.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/hero-flame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/slate-grid/grid-data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/slate-grid/slate-grid.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/subtle-explosion.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/subtle-wave/subtle-wave.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/flame/subtle-wave/wave-data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/effects/subtle-ascii-animation.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ErrorBoundary.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/firecrawl-icon/firecrawl-icon-static.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/firecrawl-icon/firecrawl-icon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/flame-button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/_svg/Logo.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/BrandKit/_svg/Download.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/BrandKit/_svg/Guidelines.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/BrandKit/_svg/Icon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/BrandKit/BrandKit.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Content/Content.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Content/NavItemRow.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Github/Flame/data.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Github/Flame/Flame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Github/Github.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Mobile/Item/Item.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Mobile/Mobile.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Stories/_svg/ArrowUp.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Stories/_svg/Replit.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Stories/Flame/Flame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Stories/Stories.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Dropdown/Wrapper/Wrapper.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Github/_svg/GithubIcon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Github/GithubClient.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/HeaderContext.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Affiliate.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Api.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/ArrowRight.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Careers.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Changelog.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Chats.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Lead.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/MCP.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Platforms.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Research.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Student.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/_svg/Templates.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/Item/_svg/ChevronDown.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/Item/Item.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/Nav.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Nav/RenderEndpointIcon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Toggle/Toggle.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/header/Wrapper/Wrapper.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/hero-flame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/animated-chevron.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/animated-icons.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/arrow-animated.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/check.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/chevron-slide.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/copied.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/copy.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/curve.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/fingerprint-icon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/GitHub.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/Logo.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/openai.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/source-icon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/symbol-colored.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/symbol-white.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/tremor-placeholder.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/wordmark-colored.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/icons/wordmark-white.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/image/getImageSrc.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/image/Image.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/layout/animated-height.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/layout/animated-width.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/layout/curvy-rect-divider.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/layout/curvy-rect.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/loading/Shimmer.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/loading/usage-loading.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/lockBody.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/logo-cloud/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/logo-cloud/logo-cloud.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/logo-cloud/logo-cloud2/Logocloud.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/logo-cloud/logo-cloud2/Logocloud.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/macbook-scroll.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/notifications/slack-notification.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/pixi/Pixi.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/pixi/PixiAssetManager.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/pixi/utils.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/play-tabs.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/Playground/Context/types.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/portal-to-body/PortalToBody.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/preview/json-error-highlighter.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/preview/live-preview-frame.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/preview/multiple-web-browsers.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/preview/web-browser.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/pylon.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/search-params-provider/search-params-provider.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/section-head/SectionHead.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/section-head/SectionHead.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/section-title/SectionTitle.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/tabs/Tabs.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/app-dialog.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/ascii-dot-loader.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/dot-grid-loader.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/empty-state.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/loading-state.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/mobile-sheet.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/ui/stat-card.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/shared/utils/portal-to-body.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/button-demo.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/code.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/image.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/loading-dashboard.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/LoadingDots/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/LoadingDots/LoadingDots.module.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/LoadingDots/LoadingDots.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/magic/animated-shiny-text-lw.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/magic/animated-shiny-text.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/magic/dock.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/magic/dot-pattern.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/magic/gradual-spacing.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/magic/ripple.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/menu-header.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/menu.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/modal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/motion/scramble-text.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/motion/text-reveal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/scrollbar.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/accordion.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/alert-dialog.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/badge.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/button.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/button.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/card.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/checkbox.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/collapsible.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/combobox.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/context-menu.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/data-table.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/dialog.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/dropdown-menu.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/form.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/input.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/label.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/navigation-menu.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/popover.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/progress.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/scroll-area.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/select.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/separator.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/sheet.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/slider.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/switch.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/tabs.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/textarea.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/toast.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/toggle.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/tooltip-radix.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/shadcn/tooltip.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/spinner.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/table.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/ui/video.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "components/workflow/WorkflowExecutionRenderer.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "reason": "Generated build cache omitted."
     },
     {
       "path": "convex/tsconfig.tsbuildinfo",
       "reason": "Generated build cache omitted."
-    },
-    {
-      "path": "hooks/useApprovalWatch.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "hooks/useDebouncedEffect.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "hooks/useWorkflow.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "hooks/useWorkflowExecution.ts",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "public/compressor.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "public/favicon.png",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/additional-styles/custom-fonts.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/additional-styles/theme.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/additional-styles/utility-patterns.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/chrome-bug.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/colors.json",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/components/button.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/components/code.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/components/index.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/animations.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/base/body.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/base/layout.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/base/reset.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/colors.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/fonts.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/typography.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/design-system/utilities.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/fire.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/main.css",
-      "reason": "Frontend, generated output or development automation omitted."
-    },
-    {
-      "path": "styles/workflow-execution.css",
-      "reason": "Frontend, generated output or development automation omitted."
     },
     {
       "path": "tsconfig.tsbuildinfo",
@@ -1959,13 +3429,298 @@
       "utils/init-canvas.ts",
       "utils/on-visible.ts",
       "utils/set-timeout-on-visible.ts",
-      "utils/sleep.ts"
+      "utils/sleep.ts",
+      "app/layout.tsx",
+      "app/page.tsx",
+      "app/sign-in/[[...sign-in]]/page.tsx",
+      "app/sign-up/[[...sign-up]]/page.tsx",
+      "app/workflows/[workflowId]/page.tsx",
+      "app/workflows/[workflowId]/run/page.tsx",
+      "app/workflows/page.tsx",
+      "components/app/(home)/sections/endpoints/EndpointsCrawl/EndpointsCrawl.tsx",
+      "components/app/(home)/sections/endpoints/EndpointsExtract/EndpointsExtract.tsx",
+      "components/app/(home)/sections/endpoints/EndpointsMap/EndpointsMap.tsx",
+      "components/app/(home)/sections/endpoints/EndpointsScrape/EndpointsScrape.tsx",
+      "components/app/(home)/sections/endpoints/EndpointsSearch/EndpointsSearch.tsx",
+      "components/app/(home)/sections/endpoints/Extract/Extract.tsx",
+      "components/app/(home)/sections/endpoints/Mcp/Mcp.tsx",
+      "components/app/(home)/sections/hero/Background/_svg/CenterStar.tsx",
+      "components/app/(home)/sections/hero/Background/Background.tsx",
+      "components/app/(home)/sections/hero/Background/BackgroundOuterPiece.tsx",
+      "components/app/(home)/sections/hero/Badge/Badge.tsx",
+      "components/app/(home)/sections/hero/Hero.tsx",
+      "components/app/(home)/sections/hero/Pixi/Pixi.tsx",
+      "components/app/(home)/sections/hero/Pixi/tickers/ascii.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/cell.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/cellReveal.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/components/AnimatedRect.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/components/BlinkingContainer.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/components/Dot.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/crawl.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/index.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/mapping.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/scrape.ts",
+      "components/app/(home)/sections/hero/Pixi/tickers/features/search.ts",
+      "components/app/(home)/sections/hero/Title/Title.tsx",
+      "components/app/(home)/sections/hero-flame/HeroFlame.tsx",
+      "components/app/(home)/sections/hero-input/_svg/ArrowRight.tsx",
+      "components/app/(home)/sections/hero-input/_svg/Globe.tsx",
+      "components/app/(home)/sections/hero-input/Button/Button.tsx",
+      "components/app/(home)/sections/hero-input/HeroInput.tsx",
+      "components/app/(home)/sections/hero-input/Tabs/Mobile/Mobile.tsx",
+      "components/app/(home)/sections/hero-input/Tabs/Tabs.tsx",
+      "components/app/(home)/sections/hero-scraping/_svg/BrowserMobile.tsx",
+      "components/app/(home)/sections/hero-scraping/_svg/BrowserTab.tsx",
+      "components/app/(home)/sections/hero-scraping/Code/Code.tsx",
+      "components/app/(home)/sections/hero-scraping/Code/Loading/_svg/Check.tsx",
+      "components/app/(home)/sections/hero-scraping/Code/Loading/Loading.tsx",
+      "components/app/(home)/sections/hero-scraping/HeroScraping.css",
+      "components/app/(home)/sections/hero-scraping/HeroScraping.tsx",
+      "components/app/(home)/sections/hero-scraping/Tag/Tag.tsx",
+      "components/app/(home)/sections/step2/Step2Placeholder.tsx",
+      "components/app/(home)/sections/workflow-builder/ConfirmDialog.tsx",
+      "components/app/(home)/sections/workflow-builder/ConnectionMapperModal.tsx",
+      "components/app/(home)/sections/workflow-builder/ConnectorsPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/CustomNodes.tsx",
+      "components/app/(home)/sections/workflow-builder/DataNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/EdgeLabelModal.tsx",
+      "components/app/(home)/sections/workflow-builder/ExecutionPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/ExportLangGraphButton.tsx",
+      "components/app/(home)/sections/workflow-builder/ExtractNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/HTTPNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/LogicNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/MCPPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/NodeArgumentsPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/NodeIOBadges.tsx",
+      "components/app/(home)/sections/workflow-builder/NodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/NoteNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/OutputSchemaPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/PasteConfigModal.tsx",
+      "components/app/(home)/sections/workflow-builder/PreviewPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/PublishModal.tsx",
+      "components/app/(home)/sections/workflow-builder/SaveAsTemplateModal.tsx",
+      "components/app/(home)/sections/workflow-builder/SettingsPanelSimple.tsx",
+      "components/app/(home)/sections/workflow-builder/ShareWorkflowModal.tsx",
+      "components/app/(home)/sections/workflow-builder/StartNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/TestEndpointPanel.tsx",
+      "components/app/(home)/sections/workflow-builder/ToolsNodePanel.tsx",
+      "components/app/(home)/sections/workflow-builder/UniversalOutputSelector.tsx",
+      "components/app/(home)/sections/workflow-builder/VariableReferencePicker.tsx",
+      "components/app/(home)/sections/workflow-builder/WorkflowBuilder.tsx",
+      "components/app/(home)/sections/workflow-builder/WorkflowNameEditor.tsx",
+      "components/FirecrawlIcon/FirecrawlIcon.tsx",
+      "components/hooks/use-dropdown-hover.ts",
+      "components/providers/BigIntProvider.tsx",
+      "components/shared/animated-dot-icon.tsx",
+      "components/shared/ascii-background.tsx",
+      "components/shared/ascii-flame-background.tsx",
+      "components/shared/button/Button.css",
+      "components/shared/button/Button.tsx",
+      "components/shared/buttons/capsule-button.tsx",
+      "components/shared/buttons/fire-action-link.tsx",
+      "components/shared/buttons/index.ts",
+      "components/shared/buttons/slate-button.tsx",
+      "components/shared/color-styles/color-styles.tsx",
+      "components/shared/combobox/combobox.tsx",
+      "components/shared/effects/flame/ascii-explosion.tsx",
+      "components/shared/effects/flame/auth-pulse/auth-pulse.tsx",
+      "components/shared/effects/flame/core-flame.tsx",
+      "components/shared/effects/flame/flame-background.tsx",
+      "components/shared/effects/flame/Flame.tsx",
+      "components/shared/effects/flame/hero-flame-right.tsx",
+      "components/shared/effects/flame/hero-flame.tsx",
+      "components/shared/effects/flame/index.ts",
+      "components/shared/effects/flame/slate-grid/slate-grid.tsx",
+      "components/shared/effects/flame/subtle-explosion.tsx",
+      "components/shared/effects/flame/subtle-wave/subtle-wave.tsx",
+      "components/shared/effects/index.ts",
+      "components/shared/effects/subtle-ascii-animation.tsx",
+      "components/shared/ErrorBoundary.tsx",
+      "components/shared/firecrawl-icon/firecrawl-icon-static.tsx",
+      "components/shared/firecrawl-icon/firecrawl-icon.tsx",
+      "components/shared/flame-button.tsx",
+      "components/shared/header/_svg/Logo.tsx",
+      "components/shared/header/BrandKit/_svg/Download.tsx",
+      "components/shared/header/BrandKit/_svg/Guidelines.tsx",
+      "components/shared/header/BrandKit/_svg/Icon.tsx",
+      "components/shared/header/BrandKit/BrandKit.tsx",
+      "components/shared/header/Dropdown/Content/Content.tsx",
+      "components/shared/header/Dropdown/Content/NavItemRow.tsx",
+      "components/shared/header/Dropdown/Github/Flame/Flame.tsx",
+      "components/shared/header/Dropdown/Github/Github.tsx",
+      "components/shared/header/Dropdown/Mobile/Item/Item.tsx",
+      "components/shared/header/Dropdown/Mobile/Mobile.tsx",
+      "components/shared/header/Dropdown/Stories/_svg/ArrowUp.tsx",
+      "components/shared/header/Dropdown/Stories/_svg/Replit.tsx",
+      "components/shared/header/Dropdown/Stories/Flame/Flame.tsx",
+      "components/shared/header/Dropdown/Stories/Stories.tsx",
+      "components/shared/header/Dropdown/Wrapper/Wrapper.tsx",
+      "components/shared/header/Github/_svg/GithubIcon.tsx",
+      "components/shared/header/Github/GithubClient.tsx",
+      "components/shared/header/HeaderContext.tsx",
+      "components/shared/header/Nav/_svg/Affiliate.tsx",
+      "components/shared/header/Nav/_svg/Api.tsx",
+      "components/shared/header/Nav/_svg/ArrowRight.tsx",
+      "components/shared/header/Nav/_svg/Careers.tsx",
+      "components/shared/header/Nav/_svg/Changelog.tsx",
+      "components/shared/header/Nav/_svg/Chats.tsx",
+      "components/shared/header/Nav/_svg/Lead.tsx",
+      "components/shared/header/Nav/_svg/MCP.tsx",
+      "components/shared/header/Nav/_svg/Platforms.tsx",
+      "components/shared/header/Nav/_svg/Research.tsx",
+      "components/shared/header/Nav/_svg/Student.tsx",
+      "components/shared/header/Nav/_svg/Templates.tsx",
+      "components/shared/header/Nav/Item/_svg/ChevronDown.tsx",
+      "components/shared/header/Nav/Item/Item.tsx",
+      "components/shared/header/Nav/Nav.tsx",
+      "components/shared/header/Nav/RenderEndpointIcon.tsx",
+      "components/shared/header/Toggle/Toggle.tsx",
+      "components/shared/header/Wrapper/Wrapper.tsx",
+      "components/shared/hero-flame.tsx",
+      "components/shared/icons/animated-chevron.tsx",
+      "components/shared/icons/animated-icons.tsx",
+      "components/shared/icons/arrow-animated.tsx",
+      "components/shared/icons/check.tsx",
+      "components/shared/icons/chevron-slide.tsx",
+      "components/shared/icons/copied.tsx",
+      "components/shared/icons/copy.tsx",
+      "components/shared/icons/curve.tsx",
+      "components/shared/icons/fingerprint-icon.tsx",
+      "components/shared/icons/GitHub.tsx",
+      "components/shared/icons/Logo.tsx",
+      "components/shared/icons/openai.tsx",
+      "components/shared/icons/source-icon.tsx",
+      "components/shared/icons/symbol-colored.tsx",
+      "components/shared/icons/symbol-white.tsx",
+      "components/shared/icons/tremor-placeholder.tsx",
+      "components/shared/icons/wordmark-colored.tsx",
+      "components/shared/icons/wordmark-white.tsx",
+      "components/shared/image/getImageSrc.ts",
+      "components/shared/image/Image.tsx",
+      "components/shared/layout/animated-height.tsx",
+      "components/shared/layout/animated-width.tsx",
+      "components/shared/layout/curvy-rect-divider.tsx",
+      "components/shared/layout/curvy-rect.tsx",
+      "components/shared/loading/Shimmer.tsx",
+      "components/shared/loading/usage-loading.tsx",
+      "components/shared/lockBody.tsx",
+      "components/shared/logo-cloud/index.ts",
+      "components/shared/logo-cloud/logo-cloud.tsx",
+      "components/shared/logo-cloud/logo-cloud2/Logocloud.css",
+      "components/shared/logo-cloud/logo-cloud2/Logocloud.tsx",
+      "components/shared/macbook-scroll.tsx",
+      "components/shared/notifications/slack-notification.tsx",
+      "components/shared/pixi/Pixi.tsx",
+      "components/shared/pixi/PixiAssetManager.ts",
+      "components/shared/pixi/utils.ts",
+      "components/shared/play-tabs.tsx",
+      "components/shared/Playground/Context/types.ts",
+      "components/shared/portal-to-body/PortalToBody.tsx",
+      "components/shared/preview/json-error-highlighter.tsx",
+      "components/shared/preview/live-preview-frame.tsx",
+      "components/shared/preview/multiple-web-browsers.tsx",
+      "components/shared/preview/web-browser.tsx",
+      "components/shared/pylon.tsx",
+      "components/shared/search-params-provider/search-params-provider.tsx",
+      "components/shared/section-head/SectionHead.css",
+      "components/shared/section-head/SectionHead.tsx",
+      "components/shared/section-title/SectionTitle.tsx",
+      "components/shared/tabs/Tabs.tsx",
+      "components/shared/ui/app-dialog.tsx",
+      "components/shared/ui/ascii-dot-loader.tsx",
+      "components/shared/ui/dot-grid-loader.tsx",
+      "components/shared/ui/empty-state.tsx",
+      "components/shared/ui/index.ts",
+      "components/shared/ui/loading-state.tsx",
+      "components/shared/ui/mobile-sheet.tsx",
+      "components/shared/ui/stat-card.tsx",
+      "components/shared/utils/portal-to-body.tsx",
+      "components/ui/button-demo.tsx",
+      "components/ui/button.tsx",
+      "components/ui/code.tsx",
+      "components/ui/image.tsx",
+      "components/ui/index.ts",
+      "components/ui/loading-dashboard.tsx",
+      "components/ui/LoadingDots/index.ts",
+      "components/ui/LoadingDots/LoadingDots.module.css",
+      "components/ui/LoadingDots/LoadingDots.tsx",
+      "components/ui/magic/animated-shiny-text-lw.tsx",
+      "components/ui/magic/animated-shiny-text.tsx",
+      "components/ui/magic/dock.tsx",
+      "components/ui/magic/dot-pattern.tsx",
+      "components/ui/magic/gradual-spacing.tsx",
+      "components/ui/magic/ripple.tsx",
+      "components/ui/menu-header.tsx",
+      "components/ui/menu.tsx",
+      "components/ui/modal.tsx",
+      "components/ui/motion/scramble-text.tsx",
+      "components/ui/motion/text-reveal.tsx",
+      "components/ui/scrollbar.tsx",
+      "components/ui/shadcn/accordion.tsx",
+      "components/ui/shadcn/alert-dialog.tsx",
+      "components/ui/shadcn/badge.tsx",
+      "components/ui/shadcn/button.css",
+      "components/ui/shadcn/button.tsx",
+      "components/ui/shadcn/card.tsx",
+      "components/ui/shadcn/checkbox.tsx",
+      "components/ui/shadcn/collapsible.tsx",
+      "components/ui/shadcn/combobox.tsx",
+      "components/ui/shadcn/context-menu.tsx",
+      "components/ui/shadcn/data-table.tsx",
+      "components/ui/shadcn/dialog.tsx",
+      "components/ui/shadcn/dropdown-menu.tsx",
+      "components/ui/shadcn/form.tsx",
+      "components/ui/shadcn/input.tsx",
+      "components/ui/shadcn/label.tsx",
+      "components/ui/shadcn/navigation-menu.tsx",
+      "components/ui/shadcn/popover.tsx",
+      "components/ui/shadcn/progress.tsx",
+      "components/ui/shadcn/scroll-area.tsx",
+      "components/ui/shadcn/select.tsx",
+      "components/ui/shadcn/separator.tsx",
+      "components/ui/shadcn/sheet.tsx",
+      "components/ui/shadcn/slider.tsx",
+      "components/ui/shadcn/switch.tsx",
+      "components/ui/shadcn/tabs.tsx",
+      "components/ui/shadcn/textarea.tsx",
+      "components/ui/shadcn/toast.tsx",
+      "components/ui/shadcn/toggle.tsx",
+      "components/ui/shadcn/tooltip-radix.tsx",
+      "components/ui/shadcn/tooltip.tsx",
+      "components/ui/spinner.tsx",
+      "components/ui/table.tsx",
+      "components/ui/video.tsx",
+      "components/workflow/WorkflowExecutionRenderer.tsx",
+      "hooks/useApprovalWatch.ts",
+      "hooks/useDebouncedEffect.ts",
+      "hooks/useWorkflow.ts",
+      "hooks/useWorkflowExecution.ts",
+      "styles/additional-styles/custom-fonts.css",
+      "styles/additional-styles/theme.css",
+      "styles/additional-styles/utility-patterns.css",
+      "styles/chrome-bug.css",
+      "styles/components/button.css",
+      "styles/components/code.css",
+      "styles/components/index.css",
+      "styles/design-system/animations.css",
+      "styles/design-system/base/body.css",
+      "styles/design-system/base/layout.css",
+      "styles/design-system/base/reset.css",
+      "styles/design-system/colors.css",
+      "styles/design-system/fonts.css",
+      "styles/design-system/typography.css",
+      "styles/design-system/utilities.css",
+      "styles/fire.css",
+      "styles/main.css",
+      "styles/workflow-execution.css"
     ],
     "environment": [
       "ABSOLUTE_MAX",
       "ANTHROPIC_API_KEY",
       "ARCADE_API_KEY",
+      "BASE_SRC",
       "E2B_API_KEY",
+      "ENV_VAR",
       "FIRECRAWL_API_KEY",
       "GROQ_API_KEY",
       "MAX_SCRIPT_LENGTH",
@@ -1988,5 +3743,26 @@
     "plain_python_units_checked": 0
   },
   "category": "agents",
-  "purpose": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps."
+  "purpose": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps.",
+  "ui_entries": [
+    {
+      "path": "package.json",
+      "kind": "npm",
+      "script": "dev"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

@@ -93,14 +93,18 @@
       "upstream_sha256": "9bc0c2ce5c11ad942b335126546f392202f511e65d94cf5da9f41cd1ad57d29e",
       "local_sha256": "9bc0c2ce5c11ad942b335126546f392202f511e65d94cf5da9f41cd1ad57d29e",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "src/ui/ui_components.py",
       "path": "src/ui/ui_components.py",
-      "reason": "UI subtree omitted; AI services remain."
+      "upstream_sha256": "ebe43feca3594d8408df8f77fe58665d803af2ffbe67e81eaa5997d2927af84e",
+      "local_sha256": "ebe43feca3594d8408df8f77fe58665d803af2ffbe67e81eaa5997d2927af84e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -512,6 +516,83 @@
         "syntax_error": null
       },
       {
+        "path": "src/ui/ui_components.py",
+        "imports": [
+          "re",
+          "src",
+          "streamlit",
+          "typing"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "display_meeting_header",
+            "line": 8,
+            "kind": "FunctionDef",
+            "doc": "Display the main meeting header with key metrics."
+          },
+          {
+            "name": "display_meeting_summary",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": "Display the generated meeting summary with clear formatting."
+          },
+          {
+            "name": "display_speaker_analysis",
+            "line": 87,
+            "kind": "FunctionDef",
+            "doc": "Display speaker information and what they said."
+          },
+          {
+            "name": "display_action_items",
+            "line": 118,
+            "kind": "FunctionDef",
+            "doc": "Display action items organized by assignee with clean, elegant styling."
+          },
+          {
+            "name": "display_meeting_transcript",
+            "line": 185,
+            "kind": "FunctionDef",
+            "doc": "Display the meeting transcript with enhanced formatting."
+          }
+        ],
+        "calls": [
+          ".append",
+          ".join",
+          ".strip",
+          "by_person.items",
+          "details.append",
+          "enhanced_summary.split",
+          "enumerate",
+          "item.priority.title",
+          "len",
+          "line.startswith",
+          "line.strip",
+          "processed_lines.append",
+          "processed_sections.append",
+          "re.escape",
+          "re.sub",
+          "section.split",
+          "section.strip",
+          "segment.text.split",
+          "set",
+          "st.caption",
+          "st.checkbox",
+          "st.columns",
+          "st.expander",
+          "st.info",
+          "st.markdown",
+          "st.metric",
+          "st.write",
+          "sum",
+          "unassigned.append"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
         "path": "cli.py",
         "imports": [
           "argparse",
@@ -610,7 +691,7 @@
     "dependencies_installed": false,
     "deployed": false,
     "syntax_errors": 0,
-    "plain_python_units_checked": 6
+    "plain_python_units_checked": 7
   },
   "category": "voice",
   "purpose": "Convert multilingual meeting audio into English notes and assigned action items.",
@@ -622,5 +703,25 @@
         "Added a size-bounded headless meeting-processing CLI with structured JSON output."
       ]
     }
-  ]
+  ],
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

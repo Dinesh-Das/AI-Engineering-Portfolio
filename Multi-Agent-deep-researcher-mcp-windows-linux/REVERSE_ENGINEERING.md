@@ -14,12 +14,12 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [agents.py](agents.py) | get_llm_client, LinkUpSearchInput, LinkUpSearchTool, create_research_crew, run_research | crewai, dotenv, linkup, os, pydantic, typing |
-| [app.py](app.py) | reset_chat | UI reference |
+| [app.py](app.py) | reset_chat | UI surface |
 | [server.py](server.py) | crew_research | agents, asyncio, mcp |
 
 ## Function and class walkthrough
@@ -33,6 +33,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [agents.py](agents.py) | 32 | LinkUpSearchTool | ClassDef |
 | [agents.py](agents.py) | 58 | create_research_crew | Create and configure the research crew with all agents and tasks |
 | [agents.py](agents.py) | 129 | run_research | Run the research process and return results |
+| [app.py](app.py) | 14 | reset_chat | FunctionDef |
 | [server.py](server.py) | 9 | crew_research | Run CrewAI-based research system for given user query. Can do both standard and deep web search. |
 
 ## Models, dependencies and configuration

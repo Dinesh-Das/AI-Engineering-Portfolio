@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, initialize_codex_project, parse_github_url, clone_repo, validate_owner_repo, parse_docs_by_file_types, create_index, reset_chat | UI reference |
+| [app.py](app.py) | load_llm, initialize_codex_project, parse_github_url, clone_repo, validate_owner_repo, parse_docs_by_file_types, create_index, reset_chat | UI surface |
 | [notebook.ipynb#cell-9](notebook.ipynb#cell-9) | top-level workflow |  |
 | [notebook.ipynb#cell-11](notebook.ipynb#cell-11) | parse_github_url, clone_github_repo, validate_owner_repo, parse_docs_by_file_types, create_index |  |
 | [notebook.ipynb#cell-13](notebook.ipynb#cell-13) | setup_query_engine |  |
@@ -31,6 +31,14 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 31 | load_llm | FunctionDef |
+| [app.py](app.py) | 38 | initialize_codex_project | FunctionDef |
+| [app.py](app.py) | 53 | parse_github_url | Parse the GitHub URL to extract owner and repository name. |
+| [app.py](app.py) | 60 | clone_repo | Clone the GitHub repository. |
+| [app.py](app.py) | 67 | validate_owner_repo | Validate the owner and repository name. |
+| [app.py](app.py) | 72 | parse_docs_by_file_types | Parse documents by file types in the specified directory. |
+| [app.py](app.py) | 91 | create_index | Create a Milvus collection and return a vectorstore index. |
+| [app.py](app.py) | 117 | reset_chat | Reset the chat state. |
 | [notebook.ipynb#cell-11](notebook.ipynb#cell-11) | 1 | parse_github_url | FunctionDef |
 | [notebook.ipynb#cell-11](notebook.ipynb#cell-11) | 6 | clone_github_repo | FunctionDef |
 | [notebook.ipynb#cell-11](notebook.ipynb#cell-11) | 14 | validate_owner_repo | FunctionDef |

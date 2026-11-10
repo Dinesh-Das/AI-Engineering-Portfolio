@@ -132,14 +132,18 @@
       "upstream_sha256": "8a24bc4d9e7de3cb7ccdd0e4ef984081235b55ab6c497038cdfeb9001a2883e5",
       "local_sha256": "8a24bc4d9e7de3cb7ccdd0e4ef984081235b55ab6c497038cdfeb9001a2883e5",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/Journal-of-Biology-and-Nature.pdf",
       "path": "assets/Journal-of-Biology-and-Nature.pdf",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "aa58eb317d7d9b73a530ff1fca16c89be334081430b0d57c064ab45dfe293a3f",
+      "local_sha256": "aa58eb317d7d9b73a530ff1fca16c89be334081430b0d57c064ab45dfe293a3f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -700,5 +704,25 @@
     "plain_python_units_checked": 11
   },
   "category": "structured",
-  "purpose": "Extract scientific figures and produce structured research intelligence."
+  "purpose": "Extract scientific figures and produce structured research intelligence.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

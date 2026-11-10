@@ -29,3 +29,15 @@ No tutorial performance/accuracy claim was reproduced. Deployment guidance recom
 ## Verdict
 
 The source-backed learning collection and documented offline improvements are ready for local study. Real model runs, dependency resolution, hardware compatibility, complete backend extraction from remaining UI-coupled examples and production deployment remain project-specific integration work. See VALIDATION.md for observed checks.
+
+## UI and learning expansion
+
+The authorized UI expansion adds seven independently bundled learning interfaces and restores previously omitted frontend source/assets. The original framework demos remain attributed source references; the new browser checks cover the added local interfaces specifically. The streaming Motia example is incomplete upstream, so its reconstruction is labeled explicitly.
+
+Learning sections are now a validated contract for all 109 catalog projects. Scenario exercises preserve predicted outcomes, observed evidence and next experiments. The four completed OCR folders are linked without source/doc changes and excluded from automatic staging.
+
+The local UI separates provider transport, incremental trace parsing and browser history. Only complete, nonempty final answers enter subsequent model context. Failures, empty answers and interruption remain visible and exportable without being represented as successful context. Generated content is rendered as text. The transport blocks non-loopback endpoints, redirects and ambient proxies and bounds requests, output and active generation count.
+
+Browser checks found a Windows ConnectionAbortedError on cancellation. A regression test reproduced it before the handler was fixed to cover connection-error subclasses. The fixture/provider tests exercise real local HTTP parsing and premature EOF without making live model calls. The browser evidence is fingerprinted against the exact runtime/profile source and is invalidated by subsequent changes.
+
+The standard-library server is deliberately a local learning runtime. Full image decoding, authenticated shared sessions, durable queues, remote-worker cancellation guarantees and public deployment remain production work described in each project's learning guide.

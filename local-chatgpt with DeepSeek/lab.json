@@ -1,0 +1,14 @@
+{
+  "id": "local-chatgpt with DeepSeek",
+  "title": "Local DeepSeek dialogue",
+  "model": "deepseek-r1",
+  "vision": false,
+  "thinking": true,
+  "think": "default",
+  "focus": "History is an explicit input.",
+  "description": "Inspect conversational context, streamed output and the effect of changing one generation setting.",
+  "lesson": "The original app stores a per-session list, calls Ollama synchronously inside an async handler and replays the result. Separate UI state from the bounded provider request and only commit completed turns.",
+  "experiment": "Introduce a fact, ask a follow-up, then repeat the follow-up in another tab. Confirm context continuity within one tab and isolation across tabs.",
+  "starter": "For this conversation, the fictional project code is MAPLE-17. What evidence would you need to verify that code outside this conversation?",
+  "pitfall": "A fluent follow-up can come from supplied history rather than persistent memory. Interrupted or failed turns should not silently become successful history."
+}

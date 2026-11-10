@@ -14,11 +14,11 @@ authenticated turn -> retrieve scoped history/facts -> select context under budg
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | initialize_session_state, check_api_keys, StreamlitResearchAssistant, create_research_assistant, process_uploaded_document, display_citations_dropdown, display_sidebar_document_processing, display_main_chat_interface, display_initialization_message, main, initialize, query | UI reference |
+| [app.py](app.py) | initialize_session_state, check_api_keys, StreamlitResearchAssistant, create_research_assistant, process_uploaded_document, display_citations_dropdown, display_sidebar_document_processing, display_main_chat_interface, display_initialization_message, main, initialize, query | UI surface |
 | [src/config/config_loader.py](src/config/config_loader.py) | ConfigLoader, load_agents_config, load_tasks_config, get_agent_config, get_task_config | os, pathlib, typing, yaml |
 | [src/document_processing/doc_parser.py](src/document_processing/doc_parser.py) | TensorLakeClient, list_uploaded_files, verify_file_uploaded, upload, parse_structured, get_result | dotenv, json, os, tensorlake, typing |
 | [src/generation/generation.py](src/generation/generation.py) | StructuredResponseGen, generate | json, openai, os, typing |
@@ -42,6 +42,18 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 72 | initialize_session_state | FunctionDef |
+| [app.py](app.py) | 91 | check_api_keys | FunctionDef |
+| [app.py](app.py) | 102 | StreamlitResearchAssistant | ClassDef |
+| [app.py](app.py) | 144 | create_research_assistant | FunctionDef |
+| [app.py](app.py) | 154 | process_uploaded_document | FunctionDef |
+| [app.py](app.py) | 236 | display_citations_dropdown | FunctionDef |
+| [app.py](app.py) | 554 | display_sidebar_document_processing | FunctionDef |
+| [app.py](app.py) | 609 | display_main_chat_interface | FunctionDef |
+| [app.py](app.py) | 669 | display_initialization_message | FunctionDef |
+| [app.py](app.py) | 672 | main | FunctionDef |
+| [app.py](app.py) | 109 | initialize | FunctionDef |
+| [app.py](app.py) | 127 | query | FunctionDef |
 | [src/config/config_loader.py](src/config/config_loader.py) | 6 | ConfigLoader | Utility class for loading YAML configuration files |
 | [src/config/config_loader.py](src/config/config_loader.py) | 16 | load_agents_config | Load agents configuration from YAML file |
 | [src/config/config_loader.py](src/config/config_loader.py) | 21 | load_tasks_config | Load tasks configuration from YAML file |

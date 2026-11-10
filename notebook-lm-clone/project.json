@@ -236,18 +236,27 @@
       "upstream_sha256": "df41f11e75f68634d48c5160d5f3603efa66ce9d1e844bc2e4b298853765ec67",
       "local_sha256": "df41f11e75f68634d48c5160d5f3603efa66ce9d1e844bc2e4b298853765ec67",
       "changes": []
-    }
-  ],
-  "omitted": [
-    {
-      "path": "assets/app-UI.png",
-      "reason": "Screenshots and promotional assets omitted."
     },
     {
+      "upstream_path": "assets/app-UI.png",
+      "path": "assets/app-UI.png",
+      "upstream_sha256": "45b89b391055c9c4ef3e5ea0d91a1ea77f9a5db6182c92d423e255b0dc7d9055",
+      "local_sha256": "45b89b391055c9c4ef3e5ea0d91a1ea77f9a5db6182c92d423e255b0dc7d9055",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/flow-diagram.jpg",
       "path": "assets/flow-diagram.jpg",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "e220215433e5fa000c68510e0865d7df0ed2e5af947009bd8534f4088f9ffb2f",
+      "local_sha256": "e220215433e5fa000c68510e0865d7df0ed2e5af947009bd8534f4088f9ffb2f",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -2271,5 +2280,25 @@
     "plain_python_units_checked": 30
   },
   "category": "rag",
-  "purpose": "Build a document-grounded notebook backend with citations, memory and audio output."
+  "purpose": "Build a document-grounded notebook backend with citations, memory and audio output.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

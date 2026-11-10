@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, reset_chat, display_pdf, initialize_workflow, run_workflow | UI reference |
+| [app.py](app.py) | load_llm, reset_chat, display_pdf, initialize_workflow, run_workflow | UI surface |
 | [workflow.py](workflow.py) | RetrieveEvent, WebSearchEvent, QueryEvent, CorrectiveRAGWorkflow, retrieve, eval_relevance, web_search, query_result | dotenv, llama_index, os, relevance_policy, typing |
 | [relevance_policy.py](relevance_policy.py) | is_relevant_grade, needs_web_search |  |
 
@@ -28,6 +28,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 49 | load_llm | FunctionDef |
+| [app.py](app.py) | 53 | reset_chat | FunctionDef |
+| [app.py](app.py) | 57 | display_pdf | FunctionDef |
+| [app.py](app.py) | 71 | initialize_workflow | FunctionDef |
+| [app.py](app.py) | 101 | run_workflow | AsyncFunctionDef |
 | [workflow.py](workflow.py) | 30 | RetrieveEvent | Retrieve event (gets retrieved nodes). |
 | [workflow.py](workflow.py) | 37 | WebSearchEvent | Web search event. |
 | [workflow.py](workflow.py) | 43 | QueryEvent | Query event. Queries given relevant text and search text. |

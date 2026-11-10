@@ -14,12 +14,12 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | search_web, run_workflow, main | UI reference |
-| [demo.ipynb#cell-2](demo.ipynb#cell-2) | search_web, run_workflow | UI reference |
+| [app.py](app.py) | search_web, run_workflow, main | UI surface |
+| [demo.ipynb#cell-2](demo.ipynb#cell-2) | search_web, run_workflow | UI surface |
 | [openai_swarm_demo.py](openai_swarm_demo.py) | transfer_to_agent_b | dotenv, swarm |
 
 ## Function and class walkthrough
@@ -28,6 +28,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 16 | search_web | FunctionDef |
+| [app.py](app.py) | 73 | run_workflow | FunctionDef |
+| [app.py](app.py) | 100 | main | FunctionDef |
+| [demo.ipynb#cell-2](demo.ipynb#cell-2) | 16 | search_web | FunctionDef |
+| [demo.ipynb#cell-2](demo.ipynb#cell-2) | 73 | run_workflow | FunctionDef |
 | [openai_swarm_demo.py](openai_swarm_demo.py) | 9 | transfer_to_agent_b | FunctionDef |
 
 ## Models, dependencies and configuration

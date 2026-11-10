@@ -12,22 +12,36 @@
       "changes": [
         "Preserved upstream README separately from the local learning guide."
       ]
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/cursor-chat-agent.png",
       "path": "assets/cursor-chat-agent.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "4680153d998dbceea900cd5741aab8829a3e1b28a482fdd147d732ed87271ea3",
+      "local_sha256": "4680153d998dbceea900cd5741aab8829a3e1b28a482fdd147d732ed87271ea3",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "assets/cursor-mcp-settings.png",
       "path": "assets/cursor-mcp-settings.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "d7fd575f24e71ebf6fcbea39f572a65632d79f192e26aeca659e0a4172ddec59",
+      "local_sha256": "d7fd575f24e71ebf6fcbea39f572a65632d79f192e26aeca659e0a4172ddec59",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "assets/mindsdb-mcp-listed.png",
       "path": "assets/mindsdb-mcp-listed.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "fd1cd159d0e77331e586b3e221b20a45fdfa16456dcd9888532fcbff2eae6438",
+      "local_sha256": "fd1cd159d0e77331e586b3e221b20a45fdfa16456dcd9888532fcbff2eae6438",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [],
     "manifests": [],
@@ -49,5 +63,20 @@
     "plain_python_units_checked": 0
   },
   "category": "recipe",
-  "purpose": "Understand federated data access through a MindsDB MCP integration."
+  "purpose": "Understand federated data access through a MindsDB MCP integration.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

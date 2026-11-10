@@ -16,3 +16,12 @@
 - [Docker build best practices](https://docs.docker.com/build/building/best-practices/): minimal builds, explicit working directories and non-root runtime users.
 
 These references support the collection tooling and proposed boundaries. They do not validate every upstream SDK version. Provider/model compatibility must be checked against the chosen project's own resolved dependency set and actual integration tests.
+
+## UI expansion references
+
+- [Ollama chat API](https://docs.ollama.com/api/chat): REST message payloads and streamed NDJSON responses.
+- [Ollama thinking](https://docs.ollama.com/capabilities/thinking): native thinking/content channels and model-specific thinking modes. Displayed traces remain generated output, not correctness evidence.
+- [Ollama vision](https://docs.ollama.com/capabilities/vision): base64 image data for REST requests, distinct from SDK file-path convenience.
+- [Playwright library](https://playwright.dev/docs/library): isolated browser contexts, explicit lifecycle and local UI verification.
+
+The new learning interfaces use these contracts while retaining the original framework-specific demos. The streaming-ai-chatbot upstream README describes three Motia step files that are absent from the pinned Git tree; its local learning app is explicitly reconstructed, not described as recovered source.

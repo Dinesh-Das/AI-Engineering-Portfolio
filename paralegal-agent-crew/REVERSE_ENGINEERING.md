@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat, display_pdf, render_logs, load_and_split_pdf, initialize_workflow, run_workflow, cleanup_resources | UI reference |
+| [app.py](app.py) | reset_chat, display_pdf, render_logs, load_and_split_pdf, initialize_workflow, run_workflow, cleanup_resources | UI surface |
 | [config/settings.py](config/settings.py) | Settings, Config | os, pathlib, pydantic_settings |
 | [examples/test.py](examples/test.py) | get_citations, print_citations, main, print_detailed_results, test_retrieval | asyncio, config, loguru, os, pathlib, pypdf, src, sys |
 | [src/embeddings/embed_data.py](src/embeddings/embed_data.py) | batch_iterate, EmbedData, generate_embedding, embed, get_query_embedding, binary_quantize_query, clear | config, loguru, numpy, sentence_transformers, typing |
@@ -35,6 +35,13 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 51 | reset_chat | Reset chat history and clear memory. |
+| [app.py](app.py) | 57 | display_pdf | Display PDF preview in sidebar. |
+| [app.py](app.py) | 69 | render_logs | Render logs with ANSI colors and emojis nicely in Streamlit |
+| [app.py](app.py) | 84 | load_and_split_pdf | FunctionDef |
+| [app.py](app.py) | 107 | initialize_workflow | FunctionDef |
+| [app.py](app.py) | 183 | run_workflow | AsyncFunctionDef |
+| [app.py](app.py) | 195 | cleanup_resources | Cleanup vector database and other resources. |
 | [config/settings.py](config/settings.py) | 5 | Settings | ClassDef |
 | [config/settings.py](config/settings.py) | 34 | Config | ClassDef |
 | [examples/test.py](examples/test.py) | 19 | get_citations | Return retrieval results as simple citation dicts. |

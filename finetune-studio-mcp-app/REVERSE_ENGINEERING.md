@@ -4,7 +4,7 @@
 
 Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs.
 
-The TypeScript server validates training configuration and orchestrates remote jobs; the studio widget is outside scope.
+The TypeScript server validates training configuration and orchestrates remote jobs; the restored studio widget consumes those typed tools.
 
 Conceptual data flow (an architectural interpretation of the source, not a recorded execution trace):
 
@@ -14,7 +14,7 @@ validated versioned dataset -> baseline evaluation -> isolated training job -> c
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
@@ -22,6 +22,7 @@ The following table is extracted from this project's actual retained files. Note
 | [server.ts](server.ts) | backend/configuration source; inspect directly | .ts |
 | [src/mcp-app.ts](src/mcp-app.ts) | backend/configuration source; inspect directly | .ts |
 | [vite.config.ts](vite.config.ts) | backend/configuration source; inspect directly | .ts |
+| [widget.html](widget.html) | backend/configuration source; inspect directly | .html |
 
 ## Function and class walkthrough
 
@@ -56,6 +57,11 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/autotrain-setup.png](assets/autotrain-setup.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/claude-connector.png](assets/claude-connector.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/hardware.png](assets/hardware.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/manufact-env.png](assets/manufact-env.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/studio.png](assets/studio.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

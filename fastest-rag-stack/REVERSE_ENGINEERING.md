@@ -14,11 +14,11 @@ versioned embedding model -> candidate index -> top-N candidates -> optional pre
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat, display_pdf | UI reference |
+| [app.py](app.py) | reset_chat, display_pdf | UI surface |
 | [notebook.ipynb#cell-5](notebook.ipynb#cell-5) | create_index |  |
 | [notebook.ipynb#cell-6](notebook.ipynb#cell-6) | top-level workflow |  |
 | [notebook.ipynb#cell-13](notebook.ipynb#cell-13) | top-level workflow |  |
@@ -31,6 +31,8 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 28 | reset_chat | FunctionDef |
+| [app.py](app.py) | 34 | display_pdf | FunctionDef |
 | [notebook.ipynb#cell-5](notebook.ipynb#cell-5) | 8 | create_index | FunctionDef |
 | [rag_code.py](rag_code.py) | 11 | batch_iterate | Yield successive n-sized chunks from lst. |
 | [rag_code.py](rag_code.py) | 16 | EmbedData | ClassDef |

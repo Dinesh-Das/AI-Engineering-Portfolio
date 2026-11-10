@@ -105,18 +105,27 @@
       "upstream_sha256": "8d7c5667ed022e5fefbeb7f94a0439364a5226ff5a28cf164888cfad86b56528",
       "local_sha256": "8d7c5667ed022e5fefbeb7f94a0439364a5226ff5a28cf164888cfad86b56528",
       "changes": []
-    }
-  ],
-  "omitted": [
-    {
-      "path": "assets/mcp-use.png",
-      "reason": "Screenshots and promotional assets omitted."
     },
     {
+      "upstream_path": "assets/mcp-use.png",
+      "path": "assets/mcp-use.png",
+      "upstream_sha256": "1f2b97abbc773586c01c34d52b99c86d7d6b24fcff393fb55be760b7d188c822",
+      "local_sha256": "1f2b97abbc773586c01c34d52b99c86d7d6b24fcff393fb55be760b7d188c822",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/stagehand.png",
       "path": "assets/stagehand.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "7e82e1d4347410eb8610bd05a502b5f7ab9ae61bb862f851a87ee0fcae7573db",
+      "local_sha256": "7e82e1d4347410eb8610bd05a502b5f7ab9ae61bb862f851a87ee0fcae7573db",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -591,5 +600,25 @@
     "plain_python_units_checked": 6
   },
   "category": "agents",
-  "purpose": "Connect a local agent to browser-automation tools through MCP."
+  "purpose": "Connect a local agent to browser-automation tools through MCP.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

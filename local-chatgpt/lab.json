@@ -1,0 +1,13 @@
+{
+  "id": "local-chatgpt",
+  "title": "Local Llama vision",
+  "model": "llama3.2-vision",
+  "vision": true,
+  "thinking": false,
+  "focus": "An image changes the context.",
+  "description": "Follow an image and a question from a browser turn to a local multimodal model.",
+  "lesson": "The original Chainlit app passes image paths to the SDK, waits for a complete answer, then replays characters. This version sends bounded base64 images through the REST API and displays tokens as they arrive.",
+  "experiment": "Ask about one image, then repeat the question without the image in a fresh conversation. Compare supported visual details and first-token latency.",
+  "starter": "Describe the main objects in the attached image. Separate what is visible from what you are inferring.",
+  "pitfall": "Character-by-character display after a blocking model call is not provider streaming. Local deployment also needs image/context memory budgets."
+}

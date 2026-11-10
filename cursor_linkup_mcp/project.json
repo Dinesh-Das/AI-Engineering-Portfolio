@@ -67,14 +67,18 @@
       "upstream_sha256": "8850962833e25bd250af2ee5297dc68f92bf306ca2ec50e7b1d7061b9084a596",
       "local_sha256": "8850962833e25bd250af2ee5297dc68f92bf306ca2ec50e7b1d7061b9084a596",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/thumbnail.png",
       "path": "assets/thumbnail.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "b00745b159b9d6fad6bda2b8df3a1b354cf9b4717264cea3662ba2b3a55f8d61",
+      "local_sha256": "b00745b159b9d6fad6bda2b8df3a1b354cf9b4717264cea3662ba2b3a55f8d61",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -257,5 +261,20 @@
     "plain_python_units_checked": 2
   },
   "category": "mcp",
-  "purpose": "Expose deep web search and document retrieval to an MCP client."
+  "purpose": "Expose deep web search and document retrieval to an MCP client.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

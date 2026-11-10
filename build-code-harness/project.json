@@ -266,5 +266,20 @@
     "plain_python_units_checked": 3
   },
   "category": "agents",
-  "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval."
+  "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

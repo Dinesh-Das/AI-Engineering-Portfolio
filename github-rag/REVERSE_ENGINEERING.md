@@ -14,18 +14,28 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | GitHubRAGError, validate_github_url, get_repo_name, reset_chat, process_with_gitingets, create_query_engine | UI reference |
-| [app_local.py](app_local.py) | load_llm, reset_chat, process_with_gitingets | UI reference |
+| [app.py](app.py) | GitHubRAGError, validate_github_url, get_repo_name, reset_chat, process_with_gitingets, create_query_engine | UI surface |
+| [app_local.py](app_local.py) | load_llm, reset_chat, process_with_gitingets | UI surface |
 
 ## Function and class walkthrough
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [app.py](app.py) | 25 | GitHubRAGError | Custom exception for GitHub RAG application errors |
+| [app.py](app.py) | 29 | validate_github_url | Validate GitHub repository URL |
+| [app.py](app.py) | 33 | get_repo_name | Extract repository name from URL |
+| [app.py](app.py) | 40 | reset_chat | Reset chat session and clean up resources |
+| [app.py](app.py) | 51 | process_with_gitingets | Process GitHub repository using gitingest |
+| [app.py](app.py) | 62 | create_query_engine | Create and configure query engine |
+| [app_local.py](app_local.py) | 27 | load_llm | FunctionDef |
+| [app_local.py](app_local.py) | 31 | reset_chat | FunctionDef |
+| [app_local.py](app_local.py) | 36 | process_with_gitingets | FunctionDef |
 
 ## Models, dependencies and configuration
 

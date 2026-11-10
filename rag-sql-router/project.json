@@ -81,14 +81,18 @@
       "upstream_sha256": "3c2f11835c4e1668b31454579ed2ef099242940fac9477c9a3da723e7c150a4e",
       "local_sha256": "3c2f11835c4e1668b31454579ed2ef099242940fac9477c9a3da723e7c150a4e",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": ".streamlit/config.toml",
       "path": ".streamlit/config.toml",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "3120867e149adbc149a2504003fe8ff957d8197aefdd91d19a17560009ef4567",
+      "local_sha256": "3120867e149adbc149a2504003fe8ff957d8197aefdd91d19a17560009ef4567",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -884,7 +888,9 @@
     "notebooks": [
       "notebook.ipynb"
     ],
-    "other_code": [],
+    "other_code": [
+      "workflow_all_flows.html"
+    ],
     "environment": [
       "CODEX_API_KEY"
     ],
@@ -938,5 +944,25 @@
     "plain_python_units_checked": 17
   },
   "category": "rag",
-  "purpose": "Route questions between document retrieval and structured SQL tools."
+  "purpose": "Route questions between document retrieval and structured SQL tools.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

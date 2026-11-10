@@ -39,18 +39,27 @@
       "changes": [
         "Preserved upstream README separately from the local learning guide."
       ]
-    }
-  ],
-  "omitted": [
-    {
-      "path": "assets/brightdata.png",
-      "reason": "Screenshots and promotional assets omitted."
     },
     {
+      "upstream_path": "assets/brightdata.png",
+      "path": "assets/brightdata.png",
+      "upstream_sha256": "a64fdbf590645408a66a9e91127677fa21d7efc8edce50865d5bc1672777a2e4",
+      "local_sha256": "a64fdbf590645408a66a9e91127677fa21d7efc8edce50865d5bc1672777a2e4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/crewai.png",
       "path": "assets/crewai.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "48f46992f82ed327f7b523f58f87025a286137e768cf69fc4bc52a75d529fae5",
+      "local_sha256": "48f46992f82ed327f7b523f58f87025a286137e768cf69fc4bc52a75d529fae5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -267,5 +276,25 @@
     "plain_python_units_checked": 2
   },
   "category": "agents",
-  "purpose": "Analyze channel or niche trends from collected video transcripts."
+  "purpose": "Analyze channel or niche trends from collected video transcripts.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

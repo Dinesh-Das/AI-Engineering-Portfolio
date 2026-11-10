@@ -14,11 +14,11 @@ versioned embedding model -> candidate index -> top-N candidates -> optional pre
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat, display_pdf | UI reference |
+| [app.py](app.py) | reset_chat, display_pdf | UI surface |
 | [rag.py](rag.py) | batch_iterate, EmbedData, MilvusVDB_BQ, Retriever, RAG, generate_embedding, embed, define_client, create_collection, ingest_data, search, generate_context | llama_index, logging, numpy, os, pymilvus |
 
 ## Function and class walkthrough
@@ -27,6 +27,8 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 27 | reset_chat | FunctionDef |
+| [app.py](app.py) | 32 | display_pdf | FunctionDef |
 | [rag.py](rag.py) | 12 | batch_iterate | Yield successive n-sized chunks from list. |
 | [rag.py](rag.py) | 17 | EmbedData | ClassDef |
 | [rag.py](rag.py) | 60 | MilvusVDB_BQ | ClassDef |

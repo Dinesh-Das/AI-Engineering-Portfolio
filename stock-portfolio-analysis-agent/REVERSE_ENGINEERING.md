@@ -14,12 +14,32 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [agent/main.py](agent/main.py) | AgentState, crewai_agent, main, event_generator, emit_event | ag_ui, asyncio, copilotkit, fastapi, os, stock_analysis, typing, uuid |
 | [agent/stock_analysis.py](agent/stock_analysis.py) | StockAnalysisFlow, convert_tool_call, start, chat, simulation, allocation, insights, end | ag_ui, asyncio, crewai, datetime, dotenv, json, litellm, numpy |
+| [frontend/next-env.d.ts](frontend/next-env.d.ts) | backend/configuration source; inspect directly | .ts |
+| [frontend/next.config.ts](frontend/next.config.ts) | backend/configuration source; inspect directly | .ts |
+| [frontend/pnpm-lock.yaml](frontend/pnpm-lock.yaml) | backend/configuration source; inspect directly | .yaml |
+| [frontend/postcss.config.mjs](frontend/postcss.config.mjs) | backend/configuration source; inspect directly | .mjs |
+| [frontend/src/app/api/copilotkit/route.ts](frontend/src/app/api/copilotkit/route.ts) | backend/configuration source; inspect directly | .ts |
+| [frontend/src/app/components/cash-panel.tsx](frontend/src/app/components/cash-panel.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/chart-components/allocation-table.tsx](frontend/src/app/components/chart-components/allocation-table.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/chart-components/bar-chart.tsx](frontend/src/app/components/chart-components/bar-chart.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/chart-components/insight-card.tsx](frontend/src/app/components/chart-components/insight-card.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/chart-components/line-chart.tsx](frontend/src/app/components/chart-components/line-chart.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/chart-components/section-title.tsx](frontend/src/app/components/chart-components/section-title.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/component-tree.tsx](frontend/src/app/components/component-tree.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/generative-canvas.tsx](frontend/src/app/components/generative-canvas.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/prompt-panel.tsx](frontend/src/app/components/prompt-panel.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/theme-provider.tsx](frontend/src/app/components/theme-provider.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/components/tool-logs.tsx](frontend/src/app/components/tool-logs.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/globals.css](frontend/src/app/globals.css) | backend/configuration source; inspect directly | .css |
+| [frontend/src/app/layout.tsx](frontend/src/app/layout.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/app/page.tsx](frontend/src/app/page.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/src/utils/prompts.ts](frontend/src/utils/prompts.ts) | backend/configuration source; inspect directly | .ts |
 
 ## Function and class walkthrough
 
@@ -49,10 +69,11 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 Detected import roots: `ag_ui`, `asyncio`, `copilotkit`, `crewai`, `datetime`, `dotenv`, `fastapi`, `json`, `litellm`, `numpy`, `openai`, `os`, `pandas`, `prompts`, `pydantic`, `stock_analysis`, `typing`, `uuid`, `uvicorn`, `yfinance`
 
-Retained dependency manifests: [pyproject.toml](pyproject.toml)
+Retained dependency manifests: [pyproject.toml](pyproject.toml), [frontend/package.json](frontend/package.json)
 
 Environment names detected from code/configuration:
 
+- `NEXT_PUBLIC_CREWAI_URL`
 - `OPENAI_API_KEY`
 - `PORT`
 
@@ -65,6 +86,30 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [frontend/.env.example](frontend/.env.example) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/next-env.d.ts](frontend/next-env.d.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/next.config.ts](frontend/next.config.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/package.json](frontend/package.json) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/pnpm-lock.yaml](frontend/pnpm-lock.yaml) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/postcss.config.mjs](frontend/postcss.config.mjs) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/api/copilotkit/route.ts](frontend/src/app/api/copilotkit/route.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/cash-panel.tsx](frontend/src/app/components/cash-panel.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/chart-components/allocation-table.tsx](frontend/src/app/components/chart-components/allocation-table.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/chart-components/bar-chart.tsx](frontend/src/app/components/chart-components/bar-chart.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/chart-components/insight-card.tsx](frontend/src/app/components/chart-components/insight-card.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/chart-components/line-chart.tsx](frontend/src/app/components/chart-components/line-chart.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/chart-components/section-title.tsx](frontend/src/app/components/chart-components/section-title.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/component-tree.tsx](frontend/src/app/components/component-tree.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/generative-canvas.tsx](frontend/src/app/components/generative-canvas.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/prompt-panel.tsx](frontend/src/app/components/prompt-panel.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/theme-provider.tsx](frontend/src/app/components/theme-provider.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/components/tool-logs.tsx](frontend/src/app/components/tool-logs.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/favicon.ico](frontend/src/app/favicon.ico) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/globals.css](frontend/src/app/globals.css) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/layout.tsx](frontend/src/app/layout.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/app/page.tsx](frontend/src/app/page.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/src/utils/prompts.ts](frontend/src/utils/prompts.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/tsconfig.json](frontend/tsconfig.json) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

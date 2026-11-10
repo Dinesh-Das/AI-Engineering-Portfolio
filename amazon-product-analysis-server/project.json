@@ -84,62 +84,126 @@
       "upstream_sha256": "1dbdd24c9b465f66a8fd93c510cd26c12fa5bc3dcc981b112abaac941ea8f1d8",
       "local_sha256": "1dbdd24c9b465f66a8fd93c510cd26c12fa5bc3dcc981b112abaac941ea8f1d8",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/CustomerReviews.tsx",
       "path": "resources/amazon-product-analysis/components/CustomerReviews.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "427ec8844e407a3bded475a4d838aa4df73a0e7187b6e14cd83523e1983399bd",
+      "local_sha256": "427ec8844e407a3bded475a4d838aa4df73a0e7187b6e14cd83523e1983399bd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/DeliveryInfo.tsx",
       "path": "resources/amazon-product-analysis/components/DeliveryInfo.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "9c35067b6e75e997b33bbe01bfa395697b0921a0df2a9a7fac0e8fe9fcb42270",
+      "local_sha256": "9c35067b6e75e997b33bbe01bfa395697b0921a0df2a9a7fac0e8fe9fcb42270",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/Features.tsx",
       "path": "resources/amazon-product-analysis/components/Features.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "faae0e61fcc7658b0638dcf729b91f251d3389b38416f65a260afc358b1936b0",
+      "local_sha256": "faae0e61fcc7658b0638dcf729b91f251d3389b38416f65a260afc358b1936b0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/ImageGallery.tsx",
       "path": "resources/amazon-product-analysis/components/ImageGallery.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "455de8b69280a65631c8b8c79a74f56067cdf50c1a06c515e4e395fe226c4d62",
+      "local_sha256": "455de8b69280a65631c8b8c79a74f56067cdf50c1a06c515e4e395fe226c4d62",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/index.ts",
       "path": "resources/amazon-product-analysis/components/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "403d1a8518c56ffd6c9aabd102304e54ef416e72987153255ec91e4c4373d6b5",
+      "local_sha256": "403d1a8518c56ffd6c9aabd102304e54ef416e72987153255ec91e4c4373d6b5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/PricingDeal.tsx",
       "path": "resources/amazon-product-analysis/components/PricingDeal.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "55a84fa3ccb224e3413501f305da714f62dccb9872cf4f2ffb0a423b9cfb1e75",
+      "local_sha256": "55a84fa3ccb224e3413501f305da714f62dccb9872cf4f2ffb0a423b9cfb1e75",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/ProductCard.tsx",
       "path": "resources/amazon-product-analysis/components/ProductCard.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "69512e65e8f289b945726e154359739265799438357aa53c5875a69b86f88954",
+      "local_sha256": "69512e65e8f289b945726e154359739265799438357aa53c5875a69b86f88954",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/ProductSpecs.tsx",
       "path": "resources/amazon-product-analysis/components/ProductSpecs.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "a46d6e1ea88c42e3720b7d479e828fd90ecd0e93f7d45d62857b965069c799b8",
+      "local_sha256": "a46d6e1ea88c42e3720b7d479e828fd90ecd0e93f7d45d62857b965069c799b8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/components/SellerInfo.tsx",
       "path": "resources/amazon-product-analysis/components/SellerInfo.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "6077fd90838f8b097f4fff1061fe899e2f0252dd2a937525740cc5b71be20f79",
+      "local_sha256": "6077fd90838f8b097f4fff1061fe899e2f0252dd2a937525740cc5b71be20f79",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/hooks/index.ts",
       "path": "resources/amazon-product-analysis/hooks/index.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "0e5d406beb0cac2eaff3ece7d49c98e56f49bdafeb51fca2b94cdfae5918a643",
+      "local_sha256": "0e5d406beb0cac2eaff3ece7d49c98e56f49bdafeb51fca2b94cdfae5918a643",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/hooks/useProductAnalysis.ts",
       "path": "resources/amazon-product-analysis/hooks/useProductAnalysis.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "3ae53510bc422c9944b8cb5f32b0c13f8d1b70282d12ea19085765189beb8833",
+      "local_sha256": "3ae53510bc422c9944b8cb5f32b0c13f8d1b70282d12ea19085765189beb8833",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/amazon-product-analysis/widget.tsx",
       "path": "resources/amazon-product-analysis/widget.tsx",
-      "reason": "Demo media or presentation-only source omitted."
+      "upstream_sha256": "b7f1715d7769336818d0f9520bbf4ada6e690f9a3c7e227c78073342049dabbd",
+      "local_sha256": "b7f1715d7769336818d0f9520bbf4ada6e690f9a3c7e227c78073342049dabbd",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "resources/styles.css",
       "path": "resources/styles.css",
-      "reason": "Demo media or presentation-only source omitted."
+      "upstream_sha256": "fb2e6f72c38aeef78a510f8511948acd23282cfaeda4c55d300a454a7bd4373e",
+      "local_sha256": "fb2e6f72c38aeef78a510f8511948acd23282cfaeda4c55d300a454a7bd4373e",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [],
     "manifests": [
@@ -151,10 +215,24 @@
       "resources/amazon-product-analysis/brightdata-tools.ts",
       "resources/amazon-product-analysis/server.ts",
       "resources/amazon-product-analysis/types.ts",
-      "resources/amazon-product-analysis/utils.ts"
+      "resources/amazon-product-analysis/utils.ts",
+      "resources/amazon-product-analysis/components/CustomerReviews.tsx",
+      "resources/amazon-product-analysis/components/DeliveryInfo.tsx",
+      "resources/amazon-product-analysis/components/Features.tsx",
+      "resources/amazon-product-analysis/components/ImageGallery.tsx",
+      "resources/amazon-product-analysis/components/index.ts",
+      "resources/amazon-product-analysis/components/PricingDeal.tsx",
+      "resources/amazon-product-analysis/components/ProductCard.tsx",
+      "resources/amazon-product-analysis/components/ProductSpecs.tsx",
+      "resources/amazon-product-analysis/components/SellerInfo.tsx",
+      "resources/amazon-product-analysis/hooks/index.ts",
+      "resources/amazon-product-analysis/hooks/useProductAnalysis.ts",
+      "resources/amazon-product-analysis/widget.tsx",
+      "resources/styles.css"
     ],
     "environment": [
       "BRIGHTDATA_API_KEY",
+      "MAX_FEATURES_DISPLAY",
       "MCP_URL",
       "OPENAI_API_KEY"
     ],
@@ -173,5 +251,26 @@
     "plain_python_units_checked": 0
   },
   "category": "mcp",
-  "purpose": "Expose product research and comparison through an MCP server."
+  "purpose": "Expose product research and comparison through an MCP server.",
+  "ui_entries": [
+    {
+      "path": "package.json",
+      "kind": "npm",
+      "script": "dev"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

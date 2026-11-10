@@ -14,11 +14,11 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, reset_chat, display_pdf | UI reference |
+| [app.py](app.py) | load_llm, reset_chat, display_pdf | UI surface |
 | [workflow.py](workflow.py) | RetrieverEvent, RAGWorkflow, main, ingest, retrieve, synthesize, query, ingest_documents | asyncio, llama_index, nest_asyncio, os |
 
 ## Function and class walkthrough
@@ -27,6 +27,9 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 34 | load_llm | FunctionDef |
+| [app.py](app.py) | 40 | reset_chat | FunctionDef |
+| [app.py](app.py) | 45 | display_pdf | FunctionDef |
 | [workflow.py](workflow.py) | 11 | RetrieverEvent | Result of running retrieval |
 | [workflow.py](workflow.py) | 15 | RAGWorkflow | ClassDef |
 | [workflow.py](workflow.py) | 83 | main | AsyncFunctionDef |
@@ -61,6 +64,9 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/cerebras.png](assets/cerebras.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/download.png](assets/download.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/llamaindex.png](assets/llamaindex.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

@@ -32,20 +32,30 @@
       "changes": [
         "Preserved upstream README separately from the local learning guide."
       ]
+    },
+    {
+      "upstream_path": "assets/AssemblyAI.png",
+      "path": "assets/AssemblyAI.png",
+      "upstream_sha256": "37f4e665b95bc2d9b53a530338d51dffe42850db1393d5c26a1ebd94d3ed3544",
+      "local_sha256": "37f4e665b95bc2d9b53a530338d51dffe42850db1393d5c26a1ebd94d3ed3544",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/deep-seek.png",
+      "path": "assets/deep-seek.png",
+      "upstream_sha256": "71f6fdc3c979585cff3baaa7a99214ad10790c79b25d1f97629966067d468dc2",
+      "local_sha256": "71f6fdc3c979585cff3baaa7a99214ad10790c79b25d1f97629966067d468dc2",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
-      "path": "assets/AssemblyAI.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/deep-seek.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
       "path": "demo.mp4",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -365,5 +375,25 @@
     "plain_python_units_checked": 2
   },
   "category": "rag",
-  "purpose": "Retrieve answers from transcribed audio with document-style RAG."
+  "purpose": "Retrieve answers from transcribed audio with document-style RAG.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

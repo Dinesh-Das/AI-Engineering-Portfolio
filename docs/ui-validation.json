@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-10",
+  "fixture": true,
+  "live_inference": false,
+  "projects": [
+    {
+      "id": "local-chatgpt",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard",
+        "image-input"
+      ]
+    },
+    {
+      "id": "local-chatgpt with DeepSeek",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "local-chatgpt with Gemma 3",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard",
+        "image-input"
+      ]
+    },
+    {
+      "id": "deepseek-thinking-ui",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "qwen3-thinking-ui",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "gpt-oss-thinking-ui",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "streaming-ai-chatbot",
+      "passed": true,
+      "widths": [
+        320,
+        768,
+        1024,
+        1440
+      ],
+      "accessibility_violations": 0,
+      "cases": [
+        "empty",
+        "text-rendering",
+        "stream-complete",
+        "provider-failure",
+        "empty-final-answer",
+        "cancellation",
+        "history-isolation",
+        "tab-isolation",
+        "export-notes",
+        "clear-conversation",
+        "keyboard"
+      ]
+    }
+  ],
+  "failures": [],
+  "runtime_sha256": "f00f33e42198849dc6c368094c75cc3c6aab4b8dce339dfe5eb3fb21048d4b10"
+}

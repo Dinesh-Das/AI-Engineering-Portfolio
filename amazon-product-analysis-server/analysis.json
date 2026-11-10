@@ -9,10 +9,24 @@
     "resources/amazon-product-analysis/brightdata-tools.ts",
     "resources/amazon-product-analysis/server.ts",
     "resources/amazon-product-analysis/types.ts",
-    "resources/amazon-product-analysis/utils.ts"
+    "resources/amazon-product-analysis/utils.ts",
+    "resources/amazon-product-analysis/components/CustomerReviews.tsx",
+    "resources/amazon-product-analysis/components/DeliveryInfo.tsx",
+    "resources/amazon-product-analysis/components/Features.tsx",
+    "resources/amazon-product-analysis/components/ImageGallery.tsx",
+    "resources/amazon-product-analysis/components/index.ts",
+    "resources/amazon-product-analysis/components/PricingDeal.tsx",
+    "resources/amazon-product-analysis/components/ProductCard.tsx",
+    "resources/amazon-product-analysis/components/ProductSpecs.tsx",
+    "resources/amazon-product-analysis/components/SellerInfo.tsx",
+    "resources/amazon-product-analysis/hooks/index.ts",
+    "resources/amazon-product-analysis/hooks/useProductAnalysis.ts",
+    "resources/amazon-product-analysis/widget.tsx",
+    "resources/styles.css"
   ],
   "environment": [
     "BRIGHTDATA_API_KEY",
+    "MAX_FEATURES_DISPLAY",
     "MCP_URL",
     "OPENAI_API_KEY"
   ],

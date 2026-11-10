@@ -14,11 +14,11 @@ audio stream/upload -> ASR with timestamps -> turn/segment state -> retrieval or
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | get_logo_base64, reset_chat, timestamp_string, display_transcription, display_summary, display_speakers, display_sentiment, display_topics, display_chat, main | UI reference |
+| [app.py](app.py) | get_logo_base64, reset_chat, timestamp_string, display_transcription, display_summary, display_speakers, display_sentiment, display_topics, display_chat, main | UI surface |
 | [server.py](server.py) | transcribe_audio, get_audio_data | assemblyai, dotenv, mcp, os, typing |
 
 ## Function and class walkthrough
@@ -27,6 +27,16 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 439 | get_logo_base64 | Convert logo file to base64 string for embedding |
+| [app.py](app.py) | 452 | reset_chat | Reset chat session |
+| [app.py](app.py) | 457 | timestamp_string | Convert milliseconds to HH:MM:SS format |
+| [app.py](app.py) | 464 | display_transcription | Display transcription with timestamps |
+| [app.py](app.py) | 484 | display_summary | Display summary |
+| [app.py](app.py) | 491 | display_speakers | Display speaker analysis |
+| [app.py](app.py) | 530 | display_sentiment | Display sentiment analysis |
+| [app.py](app.py) | 584 | display_topics | Display topic analysis |
+| [app.py](app.py) | 612 | display_chat | Display chat interface |
+| [app.py](app.py) | 662 | main | FunctionDef |
 | [server.py](server.py) | 21 | transcribe_audio | This MCP tool accepts either a URL or an absolute local path to an audio file, transcribes it |
 | [server.py](server.py) | 45 | get_audio_data | This MCP tool accepts a set of flags and returns a dictionary of features from the last transcript. |
 
@@ -53,6 +63,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/logo.png](assets/logo.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

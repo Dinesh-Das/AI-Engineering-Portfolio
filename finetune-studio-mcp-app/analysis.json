@@ -8,7 +8,8 @@
     "postcss.config.js",
     "server.ts",
     "src/mcp-app.ts",
-    "vite.config.ts"
+    "vite.config.ts",
+    "widget.html"
   ],
   "environment": [
     "AUTOTRAIN_SPACE_NAME",

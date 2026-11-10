@@ -102,14 +102,18 @@
       "upstream_sha256": "ef586e1762f6e0538e907f67ea96d3df20c95fdbbeab5b20534d51f89dcc7381",
       "local_sha256": "ef586e1762f6e0538e907f67ea96d3df20c95fdbbeab5b20534d51f89dcc7381",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/groundx.png",
       "path": "assets/groundx.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "3bd2e5cec56d5e4a361c97670c34e477dc4a263f7467ccaa221814639b92f96d",
+      "local_sha256": "3bd2e5cec56d5e4a361c97670c34e477dc4a263f7467ccaa221814639b92f96d",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -703,5 +707,25 @@
     "plain_python_units_checked": 5
   },
   "category": "structured",
-  "purpose": "Process complex documents and evaluate structured extraction quality."
+  "purpose": "Process complex documents and evaluate structured extraction quality.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

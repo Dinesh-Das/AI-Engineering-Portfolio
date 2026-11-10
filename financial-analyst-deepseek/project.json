@@ -359,5 +359,20 @@
     "plain_python_units_checked": 8
   },
   "category": "agents",
-  "purpose": "Expose stock analysis and generated plots through a local-model MCP workflow."
+  "purpose": "Expose stock analysis and generated plots through a local-model MCP workflow.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

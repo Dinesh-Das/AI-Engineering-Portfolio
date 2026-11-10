@@ -14,11 +14,11 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | top-level workflow | UI reference |
+| [app.py](app.py) | top-level workflow | UI surface |
 | [browserbase.py](browserbase.py) | browserbase | crewai, html2text, os, playwright, time |
 | [kayak.py](kayak.py) | kayak_search | crewai, typing |
 

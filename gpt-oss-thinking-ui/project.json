@@ -1,0 +1,600 @@
+{
+  "id": "gpt-oss-thinking-ui",
+  "upstream_revision": "042aeb5067384981eeba6a07fa882f436bb1660d",
+  "source_url": "https://github.com/patchy631/ai-engineering-hub/tree/042aeb5067384981eeba6a07fa882f436bb1660d/gpt-oss-thinking-ui",
+  "entries": [
+    {
+      "path": "app.py",
+      "kind": "python",
+      "ui": true
+    },
+    {
+      "path": "learning_app.py",
+      "kind": "python",
+      "ui": true
+    }
+  ],
+  "files": [
+    {
+      "upstream_path": "app.py",
+      "path": "app.py",
+      "upstream_sha256": "7196ab94f07d9c626f8826f42680ba66c2f816890bf1a8bf905f6014fe3eb9c4",
+      "local_sha256": "7196ab94f07d9c626f8826f42680ba66c2f816890bf1a8bf905f6014fe3eb9c4",
+      "changes": []
+    },
+    {
+      "upstream_path": "assets/ollama.png",
+      "path": "assets/ollama.png",
+      "upstream_sha256": "9ea09b5b70f15d108443a52adb31833881f5dfb8b168349183d6dc0e25341ee2",
+      "local_sha256": "9ea09b5b70f15d108443a52adb31833881f5dfb8b168349183d6dc0e25341ee2",
+      "changes": []
+    },
+    {
+      "upstream_path": "assets/openai.png",
+      "path": "assets/openai.png",
+      "upstream_sha256": "81d7076b9a7ba590d51215d9f3e9eb2f3ab5bbde8b92bd974bbcd574c59d2c7b",
+      "local_sha256": "81d7076b9a7ba590d51215d9f3e9eb2f3ab5bbde8b92bd974bbcd574c59d2c7b",
+      "changes": []
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "upstream_sha256": "a1567b3a9e7dbf7608b57f878bd97d74a3210380d162686f311a2966303ddd10",
+      "local_sha256": "a1567b3a9e7dbf7608b57f878bd97d74a3210380d162686f311a2966303ddd10",
+      "changes": []
+    },
+    {
+      "upstream_path": "README.md",
+      "path": "UPSTREAM_README.md",
+      "upstream_sha256": "18495b2ba05c78b90ea61a3a5aa7a8216122cd10d4f228500110894ea9d28709",
+      "local_sha256": "18495b2ba05c78b90ea61a3a5aa7a8216122cd10d4f228500110894ea9d28709",
+      "changes": [
+        "Preserved upstream README separately from the local learning guide."
+      ]
+    },
+    {
+      "upstream_path": "uv.lock",
+      "path": "uv.lock",
+      "upstream_sha256": "5594358b010456322db7df6f15fe730323153edfa77c44c2eee88c003233a661",
+      "local_sha256": "5594358b010456322db7df6f15fe730323153edfa77c44c2eee88c003233a661",
+      "changes": []
+    }
+  ],
+  "omitted": [],
+  "analysis": {
+    "units": [
+      {
+        "path": "app.py",
+        "imports": [
+          "base64",
+          "ollama",
+          "re",
+          "streamlit"
+        ],
+        "environment": [],
+        "models": [
+          "gpt-oss:20b"
+        ],
+        "symbols": [
+          {
+            "name": "process_thinking_stream",
+            "line": 9,
+            "kind": "FunctionDef",
+            "doc": "Process streaming response with native thinking support."
+          },
+          {
+            "name": "display_message",
+            "line": 30,
+            "kind": "FunctionDef",
+            "doc": "Display a single message in the chat interface."
+          },
+          {
+            "name": "display_assistant_message",
+            "line": 40,
+            "kind": "FunctionDef",
+            "doc": "Display assistant message with thinking content if present."
+          },
+          {
+            "name": "display_chat_history",
+            "line": 51,
+            "kind": "FunctionDef",
+            "doc": "Display all previous messages in the chat history."
+          },
+          {
+            "name": "get_chat_model",
+            "line": 62,
+            "kind": "FunctionDef",
+            "doc": "Get a cached instance of the chat model."
+          },
+          {
+            "name": "handle_user_input",
+            "line": 71,
+            "kind": "FunctionDef",
+            "doc": "Handle new user input and generate assistant response."
+          },
+          {
+            "name": "main",
+            "line": 93,
+            "kind": "FunctionDef",
+            "doc": "Main function to handle the chat interface and streaming responses."
+          }
+        ],
+        "calls": [
+          ".append",
+          ".decode",
+          ".get",
+          ".read",
+          "base64.b64encode",
+          "chat",
+          "chat_model",
+          "display_assistant_message",
+          "display_chat_history",
+          "display_message",
+          "get_chat_model",
+          "handle_user_input",
+          "main",
+          "message.get",
+          "open",
+          "process_thinking_stream",
+          "st.chat_input",
+          "st.chat_message",
+          "st.expander",
+          "st.markdown",
+          "st.set_page_config",
+          "st.status",
+          "status.update",
+          "thinking_content.strip"
+        ],
+        "findings": [],
+        "ui": true,
+        "syntax_error": null
+      },
+      {
+        "path": "learning_ui/protocol.py",
+        "imports": [
+          "base64",
+          "binascii",
+          "json",
+          "math",
+          "re",
+          "time",
+          "urllib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "NoRedirect",
+            "line": 21,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "local_opener",
+            "line": 26,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "ReasoningSplitter",
+            "line": 31,
+            "kind": "ClassDef",
+            "doc": "Keep partial delimiters between chunks so final-answer text is never dropped."
+          },
+          {
+            "name": "_image",
+            "line": 65,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "validate_request",
+            "line": 79,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "loopback_base",
+            "line": 134,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "stream_ollama",
+            "line": 144,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "redirect_request",
+            "line": 22,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "__init__",
+            "line": 34,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "feed",
+            "line": 38,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "finish",
+            "line": 59,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".encode",
+          ".open",
+          "NoRedirect",
+          "RuntimeError",
+          "ValueError",
+          "_image",
+          "base64.b64decode",
+          "clean.append",
+          "content.strip",
+          "enumerate",
+          "event.get",
+          "events.append",
+          "isinstance",
+          "json.dumps",
+          "json.loads",
+          "len",
+          "line.strip",
+          "local_opener",
+          "loopback_base",
+          "math.isfinite",
+          "message.get",
+          "min",
+          "next",
+          "profile.get",
+          "range",
+          "raw.startswith",
+          "re.fullmatch",
+          "request.get",
+          "response.readline",
+          "self.buffer.endswith",
+          "self.buffer.find",
+          "sum",
+          "time.monotonic",
+          "type",
+          "urllib.parse.urlsplit",
+          "urllib.request.ProxyHandler",
+          "urllib.request.Request",
+          "urllib.request.build_opener",
+          "value.rstrip"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "learning_ui/server.py",
+        "imports": [
+          "argparse",
+          "http",
+          "json",
+          "pathlib",
+          "protocol",
+          "threading",
+          "time",
+          "urllib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [
+          {
+            "name": "fixture_chunks",
+            "line": 16,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "make_server",
+            "line": 31,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "main",
+            "line": 165,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "Handler",
+            "line": 35,
+            "kind": "ClassDef",
+            "doc": ""
+          },
+          {
+            "name": "log_message",
+            "line": 36,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "headers_for",
+            "line": 39,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "json_response",
+            "line": 50,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "local_origin",
+            "line": 55,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "do_GET",
+            "line": 63,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "event",
+            "line": 87,
+            "kind": "FunctionDef",
+            "doc": ""
+          },
+          {
+            "name": "do_POST",
+            "line": 91,
+            "kind": "FunctionDef",
+            "doc": ""
+          }
+        ],
+        "calls": [
+          ".encode",
+          ".open",
+          ".read_bytes",
+          ".with_name",
+          "Path",
+          "ReasoningSplitter",
+          "RuntimeError",
+          "ThreadingHTTPServer",
+          "ValueError",
+          "argparse.ArgumentParser",
+          "args.profile.read_text",
+          "chunk.get",
+          "chunks.close",
+          "data.get",
+          "fixture_chunks",
+          "int",
+          "isinstance",
+          "json.dumps",
+          "json.loads",
+          "len",
+          "local_opener",
+          "loopback_base",
+          "main",
+          "make_server",
+          "message.get",
+          "parser.add_argument",
+          "parser.error",
+          "parser.feed",
+          "parser.finish",
+          "parser.parse_args",
+          "print",
+          "profile.get",
+          "range",
+          "request.get",
+          "response.read",
+          "round",
+          "self.connection.settimeout",
+          "self.end_headers",
+          "self.event",
+          "self.headers.get",
+          "self.headers.get_content_type",
+          "self.headers_for",
+          "self.json_response",
+          "self.local_origin",
+          "self.rfile.read",
+          "self.send_header",
+          "self.send_response",
+          "self.wfile.flush",
+          "self.wfile.write",
+          "server.serve_forever",
+          "server.server_close",
+          "slots.acquire",
+          "slots.release",
+          "str",
+          "stream_ollama",
+          "threading.BoundedSemaphore",
+          "time.monotonic",
+          "time.sleep",
+          "updates.append",
+          "validate_request"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "learning_ui/__init__.py",
+        "imports": [],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      },
+      {
+        "path": "learning_app.py",
+        "imports": [
+          "learning_ui",
+          "pathlib"
+        ],
+        "environment": [],
+        "models": [],
+        "symbols": [],
+        "calls": [
+          ".with_name",
+          "Path",
+          "main"
+        ],
+        "findings": [],
+        "ui": false,
+        "syntax_error": null
+      }
+    ],
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "notebooks": [],
+    "other_code": [
+      "learning_ui/static/app.js",
+      "learning_ui/static/index.html",
+      "learning_ui/static/style.css"
+    ],
+    "environment": [],
+    "imports": [
+      "argparse",
+      "base64",
+      "binascii",
+      "http",
+      "json",
+      "learning_ui",
+      "math",
+      "ollama",
+      "pathlib",
+      "protocol",
+      "re",
+      "streamlit",
+      "threading",
+      "time",
+      "urllib"
+    ],
+    "models": [
+      "gpt-oss:20b"
+    ],
+    "entries": [
+      {
+        "path": "app.py",
+        "kind": "python",
+        "ui": true
+      },
+      {
+        "path": "learning_app.py",
+        "kind": "python",
+        "ui": true
+      }
+    ],
+    "findings": [],
+    "syntax_errors": []
+  },
+  "validation": {
+    "source_inspection": true,
+    "live_models": false,
+    "dependencies_installed": false,
+    "deployed": false,
+    "syntax_errors": 0,
+    "plain_python_units_checked": 5
+  },
+  "local_additions": [
+    {
+      "path": "learning_ui/protocol.py",
+      "local_sha256": "e9d68d562a9906683b142bfaa45dd21c79919ad7f554ed50f1a6236f35e811ff",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "learning_ui/server.py",
+      "local_sha256": "f3b6dc567123d421f7bfa056ac03dbc48f6620f68e4ed05da325b55b0b680688",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "learning_ui/__init__.py",
+      "local_sha256": "c9b44efc3d5a080ed7ae7719e54662b25ad5f8b9ad63427702e29b211e16c342",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "learning_ui/static/app.js",
+      "local_sha256": "12c6bef51db0b48a201ecf087b14394790fdff951c688c8d37cb61927a2fd643",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "learning_ui/static/index.html",
+      "local_sha256": "a2659be109c471f2b60d745842fc2528170e6436de307a65c9402d7207e2890d",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "learning_ui/static/style.css",
+      "local_sha256": "038a9c69354b4f753772933a9e728ec953eb75fe24c079ecf961ca9e00dd3f3f",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "lab.json",
+      "local_sha256": "0b96944c7166354a61548f701611bbeb48f581d3a9d4f0a05ac8dd0276f37571",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    },
+    {
+      "path": "learning_app.py",
+      "local_sha256": "a49ad2b562ab06f3cf2c0650f5f4237166a0634fc2c91ad28ff77155b26b5bbb",
+      "changes": [
+        "Added an independently runnable learning UI: bounded local transport, incremental streams and project-specific experiments."
+      ]
+    }
+  ],
+  "learning_ui": {
+    "entry": "learning_app.py",
+    "profile": "lab.json",
+    "runtime": "python-stdlib",
+    "fixture_supported": true,
+    "live_inference_verified": false
+  },
+  "ui_entries": [
+    {
+      "path": "learning_app.py",
+      "kind": "learning-ui"
+    },
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  },
+  "category": "interfaces",
+  "purpose": "Render native thinking and answer channels incrementally for local GPT-OSS."
+}

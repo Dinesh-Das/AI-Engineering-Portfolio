@@ -14,11 +14,11 @@ authenticated client -> tool discovery -> argument validation -> authorized oper
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [mcp_streamlit_app.py](mcp_streamlit_app.py) | reset_chat, create_mcp_client, create_agent, run_agent_query | UI reference |
+| [mcp_streamlit_app.py](mcp_streamlit_app.py) | reset_chat, create_mcp_client, create_agent, run_agent_query | UI surface |
 | [server.py](server.py) | main | asyncio, dotenv, langchain_ollama, langchain_openai, mcp_use, os, warnings |
 
 ## Function and class walkthrough
@@ -27,6 +27,10 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [mcp_streamlit_app.py](mcp_streamlit_app.py) | 38 | reset_chat | FunctionDef |
+| [mcp_streamlit_app.py](mcp_streamlit_app.py) | 43 | create_mcp_client | Create MCPClient from configuration dictionary. |
+| [mcp_streamlit_app.py](mcp_streamlit_app.py) | 52 | create_agent | Create MCPAgent with the client. |
+| [mcp_streamlit_app.py](mcp_streamlit_app.py) | 65 | run_agent_query | Run a query through the MCP agent. |
 | [server.py](server.py) | 13 | main | AsyncFunctionDef |
 
 ## Models, dependencies and configuration

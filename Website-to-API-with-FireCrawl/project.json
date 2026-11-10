@@ -39,14 +39,18 @@
       "changes": [
         "Preserved upstream README separately from the local learning guide."
       ]
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/firecrawl.png",
       "path": "assets/firecrawl.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "83d35d119d170b8abbcb0c03120157185997cd23eaeb55bbbdc6371e03b760fe",
+      "local_sha256": "83d35d119d170b8abbcb0c03120157185997cd23eaeb55bbbdc6371e03b760fe",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -407,5 +411,25 @@
     "plain_python_units_checked": 10
   },
   "category": "structured",
-  "purpose": "Convert web content into schema-constrained extraction results."
+  "purpose": "Convert web content into schema-constrained extraction results.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

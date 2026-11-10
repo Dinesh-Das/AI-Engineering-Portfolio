@@ -14,12 +14,21 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
 | [order_db.py](order_db.py) | TrackingEvent, Order, OrderManagementAPI, latest_event, get_order | dataclasses, datetime, pathlib, sqlite3 |
 | [support_flow.py](support_flow.py) | extract_order_id, SupportState, SupportFlow, handle_order_lookup, handle_return_policy, handle_research | crewai, crewai_tools, dotenv, logging, order_db, os, re, uuid |
+| [frontend/app/api/copilotkit/route.ts](frontend/app/api/copilotkit/route.ts) | backend/configuration source; inspect directly | .ts |
+| [frontend/app/chat.tsx](frontend/app/chat.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/app/globals.css](frontend/app/globals.css) | backend/configuration source; inspect directly | .css |
+| [frontend/app/layout.tsx](frontend/app/layout.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/app/page.tsx](frontend/app/page.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/app/providers.tsx](frontend/app/providers.tsx) | backend/configuration source; inspect directly | .tsx |
+| [frontend/eslint.config.mjs](frontend/eslint.config.mjs) | backend/configuration source; inspect directly | .mjs |
+| [frontend/next.config.ts](frontend/next.config.ts) | backend/configuration source; inspect directly | .ts |
+| [frontend/postcss.config.mjs](frontend/postcss.config.mjs) | backend/configuration source; inspect directly | .mjs |
 
 ## Function and class walkthrough
 
@@ -48,10 +57,11 @@ Detected model literals (not a guarantee that a provider still serves them):
 
 Detected import roots: `ag_ui_crewai`, `crewai`, `crewai_tools`, `dataclasses`, `datetime`, `dotenv`, `fastapi`, `logging`, `order_db`, `os`, `pathlib`, `re`, `sqlite3`, `support_flow`, `uuid`
 
-Retained dependency manifests: [pyproject.toml](pyproject.toml)
+Retained dependency manifests: [pyproject.toml](pyproject.toml), [frontend/package.json](frontend/package.json)
 
 Environment names detected from code/configuration:
 
+- `CREWAI_BACKEND_URL`
 - `EXA_API_KEY`
 - `OPENROUTER_API_KEY`
 
@@ -65,6 +75,25 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [frontend/.gitignore](frontend/.gitignore) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/AGENTS.upstream.md](frontend/AGENTS.upstream.md) | Quarantined imported agent instructions as reference documentation. |
+| [frontend/AGENTS.upstream.md](frontend/AGENTS.upstream.md) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/api/copilotkit/route.ts](frontend/app/api/copilotkit/route.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/chat.tsx](frontend/app/chat.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/favicon.ico](frontend/app/favicon.ico) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/globals.css](frontend/app/globals.css) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/layout.tsx](frontend/app/layout.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/page.tsx](frontend/app/page.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/app/providers.tsx](frontend/app/providers.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/CLAUDE.upstream.md](frontend/CLAUDE.upstream.md) | Quarantined imported agent instructions as reference documentation. |
+| [frontend/CLAUDE.upstream.md](frontend/CLAUDE.upstream.md) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/eslint.config.mjs](frontend/eslint.config.mjs) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/next.config.ts](frontend/next.config.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/package-lock.json](frontend/package-lock.json) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/package.json](frontend/package.json) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/postcss.config.mjs](frontend/postcss.config.mjs) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/README.md](frontend/README.md) | Restored frontend source/asset after UI scope was authorized. |
+| [frontend/tsconfig.json](frontend/tsconfig.json) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

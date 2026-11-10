@@ -24,7 +24,7 @@
   "omitted": [
     {
       "path": "modernbert-demo.mp4",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -161,5 +161,20 @@
     "plain_python_units_checked": 1
   },
   "category": "rag",
-  "purpose": "Explore ModernBERT embeddings in a local RAG application."
+  "purpose": "Explore ModernBERT embeddings in a local RAG application.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

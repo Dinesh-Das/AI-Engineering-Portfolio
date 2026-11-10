@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inference notebook</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#composer">Skip to prompt</a>
+  <header class="masthead">
+    <a href="/" class="wordmark" aria-label="Inference notebook home">inference <span>/</span> notebook</a>
+    <span id="mode" class="mode">Connecting</span>
+  </header>
+  <main class="workspace">
+    <section class="conversation" aria-labelledby="title">
+      <div class="heading-row"><div><p id="eyebrow" class="eyebrow">AI engineering / learning lab</p><h1 id="title">Inference notebook</h1></div><span class="edition">FIELD NOTES<br>01 — LOCAL</span></div>
+      <p id="description" class="description">A small workspace for understanding how inference behaves.</p>
+      <div class="toolbar"><span id="connection">Checking local model server…</span><div><button id="export" class="text-button" type="button">Export notes</button><button id="clear" class="text-button" type="button">Clear conversation</button></div></div>
+      <div id="transcript" class="transcript" aria-label="Conversation">
+        <div id="empty" class="empty"><span class="empty-index">01</span><h2>Start with a question.</h2><p>Make a prediction, run the experiment, then compare the result with your expectation.</p><button id="starter" class="starter" type="button">Try the project experiment <span aria-hidden="true">↗</span></button></div>
+      </div>
+      <form id="composer" class="composer">
+        <label for="prompt">Your prompt</label>
+        <textarea id="prompt" name="prompt" rows="3" maxlength="12000" placeholder="Ask a question or test a hypothesis…" required></textarea>
+        <div id="attachment-row" class="attachment-row" hidden><label for="image">Add an image <span>(PNG, JPEG or WebP, up to 3 MiB)</span></label><input id="image" type="file" accept="image/png,image/jpeg,image/webp"><span id="attachment-status"></span></div>
+        <div class="composer-bottom"><span id="status" role="status" aria-live="polite">Ready for your first experiment.</span><div><button id="stop" type="button" class="secondary" hidden>Stop generation</button><button id="send" type="submit" class="primary">Send prompt <span aria-hidden="true">↗</span></button></div></div>
+        <p class="hint">Enter to send · Shift + Enter for a new line. Chats stay in this tab until you clear or reload it.</p>
+      </form>
+    </section>
+    <aside class="desk" aria-label="Experiment desk">
+      <details open id="desk-details"><summary>Experiment desk <span aria-hidden="true">＋</span></summary>
+        <div class="desk-content"><p class="eyebrow">What you are learning</p><h2 id="lesson-title">Follow the request.</h2><p id="lesson"></p>
+          <div class="experiment"><h3>A controlled experiment</h3><p id="experiment"></p></div>
+          <fieldset id="settings"><legend>Inference settings</legend>
+            <label for="model">Model name</label><input id="model" type="text" maxlength="160" required><p class="hint">Use a model already installed in Ollama. Nothing is downloaded automatically.</p>
+            <label for="temperature">Temperature <output id="temperature-value" for="temperature">0.3</output></label><input id="temperature" type="range" min="0" max="2" step="0.1" value="0.3">
+            <label for="budget">Maximum output tokens</label><input id="budget" type="number" min="1" max="2048" value="512">
+            <div id="thinking-setting" hidden><label for="think">Model thinking mode</label><select id="think"><option value="default">Model default</option><option value="true">Enabled</option><option value="false">Disabled</option><option value="low">Low</option><option value="medium">Medium</option><option value="high">High</option></select><p class="hint">Supported modes depend on your installed model.</p></div>
+            <label for="system">System instruction</label><textarea id="system" rows="3" maxlength="4000">You are a helpful assistant. Say when the available evidence is insufficient.</textarea>
+            <div id="fixture-setting" hidden><label for="scenario">Fixture scenario</label><select id="scenario"><option value="success">Completed response</option><option value="failure">Provider failure</option><option value="slow">Slow stream / cancellation</option><option value="empty">No final answer</option></select></div>
+          </fieldset>
+          <section class="observations" aria-labelledby="observed"><h3 id="observed">Latest observation</h3><dl><div><dt>First token</dt><dd id="first-token">—</dd></div><div><dt>Completion</dt><dd id="elapsed">—</dd></div><div><dt>Output tokens</dt><dd id="tokens">—</dd></div></dl><p class="hint" id="measurement-note">Timing is observed behavior. Correctness needs a separate check.</p></section>
+          <label for="prediction">Your prediction and learning notes</label><textarea id="prediction" rows="4" placeholder="I expect… I observed… Next I will change…"></textarea>
+        </div>
+      </details>
+    </aside>
+  </main>
+  <footer>Keep the evidence. Change one variable. <span>No analytics · no automatic chat persistence</span></footer>
+</body>
+</html>

@@ -7,7 +7,7 @@ Every top-level directory and every README project link is accounted for. Tree-o
 | Build-reasoning-model | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | Colivara-deepseek-website-RAG | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | DeepSeek-finetuning | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| LaTeX-OCR-with-Llama | excluded-ocr | User already completed OCR projects. | True |
+| LaTeX-OCR-with-Llama | completed-local | Completed OCR work moved here by the user; existing source and learning material preserved. | True |
 | Multi-Agent-deep-researcher-mcp-windows-linux | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | Website-to-API-with-FireCrawl | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | Youtube-trend-analysis | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
@@ -43,7 +43,7 @@ Every top-level directory and every README project link is accounted for. Tree-o
 | cursor_linkup_mcp | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | database-memory-agent | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | False |
 | deepseek-multimodal-RAG | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| deepseek-thinking-ui | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
+| deepseek-thinking-ui | included | UI category authorized in the user follow-up; learning remains required. | True |
 | deploy-agentic-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | document-chat-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | documentation-writer-flow | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
@@ -55,9 +55,9 @@ Every top-level directory and every README project link is accounted for. Tree-o
 | finetune-studio-mcp-app | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | False |
 | firecrawl-agent | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | flight-booking-crew | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | False |
-| gemma3-ocr | excluded-ocr | User already completed OCR projects. | True |
+| gemma3-ocr | completed-local | Completed OCR work moved here by the user; existing source and learning material preserved. | True |
 | github-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| gpt-oss-thinking-ui | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
+| gpt-oss-thinking-ui | included | UI category authorized in the user follow-up; learning remains required. | True |
 | gpt-oss-vs-qwen3 | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | graphiti-mcp | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | groundX-doc-pipeline | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
@@ -70,11 +70,11 @@ Every top-level directory and every README project link is accounted for. Tree-o
 | knowledge distillation | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | False |
 | llama-4-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | llama-4_vs_deepseek-r1 | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| llama-ocr | excluded-ocr | User already completed OCR projects. | True |
+| llama-ocr | completed-local | Completed OCR work moved here by the user; existing source and learning material preserved. | True |
 | llamaindex-mcp | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| local-chatgpt | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
-| local-chatgpt with DeepSeek | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
-| local-chatgpt with Gemma 3 | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
+| local-chatgpt | included | UI category authorized in the user follow-up; learning remains required. | True |
+| local-chatgpt with DeepSeek | included | UI category authorized in the user follow-up; learning remains required. | True |
+| local-chatgpt with Gemma 3 | included | UI category authorized in the user follow-up; learning remains required. | True |
 | mcp-agentic-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | mcp-agentic-rag-firecrawl | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | mcp-video-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
@@ -96,8 +96,8 @@ Every top-level directory and every README project link is accounted for. Tree-o
 | paralegal-agent-crew | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | parlant-conversational-agent | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | pixeltable-mcp | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| qwen-2.5VL-ocr | excluded-ocr | User already completed OCR projects. | True |
-| qwen3-thinking-ui | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
+| qwen-2.5VL-ocr | completed-local | Completed OCR work moved here by the user; existing source and learning material preserved. | True |
+| qwen3-thinking-ui | included | UI category authorized in the user follow-up; learning remains required. | True |
 | qwen3_vs_deepseek-r1 | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | rag-sql-router | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | rag-voice-agent | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
@@ -113,7 +113,7 @@ Every top-level directory and every README project link is accounted for. Tree-o
 | sonnet4-vs-qwen3-coder | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | stagehand x mcp-use | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | stock-portfolio-analysis-agent | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
-| streaming-ai-chatbot | excluded-ui | Upstream Chat Interfaces & UI category; excluded by user request. | True |
+| streaming-ai-chatbot | included | UI category authorized in the user follow-up; learning remains required. | True |
 | train-yolo26-object-detection | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | False |
 | trustworthy-rag | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |
 | ultimate-ai-assitant-using-mcp | included | AI algorithm, workflow, backend, model evaluation or infrastructure learning project. | True |

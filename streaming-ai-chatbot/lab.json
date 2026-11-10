@@ -1,0 +1,13 @@
+{
+  "id": "streaming-ai-chatbot",
+  "title": "Streaming state notebook",
+  "model": "llama3.2",
+  "vision": false,
+  "thinking": false,
+  "focus": "Accepted is not completed.",
+  "description": "Trace an event-driven response through accepted, streaming, completed, failed and interrupted states.",
+  "lesson": "The pinned Motia project references three step files that are absent from its source tree. This explicitly reconstructed local Ollama version makes the same lifecycle observable without claiming that missing Motia implementation was recovered.",
+  "experiment": "Run the completed, failed and slow-stream fixtures. Confirm that only a completed answer enters the next request's history, then inspect the exported notes for each terminal status.",
+  "starter": "Explain how accepted, streaming and completed states differ in an asynchronous AI request. Include one failure example.",
+  "pitfall": "HTTP acceptance does not prove model success. Retries need stable turn IDs in a shared production service; browser memory is intentionally only a local learning implementation."
+}

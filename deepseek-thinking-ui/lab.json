@@ -1,0 +1,14 @@
+{
+  "id": "deepseek-thinking-ui",
+  "title": "DeepSeek stream inspector",
+  "model": "deepseek-r1",
+  "vision": false,
+  "thinking": true,
+  "think": "default",
+  "focus": "A chunk is not a sentence.",
+  "description": "Separate model-provided trace from the final answer without losing data at streaming boundaries.",
+  "lesson": "The upstream two-pass parser assumes think tags align with chunks and can drop answer text following a closing tag in the same chunk. The incremental parser retains partial delimiters and preserves the entire final answer.",
+  "experiment": "Replay a trace and final answer with the closing tag split at every character boundary. Compare the assembled answer with the unsplit reference, then test a real arithmetic answer separately.",
+  "starter": "A notebook costs 37 rupees and a pen costs 19 rupees. What is the total for three notebooks and two pens? Give the final total clearly.",
+  "pitfall": "The displayed trace is generated model output, not a correctness proof. Stream segmentation must not change the final answer."
+}

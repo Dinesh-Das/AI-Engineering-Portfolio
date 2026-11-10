@@ -14,18 +14,25 @@ source -> parse/chunk -> embed -> persistent index -> retrieve -> optional reran
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, reset_chat, display_excel | UI reference |
-| [rag_excel.py](rag_excel.py) | load_llm, reset_chat, display_excel | UI reference |
+| [app.py](app.py) | load_llm, reset_chat, display_excel | UI surface |
+| [rag_excel.py](rag_excel.py) | load_llm, reset_chat, display_excel | UI surface |
 
 ## Function and class walkthrough
 
 Read the entry/orchestrator first, then the tool/retrieval/model adapter, then the output validator. Trace one input through the definitions below: identify accepted inputs, persistent state, external calls and returned artifacts. The complete symbol inventory is in analysis.json; line numbers refer to the imported version.
 
-There are no non-UI Python function/class definitions to map. Inspect the configuration, TypeScript sources or integration guide above.
+| Source | Line in file/cell | Symbol | Contract clue |
+| --- | --- | --- | --- |
+| [app.py](app.py) | 26 | load_llm | FunctionDef |
+| [app.py](app.py) | 30 | reset_chat | FunctionDef |
+| [app.py](app.py) | 36 | display_excel | FunctionDef |
+| [rag_excel.py](rag_excel.py) | 26 | load_llm | FunctionDef |
+| [rag_excel.py](rag_excel.py) | 30 | reset_chat | FunctionDef |
+| [rag_excel.py](rag_excel.py) | 36 | display_excel | FunctionDef |
 
 ## Models, dependencies and configuration
 

@@ -4,7 +4,7 @@
 
 Connect a local agent to browser-automation tools through MCP.
 
-Stagehand tools are exposed through a server and consumed by an mcp-use agent wrapper; presentation tracking is excluded.
+Stagehand tools are exposed through a server and consumed by an mcp-use agent wrapper; presentation tracking displays those tool lifecycle events.
 
 Conceptual data flow (an architectural interpretation of the source, not a recorded execution trace):
 
@@ -14,16 +14,16 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [agent_wrapper.py](agent_wrapper.py) | ToolCallTracker, StreamingMCPAgent, create_streaming_agent, start_tool_call, complete_tool_call, get_current_tools, get_completed_tools, next_step, run_with_streaming, patched_run | UI reference |
-| [app.py](app.py) | handle_activate, handle_clear, run_agent, run_streaming_agent | UI reference |
+| [agent_wrapper.py](agent_wrapper.py) | ToolCallTracker, StreamingMCPAgent, create_streaming_agent, start_tool_call, complete_tool_call, get_current_tools, get_completed_tools, next_step, run_with_streaming, patched_run | UI surface |
+| [app.py](app.py) | handle_activate, handle_clear, run_agent, run_streaming_agent | UI surface |
 | [server.py](server.py) | main | asyncio, langchain_openai, mcp_use |
 | [stagehand_mcp.py](stagehand_mcp.py) | browser_automation_tool, add_numbers | mcp, stagehand_tool |
 | [stagehand_tool.py](stagehand_tool.py) | browser_automation | asyncio, nest_asyncio, os, stagehand |
-| [styles.py](styles.py) | inject_css | UI reference |
+| [styles.py](styles.py) | inject_css | UI surface |
 
 ## Function and class walkthrough
 
@@ -31,10 +31,25 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [agent_wrapper.py](agent_wrapper.py) | 13 | ToolCallTracker | Tracks tool calls and provides updates for the UI. |
+| [agent_wrapper.py](agent_wrapper.py) | 62 | StreamingMCPAgent | Wrapper around MCPAgent to provide streaming tool updates. |
+| [agent_wrapper.py](agent_wrapper.py) | 153 | create_streaming_agent | Create a streaming wrapper for the given MCPAgent. |
+| [agent_wrapper.py](agent_wrapper.py) | 21 | start_tool_call | Start tracking a new tool call. |
+| [agent_wrapper.py](agent_wrapper.py) | 33 | complete_tool_call | Complete a tool call with result or error. |
+| [agent_wrapper.py](agent_wrapper.py) | 48 | get_current_tools | Get currently executing tools. |
+| [agent_wrapper.py](agent_wrapper.py) | 52 | get_completed_tools | Get completed tools for current step. |
+| [agent_wrapper.py](agent_wrapper.py) | 56 | next_step | Move to next step, clear current tools. |
+| [agent_wrapper.py](agent_wrapper.py) | 81 | run_with_streaming | Run agent with streaming updates to UI containers. |
+| [agent_wrapper.py](agent_wrapper.py) | 75 | patched_run | AsyncFunctionDef |
+| [app.py](app.py) | 57 | handle_activate | FunctionDef |
+| [app.py](app.py) | 79 | handle_clear | FunctionDef |
+| [app.py](app.py) | 109 | run_agent | FunctionDef |
+| [app.py](app.py) | 115 | run_streaming_agent | Run agent with streaming tool updates. |
 | [server.py](server.py) | 5 | main | AsyncFunctionDef |
 | [stagehand_mcp.py](stagehand_mcp.py) | 10 | browser_automation_tool | Perform browser automation. |
 | [stagehand_mcp.py](stagehand_mcp.py) | 31 | add_numbers | Add two numbers together. |
 | [stagehand_tool.py](stagehand_tool.py) | 11 | browser_automation | Performs automated browser tasks using AI agent capabilities. |
+| [styles.py](styles.py) | 5 | inject_css | FunctionDef |
 
 ## Models, dependencies and configuration
 
@@ -64,6 +79,8 @@ Every project now has a source/version manifest, empty environment template, a d
 | File | Recorded change |
 | --- | --- |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/mcp-use.png](assets/mcp-use.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/stagehand.png](assets/stagehand.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

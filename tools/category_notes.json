@@ -1,4 +1,12 @@
 {
+  "interfaces": {
+    "lesson": "A chat UI is a distributed state machine over a model transport. Distinguish request acceptance, incremental output and successful completion. Keep model context separate from visible partial turns and preserve an inspectable path from browser input through provider payload to displayed output.",
+    "pipeline": "labeled input -> validated request -> bounded model transport -> incremental thinking/answer events -> terminal status -> completed-turn history and experiment notes",
+    "metrics": "Exact task correctness separately from perceived fluency; first-token and completion latency; output-token usage; cancellation/failure recovery; session isolation; keyboard access and responsive layout.",
+    "failure": "Replaying a completed answer as fake streaming, dropping content across split delimiters, blocking async handlers with synchronous inference, including incomplete turns in history, cross-tab state leakage and treating generated traces as proof of correctness.",
+    "deployment": "For learning, a loopback-only server and in-memory browser state make the system inspectable. For shared deployment, use an authenticated application service, per-user durable state, a bounded inference queue and independently provisioned model workers. Propagate cancellation and disconnects, apply input/image/token budgets and record request/turn IDs plus terminal status.",
+    "tradeoff": "Chainlit and Streamlit accelerate UI prototyping but couple lifecycle behavior to their session/runtime models. A small explicit transport teaches state and streaming clearly while requiring more UI code. Managed inference avoids local GPU operations; local models require measured memory, cold-start and concurrency planning."
+  },
   "rag": {
     "lesson": "RAG has two independently testable problems: finding evidence and generating an answer from that evidence. Better prompts cannot recover a document that retrieval never selected. Preserve source IDs and chunk boundaries before tuning the generator.",
     "pipeline": "source -> parse/chunk -> embed -> persistent index -> retrieve -> optional rerank -> grounded synthesis -> cited answer",

@@ -75,40 +75,65 @@
       "upstream_sha256": "009304780528047ed189fa974fcb8a0f5fc851d12fcba7a8b5e743f48a486a3a",
       "local_sha256": "009304780528047ed189fa974fcb8a0f5fc851d12fcba7a8b5e743f48a486a3a",
       "changes": []
+    },
+    {
+      "upstream_path": "assets/autotrain-setup.png",
+      "path": "assets/autotrain-setup.png",
+      "upstream_sha256": "1899783d4e96344d0410e296a6b917e1171d29d0a3c93d76452dbc378c439937",
+      "local_sha256": "1899783d4e96344d0410e296a6b917e1171d29d0a3c93d76452dbc378c439937",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/claude-connector.png",
+      "path": "assets/claude-connector.png",
+      "upstream_sha256": "20b26da6037f52dcc158a614f2f468e356ea8f434ebd2c8cce24aa79c5b847c8",
+      "local_sha256": "20b26da6037f52dcc158a614f2f468e356ea8f434ebd2c8cce24aa79c5b847c8",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/hardware.png",
+      "path": "assets/hardware.png",
+      "upstream_sha256": "4e9bf36cddbab0794eb0a4307ca247e3d1d7fe031803e763443b98fa363bffad",
+      "local_sha256": "4e9bf36cddbab0794eb0a4307ca247e3d1d7fe031803e763443b98fa363bffad",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/manufact-env.png",
+      "path": "assets/manufact-env.png",
+      "upstream_sha256": "66c4d2e73d5ba1fc7c0ee85ab1d7053e1e42a31be4db6150f7f97d1c43974bcb",
+      "local_sha256": "66c4d2e73d5ba1fc7c0ee85ab1d7053e1e42a31be4db6150f7f97d1c43974bcb",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
+    },
+    {
+      "upstream_path": "assets/studio.png",
+      "path": "assets/studio.png",
+      "upstream_sha256": "6c2f485261f17c1d745c0fa5a266190a6181cbe9f8fb8ebd68b30ef0d40d37e1",
+      "local_sha256": "6c2f485261f17c1d745c0fa5a266190a6181cbe9f8fb8ebd68b30ef0d40d37e1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
   "omitted": [
     {
-      "path": "assets/autotrain-setup.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/claude-connector.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/hardware.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
       "path": "assets/hftoken.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/manufact-env.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "reason": "Credential-setup screenshot omitted; use the textual configuration guide."
     },
     {
       "path": "assets/secrets.png",
-      "reason": "Screenshots and promotional assets omitted."
-    },
-    {
-      "path": "assets/studio.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "reason": "Credential-setup screenshot omitted; use the textual configuration guide."
     },
     {
       "path": "dist/widget.html",
-      "reason": "Frontend, generated output or development automation omitted."
+      "reason": "Generated output or development automation omitted."
     }
   ],
   "analysis": {
@@ -121,7 +146,8 @@
       "postcss.config.js",
       "server.ts",
       "src/mcp-app.ts",
-      "vite.config.ts"
+      "vite.config.ts",
+      "widget.html"
     ],
     "environment": [
       "AUTOTRAIN_SPACE_NAME",
@@ -145,5 +171,26 @@
     "plain_python_units_checked": 0
   },
   "category": "training",
-  "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs."
+  "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs.",
+  "ui_entries": [
+    {
+      "path": "package.json",
+      "kind": "npm",
+      "script": "dev"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

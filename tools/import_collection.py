@@ -11,7 +11,7 @@ import subprocess
 from pathlib import Path
 from urllib.parse import unquote
 
-from .analysis import analyze_project, code_cells, digest, python_cell, sanitize_notebook
+from .analysis import analyze_project, digest, sanitize_notebook
 from .transform import harden_http, redact_literals
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,37 +20,31 @@ OCR = {'LaTeX-OCR-with-Llama', 'llama-ocr', 'gemma3-ocr', 'qwen-2.5VL-ocr'}
 UI = {'local-chatgpt', 'local-chatgpt with DeepSeek', 'local-chatgpt with Gemma 3',
       'deepseek-thinking-ui', 'qwen3-thinking-ui', 'gpt-oss-thinking-ui', 'streaming-ai-chatbot'}
 RESOURCE = {'assets', 'resources', 'courses', 'ai-engineering-roadmap'}
-SKIP_PARTS = {'frontend', 'node_modules', 'public', 'components', 'hooks', 'styles',
-              '__pycache__', '.github', '.streamlit', '.chainlit', '.vscode', 'dist', '.next'}
-TEXT_SUFFIXES = {'.py', '.ts', '.js', '.json', '.jsonl', '.yaml', '.yml', '.toml', '.txt',
+SKIP_PARTS = {'node_modules', '__pycache__', '.github', '.vscode', 'dist', '.next',
+              'python_modules', '.motia', '.git'}
+TEXT_SUFFIXES = {'.py', '.ts', '.tsx', '.js', '.mjs', '.mts', '.json', '.jsonl', '.yaml', '.yml', '.toml', '.txt',
                  '.md', '.sh', '.sql', '.gq', '.pg', '.html', '.css', '.lock', '.csv'}
 
 
 def disposition(name):
     if name in OCR:
         return 'excluded-ocr', 'User already completed OCR projects.'
-    if name in UI:
-        return 'excluded-ui', 'Upstream Chat Interfaces & UI category; excluded by user request.'
     if name in RESOURCE:
         return 'excluded-resource', 'General learning material or shared promotional assets, not an AI project.'
-    return 'included', 'AI algorithm, workflow, backend, model evaluation or infrastructure learning project.'
+    return 'included', 'AI algorithm, workflow, interface, evaluation or infrastructure learning project.'
 
 
 def skip_reason(relative: Path):
     if any(part in SKIP_PARTS for part in relative.parts[:-1]):
-        return 'Frontend, generated output or development automation omitted.'
-    if relative.suffix.lower() in {'.mp4', '.gif', '.webm', '.tsx', '.css'}:
-        return 'Demo media or presentation-only source omitted.'
+        return 'Generated output or development automation omitted.'
+    if relative.suffix.lower() in {'.mp4', '.gif', '.webm'}:
+        return 'Large demonstration media omitted; implementation and learning material retained.'
     if relative.name in {'.env', '.env.local', '.env.production'}:
         return 'Actual environment file omitted.'
-    if relative.suffix in {'.tsbuildinfo', '.pyc'}:
+    if relative.suffix in {'.tsbuildinfo', '.pyc', '.backup'} or relative.name == '.DS_Store':
         return 'Generated build cache omitted.'
-    if relative.as_posix().startswith('src/ui/'):
-        return 'UI subtree omitted; AI services remain.'
-    if relative.parts[0] == 'assets':
-        return 'Screenshots and promotional assets omitted.'
-    if relative.as_posix().startswith('app/') and not relative.as_posix().startswith('app/api/'):
-        return 'Next.js presentation routes omitted; backend API routes remain.'
+    if relative.name.lower() in {'secrets.png', 'api_keys.png', 'hftoken.png'}:
+        return 'Credential-setup screenshot omitted; use the textual configuration guide.'
     return None
 
 

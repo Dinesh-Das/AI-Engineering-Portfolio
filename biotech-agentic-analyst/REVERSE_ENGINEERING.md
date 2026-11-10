@@ -14,11 +14,11 @@ validated document/URL -> parse/render -> extraction schema -> model/parser outp
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | init_mistral_client | UI reference |
+| [app.py](app.py) | init_mistral_client | UI surface |
 | [flow/crews/figure_analyst/crew.py](flow/crews/figure_analyst/crew.py) | FigureAnalystCrew, figure_analyst, figure_analysis, crew | __future__, crewai, models, os, typing |
 | [flow/science_flow.py](flow/science_flow.py) | ScienceFlow, validate_extraction, route_on_quality, analyze_figures, handle_poor_quality | __future__, crewai, flow, hashlib, time, typing |
 | [flow/state.py](flow/state.py) | ScienceFlowState | __future__, models, pydantic, typing |
@@ -34,6 +34,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 63 | init_mistral_client | FunctionDef |
 | [flow/crews/figure_analyst/crew.py](flow/crews/figure_analyst/crew.py) | 19 | FigureAnalystCrew | Crew for extracting structured intelligence from scientific figures. |
 | [flow/crews/figure_analyst/crew.py](flow/crews/figure_analyst/crew.py) | 29 | figure_analyst | FunctionDef |
 | [flow/crews/figure_analyst/crew.py](flow/crews/figure_analyst/crew.py) | 39 | figure_analysis | FunctionDef |
@@ -76,6 +77,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/Journal-of-Biology-and-Nature.pdf](assets/Journal-of-Biology-and-Nature.pdf) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

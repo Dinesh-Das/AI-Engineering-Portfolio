@@ -1,0 +1,14 @@
+{
+  "id": "qwen3-thinking-ui",
+  "title": "Qwen thinking lab",
+  "model": "qwen3:4b",
+  "vision": false,
+  "thinking": true,
+  "think": "true",
+  "focus": "Compare capability with cost.",
+  "description": "Explore Qwen's thinking controls while keeping final-answer quality separate from trace length.",
+  "lesson": "The source uses think-tag parsing over a stream. Modern Ollama can return native thinking and content fields; the learning transport accepts both forms while keeping traces out of subsequent answer history.",
+  "experiment": "Use a fixed set of exact-answer tasks with thinking enabled and disabled where supported. Record correctness, first-token time, completion time and token usage rather than judging a longer trace as better.",
+  "starter": "A train travels 84 km in 70 minutes at a constant speed. What is its speed in kilometres per hour? State the final number and unit.",
+  "pitfall": "Thinking modes are model/version capabilities. An unsupported option is an integration error, not evidence that the model cannot solve the task."
+}

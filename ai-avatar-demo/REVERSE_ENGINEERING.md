@@ -4,7 +4,7 @@
 
 Supply a conversational avatar with a memory-aware AI backend.
 
-FastAPI backend services combine streamed LLM completion, Zep context and Anam session tokens; visual avatar rendering is excluded.
+FastAPI backend services combine streamed LLM completion, Zep context and Anam session tokens; the avatar UI remains a separate client of that backend.
 
 Conceptual data flow (an architectural interpretation of the source, not a recorded execution trace):
 
@@ -14,11 +14,11 @@ authenticated turn -> retrieve scoped history/facts -> select context under budg
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | top-level workflow | UI reference |
+| [app.py](app.py) | top-level workflow | UI surface |
 | [backend.py](backend.py) | Message, ChatRequest, SessionCreateRequest, health_check, test_graph, create_zep_session, llm_stream, event_generator | config, fastapi, json, pydantic, services, time, typing |
 | [config/settings.py](config/settings.py) | Settings, Config | pydantic_settings, typing |
 | [scripts/ingest_to_graph.py](scripts/ingest_to_graph.py) | main | dotenv, json, os, pathlib, sys, time, zep_cloud |

@@ -161,13 +161,13 @@ def analyze_project(root: Path, tracked: list[str]) -> dict:
                 units.append(unit)
         elif path.name == 'pyproject.toml' or re.match(r'requirements.*\.txt$', path.name) or path.name == 'package.json':
             manifests.append(relative)
-        elif path.suffix in {'.ts', '.js', '.tsx', '.sh', '.yaml', '.yml'}:
+        elif path.suffix in {'.ts', '.js', '.tsx', '.mjs', '.mts', '.css', '.html', '.sh', '.yaml', '.yml'}:
             other_code.append(relative)
     environment = set(e for u in units for e in u['environment'])
     # Non-Python integrations and environment templates are also part of the contract.
     for relative in tracked:
         path = source_path(root, relative)
-        if path.suffix in {'.ts', '.js', '.json', '.yaml', '.yml', '.toml'} or 'env' in path.name:
+        if path.suffix in {'.ts', '.tsx', '.js', '.mjs', '.json', '.yaml', '.yml', '.toml'} or 'env' in path.name:
             if path.stat().st_size > 2_000_000:
                 continue
             content = path.read_text(encoding='utf-8-sig', errors='replace')

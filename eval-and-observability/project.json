@@ -657,5 +657,20 @@
     "plain_python_units_checked": 32
   },
   "category": "evaluation",
-  "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline."
+  "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

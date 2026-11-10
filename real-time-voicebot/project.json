@@ -30,7 +30,7 @@
   "omitted": [
     {
       "path": "Voicebot video.MP4",
-      "reason": "Demo media or presentation-only source omitted."
+      "reason": "Large demonstration media omitted; implementation and learning material retained."
     }
   ],
   "analysis": {
@@ -166,5 +166,20 @@
     "plain_python_units_checked": 1
   },
   "category": "voice",
-  "purpose": "Implement a streaming travel conversation with ASR, an LLM and TTS."
+  "purpose": "Implement a streaming travel conversation with ASR, an LLM and TTS.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

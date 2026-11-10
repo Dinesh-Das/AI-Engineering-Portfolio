@@ -14,11 +14,11 @@ authenticated turn -> retrieve scoped history/facts -> select context under budg
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | reset_chat, display_pdf, check_vector_index, process_pdf_upload, ingest_sample_data | UI reference |
+| [app.py](app.py) | reset_chat, display_pdf, check_vector_index, process_pdf_upload, ingest_sample_data | UI surface |
 | [config.py](config.py) | top-level workflow | dotenv, openai, os, pymongo, voyageai |
 | [ingest_data.py](ingest_data.py) | get_embedding, ingest_data | config, langchain_community, langchain_text_splitters, pymongo, time |
 | [memory.py](memory.py) | store_chat_message, retrieve_session_history | config, datetime, typing |
@@ -31,6 +31,11 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 33 | reset_chat | Reset chat history. |
+| [app.py](app.py) | 38 | display_pdf | Display PDF preview in sidebar. |
+| [app.py](app.py) | 50 | check_vector_index | Check if vector index exists and is ready. |
+| [app.py](app.py) | 66 | process_pdf_upload | Process uploaded PDF and ingest into MongoDB. |
+| [app.py](app.py) | 87 | ingest_sample_data | Ingest sample MongoDB earnings report. |
 | [ingest_data.py](ingest_data.py) | 7 | get_embedding | FunctionDef |
 | [ingest_data.py](ingest_data.py) | 13 | ingest_data | FunctionDef |
 | [memory.py](memory.py) | 5 | store_chat_message | FunctionDef |

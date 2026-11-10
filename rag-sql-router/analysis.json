@@ -793,7 +793,9 @@
   "notebooks": [
     "notebook.ipynb"
   ],
-  "other_code": [],
+  "other_code": [
+    "workflow_all_flows.html"
+  ],
   "environment": [
     "CODEX_API_KEY"
   ],

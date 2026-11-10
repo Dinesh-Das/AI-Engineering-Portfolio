@@ -14,13 +14,13 @@ validated source -> extraction/script or prompt -> model generation -> validated
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | VideoProcessor, is_video_file, get_file_size_mb, reset_chat, display_video, upload_video, wait_for_file_processing, chat_with_video | UI reference |
+| [app.py](app.py) | VideoProcessor, is_video_file, get_file_size_mb, reset_chat, display_video, upload_video, wait_for_file_processing, chat_with_video | UI surface |
 | [demo.py](demo.py) | demo_video_chat | dotenv, google, os, time |
-| [test_setup.py](test_setup.py) | test_imports, test_api_key, test_gemini_connection, main | UI reference |
+| [test_setup.py](test_setup.py) | test_imports, test_api_key, test_gemini_connection, main | UI surface |
 
 ## Function and class walkthrough
 
@@ -28,7 +28,19 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 25 | VideoProcessor | ClassDef |
+| [app.py](app.py) | 72 | is_video_file | Check if uploaded file is a video |
+| [app.py](app.py) | 80 | get_file_size_mb | Get file size in MB |
+| [app.py](app.py) | 84 | reset_chat | Reset chat history and video state |
+| [app.py](app.py) | 99 | display_video | Display uploaded video |
+| [app.py](app.py) | 30 | upload_video | Upload video to Gemini File API |
+| [app.py](app.py) | 42 | wait_for_file_processing | Wait for video file to be processed by Gemini |
+| [app.py](app.py) | 57 | chat_with_video | Generate response based on video content and user prompt |
 | [demo.py](demo.py) | 13 | demo_video_chat | Simple demo of video chat functionality |
+| [test_setup.py](test_setup.py) | 10 | test_imports | Test if all required packages are installed |
+| [test_setup.py](test_setup.py) | 37 | test_api_key | Test if API key is configured |
+| [test_setup.py](test_setup.py) | 59 | test_gemini_connection | Test connection to Gemini API |
+| [test_setup.py](test_setup.py) | 92 | main | Run all tests |
 
 ## Models, dependencies and configuration
 

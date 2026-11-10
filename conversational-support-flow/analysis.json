@@ -186,11 +186,23 @@
     }
   ],
   "manifests": [
-    "pyproject.toml"
+    "pyproject.toml",
+    "frontend/package.json"
   ],
   "notebooks": [],
-  "other_code": [],
+  "other_code": [
+    "frontend/app/api/copilotkit/route.ts",
+    "frontend/app/chat.tsx",
+    "frontend/app/globals.css",
+    "frontend/app/layout.tsx",
+    "frontend/app/page.tsx",
+    "frontend/app/providers.tsx",
+    "frontend/eslint.config.mjs",
+    "frontend/next.config.ts",
+    "frontend/postcss.config.mjs"
+  ],
   "environment": [
+    "CREWAI_BACKEND_URL",
     "EXA_API_KEY",
     "OPENROUTER_API_KEY"
   ],

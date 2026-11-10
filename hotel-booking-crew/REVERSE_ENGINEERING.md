@@ -14,12 +14,12 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm | UI reference |
-| [app_openai.py](app_openai.py) | top-level workflow | UI reference |
+| [app.py](app.py) | load_llm | UI surface |
+| [app_openai.py](app_openai.py) | top-level workflow | UI surface |
 | [browserbase.py](browserbase.py) | browserbase | crewai, html2text, os, playwright, time |
 | [kayak.py](kayak.py) | kayak_hotel_search | crewai, typing |
 
@@ -29,6 +29,7 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 18 | load_llm | Initialize and return Groq LLM with caching |
 | [browserbase.py](browserbase.py) | 9 | browserbase | Loads a URL using a headless webbrowser |
 | [kayak.py](kayak.py) | 6 | kayak_hotel_search | Generates a Kayak URL for hotel searches based on location, dates, and number of adults. |
 

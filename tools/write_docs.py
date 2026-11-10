@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 from .analysis import analyze_project
+from .learning_contract import REQUIRED_SECTIONS
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -15,6 +16,38 @@ ROOT = Path(__file__).resolve().parents[1]
 def write(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text.rstrip() + '\n', encoding='utf-8', newline='\n')
+
+
+def ensure_journal(root, note):
+    path = root / 'LEARNING_JOURNAL.md'
+    if not path.exists():
+        write(path, f'''# Personal learning journal
+
+Project goal: {note['purpose']}
+
+This file belongs to your learning process. The documentation generator creates it only when absent and never replaces an existing journal. Keep your own observations here; the technical guides are generated from maintained source notes.
+
+## Experiment record
+
+Copy the following fields for each experiment. Record normal, invalid, failed, interrupted and concurrent scenarios as well as successful demonstrations.
+
+- Question or hypothesis:
+- Prediction before running:
+- Source/model/data/settings versions:
+- Fixed input and independently checked expected outcome:
+- One variable changed:
+- Observation and intermediate evidence:
+- Quality, latency and cost measurements (label missing values):
+- Failure/recovery or isolation result:
+- Explanation of the difference from your prediction:
+- Production deployment implication and tradeoff:
+- Next experiment:
+- Evidence location (logs, fixture/model output, screenshots or exported UI notes):
+
+## Decisions to revisit
+
+Record what would make you choose a different model, retrieval method, tool contract, UI state policy or deployment boundary. Separate fixture behavior from live-model quality and production evidence.
+''')
 
 
 def link(path):
@@ -53,11 +86,102 @@ def setup_instructions(root, report):
     return '\n\n'.join(lines).replace('```powershell\n\n', '```powershell\n').replace('\n\n```', '\n```')
 
 
+def write_ui_guide(project):
+    root = ROOT / project['id']
+    profile = json.loads((root / 'lab.json').read_text(encoding='utf-8'))
+    guide = f'''# UI learning guide: {profile['title']}
+
+## Original mechanism and the improvement
+
+{profile['lesson']}
+
+The original app and upstream guide remain in this folder. The added `learning_app.py`, `lab.json` and `learning_ui/` package form an independently runnable local implementation with no third-party Python dependencies. It preserves this project's model/capability focus while making transport and state explicit. It is a reconstruction for learning, not a claim that the original framework integration has been fully exercised.
+
+## Run it
+
+From the collection root:
+
+```powershell
+.\\run.ps1 ui --project "{project['id']}" --execute --timeout 3600 --entry-args --fixture --port 8765
+```
+
+Open http://127.0.0.1:8765. Fixture mode is visibly labeled and supports completed, provider-failure and slow-stream scenarios. It does not call a model. Omit `--fixture` to use a running local Ollama server and an already installed `{profile['model']}` model. No model is downloaded automatically.
+
+For an independent copy of this folder, run `python learning_app.py --fixture` from its own directory. The full learning runtime is bundled locally. Original Chainlit/Streamlit/Motia instructions remain in UPSTREAM_README.md and require their own dependencies.
+
+## Trace the implementation
+
+| Boundary | Source | What to inspect |
+| --- | --- | --- |
+| Project identity | [lab.json](lab.json) | Model, vision/thinking support, lesson and controlled experiment |
+| Local entry | [learning_app.py](learning_app.py) | Starts this folder's bundled server and profile |
+| Validation and model transport | [protocol.py](learning_ui/protocol.py) | Message/image budgets, native Ollama fields and NDJSON stream deadlines |
+| Legacy trace parsing | [ReasoningSplitter](learning_ui/protocol.py) | Retains partial delimiters across chunks and preserves final-answer suffixes |
+| HTTP and terminal events | [server.py](learning_ui/server.py) | Local-origin checks, bounded concurrency, fixture labeling, completion and failure events |
+| Browser state | [app.js](learning_ui/static/app.js) | Separate transcript and completed history, abort handling, model-safe text rendering and notes export |
+| Accessible layout | [index.html](learning_ui/static/index.html), [style.css](learning_ui/static/style.css) | Labeled controls, visible focus, live status and responsive columns |
+
+## Controlled experiment
+
+{profile['experiment']}
+
+Write your prediction before sending the first prompt. Keep the input and model revision fixed, change one parameter, and export the observations. A fixture timing measures the UI path; a live inference timing still does not prove answer correctness.
+
+## Scenario exercises
+
+1. Complete one turn. Trace the accepted event, deltas and completion event to the final history update.
+2. In fixture mode, select provider failure. Inspect the visible partial output and prove that the failed turn is absent from the next model request's messages.
+3. Select slow stream and stop generation. Confirm the interrupted status, restored controls and exclusion of partial history. Cancellation closes the local upstream response; it does not prove a remote worker has instantly stopped all computation.
+4. Open a second browser tab. Confirm the first tab's conversation and notes are not automatically shared.
+5. Clear the conversation and confirm the independent experiment notes remain. Export explicitly; no chat is stored automatically in local storage.
+6. Navigate with the keyboard and resize the page to 320, 768, 1024 and 1440 pixels. Check composer reachability, overflow, focus and labeled status.
+7. Switch to a live installed model only after local Ollama is available. Compare independently checked task correctness, first-token time, total time and reported token counts. Missing token counts remain missing.
+
+## Key pitfall
+
+{profile['pitfall']}
+
+Model-provided trace is generated output and may be incomplete or misleading. It is not a faithful audit of hidden model computation or proof of a correct answer. The UI keeps it collapsed and excludes it from subsequent answer history.
+
+## Deliberate local limits and production direction
+
+The app binds to loopback, validates local Host/Origin headers and exposes only fixed static/API paths. It keeps conversations in browser memory and allows at most two active generations. It validates image signatures and size, not complete image-codec semantics; a shared upload service needs full decoding/normalization. Input text, history, image bytes, output tokens, network reads and generated output are bounded.
+
+This standard-library server is a learning runtime, not a public hosting stack. Before sharing it, add authenticated identities, owned durable sessions, queue-backed inference, per-user budgets, deployment monitoring and a reverse proxy with a production application server. Use immutable model/prompt/tool versions and test disconnect/cancellation and retry behavior under concurrency. The complete project-specific deployment discussion remains in [LEARNINGS.md](LEARNINGS.md).
+
+## Evidence status
+
+See the collection's [UI validation report](../docs/UI_VALIDATION.md) for browser/fixture checks. Fixtures establish interface behavior; no live model quality or GPU benchmark is implied. Restored original framework frontends are source material and need their own dependency/service integration checks.
+'''
+    write(root / 'UI_GUIDE.md', guide)
+
+
 def project_docs(project, note, category):
     root = ROOT / project['id']
+    ensure_journal(root, note)
     all_records = project['files'] + project.get('local_additions', [])
     report = analyze_project(root, [r['path'] for r in all_records])
     report['environment'] = sorted(set(report['environment']) | set(project['analysis']['environment']))
+    if project.get('learning_ui'):
+        report['entries'] = [entry for entry in report['entries'] if not entry['path'].startswith('learning_ui/')]
+    ui_entries = []
+    for entry in report['entries']:
+        if entry['path'] == project.get('learning_ui', {}).get('entry'):
+            entry['ui'] = True
+            ui_entries.insert(0, {'path': entry['path'], 'kind': 'learning-ui'})
+        elif entry['ui'] and entry['path'].endswith('.py'):
+            unit = next(u for u in report['units'] if u['path'] == entry['path'])
+            kind = 'streamlit' if 'streamlit' in unit['imports'] else 'chainlit' if 'chainlit' in unit['imports'] else None
+            if kind:
+                ui_entries.append({'path': entry['path'], 'kind': kind})
+    for manifest in report['manifests']:
+        if Path(manifest).name == 'package.json':
+            package = json.loads((root / manifest).read_text(encoding='utf-8-sig'))
+            script = next((s for s in ('dev', 'start') if s in package.get('scripts', {})), None)
+            if script:
+                ui_entries.append({'path': manifest, 'kind': 'npm', 'script': script})
+    project['ui_entries'] = ui_entries
+    project['learning_contract'] = {'required': True, 'sections': list(REQUIRED_SECTIONS)}
     project.update(category=note['category'], purpose=note['purpose'], entries=report['entries'], analysis=report)
     project['validation']['syntax_errors'] = len(report['syntax_errors'])
     project['validation']['plain_python_units_checked'] = len(report['units'])
@@ -65,22 +189,33 @@ def project_docs(project, note, category):
     recipe = note['category'] == 'recipe'
     source_kind = ('Integration/deployment guide; no vendored application runtime.' if recipe else
                    'Graph schema and event fixtures; no standalone application runtime.' if project['id'] == 'omnigraph-multi-agent' else
-                   'TypeScript AI backend; UI components omitted.' if not report['units'] else
-                   'AI implementation with Python source and/or notebooks; original UI wrappers are reference only.')
+                   'TypeScript AI application and its retained interface/configuration source.' if not report['units'] else
+                   'AI implementation with Python source and/or notebooks; retained UI source is available for study and explicit launch.')
     env = '# Empty values only. Fill the subset used by your selected implementation.\n# See README.md and original manifests; this is not a list of mandatory secrets.\n'
     env += '\n'.join(name + '=' for name in report['environment']) + '\n'
     if not report['environment']:
         env += '# No literal environment names detected. Review SDK configuration and upstream instructions.\n'
     write(root / '.env.example', env)
     write(root / 'analysis.json', json.dumps(report, indent=2, ensure_ascii=False))
-    entries_table = table(['Candidate', 'Kind', 'UI dependency'], [(link(e['path']), e['kind'], 'reference only' if e['ui'] else 'headless candidate') for e in report['entries']]) if report['entries'] else 'No standalone Python/notebook entry point was identified. The source may be a reusable library, an external-service recipe or a TypeScript backend.'
+    entries_table = table(['Candidate', 'Kind', 'UI dependency'], [(link(e['path']), e['kind'], 'launch with ui action' if e['ui'] else 'headless candidate') for e in report['entries']]) if report['entries'] else 'No standalone Python/notebook entry point was identified. The source may be a reusable library, an external-service recipe or a TypeScript application.'
+    ui_text = ''
+    if ui_entries:
+        default_ui = ui_entries[0]
+        ui_text = ('## UI execution and learning\n\n' +
+                   ('A self-contained learning interface uses Python 3.12 standard-library code; it does not need the original UI SDKs. Start with labeled offline fixtures, then use an installed Ollama model. See [UI walkthrough and experiments](UI_GUIDE.md).\n\n' if project.get('learning_ui') else
+                    'Original UI source is now in scope. Prepare the relevant manifest-owning environment before explicit launch; these framework integrations are not automatically verified.\n\n') +
+                   'Preview from the collection root:\n\n```powershell\n' +
+                   f'.\\run.ps1 ui --project "{project["id"]}" --entry "{default_ui["path"]}"\n```\n\n' +
+                   ('To run the learning UI, append `--execute --timeout 3600 --entry-args --fixture --port 8765`, then open http://127.0.0.1:8765. Omit `--fixture` for live Ollama inference. Fixture timings are not model benchmarks.\n\n' if project.get('learning_ui') else
+                    'Append `--execute` only after reviewing the entry and configuring its isolated dependencies. Original apps may require databases, model services or credentials.\n\n') +
+                   table(['UI entry', 'Runtime'], [(link(e['path']), e['kind']) for e in ui_entries]) + '\n\n')
     if headless:
         entry = sorted(headless, key=lambda e: (e['path'].endswith('server.py'), len(Path(e['path']).parts), e['path']))[0]
         run = ('From the collection root, preview the command without executing source:\n\n```powershell\n' +
                f'.\\run.ps1 run --project "{project["id"]}" --entry "{entry["path"]}"\n```\n\n' +
                'After configuring an isolated environment and reviewing the entry, append `--execute --timeout 120`. The runner uses the active virtual environment when called through run.ps1. Notebook execution also needs Jupyter/nbconvert and an appropriate kernel. Training commonly needs a longer job deadline and a GPU or remote training account. These are discovered candidates, not proof the selected dependency/provider combination has been tested.')
     else:
-        run = 'Use the source walkthrough below to identify the backend integration boundary. There is no automatic launch command for this project. UI wrappers are not launched. For a guide-only project, deploy and test the external service described by the guide; this folder does not pretend to contain that service.'
+        run = 'No standalone headless command was identified. Use the UI entry table if present, or inspect the reusable source. For a guide-only project, deploy and test the external service described by the guide; this folder does not pretend to contain that service.'
     readme = f'''# {project['id']}
 
 {note['purpose']}
@@ -92,12 +227,14 @@ def project_docs(project, note, category):
 - [Reverse engineering](REVERSE_ENGINEERING.md): source map, architecture, model/dependency choices, code-level findings and changes.
 - [Learnings and production deployment](LEARNINGS.md): rebuild sequence, experiments, metrics, tradeoffs and deployment proposal.
 - [Evaluation protocol](EVALUATION.md): how to establish quality beyond syntax checks.
+- [Personal learning journal](LEARNING_JOURNAL.md): your predictions, observations, explanations and next experiments; preserved during guide regeneration.
 - [Machine-readable project manifest](project.json) and [complete static analysis](analysis.json).
 
 ## Setup
 
 {setup_instructions(root, report)}
 
+{ui_text}
 ## Headless execution
 
 {run}
@@ -112,14 +249,14 @@ Run the collection check from its root: `.\\run.ps1 check --project "{project['i
 
 ## Provenance
 
-Source: [{project['id']}]({project['source_url']}) at `{project['upstream_revision']}`. Imported 2026-11-10. The original MIT notice is retained in [UPSTREAM_LICENSE](UPSTREAM_LICENSE); preserve any additional notices embedded in source files. Omitted presentation assets and every source transformation are listed in project.json.
+Source: [{project['id']}]({project['source_url']}) at `{project['upstream_revision']}`. Imported 2026-11-10. The original MIT notice is retained in [UPSTREAM_LICENSE](UPSTREAM_LICENSE); preserve any additional notices embedded in source files. Omitted artifacts and every source transformation are listed in project.json.
 '''
     write(root / 'README.md', readme)
     source_rows = []
     for unit in report['units']:
         symbols = [s['name'] for s in unit['symbols'] if not s['name'].startswith('_')]
         if symbols or unit['models'] or unit['ui']:
-            source_rows.append((link(unit['path']), ', '.join(symbols[:12]) or 'top-level workflow', 'UI reference' if unit['ui'] else ', '.join(unit['imports'][:8])))
+            source_rows.append((link(unit['path']), ', '.join(symbols[:12]) or 'top-level workflow', 'UI surface' if unit['ui'] else ', '.join(unit['imports'][:8])))
     for relative in report['other_code']:
         source_rows.append((link(relative), 'backend/configuration source; inspect directly', Path(relative).suffix))
     if not source_rows:
@@ -127,8 +264,6 @@ Source: [{project['id']}]({project['source_url']}) at `{project['upstream_revisi
     source_map = table(['Source', 'Important definitions', 'Dependencies / role'], source_rows)
     symbol_rows = []
     for unit in report['units']:
-        if unit['ui']:
-            continue
         for symbol in unit['symbols']:
             if not symbol['name'].startswith('_'):
                 symbol_rows.append((link(unit['path']), symbol['line'], symbol['name'], symbol['doc'] or symbol['kind']))
@@ -155,7 +290,7 @@ Conceptual data flow (an architectural interpretation of the source, not a recor
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 {source_map}
 
@@ -241,6 +376,21 @@ Quality targets depend on your domain and must be chosen before a release. This 
 
 Inspect the project's actual review leads in REVERSE_ENGINEERING.md. Fix a failure at its owning boundary: bad retrieval at the index/retriever, invalid data at the schema, unauthorized access at the tool/data service, and duplicate operations at the persisted job boundary.
 
+## Learn from every scenario
+
+| Scenario | Learning question | Evidence to retain |
+| --- | --- | --- |
+| Normal result | Did the mechanism achieve the project's stated goal? | Input, supporting source/tool evidence and independently checked output |
+| Empty or unsupported input | Does the boundary reject or abstain clearly? | Validation outcome and proof no unnecessary expensive operation ran |
+| Slow or failed dependency | Can the user distinguish pending, failed and complete work? | Stage/status, bounded deadline and recovery result |
+| Cancellation or restart | What state is committed, and what remains incomplete? | Partial versus completed artifacts and replay/resume behavior |
+| Repeated or concurrent requests | Can sessions leak data or side effects repeat? | Request/turn identity, isolation checks and duplicate-operation count |
+| Changed model, data or UI | Which observed behavior actually changed? | Fixed baseline, one controlled variable and before/after task metrics |
+
+Apply these questions to the project-specific experiment above. UI fixture evidence, live model quality, and production reliability are different observations; label each explicitly. Preserve your predicted outcome, observed result, explanation and next experiment rather than only saving a successful screenshot.
+
+Keep personal records in [LEARNING_JOURNAL.md](LEARNING_JOURNAL.md). The generator never replaces an existing journal. UI note exports can be referenced from that file, while source-backed technical guides remain reproducible.
+
 ## Better production deployment
 
 Recommended project-specific direction (a proposal, not deployed infrastructure):
@@ -300,6 +450,8 @@ Choose quality and cost/latency limits before observing the candidate results. C
 Status at import: no live model observations, no GPU training result and no production benchmark reproduced.
 '''
     write(root / 'EVALUATION.md', evaluation)
+    if project.get('learning_ui'):
+        write_ui_guide(project)
     write(root / 'project.json', json.dumps(project, indent=2, ensure_ascii=False))
 
 
@@ -317,7 +469,7 @@ def main():
     write(ROOT / 'catalog.json', json.dumps(catalog, indent=2, ensure_ascii=False))
     rows = [(link(p['id'] + '/README.md'), p['category'], p['purpose'], len(p['files'])) for p in catalog['projects']]
     write(ROOT / 'PROJECT_INDEX.md', '# AI project index\n\n' +
-          f'102 included projects from upstream `{catalog["revision"]}`. Start with a README, then the reverse-engineering guide, learning guide and evaluation protocol. Runtime/provider compatibility is unverified.\n\n' +
+          f'{len(catalog["projects"])} included projects from upstream `{catalog["revision"]}`. Learning is required throughout: read the walkthrough, run a controlled experiment and compare production choices. Live model/provider compatibility is unverified. The four existing OCR projects are preserved separately; see [their local guides](docs/LOCAL_OCR_PROJECTS.md).\n\n' +
           table(['Project', 'Area', 'Learning objective', 'Source files'], rows))
     inventory = table(['Upstream path', 'Disposition', 'Reason', 'README-listed'],
                       [(r['path'], r['status'], r['reason'], r['listed_in_readme']) for r in catalog['inventory']])

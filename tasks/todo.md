@@ -17,3 +17,18 @@
   - Verify: tests, catalog coverage, syntax report and git status.
 
 Live provider/GPU execution must be reported separately from the source-analysis deliverable. Do not mark such execution verified without running it.
+
+## Follow-up: UI projects with learning preserved
+
+- [x] Add the seven UI-category projects and restore omitted frontend source/assets.
+  - Acceptance: every source path has a current disposition; moved OCR content is untouched.
+  - Verify: additive-import tests, source integrity and preserved OCR hashes.
+- [x] Build runnable local learning interfaces with project-specific capabilities.
+  - Acceptance: text/vision/reasoning/streaming scenarios have explicit state and a bounded model transport.
+  - Verify: unit tests and local HTTP integration tests.
+- [x] Preserve learning across all projects and scenarios.
+  - Acceptance: required learning sections are validated, controlled experiments are present, and OCR guides remain linked.
+  - Verify: documentation contract and link checks.
+- [x] Verify interfaces in an isolated real browser and commit on main.
+  - Acceptance: responsive layouts, keyboard use, error/cancel/reset and accessible controls pass; fixture versus live evidence is recorded.
+  - Verify: browser report, full collection checks, tests and scoped Git review.

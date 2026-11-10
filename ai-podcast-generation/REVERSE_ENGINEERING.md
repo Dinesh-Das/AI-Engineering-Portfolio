@@ -14,12 +14,12 @@ validated source -> extraction/script or prompt -> model generation -> validated
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | init_session_state, initialize_generators, initialize_web_scraper, add_url_source, add_text_source, remove_source, render_sources_sidebar, generate_podcast, render_add_sources_tab, render_studio_tab, main | UI reference |
-| [app_oss.py](app_oss.py) | init_session_state, initialize_generators, initialize_web_scraper, add_url_source, add_text_source, remove_source, render_sources_sidebar, generate_podcast, render_add_sources_tab, render_studio_tab, main | UI reference |
+| [app.py](app.py) | init_session_state, initialize_generators, initialize_web_scraper, add_url_source, add_text_source, remove_source, render_sources_sidebar, generate_podcast, render_add_sources_tab, render_studio_tab, main | UI surface |
+| [app_oss.py](app_oss.py) | init_session_state, initialize_generators, initialize_web_scraper, add_url_source, add_text_source, remove_source, render_sources_sidebar, generate_podcast, render_add_sources_tab, render_studio_tab, main | UI surface |
 | [src/podcast/script_generator.py](src/podcast/script_generator.py) | PodcastScript, PodcastScriptGenerator, get_speaker_lines, to_json, generate_script_from_text | crewai, dataclasses, json, logging, typing |
 | [src/podcast/script_generator_oss.py](src/podcast/script_generator_oss.py) | PodcastScript, PodcastScriptGeneratorOSS, get_speaker_lines, to_json, generate_script_from_text, check_ollama_connection | dataclasses, json, logging, requests, typing |
 | [src/podcast/text_to_speech.py](src/podcast/text_to_speech.py) | AudioSegment, PodcastTTSGenerator, generate_podcast_audio | dataclasses, huggingface_hub, kokoro, logging, numpy, os, pathlib, soundfile |
@@ -31,6 +31,28 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 88 | init_session_state | FunctionDef |
+| [app.py](app.py) | 103 | initialize_generators | FunctionDef |
+| [app.py](app.py) | 136 | initialize_web_scraper | Initialize or reinitialize web scraper with provided API key |
+| [app.py](app.py) | 150 | add_url_source | FunctionDef |
+| [app.py](app.py) | 177 | add_text_source | FunctionDef |
+| [app.py](app.py) | 193 | remove_source | FunctionDef |
+| [app.py](app.py) | 199 | render_sources_sidebar | FunctionDef |
+| [app.py](app.py) | 267 | generate_podcast | FunctionDef |
+| [app.py](app.py) | 358 | render_add_sources_tab | FunctionDef |
+| [app.py](app.py) | 382 | render_studio_tab | FunctionDef |
+| [app.py](app.py) | 422 | main | FunctionDef |
+| [app_oss.py](app_oss.py) | 99 | init_session_state | FunctionDef |
+| [app_oss.py](app_oss.py) | 117 | initialize_generators | FunctionDef |
+| [app_oss.py](app_oss.py) | 151 | initialize_web_scraper | Initialize or reinitialize web scraper with provided API key |
+| [app_oss.py](app_oss.py) | 165 | add_url_source | FunctionDef |
+| [app_oss.py](app_oss.py) | 192 | add_text_source | FunctionDef |
+| [app_oss.py](app_oss.py) | 208 | remove_source | FunctionDef |
+| [app_oss.py](app_oss.py) | 214 | render_sources_sidebar | FunctionDef |
+| [app_oss.py](app_oss.py) | 282 | generate_podcast | FunctionDef |
+| [app_oss.py](app_oss.py) | 373 | render_add_sources_tab | FunctionDef |
+| [app_oss.py](app_oss.py) | 397 | render_studio_tab | FunctionDef |
+| [app_oss.py](app_oss.py) | 437 | main | FunctionDef |
 | [src/podcast/script_generator.py](src/podcast/script_generator.py) | 13 | PodcastScript | Represents a podcast script with metadata |
 | [src/podcast/script_generator.py](src/podcast/script_generator.py) | 34 | PodcastScriptGenerator | ClassDef |
 | [src/podcast/script_generator.py](src/podcast/script_generator.py) | 20 | get_speaker_lines | FunctionDef |

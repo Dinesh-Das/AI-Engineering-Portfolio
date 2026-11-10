@@ -14,11 +14,11 @@ versioned task set -> identical context/settings -> candidate generation -> blin
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | load_llm, reset_chat, display_pdf | UI reference |
+| [app.py](app.py) | load_llm, reset_chat, display_pdf | UI surface |
 | [evaluation.ipynb#cell-4](evaluation.ipynb#cell-4) | load_llm | llama_index, os |
 | [evaluation.ipynb#cell-5](evaluation.ipynb#cell-5) | top-level workflow |  |
 | [evaluation.ipynb#cell-14](evaluation.ipynb#cell-14) | top-level workflow | llama_index |
@@ -31,6 +31,9 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 33 | load_llm | FunctionDef |
+| [app.py](app.py) | 41 | reset_chat | FunctionDef |
+| [app.py](app.py) | 46 | display_pdf | FunctionDef |
 | [evaluation.ipynb#cell-4](evaluation.ipynb#cell-4) | 4 | load_llm | FunctionDef |
 | [evaluation.ipynb#cell-15](evaluation.ipynb#cell-15) | 4 | my_llm_application | FunctionDef |
 | [evaluation.ipynb#cell-15](evaluation.ipynb#cell-15) | 8 | evaluation_task | FunctionDef |
@@ -71,6 +74,9 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [evaluation.ipynb](evaluation.ipynb) | Cleared notebook outputs, execution counters, execution metadata and saved widgets. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [assets/groq-logo.png](assets/groq-logo.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/linkup.png](assets/linkup.png) | Restored frontend source/asset after UI scope was authorized. |
+| [assets/llamaindex.png](assets/llamaindex.png) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

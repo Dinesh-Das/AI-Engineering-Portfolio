@@ -184,5 +184,20 @@
     "plain_python_units_checked": 2
   },
   "category": "operations",
-  "purpose": "Serve an agentic RAG workflow through an API using LitServe."
+  "purpose": "Serve an agentic RAG workflow through an API using LitServe.",
+  "ui_entries": [],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

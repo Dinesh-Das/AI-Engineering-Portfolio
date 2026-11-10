@@ -1,0 +1,14 @@
+{
+  "id": "gpt-oss-thinking-ui",
+  "title": "GPT-OSS response notebook",
+  "model": "gpt-oss:20b",
+  "vision": false,
+  "thinking": true,
+  "think": "low",
+  "focus": "Two channels, one lifecycle.",
+  "description": "Inspect native thinking and answer events with visible cancellation, completion and measurement states.",
+  "lesson": "The original code collects native thinking and content fields but displays the answer after its stream loop finishes. The new UI updates each channel incrementally and records when the stream actually completes.",
+  "experiment": "Compare supported thinking levels on the same held-out questions. Stop one generation mid-stream and verify that its partial answer is visible but excluded from future model history.",
+  "starter": "List the assumptions needed to compare two model deployments fairly, then give a concise final checklist.",
+  "pitfall": "A 20B local model has substantial memory and cold-start requirements. Fixture timing is UI evidence only and must never be reported as GPU/model performance."
+}

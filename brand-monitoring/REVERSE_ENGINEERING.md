@@ -14,11 +14,11 @@ request -> validated state -> plan/route -> scoped tool calls -> checked tool re
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [brand_monitoring_flow/src/brand_monitoring_app.py](brand_monitoring_flow/src/brand_monitoring_app.py) | reset_analysis, start_analysis | UI reference |
+| [brand_monitoring_flow/src/brand_monitoring_app.py](brand_monitoring_flow/src/brand_monitoring_app.py) | reset_analysis, start_analysis | UI surface |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py) | InstagramWriterReport, InstagramReport, InstagramCrew, analysis_agent, analysis_task, writer_agent, write_report_task, crew | crewai, pydantic |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/linkedin_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/linkedin_crew/linkedin_crew.py) | LinkedInWriterReport, LinkedInReport, LinkedInCrew, analysis_agent, analysis_task, writer_agent, write_report_task, crew | crewai, pydantic |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/web_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/web_crew/web_crew.py) | WebWriterReport, WebReport, WebCrew, analysis_agent, analysis_task, writer_agent, write_report_task, crew | crewai, pydantic |
@@ -43,6 +43,8 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [brand_monitoring_flow/src/brand_monitoring_app.py](brand_monitoring_flow/src/brand_monitoring_app.py) | 21 | reset_analysis | FunctionDef |
+| [brand_monitoring_flow/src/brand_monitoring_app.py](brand_monitoring_flow/src/brand_monitoring_app.py) | 27 | start_analysis | FunctionDef |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py) | 7 | InstagramWriterReport | ClassDef |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py) | 12 | InstagramReport | ClassDef |
 | [brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py](brand_monitoring_flow/src/brand_monitoring_flow/crews/instagram_crew/instagram_crew.py) | 21 | InstagramCrew | Instagram Analysis Crew |

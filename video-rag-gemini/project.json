@@ -345,5 +345,25 @@
     "plain_python_units_checked": 3
   },
   "category": "media",
-  "purpose": "Upload video to Gemini and ask grounded questions about its contents."
+  "purpose": "Upload video to Gemini and ask grounded questions about its contents.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

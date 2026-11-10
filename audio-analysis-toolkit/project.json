@@ -51,14 +51,18 @@
       "upstream_sha256": "e1bd7b9849e89ad40e587014e115f134b5061c67410c2e97cf596e8d78ab5fb1",
       "local_sha256": "e1bd7b9849e89ad40e587014e115f134b5061c67410c2e97cf596e8d78ab5fb1",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "assets/logo.png",
       "path": "assets/logo.png",
-      "reason": "Screenshots and promotional assets omitted."
+      "upstream_sha256": "46083695db5aef472ec779203afae2157ffa32945fdac33370476b090df6a791",
+      "local_sha256": "46083695db5aef472ec779203afae2157ffa32945fdac33370476b090df6a791",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -291,5 +295,25 @@
     "plain_python_units_checked": 2
   },
   "category": "voice",
-  "purpose": "Transcribe audio and expose summaries, speakers and analysis via MCP."
+  "purpose": "Transcribe audio and expose summaries, speakers and analysis via MCP.",
+  "ui_entries": [
+    {
+      "path": "app.py",
+      "kind": "streamlit"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

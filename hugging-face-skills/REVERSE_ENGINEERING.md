@@ -14,13 +14,13 @@ validated request/job -> isolated runtime -> versioned model/data artifact -> bo
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [apps/evals-leaderboard/app.py](apps/evals-leaderboard/app.py) | format_model_link, format_source_link, fetch_leaderboard, refresh_handler | UI reference |
+| [apps/evals-leaderboard/app.py](apps/evals-leaderboard/app.py) | format_model_link, format_source_link, fetch_leaderboard, refresh_handler | UI surface |
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | BenchmarkSpec, EvalsCollector, main, matches, log, collect_all, get_leaderboard, save_json, push_to_hub | __future__, argparse, dataclasses, datetime, huggingface_hub, json, os, pathlib |
-| [apps/hackers-leaderboard/app.py](apps/hackers-leaderboard/app.py) | format_username, fetch_leaderboard, refresh_handler | UI reference |
+| [apps/hackers-leaderboard/app.py](apps/hackers-leaderboard/app.py) | format_username, fetch_leaderboard, refresh_handler | UI surface |
 | [apps/hackers-leaderboard/collect_points.py](apps/hackers-leaderboard/collect_points.py) | UserStats, PointsCollector, main, total_points, to_dict, log, collect_all, scan_external_repos, get_leaderboard, save_json, push_to_hub | __future__, argparse, dataclasses, datetime, huggingface_hub, json, os, requests |
 | [scripts/generate_agents.py](scripts/generate_agents.py) | load_template, parse_frontmatter, collect_skills, render, load_marketplace, generate_readme_table, update_readme, validate_marketplace, main, repl | __future__, json, pathlib, re, sys |
 | [skills/hugging-face-datasets/scripts/dataset_manager.py](skills/hugging-face-datasets/scripts/dataset_manager.py) | init_dataset, define_config, load_dataset_template, validate_by_template, validate_training_data, add_rows, load_template, quick_setup, show_stats, list_available_templates | argparse, huggingface_hub, json, os, pathlib, time, typing |
@@ -44,11 +44,13 @@ The following table is extracted from this project's actual retained files. Note
 | [skills/hugging-face-paper-publisher/scripts/paper_manager.py](skills/hugging-face-paper-publisher/scripts/paper_manager.py) | PaperManager, main, index_paper, check_paper, link_paper_to_repo, create_research_article, get_arxiv_info, generate_citation | argparse, datetime, dotenv, huggingface_hub, json, os, pathlib, re |
 | [skills/hugging-face-tool-builder/references/baseline_hf_api.py](skills/hugging-face-tool-builder/references/baseline_hf_api.py) | show_help, main | __future__, os, sys, urllib |
 | [scripts/link-skills.sh](scripts/link-skills.sh) | backend/configuration source; inspect directly | .sh |
+| [skills/hugging-face-jobs/index.html](skills/hugging-face-jobs/index.html) | backend/configuration source; inspect directly | .html |
 | [skills/hugging-face-tool-builder/references/baseline_hf_api.sh](skills/hugging-face-tool-builder/references/baseline_hf_api.sh) | backend/configuration source; inspect directly | .sh |
 | [skills/hugging-face-tool-builder/references/find_models_by_paper.sh](skills/hugging-face-tool-builder/references/find_models_by_paper.sh) | backend/configuration source; inspect directly | .sh |
 | [skills/hugging-face-tool-builder/references/hf_enrich_models.sh](skills/hugging-face-tool-builder/references/hf_enrich_models.sh) | backend/configuration source; inspect directly | .sh |
 | [skills/hugging-face-tool-builder/references/hf_model_card_frontmatter.sh](skills/hugging-face-tool-builder/references/hf_model_card_frontmatter.sh) | backend/configuration source; inspect directly | .sh |
 | [skills/hugging-face-tool-builder/references/hf_model_papers_auth.sh](skills/hugging-face-tool-builder/references/hf_model_papers_auth.sh) | backend/configuration source; inspect directly | .sh |
+| [skills/hugging-face-tool-builder/references/baseline_hf_api.tsx](skills/hugging-face-tool-builder/references/baseline_hf_api.tsx) | backend/configuration source; inspect directly | .tsx |
 
 ## Function and class walkthrough
 
@@ -56,6 +58,10 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [apps/evals-leaderboard/app.py](apps/evals-leaderboard/app.py) | 39 | format_model_link | Format model ID as a clickable link. |
+| [apps/evals-leaderboard/app.py](apps/evals-leaderboard/app.py) | 44 | format_source_link | Format source as a clickable link. |
+| [apps/evals-leaderboard/app.py](apps/evals-leaderboard/app.py) | 49 | fetch_leaderboard | Fetch leaderboard data from the HF dataset. |
+| [apps/evals-leaderboard/app.py](apps/evals-leaderboard/app.py) | 64 | refresh_handler | Refresh the leaderboard data from the dataset. |
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | 63 | BenchmarkSpec | ClassDef |
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | 104 | EvalsCollector | Collects evaluation scores from model-index metadata. |
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | 427 | main | FunctionDef |
@@ -65,6 +71,9 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | 360 | get_leaderboard | Get results sorted by score descending. |
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | 364 | save_json | Save the leaderboard to a JSON file. |
 | [apps/evals-leaderboard/collect_evals.py](apps/evals-leaderboard/collect_evals.py) | 377 | push_to_hub | Push the leaderboard data to a HF dataset. |
+| [apps/hackers-leaderboard/app.py](apps/hackers-leaderboard/app.py) | 38 | format_username | Format username as a clickable link. |
+| [apps/hackers-leaderboard/app.py](apps/hackers-leaderboard/app.py) | 43 | fetch_leaderboard | Fetch leaderboard data from the HF dataset. |
+| [apps/hackers-leaderboard/app.py](apps/hackers-leaderboard/app.py) | 58 | refresh_handler | Refresh the leaderboard data from the dataset. |
 | [apps/hackers-leaderboard/collect_points.py](apps/hackers-leaderboard/collect_points.py) | 36 | UserStats | Tracks engagement stats for a single user. |
 | [apps/hackers-leaderboard/collect_points.py](apps/hackers-leaderboard/collect_points.py) | 63 | PointsCollector | Collects engagement points from the hf-skills organization. |
 | [apps/hackers-leaderboard/collect_points.py](apps/hackers-leaderboard/collect_points.py) | 461 | main | FunctionDef |
@@ -149,13 +158,6 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 | [skills/hugging-face-evaluation/scripts/inspect_vllm_uv.py](skills/hugging-face-evaluation/scripts/inspect_vllm_uv.py) | 118 | run_inspect_hf | Run inspect-ai evaluation with HuggingFace Transformers backend. |
 | [skills/hugging-face-evaluation/scripts/inspect_vllm_uv.py](skills/hugging-face-evaluation/scripts/inspect_vllm_uv.py) | 183 | main | FunctionDef |
 | [skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py](skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py) | 37 | setup_environment | Configure environment variables for HuggingFace authentication. |
-| [skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py](skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py) | 45 | run_lighteval_vllm | Run lighteval with vLLM backend for efficient GPU inference. |
-| [skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py](skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py) | 113 | run_lighteval_accelerate | Run lighteval with accelerate backend for multi-GPU distributed inference. |
-| [skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py](skills/hugging-face-evaluation/scripts/lighteval_vllm_uv.py) | 177 | main | FunctionDef |
-| [skills/hugging-face-evaluation/scripts/run_eval_job.py](skills/hugging-face-evaluation/scripts/run_eval_job.py) | 32 | create_eval_job | Submit an evaluation job using the Hugging Face Jobs CLI. |
-| [skills/hugging-face-evaluation/scripts/run_eval_job.py](skills/hugging-face-evaluation/scripts/run_eval_job.py) | 80 | main | FunctionDef |
-| [skills/hugging-face-evaluation/scripts/run_vllm_eval_job.py](skills/hugging-face-evaluation/scripts/run_vllm_eval_job.py) | 54 | estimate_hardware | Estimate appropriate hardware based on model ID naming conventions. |
-| [skills/hugging-face-evaluation/scripts/run_vllm_eval_job.py](skills/hugging-face-evaluation/scripts/run_vllm_eval_job.py) | 76 | create_lighteval_job | Submit a lighteval evaluation job on HuggingFace Jobs. |
 
 ## Models, dependencies and configuration
 
@@ -191,6 +193,7 @@ Every project now has a source/version manifest, empty environment template, a d
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
 | [skills/hugging-face-evaluation/examples/.env.example](skills/hugging-face-evaluation/examples/.env.example) | Redacted 1 possible credential literals (values not retained). |
 | [skills/hugging-face-evaluation/examples/artificial_analysis_to_hub.py](skills/hugging-face-evaluation/examples/artificial_analysis_to_hub.py) | Added explicit connection/read timeouts to 1 direct requests calls. |
+| [skills/hugging-face-tool-builder/references/baseline_hf_api.tsx](skills/hugging-face-tool-builder/references/baseline_hf_api.tsx) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

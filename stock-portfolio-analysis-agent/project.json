@@ -74,106 +74,225 @@
       "upstream_sha256": "280f164191cf86d30821972be52400c609425d4dcbb5a81d220de9745d874445",
       "local_sha256": "280f164191cf86d30821972be52400c609425d4dcbb5a81d220de9745d874445",
       "changes": []
-    }
-  ],
-  "omitted": [
+    },
     {
+      "upstream_path": "frontend/.env.example",
       "path": "frontend/.env.example",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "174578ab0570361991f20bf547db702bbdd8994f421231af95db10bf0b5b1490",
+      "local_sha256": "174578ab0570361991f20bf547db702bbdd8994f421231af95db10bf0b5b1490",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/next-env.d.ts",
       "path": "frontend/next-env.d.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "9a964c445118d72402f630b029a9f48cb1b5682c49df14ec08e66513096929ec",
+      "local_sha256": "9a964c445118d72402f630b029a9f48cb1b5682c49df14ec08e66513096929ec",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/next.config.ts",
       "path": "frontend/next.config.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "local_sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/package.json",
       "path": "frontend/package.json",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "dda94666877e3cb63cc023dfff48fe38cb8099dc270970f3dd31d17b82bb9b40",
+      "local_sha256": "dda94666877e3cb63cc023dfff48fe38cb8099dc270970f3dd31d17b82bb9b40",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/pnpm-lock.yaml",
       "path": "frontend/pnpm-lock.yaml",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "610668f860abedd7280c9cc0d39151342671a216598b3075593c403665030edf",
+      "local_sha256": "610668f860abedd7280c9cc0d39151342671a216598b3075593c403665030edf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/postcss.config.mjs",
       "path": "frontend/postcss.config.mjs",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "c0b4a123ae7b1f40069fd2183841248c4af91f3153c4a2334b19e3bbc2017802",
+      "local_sha256": "c0b4a123ae7b1f40069fd2183841248c4af91f3153c4a2334b19e3bbc2017802",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/api/copilotkit/route.ts",
       "path": "frontend/src/app/api/copilotkit/route.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "93cf066f8110aaa8f7bc57fd78be9448e66703618090dd732373f86b2e4f5108",
+      "local_sha256": "93cf066f8110aaa8f7bc57fd78be9448e66703618090dd732373f86b2e4f5108",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/cash-panel.tsx",
       "path": "frontend/src/app/components/cash-panel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "bbbe061f05f5eefc2ff983b55d69a7b24cde8791a88b6f2d919f2e0388a09da5",
+      "local_sha256": "bbbe061f05f5eefc2ff983b55d69a7b24cde8791a88b6f2d919f2e0388a09da5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/chart-components/allocation-table.tsx",
       "path": "frontend/src/app/components/chart-components/allocation-table.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "8643f15aa557a760abc0c2c14d351ac15f72fae79bfca86d3679d0caa0f097f5",
+      "local_sha256": "8643f15aa557a760abc0c2c14d351ac15f72fae79bfca86d3679d0caa0f097f5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/chart-components/bar-chart.tsx",
       "path": "frontend/src/app/components/chart-components/bar-chart.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "51334927d5ba822aeffc235cfcf509eb463d47292e941e589510e0ca17545497",
+      "local_sha256": "51334927d5ba822aeffc235cfcf509eb463d47292e941e589510e0ca17545497",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/chart-components/insight-card.tsx",
       "path": "frontend/src/app/components/chart-components/insight-card.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "ccd148e88a79ec9ce4f10cf52b74e5119de4a62555b3994f1723048ff7756551",
+      "local_sha256": "ccd148e88a79ec9ce4f10cf52b74e5119de4a62555b3994f1723048ff7756551",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/chart-components/line-chart.tsx",
       "path": "frontend/src/app/components/chart-components/line-chart.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "d51752acaa401beeff279d71a9dc956804c40850bd5f46ffb1764463ed44a1c0",
+      "local_sha256": "d51752acaa401beeff279d71a9dc956804c40850bd5f46ffb1764463ed44a1c0",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/chart-components/section-title.tsx",
       "path": "frontend/src/app/components/chart-components/section-title.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "40f3f092f0ebb4a7f19379dad1b091f6c82bfe92bb6b877db475a74d196360b5",
+      "local_sha256": "40f3f092f0ebb4a7f19379dad1b091f6c82bfe92bb6b877db475a74d196360b5",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/component-tree.tsx",
       "path": "frontend/src/app/components/component-tree.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "a9bd738392cce7a67961e7d20e9bca26227fce2603b4ea0770c064c2a34641b4",
+      "local_sha256": "a9bd738392cce7a67961e7d20e9bca26227fce2603b4ea0770c064c2a34641b4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/generative-canvas.tsx",
       "path": "frontend/src/app/components/generative-canvas.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "aae6d8343b160047f6ac3ba335fd9d9443b5c51e18d1fda26dc7810a68c8c744",
+      "local_sha256": "aae6d8343b160047f6ac3ba335fd9d9443b5c51e18d1fda26dc7810a68c8c744",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/prompt-panel.tsx",
       "path": "frontend/src/app/components/prompt-panel.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "d1bc5d785a5e5cc41c8048430f889705f5c55f5ebf5ae908b69cbe4b1f88dfee",
+      "local_sha256": "d1bc5d785a5e5cc41c8048430f889705f5c55f5ebf5ae908b69cbe4b1f88dfee",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/theme-provider.tsx",
       "path": "frontend/src/app/components/theme-provider.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "79e04ca40c1ede4f6b30c018bdcbad984e780b5f5fe12c2c4d0c920a7a463bd4",
+      "local_sha256": "79e04ca40c1ede4f6b30c018bdcbad984e780b5f5fe12c2c4d0c920a7a463bd4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/components/tool-logs.tsx",
       "path": "frontend/src/app/components/tool-logs.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "dda2883a64ba936049a628d611b810d9527cdcbd61634584ca5c9b64b734aeaf",
+      "local_sha256": "dda2883a64ba936049a628d611b810d9527cdcbd61634584ca5c9b64b734aeaf",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/favicon.ico",
       "path": "frontend/src/app/favicon.ico",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932",
+      "local_sha256": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/globals.css",
       "path": "frontend/src/app/globals.css",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "bcec30d59d7c909bcfbd78423c9322aaa8839510f7e314705c76b20661d82fe4",
+      "local_sha256": "bcec30d59d7c909bcfbd78423c9322aaa8839510f7e314705c76b20661d82fe4",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/layout.tsx",
       "path": "frontend/src/app/layout.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "27d8cd838395c4a20dae9d0eb3ac427ac21a295e5b5c63ca916def833b6707df",
+      "local_sha256": "27d8cd838395c4a20dae9d0eb3ac427ac21a295e5b5c63ca916def833b6707df",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/app/page.tsx",
       "path": "frontend/src/app/page.tsx",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "429c34895f33d7be2d15c6ecea05b3b87829331b5589a434ee4bd12ac7740924",
+      "local_sha256": "429c34895f33d7be2d15c6ecea05b3b87829331b5589a434ee4bd12ac7740924",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/src/utils/prompts.ts",
       "path": "frontend/src/utils/prompts.ts",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "861a32fda92fa76fbc2492b12d013478a84d97d8fc2ff01961c53db67c6bf407",
+      "local_sha256": "861a32fda92fa76fbc2492b12d013478a84d97d8fc2ff01961c53db67c6bf407",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     },
     {
+      "upstream_path": "frontend/tsconfig.json",
       "path": "frontend/tsconfig.json",
-      "reason": "Frontend, generated output or development automation omitted."
+      "upstream_sha256": "172c71e5b3e27ff690fa63a1b74598be508bef99b18f001e6d48c2bdf4fb9eff",
+      "local_sha256": "172c71e5b3e27ff690fa63a1b74598be508bef99b18f001e6d48c2bdf4fb9eff",
+      "changes": [
+        "Restored frontend source/asset after UI scope was authorized."
+      ]
     }
   ],
+  "omitted": [],
   "analysis": {
     "units": [
       {
@@ -431,11 +550,34 @@
       }
     ],
     "manifests": [
-      "pyproject.toml"
+      "pyproject.toml",
+      "frontend/package.json"
     ],
     "notebooks": [],
-    "other_code": [],
+    "other_code": [
+      "frontend/next-env.d.ts",
+      "frontend/next.config.ts",
+      "frontend/pnpm-lock.yaml",
+      "frontend/postcss.config.mjs",
+      "frontend/src/app/api/copilotkit/route.ts",
+      "frontend/src/app/components/cash-panel.tsx",
+      "frontend/src/app/components/chart-components/allocation-table.tsx",
+      "frontend/src/app/components/chart-components/bar-chart.tsx",
+      "frontend/src/app/components/chart-components/insight-card.tsx",
+      "frontend/src/app/components/chart-components/line-chart.tsx",
+      "frontend/src/app/components/chart-components/section-title.tsx",
+      "frontend/src/app/components/component-tree.tsx",
+      "frontend/src/app/components/generative-canvas.tsx",
+      "frontend/src/app/components/prompt-panel.tsx",
+      "frontend/src/app/components/theme-provider.tsx",
+      "frontend/src/app/components/tool-logs.tsx",
+      "frontend/src/app/globals.css",
+      "frontend/src/app/layout.tsx",
+      "frontend/src/app/page.tsx",
+      "frontend/src/utils/prompts.ts"
+    ],
     "environment": [
+      "NEXT_PUBLIC_CREWAI_URL",
       "OPENAI_API_KEY",
       "PORT"
     ],
@@ -483,5 +625,26 @@
     "plain_python_units_checked": 4
   },
   "category": "agents",
-  "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend."
+  "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend.",
+  "ui_entries": [
+    {
+      "path": "frontend/package.json",
+      "kind": "npm",
+      "script": "dev"
+    }
+  ],
+  "learning_contract": {
+    "required": true,
+    "sections": [
+      "The core lesson",
+      "Rebuild it yourself",
+      "Project-specific experiment",
+      "What to measure",
+      "Failure modes to understand",
+      "Learn from every scenario",
+      "Better production deployment",
+      "Deployment tradeoffs",
+      "Release and rollback evidence"
+    ]
+  }
 }

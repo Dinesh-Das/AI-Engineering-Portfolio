@@ -4,7 +4,7 @@
 
 Expose product research and comparison through an MCP server.
 
-TypeScript MCP resources call Bright Data tools and structure product results; interactive components are excluded.
+TypeScript MCP resources call Bright Data tools and structure product results; restored interactive components render the structured tool results.
 
 Conceptual data flow (an architectural interpretation of the source, not a recorded execution trace):
 
@@ -14,7 +14,7 @@ authenticated client -> tool discovery -> argument validation -> authorized oper
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
@@ -23,6 +23,19 @@ The following table is extracted from this project's actual retained files. Note
 | [resources/amazon-product-analysis/server.ts](resources/amazon-product-analysis/server.ts) | backend/configuration source; inspect directly | .ts |
 | [resources/amazon-product-analysis/types.ts](resources/amazon-product-analysis/types.ts) | backend/configuration source; inspect directly | .ts |
 | [resources/amazon-product-analysis/utils.ts](resources/amazon-product-analysis/utils.ts) | backend/configuration source; inspect directly | .ts |
+| [resources/amazon-product-analysis/components/CustomerReviews.tsx](resources/amazon-product-analysis/components/CustomerReviews.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/DeliveryInfo.tsx](resources/amazon-product-analysis/components/DeliveryInfo.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/Features.tsx](resources/amazon-product-analysis/components/Features.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/ImageGallery.tsx](resources/amazon-product-analysis/components/ImageGallery.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/index.ts](resources/amazon-product-analysis/components/index.ts) | backend/configuration source; inspect directly | .ts |
+| [resources/amazon-product-analysis/components/PricingDeal.tsx](resources/amazon-product-analysis/components/PricingDeal.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/ProductCard.tsx](resources/amazon-product-analysis/components/ProductCard.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/ProductSpecs.tsx](resources/amazon-product-analysis/components/ProductSpecs.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/components/SellerInfo.tsx](resources/amazon-product-analysis/components/SellerInfo.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/amazon-product-analysis/hooks/index.ts](resources/amazon-product-analysis/hooks/index.ts) | backend/configuration source; inspect directly | .ts |
+| [resources/amazon-product-analysis/hooks/useProductAnalysis.ts](resources/amazon-product-analysis/hooks/useProductAnalysis.ts) | backend/configuration source; inspect directly | .ts |
+| [resources/amazon-product-analysis/widget.tsx](resources/amazon-product-analysis/widget.tsx) | backend/configuration source; inspect directly | .tsx |
+| [resources/styles.css](resources/styles.css) | backend/configuration source; inspect directly | .css |
 
 ## Function and class walkthrough
 
@@ -43,6 +56,7 @@ Retained dependency manifests: [package.json](package.json)
 Environment names detected from code/configuration:
 
 - `BRIGHTDATA_API_KEY`
+- `MAX_FEATURES_DISPLAY`
 - `MCP_URL`
 - `OPENAI_API_KEY`
 
@@ -56,6 +70,19 @@ Every project now has a source/version manifest, empty environment template, a d
 | --- | --- |
 | [UPSTREAM_ENV.example](UPSTREAM_ENV.example) | Reference template renamed; local .env.example contains empty values. |
 | [UPSTREAM_README.md](UPSTREAM_README.md) | Preserved upstream README separately from the local learning guide. |
+| [resources/amazon-product-analysis/components/CustomerReviews.tsx](resources/amazon-product-analysis/components/CustomerReviews.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/DeliveryInfo.tsx](resources/amazon-product-analysis/components/DeliveryInfo.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/Features.tsx](resources/amazon-product-analysis/components/Features.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/ImageGallery.tsx](resources/amazon-product-analysis/components/ImageGallery.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/index.ts](resources/amazon-product-analysis/components/index.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/PricingDeal.tsx](resources/amazon-product-analysis/components/PricingDeal.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/ProductCard.tsx](resources/amazon-product-analysis/components/ProductCard.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/ProductSpecs.tsx](resources/amazon-product-analysis/components/ProductSpecs.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/components/SellerInfo.tsx](resources/amazon-product-analysis/components/SellerInfo.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/hooks/index.ts](resources/amazon-product-analysis/hooks/index.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/hooks/useProductAnalysis.ts](resources/amazon-product-analysis/hooks/useProductAnalysis.ts) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/amazon-product-analysis/widget.tsx](resources/amazon-product-analysis/widget.tsx) | Restored frontend source/asset after UI scope was authorized. |
+| [resources/styles.css](resources/styles.css) | Restored frontend source/asset after UI scope was authorized. |
 
 ## Code-level review leads
 

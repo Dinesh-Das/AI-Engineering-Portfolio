@@ -14,11 +14,11 @@ versioned task set -> identical context/settings -> candidate generation -> blin
 
 ## Source map
 
-The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI definitions remain reference material and are not execution targets. Definitions may describe variants rather than one sequential call chain.
+The following table is extracted from this project's actual retained files. Notebook cell numbers are one-based and include Markdown cells. UI and headless entry points are classified separately in README.md. Definitions may describe variants rather than one sequential call chain.
 
 | Source | Important definitions | Dependencies / role |
 | --- | --- | --- |
-| [app.py](app.py) | handle_chat_input, process_claude_stream, process_qwen3_coder_stream | UI reference |
+| [app.py](app.py) | handle_chat_input, process_claude_stream, process_qwen3_coder_stream | UI surface |
 | [code_evaluation.py](code_evaluation.py) | evaluate_code | deepeval, typing |
 | [code_ingestion.py](code_ingestion.py) | ingest_github_repo | gitingest, typing |
 | [model_service.py](model_service.py) | get_model_response_async, get_parallel_responses, get_model_responses | asyncio, litellm, os, typing |
@@ -31,6 +31,9 @@ Read the entry/orchestrator first, then the tool/retrieval/model adapter, then t
 
 | Source | Line in file/cell | Symbol | Contract clue |
 | --- | --- | --- | --- |
+| [app.py](app.py) | 96 | handle_chat_input | AsyncFunctionDef |
+| [app.py](app.py) | 115 | process_claude_stream | AsyncFunctionDef |
+| [app.py](app.py) | 123 | process_qwen3_coder_stream | AsyncFunctionDef |
 | [code_evaluation.py](code_evaluation.py) | 7 | evaluate_code | FunctionDef |
 | [code_ingestion.py](code_ingestion.py) | 4 | ingest_github_repo | FunctionDef |
 | [model_service.py](model_service.py) | 6 | get_model_response_async | AsyncFunctionDef |
