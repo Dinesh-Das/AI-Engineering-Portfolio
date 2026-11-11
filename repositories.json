@@ -1,0 +1,804 @@
+{
+  "owner": "Dinesh-Das",
+  "portfolio": "https://github.com/Dinesh-Das/AI-Engineering-Portfolio",
+  "website": "https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html",
+  "commit_dates": [
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13"
+  ],
+  "timezone": "Asia/Kolkata",
+  "projects": [
+    {
+      "id": "acp-code",
+      "repository": "acp-code",
+      "url": "https://github.com/Dinesh-Das/acp-code",
+      "category": "agents",
+      "purpose": "Coordinate a research drafter and verifier implemented with different agent frameworks."
+    },
+    {
+      "id": "agent-with-mcp-memory",
+      "repository": "agent-with-mcp-memory",
+      "url": "https://github.com/Dinesh-Das/agent-with-mcp-memory",
+      "category": "memory",
+      "purpose": "Give a local agent web tools, persistent graph memory and traceable behavior."
+    },
+    {
+      "id": "agent2agent-demo",
+      "repository": "agent2agent-demo",
+      "url": "https://github.com/Dinesh-Das/agent2agent-demo",
+      "category": "agents",
+      "purpose": "Understand agent-to-agent communication through sine, cosine and tangent services."
+    },
+    {
+      "id": "agentic_rag",
+      "repository": "agentic_rag",
+      "url": "https://github.com/Dinesh-Das/agentic_rag",
+      "category": "rag",
+      "purpose": "Route questions to document retrieval and use web fallback when needed."
+    },
+    {
+      "id": "agentic_rag_deepseek",
+      "repository": "agentic_rag_deepseek",
+      "url": "https://github.com/Dinesh-Das/agentic_rag_deepseek",
+      "category": "rag",
+      "purpose": "Combine a local reasoning model with managed document parsing and search."
+    },
+    {
+      "id": "ai-avatar-demo",
+      "repository": "ai-avatar-demo",
+      "url": "https://github.com/Dinesh-Das/ai-avatar-demo",
+      "category": "memory",
+      "purpose": "Supply a conversational avatar with a memory-aware AI backend."
+    },
+    {
+      "id": "ai-podcast-generation",
+      "repository": "ai-podcast-generation",
+      "url": "https://github.com/Dinesh-Das/ai-podcast-generation",
+      "category": "media",
+      "purpose": "Turn source material into a two-speaker podcast with cloud or local generation."
+    },
+    {
+      "id": "ai-podcast-generator",
+      "repository": "ai-podcast-generator",
+      "url": "https://github.com/Dinesh-Das/ai-podcast-generator",
+      "category": "media",
+      "purpose": "Create article-to-podcast audio using MiniMax generation and speech."
+    },
+    {
+      "id": "ai_news_generator",
+      "repository": "ai_news_generator",
+      "url": "https://github.com/Dinesh-Das/ai_news_generator",
+      "category": "agents",
+      "purpose": "Generate sourced AI news using CrewAI and Cohere."
+    },
+    {
+      "id": "amazon-product-analysis-server",
+      "repository": "amazon-product-analysis-server",
+      "url": "https://github.com/Dinesh-Das/amazon-product-analysis-server",
+      "category": "mcp",
+      "purpose": "Expose product research and comparison through an MCP server."
+    },
+    {
+      "id": "art_mcp_rl",
+      "repository": "art_mcp_rl",
+      "url": "https://github.com/Dinesh-Das/art_mcp_rl",
+      "category": "training",
+      "purpose": "Train an LLM to use MCP database tools with reinforcement learning."
+    },
+    {
+      "id": "audio-analysis-toolkit",
+      "repository": "audio-analysis-toolkit",
+      "url": "https://github.com/Dinesh-Das/audio-analysis-toolkit",
+      "category": "voice",
+      "purpose": "Transcribe audio and expose summaries, speakers and analysis via MCP."
+    },
+    {
+      "id": "autogen-stock-analyst",
+      "repository": "autogen-stock-analyst",
+      "url": "https://github.com/Dinesh-Das/autogen-stock-analyst",
+      "category": "agents",
+      "purpose": "Use AutoGen with a custom model client for financial analysis and code generation."
+    },
+    {
+      "id": "biotech-agentic-analyst",
+      "repository": "biotech-agentic-analyst",
+      "url": "https://github.com/Dinesh-Das/biotech-agentic-analyst",
+      "category": "structured",
+      "purpose": "Extract scientific figures and produce structured research intelligence."
+    },
+    {
+      "id": "book-writer-flow",
+      "repository": "book-writer-flow",
+      "url": "https://github.com/Dinesh-Das/book-writer-flow",
+      "category": "agents",
+      "purpose": "Generate a researched outline and chapters with a persistent workflow state."
+    },
+    {
+      "id": "brand-monitoring",
+      "repository": "brand-monitoring",
+      "url": "https://github.com/Dinesh-Das/brand-monitoring",
+      "category": "agents",
+      "purpose": "Collect brand signals across multiple platforms and synthesize reports."
+    },
+    {
+      "id": "build-code-harness",
+      "repository": "build-code-harness",
+      "url": "https://github.com/Dinesh-Das/build-code-harness",
+      "category": "agents",
+      "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval."
+    },
+    {
+      "id": "Build-reasoning-model",
+      "repository": "Build-reasoning-model",
+      "url": "https://github.com/Dinesh-Das/Build-reasoning-model",
+      "category": "training",
+      "purpose": "Train a reasoning-oriented model with GRPO and explicit answer-format rewards."
+    },
+    {
+      "id": "chat-with-audios",
+      "repository": "chat-with-audios",
+      "url": "https://github.com/Dinesh-Das/chat-with-audios",
+      "category": "rag",
+      "purpose": "Retrieve answers from transcribed audio with document-style RAG."
+    },
+    {
+      "id": "chat-with-code",
+      "repository": "chat-with-code",
+      "url": "https://github.com/Dinesh-Das/chat-with-code",
+      "category": "rag",
+      "purpose": "Retrieve repository context for code questions and validate responses."
+    },
+    {
+      "id": "code-model-comparison",
+      "repository": "code-model-comparison",
+      "url": "https://github.com/Dinesh-Das/code-model-comparison",
+      "category": "evaluation",
+      "purpose": "Compare code-generation models on a common repository context."
+    },
+    {
+      "id": "colbert-rag",
+      "repository": "colbert-rag",
+      "url": "https://github.com/Dinesh-Das/colbert-rag",
+      "category": "retrieval",
+      "purpose": "Understand late interaction through ColBERT-style MaxSim scoring."
+    },
+    {
+      "id": "Colivara-deepseek-website-RAG",
+      "repository": "Colivara-deepseek-website-RAG",
+      "url": "https://github.com/Dinesh-Das/Colivara-deepseek-website-RAG",
+      "category": "rag",
+      "purpose": "Retrieve visually represented web pages and answer with a multimodal model."
+    },
+    {
+      "id": "content_planner_flow",
+      "repository": "content_planner_flow",
+      "url": "https://github.com/Dinesh-Das/content_planner_flow",
+      "category": "agents",
+      "purpose": "Plan social content from web material and schedule a draft."
+    },
+    {
+      "id": "context-engineering-pipeline",
+      "repository": "context-engineering-pipeline",
+      "url": "https://github.com/Dinesh-Das/context-engineering-pipeline",
+      "category": "memory",
+      "purpose": "Assemble useful context from documents, memory and structured stores under a token budget."
+    },
+    {
+      "id": "context-engineering-workflow",
+      "repository": "context-engineering-workflow",
+      "url": "https://github.com/Dinesh-Das/context-engineering-workflow",
+      "category": "memory",
+      "purpose": "Coordinate multi-source research with parsing, retrieval and long-term context."
+    },
+    {
+      "id": "conversational-support-flow",
+      "repository": "conversational-support-flow",
+      "url": "https://github.com/Dinesh-Das/conversational-support-flow",
+      "category": "agents",
+      "purpose": "Route support turns among order lookup, policy retrieval and live research."
+    },
+    {
+      "id": "corrective-rag",
+      "repository": "corrective-rag",
+      "url": "https://github.com/Dinesh-Das/corrective-rag",
+      "category": "rag",
+      "purpose": "Detect weak document evidence and recover through web search."
+    },
+    {
+      "id": "cursor_linkup_mcp",
+      "repository": "cursor_linkup_mcp",
+      "url": "https://github.com/Dinesh-Das/cursor_linkup_mcp",
+      "category": "mcp",
+      "purpose": "Expose deep web search and document retrieval to an MCP client."
+    },
+    {
+      "id": "database-memory-agent",
+      "repository": "database-memory-agent",
+      "url": "https://github.com/Dinesh-Das/database-memory-agent",
+      "category": "memory",
+      "purpose": "Combine conversation history, semantic document search and tool selection in MongoDB."
+    },
+    {
+      "id": "DeepSeek-finetuning",
+      "repository": "DeepSeek-finetuning",
+      "url": "https://github.com/Dinesh-Das/DeepSeek-finetuning",
+      "category": "training",
+      "purpose": "Adapt a distilled DeepSeek model and export it for local inference."
+    },
+    {
+      "id": "deepseek-multimodal-RAG",
+      "repository": "deepseek-multimodal-RAG",
+      "url": "https://github.com/Dinesh-Das/deepseek-multimodal-RAG",
+      "category": "rag",
+      "purpose": "Retrieve PDF pages visually and answer with DeepSeek Janus-Pro."
+    },
+    {
+      "id": "deepseek-thinking-ui",
+      "repository": "deepseek-thinking-ui",
+      "url": "https://github.com/Dinesh-Das/deepseek-thinking-ui",
+      "category": "interfaces",
+      "purpose": "Parse streamed model traces and final answers without dropping boundary text."
+    },
+    {
+      "id": "deploy-agentic-rag",
+      "repository": "deploy-agentic-rag",
+      "url": "https://github.com/Dinesh-Das/deploy-agentic-rag",
+      "category": "operations",
+      "purpose": "Serve an agentic RAG workflow through an API using LitServe."
+    },
+    {
+      "id": "document-chat-rag",
+      "repository": "document-chat-rag",
+      "url": "https://github.com/Dinesh-Das/document-chat-rag",
+      "category": "rag",
+      "purpose": "Build document-grounded question answering with local models and optional vector storage."
+    },
+    {
+      "id": "documentation-writer-flow",
+      "repository": "documentation-writer-flow",
+      "url": "https://github.com/Dinesh-Das/documentation-writer-flow",
+      "category": "agents",
+      "purpose": "Produce repository documentation through planning and writing agents."
+    },
+    {
+      "id": "eval-and-observability",
+      "repository": "eval-and-observability",
+      "url": "https://github.com/Dinesh-Das/eval-and-observability",
+      "category": "evaluation",
+      "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline."
+    },
+    {
+      "id": "eyelevel-mcp-rag",
+      "repository": "eyelevel-mcp-rag",
+      "url": "https://github.com/Dinesh-Das/eyelevel-mcp-rag",
+      "category": "mcp",
+      "purpose": "Expose complex-document ingestion and retrieval through GroundX-backed MCP tools."
+    },
+    {
+      "id": "fastest-rag-milvus-groq",
+      "repository": "fastest-rag-milvus-groq",
+      "url": "https://github.com/Dinesh-Das/fastest-rag-milvus-groq",
+      "category": "retrieval",
+      "purpose": "Explore binary-vector retrieval with Milvus and hosted generation with Groq."
+    },
+    {
+      "id": "fastest-rag-stack",
+      "repository": "fastest-rag-stack",
+      "url": "https://github.com/Dinesh-Das/fastest-rag-stack",
+      "category": "retrieval",
+      "purpose": "Combine quantized Qdrant retrieval with SambaNova-hosted generation."
+    },
+    {
+      "id": "financial-analyst-deepseek",
+      "repository": "financial-analyst-deepseek",
+      "url": "https://github.com/Dinesh-Das/financial-analyst-deepseek",
+      "category": "agents",
+      "purpose": "Expose stock analysis and generated plots through a local-model MCP workflow."
+    },
+    {
+      "id": "finetune-studio-mcp-app",
+      "repository": "finetune-studio-mcp-app",
+      "url": "https://github.com/Dinesh-Das/finetune-studio-mcp-app",
+      "category": "training",
+      "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs."
+    },
+    {
+      "id": "firecrawl-agent",
+      "repository": "firecrawl-agent",
+      "url": "https://github.com/Dinesh-Das/firecrawl-agent",
+      "category": "rag",
+      "purpose": "Combine corrective document retrieval with Firecrawl web fallback."
+    },
+    {
+      "id": "flight-booking-crew",
+      "repository": "flight-booking-crew",
+      "url": "https://github.com/Dinesh-Das/flight-booking-crew",
+      "category": "agents",
+      "purpose": "Investigate browser-assisted flight search with CrewAI tools."
+    },
+    {
+      "id": "github-rag",
+      "repository": "github-rag",
+      "url": "https://github.com/Dinesh-Das/github-rag",
+      "category": "rag",
+      "purpose": "Answer repository questions after GitIngest converts source to retrieval context."
+    },
+    {
+      "id": "gpt-oss-thinking-ui",
+      "repository": "gpt-oss-thinking-ui",
+      "url": "https://github.com/Dinesh-Das/gpt-oss-thinking-ui",
+      "category": "interfaces",
+      "purpose": "Render native thinking and answer channels incrementally for local GPT-OSS."
+    },
+    {
+      "id": "gpt-oss-vs-qwen3",
+      "repository": "gpt-oss-vs-qwen3",
+      "url": "https://github.com/Dinesh-Das/gpt-oss-vs-qwen3",
+      "category": "evaluation",
+      "purpose": "Compare reasoning responses using parallel inference and judge metrics."
+    },
+    {
+      "id": "graphiti-mcp",
+      "repository": "graphiti-mcp",
+      "url": "https://github.com/Dinesh-Das/graphiti-mcp",
+      "category": "recipe",
+      "purpose": "Study a documented integration for persistent graph memory through MCP."
+    },
+    {
+      "id": "groundX-doc-pipeline",
+      "repository": "groundX-doc-pipeline",
+      "url": "https://github.com/Dinesh-Das/groundX-doc-pipeline",
+      "category": "structured",
+      "purpose": "Process complex documents and evaluate structured extraction quality."
+    },
+    {
+      "id": "grpo-finetuning-qwen3",
+      "repository": "grpo-finetuning-qwen3",
+      "url": "https://github.com/Dinesh-Das/grpo-finetuning-qwen3",
+      "category": "training",
+      "purpose": "Improve Qwen3 structured invoice extraction through remote GRPO training."
+    },
+    {
+      "id": "guidelines-vs-traditional-prompt",
+      "repository": "guidelines-vs-traditional-prompt",
+      "url": "https://github.com/Dinesh-Das/guidelines-vs-traditional-prompt",
+      "category": "agents",
+      "purpose": "Compare structured conversational guidelines with a traditional instruction prompt."
+    },
+    {
+      "id": "hotel-booking-crew",
+      "repository": "hotel-booking-crew",
+      "url": "https://github.com/Dinesh-Das/hotel-booking-crew",
+      "category": "agents",
+      "purpose": "Explore multi-agent hotel research with browser-backed search."
+    },
+    {
+      "id": "hugging-face-skills",
+      "repository": "hugging-face-skills",
+      "url": "https://github.com/Dinesh-Das/hugging-face-skills",
+      "category": "operations",
+      "purpose": "Inspect reusable dataset, evaluation, training and publishing scripts for AI agents."
+    },
+    {
+      "id": "imagegen-janus-pro",
+      "repository": "imagegen-janus-pro",
+      "url": "https://github.com/Dinesh-Das/imagegen-janus-pro",
+      "category": "media",
+      "purpose": "Study local Janus-Pro multimodal understanding and image generation."
+    },
+    {
+      "id": "kitops-mcp",
+      "repository": "kitops-mcp",
+      "url": "https://github.com/Dinesh-Das/kitops-mcp",
+      "category": "operations",
+      "purpose": "Manage machine-learning ModelKit artifacts through an MCP tool boundary."
+    },
+    {
+      "id": "knowledge distillation",
+      "repository": "knowledge-distillation",
+      "url": "https://github.com/Dinesh-Das/knowledge-distillation",
+      "category": "training",
+      "purpose": "Transfer classifier behavior from a teacher network to a smaller student."
+    },
+    {
+      "id": "llama-4-rag",
+      "repository": "llama-4-rag",
+      "url": "https://github.com/Dinesh-Das/llama-4-rag",
+      "category": "rag",
+      "purpose": "Use a hosted Llama 4 model in a local document-retrieval workflow."
+    },
+    {
+      "id": "llama-4_vs_deepseek-r1",
+      "repository": "llama-4_vs_deepseek-r1",
+      "url": "https://github.com/Dinesh-Das/llama-4_vs_deepseek-r1",
+      "category": "evaluation",
+      "purpose": "Compare Llama 4 and DeepSeek on a document-grounded task."
+    },
+    {
+      "id": "llamaindex-mcp",
+      "repository": "llamaindex-mcp",
+      "url": "https://github.com/Dinesh-Das/llamaindex-mcp",
+      "category": "mcp",
+      "purpose": "Connect a local LlamaIndex agent to SQLite-backed MCP tools."
+    },
+    {
+      "id": "local-chatgpt",
+      "repository": "local-chatgpt",
+      "url": "https://github.com/Dinesh-Das/local-chatgpt",
+      "category": "interfaces",
+      "purpose": "Build and inspect a local image-aware conversation with Llama vision."
+    },
+    {
+      "id": "local-chatgpt with DeepSeek",
+      "repository": "local-chatgpt-with-DeepSeek",
+      "url": "https://github.com/Dinesh-Das/local-chatgpt-with-DeepSeek",
+      "category": "interfaces",
+      "purpose": "Understand local dialogue state and incremental DeepSeek responses."
+    },
+    {
+      "id": "local-chatgpt with Gemma 3",
+      "repository": "local-chatgpt-with-Gemma-3",
+      "url": "https://github.com/Dinesh-Das/local-chatgpt-with-Gemma-3",
+      "category": "interfaces",
+      "purpose": "Study multimodal follow-ups with a compact local Gemma model."
+    },
+    {
+      "id": "mcp-agentic-rag",
+      "repository": "mcp-agentic-rag",
+      "url": "https://github.com/Dinesh-Das/mcp-agentic-rag",
+      "category": "mcp",
+      "purpose": "Expose web-ingested retrieval through MCP using Bright Data and Qdrant."
+    },
+    {
+      "id": "mcp-agentic-rag-firecrawl",
+      "repository": "mcp-agentic-rag-firecrawl",
+      "url": "https://github.com/Dinesh-Das/mcp-agentic-rag-firecrawl",
+      "category": "mcp",
+      "purpose": "Build an MCP retrieval service with Firecrawl ingestion."
+    },
+    {
+      "id": "mcp-video-rag",
+      "repository": "mcp-video-rag",
+      "url": "https://github.com/Dinesh-Das/mcp-video-rag",
+      "category": "mcp",
+      "purpose": "Expose video ingestion, retrieval and clip selection through Ragie-backed MCP tools."
+    },
+    {
+      "id": "mcp-voice-agent",
+      "repository": "mcp-voice-agent",
+      "url": "https://github.com/Dinesh-Das/mcp-voice-agent",
+      "category": "voice",
+      "purpose": "Give a LiveKit voice agent MCP-backed web and database tools."
+    },
+    {
+      "id": "mindsdb-mcp",
+      "repository": "mindsdb-mcp",
+      "url": "https://github.com/Dinesh-Das/mindsdb-mcp",
+      "category": "recipe",
+      "purpose": "Understand federated data access through a MindsDB MCP integration."
+    },
+    {
+      "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+      "repository": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+      "url": "https://github.com/Dinesh-Das/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+      "category": "evaluation",
+      "purpose": "Benchmark several code-generation providers against common repository context."
+    },
+    {
+      "id": "modernbert-rag",
+      "repository": "modernbert-rag",
+      "url": "https://github.com/Dinesh-Das/modernbert-rag",
+      "category": "rag",
+      "purpose": "Explore ModernBERT embeddings in a local RAG application."
+    },
+    {
+      "id": "motia-content-creation",
+      "repository": "motia-content-creation",
+      "url": "https://github.com/Dinesh-Das/motia-content-creation",
+      "category": "agents",
+      "purpose": "Implement event-driven article-to-social-content generation."
+    },
+    {
+      "id": "Multi-Agent-deep-researcher-mcp-windows-linux",
+      "repository": "Multi-Agent-deep-researcher-mcp-windows-linux",
+      "url": "https://github.com/Dinesh-Das/Multi-Agent-deep-researcher-mcp-windows-linux",
+      "category": "agents",
+      "purpose": "Expose a local multi-agent research crew through MCP."
+    },
+    {
+      "id": "multi-modal-rag",
+      "repository": "multi-modal-rag",
+      "url": "https://github.com/Dinesh-Das/multi-modal-rag",
+      "category": "rag",
+      "purpose": "Study CLIP image retrieval and multimodal prompting through notebooks."
+    },
+    {
+      "id": "multilingual-meeting-notes-generator",
+      "repository": "multilingual-meeting-notes-generator",
+      "url": "https://github.com/Dinesh-Das/multilingual-meeting-notes-generator",
+      "category": "voice",
+      "purpose": "Convert multilingual meeting audio into English notes and assigned action items."
+    },
+    {
+      "id": "multimodal-rag-assemblyai",
+      "repository": "multimodal-rag-assemblyai",
+      "url": "https://github.com/Dinesh-Das/multimodal-rag-assemblyai",
+      "category": "rag",
+      "purpose": "Unify audio and document ingestion with vector retrieval and CrewAI flows."
+    },
+    {
+      "id": "multiplatform_deep_researcher",
+      "repository": "multiplatform_deep_researcher",
+      "url": "https://github.com/Dinesh-Das/multiplatform_deep_researcher",
+      "category": "agents",
+      "purpose": "Research a question through platform-specific source specialists."
+    },
+    {
+      "id": "notebook-lm-clone",
+      "repository": "notebook-lm-clone",
+      "url": "https://github.com/Dinesh-Das/notebook-lm-clone",
+      "category": "rag",
+      "purpose": "Build a document-grounded notebook backend with citations, memory and audio output."
+    },
+    {
+      "id": "o3-vs-claude-code",
+      "repository": "o3-vs-claude-code",
+      "url": "https://github.com/Dinesh-Das/o3-vs-claude-code",
+      "category": "evaluation",
+      "purpose": "Compare repository-aware code responses and judge scoring across models."
+    },
+    {
+      "id": "omnigraph-multi-agent",
+      "repository": "omnigraph-multi-agent",
+      "url": "https://github.com/Dinesh-Das/omnigraph-multi-agent",
+      "category": "memory",
+      "purpose": "Inspect multi-agent graph consistency through provided schemas and event data."
+    },
+    {
+      "id": "open-agent-builder",
+      "repository": "open-agent-builder",
+      "url": "https://github.com/Dinesh-Das/open-agent-builder",
+      "category": "agents",
+      "purpose": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps."
+    },
+    {
+      "id": "openai-swarm-ollama",
+      "repository": "openai-swarm-ollama",
+      "url": "https://github.com/Dinesh-Das/openai-swarm-ollama",
+      "category": "agents",
+      "purpose": "Explore local-model handoffs between lightweight agents."
+    },
+    {
+      "id": "openclaw-secure-deployment",
+      "repository": "openclaw-secure-deployment",
+      "url": "https://github.com/Dinesh-Das/openclaw-secure-deployment",
+      "category": "recipe",
+      "purpose": "Learn host and network boundaries for an AI-agent deployment."
+    },
+    {
+      "id": "paralegal-agent-crew",
+      "repository": "paralegal-agent-crew",
+      "url": "https://github.com/Dinesh-Das/paralegal-agent-crew",
+      "category": "rag",
+      "purpose": "Retrieve legal-document evidence, rerank it and use research fallback."
+    },
+    {
+      "id": "parlant-conversational-agent",
+      "repository": "parlant-conversational-agent",
+      "url": "https://github.com/Dinesh-Das/parlant-conversational-agent",
+      "category": "agents",
+      "purpose": "Build a tool-backed loan conversation with explicit journeys and guidelines."
+    },
+    {
+      "id": "pixeltable-mcp",
+      "repository": "pixeltable-mcp",
+      "url": "https://github.com/Dinesh-Das/pixeltable-mcp",
+      "category": "mcp",
+      "purpose": "Coordinate multimodal storage and computed transformations through MCP."
+    },
+    {
+      "id": "qwen3-thinking-ui",
+      "repository": "qwen3-thinking-ui",
+      "url": "https://github.com/Dinesh-Das/qwen3-thinking-ui",
+      "category": "interfaces",
+      "purpose": "Compare thinking controls, final-answer quality and latency for Qwen3."
+    },
+    {
+      "id": "qwen3_vs_deepseek-r1",
+      "repository": "qwen3_vs_deepseek-r1",
+      "url": "https://github.com/Dinesh-Das/qwen3_vs_deepseek-r1",
+      "category": "evaluation",
+      "purpose": "Compare Qwen3 and DeepSeek on a common RAG evaluation pipeline."
+    },
+    {
+      "id": "rag-sql-router",
+      "repository": "rag-sql-router",
+      "url": "https://github.com/Dinesh-Das/rag-sql-router",
+      "category": "rag",
+      "purpose": "Route questions between document retrieval and structured SQL tools."
+    },
+    {
+      "id": "rag-voice-agent",
+      "repository": "rag-voice-agent",
+      "url": "https://github.com/Dinesh-Das/rag-voice-agent",
+      "category": "voice",
+      "purpose": "Connect spoken interaction to document retrieval and speech synthesis."
+    },
+    {
+      "id": "rag-with-dockling",
+      "repository": "rag-with-dockling",
+      "url": "https://github.com/Dinesh-Das/rag-with-dockling",
+      "category": "rag",
+      "purpose": "Parse spreadsheets and complex documents with Docling before retrieval."
+    },
+    {
+      "id": "real-time-voicebot",
+      "repository": "real-time-voicebot",
+      "url": "https://github.com/Dinesh-Das/real-time-voicebot",
+      "category": "voice",
+      "purpose": "Implement a streaming travel conversation with ASR, an LLM and TTS."
+    },
+    {
+      "id": "run-jev-inside-agent-harness",
+      "repository": "run-jev-inside-agent-harness",
+      "url": "https://github.com/Dinesh-Das/run-jev-inside-agent-harness",
+      "category": "recipe",
+      "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide."
+    },
+    {
+      "id": "sales-analytics-agent",
+      "repository": "sales-analytics-agent",
+      "url": "https://github.com/Dinesh-Das/sales-analytics-agent",
+      "category": "agents",
+      "purpose": "Join MongoDB and HubSpot data through MindsDB for natural-language analytics."
+    },
+    {
+      "id": "sdv-mcp",
+      "repository": "sdv-mcp",
+      "url": "https://github.com/Dinesh-Das/sdv-mcp",
+      "category": "mcp",
+      "purpose": "Expose local synthetic-data training, generation and statistical evaluation through MCP."
+    },
+    {
+      "id": "siamese-network",
+      "repository": "siamese-network",
+      "url": "https://github.com/Dinesh-Das/siamese-network",
+      "category": "training",
+      "purpose": "Learn digit similarity through paired examples and contrastive loss."
+    },
+    {
+      "id": "simple-rag-workflow",
+      "repository": "simple-rag-workflow",
+      "url": "https://github.com/Dinesh-Das/simple-rag-workflow",
+      "category": "rag",
+      "purpose": "Learn the ingestion, retrieval and synthesis stages of a minimal RAG system."
+    },
+    {
+      "id": "sonnet4-vs-o4",
+      "repository": "sonnet4-vs-o4",
+      "url": "https://github.com/Dinesh-Das/sonnet4-vs-o4",
+      "category": "evaluation",
+      "purpose": "Compare code generation with shared context and DeepEval grading."
+    },
+    {
+      "id": "sonnet4-vs-qwen3-coder",
+      "repository": "sonnet4-vs-qwen3-coder",
+      "url": "https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder",
+      "category": "evaluation",
+      "purpose": "Evaluate Claude and Qwen3-Coder against repository-grounded tasks."
+    },
+    {
+      "id": "stagehand x mcp-use",
+      "repository": "stagehand-x-mcp-use",
+      "url": "https://github.com/Dinesh-Das/stagehand-x-mcp-use",
+      "category": "agents",
+      "purpose": "Connect a local agent to browser-automation tools through MCP."
+    },
+    {
+      "id": "stock-portfolio-analysis-agent",
+      "repository": "stock-portfolio-analysis-agent",
+      "url": "https://github.com/Dinesh-Das/stock-portfolio-analysis-agent",
+      "category": "agents",
+      "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend."
+    },
+    {
+      "id": "streaming-ai-chatbot",
+      "repository": "streaming-ai-chatbot",
+      "url": "https://github.com/Dinesh-Das/streaming-ai-chatbot",
+      "category": "interfaces",
+      "purpose": "Understand event-driven chat state and recovery through an observable local implementation."
+    },
+    {
+      "id": "train-yolo26-object-detection",
+      "repository": "train-yolo26-object-detection",
+      "url": "https://github.com/Dinesh-Das/train-yolo26-object-detection",
+      "category": "training",
+      "purpose": "Fine-tune an object detector on a custom Roboflow dataset and track experiments."
+    },
+    {
+      "id": "trustworthy-rag",
+      "repository": "trustworthy-rag",
+      "url": "https://github.com/Dinesh-Das/trustworthy-rag",
+      "category": "rag",
+      "purpose": "Attach trustworthiness signals to document-grounded model output."
+    },
+    {
+      "id": "ultimate-ai-assitant-using-mcp",
+      "repository": "ultimate-ai-assitant-using-mcp",
+      "url": "https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp",
+      "category": "mcp",
+      "purpose": "Explore one agent connecting to several MCP servers."
+    },
+    {
+      "id": "video-rag-gemini",
+      "repository": "video-rag-gemini",
+      "url": "https://github.com/Dinesh-Das/video-rag-gemini",
+      "category": "media",
+      "purpose": "Upload video to Gemini and ask grounded questions about its contents."
+    },
+    {
+      "id": "web-browsing-agent",
+      "repository": "web-browsing-agent",
+      "url": "https://github.com/Dinesh-Das/web-browsing-agent",
+      "category": "agents",
+      "purpose": "Plan and execute browser research with CrewAI and Stagehand."
+    },
+    {
+      "id": "Website-to-API-with-FireCrawl",
+      "repository": "Website-to-API-with-FireCrawl",
+      "url": "https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl",
+      "category": "structured",
+      "purpose": "Convert web content into schema-constrained extraction results."
+    },
+    {
+      "id": "Youtube-trend-analysis",
+      "repository": "Youtube-trend-analysis",
+      "url": "https://github.com/Dinesh-Das/Youtube-trend-analysis",
+      "category": "agents",
+      "purpose": "Analyze channel or niche trends from collected video transcripts."
+    },
+    {
+      "id": "zep-memory-assistant",
+      "repository": "zep-memory-assistant",
+      "url": "https://github.com/Dinesh-Das/zep-memory-assistant",
+      "category": "memory",
+      "purpose": "Add persistent Zep memory to an AutoGen conversational agent."
+    },
+    {
+      "id": "zep-observations",
+      "repository": "zep-observations",
+      "url": "https://github.com/Dinesh-Das/zep-observations",
+      "category": "memory",
+      "purpose": "Study how graph conversation data becomes behavioral observations."
+    },
+    {
+      "id": "Latex-OCR-Lama",
+      "repository": "Latex-OCR-Lama",
+      "url": "https://github.com/Dinesh-Das/Latex-OCR-Lama",
+      "category": "ocr",
+      "purpose": "Local Latex-OCR-Lama document recognition workspace."
+    },
+    {
+      "id": "gemma3-ocr",
+      "repository": "gemma3-ocr",
+      "url": "https://github.com/Dinesh-Das/gemma3-ocr",
+      "category": "ocr",
+      "purpose": "Local gemma3-ocr document recognition workspace."
+    },
+    {
+      "id": "llama-ocr",
+      "repository": "llama-ocr",
+      "url": "https://github.com/Dinesh-Das/llama-ocr",
+      "category": "ocr",
+      "purpose": "Local llama-ocr document recognition workspace."
+    },
+    {
+      "id": "qwen-2.5VL-ocr",
+      "repository": "qwen-2.5VL-ocr",
+      "url": "https://github.com/Dinesh-Das/qwen-2.5VL-ocr",
+      "category": "ocr",
+      "purpose": "Local qwen-2.5VL-ocr document recognition workspace."
+    }
+  ]
+}
