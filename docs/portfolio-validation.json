@@ -1,0 +1,14 @@
+{
+  "projects": 113,
+  "scenarios": [
+    "113 project cards and repository URLs match the manifest",
+    "search narrows the visible projects",
+    "empty search results have visible recovery guidance",
+    "category filter and reset return the expected project sets",
+    "desktop WCAG A/AA automated accessibility checks pass",
+    "320px and 390px layouts fit without horizontal overflow"
+  ],
+  "console_errors": [],
+  "accessibility_violations": [],
+  "passed": true
+}
