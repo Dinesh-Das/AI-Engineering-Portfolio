@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-13",
+  "scope": "Independent exports; mocked model transports and synthetic CPU checks; no live inference",
+  "native_pytest": {
+    "Latex-OCR-Lama": 14,
+    "gemma3-ocr": 35,
+    "llama-ocr": 46,
+    "qwen-2.5VL-ocr": 35
+  },
+  "native_tests_passed": 130,
+  "qwen_parallel_run": "One 3-second Streamlit test timed out during concurrent suites; the complete sequential 35-test run passed without changing test limits.",
+  "gemma_export_ruff_check": "passed",
+  "gemma_export_ruff_format": "passed",
+  "gemma_bundled_core_tests_passed": 15,
+  "gemma_publication_commit": "ece8af2877292842d1bbe8656133b06f33211ea8",
+  "gemma_author_date": "2026-11-13T10:50:00+05:30",
+  "gemma_committer_date": "2026-11-13T10:50:00+05:30",
+  "original_source_folders": "Unmodified by export corrections."
+}

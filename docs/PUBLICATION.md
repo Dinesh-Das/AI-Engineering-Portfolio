@@ -34,6 +34,8 @@ Before publication, the collection's 79 standard-library tests and four ColBERT 
 
 Each independent checkout was executed with `python -I <absolute-path-to-enhance.py> check` from outside the project directory. Its full reachable Git history was scanned for common credential patterns before pushing. This pattern scan is limited and does not establish exhaustive security review.
 
+The independent OCR exports also passed 130 native pytest tests across the four projects. Gemma's export passes its required lint and format checks plus 15 bundled-core tests. [OCR export verification](OCR_PUBLICATION_VALIDATION.json) records the results and the sequential rerun after a parallel UI test timed out; test limits were preserved. Export corrections remain within Gemma's unpublished November 13 commit, retaining both requested timestamps and its original history.
+
 Remote `main` commit hashes are verified against the prepared local heads after every push. [Publication evidence](publication-report.json) records the project repositories and requested dated commit hashes. Live provider inference and GPU training are outside these checks.
 
 ## Resuming after GitHub's cooldown
