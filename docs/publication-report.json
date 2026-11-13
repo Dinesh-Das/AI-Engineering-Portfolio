@@ -1,0 +1,1148 @@
+{
+  "date": "2026-11-13",
+  "owner": "Dinesh-Das",
+  "project_count": 113,
+  "requested_dated_commits": 339,
+  "remote_projects_verified": 10,
+  "pending_projects": 103,
+  "commit_dates": [
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13"
+  ],
+  "timezone": "Asia/Kolkata",
+  "standalone_cpu_scenarios_passed": 630,
+  "history_blobs_scanned": 5321,
+  "projects": [
+    {
+      "id": "acp-code",
+      "url": "https://github.com/Dinesh-Das/acp-code",
+      "commits": [
+        "343518e3e451cde40d09bcc06abbf00a25800850",
+        "a955f0b065be76aee37bf55e64d4739c59a31a18",
+        "c2e1bc900564976cc1d152df46ae7ba2c0e49d8a"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "agent-with-mcp-memory",
+      "url": "https://github.com/Dinesh-Das/agent-with-mcp-memory",
+      "commits": [
+        "d436cc5a9e9346b23f24c757c3c7bb6bdec7f01c",
+        "ea6b6d8ad0aab3dabd92ee2cae9cfcafaac539b5",
+        "56fcda67fd2043371e7aa348b234d2ab1557ab67"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "agent2agent-demo",
+      "url": "https://github.com/Dinesh-Das/agent2agent-demo",
+      "commits": [
+        "a288201fc938ae323c06d1a3437419836916b999",
+        "927d598090c961914abe54c430dec3d8d4aff6cf",
+        "4b87349d36c04702f4913718b8ab8d9084072a4c"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "agentic_rag",
+      "url": "https://github.com/Dinesh-Das/agentic_rag",
+      "commits": [
+        "94c3213008c528951d2a934e8e6068da3fc25db7",
+        "115c9f6168579934cb5fa7c20565add555899cf8",
+        "42e11f0f534bd50aad39b6b35c4111b4ab833ea3"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "agentic_rag_deepseek",
+      "url": "https://github.com/Dinesh-Das/agentic_rag_deepseek",
+      "commits": [
+        "f774a4b8eeb9d63844379323aa7e9c85466158a4",
+        "3aa640677d344edff1c60c94f644679cfd13eb73",
+        "a1539ffd95aebb1adca02fd6f2ba721af10d4658"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "ai-avatar-demo",
+      "url": "https://github.com/Dinesh-Das/ai-avatar-demo",
+      "commits": [
+        "991b531044087a5657f409cd75992e658f19696d",
+        "ba3264016c42e271f44f13f7daca125b7744dcd4",
+        "a1687ecb5dbb5962cb4a27aeeb2747d3c761edb4"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "ai-podcast-generation",
+      "url": "https://github.com/Dinesh-Das/ai-podcast-generation",
+      "commits": [
+        "3b7b8429bfd6fbd2a323b69424c70ef598add885",
+        "77674901ebb62b56fbe4f42c68ceae7bf3cc2947",
+        "e92cc099cd1d1020781e7b48cd098dc7d77b1721"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "ai-podcast-generator",
+      "url": "https://github.com/Dinesh-Das/ai-podcast-generator",
+      "commits": [
+        "d5c3602d21bf88e0bf800a163c5db730eb34a04b",
+        "2fec7a04947e5736941b9fd6e4377b72ec672993",
+        "7c7a9478fd0d1fa952c7fb833d7586cf1a5af2fb"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "ai_news_generator",
+      "url": "https://github.com/Dinesh-Das/ai_news_generator",
+      "commits": [
+        "5a2ffb25e7c4c5ff377f3125519f7f99a1b2ddb3",
+        "0254ce8f1a8b92b5e811f29c067f3b9815f09fea",
+        "8d3150a0db608f7d5f6887cc44e4eae243b50ba0"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "amazon-product-analysis-server",
+      "url": "https://github.com/Dinesh-Das/amazon-product-analysis-server",
+      "commits": [
+        "764d014a581f4773cbdad5a7d78780cd202bcf36",
+        "08717f6bdb09a604a4e416f1bd4126720b732399",
+        "f7e3bee50670da11a91c8398ef0662bde00c1e3e"
+      ],
+      "remote_verified": true
+    },
+    {
+      "id": "art_mcp_rl",
+      "url": "https://github.com/Dinesh-Das/art_mcp_rl",
+      "commits": [
+        "3670dccdd33f7102ad61c40c0e4e3a979c37b074",
+        "95b4e344e8dbe0535e1faff1f1591b91e17ec924",
+        "ffa7c80404e12935318ddab0ff4372ccf1676cc9"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "audio-analysis-toolkit",
+      "url": "https://github.com/Dinesh-Das/audio-analysis-toolkit",
+      "commits": [
+        "952e604db322e5543f2befde958e3fec1a74fdcd",
+        "650ad4a61ffb6f4b087e278afbe1cf84ff46a0ac",
+        "aafa081fa28f6cf39896fa2a43fd69f41997395f"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "autogen-stock-analyst",
+      "url": "https://github.com/Dinesh-Das/autogen-stock-analyst",
+      "commits": [
+        "c997f15a540c75fb851304a623f81e7c56b1c6ac",
+        "84e85579be9408056256871005821dee95f516e6",
+        "7d20ee615890efb128ce395f2d53657f6eaec755"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "biotech-agentic-analyst",
+      "url": "https://github.com/Dinesh-Das/biotech-agentic-analyst",
+      "commits": [
+        "7e46b513c3e906c5364f817b009b32f906a3ccd2",
+        "93f83198d9a11b500f913c9745f9bacb790eef42",
+        "0f7c95f63e500a505c968c3e3424cc549e614b2e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "book-writer-flow",
+      "url": "https://github.com/Dinesh-Das/book-writer-flow",
+      "commits": [
+        "9c8ebc82d71cddc81160c778affc4d04adb759c2",
+        "1d6fd988022b9744269e63d562c66ad2b4bc94f3",
+        "51938d292e5c273cd5153d435348f1f3d49ab67c"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "brand-monitoring",
+      "url": "https://github.com/Dinesh-Das/brand-monitoring",
+      "commits": [
+        "df640be389915e174ecee3ac32cd187a53c55017",
+        "a1a0004cd577491a824e0ceadc482d9c7ad5d3bc",
+        "22ba5b70c8bcaf101e5c4f75d2ac1ffa26f09f91"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "build-code-harness",
+      "url": "https://github.com/Dinesh-Das/build-code-harness",
+      "commits": [
+        "105b2a4d58f7e0a50ea78ae4c36ec4b802defc34",
+        "b59421b426362534e4245c573d1ea4e2055f3ad5",
+        "9f91b25476e284e10821246a4b930e3bdf0cb0ff"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "Build-reasoning-model",
+      "url": "https://github.com/Dinesh-Das/Build-reasoning-model",
+      "commits": [
+        "bbf2f8ef82db30d9545f47de84a654097e4b74df",
+        "1286f4e877c7bb6fa3f99fd25a80d05d5123fbb3",
+        "8c133ffdf7b75b87da53d2ec9e4bbd5d80bdcbf8"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "chat-with-audios",
+      "url": "https://github.com/Dinesh-Das/chat-with-audios",
+      "commits": [
+        "065ced93bc4133d799dfc62012630c803e0d792c",
+        "8135a698352a456778c4f0583aebefe11f5cfc8b",
+        "9b64be415b007375e1c82f58c30e54d350c0ae97"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "chat-with-code",
+      "url": "https://github.com/Dinesh-Das/chat-with-code",
+      "commits": [
+        "4672f893c32dca45e0fa632a80c2d53db096b329",
+        "02062e48ca61091eb9eac5d95c3f7a12d2cc9148",
+        "3338a96bc1d8da4951279ebd7e978120a0756f54"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "code-model-comparison",
+      "url": "https://github.com/Dinesh-Das/code-model-comparison",
+      "commits": [
+        "f30ad79c989756648387b8835620653be7333775",
+        "2149da39b536f12e190008aa13adf97a62974af1",
+        "69d330dc32f1559b635fddcc938ea0c3f5a59a7d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "colbert-rag",
+      "url": "https://github.com/Dinesh-Das/colbert-rag",
+      "commits": [
+        "c7e17ee7faa00d85965dbf86af960e118ec0ff52",
+        "c2ce22b8d55b813dbeb68f5b9d81c3d7a2f844e0",
+        "f69151b149f8dea9e85504ca24a31497f8cebe6a"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "Colivara-deepseek-website-RAG",
+      "url": "https://github.com/Dinesh-Das/Colivara-deepseek-website-RAG",
+      "commits": [
+        "9ac5738a07d0e3fab07696f6b5f42dfdd1ab0b59",
+        "d22ec68dad6e48b94409df1d667f3a7ab14df8f6",
+        "750e7c2036b40d898df490bb6b4097e846533f8e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "content_planner_flow",
+      "url": "https://github.com/Dinesh-Das/content_planner_flow",
+      "commits": [
+        "950fe675d626f0a30bbcf82a8a1681615fae556b",
+        "6b1b883798ab3295f8e52734ae80a07b042dabb3",
+        "2a06171c3f50df25e04967366240740eaf98db5a"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "context-engineering-pipeline",
+      "url": "https://github.com/Dinesh-Das/context-engineering-pipeline",
+      "commits": [
+        "f831321087ebfb5c805492318e5dcd3309ade15f",
+        "9272973e771f616df4c61cd55e1f97bde16fcce3",
+        "fcb9882c2ef7e8876616e70814ac122e996374d9"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "context-engineering-workflow",
+      "url": "https://github.com/Dinesh-Das/context-engineering-workflow",
+      "commits": [
+        "7509a5c646f2403547c3a9174ba67f60d659c941",
+        "3cf2d7b98c98e8d5c37e32e9f154a792eb67a08f",
+        "3aa139b8f4279db331847e3f261660cf03a3ed3d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "conversational-support-flow",
+      "url": "https://github.com/Dinesh-Das/conversational-support-flow",
+      "commits": [
+        "fd2ad71cb37beabc8f36b0741ab351378527da96",
+        "f8eae8f16bade25709f9905b2605a715ba59b7b2",
+        "f5ff029e18ea42b9823f8fbc07c6682105585e81"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "corrective-rag",
+      "url": "https://github.com/Dinesh-Das/corrective-rag",
+      "commits": [
+        "4059d94acf88c89662869443315ad5d2875006ba",
+        "e54ffd569bc18b98adec6b5a65d8e2c17a00fa94",
+        "befe765f3d78ab48fc064fdbd79ea130db74910a"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "cursor_linkup_mcp",
+      "url": "https://github.com/Dinesh-Das/cursor_linkup_mcp",
+      "commits": [
+        "08be243e361d47b2e323e2966e5719642c4d26bd",
+        "a62b86c85ead80ba6bca003c6c27ac454efb997e",
+        "0453a676184ff200fe27c2d0b8e7bea99ebec58e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "database-memory-agent",
+      "url": "https://github.com/Dinesh-Das/database-memory-agent",
+      "commits": [
+        "74b47bacd81a2379ccaa361bfa07784300f946f5",
+        "203475ba75410c9ee6219588858c372b24376315",
+        "6909bb2b2b1b6edd95862c999769d5169cc90d99"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "DeepSeek-finetuning",
+      "url": "https://github.com/Dinesh-Das/DeepSeek-finetuning",
+      "commits": [
+        "9d14559e043347f2633daf541c06957f66deb287",
+        "259d6a52fda07c775554fdbde2f98669ec2c3c97",
+        "702b03b9e0b4c765c8f55fab4e969233cc49abfb"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "deepseek-multimodal-RAG",
+      "url": "https://github.com/Dinesh-Das/deepseek-multimodal-RAG",
+      "commits": [
+        "e6ffd628629c5c069155d53f6ed0489cbfdcbed8",
+        "947022f72710d3eeb6a08f12b2f86c65002d1546",
+        "db484a4a5a2992000cd7162eb47e8a8e063680a3"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "deepseek-thinking-ui",
+      "url": "https://github.com/Dinesh-Das/deepseek-thinking-ui",
+      "commits": [
+        "750611670a4ded6516b1c79d2c68359ce07a9ca7",
+        "e3a9a6f7c3122218b8ff2c13cc3dccdca513137f",
+        "c347bacef7fbbcd3bee07f64b9f0187c7909177a"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "deploy-agentic-rag",
+      "url": "https://github.com/Dinesh-Das/deploy-agentic-rag",
+      "commits": [
+        "06dbcfde52aa634b0e22fbbd7c5b618c9dd121fb",
+        "5d4227fe57b70673dc4c6ccf8cc7015ca9ce7bc4",
+        "7eb6f59dc46fcbcfb75881efa117d7ece7933d65"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "document-chat-rag",
+      "url": "https://github.com/Dinesh-Das/document-chat-rag",
+      "commits": [
+        "a97b95bcf48a9b658c565ca2ef9fb8d759e141f1",
+        "ebd5ee2a52a3cecca0ff785dc607542716f3a7ca",
+        "6c04e02542e5da3f28414d8b0129fef3a9979b45"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "documentation-writer-flow",
+      "url": "https://github.com/Dinesh-Das/documentation-writer-flow",
+      "commits": [
+        "91b0ebcea323b8631517bd065eb611fc8cbdae07",
+        "dec794aeffeadfdd103a4bc19773d8041792359f",
+        "92bc3fbacb3896ba07d0255bd185d4c21226da9d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "eval-and-observability",
+      "url": "https://github.com/Dinesh-Das/eval-and-observability",
+      "commits": [
+        "f3a88d7822b4021423b880b4f2cfde35968c31b5",
+        "bfbd45d439cf4f899e86a7272178bb48adf5c87f",
+        "515d15f7cb9a091394fc53b2a39253096fed9878"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "eyelevel-mcp-rag",
+      "url": "https://github.com/Dinesh-Das/eyelevel-mcp-rag",
+      "commits": [
+        "2f400d8589e6f863f4a175b0c61e229658b684c5",
+        "cc3382c5940ecc6676217d45cb06dd3ae70e6561",
+        "d364f560b63866ffb67262e4162f12bf29937613"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "fastest-rag-milvus-groq",
+      "url": "https://github.com/Dinesh-Das/fastest-rag-milvus-groq",
+      "commits": [
+        "6b243c9a0591f7eb51a78bcd3ed83cef552a8e6e",
+        "0aeec2a306e9a5ad63eb46185d2c7e2edf71d8dd",
+        "18d52fca193e130480b6dc6f982a17a79ba07fc8"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "fastest-rag-stack",
+      "url": "https://github.com/Dinesh-Das/fastest-rag-stack",
+      "commits": [
+        "ce219b222ba0f1056b69b06747f35c7943123da5",
+        "84e575d08f0d854c4666ffe665b81f8684104f85",
+        "e47887f91a4c55b6ff76cf3a531e9efa8bbf06e4"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "financial-analyst-deepseek",
+      "url": "https://github.com/Dinesh-Das/financial-analyst-deepseek",
+      "commits": [
+        "be7136737c868ee07653f2962a3bb47dc648de76",
+        "845946d0cafa5df90f946311ee42c6f05e7c58d4",
+        "0ccdc167aff5931215bbca3385915e2e4d041010"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "finetune-studio-mcp-app",
+      "url": "https://github.com/Dinesh-Das/finetune-studio-mcp-app",
+      "commits": [
+        "a062cdab7e6101186be0cd1fe12744ff36f2d72f",
+        "324c6a114fb25f5aa98fbe775bfce36ba0a4b5ad",
+        "86ce34a0300ef1f2e580148fbba17a5ee4729cdc"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "firecrawl-agent",
+      "url": "https://github.com/Dinesh-Das/firecrawl-agent",
+      "commits": [
+        "2f62a63c3e782424d7416d6e51d77d7be0b35fa1",
+        "c8b89076f6d9cef1c3bd77e2a6ae3f0b722d7c43",
+        "c9d8a298a33408c6c37e235c1b30c7bcc297ffec"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "flight-booking-crew",
+      "url": "https://github.com/Dinesh-Das/flight-booking-crew",
+      "commits": [
+        "6cc449907633d362ceb71a4124fa8f3328a13dac",
+        "7ee4f1b0f0c91b4063b8b5e3c0e4c21aa6b3ed10",
+        "0f29b4f96feec549d91ae4c85e48f4394033bae7"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "github-rag",
+      "url": "https://github.com/Dinesh-Das/github-rag",
+      "commits": [
+        "1258aa56eb50e679b6f1c69ee3bd0c89bb7c0e34",
+        "c5ee5ffb4d365e20ff15c9a65d35d0d646b99d64",
+        "ff5758427e1e366d14f9b53b56c9ba2fd338c0a7"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "gpt-oss-thinking-ui",
+      "url": "https://github.com/Dinesh-Das/gpt-oss-thinking-ui",
+      "commits": [
+        "f71be8d032369877ee05b76a1d1c9c5600494802",
+        "fa80f23cf86201667b76391158398c9e87457262",
+        "0469dcc828d48cc1bd97dc694beac5d991eb303c"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "gpt-oss-vs-qwen3",
+      "url": "https://github.com/Dinesh-Das/gpt-oss-vs-qwen3",
+      "commits": [
+        "3942aab2cce4937da9ce6809bc4ac27374a7f000",
+        "c3a1693e6d52e787a58cb271a93256c9fcc9ad9b",
+        "c9da80823c6f9cfb1a548f415c94349ef8320200"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "graphiti-mcp",
+      "url": "https://github.com/Dinesh-Das/graphiti-mcp",
+      "commits": [
+        "d9600353e57a4cd308896b5e3d79249cbae1c891",
+        "daa4342662cf2cf56c270723b6fb36c2dd280d5b",
+        "718832eb231eb07a3c09bfd00c6d3f45d657bf38"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "groundX-doc-pipeline",
+      "url": "https://github.com/Dinesh-Das/groundX-doc-pipeline",
+      "commits": [
+        "ee4d4b8e3d724d649e57d3e38ecca5276cc17df1",
+        "8868ed454b58a7b15f8c9cd8a39efd6c425fc1c0",
+        "e6aa13d7a8513fb3cee9c4170a5fb1932823ee21"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "grpo-finetuning-qwen3",
+      "url": "https://github.com/Dinesh-Das/grpo-finetuning-qwen3",
+      "commits": [
+        "4c9621443f741278a640311595b16e5d9abec291",
+        "34ce06f04ce3f20ca0e321acfbcab9d51db43562",
+        "9b633343ac88e89d9f305561ea9d69a6d0f8ce26"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "guidelines-vs-traditional-prompt",
+      "url": "https://github.com/Dinesh-Das/guidelines-vs-traditional-prompt",
+      "commits": [
+        "c06dd8e39fa8c26c37af1abf3256578e51f2bfc1",
+        "227738624ffc226fef45e8f6e948d87d7dfbce7f",
+        "1a9be6b48442769e5c2dea8770b1a169f2978795"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "hotel-booking-crew",
+      "url": "https://github.com/Dinesh-Das/hotel-booking-crew",
+      "commits": [
+        "f24480952c10c2ef20cc4c6cd50ac8a916bb117e",
+        "2374d89c172a8e6966288ea9408789fde79ce82e",
+        "2797949bbbfd7013ae9e0efa4668fcc298f658f8"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "hugging-face-skills",
+      "url": "https://github.com/Dinesh-Das/hugging-face-skills",
+      "commits": [
+        "3815ecb72c6047061993138dd6cfd932a35ca49f",
+        "e21b793fd5cd4611db9e7cbba0d01935f29ce697",
+        "cc3a42c0a50a017a18a5538672fc076d304754ff"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "imagegen-janus-pro",
+      "url": "https://github.com/Dinesh-Das/imagegen-janus-pro",
+      "commits": [
+        "e85c8ac77fe12c1df79fe79ef78aad2fb3092c30",
+        "634f435eb708babfbfb57a61cfc81c4bb669c574",
+        "57991a221d5310381d9e2ddf131512a0181e8418"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "kitops-mcp",
+      "url": "https://github.com/Dinesh-Das/kitops-mcp",
+      "commits": [
+        "de2ce032bc21c94a8d6493ab20ceff9b68f53344",
+        "e493c04c998ec9833e232c1628579c4b65139572",
+        "56c4e0904c9ddb65321d13e59cf4856b833d2ee9"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "knowledge distillation",
+      "url": "https://github.com/Dinesh-Das/knowledge-distillation",
+      "commits": [
+        "4df4c9d65d01569bbc8e6ce801c19258e09d61e6",
+        "307ada93d96b03b910029821e0282a082bcb15ae",
+        "a44fe0a96421e8f46f1ba94faadd9e50669332e8"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "llama-4-rag",
+      "url": "https://github.com/Dinesh-Das/llama-4-rag",
+      "commits": [
+        "9832ffa587c8d6f8a4beacf14efb656da5484e67",
+        "d8d86cb4d4e84d5c92c55adec001f51b535778dd",
+        "ca52fd031f73b62e297b6d9085e0e9f4f120e765"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "llama-4_vs_deepseek-r1",
+      "url": "https://github.com/Dinesh-Das/llama-4_vs_deepseek-r1",
+      "commits": [
+        "a8cb6f6d1866d4e744ab037f3fa7a0826acfd80c",
+        "ee30c0752a3f8d870ac70f0671ee4aa30f07edd0",
+        "4d6ea16c9a511277ec261ab272489e87f187ba38"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "llamaindex-mcp",
+      "url": "https://github.com/Dinesh-Das/llamaindex-mcp",
+      "commits": [
+        "646a1be35d4dcccb9c7e56af94620a4613b67ec0",
+        "3c0362df366086d83a7d199e76ca6c770d09dc52",
+        "44ea22bf96273a75503b7c9101c2a5524327e1ae"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "local-chatgpt",
+      "url": "https://github.com/Dinesh-Das/local-chatgpt",
+      "commits": [
+        "391a1f5379fa602e67801ce8adc284ae3f1ed064",
+        "bb75733267d3db1f47d7d96344d937a84b5a52d7",
+        "cb1bb39756597f14105125cc6ed3259e0f0cb16f"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "local-chatgpt with DeepSeek",
+      "url": "https://github.com/Dinesh-Das/local-chatgpt-with-DeepSeek",
+      "commits": [
+        "f0cc2f1a3913d6bc9b3011498e5a28fd633aa787",
+        "1856c2b2776755db00b2b81ab0dfe9358416cebc",
+        "2104de44abb0bb0c3e5898d48cb5623d041bd361"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "local-chatgpt with Gemma 3",
+      "url": "https://github.com/Dinesh-Das/local-chatgpt-with-Gemma-3",
+      "commits": [
+        "7e67e5250651b270a0737e94bb348a4e4b81c422",
+        "2b103cd409b74314d4446baff079595698543301",
+        "f9df36dc6006c53a0b8c7b4d3ad846ea8f875b7b"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "mcp-agentic-rag",
+      "url": "https://github.com/Dinesh-Das/mcp-agentic-rag",
+      "commits": [
+        "a5294234f67f90ec49bb77c937e19d9e045aad33",
+        "5ed3c6587c738ad36da3c9a9ad1cd7048ce6cc93",
+        "1513e57c8ab8b757b62b38637fb1e6df52d29d35"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "mcp-agentic-rag-firecrawl",
+      "url": "https://github.com/Dinesh-Das/mcp-agentic-rag-firecrawl",
+      "commits": [
+        "97c1ba5c421b69977d84c7c5072455b9a08cf56d",
+        "3b3edd4ac7dd7118fa5d2e3a0837e23093ba14c2",
+        "cbb51982a3eea0870ae6d81e849ddbdc40f68143"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "mcp-video-rag",
+      "url": "https://github.com/Dinesh-Das/mcp-video-rag",
+      "commits": [
+        "37f4c9a377aa49c6367a37acff46646ab9da4235",
+        "6f80a84ab40c204d1c27ae7f8f490cd4b46c5725",
+        "1c575dcb5d19938f01010ca9834491a94be1faff"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "mcp-voice-agent",
+      "url": "https://github.com/Dinesh-Das/mcp-voice-agent",
+      "commits": [
+        "78bacc2498dd3f34cee72225bc802b2609da96c1",
+        "6b3b014737e0537e02ef951ed8fb849d2b6ed438",
+        "b59636dca43b21256e0251791409a18e0887ec3f"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "mindsdb-mcp",
+      "url": "https://github.com/Dinesh-Das/mindsdb-mcp",
+      "commits": [
+        "4d8903ede5c0f0a06b290900aca1f5bf913774f3",
+        "935cf7a6c8ad8fc6fe3f8fb612ab5c17db424325",
+        "938c6d7c973001041cb6a2545d886dade61827af"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+      "url": "https://github.com/Dinesh-Das/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
+      "commits": [
+        "a7ed6fbf6fd238199f8e32a2695e47791ecf7fae",
+        "17171695016c84d8f9c621be1254750c0cd3d9c6",
+        "401214b7555b218ade387552fdcdbe09af04d5aa"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "modernbert-rag",
+      "url": "https://github.com/Dinesh-Das/modernbert-rag",
+      "commits": [
+        "eb15cc5a44d315dadbe4ecaacacaa62d401c2753",
+        "f2d030b66034e896e545ebd2598a5d6436d119d1",
+        "8df07f8bcc562d337a5ba98daae01fda53784fbc"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "motia-content-creation",
+      "url": "https://github.com/Dinesh-Das/motia-content-creation",
+      "commits": [
+        "5d2ddbf51b3dc263da52accb5b6152bc7d448001",
+        "c369bf8d7db7539516c060dcc5e28f519548b078",
+        "c8f69a325b966c6ff974e26c84a66fda196e0105"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "Multi-Agent-deep-researcher-mcp-windows-linux",
+      "url": "https://github.com/Dinesh-Das/Multi-Agent-deep-researcher-mcp-windows-linux",
+      "commits": [
+        "69e99da6072ea0e473c4991eeba3ecd94242022b",
+        "96f55862fa9c17d47681d24fd0dacfaf9b80e777",
+        "09021ac49ea702628a8ce1ea553852225be11fa5"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "multi-modal-rag",
+      "url": "https://github.com/Dinesh-Das/multi-modal-rag",
+      "commits": [
+        "e8eab35f59d1ffe7edd9eb7f626f15aa3cf83e57",
+        "c182f7da32076a657e2b5c2764345c13ee06c3db",
+        "c3c79a49b361e4250e6aa80f018ffc45da1b937a"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "multilingual-meeting-notes-generator",
+      "url": "https://github.com/Dinesh-Das/multilingual-meeting-notes-generator",
+      "commits": [
+        "b89e7826d156ce0cbe42abb9378fbdc3b567b1c9",
+        "40c35d012d9f33acd803d5bbcf628404690bf8fc",
+        "22e42694ce11e86a632dea6b7d1267b481bf25fe"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "multimodal-rag-assemblyai",
+      "url": "https://github.com/Dinesh-Das/multimodal-rag-assemblyai",
+      "commits": [
+        "7e94fddca629cf21867d1514af9fbb71cecb2b3c",
+        "b46ab99ed9b0b3e4234c36f43aa69db2232b3bc9",
+        "570a42a593773bf307ca8f085ee7a27ba245361e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "multiplatform_deep_researcher",
+      "url": "https://github.com/Dinesh-Das/multiplatform_deep_researcher",
+      "commits": [
+        "6aaf7d489e3ed4590cf8c2c8d692662e58ffad34",
+        "81f970ffb31105e937b2060181b9442494b223a8",
+        "f1998b8a8b5c26e27a7c9be4794d165c27cdb28e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "notebook-lm-clone",
+      "url": "https://github.com/Dinesh-Das/notebook-lm-clone",
+      "commits": [
+        "f7d6e59d0c426d2c234ffda3b96a013ffb80720a",
+        "965d9d6baa997064089e358846026d60eea9e108",
+        "30494ce36a8171d1898526698fdc3503cb33a6c4"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "o3-vs-claude-code",
+      "url": "https://github.com/Dinesh-Das/o3-vs-claude-code",
+      "commits": [
+        "d35103b4ec7c4f9796c9eafd07229b7e7b81a77e",
+        "469954e97dc0deac46b9a4046f5dd4cddfce7499",
+        "d5b430f5a0dc43c2eec0d1b6842ce67fc583362d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "omnigraph-multi-agent",
+      "url": "https://github.com/Dinesh-Das/omnigraph-multi-agent",
+      "commits": [
+        "62b5c8859ceab8afedc203914ab7d556edc60354",
+        "aebd818109dcecda3ca721377343c3d0d0bf6742",
+        "dd10be49d43bf3337017768f5539cfd1696af2a4"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "open-agent-builder",
+      "url": "https://github.com/Dinesh-Das/open-agent-builder",
+      "commits": [
+        "8e9b12fd163f213a28d0dd5258b9f85ee5c7e74e",
+        "d7bb7d1a9c2b35867f17275fe8877c705a8c433d",
+        "7db18cea8b91e7d1177a93f177373bbb3dc06e04"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "openai-swarm-ollama",
+      "url": "https://github.com/Dinesh-Das/openai-swarm-ollama",
+      "commits": [
+        "f319fbea260c60b2251d594636d58d21161e8bb7",
+        "ffca8ebccbe00201253cec18c0976811828552ff",
+        "7a646cbce63aa5e790a05e3e53bbc5f13347c602"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "openclaw-secure-deployment",
+      "url": "https://github.com/Dinesh-Das/openclaw-secure-deployment",
+      "commits": [
+        "49424734292feed7ff0199434cb83bb97a21bcb6",
+        "0007f6546bc3777b7c28ffa7c81fe34e95854081",
+        "8f394345089069fd4d905ea91aa779fdd39045ef"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "paralegal-agent-crew",
+      "url": "https://github.com/Dinesh-Das/paralegal-agent-crew",
+      "commits": [
+        "5494de376328a13e42e44fbc2d9b2e25c4a49021",
+        "3eeeebf1d2edaee68096d2c78864b2dcf7834a8a",
+        "e485139170a4d2e47028c91c1c22e620df209b83"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "parlant-conversational-agent",
+      "url": "https://github.com/Dinesh-Das/parlant-conversational-agent",
+      "commits": [
+        "e87d0baf2abc2688d240df6d70e14219b4bac36c",
+        "f888d461d0090c3b9df87794aa1b340d8e6c3468",
+        "26eb1b0833cde3a219673fe3d6deedf46ec70c7e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "pixeltable-mcp",
+      "url": "https://github.com/Dinesh-Das/pixeltable-mcp",
+      "commits": [
+        "1ebe56ffed0d384f35fe986bd88f0bc0da8b0e3a",
+        "e566289b7fda2986dc056a1f2c1501cd7c1e8c21",
+        "73f4c91b452ffedf7ae85fde2357b0c6682e681d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "qwen3-thinking-ui",
+      "url": "https://github.com/Dinesh-Das/qwen3-thinking-ui",
+      "commits": [
+        "0a6e502c8d77d32aa3bc87fe1646a2a635012ad3",
+        "fb7a13c891753641ee0618511a6f9156c23cfd03",
+        "49571521280d3fdcfa0831b2e9a54507b6418a75"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "qwen3_vs_deepseek-r1",
+      "url": "https://github.com/Dinesh-Das/qwen3_vs_deepseek-r1",
+      "commits": [
+        "76082361b3c2881fbe696ff6b766eb7e022e16f7",
+        "1be4183187a2e747594a7b51ba2622d9faa68595",
+        "a42e2e28844b65123f9b7350ba420631fff20b4c"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "rag-sql-router",
+      "url": "https://github.com/Dinesh-Das/rag-sql-router",
+      "commits": [
+        "e21b68b2edd2637093ae93b6f60334829de4098f",
+        "ab93999a0538544a4badc54934b344fd396a8dea",
+        "7ad17c11e050a7ebe42503beaabe4c2b8bbbe83d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "rag-voice-agent",
+      "url": "https://github.com/Dinesh-Das/rag-voice-agent",
+      "commits": [
+        "ee4f724511540d547fac94d84454e908e96ac4de",
+        "97db406b83638211819d35f1d5a20d35c91c4f62",
+        "ad034f84d73aff7bd3e3c2fe7b734df66fd2fb55"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "rag-with-dockling",
+      "url": "https://github.com/Dinesh-Das/rag-with-dockling",
+      "commits": [
+        "bced1330ae14c4661a9649f118799bcc71a7002c",
+        "c994ac8e914311572e064d007d018b9ad5d69734",
+        "0b7cc2a06d00b84a8e96672a63d20ab15db1733f"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "real-time-voicebot",
+      "url": "https://github.com/Dinesh-Das/real-time-voicebot",
+      "commits": [
+        "e603eada4227779feec1dcbd3c752ef4253f61ca",
+        "e2b1d9dd104ac15ea7842a09b4d9d7cac8882795",
+        "29f91fb0ed0b724d87e731f234291254f7320c42"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "run-jev-inside-agent-harness",
+      "url": "https://github.com/Dinesh-Das/run-jev-inside-agent-harness",
+      "commits": [
+        "b104c98b0a09255927df33ff5d08d9cb6450a21b",
+        "58e4e50c5f39bb37791def1cf930b34b85b84972",
+        "d17516d3e85ea9c606e4511537d2e04f623ed06b"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "sales-analytics-agent",
+      "url": "https://github.com/Dinesh-Das/sales-analytics-agent",
+      "commits": [
+        "780587a0bb3e82a020abc9f24113dafe7691bdca",
+        "651a357d4e191e8626b37d8963c4b8c29231d106",
+        "4fc7e68520a24967bc1dfd3443c0165ad3b0290d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "sdv-mcp",
+      "url": "https://github.com/Dinesh-Das/sdv-mcp",
+      "commits": [
+        "4c24300e3e8cb40365837eef62dd41ef700907ae",
+        "80b274b5d0d526bc079d8b7383b97d8bae67910d",
+        "687e0a16629aca25352dc80e9050b1977d5b8301"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "siamese-network",
+      "url": "https://github.com/Dinesh-Das/siamese-network",
+      "commits": [
+        "937c623ee4fc726259935aebb2d236f717a1fe0b",
+        "fc9d528ad20ad428421561289ffdfcaaaeb40d95",
+        "e6530422bc94149e659dd76569ee381f633fb06d"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "simple-rag-workflow",
+      "url": "https://github.com/Dinesh-Das/simple-rag-workflow",
+      "commits": [
+        "67fa8c820231c4c043d46ad91a57989c4a212dcb",
+        "1de17660105445f77c8ec634d52893dfc49449b1",
+        "cbdc228236ae8646bd1d6479de856bcc43489392"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "sonnet4-vs-o4",
+      "url": "https://github.com/Dinesh-Das/sonnet4-vs-o4",
+      "commits": [
+        "2477928d485839b657c79cf8bec468e6b2a29e71",
+        "16202b4451ee7ad237e0f244233d33125325ea11",
+        "5ba01a24aa67a7865fcd44f78394478a527a1bd7"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "sonnet4-vs-qwen3-coder",
+      "url": "https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder",
+      "commits": [
+        "ce9ec80205efc319b368d6acd7537fd7efc68618",
+        "b01545e933b9d9fc1cbe12811bc90344ebd5e9a4",
+        "7e6cc2546cbcc8aca08b8e337a05573cc2ec2d5e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "stagehand x mcp-use",
+      "url": "https://github.com/Dinesh-Das/stagehand-x-mcp-use",
+      "commits": [
+        "8f85a8877e3ca02261ace9cf96c973de0ee1077c",
+        "04f8f2c120008728f792745e95c8efe27c8623c4",
+        "7478bab85618202693ead9cecb5027e18a8e8999"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "stock-portfolio-analysis-agent",
+      "url": "https://github.com/Dinesh-Das/stock-portfolio-analysis-agent",
+      "commits": [
+        "8885edcd993ff5cff91251c69f1a668e1b9dc94b",
+        "68f79539ed1ab45bedce65fbead1d48634a91b30",
+        "fe18e22e7c919111dbf42615128a710ed2a9f37e"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "streaming-ai-chatbot",
+      "url": "https://github.com/Dinesh-Das/streaming-ai-chatbot",
+      "commits": [
+        "eabc17b57ecf7ebda1eb471cda265fc1911c187c",
+        "b2311b0c3600b115bbd9c26d1730eaf081d1319f",
+        "c99f9a7d592a7a9c971d0e2dfc23abcc6efb2d04"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "train-yolo26-object-detection",
+      "url": "https://github.com/Dinesh-Das/train-yolo26-object-detection",
+      "commits": [
+        "8c59011a9ec599a88b9cb670ec1c9a8ba80e5147",
+        "f32f7517338ee84a66726fe02b97d3c4be931d8c",
+        "ac1c5b58193bd36e78ded20fd576f68f877220c9"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "trustworthy-rag",
+      "url": "https://github.com/Dinesh-Das/trustworthy-rag",
+      "commits": [
+        "e0385caeafb7252922b119c169c8c41ad625ca7a",
+        "6c3c037d83795a781044d5988c2bc8fde34f2719",
+        "37ba97f6361c18010625da59f76602663ff8c11a"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "ultimate-ai-assitant-using-mcp",
+      "url": "https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp",
+      "commits": [
+        "dc419e22b1f58a2a61a5d2eeca4d08d72f2a9d8c",
+        "f443969cf6dfaf081b48aad3e4fd67b6c367bac5",
+        "25b5b0f9e726b647d769d1cf2d6ed5d5b64ea391"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "video-rag-gemini",
+      "url": "https://github.com/Dinesh-Das/video-rag-gemini",
+      "commits": [
+        "bd54c892de18eb70b6556dd5cb4fdf59fdf0b966",
+        "ee5d8a25835bf3d135ee830e32eab9eb76d151fc",
+        "27e260e7f08afbe0725bcd5d727401e279625c23"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "web-browsing-agent",
+      "url": "https://github.com/Dinesh-Das/web-browsing-agent",
+      "commits": [
+        "4723562bb08067fd5ae8b8e5646edba33631c381",
+        "2c5b1c0f6b1f660f518f158ec24eed6765289745",
+        "8bb43d8607cb6ae16d88c73dad5a29c1adad4d73"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "Website-to-API-with-FireCrawl",
+      "url": "https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl",
+      "commits": [
+        "7bdf3383c80d7adcd6f0fadd3fc940fac12059b4",
+        "fe568093a3d4db19a39046e305428ab62914b942",
+        "fecb30fdf8713566dc19a3f8e0d6f16aab4b5e38"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "Youtube-trend-analysis",
+      "url": "https://github.com/Dinesh-Das/Youtube-trend-analysis",
+      "commits": [
+        "1f67df5d5cc4ea125619eb405e5789d0a72fc0fa",
+        "bf5a558184498858baccbf99013edb007246d517",
+        "6f883fbbcb647bb36cc5d2009025c06b14a5e02c"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "zep-memory-assistant",
+      "url": "https://github.com/Dinesh-Das/zep-memory-assistant",
+      "commits": [
+        "c563f73d922298dfefb17b03b3f79327d2264ef2",
+        "d663640cf0671fbb051a62e199c651fd54900596",
+        "dbd33af3004ac61fe606c4b086088dfd86bf2264"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "zep-observations",
+      "url": "https://github.com/Dinesh-Das/zep-observations",
+      "commits": [
+        "9588d630a156a5e3bcc05a0281a5e61429360ba0",
+        "42b497356cd3b322a15d462da6f165e7c5053e2b",
+        "05a98db05b57644c1281be284888544f65b28315"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "Latex-OCR-Lama",
+      "url": "https://github.com/Dinesh-Das/Latex-OCR-Lama",
+      "commits": [
+        "9b6b8d922248c488b7b4b111f1aff503d6772ccc",
+        "92c12216415df05bcf74d0c550a5da2eae547ac6",
+        "9e9ee7ee5781e3ad8c5c04d481f3de9b9711f4bb"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "gemma3-ocr",
+      "url": "https://github.com/Dinesh-Das/gemma3-ocr",
+      "commits": [
+        "d259d911b9c108017b67c410a609004aa8216257",
+        "8911b377419c24dcb97367458e36d1d85024809e",
+        "2ae135884afa8dd7fd3a043b8fa8e34244680bb2"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "llama-ocr",
+      "url": "https://github.com/Dinesh-Das/llama-ocr",
+      "commits": [
+        "4717cb6f45e47f39684da7d11595784ce73b96d7",
+        "7b72aa0f48266eeec139e6534cb89bfe7c8f2b39",
+        "a63288e3b46f84392c1c8785d4bf4de39336493c"
+      ],
+      "remote_verified": false
+    },
+    {
+      "id": "qwen-2.5VL-ocr",
+      "url": "https://github.com/Dinesh-Das/qwen-2.5VL-ocr",
+      "commits": [
+        "1b8f9daac94775468fb4eccc80463c829507db51",
+        "8c17aab0aec8a20892c542b5b6f6976c89769f16",
+        "82268cf52a86d91c25367573dc49b87a7ff0720d"
+      ],
+      "remote_verified": false
+    }
+  ]
+}
