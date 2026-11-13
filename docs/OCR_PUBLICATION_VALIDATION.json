@@ -12,9 +12,9 @@
   "gemma_export_ruff_check": "passed",
   "gemma_export_ruff_format": "passed",
   "gemma_bundled_core_tests_passed": 15,
-  "gemma_publication_commit": "ece8af2877292842d1bbe8656133b06f33211ea8",
-  "gemma_author_date": "2026-11-13T10:50:00+05:30",
-  "gemma_committer_date": "2026-11-13T10:50:00+05:30",
+  "gemma_publication_commit": "d406a8119b39a66fba5653c2494b97195b5955f4",
+  "gemma_author_date": "2026-11-14T00:04:02+05:30",
+  "gemma_committer_date": "2026-11-14T00:04:02+05:30",
   "original_source_folders": "Unmodified by export corrections.",
   "export_lint_and_format": {
     "gemma3-ocr": "passed",
@@ -25,5 +25,34 @@
     "gemma3-ocr": 15,
     "llama-ocr": 15,
     "qwen-2.5VL-ocr": 15
+  },
+  "gemma_validation_commit": "ece8af2877292842d1bbe8656133b06f33211ea8",
+  "publication_commits": {
+    "Latex-OCR-Lama": "aa0dc9a2b178683c4adf22a19733c57e009348e2",
+    "gemma3-ocr": "d406a8119b39a66fba5653c2494b97195b5955f4",
+    "llama-ocr": "01a8dd5bd1af12b2a3f4e7143c7607a8d9d7fbf4",
+    "qwen-2.5VL-ocr": "b82241d96aeafab6b28c850feb20b26320f9de39"
+  },
+  "publication_commit_dates": {
+    "Latex-OCR-Lama": [
+      "2026-11-14",
+      "2026-11-14",
+      "2026-11-14"
+    ],
+    "gemma3-ocr": [
+      "2026-11-14",
+      "2026-11-14",
+      "2026-11-14"
+    ],
+    "llama-ocr": [
+      "2026-11-14",
+      "2026-11-14",
+      "2026-11-14"
+    ],
+    "qwen-2.5VL-ocr": [
+      "2026-11-14",
+      "2026-11-14",
+      "2026-11-14"
+    ]
   }
 }

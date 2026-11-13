@@ -1,19 +1,27 @@
 {
-  "date": "2026-11-13",
-  "last_updated_at": "2026-11-13T19:18:57+05:30",
+  "date": "2026-11-14",
+  "last_updated_at": "2026-11-14T00:04:04+05:30",
   "owner": "Dinesh-Das",
   "project_count": 113,
   "requested_dated_commits": 339,
-  "remote_projects_verified": 43,
-  "pending_projects": 70,
+  "remote_projects_verified": 58,
+  "pending_projects": 55,
   "commit_dates": [
     "2026-11-11",
     "2026-11-12",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-14"
   ],
+  "prepared_final_commit_dates": {
+    "2026-11-13": 58,
+    "2026-11-14": 55
+  },
+  "verified_final_commit_dates": {
+    "2026-11-13": 58
+  },
   "timezone": "Asia/Kolkata",
   "standalone_cpu_scenarios_passed": 630,
-  "history_blobs_scanned": 5333,
+  "history_blobs_scanned": 5337,
   "projects": [
     {
       "id": "acp-code",
@@ -22,6 +30,11 @@
         "343518e3e451cde40d09bcc06abbf00a25800850",
         "a955f0b065be76aee37bf55e64d4739c59a31a18",
         "c2e1bc900564976cc1d152df46ae7ba2c0e49d8a"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -33,6 +46,11 @@
         "ea6b6d8ad0aab3dabd92ee2cae9cfcafaac539b5",
         "56fcda67fd2043371e7aa348b234d2ab1557ab67"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -42,6 +60,11 @@
         "a288201fc938ae323c06d1a3437419836916b999",
         "927d598090c961914abe54c430dec3d8d4aff6cf",
         "4b87349d36c04702f4913718b8ab8d9084072a4c"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -53,6 +76,11 @@
         "115c9f6168579934cb5fa7c20565add555899cf8",
         "42e11f0f534bd50aad39b6b35c4111b4ab833ea3"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -62,6 +90,11 @@
         "f774a4b8eeb9d63844379323aa7e9c85466158a4",
         "3aa640677d344edff1c60c94f644679cfd13eb73",
         "a1539ffd95aebb1adca02fd6f2ba721af10d4658"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -73,6 +106,11 @@
         "ba3264016c42e271f44f13f7daca125b7744dcd4",
         "a1687ecb5dbb5962cb4a27aeeb2747d3c761edb4"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -82,6 +120,11 @@
         "3b7b8429bfd6fbd2a323b69424c70ef598add885",
         "77674901ebb62b56fbe4f42c68ceae7bf3cc2947",
         "e92cc099cd1d1020781e7b48cd098dc7d77b1721"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -93,6 +136,11 @@
         "2fec7a04947e5736941b9fd6e4377b72ec672993",
         "7c7a9478fd0d1fa952c7fb833d7586cf1a5af2fb"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -102,6 +150,11 @@
         "5a2ffb25e7c4c5ff377f3125519f7f99a1b2ddb3",
         "0254ce8f1a8b92b5e811f29c067f3b9815f09fea",
         "8d3150a0db608f7d5f6887cc44e4eae243b50ba0"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -113,6 +166,11 @@
         "08717f6bdb09a604a4e416f1bd4126720b732399",
         "f7e3bee50670da11a91c8398ef0662bde00c1e3e"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -122,6 +180,11 @@
         "3670dccdd33f7102ad61c40c0e4e3a979c37b074",
         "95b4e344e8dbe0535e1faff1f1591b91e17ec924",
         "ffa7c80404e12935318ddab0ff4372ccf1676cc9"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -133,6 +196,11 @@
         "650ad4a61ffb6f4b087e278afbe1cf84ff46a0ac",
         "aafa081fa28f6cf39896fa2a43fd69f41997395f"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -142,6 +210,11 @@
         "c997f15a540c75fb851304a623f81e7c56b1c6ac",
         "84e85579be9408056256871005821dee95f516e6",
         "7d20ee615890efb128ce395f2d53657f6eaec755"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -153,6 +226,11 @@
         "93f83198d9a11b500f913c9745f9bacb790eef42",
         "0f7c95f63e500a505c968c3e3424cc549e614b2e"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -162,6 +240,11 @@
         "9c8ebc82d71cddc81160c778affc4d04adb759c2",
         "1d6fd988022b9744269e63d562c66ad2b4bc94f3",
         "51938d292e5c273cd5153d435348f1f3d49ab67c"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -173,6 +256,11 @@
         "a1a0004cd577491a824e0ceadc482d9c7ad5d3bc",
         "22ba5b70c8bcaf101e5c4f75d2ac1ffa26f09f91"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -182,6 +270,11 @@
         "105b2a4d58f7e0a50ea78ae4c36ec4b802defc34",
         "b59421b426362534e4245c573d1ea4e2055f3ad5",
         "9f91b25476e284e10821246a4b930e3bdf0cb0ff"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -193,6 +286,11 @@
         "1286f4e877c7bb6fa3f99fd25a80d05d5123fbb3",
         "8c133ffdf7b75b87da53d2ec9e4bbd5d80bdcbf8"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -202,6 +300,11 @@
         "065ced93bc4133d799dfc62012630c803e0d792c",
         "8135a698352a456778c4f0583aebefe11f5cfc8b",
         "9b64be415b007375e1c82f58c30e54d350c0ae97"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -213,6 +316,11 @@
         "02062e48ca61091eb9eac5d95c3f7a12d2cc9148",
         "3338a96bc1d8da4951279ebd7e978120a0756f54"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -222,6 +330,11 @@
         "f30ad79c989756648387b8835620653be7333775",
         "2149da39b536f12e190008aa13adf97a62974af1",
         "69d330dc32f1559b635fddcc938ea0c3f5a59a7d"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -233,6 +346,11 @@
         "c2ce22b8d55b813dbeb68f5b9d81c3d7a2f844e0",
         "f69151b149f8dea9e85504ca24a31497f8cebe6a"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -242,6 +360,11 @@
         "9ac5738a07d0e3fab07696f6b5f42dfdd1ab0b59",
         "d22ec68dad6e48b94409df1d667f3a7ab14df8f6",
         "750e7c2036b40d898df490bb6b4097e846533f8e"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -253,6 +376,11 @@
         "6b1b883798ab3295f8e52734ae80a07b042dabb3",
         "2a06171c3f50df25e04967366240740eaf98db5a"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -262,6 +390,11 @@
         "f831321087ebfb5c805492318e5dcd3309ade15f",
         "9272973e771f616df4c61cd55e1f97bde16fcce3",
         "fcb9882c2ef7e8876616e70814ac122e996374d9"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -273,6 +406,11 @@
         "3cf2d7b98c98e8d5c37e32e9f154a792eb67a08f",
         "3aa139b8f4279db331847e3f261660cf03a3ed3d"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -282,6 +420,11 @@
         "fd2ad71cb37beabc8f36b0741ab351378527da96",
         "f8eae8f16bade25709f9905b2605a715ba59b7b2",
         "f5ff029e18ea42b9823f8fbc07c6682105585e81"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -293,6 +436,11 @@
         "e54ffd569bc18b98adec6b5a65d8e2c17a00fa94",
         "befe765f3d78ab48fc064fdbd79ea130db74910a"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -302,6 +450,11 @@
         "08be243e361d47b2e323e2966e5719642c4d26bd",
         "a62b86c85ead80ba6bca003c6c27ac454efb997e",
         "0453a676184ff200fe27c2d0b8e7bea99ebec58e"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -313,6 +466,11 @@
         "203475ba75410c9ee6219588858c372b24376315",
         "6909bb2b2b1b6edd95862c999769d5169cc90d99"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -322,6 +480,11 @@
         "9d14559e043347f2633daf541c06957f66deb287",
         "259d6a52fda07c775554fdbde2f98669ec2c3c97",
         "702b03b9e0b4c765c8f55fab4e969233cc49abfb"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -333,6 +496,11 @@
         "947022f72710d3eeb6a08f12b2f86c65002d1546",
         "db484a4a5a2992000cd7162eb47e8a8e063680a3"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -342,6 +510,11 @@
         "750611670a4ded6516b1c79d2c68359ce07a9ca7",
         "e3a9a6f7c3122218b8ff2c13cc3dccdca513137f",
         "c347bacef7fbbcd3bee07f64b9f0187c7909177a"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -353,6 +526,11 @@
         "5d4227fe57b70673dc4c6ccf8cc7015ca9ce7bc4",
         "7eb6f59dc46fcbcfb75881efa117d7ece7933d65"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -362,6 +540,11 @@
         "a97b95bcf48a9b658c565ca2ef9fb8d759e141f1",
         "ebd5ee2a52a3cecca0ff785dc607542716f3a7ca",
         "6c04e02542e5da3f28414d8b0129fef3a9979b45"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -373,6 +556,11 @@
         "dec794aeffeadfdd103a4bc19773d8041792359f",
         "92bc3fbacb3896ba07d0255bd185d4c21226da9d"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -382,6 +570,11 @@
         "f3a88d7822b4021423b880b4f2cfde35968c31b5",
         "bfbd45d439cf4f899e86a7272178bb48adf5c87f",
         "515d15f7cb9a091394fc53b2a39253096fed9878"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -393,6 +586,11 @@
         "cc3382c5940ecc6676217d45cb06dd3ae70e6561",
         "d364f560b63866ffb67262e4162f12bf29937613"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -402,6 +600,11 @@
         "6b243c9a0591f7eb51a78bcd3ed83cef552a8e6e",
         "0aeec2a306e9a5ad63eb46185d2c7e2edf71d8dd",
         "18d52fca193e130480b6dc6f982a17a79ba07fc8"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -413,6 +616,11 @@
         "84e575d08f0d854c4666ffe665b81f8684104f85",
         "e47887f91a4c55b6ff76cf3a531e9efa8bbf06e4"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -422,6 +630,11 @@
         "be7136737c868ee07653f2962a3bb47dc648de76",
         "845946d0cafa5df90f946311ee42c6f05e7c58d4",
         "0ccdc167aff5931215bbca3385915e2e4d041010"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -433,6 +646,11 @@
         "324c6a114fb25f5aa98fbe775bfce36ba0a4b5ad",
         "86ce34a0300ef1f2e580148fbba17a5ee4729cdc"
       ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
       "remote_verified": true
     },
     {
@@ -442,6 +660,11 @@
         "2f62a63c3e782424d7416d6e51d77d7be0b35fa1",
         "c8b89076f6d9cef1c3bd77e2a6ae3f0b722d7c43",
         "c9d8a298a33408c6c37e235c1b30c7bcc297ffec"
+      ],
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
       ],
       "remote_verified": true
     },
@@ -453,7 +676,12 @@
         "7ee4f1b0f0c91b4063b8b5e3c0e4c21aa6b3ed10",
         "0f29b4f96feec549d91ae4c85e48f4394033bae7"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "github-rag",
@@ -463,7 +691,12 @@
         "c5ee5ffb4d365e20ff15c9a65d35d0d646b99d64",
         "ff5758427e1e366d14f9b53b56c9ba2fd338c0a7"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "gpt-oss-thinking-ui",
@@ -473,7 +706,12 @@
         "fa80f23cf86201667b76391158398c9e87457262",
         "0469dcc828d48cc1bd97dc694beac5d991eb303c"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "gpt-oss-vs-qwen3",
@@ -483,7 +721,12 @@
         "c3a1693e6d52e787a58cb271a93256c9fcc9ad9b",
         "c9da80823c6f9cfb1a548f415c94349ef8320200"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "graphiti-mcp",
@@ -493,7 +736,12 @@
         "daa4342662cf2cf56c270723b6fb36c2dd280d5b",
         "718832eb231eb07a3c09bfd00c6d3f45d657bf38"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "groundX-doc-pipeline",
@@ -503,7 +751,12 @@
         "8868ed454b58a7b15f8c9cd8a39efd6c425fc1c0",
         "e6aa13d7a8513fb3cee9c4170a5fb1932823ee21"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "grpo-finetuning-qwen3",
@@ -513,7 +766,12 @@
         "34ce06f04ce3f20ca0e321acfbcab9d51db43562",
         "9b633343ac88e89d9f305561ea9d69a6d0f8ce26"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "guidelines-vs-traditional-prompt",
@@ -523,7 +781,12 @@
         "227738624ffc226fef45e8f6e948d87d7dfbce7f",
         "1a9be6b48442769e5c2dea8770b1a169f2978795"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "hotel-booking-crew",
@@ -533,7 +796,12 @@
         "2374d89c172a8e6966288ea9408789fde79ce82e",
         "2797949bbbfd7013ae9e0efa4668fcc298f658f8"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "hugging-face-skills",
@@ -543,7 +811,12 @@
         "e21b793fd5cd4611db9e7cbba0d01935f29ce697",
         "cc3a42c0a50a017a18a5538672fc076d304754ff"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "imagegen-janus-pro",
@@ -553,7 +826,12 @@
         "634f435eb708babfbfb57a61cfc81c4bb669c574",
         "57991a221d5310381d9e2ddf131512a0181e8418"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "kitops-mcp",
@@ -563,7 +841,12 @@
         "e493c04c998ec9833e232c1628579c4b65139572",
         "56c4e0904c9ddb65321d13e59cf4856b833d2ee9"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "knowledge distillation",
@@ -573,7 +856,12 @@
         "307ada93d96b03b910029821e0282a082bcb15ae",
         "a44fe0a96421e8f46f1ba94faadd9e50669332e8"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "llama-4-rag",
@@ -583,7 +871,12 @@
         "d8d86cb4d4e84d5c92c55adec001f51b535778dd",
         "ca52fd031f73b62e297b6d9085e0e9f4f120e765"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "llama-4_vs_deepseek-r1",
@@ -593,15 +886,25 @@
         "ee30c0752a3f8d870ac70f0671ee4aa30f07edd0",
         "4d6ea16c9a511277ec261ab272489e87f187ba38"
       ],
-      "remote_verified": false
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "remote_verified": true
     },
     {
       "id": "llamaindex-mcp",
       "url": "https://github.com/Dinesh-Das/llamaindex-mcp",
       "commits": [
-        "646a1be35d4dcccb9c7e56af94620a4613b67ec0",
-        "3c0362df366086d83a7d199e76ca6c770d09dc52",
-        "44ea22bf96273a75503b7c9101c2a5524327e1ae"
+        "760803969ee8a69947880b0b52e0926df5a79efe",
+        "f84be95cc7662803a9c05ae91fe37bf103e3e4be",
+        "2e58dfccdfae8ba185a7637ac769594fc38626bb"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -609,9 +912,14 @@
       "id": "local-chatgpt",
       "url": "https://github.com/Dinesh-Das/local-chatgpt",
       "commits": [
-        "391a1f5379fa602e67801ce8adc284ae3f1ed064",
-        "bb75733267d3db1f47d7d96344d937a84b5a52d7",
-        "cb1bb39756597f14105125cc6ed3259e0f0cb16f"
+        "1bf19c0c6cda2d53f73f35a962f62f6f41a9e7d8",
+        "6ca9985325cf52da58feaa3f9b9a5117ad853868",
+        "9495b35f0aff34d7425be38ffc584361a6b13383"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -619,9 +927,14 @@
       "id": "local-chatgpt with DeepSeek",
       "url": "https://github.com/Dinesh-Das/local-chatgpt-with-DeepSeek",
       "commits": [
-        "f0cc2f1a3913d6bc9b3011498e5a28fd633aa787",
-        "1856c2b2776755db00b2b81ab0dfe9358416cebc",
-        "2104de44abb0bb0c3e5898d48cb5623d041bd361"
+        "4581251d7ae46a08516e8d235e773e5bd5c4f8b3",
+        "f1e0ce4638c58c2eeb19302e014a34d4b2c3e89a",
+        "6b6692e11dffb278f081ce32a096a056fb51d731"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -629,9 +942,14 @@
       "id": "local-chatgpt with Gemma 3",
       "url": "https://github.com/Dinesh-Das/local-chatgpt-with-Gemma-3",
       "commits": [
-        "7e67e5250651b270a0737e94bb348a4e4b81c422",
-        "2b103cd409b74314d4446baff079595698543301",
-        "f9df36dc6006c53a0b8c7b4d3ad846ea8f875b7b"
+        "fba44b81ac2544a977587199b937132da98b0c04",
+        "f9105b8932fdc568931acd84b3e37bd375be3df7",
+        "8f5035c8beb0e5468e18ac02b24c00aab9bc2ff1"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -639,9 +957,14 @@
       "id": "mcp-agentic-rag",
       "url": "https://github.com/Dinesh-Das/mcp-agentic-rag",
       "commits": [
-        "a5294234f67f90ec49bb77c937e19d9e045aad33",
-        "5ed3c6587c738ad36da3c9a9ad1cd7048ce6cc93",
-        "1513e57c8ab8b757b62b38637fb1e6df52d29d35"
+        "9df851179e502b2324cc6e6f67d5e73422d54a02",
+        "33de249f57bbe30ceea696c0501844749f2bf307",
+        "42a8e4d5355b4ed2ad98cd9b67da31c926bd004e"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -649,9 +972,14 @@
       "id": "mcp-agentic-rag-firecrawl",
       "url": "https://github.com/Dinesh-Das/mcp-agentic-rag-firecrawl",
       "commits": [
-        "97c1ba5c421b69977d84c7c5072455b9a08cf56d",
-        "3b3edd4ac7dd7118fa5d2e3a0837e23093ba14c2",
-        "cbb51982a3eea0870ae6d81e849ddbdc40f68143"
+        "a11fd7be48441499824029012fe059ba41440b36",
+        "d87a291859ed493f68ad701395e75cb3df03438b",
+        "46ae1db3637415f82f90593d39e914f25237eacc"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -659,9 +987,14 @@
       "id": "mcp-video-rag",
       "url": "https://github.com/Dinesh-Das/mcp-video-rag",
       "commits": [
-        "37f4c9a377aa49c6367a37acff46646ab9da4235",
-        "6f80a84ab40c204d1c27ae7f8f490cd4b46c5725",
-        "1c575dcb5d19938f01010ca9834491a94be1faff"
+        "0629378c7018201ff9615d9c228e3cabde049433",
+        "3501d70bb7ee911325c2805a4e96240b5dbc03bd",
+        "99641d3392e021f73b734e806be9262bc610300b"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -669,9 +1002,14 @@
       "id": "mcp-voice-agent",
       "url": "https://github.com/Dinesh-Das/mcp-voice-agent",
       "commits": [
-        "78bacc2498dd3f34cee72225bc802b2609da96c1",
-        "6b3b014737e0537e02ef951ed8fb849d2b6ed438",
-        "b59636dca43b21256e0251791409a18e0887ec3f"
+        "b4a6a14c6237151892c1553aa9c28b8707408f03",
+        "6d288861d825d533777e6128078266db4b4410ff",
+        "f1f77db452b09950503ab36fa21b474f928bb36b"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -679,9 +1017,14 @@
       "id": "mindsdb-mcp",
       "url": "https://github.com/Dinesh-Das/mindsdb-mcp",
       "commits": [
-        "4d8903ede5c0f0a06b290900aca1f5bf913774f3",
-        "935cf7a6c8ad8fc6fe3f8fb612ab5c17db424325",
-        "938c6d7c973001041cb6a2545d886dade61827af"
+        "a214ff6304c4560caf532dadb559412b1f04fb52",
+        "863c2ad978e3d52e64ae39f7b5463376d70686a8",
+        "52a8ffc13c0ba06c183ddf42bd11d42f268d145a"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -689,9 +1032,14 @@
       "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
       "url": "https://github.com/Dinesh-Das/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
       "commits": [
-        "a7ed6fbf6fd238199f8e32a2695e47791ecf7fae",
-        "17171695016c84d8f9c621be1254750c0cd3d9c6",
-        "401214b7555b218ade387552fdcdbe09af04d5aa"
+        "7c353a80ae5abf52770ac5dc7c1c5cf53c9018b8",
+        "9a04374c6b63c1700b9e7ee9d28d4c376b3152c2",
+        "46c0f73a955d84f679e1627034ddcbc04f44cfe7"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -699,9 +1047,14 @@
       "id": "modernbert-rag",
       "url": "https://github.com/Dinesh-Das/modernbert-rag",
       "commits": [
-        "eb15cc5a44d315dadbe4ecaacacaa62d401c2753",
-        "f2d030b66034e896e545ebd2598a5d6436d119d1",
-        "8df07f8bcc562d337a5ba98daae01fda53784fbc"
+        "4df24c702b8207afb9a8eaf777d09001bd4b8b01",
+        "7cd59d28e3c5f5865caf4445edfeb9404e1c22d8",
+        "e34e8dd5bbd453671867806d8721741769b575f3"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -709,9 +1062,14 @@
       "id": "motia-content-creation",
       "url": "https://github.com/Dinesh-Das/motia-content-creation",
       "commits": [
-        "5d2ddbf51b3dc263da52accb5b6152bc7d448001",
-        "c369bf8d7db7539516c060dcc5e28f519548b078",
-        "c8f69a325b966c6ff974e26c84a66fda196e0105"
+        "fd5b55704c066442bcae5608380493c26909b5a6",
+        "23a2cddd38eee3e3547db63908a2681346e71919",
+        "8f2925ddca641933246247383b49ca573fb96a46"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -719,9 +1077,14 @@
       "id": "Multi-Agent-deep-researcher-mcp-windows-linux",
       "url": "https://github.com/Dinesh-Das/Multi-Agent-deep-researcher-mcp-windows-linux",
       "commits": [
-        "69e99da6072ea0e473c4991eeba3ecd94242022b",
-        "96f55862fa9c17d47681d24fd0dacfaf9b80e777",
-        "09021ac49ea702628a8ce1ea553852225be11fa5"
+        "6f7c7b0deef49089c06585ac190f82b65e418c78",
+        "f4a8312a5700b0dc877e25633af6753d2732bd4d",
+        "de5278eb66fd5d526424725d1336efe92c8baa1b"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -729,9 +1092,14 @@
       "id": "multi-modal-rag",
       "url": "https://github.com/Dinesh-Das/multi-modal-rag",
       "commits": [
-        "e8eab35f59d1ffe7edd9eb7f626f15aa3cf83e57",
-        "c182f7da32076a657e2b5c2764345c13ee06c3db",
-        "c3c79a49b361e4250e6aa80f018ffc45da1b937a"
+        "9ac156892ebc80a8eff60808ced3c3013f615b92",
+        "0b97f85e6492a523f225b616f70f5e9e9cad3256",
+        "bd4b3ea52200816063428c1ec7820cebb3535026"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -739,9 +1107,14 @@
       "id": "multilingual-meeting-notes-generator",
       "url": "https://github.com/Dinesh-Das/multilingual-meeting-notes-generator",
       "commits": [
-        "b89e7826d156ce0cbe42abb9378fbdc3b567b1c9",
-        "40c35d012d9f33acd803d5bbcf628404690bf8fc",
-        "22e42694ce11e86a632dea6b7d1267b481bf25fe"
+        "d9a26084b6aa5b48b0d718591ca009f560719061",
+        "9afc622320061ff66ca1efdebe24ec9ecd61f646",
+        "26719d17206abad33e89fd91fa4262772796b323"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -749,9 +1122,14 @@
       "id": "multimodal-rag-assemblyai",
       "url": "https://github.com/Dinesh-Das/multimodal-rag-assemblyai",
       "commits": [
-        "7e94fddca629cf21867d1514af9fbb71cecb2b3c",
-        "b46ab99ed9b0b3e4234c36f43aa69db2232b3bc9",
-        "570a42a593773bf307ca8f085ee7a27ba245361e"
+        "0e0bfa273ea6a341dab2973b00ca7f0ab3287e0b",
+        "695c81153dcaa52e0b12482659e60bf524628f21",
+        "6fc3408862a2238e7d10e45d66ddbd011593ce25"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -759,9 +1137,14 @@
       "id": "multiplatform_deep_researcher",
       "url": "https://github.com/Dinesh-Das/multiplatform_deep_researcher",
       "commits": [
-        "6aaf7d489e3ed4590cf8c2c8d692662e58ffad34",
-        "81f970ffb31105e937b2060181b9442494b223a8",
-        "f1998b8a8b5c26e27a7c9be4794d165c27cdb28e"
+        "74ae35ce02ffe95b3fe21af84e425ce0e0e8a523",
+        "9508f0209a5a7b8837a1a0dd482f31e3a173607f",
+        "9e2f96676681719e0dcfc017890bfd6fd6a831c3"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -769,9 +1152,14 @@
       "id": "notebook-lm-clone",
       "url": "https://github.com/Dinesh-Das/notebook-lm-clone",
       "commits": [
-        "f7d6e59d0c426d2c234ffda3b96a013ffb80720a",
-        "965d9d6baa997064089e358846026d60eea9e108",
-        "30494ce36a8171d1898526698fdc3503cb33a6c4"
+        "777cbbedd268bf1bfc2ed5dc58511853a7fcfb79",
+        "a959987a7e7e7446f070045da14f809308929dda",
+        "9679ffad64af8003807d0edff5e5164c1ce9d3c5"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -779,9 +1167,14 @@
       "id": "o3-vs-claude-code",
       "url": "https://github.com/Dinesh-Das/o3-vs-claude-code",
       "commits": [
-        "d35103b4ec7c4f9796c9eafd07229b7e7b81a77e",
-        "469954e97dc0deac46b9a4046f5dd4cddfce7499",
-        "d5b430f5a0dc43c2eec0d1b6842ce67fc583362d"
+        "3fd982ec4f878e4895db7f37a8fd06b4708895e2",
+        "a7ade7f0e2d9134e2c20e9f8d45415a27d519154",
+        "f2c7ec8a1e214efce59f4a52a037f1f386928cde"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -789,9 +1182,14 @@
       "id": "omnigraph-multi-agent",
       "url": "https://github.com/Dinesh-Das/omnigraph-multi-agent",
       "commits": [
-        "62b5c8859ceab8afedc203914ab7d556edc60354",
-        "aebd818109dcecda3ca721377343c3d0d0bf6742",
-        "dd10be49d43bf3337017768f5539cfd1696af2a4"
+        "cce1a939ae1a57c5213d56995ca3d4f10dcb46f3",
+        "f6df8ee46e282957a40cea6b185ee108e1221ad1",
+        "563de95682aff570142427f99f6f5ffff9a4cd1f"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -799,9 +1197,14 @@
       "id": "open-agent-builder",
       "url": "https://github.com/Dinesh-Das/open-agent-builder",
       "commits": [
-        "8e9b12fd163f213a28d0dd5258b9f85ee5c7e74e",
-        "d7bb7d1a9c2b35867f17275fe8877c705a8c433d",
-        "7db18cea8b91e7d1177a93f177373bbb3dc06e04"
+        "55219f39f5f7b4d45d225f270c23f2129cceb527",
+        "96eab5bdc984f98a7bcf50e3c7d4852d8a0fb75d",
+        "f61aa3cba0cceb2f5321e5186bf6cdc19969b93e"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -809,9 +1212,14 @@
       "id": "openai-swarm-ollama",
       "url": "https://github.com/Dinesh-Das/openai-swarm-ollama",
       "commits": [
-        "f319fbea260c60b2251d594636d58d21161e8bb7",
-        "ffca8ebccbe00201253cec18c0976811828552ff",
-        "7a646cbce63aa5e790a05e3e53bbc5f13347c602"
+        "cd480d1d6a16fa74a14130ad531b17b56e6a464e",
+        "2fcd1d3fb72965b6ee408ba8c4903abbed4ca5a0",
+        "8ecf0b25d6b5aca0e37935aa01e2209bfe121ef2"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -819,9 +1227,14 @@
       "id": "openclaw-secure-deployment",
       "url": "https://github.com/Dinesh-Das/openclaw-secure-deployment",
       "commits": [
-        "49424734292feed7ff0199434cb83bb97a21bcb6",
-        "0007f6546bc3777b7c28ffa7c81fe34e95854081",
-        "8f394345089069fd4d905ea91aa779fdd39045ef"
+        "8e3971af62da1673ff79e7210341c3cfd3753101",
+        "b580380e1e209f0fb86310f6e0552fc5c671c312",
+        "3803c5ba9f383f4a9190066cc970e257b4f0d536"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -829,9 +1242,14 @@
       "id": "paralegal-agent-crew",
       "url": "https://github.com/Dinesh-Das/paralegal-agent-crew",
       "commits": [
-        "5494de376328a13e42e44fbc2d9b2e25c4a49021",
-        "3eeeebf1d2edaee68096d2c78864b2dcf7834a8a",
-        "e485139170a4d2e47028c91c1c22e620df209b83"
+        "fe9ae376580a9aba2513336f7c4539b2a212db75",
+        "c0bad4b77612a96bf388475e2c47b458dcd3ce11",
+        "7ac44c8c406f576345a3b05c76aed72832a9b949"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -839,9 +1257,14 @@
       "id": "parlant-conversational-agent",
       "url": "https://github.com/Dinesh-Das/parlant-conversational-agent",
       "commits": [
-        "e87d0baf2abc2688d240df6d70e14219b4bac36c",
-        "f888d461d0090c3b9df87794aa1b340d8e6c3468",
-        "26eb1b0833cde3a219673fe3d6deedf46ec70c7e"
+        "1776d52581bb6aaae94ff17b6c6b30ec5fe6ce63",
+        "d788c185f9efcaf48ca48af7ec95e30d73beccfd",
+        "973f467a56f7d0bc4e62dd97b899e891261d470f"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -849,9 +1272,14 @@
       "id": "pixeltable-mcp",
       "url": "https://github.com/Dinesh-Das/pixeltable-mcp",
       "commits": [
-        "1ebe56ffed0d384f35fe986bd88f0bc0da8b0e3a",
-        "e566289b7fda2986dc056a1f2c1501cd7c1e8c21",
-        "73f4c91b452ffedf7ae85fde2357b0c6682e681d"
+        "959574db3f5a70f613c137459e77f0b23db92d86",
+        "3c27fd9bfd6ac0072d74fac859ce80439770a6c2",
+        "1239fd1962f65742b9cc8eef486fe3457ac3752f"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -859,9 +1287,14 @@
       "id": "qwen3-thinking-ui",
       "url": "https://github.com/Dinesh-Das/qwen3-thinking-ui",
       "commits": [
-        "0a6e502c8d77d32aa3bc87fe1646a2a635012ad3",
-        "fb7a13c891753641ee0618511a6f9156c23cfd03",
-        "49571521280d3fdcfa0831b2e9a54507b6418a75"
+        "081dbeddd59b1139f08262e2222f39f8beb53aff",
+        "377e027c0659e38940396b1293b7b062fd30d033",
+        "4aec6a0700a8222d4cff21d9830fc7283a6a2c88"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -869,9 +1302,14 @@
       "id": "qwen3_vs_deepseek-r1",
       "url": "https://github.com/Dinesh-Das/qwen3_vs_deepseek-r1",
       "commits": [
-        "76082361b3c2881fbe696ff6b766eb7e022e16f7",
-        "1be4183187a2e747594a7b51ba2622d9faa68595",
-        "a42e2e28844b65123f9b7350ba420631fff20b4c"
+        "972412b7c94f48c37621dfa7730e51dc96c08e15",
+        "b13c153996d1b231446cd97ea3794b6392710aad",
+        "e5f1afc81e9ab068df518ad8fe55d9edbec99232"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -879,9 +1317,14 @@
       "id": "rag-sql-router",
       "url": "https://github.com/Dinesh-Das/rag-sql-router",
       "commits": [
-        "e21b68b2edd2637093ae93b6f60334829de4098f",
-        "ab93999a0538544a4badc54934b344fd396a8dea",
-        "7ad17c11e050a7ebe42503beaabe4c2b8bbbe83d"
+        "78f119b092e70a74fec423bb0b76bd9b0e39fe63",
+        "d81ffe084ad3829767cea6f0af180a11dfe48327",
+        "13a146586662c73700815e9fa56f6aad340deb5b"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -889,9 +1332,14 @@
       "id": "rag-voice-agent",
       "url": "https://github.com/Dinesh-Das/rag-voice-agent",
       "commits": [
-        "ee4f724511540d547fac94d84454e908e96ac4de",
-        "97db406b83638211819d35f1d5a20d35c91c4f62",
-        "ad034f84d73aff7bd3e3c2fe7b734df66fd2fb55"
+        "b32c6caf4f40f3220f794504c4488c8dcdf02d4c",
+        "dc37970494fb62f77775a86a15739434ea4adcae",
+        "7ba092094f5b76a5114b5fad92e30842d1940af7"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -899,9 +1347,14 @@
       "id": "rag-with-dockling",
       "url": "https://github.com/Dinesh-Das/rag-with-dockling",
       "commits": [
-        "bced1330ae14c4661a9649f118799bcc71a7002c",
-        "c994ac8e914311572e064d007d018b9ad5d69734",
-        "0b7cc2a06d00b84a8e96672a63d20ab15db1733f"
+        "38f05bcc5127ad8ba99c0d8c84952b0d7e2ac5a5",
+        "bde4b31f2a094b901d280e7d04d8bc15a2ca4fd1",
+        "f772ac75c547b46a189e1623826c20c3653a7938"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -909,9 +1362,14 @@
       "id": "real-time-voicebot",
       "url": "https://github.com/Dinesh-Das/real-time-voicebot",
       "commits": [
-        "e603eada4227779feec1dcbd3c752ef4253f61ca",
-        "e2b1d9dd104ac15ea7842a09b4d9d7cac8882795",
-        "29f91fb0ed0b724d87e731f234291254f7320c42"
+        "c1871593afc1eac4cecc0008480550f3e662fc07",
+        "aa27c1eda2089b2f43431f13a8fd8bf810256299",
+        "1d6b4d83461bd093ee9750ed64684d008ed779a2"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -919,9 +1377,14 @@
       "id": "run-jev-inside-agent-harness",
       "url": "https://github.com/Dinesh-Das/run-jev-inside-agent-harness",
       "commits": [
-        "b104c98b0a09255927df33ff5d08d9cb6450a21b",
-        "58e4e50c5f39bb37791def1cf930b34b85b84972",
-        "d17516d3e85ea9c606e4511537d2e04f623ed06b"
+        "59be6cd397eac5c6daca47bb8a17ab620b971dd5",
+        "faaf3df109df3446767a6f1d4dfdd4113a191e41",
+        "31a5bb0740829edc1ffa2087f25f6f2545f0a304"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -929,9 +1392,14 @@
       "id": "sales-analytics-agent",
       "url": "https://github.com/Dinesh-Das/sales-analytics-agent",
       "commits": [
-        "780587a0bb3e82a020abc9f24113dafe7691bdca",
-        "651a357d4e191e8626b37d8963c4b8c29231d106",
-        "4fc7e68520a24967bc1dfd3443c0165ad3b0290d"
+        "dbc96ea38ddc39e7ab6cd01b8aebbf0988a49e4e",
+        "53ca265d68cb576aa90661f824440813e299de21",
+        "2ffe58a71df38cc04d157d14548c5e962316f3c7"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -939,9 +1407,14 @@
       "id": "sdv-mcp",
       "url": "https://github.com/Dinesh-Das/sdv-mcp",
       "commits": [
-        "4c24300e3e8cb40365837eef62dd41ef700907ae",
-        "80b274b5d0d526bc079d8b7383b97d8bae67910d",
-        "687e0a16629aca25352dc80e9050b1977d5b8301"
+        "15da7e857de17f24c6eb6361addc12222420863b",
+        "a022bfcc968d5c36e929707a29d3f9307ee39e7c",
+        "d867b17aa3b673f5ad69131b8644cf894c56ab43"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -949,9 +1422,14 @@
       "id": "siamese-network",
       "url": "https://github.com/Dinesh-Das/siamese-network",
       "commits": [
-        "937c623ee4fc726259935aebb2d236f717a1fe0b",
-        "fc9d528ad20ad428421561289ffdfcaaaeb40d95",
-        "e6530422bc94149e659dd76569ee381f633fb06d"
+        "4b25cbe6614e74ead844f9225dce106f44b499b2",
+        "8e813771b67bc685bcb2e224cb775d8a3960d0e0",
+        "d3ccffc974796c718a473d83488a208e03f52e50"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -959,9 +1437,14 @@
       "id": "simple-rag-workflow",
       "url": "https://github.com/Dinesh-Das/simple-rag-workflow",
       "commits": [
-        "67fa8c820231c4c043d46ad91a57989c4a212dcb",
-        "1de17660105445f77c8ec634d52893dfc49449b1",
-        "cbdc228236ae8646bd1d6479de856bcc43489392"
+        "73aa29ea382bf87ce54dac15d52e13e72b2def7f",
+        "812fb6aa2d77608db00ffc25c8c8d63a1ef84979",
+        "65f91b8087e83dc2a375c9cd87300c04e0d6e160"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -969,9 +1452,14 @@
       "id": "sonnet4-vs-o4",
       "url": "https://github.com/Dinesh-Das/sonnet4-vs-o4",
       "commits": [
-        "2477928d485839b657c79cf8bec468e6b2a29e71",
-        "16202b4451ee7ad237e0f244233d33125325ea11",
-        "5ba01a24aa67a7865fcd44f78394478a527a1bd7"
+        "ef59afc6f2ad73d4a180e3ed4c66efe02b224c80",
+        "9ed69ec4b3d9f6e42e8fb02ba4b34def78bef94f",
+        "faac35c09e8fd65258f1bc5a6c60ccaa0823ae79"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -979,9 +1467,14 @@
       "id": "sonnet4-vs-qwen3-coder",
       "url": "https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder",
       "commits": [
-        "ce9ec80205efc319b368d6acd7537fd7efc68618",
-        "b01545e933b9d9fc1cbe12811bc90344ebd5e9a4",
-        "7e6cc2546cbcc8aca08b8e337a05573cc2ec2d5e"
+        "f9739ec2c50b9f4bd4e7e0e538ffcd6c7782c1c4",
+        "67f81b5c0f789afa6c8c6d1741dfa69cd55777be",
+        "89f7a0af0ddd650d95c998a1fb4a154ffb4b8e07"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -989,9 +1482,14 @@
       "id": "stagehand x mcp-use",
       "url": "https://github.com/Dinesh-Das/stagehand-x-mcp-use",
       "commits": [
-        "8f85a8877e3ca02261ace9cf96c973de0ee1077c",
-        "04f8f2c120008728f792745e95c8efe27c8623c4",
-        "7478bab85618202693ead9cecb5027e18a8e8999"
+        "ca006c6a5601f69bd655187426bfb8edf5d719c4",
+        "6cf282e6f8e6b21f778582a00bbc1e3c81070b43",
+        "15ce5b122e48b878ad21e105b776347adac61dc4"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -999,9 +1497,14 @@
       "id": "stock-portfolio-analysis-agent",
       "url": "https://github.com/Dinesh-Das/stock-portfolio-analysis-agent",
       "commits": [
-        "8885edcd993ff5cff91251c69f1a668e1b9dc94b",
-        "68f79539ed1ab45bedce65fbead1d48634a91b30",
-        "fe18e22e7c919111dbf42615128a710ed2a9f37e"
+        "5795696172eb4dd552b802b3b9680537f860e953",
+        "7e534e3880f04e004ef33de5b0b2ed4976de19ae",
+        "6c3a5bf68021b8554662b90001e37556cbc8efb3"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1009,9 +1512,14 @@
       "id": "streaming-ai-chatbot",
       "url": "https://github.com/Dinesh-Das/streaming-ai-chatbot",
       "commits": [
-        "eabc17b57ecf7ebda1eb471cda265fc1911c187c",
-        "b2311b0c3600b115bbd9c26d1730eaf081d1319f",
-        "c99f9a7d592a7a9c971d0e2dfc23abcc6efb2d04"
+        "d316334bdafc3a70e421787a33b11e980588eb18",
+        "bf23d8f45d39622716e988a061d4c49e5a426d8d",
+        "60ccd6b4c8caa7e37e39d03a55b419cb6fd9f11a"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1019,9 +1527,14 @@
       "id": "train-yolo26-object-detection",
       "url": "https://github.com/Dinesh-Das/train-yolo26-object-detection",
       "commits": [
-        "8c59011a9ec599a88b9cb670ec1c9a8ba80e5147",
-        "f32f7517338ee84a66726fe02b97d3c4be931d8c",
-        "ac1c5b58193bd36e78ded20fd576f68f877220c9"
+        "aecc5c61aa89591a0913a4d53a28c607e0aaf210",
+        "0f6e978faa5a780587e605a6975d625b3bb5d0b5",
+        "aef613c7670efe5fc316c260a46705d092e57b6b"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1029,9 +1542,14 @@
       "id": "trustworthy-rag",
       "url": "https://github.com/Dinesh-Das/trustworthy-rag",
       "commits": [
-        "e0385caeafb7252922b119c169c8c41ad625ca7a",
-        "6c3c037d83795a781044d5988c2bc8fde34f2719",
-        "37ba97f6361c18010625da59f76602663ff8c11a"
+        "942a44c4e4a54c5499c809f20c56b327f6046c39",
+        "d00ea8e9d196ef9cc802951a7ca465a4bc4681cd",
+        "f59cf0d1017d474bcf65fd44d5e9a3b4fd160409"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1039,9 +1557,14 @@
       "id": "ultimate-ai-assitant-using-mcp",
       "url": "https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp",
       "commits": [
-        "dc419e22b1f58a2a61a5d2eeca4d08d72f2a9d8c",
-        "f443969cf6dfaf081b48aad3e4fd67b6c367bac5",
-        "25b5b0f9e726b647d769d1cf2d6ed5d5b64ea391"
+        "ee00870580811156551b14b2a967a4201f6c645b",
+        "73c70ba19b4ab640c8ee4e903593a15cfea879d0",
+        "d2a4d74a503d8fefdeb67153205cbd4293574d48"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1049,9 +1572,14 @@
       "id": "video-rag-gemini",
       "url": "https://github.com/Dinesh-Das/video-rag-gemini",
       "commits": [
-        "bd54c892de18eb70b6556dd5cb4fdf59fdf0b966",
-        "ee5d8a25835bf3d135ee830e32eab9eb76d151fc",
-        "27e260e7f08afbe0725bcd5d727401e279625c23"
+        "8c7d82edade6733019401affcef80192ee605028",
+        "fe78a4c78b05c3747f15d97e3b104a438574f2b9",
+        "2414a8ddab038c423e4b2be9b89a119815750a96"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1059,9 +1587,14 @@
       "id": "web-browsing-agent",
       "url": "https://github.com/Dinesh-Das/web-browsing-agent",
       "commits": [
-        "4723562bb08067fd5ae8b8e5646edba33631c381",
-        "2c5b1c0f6b1f660f518f158ec24eed6765289745",
-        "8bb43d8607cb6ae16d88c73dad5a29c1adad4d73"
+        "021f80a273f0782b2db92b44ea47a8e56dd0e5ce",
+        "ba2f659cca076f6b37cf9c62af6ab8ba1b509d8d",
+        "14203b2acc85297c619084197045435a8caeb808"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1069,9 +1602,14 @@
       "id": "Website-to-API-with-FireCrawl",
       "url": "https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl",
       "commits": [
-        "7bdf3383c80d7adcd6f0fadd3fc940fac12059b4",
-        "fe568093a3d4db19a39046e305428ab62914b942",
-        "fecb30fdf8713566dc19a3f8e0d6f16aab4b5e38"
+        "511d93a0101c318dd900d1baec286759b6cf4927",
+        "37bcc708b81ce2a615b60abce5156726a5cd5bfe",
+        "e4d435cf85d671ce1da170e5cf13ebaca3d0d815"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1079,9 +1617,14 @@
       "id": "Youtube-trend-analysis",
       "url": "https://github.com/Dinesh-Das/Youtube-trend-analysis",
       "commits": [
-        "1f67df5d5cc4ea125619eb405e5789d0a72fc0fa",
-        "bf5a558184498858baccbf99013edb007246d517",
-        "6f883fbbcb647bb36cc5d2009025c06b14a5e02c"
+        "47a99dbd88541bf06758c5eba8b4e27ebcd61447",
+        "738506feaddadf03ac1f4d6cfd96db493cf8ce6b",
+        "8226909ca7cca90648f1bd09179dd44702e95f31"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1089,9 +1632,14 @@
       "id": "zep-memory-assistant",
       "url": "https://github.com/Dinesh-Das/zep-memory-assistant",
       "commits": [
-        "c563f73d922298dfefb17b03b3f79327d2264ef2",
-        "d663640cf0671fbb051a62e199c651fd54900596",
-        "dbd33af3004ac61fe606c4b086088dfd86bf2264"
+        "2915a6ea6f5071e5ce838276d8c2ca66b769fe9b",
+        "0fef74cecdd601ff5c6f46b476d55db090fc9974",
+        "823167faa46bcfc97492e3c1278bf3760709ef2d"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1099,9 +1647,14 @@
       "id": "zep-observations",
       "url": "https://github.com/Dinesh-Das/zep-observations",
       "commits": [
-        "9588d630a156a5e3bcc05a0281a5e61429360ba0",
-        "42b497356cd3b322a15d462da6f165e7c5053e2b",
-        "05a98db05b57644c1281be284888544f65b28315"
+        "a3a4f2119d3d3636cd6a99826ef10c955f86cd7e",
+        "92c4b9a804a3044490b870b8ffb24885619585d8",
+        "b28a98f8bc92a46a292f0a0eb5da8a724c782091"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1109,9 +1662,14 @@
       "id": "Latex-OCR-Lama",
       "url": "https://github.com/Dinesh-Das/Latex-OCR-Lama",
       "commits": [
-        "9b6b8d922248c488b7b4b111f1aff503d6772ccc",
-        "92c12216415df05bcf74d0c550a5da2eae547ac6",
-        "9e9ee7ee5781e3ad8c5c04d481f3de9b9711f4bb"
+        "fe872a7112b0286a031efac1b8f7f21fe6a2715c",
+        "d5b0dc4313372d47201de80daff525b2b3b81186",
+        "aa0dc9a2b178683c4adf22a19733c57e009348e2"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1119,9 +1677,14 @@
       "id": "gemma3-ocr",
       "url": "https://github.com/Dinesh-Das/gemma3-ocr",
       "commits": [
-        "d259d911b9c108017b67c410a609004aa8216257",
-        "8911b377419c24dcb97367458e36d1d85024809e",
-        "ece8af2877292842d1bbe8656133b06f33211ea8"
+        "e5f73efdc578ba3733cad8c915453bbb936b188e",
+        "e7edf794aed9b42988d3a7cd445072666d393cce",
+        "d406a8119b39a66fba5653c2494b97195b5955f4"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1129,9 +1692,14 @@
       "id": "llama-ocr",
       "url": "https://github.com/Dinesh-Das/llama-ocr",
       "commits": [
-        "4717cb6f45e47f39684da7d11595784ce73b96d7",
-        "7b72aa0f48266eeec139e6534cb89bfe7c8f2b39",
-        "509aea286dc9604090ce220cf13594e4cbf7d627"
+        "57751628c8ab9ed6dbab2a30758adcea2467e3ca",
+        "a821fb790e0f3d81c9865a1d60b2e2ad95d1420b",
+        "01a8dd5bd1af12b2a3f4e7143c7607a8d9d7fbf4"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     },
@@ -1139,9 +1707,14 @@
       "id": "qwen-2.5VL-ocr",
       "url": "https://github.com/Dinesh-Das/qwen-2.5VL-ocr",
       "commits": [
-        "1b8f9daac94775468fb4eccc80463c829507db51",
-        "8c17aab0aec8a20892c542b5b6f6976c89769f16",
-        "2624a6ba6fc19d7c6a60f7096c4e24a72e270bdf"
+        "65e6096b0a07c2e313fd823fd1650f456724a19f",
+        "f874178fee9b079700ccec0ff6582ded84ac3d12",
+        "b82241d96aeafab6b28c850feb20b26320f9de39"
+      ],
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
       ],
       "remote_verified": false
     }

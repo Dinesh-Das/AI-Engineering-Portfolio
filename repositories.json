@@ -5,7 +5,8 @@
   "commit_dates": [
     "2026-11-11",
     "2026-11-12",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-14"
   ],
   "timezone": "Asia/Kolkata",
   "projects": [
@@ -15,7 +16,12 @@
       "url": "https://github.com/Dinesh-Das/acp-code",
       "category": "agents",
       "purpose": "Coordinate a research drafter and verifier implemented with different agent frameworks.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "agent-with-mcp-memory",
@@ -23,7 +29,12 @@
       "url": "https://github.com/Dinesh-Das/agent-with-mcp-memory",
       "category": "memory",
       "purpose": "Give a local agent web tools, persistent graph memory and traceable behavior.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "agent2agent-demo",
@@ -31,7 +42,12 @@
       "url": "https://github.com/Dinesh-Das/agent2agent-demo",
       "category": "agents",
       "purpose": "Understand agent-to-agent communication through sine, cosine and tangent services.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "agentic_rag",
@@ -39,7 +55,12 @@
       "url": "https://github.com/Dinesh-Das/agentic_rag",
       "category": "rag",
       "purpose": "Route questions to document retrieval and use web fallback when needed.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "agentic_rag_deepseek",
@@ -47,7 +68,12 @@
       "url": "https://github.com/Dinesh-Das/agentic_rag_deepseek",
       "category": "rag",
       "purpose": "Combine a local reasoning model with managed document parsing and search.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "ai-avatar-demo",
@@ -55,7 +81,12 @@
       "url": "https://github.com/Dinesh-Das/ai-avatar-demo",
       "category": "memory",
       "purpose": "Supply a conversational avatar with a memory-aware AI backend.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "ai-podcast-generation",
@@ -63,7 +94,12 @@
       "url": "https://github.com/Dinesh-Das/ai-podcast-generation",
       "category": "media",
       "purpose": "Turn source material into a two-speaker podcast with cloud or local generation.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "ai-podcast-generator",
@@ -71,7 +107,12 @@
       "url": "https://github.com/Dinesh-Das/ai-podcast-generator",
       "category": "media",
       "purpose": "Create article-to-podcast audio using MiniMax generation and speech.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "ai_news_generator",
@@ -79,7 +120,12 @@
       "url": "https://github.com/Dinesh-Das/ai_news_generator",
       "category": "agents",
       "purpose": "Generate sourced AI news using CrewAI and Cohere.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "amazon-product-analysis-server",
@@ -87,7 +133,12 @@
       "url": "https://github.com/Dinesh-Das/amazon-product-analysis-server",
       "category": "mcp",
       "purpose": "Expose product research and comparison through an MCP server.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "art_mcp_rl",
@@ -95,7 +146,12 @@
       "url": "https://github.com/Dinesh-Das/art_mcp_rl",
       "category": "training",
       "purpose": "Train an LLM to use MCP database tools with reinforcement learning.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "audio-analysis-toolkit",
@@ -103,7 +159,12 @@
       "url": "https://github.com/Dinesh-Das/audio-analysis-toolkit",
       "category": "voice",
       "purpose": "Transcribe audio and expose summaries, speakers and analysis via MCP.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "autogen-stock-analyst",
@@ -111,7 +172,12 @@
       "url": "https://github.com/Dinesh-Das/autogen-stock-analyst",
       "category": "agents",
       "purpose": "Use AutoGen with a custom model client for financial analysis and code generation.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "biotech-agentic-analyst",
@@ -119,7 +185,12 @@
       "url": "https://github.com/Dinesh-Das/biotech-agentic-analyst",
       "category": "structured",
       "purpose": "Extract scientific figures and produce structured research intelligence.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "book-writer-flow",
@@ -127,7 +198,12 @@
       "url": "https://github.com/Dinesh-Das/book-writer-flow",
       "category": "agents",
       "purpose": "Generate a researched outline and chapters with a persistent workflow state.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "brand-monitoring",
@@ -135,7 +211,12 @@
       "url": "https://github.com/Dinesh-Das/brand-monitoring",
       "category": "agents",
       "purpose": "Collect brand signals across multiple platforms and synthesize reports.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "build-code-harness",
@@ -143,7 +224,12 @@
       "url": "https://github.com/Dinesh-Das/build-code-harness",
       "category": "agents",
       "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "Build-reasoning-model",
@@ -151,7 +237,12 @@
       "url": "https://github.com/Dinesh-Das/Build-reasoning-model",
       "category": "training",
       "purpose": "Train a reasoning-oriented model with GRPO and explicit answer-format rewards.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "chat-with-audios",
@@ -159,7 +250,12 @@
       "url": "https://github.com/Dinesh-Das/chat-with-audios",
       "category": "rag",
       "purpose": "Retrieve answers from transcribed audio with document-style RAG.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "chat-with-code",
@@ -167,7 +263,12 @@
       "url": "https://github.com/Dinesh-Das/chat-with-code",
       "category": "rag",
       "purpose": "Retrieve repository context for code questions and validate responses.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "code-model-comparison",
@@ -175,7 +276,12 @@
       "url": "https://github.com/Dinesh-Das/code-model-comparison",
       "category": "evaluation",
       "purpose": "Compare code-generation models on a common repository context.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "colbert-rag",
@@ -183,7 +289,12 @@
       "url": "https://github.com/Dinesh-Das/colbert-rag",
       "category": "retrieval",
       "purpose": "Understand late interaction through ColBERT-style MaxSim scoring.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "Colivara-deepseek-website-RAG",
@@ -191,7 +302,12 @@
       "url": "https://github.com/Dinesh-Das/Colivara-deepseek-website-RAG",
       "category": "rag",
       "purpose": "Retrieve visually represented web pages and answer with a multimodal model.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "content_planner_flow",
@@ -199,7 +315,12 @@
       "url": "https://github.com/Dinesh-Das/content_planner_flow",
       "category": "agents",
       "purpose": "Plan social content from web material and schedule a draft.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "context-engineering-pipeline",
@@ -207,7 +328,12 @@
       "url": "https://github.com/Dinesh-Das/context-engineering-pipeline",
       "category": "memory",
       "purpose": "Assemble useful context from documents, memory and structured stores under a token budget.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "context-engineering-workflow",
@@ -215,7 +341,12 @@
       "url": "https://github.com/Dinesh-Das/context-engineering-workflow",
       "category": "memory",
       "purpose": "Coordinate multi-source research with parsing, retrieval and long-term context.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "conversational-support-flow",
@@ -223,7 +354,12 @@
       "url": "https://github.com/Dinesh-Das/conversational-support-flow",
       "category": "agents",
       "purpose": "Route support turns among order lookup, policy retrieval and live research.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "corrective-rag",
@@ -231,7 +367,12 @@
       "url": "https://github.com/Dinesh-Das/corrective-rag",
       "category": "rag",
       "purpose": "Detect weak document evidence and recover through web search.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "cursor_linkup_mcp",
@@ -239,7 +380,12 @@
       "url": "https://github.com/Dinesh-Das/cursor_linkup_mcp",
       "category": "mcp",
       "purpose": "Expose deep web search and document retrieval to an MCP client.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "database-memory-agent",
@@ -247,7 +393,12 @@
       "url": "https://github.com/Dinesh-Das/database-memory-agent",
       "category": "memory",
       "purpose": "Combine conversation history, semantic document search and tool selection in MongoDB.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "DeepSeek-finetuning",
@@ -255,7 +406,12 @@
       "url": "https://github.com/Dinesh-Das/DeepSeek-finetuning",
       "category": "training",
       "purpose": "Adapt a distilled DeepSeek model and export it for local inference.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "deepseek-multimodal-RAG",
@@ -263,7 +419,12 @@
       "url": "https://github.com/Dinesh-Das/deepseek-multimodal-RAG",
       "category": "rag",
       "purpose": "Retrieve PDF pages visually and answer with DeepSeek Janus-Pro.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "deepseek-thinking-ui",
@@ -271,7 +432,12 @@
       "url": "https://github.com/Dinesh-Das/deepseek-thinking-ui",
       "category": "interfaces",
       "purpose": "Parse streamed model traces and final answers without dropping boundary text.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "deploy-agentic-rag",
@@ -279,7 +445,12 @@
       "url": "https://github.com/Dinesh-Das/deploy-agentic-rag",
       "category": "operations",
       "purpose": "Serve an agentic RAG workflow through an API using LitServe.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "document-chat-rag",
@@ -287,7 +458,12 @@
       "url": "https://github.com/Dinesh-Das/document-chat-rag",
       "category": "rag",
       "purpose": "Build document-grounded question answering with local models and optional vector storage.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "documentation-writer-flow",
@@ -295,7 +471,12 @@
       "url": "https://github.com/Dinesh-Das/documentation-writer-flow",
       "category": "agents",
       "purpose": "Produce repository documentation through planning and writing agents.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "eval-and-observability",
@@ -303,7 +484,12 @@
       "url": "https://github.com/Dinesh-Das/eval-and-observability",
       "category": "evaluation",
       "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "eyelevel-mcp-rag",
@@ -311,7 +497,12 @@
       "url": "https://github.com/Dinesh-Das/eyelevel-mcp-rag",
       "category": "mcp",
       "purpose": "Expose complex-document ingestion and retrieval through GroundX-backed MCP tools.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "fastest-rag-milvus-groq",
@@ -319,7 +510,12 @@
       "url": "https://github.com/Dinesh-Das/fastest-rag-milvus-groq",
       "category": "retrieval",
       "purpose": "Explore binary-vector retrieval with Milvus and hosted generation with Groq.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "fastest-rag-stack",
@@ -327,7 +523,12 @@
       "url": "https://github.com/Dinesh-Das/fastest-rag-stack",
       "category": "retrieval",
       "purpose": "Combine quantized Qdrant retrieval with SambaNova-hosted generation.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "financial-analyst-deepseek",
@@ -335,7 +536,12 @@
       "url": "https://github.com/Dinesh-Das/financial-analyst-deepseek",
       "category": "agents",
       "purpose": "Expose stock analysis and generated plots through a local-model MCP workflow.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "finetune-studio-mcp-app",
@@ -343,7 +549,12 @@
       "url": "https://github.com/Dinesh-Das/finetune-studio-mcp-app",
       "category": "training",
       "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "firecrawl-agent",
@@ -351,7 +562,12 @@
       "url": "https://github.com/Dinesh-Das/firecrawl-agent",
       "category": "rag",
       "purpose": "Combine corrective document retrieval with Firecrawl web fallback.",
-      "remote_verified": true
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "flight-booking-crew",
@@ -359,7 +575,12 @@
       "url": "https://github.com/Dinesh-Das/flight-booking-crew",
       "category": "agents",
       "purpose": "Investigate browser-assisted flight search with CrewAI tools.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "github-rag",
@@ -367,7 +588,12 @@
       "url": "https://github.com/Dinesh-Das/github-rag",
       "category": "rag",
       "purpose": "Answer repository questions after GitIngest converts source to retrieval context.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "gpt-oss-thinking-ui",
@@ -375,7 +601,12 @@
       "url": "https://github.com/Dinesh-Das/gpt-oss-thinking-ui",
       "category": "interfaces",
       "purpose": "Render native thinking and answer channels incrementally for local GPT-OSS.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "gpt-oss-vs-qwen3",
@@ -383,7 +614,12 @@
       "url": "https://github.com/Dinesh-Das/gpt-oss-vs-qwen3",
       "category": "evaluation",
       "purpose": "Compare reasoning responses using parallel inference and judge metrics.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "graphiti-mcp",
@@ -391,7 +627,12 @@
       "url": "https://github.com/Dinesh-Das/graphiti-mcp",
       "category": "recipe",
       "purpose": "Study a documented integration for persistent graph memory through MCP.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "groundX-doc-pipeline",
@@ -399,7 +640,12 @@
       "url": "https://github.com/Dinesh-Das/groundX-doc-pipeline",
       "category": "structured",
       "purpose": "Process complex documents and evaluate structured extraction quality.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "grpo-finetuning-qwen3",
@@ -407,7 +653,12 @@
       "url": "https://github.com/Dinesh-Das/grpo-finetuning-qwen3",
       "category": "training",
       "purpose": "Improve Qwen3 structured invoice extraction through remote GRPO training.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "guidelines-vs-traditional-prompt",
@@ -415,7 +666,12 @@
       "url": "https://github.com/Dinesh-Das/guidelines-vs-traditional-prompt",
       "category": "agents",
       "purpose": "Compare structured conversational guidelines with a traditional instruction prompt.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "hotel-booking-crew",
@@ -423,7 +679,12 @@
       "url": "https://github.com/Dinesh-Das/hotel-booking-crew",
       "category": "agents",
       "purpose": "Explore multi-agent hotel research with browser-backed search.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "hugging-face-skills",
@@ -431,7 +692,12 @@
       "url": "https://github.com/Dinesh-Das/hugging-face-skills",
       "category": "operations",
       "purpose": "Inspect reusable dataset, evaluation, training and publishing scripts for AI agents.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "imagegen-janus-pro",
@@ -439,7 +705,12 @@
       "url": "https://github.com/Dinesh-Das/imagegen-janus-pro",
       "category": "media",
       "purpose": "Study local Janus-Pro multimodal understanding and image generation.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "kitops-mcp",
@@ -447,7 +718,12 @@
       "url": "https://github.com/Dinesh-Das/kitops-mcp",
       "category": "operations",
       "purpose": "Manage machine-learning ModelKit artifacts through an MCP tool boundary.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "knowledge distillation",
@@ -455,7 +731,12 @@
       "url": "https://github.com/Dinesh-Das/knowledge-distillation",
       "category": "training",
       "purpose": "Transfer classifier behavior from a teacher network to a smaller student.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "llama-4-rag",
@@ -463,7 +744,12 @@
       "url": "https://github.com/Dinesh-Das/llama-4-rag",
       "category": "rag",
       "purpose": "Use a hosted Llama 4 model in a local document-retrieval workflow.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "llama-4_vs_deepseek-r1",
@@ -471,7 +757,12 @@
       "url": "https://github.com/Dinesh-Das/llama-4_vs_deepseek-r1",
       "category": "evaluation",
       "purpose": "Compare Llama 4 and DeepSeek on a document-grounded task.",
-      "remote_verified": false
+      "remote_verified": true,
+      "commit_dates": [
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ]
     },
     {
       "id": "llamaindex-mcp",
@@ -479,7 +770,12 @@
       "url": "https://github.com/Dinesh-Das/llamaindex-mcp",
       "category": "mcp",
       "purpose": "Connect a local LlamaIndex agent to SQLite-backed MCP tools.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "local-chatgpt",
@@ -487,7 +783,12 @@
       "url": "https://github.com/Dinesh-Das/local-chatgpt",
       "category": "interfaces",
       "purpose": "Build and inspect a local image-aware conversation with Llama vision.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "local-chatgpt with DeepSeek",
@@ -495,7 +796,12 @@
       "url": "https://github.com/Dinesh-Das/local-chatgpt-with-DeepSeek",
       "category": "interfaces",
       "purpose": "Understand local dialogue state and incremental DeepSeek responses.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "local-chatgpt with Gemma 3",
@@ -503,7 +809,12 @@
       "url": "https://github.com/Dinesh-Das/local-chatgpt-with-Gemma-3",
       "category": "interfaces",
       "purpose": "Study multimodal follow-ups with a compact local Gemma model.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "mcp-agentic-rag",
@@ -511,7 +822,12 @@
       "url": "https://github.com/Dinesh-Das/mcp-agentic-rag",
       "category": "mcp",
       "purpose": "Expose web-ingested retrieval through MCP using Bright Data and Qdrant.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "mcp-agentic-rag-firecrawl",
@@ -519,7 +835,12 @@
       "url": "https://github.com/Dinesh-Das/mcp-agentic-rag-firecrawl",
       "category": "mcp",
       "purpose": "Build an MCP retrieval service with Firecrawl ingestion.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "mcp-video-rag",
@@ -527,7 +848,12 @@
       "url": "https://github.com/Dinesh-Das/mcp-video-rag",
       "category": "mcp",
       "purpose": "Expose video ingestion, retrieval and clip selection through Ragie-backed MCP tools.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "mcp-voice-agent",
@@ -535,7 +861,12 @@
       "url": "https://github.com/Dinesh-Das/mcp-voice-agent",
       "category": "voice",
       "purpose": "Give a LiveKit voice agent MCP-backed web and database tools.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "mindsdb-mcp",
@@ -543,7 +874,12 @@
       "url": "https://github.com/Dinesh-Das/mindsdb-mcp",
       "category": "recipe",
       "purpose": "Understand federated data access through a MindsDB MCP integration.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
@@ -551,7 +887,12 @@
       "url": "https://github.com/Dinesh-Das/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
       "category": "evaluation",
       "purpose": "Benchmark several code-generation providers against common repository context.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "modernbert-rag",
@@ -559,7 +900,12 @@
       "url": "https://github.com/Dinesh-Das/modernbert-rag",
       "category": "rag",
       "purpose": "Explore ModernBERT embeddings in a local RAG application.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "motia-content-creation",
@@ -567,7 +913,12 @@
       "url": "https://github.com/Dinesh-Das/motia-content-creation",
       "category": "agents",
       "purpose": "Implement event-driven article-to-social-content generation.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "Multi-Agent-deep-researcher-mcp-windows-linux",
@@ -575,7 +926,12 @@
       "url": "https://github.com/Dinesh-Das/Multi-Agent-deep-researcher-mcp-windows-linux",
       "category": "agents",
       "purpose": "Expose a local multi-agent research crew through MCP.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "multi-modal-rag",
@@ -583,7 +939,12 @@
       "url": "https://github.com/Dinesh-Das/multi-modal-rag",
       "category": "rag",
       "purpose": "Study CLIP image retrieval and multimodal prompting through notebooks.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "multilingual-meeting-notes-generator",
@@ -591,7 +952,12 @@
       "url": "https://github.com/Dinesh-Das/multilingual-meeting-notes-generator",
       "category": "voice",
       "purpose": "Convert multilingual meeting audio into English notes and assigned action items.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "multimodal-rag-assemblyai",
@@ -599,7 +965,12 @@
       "url": "https://github.com/Dinesh-Das/multimodal-rag-assemblyai",
       "category": "rag",
       "purpose": "Unify audio and document ingestion with vector retrieval and CrewAI flows.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "multiplatform_deep_researcher",
@@ -607,7 +978,12 @@
       "url": "https://github.com/Dinesh-Das/multiplatform_deep_researcher",
       "category": "agents",
       "purpose": "Research a question through platform-specific source specialists.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "notebook-lm-clone",
@@ -615,7 +991,12 @@
       "url": "https://github.com/Dinesh-Das/notebook-lm-clone",
       "category": "rag",
       "purpose": "Build a document-grounded notebook backend with citations, memory and audio output.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "o3-vs-claude-code",
@@ -623,7 +1004,12 @@
       "url": "https://github.com/Dinesh-Das/o3-vs-claude-code",
       "category": "evaluation",
       "purpose": "Compare repository-aware code responses and judge scoring across models.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "omnigraph-multi-agent",
@@ -631,7 +1017,12 @@
       "url": "https://github.com/Dinesh-Das/omnigraph-multi-agent",
       "category": "memory",
       "purpose": "Inspect multi-agent graph consistency through provided schemas and event data.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "open-agent-builder",
@@ -639,7 +1030,12 @@
       "url": "https://github.com/Dinesh-Das/open-agent-builder",
       "category": "agents",
       "purpose": "Study backend execution of AI workflows, MCP tools, guardrails and approval steps.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "openai-swarm-ollama",
@@ -647,7 +1043,12 @@
       "url": "https://github.com/Dinesh-Das/openai-swarm-ollama",
       "category": "agents",
       "purpose": "Explore local-model handoffs between lightweight agents.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "openclaw-secure-deployment",
@@ -655,7 +1056,12 @@
       "url": "https://github.com/Dinesh-Das/openclaw-secure-deployment",
       "category": "recipe",
       "purpose": "Learn host and network boundaries for an AI-agent deployment.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "paralegal-agent-crew",
@@ -663,7 +1069,12 @@
       "url": "https://github.com/Dinesh-Das/paralegal-agent-crew",
       "category": "rag",
       "purpose": "Retrieve legal-document evidence, rerank it and use research fallback.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "parlant-conversational-agent",
@@ -671,7 +1082,12 @@
       "url": "https://github.com/Dinesh-Das/parlant-conversational-agent",
       "category": "agents",
       "purpose": "Build a tool-backed loan conversation with explicit journeys and guidelines.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "pixeltable-mcp",
@@ -679,7 +1095,12 @@
       "url": "https://github.com/Dinesh-Das/pixeltable-mcp",
       "category": "mcp",
       "purpose": "Coordinate multimodal storage and computed transformations through MCP.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "qwen3-thinking-ui",
@@ -687,7 +1108,12 @@
       "url": "https://github.com/Dinesh-Das/qwen3-thinking-ui",
       "category": "interfaces",
       "purpose": "Compare thinking controls, final-answer quality and latency for Qwen3.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "qwen3_vs_deepseek-r1",
@@ -695,7 +1121,12 @@
       "url": "https://github.com/Dinesh-Das/qwen3_vs_deepseek-r1",
       "category": "evaluation",
       "purpose": "Compare Qwen3 and DeepSeek on a common RAG evaluation pipeline.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "rag-sql-router",
@@ -703,7 +1134,12 @@
       "url": "https://github.com/Dinesh-Das/rag-sql-router",
       "category": "rag",
       "purpose": "Route questions between document retrieval and structured SQL tools.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "rag-voice-agent",
@@ -711,7 +1147,12 @@
       "url": "https://github.com/Dinesh-Das/rag-voice-agent",
       "category": "voice",
       "purpose": "Connect spoken interaction to document retrieval and speech synthesis.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "rag-with-dockling",
@@ -719,7 +1160,12 @@
       "url": "https://github.com/Dinesh-Das/rag-with-dockling",
       "category": "rag",
       "purpose": "Parse spreadsheets and complex documents with Docling before retrieval.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "real-time-voicebot",
@@ -727,7 +1173,12 @@
       "url": "https://github.com/Dinesh-Das/real-time-voicebot",
       "category": "voice",
       "purpose": "Implement a streaming travel conversation with ASR, an LLM and TTS.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "run-jev-inside-agent-harness",
@@ -735,7 +1186,12 @@
       "url": "https://github.com/Dinesh-Das/run-jev-inside-agent-harness",
       "category": "recipe",
       "purpose": "Study task orchestration and credential boundaries in an agent-harness integration guide.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "sales-analytics-agent",
@@ -743,7 +1199,12 @@
       "url": "https://github.com/Dinesh-Das/sales-analytics-agent",
       "category": "agents",
       "purpose": "Join MongoDB and HubSpot data through MindsDB for natural-language analytics.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "sdv-mcp",
@@ -751,7 +1212,12 @@
       "url": "https://github.com/Dinesh-Das/sdv-mcp",
       "category": "mcp",
       "purpose": "Expose local synthetic-data training, generation and statistical evaluation through MCP.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "siamese-network",
@@ -759,7 +1225,12 @@
       "url": "https://github.com/Dinesh-Das/siamese-network",
       "category": "training",
       "purpose": "Learn digit similarity through paired examples and contrastive loss.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "simple-rag-workflow",
@@ -767,7 +1238,12 @@
       "url": "https://github.com/Dinesh-Das/simple-rag-workflow",
       "category": "rag",
       "purpose": "Learn the ingestion, retrieval and synthesis stages of a minimal RAG system.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "sonnet4-vs-o4",
@@ -775,7 +1251,12 @@
       "url": "https://github.com/Dinesh-Das/sonnet4-vs-o4",
       "category": "evaluation",
       "purpose": "Compare code generation with shared context and DeepEval grading.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "sonnet4-vs-qwen3-coder",
@@ -783,7 +1264,12 @@
       "url": "https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder",
       "category": "evaluation",
       "purpose": "Evaluate Claude and Qwen3-Coder against repository-grounded tasks.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "stagehand x mcp-use",
@@ -791,7 +1277,12 @@
       "url": "https://github.com/Dinesh-Das/stagehand-x-mcp-use",
       "category": "agents",
       "purpose": "Connect a local agent to browser-automation tools through MCP.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "stock-portfolio-analysis-agent",
@@ -799,7 +1290,12 @@
       "url": "https://github.com/Dinesh-Das/stock-portfolio-analysis-agent",
       "category": "agents",
       "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "streaming-ai-chatbot",
@@ -807,7 +1303,12 @@
       "url": "https://github.com/Dinesh-Das/streaming-ai-chatbot",
       "category": "interfaces",
       "purpose": "Understand event-driven chat state and recovery through an observable local implementation.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "train-yolo26-object-detection",
@@ -815,7 +1316,12 @@
       "url": "https://github.com/Dinesh-Das/train-yolo26-object-detection",
       "category": "training",
       "purpose": "Fine-tune an object detector on a custom Roboflow dataset and track experiments.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "trustworthy-rag",
@@ -823,7 +1329,12 @@
       "url": "https://github.com/Dinesh-Das/trustworthy-rag",
       "category": "rag",
       "purpose": "Attach trustworthiness signals to document-grounded model output.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "ultimate-ai-assitant-using-mcp",
@@ -831,7 +1342,12 @@
       "url": "https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp",
       "category": "mcp",
       "purpose": "Explore one agent connecting to several MCP servers.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "video-rag-gemini",
@@ -839,7 +1355,12 @@
       "url": "https://github.com/Dinesh-Das/video-rag-gemini",
       "category": "media",
       "purpose": "Upload video to Gemini and ask grounded questions about its contents.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "web-browsing-agent",
@@ -847,7 +1368,12 @@
       "url": "https://github.com/Dinesh-Das/web-browsing-agent",
       "category": "agents",
       "purpose": "Plan and execute browser research with CrewAI and Stagehand.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "Website-to-API-with-FireCrawl",
@@ -855,7 +1381,12 @@
       "url": "https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl",
       "category": "structured",
       "purpose": "Convert web content into schema-constrained extraction results.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "Youtube-trend-analysis",
@@ -863,7 +1394,12 @@
       "url": "https://github.com/Dinesh-Das/Youtube-trend-analysis",
       "category": "agents",
       "purpose": "Analyze channel or niche trends from collected video transcripts.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "zep-memory-assistant",
@@ -871,7 +1407,12 @@
       "url": "https://github.com/Dinesh-Das/zep-memory-assistant",
       "category": "memory",
       "purpose": "Add persistent Zep memory to an AutoGen conversational agent.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "zep-observations",
@@ -879,7 +1420,12 @@
       "url": "https://github.com/Dinesh-Das/zep-observations",
       "category": "memory",
       "purpose": "Study how graph conversation data becomes behavioral observations.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "Latex-OCR-Lama",
@@ -887,7 +1433,12 @@
       "url": "https://github.com/Dinesh-Das/Latex-OCR-Lama",
       "category": "ocr",
       "purpose": "Local Latex-OCR-Lama document recognition workspace.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "gemma3-ocr",
@@ -895,7 +1446,12 @@
       "url": "https://github.com/Dinesh-Das/gemma3-ocr",
       "category": "ocr",
       "purpose": "Local gemma3-ocr document recognition workspace.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "llama-ocr",
@@ -903,7 +1459,12 @@
       "url": "https://github.com/Dinesh-Das/llama-ocr",
       "category": "ocr",
       "purpose": "Local llama-ocr document recognition workspace.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     },
     {
       "id": "qwen-2.5VL-ocr",
@@ -911,7 +1472,12 @@
       "url": "https://github.com/Dinesh-Das/qwen-2.5VL-ocr",
       "category": "ocr",
       "purpose": "Local qwen-2.5VL-ocr document recognition workspace.",
-      "remote_verified": false
+      "remote_verified": false,
+      "commit_dates": [
+        "2026-11-14",
+        "2026-11-14",
+        "2026-11-14"
+      ]
     }
   ]
 }

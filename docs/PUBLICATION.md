@@ -9,7 +9,9 @@ The target is one public GitHub repository per project, plus [AI-Engineering-Por
 
 ## Repository contents and commit dates
 
-The 109 collection projects are exported as independent repositories in three substantive commits: source and upstream provenance on November 11, learning and evaluation documentation on November 12, and standalone CPU learning tools plus validation on November 13, 2026. The four OCR projects preserve their existing Git histories and add three publication commits across the same dates. Both author and committer dates use Asia/Kolkata (UTC+05:30), as requested. Push events retain their actual GitHub timestamps.
+The 109 collection projects are exported as independent repositories with commits for source and upstream provenance, learning and evaluation documentation, and standalone CPU learning tools plus validation. The four OCR projects preserve their existing Git histories and add three publication commits. The already-published repositories keep their published dates. Every commit prepared after the November 14 handoff uses the actual preparation date in Asia/Kolkata (UTC+05:30). Push events retain their actual GitHub timestamps.
+
+At the user's request, the 58 already-pushed project histories stay unchanged. The remaining 55 projects resume after midnight IST on November 14. Their three unpublished commits are dated on the actual date they are prepared, while the three-commit count and original OCR history are preserved. Main repository updates also use their actual commit date. Per-project dates and commit hashes are recorded in the publication report.
 
 The main portfolio retains the collection's existing history and adds the directory, website and publication evidence in separate commits. Original copyright notices and source manifests remain in place. Source-backed learning ports are attributed in each project's README; these repositories do not imply independently authored upstream implementations or production model qualification.
 
@@ -34,11 +36,11 @@ Before publication, the collection's 79 standard-library tests and four ColBERT 
 
 Each independent checkout was executed with `python -I <absolute-path-to-enhance.py> check` from outside the project directory. Its full reachable Git history was scanned for common credential patterns before pushing. This pattern scan is limited and does not establish exhaustive security review.
 
-The independent OCR exports also passed 130 native pytest tests across the four projects. The Gemma, Llama and Qwen exports pass their repository lint and format checks plus 15 bundled-core tests each. [OCR export verification](OCR_PUBLICATION_VALIDATION.json) records the results and the sequential rerun after a parallel UI test timed out; test limits were preserved. Export corrections remain within each affected export's unpublished November 13 commit, retaining both requested timestamps and its original history.
+The independent OCR exports also passed 130 native pytest tests across the four projects. The Gemma, Llama and Qwen exports pass their repository lint and format checks plus 15 bundled-core tests each. [OCR export verification](OCR_PUBLICATION_VALIDATION.json) records the results and the sequential rerun after a parallel UI test timed out; test limits were preserved. Export corrections remain within each affected export's publication commits, retaining the original project history and three-commit publication count.
 
 Remote `main` commit hashes are verified against the prepared local heads after every push. [Publication evidence](publication-report.json) records the project repositories and requested dated commit hashes. Live provider inference and GPU training are outside these checks.
 
-The report's `date` and `last_updated_at` use the actual publication run time in Asia/Kolkata. Its `commit_dates` remain the requested November 11–13 dates, including when the slow queue runs overnight. The publisher checks the configured GitHub destination and prepared `main` commit before pushing. Portfolio commits stay on `main` and exclude unrelated staged files.
+The report's `date` and `last_updated_at` use the actual publication run time in Asia/Kolkata. Its `commit_dates` include the dates actually assigned to each prepared project, including November 14 for the spillover. The publisher checks the configured GitHub destination and prepared `main` commit before pushing. Portfolio commits stay on `main` and exclude unrelated staged files.
 
 ## Resuming after GitHub's cooldown
 
