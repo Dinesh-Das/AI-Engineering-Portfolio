@@ -95,7 +95,7 @@
       "url": "https://github.com/Dinesh-Das/art_mcp_rl",
       "category": "training",
       "purpose": "Train an LLM to use MCP database tools with reinforcement learning.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "audio-analysis-toolkit",
@@ -103,7 +103,7 @@
       "url": "https://github.com/Dinesh-Das/audio-analysis-toolkit",
       "category": "voice",
       "purpose": "Transcribe audio and expose summaries, speakers and analysis via MCP.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "autogen-stock-analyst",
@@ -111,7 +111,7 @@
       "url": "https://github.com/Dinesh-Das/autogen-stock-analyst",
       "category": "agents",
       "purpose": "Use AutoGen with a custom model client for financial analysis and code generation.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "biotech-agentic-analyst",
@@ -119,7 +119,7 @@
       "url": "https://github.com/Dinesh-Das/biotech-agentic-analyst",
       "category": "structured",
       "purpose": "Extract scientific figures and produce structured research intelligence.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "book-writer-flow",
@@ -127,7 +127,7 @@
       "url": "https://github.com/Dinesh-Das/book-writer-flow",
       "category": "agents",
       "purpose": "Generate a researched outline and chapters with a persistent workflow state.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "brand-monitoring",
@@ -135,7 +135,7 @@
       "url": "https://github.com/Dinesh-Das/brand-monitoring",
       "category": "agents",
       "purpose": "Collect brand signals across multiple platforms and synthesize reports.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "build-code-harness",
@@ -143,7 +143,7 @@
       "url": "https://github.com/Dinesh-Das/build-code-harness",
       "category": "agents",
       "purpose": "Study a coding-agent harness with planning, tools, checkpoints and approval.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Build-reasoning-model",
@@ -151,7 +151,7 @@
       "url": "https://github.com/Dinesh-Das/Build-reasoning-model",
       "category": "training",
       "purpose": "Train a reasoning-oriented model with GRPO and explicit answer-format rewards.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "chat-with-audios",
@@ -159,7 +159,7 @@
       "url": "https://github.com/Dinesh-Das/chat-with-audios",
       "category": "rag",
       "purpose": "Retrieve answers from transcribed audio with document-style RAG.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "chat-with-code",

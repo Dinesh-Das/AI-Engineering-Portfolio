@@ -3,8 +3,8 @@
   "owner": "Dinesh-Das",
   "project_count": 113,
   "requested_dated_commits": 339,
-  "remote_projects_verified": 10,
-  "pending_projects": 103,
+  "remote_projects_verified": 19,
+  "pending_projects": 94,
   "commit_dates": [
     "2026-11-11",
     "2026-11-12",
@@ -122,7 +122,7 @@
         "95b4e344e8dbe0535e1faff1f1591b91e17ec924",
         "ffa7c80404e12935318ddab0ff4372ccf1676cc9"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "audio-analysis-toolkit",
@@ -132,7 +132,7 @@
         "650ad4a61ffb6f4b087e278afbe1cf84ff46a0ac",
         "aafa081fa28f6cf39896fa2a43fd69f41997395f"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "autogen-stock-analyst",
@@ -142,7 +142,7 @@
         "84e85579be9408056256871005821dee95f516e6",
         "7d20ee615890efb128ce395f2d53657f6eaec755"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "biotech-agentic-analyst",
@@ -152,7 +152,7 @@
         "93f83198d9a11b500f913c9745f9bacb790eef42",
         "0f7c95f63e500a505c968c3e3424cc549e614b2e"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "book-writer-flow",
@@ -162,7 +162,7 @@
         "1d6fd988022b9744269e63d562c66ad2b4bc94f3",
         "51938d292e5c273cd5153d435348f1f3d49ab67c"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "brand-monitoring",
@@ -172,7 +172,7 @@
         "a1a0004cd577491a824e0ceadc482d9c7ad5d3bc",
         "22ba5b70c8bcaf101e5c4f75d2ac1ffa26f09f91"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "build-code-harness",
@@ -182,7 +182,7 @@
         "b59421b426362534e4245c573d1ea4e2055f3ad5",
         "9f91b25476e284e10821246a4b930e3bdf0cb0ff"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Build-reasoning-model",
@@ -192,7 +192,7 @@
         "1286f4e877c7bb6fa3f99fd25a80d05d5123fbb3",
         "8c133ffdf7b75b87da53d2ec9e4bbd5d80bdcbf8"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "chat-with-audios",
@@ -202,7 +202,7 @@
         "8135a698352a456778c4f0583aebefe11f5cfc8b",
         "9b64be415b007375e1c82f58c30e54d350c0ae97"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "chat-with-code",

@@ -2,7 +2,7 @@
 
 [Local portfolio](../portfolio.html) · [Offline handbook](../index.html) · [Publication status](publication-report.json)
 
-**10 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
+**19 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
 
 Planned hosting: [portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html), [handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/), and [main repository](https://github.com/Dinesh-Das/AI-Engineering-Portfolio).
 
@@ -20,15 +20,15 @@ Each project has three publication commits dated November 11, 12 and 13, 2026 in
 | ai-podcast-generator | media | [ai-podcast-generator](https://github.com/Dinesh-Das/ai-podcast-generator) | Verified |
 | ai_news_generator | agents | [ai_news_generator](https://github.com/Dinesh-Das/ai_news_generator) | Verified |
 | amazon-product-analysis-server | mcp | [amazon-product-analysis-server](https://github.com/Dinesh-Das/amazon-product-analysis-server) | Verified |
-| art_mcp_rl | training | [art_mcp_rl](https://github.com/Dinesh-Das/art_mcp_rl) | Pending creation |
-| audio-analysis-toolkit | voice | [audio-analysis-toolkit](https://github.com/Dinesh-Das/audio-analysis-toolkit) | Pending creation |
-| autogen-stock-analyst | agents | [autogen-stock-analyst](https://github.com/Dinesh-Das/autogen-stock-analyst) | Pending creation |
-| biotech-agentic-analyst | structured | [biotech-agentic-analyst](https://github.com/Dinesh-Das/biotech-agentic-analyst) | Pending creation |
-| book-writer-flow | agents | [book-writer-flow](https://github.com/Dinesh-Das/book-writer-flow) | Pending creation |
-| brand-monitoring | agents | [brand-monitoring](https://github.com/Dinesh-Das/brand-monitoring) | Pending creation |
-| build-code-harness | agents | [build-code-harness](https://github.com/Dinesh-Das/build-code-harness) | Pending creation |
-| Build-reasoning-model | training | [Build-reasoning-model](https://github.com/Dinesh-Das/Build-reasoning-model) | Pending creation |
-| chat-with-audios | rag | [chat-with-audios](https://github.com/Dinesh-Das/chat-with-audios) | Pending creation |
+| art_mcp_rl | training | [art_mcp_rl](https://github.com/Dinesh-Das/art_mcp_rl) | Verified |
+| audio-analysis-toolkit | voice | [audio-analysis-toolkit](https://github.com/Dinesh-Das/audio-analysis-toolkit) | Verified |
+| autogen-stock-analyst | agents | [autogen-stock-analyst](https://github.com/Dinesh-Das/autogen-stock-analyst) | Verified |
+| biotech-agentic-analyst | structured | [biotech-agentic-analyst](https://github.com/Dinesh-Das/biotech-agentic-analyst) | Verified |
+| book-writer-flow | agents | [book-writer-flow](https://github.com/Dinesh-Das/book-writer-flow) | Verified |
+| brand-monitoring | agents | [brand-monitoring](https://github.com/Dinesh-Das/brand-monitoring) | Verified |
+| build-code-harness | agents | [build-code-harness](https://github.com/Dinesh-Das/build-code-harness) | Verified |
+| Build-reasoning-model | training | [Build-reasoning-model](https://github.com/Dinesh-Das/Build-reasoning-model) | Verified |
+| chat-with-audios | rag | [chat-with-audios](https://github.com/Dinesh-Das/chat-with-audios) | Verified |
 | chat-with-code | rag | [chat-with-code](https://github.com/Dinesh-Das/chat-with-code) | Pending creation |
 | code-model-comparison | evaluation | [code-model-comparison](https://github.com/Dinesh-Das/code-model-comparison) | Pending creation |
 | colbert-rag | retrieval | [colbert-rag](https://github.com/Dinesh-Das/colbert-rag) | Pending creation |
