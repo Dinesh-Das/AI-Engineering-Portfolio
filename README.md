@@ -1,6 +1,6 @@
 # AI Projects: reverse-engineering and learning collection
 
-**[Project portfolio](portfolio.html)** · **[Interactive HTML handbook](index.html)** · **[All 113 repository entries and upload status](docs/REPOSITORIES.md)**
+**[Live project portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html)** · **[Interactive HTML handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/)** · **[All 113 repository entries and upload status](docs/REPOSITORIES.md)**
 
 Each project has a prepared independent Git repository with its source, attribution, learning guides and bundled CPU learning tools. Browse the searchable [local portfolio](portfolio.html), the [repository directory](docs/REPOSITORIES.md), or the machine-readable [repository manifest](repositories.json). The four OCR repositories retain their existing histories. The [publication report](docs/publication-report.json) distinguishes uploaded repositories from pending ones. See [publication details](docs/PUBLICATION.md) for the requested November 11–13 commit dates and verification scope.
 
@@ -118,4 +118,4 @@ Production proposals live in each `LEARNINGS.md` and the shared [deployment play
 
 The original clone is cached under ignored `.source/ai-engineering-hub`. `tools.import_collection` performs a first import and refuses to overwrite existing project folders. `tools.write_docs` renders the maintained notes in `tools/project_notes.psv` against current source facts. It does not silently accept changed source hashes; record deliberate changes in the relevant manifest before updating the guides.
 
-Work is committed on `main`. The planned publication uses [AI-Engineering-Portfolio](https://github.com/Dinesh-Das/AI-Engineering-Portfolio) as its main repository; see [current upload status](docs/REPOSITORIES.md). See [third-party notices](docs/THIRD_PARTY_NOTICES.md) and [official documentation references](docs/SOURCES.md).
+Work is committed on `main`. The collection is published in [AI-Engineering-Portfolio](https://github.com/Dinesh-Das/AI-Engineering-Portfolio); see [current project upload status](docs/REPOSITORIES.md). See [third-party notices](docs/THIRD_PARTY_NOTICES.md) and [official documentation references](docs/SOURCES.md).

@@ -2,8 +2,8 @@
 
 The target is one public GitHub repository per project, plus [AI-Engineering-Portfolio](https://github.com/Dinesh-Das/AI-Engineering-Portfolio) as its main directory. All 113 local publication repositories are prepared on `main`. **Ten project repositories are uploaded and verified; 103 project repositories await the slow sequential publication.** The main repository has been created. The [publication report](publication-report.json) records the verified project set. Publication resumed with persistent pacing and automatic backoff.
 
-- [Searchable local portfolio](../portfolio.html) (GitHub Pages publication pending)
-- [Interactive HTML interview handbook](../index.html)
+- [Live searchable portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html)
+- [Live interactive HTML interview handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/)
 - [Complete repository directory](REPOSITORIES.md)
 - [Machine-readable repository manifest](../repositories.json)
 
