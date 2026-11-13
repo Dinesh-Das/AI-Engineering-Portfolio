@@ -1,10 +1,11 @@
 {
   "date": "2026-11-13",
+  "last_updated_at": "2026-11-13T19:18:57+05:30",
   "owner": "Dinesh-Das",
   "project_count": 113,
   "requested_dated_commits": 339,
-  "remote_projects_verified": 19,
-  "pending_projects": 94,
+  "remote_projects_verified": 43,
+  "pending_projects": 70,
   "commit_dates": [
     "2026-11-11",
     "2026-11-12",
@@ -12,7 +13,7 @@
   ],
   "timezone": "Asia/Kolkata",
   "standalone_cpu_scenarios_passed": 630,
-  "history_blobs_scanned": 5321,
+  "history_blobs_scanned": 5333,
   "projects": [
     {
       "id": "acp-code",
@@ -212,7 +213,7 @@
         "02062e48ca61091eb9eac5d95c3f7a12d2cc9148",
         "3338a96bc1d8da4951279ebd7e978120a0756f54"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "code-model-comparison",
@@ -222,7 +223,7 @@
         "2149da39b536f12e190008aa13adf97a62974af1",
         "69d330dc32f1559b635fddcc938ea0c3f5a59a7d"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "colbert-rag",
@@ -232,7 +233,7 @@
         "c2ce22b8d55b813dbeb68f5b9d81c3d7a2f844e0",
         "f69151b149f8dea9e85504ca24a31497f8cebe6a"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Colivara-deepseek-website-RAG",
@@ -242,7 +243,7 @@
         "d22ec68dad6e48b94409df1d667f3a7ab14df8f6",
         "750e7c2036b40d898df490bb6b4097e846533f8e"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "content_planner_flow",
@@ -252,7 +253,7 @@
         "6b1b883798ab3295f8e52734ae80a07b042dabb3",
         "2a06171c3f50df25e04967366240740eaf98db5a"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "context-engineering-pipeline",
@@ -262,7 +263,7 @@
         "9272973e771f616df4c61cd55e1f97bde16fcce3",
         "fcb9882c2ef7e8876616e70814ac122e996374d9"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "context-engineering-workflow",
@@ -272,7 +273,7 @@
         "3cf2d7b98c98e8d5c37e32e9f154a792eb67a08f",
         "3aa139b8f4279db331847e3f261660cf03a3ed3d"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "conversational-support-flow",
@@ -282,7 +283,7 @@
         "f8eae8f16bade25709f9905b2605a715ba59b7b2",
         "f5ff029e18ea42b9823f8fbc07c6682105585e81"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "corrective-rag",
@@ -292,7 +293,7 @@
         "e54ffd569bc18b98adec6b5a65d8e2c17a00fa94",
         "befe765f3d78ab48fc064fdbd79ea130db74910a"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "cursor_linkup_mcp",
@@ -302,7 +303,7 @@
         "a62b86c85ead80ba6bca003c6c27ac454efb997e",
         "0453a676184ff200fe27c2d0b8e7bea99ebec58e"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "database-memory-agent",
@@ -312,7 +313,7 @@
         "203475ba75410c9ee6219588858c372b24376315",
         "6909bb2b2b1b6edd95862c999769d5169cc90d99"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "DeepSeek-finetuning",
@@ -322,7 +323,7 @@
         "259d6a52fda07c775554fdbde2f98669ec2c3c97",
         "702b03b9e0b4c765c8f55fab4e969233cc49abfb"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "deepseek-multimodal-RAG",
@@ -332,7 +333,7 @@
         "947022f72710d3eeb6a08f12b2f86c65002d1546",
         "db484a4a5a2992000cd7162eb47e8a8e063680a3"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "deepseek-thinking-ui",
@@ -342,7 +343,7 @@
         "e3a9a6f7c3122218b8ff2c13cc3dccdca513137f",
         "c347bacef7fbbcd3bee07f64b9f0187c7909177a"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "deploy-agentic-rag",
@@ -352,7 +353,7 @@
         "5d4227fe57b70673dc4c6ccf8cc7015ca9ce7bc4",
         "7eb6f59dc46fcbcfb75881efa117d7ece7933d65"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "document-chat-rag",
@@ -362,7 +363,7 @@
         "ebd5ee2a52a3cecca0ff785dc607542716f3a7ca",
         "6c04e02542e5da3f28414d8b0129fef3a9979b45"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "documentation-writer-flow",
@@ -372,7 +373,7 @@
         "dec794aeffeadfdd103a4bc19773d8041792359f",
         "92bc3fbacb3896ba07d0255bd185d4c21226da9d"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "eval-and-observability",
@@ -382,7 +383,7 @@
         "bfbd45d439cf4f899e86a7272178bb48adf5c87f",
         "515d15f7cb9a091394fc53b2a39253096fed9878"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "eyelevel-mcp-rag",
@@ -392,7 +393,7 @@
         "cc3382c5940ecc6676217d45cb06dd3ae70e6561",
         "d364f560b63866ffb67262e4162f12bf29937613"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "fastest-rag-milvus-groq",
@@ -402,7 +403,7 @@
         "0aeec2a306e9a5ad63eb46185d2c7e2edf71d8dd",
         "18d52fca193e130480b6dc6f982a17a79ba07fc8"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "fastest-rag-stack",
@@ -412,7 +413,7 @@
         "84e575d08f0d854c4666ffe665b81f8684104f85",
         "e47887f91a4c55b6ff76cf3a531e9efa8bbf06e4"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "financial-analyst-deepseek",
@@ -422,7 +423,7 @@
         "845946d0cafa5df90f946311ee42c6f05e7c58d4",
         "0ccdc167aff5931215bbca3385915e2e4d041010"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "finetune-studio-mcp-app",
@@ -432,7 +433,7 @@
         "324c6a114fb25f5aa98fbe775bfce36ba0a4b5ad",
         "86ce34a0300ef1f2e580148fbba17a5ee4729cdc"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "firecrawl-agent",
@@ -442,7 +443,7 @@
         "c8b89076f6d9cef1c3bd77e2a6ae3f0b722d7c43",
         "c9d8a298a33408c6c37e235c1b30c7bcc297ffec"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "flight-booking-crew",
@@ -1120,7 +1121,7 @@
       "commits": [
         "d259d911b9c108017b67c410a609004aa8216257",
         "8911b377419c24dcb97367458e36d1d85024809e",
-        "2ae135884afa8dd7fd3a043b8fa8e34244680bb2"
+        "ece8af2877292842d1bbe8656133b06f33211ea8"
       ],
       "remote_verified": false
     },
@@ -1130,7 +1131,7 @@
       "commits": [
         "4717cb6f45e47f39684da7d11595784ce73b96d7",
         "7b72aa0f48266eeec139e6534cb89bfe7c8f2b39",
-        "a63288e3b46f84392c1c8785d4bf4de39336493c"
+        "509aea286dc9604090ce220cf13594e4cbf7d627"
       ],
       "remote_verified": false
     },
@@ -1140,7 +1141,7 @@
       "commits": [
         "1b8f9daac94775468fb4eccc80463c829507db51",
         "8c17aab0aec8a20892c542b5b6f6976c89769f16",
-        "82268cf52a86d91c25367573dc49b87a7ff0720d"
+        "2624a6ba6fc19d7c6a60f7096c4e24a72e270bdf"
       ],
       "remote_verified": false
     }

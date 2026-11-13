@@ -2,7 +2,7 @@
 
 [Local portfolio](../portfolio.html) · [Offline handbook](../index.html) · [Publication status](publication-report.json)
 
-**19 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
+**43 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
 
 Planned hosting: [portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html), [handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/), and [main repository](https://github.com/Dinesh-Das/AI-Engineering-Portfolio).
 
@@ -29,30 +29,30 @@ Each project has three publication commits dated November 11, 12 and 13, 2026 in
 | build-code-harness | agents | [build-code-harness](https://github.com/Dinesh-Das/build-code-harness) | Verified |
 | Build-reasoning-model | training | [Build-reasoning-model](https://github.com/Dinesh-Das/Build-reasoning-model) | Verified |
 | chat-with-audios | rag | [chat-with-audios](https://github.com/Dinesh-Das/chat-with-audios) | Verified |
-| chat-with-code | rag | [chat-with-code](https://github.com/Dinesh-Das/chat-with-code) | Pending creation |
-| code-model-comparison | evaluation | [code-model-comparison](https://github.com/Dinesh-Das/code-model-comparison) | Pending creation |
-| colbert-rag | retrieval | [colbert-rag](https://github.com/Dinesh-Das/colbert-rag) | Pending creation |
-| Colivara-deepseek-website-RAG | rag | [Colivara-deepseek-website-RAG](https://github.com/Dinesh-Das/Colivara-deepseek-website-RAG) | Pending creation |
-| content_planner_flow | agents | [content_planner_flow](https://github.com/Dinesh-Das/content_planner_flow) | Pending creation |
-| context-engineering-pipeline | memory | [context-engineering-pipeline](https://github.com/Dinesh-Das/context-engineering-pipeline) | Pending creation |
-| context-engineering-workflow | memory | [context-engineering-workflow](https://github.com/Dinesh-Das/context-engineering-workflow) | Pending creation |
-| conversational-support-flow | agents | [conversational-support-flow](https://github.com/Dinesh-Das/conversational-support-flow) | Pending creation |
-| corrective-rag | rag | [corrective-rag](https://github.com/Dinesh-Das/corrective-rag) | Pending creation |
-| cursor_linkup_mcp | mcp | [cursor_linkup_mcp](https://github.com/Dinesh-Das/cursor_linkup_mcp) | Pending creation |
-| database-memory-agent | memory | [database-memory-agent](https://github.com/Dinesh-Das/database-memory-agent) | Pending creation |
-| DeepSeek-finetuning | training | [DeepSeek-finetuning](https://github.com/Dinesh-Das/DeepSeek-finetuning) | Pending creation |
-| deepseek-multimodal-RAG | rag | [deepseek-multimodal-RAG](https://github.com/Dinesh-Das/deepseek-multimodal-RAG) | Pending creation |
-| deepseek-thinking-ui | interfaces | [deepseek-thinking-ui](https://github.com/Dinesh-Das/deepseek-thinking-ui) | Pending creation |
-| deploy-agentic-rag | operations | [deploy-agentic-rag](https://github.com/Dinesh-Das/deploy-agentic-rag) | Pending creation |
-| document-chat-rag | rag | [document-chat-rag](https://github.com/Dinesh-Das/document-chat-rag) | Pending creation |
-| documentation-writer-flow | agents | [documentation-writer-flow](https://github.com/Dinesh-Das/documentation-writer-flow) | Pending creation |
-| eval-and-observability | evaluation | [eval-and-observability](https://github.com/Dinesh-Das/eval-and-observability) | Pending creation |
-| eyelevel-mcp-rag | mcp | [eyelevel-mcp-rag](https://github.com/Dinesh-Das/eyelevel-mcp-rag) | Pending creation |
-| fastest-rag-milvus-groq | retrieval | [fastest-rag-milvus-groq](https://github.com/Dinesh-Das/fastest-rag-milvus-groq) | Pending creation |
-| fastest-rag-stack | retrieval | [fastest-rag-stack](https://github.com/Dinesh-Das/fastest-rag-stack) | Pending creation |
-| financial-analyst-deepseek | agents | [financial-analyst-deepseek](https://github.com/Dinesh-Das/financial-analyst-deepseek) | Pending creation |
-| finetune-studio-mcp-app | training | [finetune-studio-mcp-app](https://github.com/Dinesh-Das/finetune-studio-mcp-app) | Pending creation |
-| firecrawl-agent | rag | [firecrawl-agent](https://github.com/Dinesh-Das/firecrawl-agent) | Pending creation |
+| chat-with-code | rag | [chat-with-code](https://github.com/Dinesh-Das/chat-with-code) | Verified |
+| code-model-comparison | evaluation | [code-model-comparison](https://github.com/Dinesh-Das/code-model-comparison) | Verified |
+| colbert-rag | retrieval | [colbert-rag](https://github.com/Dinesh-Das/colbert-rag) | Verified |
+| Colivara-deepseek-website-RAG | rag | [Colivara-deepseek-website-RAG](https://github.com/Dinesh-Das/Colivara-deepseek-website-RAG) | Verified |
+| content_planner_flow | agents | [content_planner_flow](https://github.com/Dinesh-Das/content_planner_flow) | Verified |
+| context-engineering-pipeline | memory | [context-engineering-pipeline](https://github.com/Dinesh-Das/context-engineering-pipeline) | Verified |
+| context-engineering-workflow | memory | [context-engineering-workflow](https://github.com/Dinesh-Das/context-engineering-workflow) | Verified |
+| conversational-support-flow | agents | [conversational-support-flow](https://github.com/Dinesh-Das/conversational-support-flow) | Verified |
+| corrective-rag | rag | [corrective-rag](https://github.com/Dinesh-Das/corrective-rag) | Verified |
+| cursor_linkup_mcp | mcp | [cursor_linkup_mcp](https://github.com/Dinesh-Das/cursor_linkup_mcp) | Verified |
+| database-memory-agent | memory | [database-memory-agent](https://github.com/Dinesh-Das/database-memory-agent) | Verified |
+| DeepSeek-finetuning | training | [DeepSeek-finetuning](https://github.com/Dinesh-Das/DeepSeek-finetuning) | Verified |
+| deepseek-multimodal-RAG | rag | [deepseek-multimodal-RAG](https://github.com/Dinesh-Das/deepseek-multimodal-RAG) | Verified |
+| deepseek-thinking-ui | interfaces | [deepseek-thinking-ui](https://github.com/Dinesh-Das/deepseek-thinking-ui) | Verified |
+| deploy-agentic-rag | operations | [deploy-agentic-rag](https://github.com/Dinesh-Das/deploy-agentic-rag) | Verified |
+| document-chat-rag | rag | [document-chat-rag](https://github.com/Dinesh-Das/document-chat-rag) | Verified |
+| documentation-writer-flow | agents | [documentation-writer-flow](https://github.com/Dinesh-Das/documentation-writer-flow) | Verified |
+| eval-and-observability | evaluation | [eval-and-observability](https://github.com/Dinesh-Das/eval-and-observability) | Verified |
+| eyelevel-mcp-rag | mcp | [eyelevel-mcp-rag](https://github.com/Dinesh-Das/eyelevel-mcp-rag) | Verified |
+| fastest-rag-milvus-groq | retrieval | [fastest-rag-milvus-groq](https://github.com/Dinesh-Das/fastest-rag-milvus-groq) | Verified |
+| fastest-rag-stack | retrieval | [fastest-rag-stack](https://github.com/Dinesh-Das/fastest-rag-stack) | Verified |
+| financial-analyst-deepseek | agents | [financial-analyst-deepseek](https://github.com/Dinesh-Das/financial-analyst-deepseek) | Verified |
+| finetune-studio-mcp-app | training | [finetune-studio-mcp-app](https://github.com/Dinesh-Das/finetune-studio-mcp-app) | Verified |
+| firecrawl-agent | rag | [firecrawl-agent](https://github.com/Dinesh-Das/firecrawl-agent) | Verified |
 | flight-booking-crew | agents | [flight-booking-crew](https://github.com/Dinesh-Das/flight-booking-crew) | Pending creation |
 | github-rag | rag | [github-rag](https://github.com/Dinesh-Das/github-rag) | Pending creation |
 | gpt-oss-thinking-ui | interfaces | [gpt-oss-thinking-ui](https://github.com/Dinesh-Das/gpt-oss-thinking-ui) | Pending creation |

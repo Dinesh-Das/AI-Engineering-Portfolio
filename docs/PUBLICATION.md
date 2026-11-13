@@ -38,6 +38,8 @@ The independent OCR exports also passed 130 native pytest tests across the four 
 
 Remote `main` commit hashes are verified against the prepared local heads after every push. [Publication evidence](publication-report.json) records the project repositories and requested dated commit hashes. Live provider inference and GPU training are outside these checks.
 
+The report's `date` and `last_updated_at` use the actual publication run time in Asia/Kolkata. Its `commit_dates` remain the requested November 11–13 dates, including when the slow queue runs overnight. The publisher checks the configured GitHub destination and prepared `main` commit before pushing. Portfolio commits stay on `main` and exclude unrelated staged files.
+
 ## Resuming after GitHub's cooldown
 
 The prepared local checkouts and completed upload state are retained. From this workstation, run the following after GitHub permits content creation again:

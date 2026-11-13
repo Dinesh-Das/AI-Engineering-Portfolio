@@ -167,7 +167,7 @@
       "url": "https://github.com/Dinesh-Das/chat-with-code",
       "category": "rag",
       "purpose": "Retrieve repository context for code questions and validate responses.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "code-model-comparison",
@@ -175,7 +175,7 @@
       "url": "https://github.com/Dinesh-Das/code-model-comparison",
       "category": "evaluation",
       "purpose": "Compare code-generation models on a common repository context.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "colbert-rag",
@@ -183,7 +183,7 @@
       "url": "https://github.com/Dinesh-Das/colbert-rag",
       "category": "retrieval",
       "purpose": "Understand late interaction through ColBERT-style MaxSim scoring.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Colivara-deepseek-website-RAG",
@@ -191,7 +191,7 @@
       "url": "https://github.com/Dinesh-Das/Colivara-deepseek-website-RAG",
       "category": "rag",
       "purpose": "Retrieve visually represented web pages and answer with a multimodal model.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "content_planner_flow",
@@ -199,7 +199,7 @@
       "url": "https://github.com/Dinesh-Das/content_planner_flow",
       "category": "agents",
       "purpose": "Plan social content from web material and schedule a draft.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "context-engineering-pipeline",
@@ -207,7 +207,7 @@
       "url": "https://github.com/Dinesh-Das/context-engineering-pipeline",
       "category": "memory",
       "purpose": "Assemble useful context from documents, memory and structured stores under a token budget.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "context-engineering-workflow",
@@ -215,7 +215,7 @@
       "url": "https://github.com/Dinesh-Das/context-engineering-workflow",
       "category": "memory",
       "purpose": "Coordinate multi-source research with parsing, retrieval and long-term context.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "conversational-support-flow",
@@ -223,7 +223,7 @@
       "url": "https://github.com/Dinesh-Das/conversational-support-flow",
       "category": "agents",
       "purpose": "Route support turns among order lookup, policy retrieval and live research.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "corrective-rag",
@@ -231,7 +231,7 @@
       "url": "https://github.com/Dinesh-Das/corrective-rag",
       "category": "rag",
       "purpose": "Detect weak document evidence and recover through web search.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "cursor_linkup_mcp",
@@ -239,7 +239,7 @@
       "url": "https://github.com/Dinesh-Das/cursor_linkup_mcp",
       "category": "mcp",
       "purpose": "Expose deep web search and document retrieval to an MCP client.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "database-memory-agent",
@@ -247,7 +247,7 @@
       "url": "https://github.com/Dinesh-Das/database-memory-agent",
       "category": "memory",
       "purpose": "Combine conversation history, semantic document search and tool selection in MongoDB.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "DeepSeek-finetuning",
@@ -255,7 +255,7 @@
       "url": "https://github.com/Dinesh-Das/DeepSeek-finetuning",
       "category": "training",
       "purpose": "Adapt a distilled DeepSeek model and export it for local inference.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "deepseek-multimodal-RAG",
@@ -263,7 +263,7 @@
       "url": "https://github.com/Dinesh-Das/deepseek-multimodal-RAG",
       "category": "rag",
       "purpose": "Retrieve PDF pages visually and answer with DeepSeek Janus-Pro.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "deepseek-thinking-ui",
@@ -271,7 +271,7 @@
       "url": "https://github.com/Dinesh-Das/deepseek-thinking-ui",
       "category": "interfaces",
       "purpose": "Parse streamed model traces and final answers without dropping boundary text.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "deploy-agentic-rag",
@@ -279,7 +279,7 @@
       "url": "https://github.com/Dinesh-Das/deploy-agentic-rag",
       "category": "operations",
       "purpose": "Serve an agentic RAG workflow through an API using LitServe.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "document-chat-rag",
@@ -287,7 +287,7 @@
       "url": "https://github.com/Dinesh-Das/document-chat-rag",
       "category": "rag",
       "purpose": "Build document-grounded question answering with local models and optional vector storage.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "documentation-writer-flow",
@@ -295,7 +295,7 @@
       "url": "https://github.com/Dinesh-Das/documentation-writer-flow",
       "category": "agents",
       "purpose": "Produce repository documentation through planning and writing agents.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "eval-and-observability",
@@ -303,7 +303,7 @@
       "url": "https://github.com/Dinesh-Das/eval-and-observability",
       "category": "evaluation",
       "purpose": "Build an end-to-end RAG evaluation and trace collection pipeline.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "eyelevel-mcp-rag",
@@ -311,7 +311,7 @@
       "url": "https://github.com/Dinesh-Das/eyelevel-mcp-rag",
       "category": "mcp",
       "purpose": "Expose complex-document ingestion and retrieval through GroundX-backed MCP tools.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "fastest-rag-milvus-groq",
@@ -319,7 +319,7 @@
       "url": "https://github.com/Dinesh-Das/fastest-rag-milvus-groq",
       "category": "retrieval",
       "purpose": "Explore binary-vector retrieval with Milvus and hosted generation with Groq.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "fastest-rag-stack",
@@ -327,7 +327,7 @@
       "url": "https://github.com/Dinesh-Das/fastest-rag-stack",
       "category": "retrieval",
       "purpose": "Combine quantized Qdrant retrieval with SambaNova-hosted generation.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "financial-analyst-deepseek",
@@ -335,7 +335,7 @@
       "url": "https://github.com/Dinesh-Das/financial-analyst-deepseek",
       "category": "agents",
       "purpose": "Expose stock analysis and generated plots through a local-model MCP workflow.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "finetune-studio-mcp-app",
@@ -343,7 +343,7 @@
       "url": "https://github.com/Dinesh-Das/finetune-studio-mcp-app",
       "category": "training",
       "purpose": "Study an MCP backend that submits and monitors Hugging Face fine-tuning jobs.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "firecrawl-agent",
@@ -351,7 +351,7 @@
       "url": "https://github.com/Dinesh-Das/firecrawl-agent",
       "category": "rag",
       "purpose": "Combine corrective document retrieval with Firecrawl web fallback.",
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "flight-booking-crew",
