@@ -2,7 +2,7 @@
 
 [Local portfolio](../portfolio.html) · [Offline handbook](../index.html) · [Publication status](publication-report.json)
 
-**10 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names, not existing repositories. GitHub is temporarily limiting repository creation.
+**10 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
 
 Planned hosting: [portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html), [handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/), and [main repository](https://github.com/Dinesh-Das/AI-Engineering-Portfolio).
 
