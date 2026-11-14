@@ -1290,7 +1290,7 @@
       "url": "https://github.com/Dinesh-Das/stock-portfolio-analysis-agent",
       "category": "agents",
       "purpose": "Stream a portfolio-analysis workflow from a CrewAI backend.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1303,7 +1303,7 @@
       "url": "https://github.com/Dinesh-Das/streaming-ai-chatbot",
       "category": "interfaces",
       "purpose": "Understand event-driven chat state and recovery through an observable local implementation.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1316,7 +1316,7 @@
       "url": "https://github.com/Dinesh-Das/train-yolo26-object-detection",
       "category": "training",
       "purpose": "Fine-tune an object detector on a custom Roboflow dataset and track experiments.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1329,7 +1329,7 @@
       "url": "https://github.com/Dinesh-Das/trustworthy-rag",
       "category": "rag",
       "purpose": "Attach trustworthiness signals to document-grounded model output.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1342,7 +1342,7 @@
       "url": "https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp",
       "category": "mcp",
       "purpose": "Explore one agent connecting to several MCP servers.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1355,7 +1355,7 @@
       "url": "https://github.com/Dinesh-Das/video-rag-gemini",
       "category": "media",
       "purpose": "Upload video to Gemini and ask grounded questions about its contents.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1368,7 +1368,7 @@
       "url": "https://github.com/Dinesh-Das/web-browsing-agent",
       "category": "agents",
       "purpose": "Plan and execute browser research with CrewAI and Stagehand.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1381,7 +1381,7 @@
       "url": "https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl",
       "category": "structured",
       "purpose": "Convert web content into schema-constrained extraction results.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1394,7 +1394,7 @@
       "url": "https://github.com/Dinesh-Das/Youtube-trend-analysis",
       "category": "agents",
       "purpose": "Analyze channel or niche trends from collected video transcripts.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1407,7 +1407,7 @@
       "url": "https://github.com/Dinesh-Das/zep-memory-assistant",
       "category": "memory",
       "purpose": "Add persistent Zep memory to an AutoGen conversational agent.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1420,7 +1420,7 @@
       "url": "https://github.com/Dinesh-Das/zep-observations",
       "category": "memory",
       "purpose": "Study how graph conversation data becomes behavioral observations.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1433,7 +1433,7 @@
       "url": "https://github.com/Dinesh-Das/Latex-OCR-Lama",
       "category": "ocr",
       "purpose": "Local Latex-OCR-Lama document recognition workspace.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1446,7 +1446,7 @@
       "url": "https://github.com/Dinesh-Das/gemma3-ocr",
       "category": "ocr",
       "purpose": "Local gemma3-ocr document recognition workspace.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1459,7 +1459,7 @@
       "url": "https://github.com/Dinesh-Das/llama-ocr",
       "category": "ocr",
       "purpose": "Local llama-ocr document recognition workspace.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",
@@ -1472,7 +1472,7 @@
       "url": "https://github.com/Dinesh-Das/qwen-2.5VL-ocr",
       "category": "ocr",
       "purpose": "Local qwen-2.5VL-ocr document recognition workspace.",
-      "remote_verified": false,
+      "remote_verified": true,
       "commit_dates": [
         "2026-11-14",
         "2026-11-14",

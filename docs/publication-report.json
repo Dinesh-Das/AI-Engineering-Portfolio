@@ -1,11 +1,11 @@
 {
   "date": "2026-11-14",
-  "last_updated_at": "2026-11-14T09:06:08+05:30",
+  "last_updated_at": "2026-11-14T10:28:40+05:30",
   "owner": "Dinesh-Das",
   "project_count": 113,
   "requested_dated_commits": 339,
-  "remote_projects_verified": 98,
-  "pending_projects": 15,
+  "remote_projects_verified": 113,
+  "pending_projects": 0,
   "commit_dates": [
     "2026-11-11",
     "2026-11-12",
@@ -18,7 +18,7 @@
   },
   "verified_final_commit_dates": {
     "2026-11-13": 58,
-    "2026-11-14": 40
+    "2026-11-14": 55
   },
   "timezone": "Asia/Kolkata",
   "standalone_cpu_scenarios_passed": 630,
@@ -1507,7 +1507,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "streaming-ai-chatbot",
@@ -1522,7 +1522,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "train-yolo26-object-detection",
@@ -1537,7 +1537,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "trustworthy-rag",
@@ -1552,7 +1552,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "ultimate-ai-assitant-using-mcp",
@@ -1567,7 +1567,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "video-rag-gemini",
@@ -1582,7 +1582,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "web-browsing-agent",
@@ -1597,7 +1597,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Website-to-API-with-FireCrawl",
@@ -1612,7 +1612,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Youtube-trend-analysis",
@@ -1627,7 +1627,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "zep-memory-assistant",
@@ -1642,7 +1642,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "zep-observations",
@@ -1657,7 +1657,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Latex-OCR-Lama",
@@ -1672,7 +1672,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "gemma3-ocr",
@@ -1687,7 +1687,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "llama-ocr",
@@ -1702,7 +1702,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "qwen-2.5VL-ocr",
@@ -1717,7 +1717,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     }
   ]
 }

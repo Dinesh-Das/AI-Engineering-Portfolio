@@ -2,11 +2,11 @@
 
 [Local portfolio](../portfolio.html) · [Offline handbook](../index.html) · [Publication status](publication-report.json)
 
-**98 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
+**113 of 113 project repositories are uploaded and verified.** All independent project repositories are published on `main`.
 
 Hosting: [portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html), [handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/), and [main repository](https://github.com/Dinesh-Das/AI-Engineering-Portfolio).
 
-The already-published repositories retain their existing histories. Each pending repository has three new commits dated on the actual preparation date in Asia/Kolkata. Existing OCR history is retained. Pushes keep their actual GitHub timestamps. Per-project commit dates are recorded in the publication report and repository manifest.
+All repositories retain their recorded publication histories. Existing OCR history is retained. Pushes keep their actual GitHub timestamps. Per-project commit dates are recorded in the publication report and repository manifest.
 
 | Project | Category | GitHub repository | Upload status | Final commit date |
 | --- | --- | --- | --- | --- |
@@ -108,18 +108,18 @@ The already-published repositories retain their existing histories. Each pending
 | sonnet4-vs-o4 | evaluation | [sonnet4-vs-o4](https://github.com/Dinesh-Das/sonnet4-vs-o4) | Verified | 2026-11-14 |
 | sonnet4-vs-qwen3-coder | evaluation | [sonnet4-vs-qwen3-coder](https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder) | Verified | 2026-11-14 |
 | stagehand x mcp-use | agents | [stagehand-x-mcp-use](https://github.com/Dinesh-Das/stagehand-x-mcp-use) | Verified | 2026-11-14 |
-| stock-portfolio-analysis-agent | agents | [stock-portfolio-analysis-agent](https://github.com/Dinesh-Das/stock-portfolio-analysis-agent) | Pending creation | 2026-11-14 |
-| streaming-ai-chatbot | interfaces | [streaming-ai-chatbot](https://github.com/Dinesh-Das/streaming-ai-chatbot) | Pending creation | 2026-11-14 |
-| train-yolo26-object-detection | training | [train-yolo26-object-detection](https://github.com/Dinesh-Das/train-yolo26-object-detection) | Pending creation | 2026-11-14 |
-| trustworthy-rag | rag | [trustworthy-rag](https://github.com/Dinesh-Das/trustworthy-rag) | Pending creation | 2026-11-14 |
-| ultimate-ai-assitant-using-mcp | mcp | [ultimate-ai-assitant-using-mcp](https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp) | Pending creation | 2026-11-14 |
-| video-rag-gemini | media | [video-rag-gemini](https://github.com/Dinesh-Das/video-rag-gemini) | Pending creation | 2026-11-14 |
-| web-browsing-agent | agents | [web-browsing-agent](https://github.com/Dinesh-Das/web-browsing-agent) | Pending creation | 2026-11-14 |
-| Website-to-API-with-FireCrawl | structured | [Website-to-API-with-FireCrawl](https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl) | Pending creation | 2026-11-14 |
-| Youtube-trend-analysis | agents | [Youtube-trend-analysis](https://github.com/Dinesh-Das/Youtube-trend-analysis) | Pending creation | 2026-11-14 |
-| zep-memory-assistant | memory | [zep-memory-assistant](https://github.com/Dinesh-Das/zep-memory-assistant) | Pending creation | 2026-11-14 |
-| zep-observations | memory | [zep-observations](https://github.com/Dinesh-Das/zep-observations) | Pending creation | 2026-11-14 |
-| Latex-OCR-Lama | ocr | [Latex-OCR-Lama](https://github.com/Dinesh-Das/Latex-OCR-Lama) | Pending creation | 2026-11-14 |
-| gemma3-ocr | ocr | [gemma3-ocr](https://github.com/Dinesh-Das/gemma3-ocr) | Pending creation | 2026-11-14 |
-| llama-ocr | ocr | [llama-ocr](https://github.com/Dinesh-Das/llama-ocr) | Pending creation | 2026-11-14 |
-| qwen-2.5VL-ocr | ocr | [qwen-2.5VL-ocr](https://github.com/Dinesh-Das/qwen-2.5VL-ocr) | Pending creation | 2026-11-14 |
+| stock-portfolio-analysis-agent | agents | [stock-portfolio-analysis-agent](https://github.com/Dinesh-Das/stock-portfolio-analysis-agent) | Verified | 2026-11-14 |
+| streaming-ai-chatbot | interfaces | [streaming-ai-chatbot](https://github.com/Dinesh-Das/streaming-ai-chatbot) | Verified | 2026-11-14 |
+| train-yolo26-object-detection | training | [train-yolo26-object-detection](https://github.com/Dinesh-Das/train-yolo26-object-detection) | Verified | 2026-11-14 |
+| trustworthy-rag | rag | [trustworthy-rag](https://github.com/Dinesh-Das/trustworthy-rag) | Verified | 2026-11-14 |
+| ultimate-ai-assitant-using-mcp | mcp | [ultimate-ai-assitant-using-mcp](https://github.com/Dinesh-Das/ultimate-ai-assitant-using-mcp) | Verified | 2026-11-14 |
+| video-rag-gemini | media | [video-rag-gemini](https://github.com/Dinesh-Das/video-rag-gemini) | Verified | 2026-11-14 |
+| web-browsing-agent | agents | [web-browsing-agent](https://github.com/Dinesh-Das/web-browsing-agent) | Verified | 2026-11-14 |
+| Website-to-API-with-FireCrawl | structured | [Website-to-API-with-FireCrawl](https://github.com/Dinesh-Das/Website-to-API-with-FireCrawl) | Verified | 2026-11-14 |
+| Youtube-trend-analysis | agents | [Youtube-trend-analysis](https://github.com/Dinesh-Das/Youtube-trend-analysis) | Verified | 2026-11-14 |
+| zep-memory-assistant | memory | [zep-memory-assistant](https://github.com/Dinesh-Das/zep-memory-assistant) | Verified | 2026-11-14 |
+| zep-observations | memory | [zep-observations](https://github.com/Dinesh-Das/zep-observations) | Verified | 2026-11-14 |
+| Latex-OCR-Lama | ocr | [Latex-OCR-Lama](https://github.com/Dinesh-Das/Latex-OCR-Lama) | Verified | 2026-11-14 |
+| gemma3-ocr | ocr | [gemma3-ocr](https://github.com/Dinesh-Das/gemma3-ocr) | Verified | 2026-11-14 |
+| llama-ocr | ocr | [llama-ocr](https://github.com/Dinesh-Das/llama-ocr) | Verified | 2026-11-14 |
+| qwen-2.5VL-ocr | ocr | [qwen-2.5VL-ocr](https://github.com/Dinesh-Das/qwen-2.5VL-ocr) | Verified | 2026-11-14 |
