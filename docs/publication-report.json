@@ -1,11 +1,11 @@
 {
   "date": "2026-11-14",
-  "last_updated_at": "2026-11-14T00:04:04+05:30",
+  "last_updated_at": "2026-11-14T09:06:08+05:30",
   "owner": "Dinesh-Das",
   "project_count": 113,
   "requested_dated_commits": 339,
-  "remote_projects_verified": 58,
-  "pending_projects": 55,
+  "remote_projects_verified": 98,
+  "pending_projects": 15,
   "commit_dates": [
     "2026-11-11",
     "2026-11-12",
@@ -17,7 +17,8 @@
     "2026-11-14": 55
   },
   "verified_final_commit_dates": {
-    "2026-11-13": 58
+    "2026-11-13": 58,
+    "2026-11-14": 40
   },
   "timezone": "Asia/Kolkata",
   "standalone_cpu_scenarios_passed": 630,
@@ -906,7 +907,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "local-chatgpt",
@@ -921,7 +922,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "local-chatgpt with DeepSeek",
@@ -936,7 +937,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "local-chatgpt with Gemma 3",
@@ -951,7 +952,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "mcp-agentic-rag",
@@ -966,7 +967,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "mcp-agentic-rag-firecrawl",
@@ -981,7 +982,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "mcp-video-rag",
@@ -996,7 +997,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "mcp-voice-agent",
@@ -1011,7 +1012,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "mindsdb-mcp",
@@ -1026,7 +1027,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3",
@@ -1041,7 +1042,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "modernbert-rag",
@@ -1056,7 +1057,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "motia-content-creation",
@@ -1071,7 +1072,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "Multi-Agent-deep-researcher-mcp-windows-linux",
@@ -1086,7 +1087,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "multi-modal-rag",
@@ -1101,7 +1102,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "multilingual-meeting-notes-generator",
@@ -1116,7 +1117,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "multimodal-rag-assemblyai",
@@ -1131,7 +1132,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "multiplatform_deep_researcher",
@@ -1146,7 +1147,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "notebook-lm-clone",
@@ -1161,7 +1162,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "o3-vs-claude-code",
@@ -1176,7 +1177,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "omnigraph-multi-agent",
@@ -1191,7 +1192,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "open-agent-builder",
@@ -1206,7 +1207,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "openai-swarm-ollama",
@@ -1221,7 +1222,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "openclaw-secure-deployment",
@@ -1236,7 +1237,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "paralegal-agent-crew",
@@ -1251,7 +1252,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "parlant-conversational-agent",
@@ -1266,7 +1267,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "pixeltable-mcp",
@@ -1281,7 +1282,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "qwen3-thinking-ui",
@@ -1296,7 +1297,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "qwen3_vs_deepseek-r1",
@@ -1311,7 +1312,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "rag-sql-router",
@@ -1326,7 +1327,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "rag-voice-agent",
@@ -1341,7 +1342,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "rag-with-dockling",
@@ -1356,7 +1357,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "real-time-voicebot",
@@ -1371,7 +1372,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "run-jev-inside-agent-harness",
@@ -1386,7 +1387,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "sales-analytics-agent",
@@ -1401,7 +1402,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "sdv-mcp",
@@ -1416,7 +1417,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "siamese-network",
@@ -1431,7 +1432,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "simple-rag-workflow",
@@ -1446,7 +1447,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "sonnet4-vs-o4",
@@ -1461,7 +1462,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "sonnet4-vs-qwen3-coder",
@@ -1476,7 +1477,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "stagehand x mcp-use",
@@ -1491,7 +1492,7 @@
         "2026-11-14",
         "2026-11-14"
       ],
-      "remote_verified": false
+      "remote_verified": true
     },
     {
       "id": "stock-portfolio-analysis-agent",

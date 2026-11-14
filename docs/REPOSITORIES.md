@@ -2,7 +2,7 @@
 
 [Local portfolio](../portfolio.html) · [Offline handbook](../index.html) · [Publication status](publication-report.json)
 
-**58 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
+**98 of 113 project repositories are uploaded and verified.** All 113 independent local checkouts are prepared on `main`. Pending URLs below are reserved names and become available as the sequential publication proceeds.
 
 Hosting: [portfolio](https://dinesh-das.github.io/AI-Engineering-Portfolio/portfolio.html), [handbook](https://dinesh-das.github.io/AI-Engineering-Portfolio/), and [main repository](https://github.com/Dinesh-Das/AI-Engineering-Portfolio).
 
@@ -68,46 +68,46 @@ The already-published repositories retain their existing histories. Each pending
 | knowledge distillation | training | [knowledge-distillation](https://github.com/Dinesh-Das/knowledge-distillation) | Verified | 2026-11-13 |
 | llama-4-rag | rag | [llama-4-rag](https://github.com/Dinesh-Das/llama-4-rag) | Verified | 2026-11-13 |
 | llama-4_vs_deepseek-r1 | evaluation | [llama-4_vs_deepseek-r1](https://github.com/Dinesh-Das/llama-4_vs_deepseek-r1) | Verified | 2026-11-13 |
-| llamaindex-mcp | mcp | [llamaindex-mcp](https://github.com/Dinesh-Das/llamaindex-mcp) | Pending creation | 2026-11-14 |
-| local-chatgpt | interfaces | [local-chatgpt](https://github.com/Dinesh-Das/local-chatgpt) | Pending creation | 2026-11-14 |
-| local-chatgpt with DeepSeek | interfaces | [local-chatgpt-with-DeepSeek](https://github.com/Dinesh-Das/local-chatgpt-with-DeepSeek) | Pending creation | 2026-11-14 |
-| local-chatgpt with Gemma 3 | interfaces | [local-chatgpt-with-Gemma-3](https://github.com/Dinesh-Das/local-chatgpt-with-Gemma-3) | Pending creation | 2026-11-14 |
-| mcp-agentic-rag | mcp | [mcp-agentic-rag](https://github.com/Dinesh-Das/mcp-agentic-rag) | Pending creation | 2026-11-14 |
-| mcp-agentic-rag-firecrawl | mcp | [mcp-agentic-rag-firecrawl](https://github.com/Dinesh-Das/mcp-agentic-rag-firecrawl) | Pending creation | 2026-11-14 |
-| mcp-video-rag | mcp | [mcp-video-rag](https://github.com/Dinesh-Das/mcp-video-rag) | Pending creation | 2026-11-14 |
-| mcp-voice-agent | voice | [mcp-voice-agent](https://github.com/Dinesh-Das/mcp-voice-agent) | Pending creation | 2026-11-14 |
-| mindsdb-mcp | recipe | [mindsdb-mcp](https://github.com/Dinesh-Das/mindsdb-mcp) | Pending creation | 2026-11-14 |
-| minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3 | evaluation | [minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3](https://github.com/Dinesh-Das/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3) | Pending creation | 2026-11-14 |
-| modernbert-rag | rag | [modernbert-rag](https://github.com/Dinesh-Das/modernbert-rag) | Pending creation | 2026-11-14 |
-| motia-content-creation | agents | [motia-content-creation](https://github.com/Dinesh-Das/motia-content-creation) | Pending creation | 2026-11-14 |
-| Multi-Agent-deep-researcher-mcp-windows-linux | agents | [Multi-Agent-deep-researcher-mcp-windows-linux](https://github.com/Dinesh-Das/Multi-Agent-deep-researcher-mcp-windows-linux) | Pending creation | 2026-11-14 |
-| multi-modal-rag | rag | [multi-modal-rag](https://github.com/Dinesh-Das/multi-modal-rag) | Pending creation | 2026-11-14 |
-| multilingual-meeting-notes-generator | voice | [multilingual-meeting-notes-generator](https://github.com/Dinesh-Das/multilingual-meeting-notes-generator) | Pending creation | 2026-11-14 |
-| multimodal-rag-assemblyai | rag | [multimodal-rag-assemblyai](https://github.com/Dinesh-Das/multimodal-rag-assemblyai) | Pending creation | 2026-11-14 |
-| multiplatform_deep_researcher | agents | [multiplatform_deep_researcher](https://github.com/Dinesh-Das/multiplatform_deep_researcher) | Pending creation | 2026-11-14 |
-| notebook-lm-clone | rag | [notebook-lm-clone](https://github.com/Dinesh-Das/notebook-lm-clone) | Pending creation | 2026-11-14 |
-| o3-vs-claude-code | evaluation | [o3-vs-claude-code](https://github.com/Dinesh-Das/o3-vs-claude-code) | Pending creation | 2026-11-14 |
-| omnigraph-multi-agent | memory | [omnigraph-multi-agent](https://github.com/Dinesh-Das/omnigraph-multi-agent) | Pending creation | 2026-11-14 |
-| open-agent-builder | agents | [open-agent-builder](https://github.com/Dinesh-Das/open-agent-builder) | Pending creation | 2026-11-14 |
-| openai-swarm-ollama | agents | [openai-swarm-ollama](https://github.com/Dinesh-Das/openai-swarm-ollama) | Pending creation | 2026-11-14 |
-| openclaw-secure-deployment | recipe | [openclaw-secure-deployment](https://github.com/Dinesh-Das/openclaw-secure-deployment) | Pending creation | 2026-11-14 |
-| paralegal-agent-crew | rag | [paralegal-agent-crew](https://github.com/Dinesh-Das/paralegal-agent-crew) | Pending creation | 2026-11-14 |
-| parlant-conversational-agent | agents | [parlant-conversational-agent](https://github.com/Dinesh-Das/parlant-conversational-agent) | Pending creation | 2026-11-14 |
-| pixeltable-mcp | mcp | [pixeltable-mcp](https://github.com/Dinesh-Das/pixeltable-mcp) | Pending creation | 2026-11-14 |
-| qwen3-thinking-ui | interfaces | [qwen3-thinking-ui](https://github.com/Dinesh-Das/qwen3-thinking-ui) | Pending creation | 2026-11-14 |
-| qwen3_vs_deepseek-r1 | evaluation | [qwen3_vs_deepseek-r1](https://github.com/Dinesh-Das/qwen3_vs_deepseek-r1) | Pending creation | 2026-11-14 |
-| rag-sql-router | rag | [rag-sql-router](https://github.com/Dinesh-Das/rag-sql-router) | Pending creation | 2026-11-14 |
-| rag-voice-agent | voice | [rag-voice-agent](https://github.com/Dinesh-Das/rag-voice-agent) | Pending creation | 2026-11-14 |
-| rag-with-dockling | rag | [rag-with-dockling](https://github.com/Dinesh-Das/rag-with-dockling) | Pending creation | 2026-11-14 |
-| real-time-voicebot | voice | [real-time-voicebot](https://github.com/Dinesh-Das/real-time-voicebot) | Pending creation | 2026-11-14 |
-| run-jev-inside-agent-harness | recipe | [run-jev-inside-agent-harness](https://github.com/Dinesh-Das/run-jev-inside-agent-harness) | Pending creation | 2026-11-14 |
-| sales-analytics-agent | agents | [sales-analytics-agent](https://github.com/Dinesh-Das/sales-analytics-agent) | Pending creation | 2026-11-14 |
-| sdv-mcp | mcp | [sdv-mcp](https://github.com/Dinesh-Das/sdv-mcp) | Pending creation | 2026-11-14 |
-| siamese-network | training | [siamese-network](https://github.com/Dinesh-Das/siamese-network) | Pending creation | 2026-11-14 |
-| simple-rag-workflow | rag | [simple-rag-workflow](https://github.com/Dinesh-Das/simple-rag-workflow) | Pending creation | 2026-11-14 |
-| sonnet4-vs-o4 | evaluation | [sonnet4-vs-o4](https://github.com/Dinesh-Das/sonnet4-vs-o4) | Pending creation | 2026-11-14 |
-| sonnet4-vs-qwen3-coder | evaluation | [sonnet4-vs-qwen3-coder](https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder) | Pending creation | 2026-11-14 |
-| stagehand x mcp-use | agents | [stagehand-x-mcp-use](https://github.com/Dinesh-Das/stagehand-x-mcp-use) | Pending creation | 2026-11-14 |
+| llamaindex-mcp | mcp | [llamaindex-mcp](https://github.com/Dinesh-Das/llamaindex-mcp) | Verified | 2026-11-14 |
+| local-chatgpt | interfaces | [local-chatgpt](https://github.com/Dinesh-Das/local-chatgpt) | Verified | 2026-11-14 |
+| local-chatgpt with DeepSeek | interfaces | [local-chatgpt-with-DeepSeek](https://github.com/Dinesh-Das/local-chatgpt-with-DeepSeek) | Verified | 2026-11-14 |
+| local-chatgpt with Gemma 3 | interfaces | [local-chatgpt-with-Gemma-3](https://github.com/Dinesh-Das/local-chatgpt-with-Gemma-3) | Verified | 2026-11-14 |
+| mcp-agentic-rag | mcp | [mcp-agentic-rag](https://github.com/Dinesh-Das/mcp-agentic-rag) | Verified | 2026-11-14 |
+| mcp-agentic-rag-firecrawl | mcp | [mcp-agentic-rag-firecrawl](https://github.com/Dinesh-Das/mcp-agentic-rag-firecrawl) | Verified | 2026-11-14 |
+| mcp-video-rag | mcp | [mcp-video-rag](https://github.com/Dinesh-Das/mcp-video-rag) | Verified | 2026-11-14 |
+| mcp-voice-agent | voice | [mcp-voice-agent](https://github.com/Dinesh-Das/mcp-voice-agent) | Verified | 2026-11-14 |
+| mindsdb-mcp | recipe | [mindsdb-mcp](https://github.com/Dinesh-Das/mindsdb-mcp) | Verified | 2026-11-14 |
+| minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3 | evaluation | [minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3](https://github.com/Dinesh-Das/minimaxm2-vs-sonnet4-5-vs-kimik2-vs-gemini3) | Verified | 2026-11-14 |
+| modernbert-rag | rag | [modernbert-rag](https://github.com/Dinesh-Das/modernbert-rag) | Verified | 2026-11-14 |
+| motia-content-creation | agents | [motia-content-creation](https://github.com/Dinesh-Das/motia-content-creation) | Verified | 2026-11-14 |
+| Multi-Agent-deep-researcher-mcp-windows-linux | agents | [Multi-Agent-deep-researcher-mcp-windows-linux](https://github.com/Dinesh-Das/Multi-Agent-deep-researcher-mcp-windows-linux) | Verified | 2026-11-14 |
+| multi-modal-rag | rag | [multi-modal-rag](https://github.com/Dinesh-Das/multi-modal-rag) | Verified | 2026-11-14 |
+| multilingual-meeting-notes-generator | voice | [multilingual-meeting-notes-generator](https://github.com/Dinesh-Das/multilingual-meeting-notes-generator) | Verified | 2026-11-14 |
+| multimodal-rag-assemblyai | rag | [multimodal-rag-assemblyai](https://github.com/Dinesh-Das/multimodal-rag-assemblyai) | Verified | 2026-11-14 |
+| multiplatform_deep_researcher | agents | [multiplatform_deep_researcher](https://github.com/Dinesh-Das/multiplatform_deep_researcher) | Verified | 2026-11-14 |
+| notebook-lm-clone | rag | [notebook-lm-clone](https://github.com/Dinesh-Das/notebook-lm-clone) | Verified | 2026-11-14 |
+| o3-vs-claude-code | evaluation | [o3-vs-claude-code](https://github.com/Dinesh-Das/o3-vs-claude-code) | Verified | 2026-11-14 |
+| omnigraph-multi-agent | memory | [omnigraph-multi-agent](https://github.com/Dinesh-Das/omnigraph-multi-agent) | Verified | 2026-11-14 |
+| open-agent-builder | agents | [open-agent-builder](https://github.com/Dinesh-Das/open-agent-builder) | Verified | 2026-11-14 |
+| openai-swarm-ollama | agents | [openai-swarm-ollama](https://github.com/Dinesh-Das/openai-swarm-ollama) | Verified | 2026-11-14 |
+| openclaw-secure-deployment | recipe | [openclaw-secure-deployment](https://github.com/Dinesh-Das/openclaw-secure-deployment) | Verified | 2026-11-14 |
+| paralegal-agent-crew | rag | [paralegal-agent-crew](https://github.com/Dinesh-Das/paralegal-agent-crew) | Verified | 2026-11-14 |
+| parlant-conversational-agent | agents | [parlant-conversational-agent](https://github.com/Dinesh-Das/parlant-conversational-agent) | Verified | 2026-11-14 |
+| pixeltable-mcp | mcp | [pixeltable-mcp](https://github.com/Dinesh-Das/pixeltable-mcp) | Verified | 2026-11-14 |
+| qwen3-thinking-ui | interfaces | [qwen3-thinking-ui](https://github.com/Dinesh-Das/qwen3-thinking-ui) | Verified | 2026-11-14 |
+| qwen3_vs_deepseek-r1 | evaluation | [qwen3_vs_deepseek-r1](https://github.com/Dinesh-Das/qwen3_vs_deepseek-r1) | Verified | 2026-11-14 |
+| rag-sql-router | rag | [rag-sql-router](https://github.com/Dinesh-Das/rag-sql-router) | Verified | 2026-11-14 |
+| rag-voice-agent | voice | [rag-voice-agent](https://github.com/Dinesh-Das/rag-voice-agent) | Verified | 2026-11-14 |
+| rag-with-dockling | rag | [rag-with-dockling](https://github.com/Dinesh-Das/rag-with-dockling) | Verified | 2026-11-14 |
+| real-time-voicebot | voice | [real-time-voicebot](https://github.com/Dinesh-Das/real-time-voicebot) | Verified | 2026-11-14 |
+| run-jev-inside-agent-harness | recipe | [run-jev-inside-agent-harness](https://github.com/Dinesh-Das/run-jev-inside-agent-harness) | Verified | 2026-11-14 |
+| sales-analytics-agent | agents | [sales-analytics-agent](https://github.com/Dinesh-Das/sales-analytics-agent) | Verified | 2026-11-14 |
+| sdv-mcp | mcp | [sdv-mcp](https://github.com/Dinesh-Das/sdv-mcp) | Verified | 2026-11-14 |
+| siamese-network | training | [siamese-network](https://github.com/Dinesh-Das/siamese-network) | Verified | 2026-11-14 |
+| simple-rag-workflow | rag | [simple-rag-workflow](https://github.com/Dinesh-Das/simple-rag-workflow) | Verified | 2026-11-14 |
+| sonnet4-vs-o4 | evaluation | [sonnet4-vs-o4](https://github.com/Dinesh-Das/sonnet4-vs-o4) | Verified | 2026-11-14 |
+| sonnet4-vs-qwen3-coder | evaluation | [sonnet4-vs-qwen3-coder](https://github.com/Dinesh-Das/sonnet4-vs-qwen3-coder) | Verified | 2026-11-14 |
+| stagehand x mcp-use | agents | [stagehand-x-mcp-use](https://github.com/Dinesh-Das/stagehand-x-mcp-use) | Verified | 2026-11-14 |
 | stock-portfolio-analysis-agent | agents | [stock-portfolio-analysis-agent](https://github.com/Dinesh-Das/stock-portfolio-analysis-agent) | Pending creation | 2026-11-14 |
 | streaming-ai-chatbot | interfaces | [streaming-ai-chatbot](https://github.com/Dinesh-Das/streaming-ai-chatbot) | Pending creation | 2026-11-14 |
 | train-yolo26-object-detection | training | [train-yolo26-object-detection](https://github.com/Dinesh-Das/train-yolo26-object-detection) | Pending creation | 2026-11-14 |
